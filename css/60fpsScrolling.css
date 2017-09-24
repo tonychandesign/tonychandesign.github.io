@@ -1,0 +1,8 @@
+/* 60 fps scrolling */
+.hover .element:hover {
+  box-shadow: 1px 1px 1px #000;
+}
+.disable-hover,
+.disable-hover * {
+  pointer-events: none !important;
+}
