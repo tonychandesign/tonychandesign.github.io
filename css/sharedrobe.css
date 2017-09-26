@@ -71,11 +71,11 @@
 
 /*rotate the font awesome arrow to point bottom left*/
  .fa-rotate-45 {
-    -webkit-transform: rotate(150deg);
-    -moz-transform: rotate(150deg);
-    -ms-transform: rotate(150deg);
-    -o-transform: rotate(150deg);
-    transform: rotate(150deg);
+    -webkit-transform: rotate(155deg);
+    -moz-transform: rotate(155deg);
+    -ms-transform: rotate(155deg);
+    -o-transform: rotate(155deg);
+    transform: rotate(155deg);
 }
 .fa-flipdown {
    -webkit-transform: rotate(0deg);
@@ -99,4 +99,16 @@
     -o-transform: rotate(90deg);
     transform: rotate(90deg);
  }
+}
+
+/*black boarder around pictures for lofi*/
+.ImageBorder{
+  max-width:98%;
+  padding:1%; /* A percentage that, when doubled and added to the above, makes 100%. */
+  background:black; /* Color of the faux border. */
+}
+.ImageBorderorange{
+  max-width:98%;
+  padding:1%; /* A percentage that, when doubled and added to the above, makes 100%. */
+  background:#f07b36;
 }
