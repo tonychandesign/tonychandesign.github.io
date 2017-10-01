@@ -77,6 +77,13 @@
     -o-transform: rotate(155deg);
     transform: rotate(155deg);
 }
+.fa-rotate-45-two {
+   -webkit-transform: rotate(155deg);
+   -moz-transform: rotate(155deg);
+   -ms-transform: rotate(155deg);
+   -o-transform: rotate(155deg);
+   transform: rotate(155deg);
+}
 .fa-flipdown {
    -webkit-transform: rotate(0deg);
    -moz-transform: rotate(0deg);
@@ -111,4 +118,8 @@
   max-width:98%;
   padding:1%; /* A percentage that, when doubled and added to the above, makes 100%. */
   background:#f07b36;
+}
+
+iframe, object, embed {
+    max-width: 100%;
 }
