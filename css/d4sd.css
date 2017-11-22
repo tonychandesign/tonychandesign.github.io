@@ -1,3 +1,18 @@
+  body {
+    padding-top: 62px;
+  }
+  .bracketposterwidth{
+    width: 50%;
+  }
+  @media (max-width: 978px) {
+    body {
+      padding-top: 180px;
+    }
+    .bracketposterwidth{
+      width: 100%;
+    }
+  }
+
 .brackets-red-text {
   font: 20px/26px "Lato", sans-serif;
   background-image: linear-gradient(#E01A4F, #E01A4F),

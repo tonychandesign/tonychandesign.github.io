@@ -23,30 +23,13 @@ h1, h2,h3, h4, h5, h6 {
   color: black;
   font-weight: 600;
 }
-@media (max-width: 992px) {
-  body {
-    padding-top: 230px;
-  }
-}
+
 .remove-padding {
   padding-left: 0;
   padding-right: 0;
   margin-left: 0;
   margin-right: 0;
 }
-
-/* typing animation */
-span {
-  border-right: .05em solid;
-  animation: caret 1s steps(1) infinite;
-}
-@keyframes caret {
-  50% {
-    border-color: transparent;
-  }
-}
-/*end typing animation*/
-
 
 .network-name {
   text-transform: uppercase;
@@ -458,4 +441,13 @@ a.btn-social,
 }
 @keyframes come-in {
   to { transform: translateY(0); }
+}
+
+/* Index header animation CSS*/
+.large-header{
+  background:#ececee;
+  text-align:center
+}
+#x-canvas{
+opacity:0.5
 }
