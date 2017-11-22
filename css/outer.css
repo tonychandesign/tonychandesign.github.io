@@ -262,7 +262,6 @@ a:hover,
 
 .banner h2 {
   margin: 0;
-
   font-size: 3em;
 }
 
@@ -399,11 +398,11 @@ a.btn-social,
 }
 
 .descriptionspacer {
-    margin-top: 20px; /* used under pictures */
+    margin-top: 15px; /* used under pictures */
 }
 /* descreases margin size on sides of pictures within the box */
 .row-centerer2 {
-  width:97%;
+  width:99%;
   margin: auto;
 }
 
