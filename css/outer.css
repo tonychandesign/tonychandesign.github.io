@@ -451,3 +451,16 @@ a.btn-social,
 #x-canvas{
 opacity:0.5
 }
+.padder {
+  top:80px;
+}
+@media screen and (min-height: 900px) {
+  .padder {
+    top:120px;
+  }
+}
+@media screen and (max-width: 200px) , screen and (max-height: 900px) {
+  .padder {
+    top:80px;
+  }
+}
