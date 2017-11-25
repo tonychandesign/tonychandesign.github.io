@@ -9,7 +9,7 @@ body {
   font-family: "Lato";
   color: black;
   background-color: #ececee;
-  padding-top: 150px;
+  padding-top: 130px; /*150*/
   /*fade out effect */
   opacity: 1;
   transition: 1.5s opacity;
@@ -208,6 +208,12 @@ a:hover,
       padding-top: 40px;
   }
 }
+
+/*adds and removes padding for resume and about me in index*/
+.resumeaboutpad {
+  margin-top:30px;
+}
+
 @media (max-width: 990px) {
   .picCenter {
     text-align: center;
@@ -217,6 +223,9 @@ a:hover,
   }
   .paddingnigga {
       padding-top:0px;
+  }
+  .resumeaboutpad {
+    margin-top:70px;
   }
 }
 
@@ -458,6 +467,7 @@ opacity:0.5
 .padder {
   top:80px;
 }
+
 @media screen and (min-height: 900px) {
   .padder {
     top:120px;
