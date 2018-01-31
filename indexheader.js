@@ -51,7 +51,7 @@
 
         // create points
         points = [];
-        var puntitos=10;
+        var puntitos=15;
         for(var x = 0; x < width; x = x + width/puntitos) {
             for(var y = 0; y < height; y = y + height/puntitos) {
                 var px = x + Math.random()*width/puntitos;
