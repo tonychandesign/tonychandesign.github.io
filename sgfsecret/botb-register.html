@@ -1,0 +1,90 @@
+<html lang="en">
+
+<head>
+  <title> Battle of the Bands </title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="css/style-main.css" />
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+  <script type="text/javascript" src="https://ajax.microsoft.com/ajax/jQuery/jquery-1.4.2.min.js"></script>
+  <script type="text/javascript" src="scripts/script-botb.js"></script>
+
+  <script type="text/javascript">
+    if ((navigator.userAgent.indexOf('iPhone') != -1) ||
+      (navigator.userAgent.indexOf('iPod') != -1) ||
+      (navigator.userAgent.indexOf('iPad') != -1)) {
+      window.location = "botb-register-iphone.html";
+    } else {
+      //  Do nothing.
+    }
+  </script>
+
+</head>
+
+<body style="  background-color: #CCE6CA;">
+  <div class="container-fluid" style="padding-left:0px; padding-right:0px;">
+
+    <!-- navbar -->
+    <nav class="navbar navbar-light bg-light vertical-align" style="left: 0px; top:0px;width: 100%; display:flex; justify-content: center; padding-bottom:0%; padding-top:1.5%; background-color: #00A79C !important;">
+      <div class="navcontainer" style="width: 100%;">
+        <ul style="text-align: center;">
+          <li class="one ">
+            <a href="botb-register.html" class="dynamicfontsize" style="text-decoration:none; font-family: 'Cocogoose'; color: #CCE6CA; width: 22%;">BOTB</a>
+          </li>
+          <li class="two ">
+            <a href="student-register.html" class="dynamicfontsize" style="text-decoration:none; font-family: 'Cocogoose'; color: #CCE6CA; width: 28%;">Student Performer</a>
+          </li>
+          <li class="three ">
+            <a href="volunteer-register.html" class="dynamicfontsize" style="text-decoration:none; font-family: 'Cocogoose'; color: #CCE6CA; width: 22%;">Volunteer</a>
+          </li>
+          <li class="four ">
+            <a href="vendors-register.html" class="dynamicfontsize" style="text-decoration:none; font-family: 'Cocogoose'; color: #CCE6CA; width: 22%;">Vendors</a>
+          </li>
+          <hr style=" margin-top: .3rem;border-top: 3px solid rgba(0, 0, 0, .1)" />
+        </ul>
+      </div>
+    </nav>
+
+
+    <div class="botb-voting-header-content ">
+      <img src="botbheader.png" style="position:relative; z-index:10; " class=" dynamicbotbheader">
+    </div>
+
+    <div class=" botb-voting-header-content" style="padding-top: 2rem;">
+      <p style="margin-bottom: 0rem; font-family: 'Cocogoose'; color: #cf432c; font-size: 2rem; width: auto;"> SGF BoTB 2018 Application is now closed</p>
+      <p style="margin-bottom: 0rem; font-family: 'Cocogoose'; color: #cf432c; font-size: 1rem; width: auto;"> Voting opens February 26, 2018</p>
+    </div>
+
+
+    <div class="footer-content " style="position: fixed;bottom: 0;left: 0;">
+      <div class="sponsor-logos ">
+        <img id="sun-god-logo-footer " src="images/sgfooter.png " style="max-width: 45px; ">
+        <img id="acse-logo-footer " src="images/ascefooter.png " style="max-width: 45px; ">
+      </div>
+    </div>
+
+    <!-- Google Analytics  -->
+    <script>
+      (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+          (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+      ga('create', 'UA-30719938-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+
+
+  </div>
+</body>
+
+</html>

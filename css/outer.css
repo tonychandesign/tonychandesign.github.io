@@ -8,7 +8,7 @@ body, html {
 body {
   font-family: "Lato";
   color: black;
-  background-color: #ececee;
+  background-color: #ffffff;
   padding-top: 130px; /*150*/
   /*fade out effect */
   opacity: 1;
@@ -22,6 +22,11 @@ h1, h2,h3, h4, h5, h6 {
   font-family: "Lato";
   color: black;
   font-weight: 600;
+}
+
+p {
+  line-height: 2;
+  font-size: 18px;
 }
 
 .remove-padding {
@@ -39,15 +44,15 @@ h1, h2,h3, h4, h5, h6 {
 }
 /* navbar navigation text css */
 .navbar-brand {
-  color: black;
+  color: #424C55;
   font-family: 'Lato';
   margin-right: 0rem;
   font-size: 1.6em;
   font-weight: 600;
-  background-image: linear-gradient(to top, rgba(236,236,238,0));
+  background-image: linear-gradient(to top, rgba(255,255,255,0), rgba(255,255,255,.3),rgba(255,255,255,0.7), rgba(255,255,255,.95),#ffffff,#ffffff, #ffffff);
 }
 .nav-link {
-  color:black;
+  color: #424C55;
 }
 
 /* navbar up and down animation & gradient */
@@ -55,7 +60,7 @@ h1, h2,h3, h4, h5, h6 {
     position: absolute;   /* Initially set to absolute so it is movable with the page */
     top: 60px;
     display: block;
-    background-image: linear-gradient(to top, rgba(236,236,238,0), rgba(236,236,238,.3),rgba(236,236,238,0.7), rgba(236,236,238,.95),#ececee,#ececee, #ececee);
+    background-image: linear-gradient(to top, rgba(255,255,255,0), rgba(255,255,255,.3),rgba(255,255,255,0.7), rgba(255,255,255,.95),#ffffff,#ffffff, #ffffff);
     padding-bottom: 70px;
     will-change: transform; /* possibly helps w/ scrolling performance? */
 }
@@ -68,12 +73,12 @@ h1, h2,h3, h4, h5, h6 {
 .sliding-middle-out {
 	display: inline-block;
 	position: relative;
-  color: #374456;
+  color: #424C55;
 }
 
 .sliding-middle-out:after {
   width: 0;
-	background: #374456;
+	background: #424C55;
   content: '';
 	display: block;
 	margin: auto;
@@ -82,15 +87,22 @@ h1, h2,h3, h4, h5, h6 {
 	transition: width .2s ease, background-color .5s ease;
 }
 
+.container-fluid {
+  padding-left:0px; 
+  padding-right: 0px;
+    /* disable right left scrolling */
+    overflow-x: hidden;
+}
+
 .sliding-middle-out.active:after, .sliding-middle-out:hover:after {
 	width: 100%;
-	background: #374456;
+	background: #424C55;
 }
 
 /* Tony Chan in navbar alignment when shrinking screen */
 @media screen and (min-width: 992px) {
   .tonychan {
-    margin-left: 15px;
+    margin-left: 30px;
     text-align: left;
   }
 }
@@ -112,18 +124,15 @@ h1 { /* else align the header at at the center */
 .box {
   position: relative;
   display: inline-block;
-  width: 800px;
-  height: 310px;
   background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
   -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .box::after {
   content: "";
-  border-radius: 5px;
+  border-radius: 2px;
   position: absolute;
   z-index: -1;
   top: 0;
@@ -139,6 +148,7 @@ h1 { /* else align the header at at the center */
   -webkit-transform: scale(1.02, 1.02);
   transform: scale(1.02, 1.02);
 }
+
 .box:hover::after {
     opacity: 1;
 }
@@ -147,14 +157,43 @@ h1 { /* else align the header at at the center */
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
 }
+.box3 {
+  position: relative;
+  display: inline-block;
+  width: 800px;
+  height: 310px;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+}
+
+
+/* box overlays for NDA */
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 2px;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: #000000;
+  
+}
+.box3:hover .overlay {
+  opacity: .8;
+}
+.ndatext {
+  color: #ffffff;
+  font-size: 20px;
+}
+
 
 /* modifies the link: no underline/ navy color effect when mouse hovers over it */
 a:hover,
 .a:hover {
-   text-decoration: none !important;
-   color: #374456;
+  text-decoration: none !important;
+  color: #424C55;
 
 }
 
@@ -182,13 +221,8 @@ a:hover,
 }
 /* horizontally centers elements inside box */
 .modal-dialogtwo{
-    position: relative;
-    display: table;
-    overflow-y: auto;
-    overflow-x: auto;
     width: auto;
     height: auto;
-    min-width: 60%;
 }
 
 .row-centerer {
@@ -222,7 +256,7 @@ a:hover,
     text-align: center;
   }
   .paddingnigga {
-      padding-top:0px;
+    padding-top:0px;
   }
   .resumeaboutpad {
     margin-top:70px;
@@ -239,13 +273,15 @@ a:hover,
 /* EACH ROW FOR BOXES (INCLUDES BACKGROUND) */
 .content-section-a {
   padding: 100px 0;
-  background-color: #ececee;
+  background-color: #ffffff;
 }
 .content-section-b {
   padding: 10px 0;
-  background-color: #ececee;
 }
-
+.content-section-c {
+  padding: 10px 0;
+  max-width: 50%; 
+}
 .section-heading {
   margin-bottom: 30px;
 }
@@ -266,7 +302,7 @@ a:hover,
   /*padding: 100px 0;*/
   color: #000000;
   /* if you want a background for the bottom set it here as background: */
-  background-color: #ececee;
+  background-color: #ffffff;
 }
 
 .banner h2 {
@@ -358,9 +394,9 @@ a.btn-social,
 
 /* increase carousel slide speed */
 .carousel-item {
-  transition: -webkit-transform 0.3s ease;
-  transition: transform 0.3s ease;
-  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.25s ease;
+  transition: transform 0.25s ease;
+  transition: transform 0.25s ease, -webkit-transform 0.25s ease;
 }
 
 
@@ -423,49 +459,36 @@ a.btn-social,
 }
 #theprocess {
   font-weight:500;
-  font-size: 350%;
-  border-style: solid;
-  border-top: single  #ff0000;
-  border-bottom: single  #ff0000;
-  border-right:none;
-  border-left:none;
+  font-size: 250%;
   margin-bottom:0;
   margin-top:0;
-  text-align: center;
-}
-
-/* move up scrolling animation */
-@import "compass/css3";
-* {
-  @include box-sizing(border-box);
-}
-.module {
-}
-.come-in {
-  transform: translateY(150px);
-  animation: come-in 0.8s ease forwards;
-}
-.come-in:nth-child(odd) {
-  animation-duration: 0.6s;
-}
-.already-visible {
-  transform: translateY(0);
-  animation: none;
-}
-@keyframes come-in {
-  to { transform: translateY(0); }
 }
 
 /* Index header animation CSS*/
 .large-header{
-  background:#ececee;
-  text-align:center
+  background:#ffffff;
 }
 #x-canvas{
-opacity:0.5
+  opacity:0.25;
 }
 .padder {
   top:80px;
+  bottom: 80px;
+}
+.textwidth {
+  width:50%;
+}
+
+.respCoverPadding {
+  padding-top: 60px;
+}
+
+/* project/internship description  */
+.dynamicdescription {
+  max-width: 90%;
+}
+.dynamicthumbnail {
+  max-width: 90%;
 }
 
 @media screen and (min-height: 900px) {
@@ -476,5 +499,40 @@ opacity:0.5
 @media screen and (max-width: 200px) , screen and (max-height: 900px) {
   .padder {
     top:80px;
+  }
+  
+}
+@media screen and (max-width: 600px) {
+  .textwidth {
+    width:80%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .dynamicdescription {
+    max-width: 60%;
+  }
+  .dynamicthumbnail {
+    max-width: 70%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .respCoverPadding {
+    padding-top: 40px;
+  }
+}
+@media screen and (max-width: 994px) {
+  .respCoverPadding {
+    padding-top: 100px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .respCoverPadding {
+    padding-top: 150px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .respCoverPadding {
+    padding-top: 180px;
   }
 }

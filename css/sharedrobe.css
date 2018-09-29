@@ -2,132 +2,126 @@
  * Proj2 Sharedrobe CSS
  */
 
- body {
-   padding-top: 80px;
- }
- @media (max-width: 978px) {
-   body {
-     padding-top: 140px;
-   }
- }
+body {
+  padding-top: 80px;
+}
 
- .brackets-mint-text {
-   font: 20px/26px "Lato", sans-serif;
-   background-image: linear-gradient(#53ada5, #53ada5),
-     linear-gradient(#53ada5, #53ada5),
-     linear-gradient(#53ada5, #53ada5),
-     linear-gradient(#53ada5, #53ada5);
+.brackets-mint-text {
+  font: 20px/26px "Lato", sans-serif;
+  background-image: linear-gradient(#53ada5, #53ada5),
+    linear-gradient(#53ada5, #53ada5), linear-gradient(#53ada5, #53ada5),
+    linear-gradient(#53ada5, #53ada5);
 
-   background-repeat: no-repeat;
-   background-size: 15px 3px;
-   background-position: top left, top right, bottom left, bottom right;
+  background-repeat: no-repeat;
+  background-size: 15px 3px;
+  background-position: top left, top right, bottom left, bottom right;
 
-   border: solid #53ada5;
-   text-align: justify;
-   border-width: 0 3px;
-   display: inline-block;
-   vertical-align: top;
-   padding: 20px 20px;
-   margin: auto;
- }
+  border: solid #53ada5;
+  text-align: justify;
+  border-width: 0 3px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 20px 20px;
+  margin: auto;
+}
 
- .brackets-orange-pic {
-   font: 20px/26px "Lato", sans-serif;
-   background-image: linear-gradient(#f07b36, #f07b36),
-     linear-gradient(#f07b36, #f07b36),
-     linear-gradient(#f07b36, #f07b36),
-     linear-gradient(#f07b36, #f07b36);
+.brackets-orange-pic {
+  font: 20px/26px "Lato", sans-serif;
+  background-image: linear-gradient(#f07b36, #f07b36),
+    linear-gradient(#f07b36, #f07b36), linear-gradient(#f07b36, #f07b36),
+    linear-gradient(#f07b36, #f07b36);
 
-   background-repeat: no-repeat;
-   background-size: 60px 3px;
-   background-position: top left, top right, bottom left, bottom right;
+  background-repeat: no-repeat;
+  background-size: 60px 3px;
+  background-position: top left, top right, bottom left, bottom right;
 
-   border: solid #f07b36;
-   text-align: justify;
-   border-width: 0 3px;
-   display: inline-block;
-   vertical-align: top;
-   padding: 20px 20px;
-   margin: auto;
- }
- .brackets-orange-xd {
-   font: 20px/26px "Lato", sans-serif;
-   background-image: linear-gradient(#f07b36, #f07b36),
-     linear-gradient(#f07b36, #f07b36),
-     linear-gradient(#f07b36, #f07b36),
-     linear-gradient(#f07b36, #f07b36);
+  border: solid #f07b36;
+  text-align: justify;
+  border-width: 0 3px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 20px 20px;
+  margin: auto;
+}
+.brackets-orange-xd {
+  font: 20px/26px "Lato", sans-serif;
+  background-image: linear-gradient(#f07b36, #f07b36),
+    linear-gradient(#f07b36, #f07b36), linear-gradient(#f07b36, #f07b36),
+    linear-gradient(#f07b36, #f07b36);
 
-   background-repeat: no-repeat;
-   background-size: 15px 3px;
-   background-position: top left, top right, bottom left, bottom right;
+  background-repeat: no-repeat;
+  background-size: 15px 3px;
+  background-position: top left, top right, bottom left, bottom right;
 
-   border: solid #f07b36;
-   text-align: justify;
-   border-width: 0 3px;
-   display: inline-block;
-   vertical-align: top;
-   padding: 10px 10px;
-   margin: auto;
- }
+  border: solid #f07b36;
+  text-align: justify;
+  border-width: 0 3px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px 10px;
+  margin: auto;
+}
 
- .picspacertop {
-   margin-top: 2.6%;
- }
- .picspacerbot {
-     margin-top: 3%;
- }
+.picspacertop {
+  margin-top: 2.6%;
+}
+.picspacerbot {
+  margin-top: 3%;
+}
 
 /*rotate the font awesome arrow to point bottom left*/
- .fa-rotate-45 {
-    -webkit-transform: rotate(155deg);
-    -moz-transform: rotate(155deg);
-    -ms-transform: rotate(155deg);
-    -o-transform: rotate(155deg);
-    transform: rotate(155deg);
+.fa-rotate-45 {
+  -webkit-transform: rotate(155deg);
+  -moz-transform: rotate(155deg);
+  -ms-transform: rotate(155deg);
+  -o-transform: rotate(155deg);
+  transform: rotate(155deg);
 }
 .fa-rotate-45-two {
-   -webkit-transform: rotate(155deg);
-   -moz-transform: rotate(155deg);
-   -ms-transform: rotate(155deg);
-   -o-transform: rotate(155deg);
-   transform: rotate(155deg);
+  -webkit-transform: rotate(155deg);
+  -moz-transform: rotate(155deg);
+  -ms-transform: rotate(155deg);
+  -o-transform: rotate(155deg);
+  transform: rotate(155deg);
 }
 .fa-flipdown {
-   -webkit-transform: rotate(0deg);
-   -moz-transform: rotate(0deg);
-   -ms-transform: rotate(0deg);
-   -o-transform: rotate(0deg);
-   transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
 }
 @media (max-width: 990px) {
   .fa-rotate-45 {
-     -webkit-transform: rotate(90deg);
-     -moz-transform: rotate(90deg);
-     -ms-transform: rotate(90deg);
-     -o-transform: rotate(90deg);
-     transform: rotate(90deg);
- }
- .fa-flipdown {
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     -o-transform: rotate(90deg);
     transform: rotate(90deg);
- }
+  }
+  .fa-flipdown {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
 }
 
 /*black boarder around pictures for lofi*/
-.ImageBorder{
-  max-width:98%;
-  padding:1%; /* A percentage that, when doubled and added to the above, makes 100%. */
-  background:black; /* Color of the faux border. */
+.ImageBorder {
+  max-width: 98%;
+  padding: 1%; /* A percentage that, when doubled and added to the above, makes 100%. */
+  background: black; /* Color of the faux border. */
 }
-.ImageBorderorange{
-  max-width:98%;
-  padding:1%; /* A percentage that, when doubled and added to the above, makes 100%. */
-  background:#f07b36;
+.ImageBorderorange {
+  max-width: 98%;
+  padding: 1%; /* A percentage that, when doubled and added to the above, makes 100%. */
+  background: #f07b36;
 }
 
-iframe, object, embed {
-    max-width: 100%;
+iframe,
+object,
+embed {
+  max-width: 100%;
 }

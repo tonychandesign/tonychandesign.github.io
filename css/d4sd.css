@@ -4,14 +4,6 @@
   .bracketposterwidth{
     width: 50%;
   }
-  @media (max-width: 978px) {
-    body {
-      padding-top: 180px;
-    }
-    .bracketposterwidth{
-      width: 100%;
-    }
-  }
 
 .brackets-red-text {
   font: 20px/26px "Lato", sans-serif;

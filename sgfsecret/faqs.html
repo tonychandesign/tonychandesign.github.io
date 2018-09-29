@@ -1,0 +1,464 @@
+<html lang="en">
+
+<head>
+  <title> Sun God Festival: FAQ </title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="about.css" />
+  <!-- countdown css -->
+  <link rel="stylesheet" type="text/css" href="fullstyle.css" />
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css" />
+
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+  <!-- aos side animation -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet prefetch' href='https://cdn.rawgit.com/michalsnik/aos/2.0.1/dist/aos.css'>
+  <link rel="stylesheet" href="aos/css/style.css">
+
+  <style>
+    /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+
+    .accordion {
+      max-width: 80%;
+      margin: 0 auto 100px;
+      border-top: 1px solid #00A79C;
+    }
+
+    .accordion li {
+      border-bottom: 1px solid #00A79C;
+      position: relative;
+    }
+
+    .accordion li p {
+      display: none;
+      padding: 10px 25px 30px;
+      color: #000;
+    }
+
+    .accordion a {
+      width: 100%;
+      display: block;
+      cursor: pointer;
+      font-weight: 600;
+      line-height: 3;
+      font-size: 14px;
+      font-size: 0.875rem;
+      /* text-indent: 15px; */
+      user-select: none;
+    }
+
+    .accordion a:after {
+      width: 8px;
+      height: 8px;
+      border-right: 1px solid #00A79C;
+      border-bottom: 1px solid #000;
+      position: absolute;
+      right: 10px;
+      content: " ";
+      top: 17px;
+      transform: rotate(-45deg);
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+    }
+
+    .accordion p {
+      font-size: 13px;
+      font-size: 0.8125rem;
+      line-height: 2;
+      padding: 10px;
+    }
+
+    a.active:after {
+      transform: rotate(45deg);
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+    }
+
+    li>#jj {
+      counter-increment: item;
+    }
+
+    #jj::before {
+      content: counter(item) ".";
+      color: #00A79C;
+      display: inline-block;
+      width: 1.5em;
+      margin-left: -1.5em;
+    }
+
+    #mm::before {
+      content: "◦";
+      color: #00A79C;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
+  </style>
+
+</head>
+
+<body class="container-fluid" style="background-image: url('backgrounds/SGF18_GeneralBG.png'); font-family: 'apercu';padding-left:0px; padding-right:0px;">
+  <div class="row">
+    <!-- navbar -->
+    <nav class="navbar" style="left: 0px; top:0px;width: 100%; display:flex; justify-content: center; padding-bottom:0%; padding-top:1.5%; background-color: #10302b !important; padding-left: 0;padding-right: 0;">
+      <div class="navcontainer navwidth">
+        <ul style="text-align: center;">
+          <li class="two ">
+            <a href="index.html" class="dynamicfontsize" style="text-decoration:none; font-family: 'Cocogoose'; color: #CCE6CA; width: 17%;">HOME</a>
+          </li>
+          <li class="three ">
+            <a href="line-up.html" class="dynamicfontsize" style="text-decoration:none; font-family: 'Cocogoose'; color: #CCE6CA; width: 17%;">LINEUP</a>
+          </li>
+
+          <li class="dropdown one">
+            <a href="#" class="dropdown-toggle dynamicfontsize" data-toggle="dropdown" style="text-decoration:none; font-family: 'Cocogoose'; color: #CCE6CA; width:17%;">INFO <b class="caret"></b></a>
+            <ul class="dropdown-menu" style="background-color: #10302b ">
+              <li><a href="about.html" style="font-family: 'Cocogoose'; color: #CCE6CA; width: 100%; text-align: left; padding-left: 20px;">About</a></li>
+              <li><a href="registration.html" style="font-family: 'Cocogoose'; color: #CCE6CA; width: 100%; text-align: left; padding-left: 20px;">Registration</a></li>
+              <li><a href="shop.html" style="font-family: 'Cocogoose'; color: #CCE6CA; width: 100%; text-align: left; padding-left: 20px;">Apparel</a></li>
+              <li><a href="transportation.html" style="font-family: 'Cocogoose'; color: #CCE6CA; width: 100%; text-align: left; padding-left: 20px;">Transportation</a></li>
+              <li><a href="studentperformer.html" style="font-family: 'Cocogoose'; color: #CCE6CA; width: 100%; text-align: left; padding-left: 20px;">Student Performers</a></li>
+              <!-- <li class="divider"></li> -->
+              <li><a href="ada-info.html" style="font-family: 'Cocogoose'; color: #CCE6CA; width: 100%; text-align: left; padding-left: 20px;">ADA Info</a></li>
+              <li><a href="volunteer.html" style="font-family: 'Cocogoose'; color: #CCE6CA; width: 100%; text-align: left; padding-left: 20px;">Volunteers</a></li>
+              <li><a href="sungodforacause.html" style="font-family: 'Cocogoose'; color: #CCE6CA; width: 100%; text-align: left; padding-left: 20px;">Sun God For A Cause</a></li>
+              <li><a href="sgfbabies.html" style="font-family: 'Cocogoose'; color: #CCE6CA; width: 100%; text-align: left; padding-left: 20px;">Sun God Babies</a></li>
+              <li><a href="faqs.html" style="font-family: 'Cocogoose'; color: #CCE6CA; width: 100%; text-align: left; padding-left: 20px;">FAQ</a></li>
+            </ul>
+          </li>
+
+          <li class="four ">
+            <a href="sponsors.html" class="dynamicfontsize" style="text-decoration:none; font-family: 'Cocogoose'; color: #CCE6CA; width: 17%;">SPONSORS</a>
+          </li>
+          <li class="five ">
+            <a href="safety.html" class="dynamicfontsize" style="text-decoration:none; font-family: 'Cocogoose'; color: #CCE6CA; width: 17%;">SAFETY</a>
+          </li>
+          <hr style=" margin-top: .3rem;border-top: 3px solid rgba(0, 0, 0, .1)" />
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div class="d-flex flex-row-reverse">
+    <div class="sponsor-logostop" style="padding-top: 10px; padding-bottom: 10px;display: flex;">
+      <a href="https://www.facebook.com/ucsdasce/" target="_blank" title="" style="padding-left: 10px;padding-right: 10px;"><img src="images/facebook.png" class="img-responsive grow" style="min-width: 20px; max-width: 30px;"></a>
+      <a href="http://asce.ucsd.edu" target="_blank" title="" style="padding-left: 10px;padding-right: 10px;"><img src="images/asce.png" class="img-responsive grow" style="min-width: 20px; max-width: 30px;" ></a>
+      <a href="https://www.instagram.com/ucsdasce/" target="_blank" title="" style="padding-left: 10px;padding-right: 10px;"><img src="images/insta.png" class="img-responsive grow" style="min-width: 20px; max-width: 30px;"></a>
+      <a href="https://twitter.com/ucsdASCE?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" title="" style="padding-left: 10px;padding-right: 10px;"><img src="images/twit.png" class="img-responsive grow" style="min-width: 20px; max-width: 30px;" ></a>
+    </div>
+  </div>
+
+  <div class="item item--secondary" data-aos="fade-right" data-aos-anchor="#trigger-left" data-aos-anchor-placement="top-top" style="z-index: 1000;">
+    <img src="aos/test2.png" class="img-fluid" alt="Cinque Terre">
+  </div>
+  <div class="item item--primary" data-aos="fade-left" data-aos-anchor="#trigger-left" data-aos-anchor-placement="top-top" style="z-index: 1000;">
+    <img src="aos/test.png" class="img-fluid" alt="Cinque Terre">
+  </div>
+
+
+  <div class="row" style="margin-top: 40px;"></div>
+  <center>
+    <h2 style="font-family: 'Cocogoose';color: #cf432c;"> FREQUENTLY ASKED QUESTIONS </h2>
+  </center>
+
+
+  <div class="container ">
+    <div class="row " style="margin-top: 60px; "></div>
+    <h4 style="font-family: 'Cocogoose';color: #cf432c; padding-left: 10%;"> HEALTH & SAFETY</h4>
+
+    <ul class="accordion " style=" list-style-type: none; ">
+      <li style="display: list-item;text-align: -webkit-match-parent; ">
+        <a style="text-align: left; padding-left: 30px; padding-right: 30px;color: #10302b;">What is being done to make the festival safe?</a>
+        <p style="text-align: left; margin-left: 2rem;margin-bottom: 0rem; color: #10302b;">Student health and safety is the top priority of the festival organizers. The festival grounds are designed to be a safe space for students. Heightened enforcement will occur at festival entrances to prevent access to visibly intoxicated students
+          and to block prohibited substances and items from entering the event. All attendees will be screened at the entrance, including a pat down and scanning of pre-registered UCSD student IDs, prior to admission. Similar to other large music festival
+          entrances, drug recognition experts will be present to intervene with any intoxicated students, and security staff will use drug-detection dogs as a safety measure to ensure the festival is a drug-free space. Students who do show up under the
+          influence of drugs or alcohol will be unable to enter the Sun God Festival. They also can be subject to arrest or other consequences related to violation of the UC San Diego Student Code of Conduct and/or taken to appropriate medical care.
+          <br><br> As in years past, educational programs around the festival focus on key topics such as drug and alcohol safety and sexual assault prevention. In addition, the “floaties” bystander intervention training program has been expanded and
+          student “floaties” who have gone through the training program will have a large presence at this year’s Sun God Festival. ASCE is also supporting other initiatives and groups on campus working to educate and support the development of students’
+          understanding of these issues.
+        </p>
+      </li>
+      <li style="display: list-item;text-align: -webkit-match-parent; ">
+        <a style="text-align: left; padding-left: 30px; padding-right: 30px;color: #10302b;">What happens if I show up to the event intoxicated?</a>
+        <p style="text-align: left; margin-left: 2rem;margin-bottom: 0rem; color: #10302b;">To ensure the festival grounds are a safe space, students visibly intoxicated and under the influence of drugs or alcohol will be unable to enter the Sun God Festival. Heightened enforcement will occur at the festival entrance. All attendees will
+          be screened, including a pat down and scanning of pre-registered UCSD student IDs, prior to admission. Similar to other large music festival entrances, drug recognition experts will be present to intervene with any intoxicated students, and
+          security staff will use drug-detection dogs as a safety measure to ensure the festival is a drug-free space. Students who do show up under the influence of drugs or alcohol can be subject to arrest or other consequences related to violation
+          of the UC San Diego Student Code of Conduct and/or taken to appropriate medical care.</p>
+      </li>
+      <li style="display: list-item;text-align: -webkit-match-parent; ">
+        <a style="text-align: left; padding-left: 30px; padding-right: 30px;color: #10302b;">If I can't find my friend and they are not answering their phone, what can I do?</a>
+        <p style="text-align: left; margin-left: 2rem;margin-bottom: 0rem; color: #10302b;">Call the Sun God Detox hotline at (858) 246-0393. A volunteer will let you know if your friend is in Detox or if they have been taken to jail. Volunteers cannot disclose if your friend has been transported to the hospital.</p>
+      </li>
+      <li style="display: list-item;text-align: -webkit-match-parent; ">
+        <a style="text-align: left; padding-left: 30px; padding-right: 30px;color: #10302b;">My friend just got taken to Detox! Where and when can I pick them up?</a>
+        <p style="text-align: left; margin-left: 2rem;margin-bottom: 0rem; color: #10302b;">If your friend was taken to the detox center, you can call (858) 246-0393 to confirm that have been admitted. It takes about 20 minutes from the time a student is picked up before they are fully checked into Detox. Please note that if you call
+          right away, there might not be a record of them yet. If your friend is checked in, a volunteer will let you know the estimated time to call back (approx. 4 hours) and where to pick them up.</p>
+      </li>
+      <li style="display: list-item;text-align: -webkit-match-parent; ">
+        <a style="text-align: left; padding-left: 30px; padding-right: 30px;color: #10302b;">Are there special campus health & safety policies the week of Sun God?</a>
+        <p style="text-align: left; margin-left: 2rem;margin-bottom: 0rem; color: #10302b;">Yes, to ensure that the UCSD campus is a safe space for all members of our community, enhancements and revisions to campus policies and protocols will be in effect during the week of the festival. To learn more, please contact your college's Residence
+          Life office or visit the UCSD Student Conduct <span class="pseudolink " onmouseover=" " style="cursor: pointer; font-family: 'Cocogoose'; display: inline;color: #cf432c; margin-bottom: 0; font-size: .75rem;" onclick="window.open(
+        'https://students.ucsd.edu/sponsor/student-conduct/') ">
+website</span>.</p>
+      </li>
+    </ul>
+
+    <div class="row " style="margin-top: 60px; "></div>
+    <h4 id="trigger-left" style="font-family: 'Cocogoose';color: #cf432c; padding-left: 10%;"> GENERAL</h4>
+    <ul class="accordion " style=" list-style-type: none; ">
+      <li style="display: list-item;text-align: -webkit-match-parent; ">
+        <a style="text-align: left; padding-left: 30px; padding-right: 30px;color: #10302b;">When will the festival be held?</a>
+        <p style="text-align: left; margin-left: 2rem;margin-bottom: 0rem;color: #10302b; ">The Sun God Festival will be held at RIMAC Field on April 28th, 2018 from 12PM-6PM.</p>
+      </li>
+      <li style="display: list-item;text-align: -webkit-match-parent; ">
+        <a style="text-align: left; padding-left: 30px; padding-right: 30px;color: #10302b;">What will be the format of the event?</a>
+        <p style="text-align: left; margin-left: 2rem;margin-bottom: 0rem; color: #10302b;">The event will include two stages: the Sun God Stage and the North Stage, featuring a variety of national touring musical acts. Additional attractions will be available at the event, including lounges, sponsor areas and interactive art.</p>
+      </li>
+      <li style="display: list-item;text-align: -webkit-match-parent; ">
+        <a style="text-align: left; padding-left: 30px; padding-right: 30px;color: #10302b;">What do I need to bring with me?</a>
+        <p style="text-align: left; margin-left: 2rem;margin-bottom: 0rem; color: #10302b;">While at the Festival, you must carry a valid UCSD photo ID. We encourage you to bring an empty, reusable, non-glass water bottle so you can enjoy free water throughout the event! Don't forget to stay hydrated.</p>
+      </li>
+      <li style="display: list-item;text-align: -webkit-match-parent; ">
+        <a style="text-align: left; padding-left: 30px; padding-right: 30px;color: #10302b;">Will you be posting set times in advance?</a>
+        <p style="text-align: left; margin-left: 2rem;margin-bottom: 0rem; color: #10302b;">Yes. Set times will be posted on this website page during the week of the festival.</p>
+      </li>
+      <li style="display: list-item;text-align: -webkit-match-parent; ">
+        <a style="text-align: left; padding-left: 30px; padding-right: 30px;color: #10302b;">Are there opportunities to volunteer at the event?</a>
+        <p style="text-align: left; margin-left: 2rem;margin-bottom: 0rem; color: #10302b;">Unfortunately, our volunteer applications are now closed. If you would like to be notified of future volunteer opportunities, please sign up <span class="pseudolink " onmouseover=" " style="cursor: pointer; font-family: 'Cocogoose'; display: inline;color: #cf432c; margin-bottom: 0; font-size: .75rem;"
+            onclick="window.open(
+      'https://docs.google.com/forms/d/e/1FAIpQLSfpo_nY-a3vVICeKbaI2TXDyw8xTIsVsHUlT-eE67HU7pGAsA/viewform') ">
+here</span>. </p>
+      </li>
+      <li style="display: list-item;text-align: -webkit-match-parent; ">
+        <a style="text-align: left; padding-left: 30px; padding-right: 30px;color: #10302b;">Will there be Sun God Merchandise sold?</a>
+        <p style="text-align: left; margin-left: 2rem;margin-bottom: 0rem;color: #10302b;">Yes, official Sun God Festival merchandise will be available through <span class="pseudolink" onmouseover=" " style="cursor: pointer; font-family: 'Cocogoose'; display: inline;color: #cf432c; margin-bottom: 0; font-size: .75rem;" onclick="window.open( 'https://to.ucsd.edu')">
+Triton Outfitters online</span> and at their store in advance of the festival and at the Triton Outfitters Experience at the festival, while supplies last.
+        </p>
+      </li>
+      <li style="display: list-item;text-align: -webkit-match-parent; ">
+        <a style="text-align: left; padding-left: 30px; padding-right: 30px;color: #10302b;">Will there be wifi on the field?</a>
+        <p style="text-align: left; margin-left: 2rem;margin-bottom: 0rem; color: #10302b;">We cannot guarantee wifi access on RIMAC Field, but attendees should be able to utilize the UCSD-PROTECTED or UCSD-GUEST Wi-Fi networks (as applicable).</p>
+      </li>
+      <li style="display: list-item;text-align: -webkit-match-parent; ">
+        <a style="text-align: left; padding-left: 30px; padding-right: 30px;color: #10302b;">What is the Residential Life Policy the weekend of the festival?</a>
+        <p style="text-align: left; margin-left: 2rem;margin-bottom: 0rem; color: #10302b;">Special housing policies will be implemented to mitigate the prospect of multiple large gatherings or disruptions in the residential communities and to assist staff in efficiently handling any situations in the living areas over the weekend of
+          the Sun God Festival. This year, non-UCSD-affiliated guests will not be allowed to stay the residential areas during the weekend of the Sun God Festival (April 26 – 29). <br><br>Additionally, only residents of their respective residential areas
+          are allowed to be present in living spaces of those areas during specified time periods during the weekend of the Sun God Festival. Please refer to your RA or Residential Life Office for more information on these policy changes and these specified
+          time periods.</p>
+      </li>
+    </ul>
+
+    <div class="row " style="margin-top: 60px; "></div>
+    <h4 style="font-family: 'Cocogoose';color: #cf432c; padding-left: 10%;">TICKETS & REGISTRATION</h4>
+    <ul class="accordion " style=" list-style-type: none; ">
+      <li style="display: list-item;text-align: -webkit-match-parent; ">
+        <a style="text-align: left; padding-left: 30px; padding-right: 30px;color: #10302b;">Who can attend?</a>
+        <p style="text-align: left; margin-left: 2rem;margin-bottom: 0rem; color: #10302b;">Only undergraduate students enrolled at UC San Diego for at least one quarter during the 2017-2018 school year (i.e. Fall 2017, Winter 2018 or Spring 2018) are eligible to attend. Summer sessions from 2017 or 2018 are not applicable.<br><br>The
+          undergraduate student activity fee provides the majority of the funding for the festival. A limited number of tickets will be available for sale to UC San Diego graduate students (including students from the Rady School, Scripps Institution
+          of Oceanography, IR/PS, UC San Diego School of Medicine and Skaggs School of Pharmacy) only. For more information about registration, please visit the <span class="pseudolink " onmouseover=" " style="cursor: pointer; font-family:'Cocogoose'; display: inline;color: #cf432c; margin-bottom: 0; font-size: .75rem; "
+            onclick="window.open( 'registration.html') ">Registration Page</span>.</p>
+      </li>
+      <li style="display: list-item;text-align: -webkit-match-parent; ">
+        <a style="text-align: left; padding-left: 30px; padding-right: 30px;color: #10302b;">Will there be re-entry?</a>
+        <p style="text-align: left; margin-left: 2rem;margin-bottom: 0rem; color: #10302b;">No, due to the shorter hours of the festival, a no re-entry policy will be in effect.
+        </p>
+      </li>
+      <li style="display: list-item;text-align: -webkit-match-parent; ">
+        <a style="text-align: left; padding-left: 30px; padding-right: 30px;color: #10302b;">I'm an undergraduate, am I guaranteed admission?</a>
+        <p style="text-align: left; margin-left: 2rem;margin-bottom: 0rem; color: #10302b;">No – all UCSD undergraduate students must register for festival access, which is subject to venue capacity. Students who are registered to attend must bring their valid UCSD student ID card to enter the event. Your UCSD ID card is your ticket.
+          Festival wristbands are not being issued this year.
+        </p>
+      </li>
+      <li style="display: list-item;text-align: -webkit-match-parent; ">
+        <a style="text-align: left; padding-left: 30px; padding-right: 30px;color: #10302b;">Can international or extension students attend?</a>
+        <p style="text-align: left; margin-left: 2rem;margin-bottom: 0rem; color: #10302b;">Only international or extension students whose PID begins with the letter “A” are eligible.</p>
+      </li>
+      <li style="display: list-item;text-align: -webkit-match-parent; ">
+        <a style="text-align: left; padding-left: 30px; padding-right: 30px;color: #10302b;">I graduated early/took a quarter off, am I still eligible to attend?</a>
+        <p style="text-align: left; margin-left: 2rem;margin-bottom: 0rem; color: #10302b;">Yes, entry is free for undergraduate students enrolled at UC San Diego for at least one quarter during the 2017-2018 school year (i.e. Fall 2017, Winter 2018, or Spring 2018). Summer sessions from 2017 or 2018 are not applicable.</p>
+      </li>
+      <li style="display: list-item;text-align: -webkit-match-parent; ">
+        <a style="text-align: left; padding-left: 30px; padding-right: 30px;color: #10302b;">I graduated early this year but lost my UCSD ID, can I still attend?</a>
+        <p style="text-align: left; margin-left: 2rem;margin-bottom: 0rem; color: #10302b;">Sorry, but a valid UCSD student ID is required to attend. Lost IDs for graduated students cannot be replaced. Please contact the <span class="pseudolink " onmouseover="
+        " style="cursor: pointer; font-family: 'Cocogoose'; display: inline;color: #cf432c; margin-bottom: 0; font-size: .75rem; " onclick="window.open( 'https://students.ucsd.edu/finances/campus-cards/how-to-get.html') ">
+Campus Cards Office</span> for more information.</p>
+      </li>
+      <li style="display: list-item;text-align: -webkit-match-parent; ">
+        <a style="text-align: left; padding-left: 30px; padding-right: 30px;color: #10302b;">Can I use my friend’s pre-registered UCSD ID card or buy/rent a friend’s pre-registered UCSD ID card to attend the festival?</a>
+        <p style="text-align: left; margin-left: 2rem;margin-bottom: 0rem; color: #10302b;">No. UCSD ID cards are not transferable. Misuse of a UCSD ID card is a violation of the student code of conduct and the UCSD Principles of Community. Students who allow someone else to use their ID card are subject to significant consequences through
+          the student conduct process.</p>
+      </li>
+      <li style="display: list-item;text-align: -webkit-match-parent; ">
+        <a style="text-align: left; padding-left: 30px; padding-right: 30px;color: #10302b;">Is the festival for all ages?</a>
+        <p style="text-align: left; margin-left: 2rem;margin-bottom: 0rem; color: #10302b;">Yes. (Valid UCSD ID required)</p>
+      </li>
+      <li style="display: list-item;text-align: -webkit-match-parent; ">
+        <a style="text-align: left; padding-left: 30px; padding-right: 30px;color: #10302b;">Do I need a wristband to get in?</a>
+        <p style="text-align: left; margin-left: 2rem;margin-bottom: 0rem; color: #10302b;">No, festival wristbands are not being issued this year. If you have successfully registered to attend the festival, your UCSD ID card is your ticket. Just bring your UCSD ID card to the entrance to be admitted.
+        </p>
+      </li>
+    </ul>
+
+    <div class="row " style="margin-top: 60px; "></div>
+    <h4 style="font-family: 'Cocogoose';color: #cf432c; padding-left: 10%;">WILL THERE BE...</h4>
+    <ul class="accordion " style=" list-style-type: none; ">
+      <li style="display: list-item;text-align: -webkit-match-parent; ">
+        <a style="text-align: left; padding-left: 30px; padding-right: 30px;color: #10302b;">Will there be First Aid on site?</a>
+        <p style="text-align: left; margin-left: 2rem;margin-bottom: 0rem; color: #10302b;">Yes. First Aid stations will be be available throughout the venue. They will be clearly marked on the festival map and visible on the field.</p>
+      </li>
+      <li style="display: list-item;text-align: -webkit-match-parent; ">
+        <a style="text-align: left; padding-left: 30px; padding-right: 30px;color: #10302b;">Will there be flushable toilets and sinks available?</a>
+        <p style="text-align: left; margin-left: 2rem;margin-bottom: 0rem; color: #10302b;">Sorry, portable toilets only. There will be sinks though!</p>
+      </li>
+      <li style="display: list-item;text-align: -webkit-match-parent; ">
+        <a style="text-align: left; padding-left: 30px; padding-right: 30px;color: #10302b;">Will there be free water?</a>
+        <p style="text-align: left; margin-left: 2rem;margin-bottom: 0rem;color: #10302b; ">Yes – there will be free water for any attendee with a reusable bottle. Free water fill-ups will be available at two locations clearly marked on the festival map.</p>
+      </li>
+      <li style="display: list-item;text-align: -webkit-match-parent; ">
+        <a style="text-align: left; padding-left: 30px; padding-right: 30px;color: #10302b;">Will there be an Info booth/area?</a>
+        <p style="text-align: left; margin-left: 2rem;margin-bottom: 0rem; color: #10302b;">Yes. There will be a combination Lost & Found and Information booth located near the entrance to the field. The location will be clearly marked on the festival map and visible on the field.</p>
+      </li>
+      <li style="display: list-item;text-align: -webkit-match-parent; ">
+        <a style="text-align: left; padding-left: 30px; padding-right: 30px;color: #10302b;">Will there be ADA bathrooms/parking?</a>
+        <p style="text-align: left; margin-left: 2rem;margin-bottom: 0rem; color: #10302b;">Yes. Please visit the <span class="pseudolink " onmouseover=" " style="cursor: pointer; font-family: 'Cocogoose'; display: inline;color: #cf432c; margin-bottom: 0; font-size:.75rem; " onclick="window.open( 'ada-info.html') ">ADA Info Page</span>          for more information for patrons with disabilities.</p>
+      </li>
+      <li style="display: list-item;text-align: -webkit-match-parent; ">
+        <a style="text-align: left; padding-left: 30px; padding-right: 30px;color: #10302b;">Will there be a Lost & Found?</a>
+        <p style="text-align: left; margin-left: 2rem;margin-bottom: 0rem; color: #10302b;">Yes. There will be a combination Lost & Found and Information booth located near the entrance to the field. The location will be clearly marked on the festival map and visible on the field. After the festival, found items will be relocated to
+          the UCSD Police Department.
+        </p>
+      </li>
+      <li style="display: list-item;text-align: -webkit-match-parent; ">
+        <a style="text-align: left; padding-left: 30px; padding-right: 30px;color: #10302b;">Will there be ATMs?</a>
+        <p style="text-align: left; margin-left: 2rem; margin-bottom: 0rem; color: #10302b;">Yes. They will be clearly marked on the Festival map.</p>
+      </li>
+    </ul>
+
+    <div class="row " style="margin-top: 60px; "></div>
+    <h4 style="font-family: 'Cocogoose';color: #cf432c; padding-left: 10%;">CAN I BRING...</h4>
+    <ul class="accordion " style=" list-style-type: none; ">
+      <li style="display: list-item;text-align: -webkit-match-parent; ">
+        <a style="text-align: left; padding-left: 30px; padding-right: 30px;color: #10302b;">What can't I bring to the festival?</a>
+        <p style="text-align: left; margin-left: 2rem; padding-bottom: 0rem; margin-bottom: 0rem; color: #10302b;">Please leave the following items at home. They may NOT be brought into the Sun God Festival:</p>
+        <p id="mm" style="text-align: left; margin-left: 5rem; padding-bottom: 0rem; margin-bottom: 0rem;padding-top:0rem; color: #10302b;">Alcohol</p>
+        <p id="mm" style="text-align: left; margin-left: 5rem; padding-bottom: 0rem; margin-bottom: 0rem;color: #10302b;">Drugs & Drug Paraphernalia</p>
+        <p id="mm" style="text-align: left; margin-left: 5rem; padding-bottom: 0rem; margin-bottom: 0rem; color: #10302b;">Knives, Weapons, etc.</p>
+        <p id="mm" style="text-align: left; margin-left: 5rem; padding-bottom: 0rem; margin-bottom: 0rem; color: #10302b;">Fireworks or Explosives</p>
+        <p id="mm" style="text-align: left; margin-left: 5rem; padding-bottom: 0rem; margin-bottom: 0rem; color: #10302b;">Tobacco or Vapor Products</p>
+        <p id="mm" style="text-align: left; margin-left: 5rem; padding-bottom: 0rem; margin-bottom: 0rem; color: #10302b;">Backpacks</p>
+        <p id="mm" style="text-align: left; margin-left: 5rem; padding-bottom: 0rem; margin-bottom: 0rem; color: #10302b;">No bags larger than 8.5” x 11”</p>
+        <p id="mm" style="text-align: left; margin-left: 5rem; padding-bottom: 0rem; margin-bottom: 0rem; color: #10302b;">Bicycles or Unicycles</p>
+        <p id="mm" style="text-align: left; margin-left: 5rem; padding-bottom: 0rem; margin-bottom: 0rem; color: #10302b;">Skateboards or Roller Skates</p>
+        <p id="mm" style="text-align: left; margin-left: 5rem; padding-bottom: 0rem; margin-bottom: 0rem; color: #10302b;">Professional Cameras</p>
+        <p id="mm" style="text-align: left; margin-left: 5rem; padding-bottom: 0rem; margin-bottom: 0rem; color: #10302b;">Video Cameras</p>
+        <p id="mm" style="text-align: left; margin-left: 5rem; padding-bottom: 0rem; margin-bottom: 0rem;color: #10302b; ">Selfie Sticks, Tripods or Monopods</p>
+        <p id="mm" style="text-align: left; margin-left: 5rem; padding-bottom: 0rem; margin-bottom: 0rem; color: #10302b;">Audio Recording Devices</p>
+        <p id="mm" style="text-align: left; margin-left: 5rem; padding-bottom: 0rem; margin-bottom: 0rem; color: #10302b;">Glass, Cans, Cups or Coolers</p>
+        <p id="mm" style="text-align: left; margin-left: 5rem; padding-bottom: 0rem; margin-bottom: 0rem; color: #10302b;">Disposable Water Bottles</p>
+        <p id="mm" style="text-align: left; margin-left: 5rem; padding-bottom: 0rem; margin-bottom: 0rem; color: #10302b;">Outside Food & Beverage</p>
+        <p id="mm" style="text-align: left; margin-left: 5rem; padding-bottom: 0rem; margin-bottom: 0rem; color: #10302b;">Camel Backs or Bota Bags</p>
+        <p id="mm" style="text-align: left; margin-left: 5rem; padding-bottom: 0rem; margin-bottom: 0rem; color: #10302b;">Instruments</p>
+        <p id="mm" style="text-align: left; margin-left: 5rem; padding-bottom: 0rem; margin-bottom: 0rem; color: #10302b;">Laser Pointers</p>
+        <p id="mm" style="text-align: left; margin-left: 5rem; padding-bottom: 0rem; margin-bottom: 0rem; color: #10302b;">Chains / Chain Wallets</p>
+        <p id="mm" style="text-align: left; margin-left: 5rem; padding-bottom: 0rem; margin-bottom: 0rem; color: #10302b;">Chairs or Umbrellas</p>
+        <p id="mm" style="text-align: left; margin-left: 5rem; padding-bottom: 0rem; margin-bottom: 0rem; color: #10302b;">Totems, Signs or Flags</p>
+        <p id="mm" style="text-align: left; margin-left: 5rem; padding-bottom: 0rem; margin-bottom: 0rem; color: #10302b;">Hula Hoops or Batons</p>
+        <p id="mm" style="text-align: left; margin-left: 5rem; padding-bottom: 0rem; margin-bottom: 0rem; color: #10302b;">Stuffed Animals</p>
+        <p id="mm" style="text-align: left; margin-left: 5rem; padding-bottom: 0rem; margin-bottom: 0rem; color: #10302b;">Pets</p>
+        <p id="mm" style="text-align: left; margin-left: 5rem; margin-bottom: 0rem; ">Drones or Remote Control Aircraft, Toys or Cars</p>
+
+      </li>
+      <li style="display: list-item;text-align: -webkit-match-parent; ">
+        <a style="text-align: left; padding-left: 30px; padding-right: 30px;color: #10302b;">What should I bring to the festival?</a>
+        <p style="text-align: left; margin-left: 2rem;margin-bottom: 0rem; color: #10302b;">Students must bring their pre-registered UCSD student ID cards to enter the festival. No exceptions. You must keep your UCSD student ID card on you at all time while on campus.
+        </p>
+        <p style="text-align: left; margin-left: 2rem;margin-bottom: 0rem; padding-bottom: 0rem; color: #10302b;">Students are also encouraged to bring the following:</p>
+        <p id="mm" style="text-align: left; margin-left: 5rem; padding-bottom: 0rem; margin-bottom: 0rem;padding-top:0rem; color: #10302b;">An empty, non-glass reusable water bottle (get free water at the festival!)</p>
+        <p id="mm" style="text-align: left; margin-left: 5rem; padding-bottom: 0rem; margin-bottom: 0rem; color: #10302b;">A fully charged cell phone (bring a portable charger too, if you've got one)</p>
+        <p id="mm" style="text-align: left; margin-left: 5rem; padding-bottom: 0rem; margin-bottom: 0rem; color: #10302b;">A plan to get home safely</p>
+        <p id="mm" style="text-align: left; margin-left: 5rem; padding-bottom: 0rem;margin-bottom: 0rem; color: #10302b;">Earplugs (it may get a little loud)</p>
+        <p id="mm" style="text-align: left; margin-left: 5rem; padding-bottom: 0rem;margin-bottom: 0rem; color: #10302b;">A hat, sunglasses and sunblock (it could be warm and bright, people)</p>
+        <p id="mm" style="text-align: left; margin-left: 5rem; margin-bottom: 0rem; color: #10302b;">Some cash (be sure to check out our delicious food vendors!)</p>
+
+        <p style="text-align: left; margin-left: 2rem;margin-bottom: 0rem; padding-bottom: 0rem; color: #10302b;">Can I bring outside food/beverage?</p>
+        <p id="mm" style="text-align: left; margin-left: 5rem; padding-bottom: 0rem; margin-bottom: 0rem;padding-top:0rem;color: #10302b; ">No outside food or beverage will be permitted. Food will be sold inside the festival.
+        </p>
+        <p id="mm" style="text-align: left; margin-left: 5rem; margin-bottom: 0rem; color: #10302b;">No disposable water bottles are allowed in the festival, even if they are sealed. Only empty, reusable, non-glass water bottles will be allowed.</p>
+      </li>
+      <li style="display: list-item;text-align: -webkit-match-parent; ">
+        <a style="text-align: left; padding-left: 30px; padding-right: 30px;color: #10302b;">Can I bring a camera?</a>
+        <p style="text-align: left; margin-left: 2rem;margin-bottom: 0rem; color: #10302b;">Point and shoot cameras and camera phones only. NO video or professional cameras with a removable lens, selfie sticks, and other photo accessories will be permitted. </p>
+      </li>
+      <li style="display: list-item;text-align: -webkit-match-parent; ">
+        <a style="text-align: left; padding-left: 30px; padding-right: 30px;color: #10302b;">Can I bring an animal to the Festival?</a>
+        <p style="text-align: left; margin-left: 2rem;margin-bottom: 0rem; color: #10302b;">Service animals specifically trained to assist a person with a disability are welcome. No other animals, including pets, therapy animals, or emotional support animals, are allowed.</p>
+      </li>
+      <li style="display: list-item;text-align: -webkit-match-parent; ">
+        <a style="text-align: left; padding-left: 30px; padding-right: 30px;color: #10302b;">Can I bring a bag to the Festival?</a>
+        <p style="text-align: left; margin-left: 2rem;margin-bottom: 0rem; color: #10302b;">Only bags smaller than 8.5” x 11” will be permitted into the festival. Backpacks are not allowed at the festival.</p>
+      </li>
+    </ul>
+  </div>
+
+  <div class="row " style=" background-repeat: no-repeat; background-size: cover; overflow-x: hidden;">
+    <div class="footer-content" style="background-image: url('icons/SGF18_FooterOnly.png'); overflow-x: hidden;z-index: 9000;">
+      <div class="sponsor-logos ">
+        <img id="sun-god-logo-footer " src="images/SGF18_SGFfooter.png " style="max-width: 45px; ">
+        <img id="acse-logo-footer " src="images/SGF18_ASCEfooter.png " style="max-width: 35px; ">
+      </div>
+      <div class="sponsor-logosleft">
+        <a href="https://ucsandiegobookstore.com" target="_blank">
+          <img id="sun-god-logo-footer " src="icons/SGF18_BookstoreIcon.png" style="max-width: 75px; ">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src='https://cdn.rawgit.com/michalsnik/aos/2.0.1/dist/aos.js'></script>
+  <script src="aos/js/index.js"></script>
+
+  <!-- Google Analytics  -->
+  <script>
+    (function(i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-30719938-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+</body>
+
+<script>
+  (function($) {
+    $('.accordion a').click(function(j) {
+      var dropDown = $(this).closest('li').find('p');
+
+      $(this).closest('.accordion').find('p').not(dropDown).slideUp();
+
+      if ($(this).hasClass('active')) {
+        $(this).removeClass('active');
+      } else {
+        $(this).closest('.accordion').find('a.active').removeClass('active');
+        $(this).addClass('active');
+      }
+
+      dropDown.stop(false, true).slideToggle();
+
+      j.preventDefault();
+    });
+  })(jQuery);
+</script>
+
+</html>

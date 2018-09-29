@@ -13,11 +13,15 @@
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom fonts for this template -->
   <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet"
+    type="text/css">
   <!-- Button Stylesheet -->
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <!-- Custom styles for this template -->
+  <!-- Custom styles -->
   <link href="css/outer.css" rel="stylesheet">
+
+  <!-- scroll fade in from left/right animation -->
+  <link rel="stylesheet" href="fadein_css/style.css">
 </head>
 
 <body>
@@ -27,25 +31,25 @@
   </script>
 
   <!-- dynamic resizing  -->
-  <div class="container-fluid ">
+  <div class="container-fluid">
 
     <!--  ///////////////////  NAVBAR  ///////////////////  -->
     <nav id="navbar" class="navbar-expand fixed-top">
-      <div class="row row-centerer">
+      <div class="row row-centerer" style="width: 95%;">
         <div class="col-lg-4">
-          <h1 class="tonychan">Tony Chan</h1>
+          <h1 class="tonychan"><a href="index.html">Tony Chan</a></h1>
         </div>
         <div class="col-lg-2"></div>
         <div class="col-lg-6">
           <div id="menu">
             <ul class="navbar-nav navbar-brand right-to-center nav-elem-centerer">
-              <li class="sliding-middle-out nav-item active">
+              <li class="sliding-middle-out nav-item active" style="margin-left: 30px;">
                 <a class="move-slide nav-link" href="" data-id="0">Portfolio</a>
               </li>
-              <li class="sliding-middle-out nav-item">
+              <li class="sliding-middle-out nav-item" style="margin-left: 30px; margin-right: 30px;">
                 <a class="move-slide nav-link" href="" data-id="1">Resume</a>
               </li>
-              <li class="sliding-middle-out nav-item">
+              <li class="sliding-middle-out nav-item" style="margin-right: 30px; margin-left: 0px;">
                 <a class="move-slide nav-link" href="" data-id="2">About Me</a>
               </li>
             </ul>
@@ -60,149 +64,233 @@
         <div class="carousel-item active">
           <!-- - - - - - - - - - - - - - - - - - INTRO - - - - - - - - - - - - - - - - - -->
           <div id="large-header" class="large-header">
-            <p style=" width:100%;position:absolute;left:0;right:0;margin:0 auto; font-size: 24px" class="padder"> Designer & developer with startup experience in creating elegant, engaging and functional interfaces </p>
+            <p class="padder textwidth" style="position:absolute;left:0px;right:0px;margin:0 auto; font-size: 24px">
+              Designer & developer with startup experience in creating elegant, engaging and functional interfaces </p>
             <!-- <img src="img/intro.svg" alt="" style="  width:100%;position:absolute;top:0;left:0;right:0;margin:0 auto" /> -->
             <canvas id="x-canvas"></canvas>
           </div>
 
-          <!-- D4SD -->
-          <section class="content-section-b" style="padding:0px 0;">
-            <div class="box btn-group modal-dialog" style="margin-top: 0px;">
-              <a href="project5.html">
-                <div class="row">
-                  <div class="row row-centerer">
-                    <!-- vertically alligns words and pictures -->
-                    <div class="vertical-align">
-                      <div class="col-lg-6 ml-auto">
-                        <div class="row spacer"></div>
-                        <h2 class="section-heading">Design for San Diego Civic Challenge</h2>
-                        <p class="lead "> I competed in a city wide contest for the best design solution that improves transportation in San Diego during Fall 2017. &nbsp &nbsp &nbsp &nbsp &nbsp </p>
-                        <div class="row spacer"></div>
-                      </div>
-                      <div class="col-lg-6 mr-auto " style="text-align: right">
-                        <div class="row spacer"></div>
-                        <img class="img-fluid" style="max-width: 80%; max-height: 80%;" src="img/indexproj5.png" alt=" ">
-                        <div class="row spacer"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
+          <div class="row" style="padding-top: 3vw; ">
+            <div class="col-1" style="padding-right: 0px; max-width: 5%">
+              <p class="titlehoriz" style="background-color:#90A5C0; font-size: 2px; margin-top: 2.3rem; line-height: 1.5;">&nbsp;
+              </p>
             </div>
-          </section>
+            <div class="col-1" style="max-width: 2%; padding-left: 0px;">
+              <span style="  height: 12px; width: 12px; background-color: #90A5C0; border-radius: 50%; display: inline-block; margin-top: 2rem"></span>
+            </div>
+            <div class="col-10" style="padding-left: 0px;">
+              <p style="font-size: 36px; font-weight: 500">
+                Industry Experience</p>
+            </div>
+          </div>
 
-          <!-- EventQR -->
-          <section class="content-section-b module">
-            <div class="box btn-group modal-dialog">
-              <a href="project1.html">
-                <div class="row">
-                  <div class="row row-centerer">
-                    <!-- vertically alligns words and pictures -->
-                    <div class="vertical-align">
-                      <div class="col-lg-6 ml-auto">
-                        <div class="row spacer"></div>
-                        <h2 class="section-heading">EventQR</h2>
-                        <p class="lead "> A web based application where users create and scan events encrypted into a QR code, which will then forward all the details onto their Google Calendar.</p>
-                        <div class="row spacer"></div>
-                      </div>
-                      <div class="col-lg-6 mr-auto " style="text-align: right">
-                        <div class="row spacer"></div>
-                        <img class="img-fluid" style="max-width: 80%; max-height: 80%;" src="img/indexproj1.png" alt=" ">
-                        <div class="row spacer"></div>
-                      </div>
-                    </div>
+          <div class="row" style="margin-top: 1.5vw;">
+            <!-- WORKDAY -->
+            <section class="col-md-1 order-md-1 " style="padding:0px 0;"></section>
+            <section class="col-md-5 order-md-3 titlehoriz" style="padding:0px 0;">
+              <div class="box3 btn-group modal-dialogtwo dynamicthumbnail" style="margin-top: 0px;">
+                <a href="workday_nda.html">
+                  <div class="overlay vertical-align titlehoriz">
+                    <center class="ndatext" style="line-height: 2">NDA Protected<br>Available during interview</center>
+                    <!-- <center class="ndatext">Available during interview</center> -->
                   </div>
+                  <div class="titlehoriz">
+                    <img class="img-fluid" src="img/idx_wrkdy.png" alt=" ">
+                  </div>
+                </a>
+              </div>
+            </section>
+            <section class="col-md-5 order-md-2 vertical-align " style="padding:0px 0;">
+              <div class="" style="margin-top: 2vw; margin-bottom: 60px;">
+                <div class="row-centerer dynamicdescription animation-element slide-right">
+                  <h2 class="section-heading" style="font-weight: 400">Workday</h2>
+                  <p class="lead "> My summer internship at Workday's Core Design Systems team where I worked on
+                    redesigning the system wide conclusion page and mobile animations. </p>
+                  <a class="sliding-middle-out" href="workday_nda.html">View Case Study</a>
                 </div>
-              </a>
-            </div>
-          </section>
+              </div>
+            </section>
+            <section class="col-md-1 order-md-4 " style="padding:0px 0;"></section>
+          </div>
 
-          <!-- Sharedrobe -->
-          <section class="content-section-b module">
-            <div class="box btn-group modal-dialog">
-              <a href="project2.html">
-                <div class="row">
-                  <div class="row row-centerer">
-                    <!-- vertically alligns words and pictures -->
-                    <div class="vertical-align">
-                      <div class="col-lg-6 ml-auto">
-                        <div class="row spacer"></div>
-                        <h2 class="section-heading">Sharedrobe</h2>
-                        <p class="lead "> A concept design for a crowd source clothing rental app. Ship or meet up with others to rent clothes for an affordable price. &nbsp &nbsp &nbsp &nbsp &nbsp</p>
-                        <div class="row spacer"></div>
-                      </div>
-                      <div class="col-lg-6 mr-auto " style="text-align: right">
-                        <div class="row spacer"></div>
-                        <img class="img-fluid" style="max-width: 80%; max-height: 80%;" src="img/indexproj2.png" alt=" ">
-                        <div class="row spacer"></div>
-                      </div>
-                    </div>
+          <div class="row" style="margin-top: 7vw;">
+            <!-- NANOME -->
+            <section class="col-md-1 order-md-1" style="padding:0px 0;"></section>
+            <section class="col-md-5 order-md-2 titlehoriz" style="padding:0px 0;">
+              <div class="box3 btn-group modal-dialogtwo dynamicthumbnail" style="margin-top: 0px;">
+                <a href="nanome_nda.html">
+                  <div class="overlay vertical-align titlehoriz">
+                    <center class="ndatext" style="line-height: 2;">NDA Protected<br>Available during interview</center>
+                    <!-- <center class="ndatext">Available during interview</center> -->
                   </div>
+                  <div class="titlehoriz">
+                    <img class="img-fluid" src="img/idx_nnm.png" alt=" ">
+                  </div>
+                </a>
+              </div>
+            </section>
+            <section class="col-md-5 order-md-3 vertical-align" style="padding:0px 0;">
+              <div class="" style="margin-top: 2vw; margin-bottom: 60px;">
+                <div class="row-centerer dynamicdescription animation-element slide-left">
+                  <h2 class="section-heading" style="font-weight: 400">NANOME</h2>
+                  <p class="lead "> Pioneer the design of Matryx: a tournament styled, collaborative
+                    platform with an intellectual property marketplace on a blockchain network.</p>
+                  <a class="sliding-middle-out" href="nanome_nda.html">View Case Study</a>
                 </div>
-              </a>
-            </div>
-          </section>
+              </div>
+            </section>
+            <section class="col-md-1 order-md-4" style="padding:0px 0;"></section>
+          </div>
 
-          <!-- TicktBox -->
-          <section class="content-section-b module">
-            <div class="box btn-group modal-dialog">
-              <a href="project4.html">
-                <div class="row">
-                  <div class="row row-centerer">
-                    <!-- vertically alligns words and pictures -->
-                    <div class="vertical-align">
-                      <div class="col-lg-6 ml-auto">
-                        <div class="row spacer"></div>
-                        <h2 class="section-heading">TicktBox Internship (WIP)</h2>
-                        <p class="lead "> A case study on my webmaster internship during Fall 2017 at TicktBox (mainly programming). &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-                          &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</p>
-                        <div class="row spacer"></div>
-                      </div>
-                      <div class="col-lg-6 mr-auto " style="text-align: right">
-                        <div class="row spacer"></div>
-                        <img class="img-fluid" style="max-width: 80%; max-height: 80%;" src="img/indexproj4.png" alt=" ">
-                        <div class="row spacer"></div>
-                      </div>
-                    </div>
+          <div class="row" style="margin-top: 7vw;">
+            <!-- ASGS -->
+            <section class="col-md-1 order-md-1 " style="padding:0px 0;"></section>
+            <section class="col-md-5 order-md-3 titlehoriz" style="padding:0px 0;">
+              <div class="box btn-group modal-dialogtwo dynamicthumbnail" style="margin-top: 0px;">
+                <a href="asgs.html">
+                  <div class="titlehoriz">
+                    <img class="img-fluid" src="img/idx_asgs.png" alt=" ">
                   </div>
+                </a>
+              </div>
+            </section>
+            <section class="col-md-5 order-md-2 vertical-align" style="padding:0px 0;">
+              <div class="" style="margin-top: 2vw; margin-bottom: 60px;">
+                <div class="row-centerer dynamicdescription animation-element slide-right">
+                  <h2 class="section-heading" style="font-weight: 400">A.S. Graphic Studio</h2>
+                  <p class="lead "> Collaborate with a visual designer to implement the 2018 Sun God Festival website
+                    from the ground up.</p>
+                  <a class="sliding-middle-out" href="asgs.html">View Case Study</a>
                 </div>
-              </a>
-            </div>
-          </section>
+              </div>
+            </section>
+            <section class="col-md-1 order-md-4 " style="padding:0px 0;"></section>
+          </div>
 
-          <!-- 64Pos -->
-          <section class="content-section-b module">
-            <div class="box btn-group modal-dialog">
-              <a href="project3.html">
-                <div class="row">
-                  <div class="row row-centerer">
-                    <!-- vertically alligns words and pictures -->
-                    <div class="vertical-align">
-                      <div class="col-lg-6 ml-auto">
-                        <div class="row spacer"></div>
-                        <h2 class="section-heading">64Pos Internship (WIP)</h2>
-                        <p class="lead "> A case study on two projects during my Summer 2017 internship at 64Pos. &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-                          &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</p>
-                        <div class="row spacer"></div>
-                      </div>
-                      <div class="col-lg-6 mr-auto " style="text-align: right">
-                        <div class="row spacer"></div>
-                        <img class="img-fluid" style="max-width: 80%; max-height: 80%;" src="img/indexproj3.png" alt=" ">
-                        <div class="row spacer"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
+
+
+          <div class="row" style="padding-top: 7vw; ">
+            <div class="col-1" style="padding-right: 0px; max-width: 5%">
+              <p class="titlehoriz" style="background-color:#90A5C0; font-size: 2px; margin-top: 2.3rem; line-height: 1.5;">&nbsp;
+              </p>
             </div>
-          </section>
+            <div class="col-1" style="max-width: 2%; padding-left: 0px;">
+              <span style="  height: 12px; width: 12px; background-color: #90A5C0; border-radius: 50%; display: inline-block; margin-top: 2rem"></span>
+            </div>
+            <div class="col-10" style="padding-left: 0px;">
+              <p style="font-size: 36px; font-weight: 500">
+                Selected Projects</p>
+            </div>
+          </div>
+
+          <div class="row" style="margin-top: 3vw;">
+            <!-- D4SD -->
+            <section class="col-md-1 order-md-1" style="padding:0px 0;"></section>
+            <section class="col-md-5 order-md-2 titlehoriz" style="padding:0px 0;">
+              <div class="box btn-group modal-dialogtwo dynamicthumbnail" style="margin-top: 0px;">
+                <a href="project5.html">
+                  <div class="titlehoriz">
+                    <img class="img-fluid" src="img/idx_mea.png" alt=" ">
+                  </div>
+                </a>
+              </div>
+            </section>
+            <section class="col-md-5 order-md-3 vertical-align" style="padding:0px 0;">
+              <div class="" style="margin-top: 2vw; margin-bottom: 60px;">
+                <div class="row-centerer dynamicdescription animation-element slide-left">
+                  <h2 class="section-heading" style="font-weight: 400">D4SD Hackathon</h2>
+                  <p class="lead "> I competed in a city wide design competition to improve transportation in San Diego
+                    during Fall 2017.</p>
+                  <a class="sliding-middle-out" href="project5.html">View Case Study</a>
+                </div>
+              </div>
+            </section>
+            <section class="col-md-1 order-md-4" style="padding:0px 0;"></section>
+          </div>
+
+          <div class="row" style="margin-top: 7vw;">
+            <!-- EventQR -->
+            <section class="col-md-1 order-md-1 " style="padding:0px 0;"></section>
+            <section class="col-md-5 order-md-3 titlehoriz" style="padding:0px 0;">
+              <div class="box btn-group modal-dialogtwo dynamicthumbnail" style="margin-top: 0px;">
+                <a href="birch.html">
+                  <div class="titlehoriz">
+                    <img class="img-fluid" src="img/idx_birch.png" alt=" ">
+                  </div>
+                </a>
+              </div>
+            </section>
+            <section class="col-md-5 order-md-2 vertical-align" style="padding:0px 0;">
+              <div class="" style="margin-top: 2vw; margin-bottom: 60px;">
+                <div class="row-centerer dynamicdescription animation-element slide-right">
+                  <h2 class="section-heading" style="font-weight: 400">Birch Aquarium</h2>
+                  <p class="lead "> Designing an exhibit in the Birch Aquarium at the Scripps Institution of
+                    Oceanography to teach people about bubbles.</p>
+                  <a class="sliding-middle-out" href="birch.html">View Case Study</a>
+                </div>
+              </div>
+            </section>
+            <section class="col-md-1 order-md-4 " style="padding:0px 0;"></section>
+          </div>
+
+          <div class="row" style="margin-top: 7vw;">
+            <!-- Sharedrobe -->
+            <section class="col-md-1 order-md-1" style="padding:0px 0;"></section>
+            <section class="col-md-5 order-md-2 titlehoriz" style="padding:0px 0;">
+              <div class="box btn-group modal-dialogtwo dynamicthumbnail" style="margin-top: 0px;">
+                <a href="project1.html">
+                  <div class="titlehoriz">
+                    <img class="img-fluid" src="img/idx_eqr.png" alt=" ">
+                  </div>
+                </a>
+              </div>
+            </section>
+            <section class="col-md-5 order-md-3 vertical-align" style="padding:0px 0;">
+              <div class="" style="margin-top: 2vw; margin-bottom: 60px;">
+                <div class="row-centerer dynamicdescription animation-element slide-left">
+                  <h2 class="section-heading" style="font-weight: 400">EventQR</h2>
+                  <p class="lead "> A web app that lets users create & scan events encrypted into a QR code, which
+                    can be synced onto their Google Calendar.</p>
+                  <a class="sliding-middle-out" href="project1.html">View Case Study</a>
+                </div>
+              </div>
+            </section>
+            <section class="col-md-1 order-md-4" style="padding:0px 0;"></section>
+          </div>
+
+
+          <div class="row" style="margin-top: 7vw; margin-bottom: 4vw">
+            <!-- Birch Aquarium -->
+            <section class="col-md-1 order-md-1 " style="padding:0px 0;"></section>
+            <section class="col-md-5 order-md-3 titlehoriz" style="padding:0px 0;">
+              <div class="box btn-group modal-dialogtwo dynamicthumbnail" style="margin-top: 0px;">
+                <a href="project2.html">
+                  <div class="titlehoriz">
+                    <img class="img-fluid" src="img/idx_sd.png" alt=" ">
+                  </div>
+                </a>
+              </div>
+            </section>
+            <section class="col-md-5 order-md-2 vertical-align" style="padding:0px 0;">
+              <div class="" style="margin-top: 2vw; margin-bottom: 60px;">
+                <div class="row-centerer dynamicdescription animation-element slide-right">
+                  <h2 class="section-heading" style="font-weight: 400">Sharedrobe</h2>
+                  <p class="lead ">A concept design for a crowd source clothing rental app. Ship or meet up with
+                    others to rent clothes for an affordable price.</p>
+                  <a class="sliding-middle-out" href="project2.html">View Case Study</a>
+                </div>
+              </div>
+            </section>
+            <section class="col-md-1 order-md-4 " style="padding:0px 0;"></section>
+          </div>
 
           <!--  ///////////////////  FOOTER/CONTACT  ///////////////////  -->
           <aside class="banner ">
             <div class="row ">
               <div class="col-lg-12 text-center">
                 <a href="mailto:tonychan96@gmail.com" target="_blank" class="btn-social btn-lg"><i class="fa fa-envelope"></i></a>
-                <a href="https://www.linkedin.com/in/tony-chan-206086115/" target="_blank" class="btn-social btn-lg"><i class="fa fa-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/tony-chan-206086115/" target="_blank" class="btn-social btn-lg"><i
+                    class="fa fa-linkedin"></i></a>
                 <a href="https://github.com/GMTChan" target="_blank" class="btn-social btn-lg"><i class="fa fa-github"></i></a>
               </div>
             </div>
@@ -218,10 +306,10 @@
         <div class="carousel-item">
           <section class="content-section-b">
             <div class="modal-dialog">
-              <div class="row">
-                <div class="modal-dialogtwo resumeaboutpad">
+              <div class="row row-centerer">
+                <div class="modal-dialogtwo resumeaboutpad row-centerer">
                   <!-- RESUME PICTURE  -->
-                  <img class="img-fluid" src="img/Tony's_Resume.jpg" style="max-width: 75%; display:block; margin:auto;">
+                  <img class="img-fluid" src="img/Tony's_Resume.jpg" style="max-width: 65%; display:block; margin:auto;">
                 </div>
               </div>
             </div>
@@ -240,7 +328,8 @@
             <div class="row ">
               <div class="col-lg-12 text-center">
                 <a href="mailto:tonychan96@gmail.com" target="_blank" class="btn-social btn-lg"><i class="fa fa-envelope"></i></a>
-                <a href="https://www.linkedin.com/in/tony-chan-206086115/" target="_blank" class="btn-social btn-lg"><i class="fa fa-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/tony-chan-206086115/" target="_blank" class="btn-social btn-lg"><i
+                    class="fa fa-linkedin"></i></a>
                 <a href="https://github.com/GMTChan" target="_blank" class="btn-social btn-lg"><i class="fa fa-github"></i></a>
               </div>
             </div>
@@ -255,53 +344,56 @@
 
         <div class="carousel-item">
           <!-- ABOUT ME TAB  -->
-          <section class="content-section-b">
-            <div class="btn-group modal-dialog">
-              <div class="row">
-                <div class="box2 modal-dialogtwo resumeaboutpad">
-                  <div class="row row-centerer" style="width:95%;">
-                    <!-- vertically alligns words and pictures w/i box-->
-                    <div class="vertical-align">
-                      <div class="col-lg-6 ml-auto">
-                        <div class="row spacer"></div>
-                        <img class="img-fluid " src="img/aboutme/1.jpg" alt=" ">
-                        <div class="row spacer"></div>
-                      </div>
-                      <div class="col-lg-6 mr-auto">
-                        <div class="row spacer"></div>
-                        <p class="aboutmefont ">
-                          <small> Born and raised in Los Angeles, California, my interest in design developed when I got my first computer at the age of 12. I enjoyed installing themes, elements, and shortcuts to personalize the experience because not only did
-                              it allow me to navigate the interface more easily, but it also gave me a satisfying sense of ownership. <br><br> I’m currently in my final year as a Human Computer Interaction major at the University of California, San Diego. While
-                              user interaction and experience design are some of my core strengths, you'll often find me involved in a variety of interdisciplinary activities including software development, big data analysis, mobile rooting/jailbreaking, and
-                              even artificial intelligence research. <br><br> I’m interested in working on projects that are not only extensive, but also challenging. My designs and principles are a medium to leave an impression on as many people as possible,
-                              from those around me to users who live on the other side of the world. I love what I do. <br><br> Thanks for stopping by. <br> <br> — Tony</small>
-                        </p>
-                        <div class="row spacer"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+          <div style="padding-top: 30px;"></div>
+          <div class="row" style="margin-top: 2.5vw;">
+            <div class="col-2"></div>
+            <div class="col-8" style="text-align:center;">
+              <!-- vertically alligns words and pictures -->
+              <div class="row" style="margin-top:15px;"></div>
+              <img class="img-fluid " src="img/aboutme.png" alt=" ">
+              <div class="row" style="margin-top:15px;"></div>
             </div>
-          </section>
+            <div class="col-2"></div>
+          </div>
+
+          <div class="row spacer "></div>
+          <div class="row" style="margin-top: 2.5vw;">
+            <div class="col-3" style="width: 100px;"></div>
+            <div class="col-6">
+              <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">Born and raised in Los
+                Angeles, California, my interest in design developed when I
+                got my first computer at the age of 12. I enjoyed installing themes, elements, and
+                shortcuts to personalize the experience because not only did
+                it allow me to navigate the interface more easily, but it also gave me a satisfying sense
+                of ownership. <br><br> I’m interested in working on projects that
+                are not only extensive, but also challenging. My designs and principles are a medium to
+                leave an impression on as many people as possible,
+                from those around me to users who live on the other side of the world. I love what I do.
+                <br> <br> — Tony
+              </p>
+            </div>
+            <div class="col-3" style="width: 100px;"></div>
+          </div>
+
 
           <!-- collage -->
-          <section class="content-section-b">
-            <div class="box2 modal-dialogtwo module">
-              <div class="col-lg-12 ">
-                <div class="row" style="margin-top: 15px;"></div>
-                <img class="img-fluid " src="img/aboutme/collage.jpg" alt=" ">
-                <div class="row" style="margin-top: 15px;"></div>
+          <div class="row" style="margin-top: 2.5vw;">
+              <div class="col-2"></div>
+              <div class="col-8" style="text-align:center;">
+                <!-- vertically alligns words and pictures -->
+                <img class="img-fluid " src="img/collage.png" alt=" ">
               </div>
+              <div class="col-2"></div>
             </div>
-          </section>
+            <div class="row spacer "></div>
 
           <!--  ///////////////////  FOOTER/CONTACT  ///////////////////  -->
           <aside class="banner ">
             <div class="row ">
               <div class="col-lg-12 text-center">
                 <a href="mailto:tonychan96@gmail.com" target="_blank" class="btn-social btn-lg"><i class="fa fa-envelope"></i></a>
-                <a href="https://www.linkedin.com/in/tony-chan-206086115/" target="_blank" class="btn-social btn-lg"><i class="fa fa-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/tony-chan-206086115/" target="_blank" class="btn-social btn-lg"><i
+                    class="fa fa-linkedin"></i></a>
                 <a href="https://github.com/GMTChan" target="_blank" class="btn-social btn-lg"><i class="fa fa-github"></i></a>
               </div>
             </div>
@@ -333,5 +425,9 @@
   <script src="indexheader.js"></script>
 
 </body>
+<!-- scroll fade left/right animation -->
+<script src="fadein_js/index.js"></script>
+
+<link href="css/60fpsScrolling.css" rel="stylesheet">
 
 </html>
