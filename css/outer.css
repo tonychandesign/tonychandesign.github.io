@@ -152,12 +152,6 @@ h1 { /* else align the header at at the center */
 .box:hover::after {
     opacity: 1;
 }
-/* box without the hover for ABOUT ME */
-.box2 {
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-}
 .box3 {
   position: relative;
   display: inline-block;
@@ -483,6 +477,10 @@ a.btn-social,
   padding-top: 60px;
 }
 
+.industrypadding {
+  padding-top: 0px;
+}
+
 /* project/internship description  */
 .dynamicdescription {
   max-width: 90%;
@@ -534,5 +532,11 @@ a.btn-social,
 @media screen and (max-width: 600px) {
   .respCoverPadding {
     padding-top: 180px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .industrypadding {
+    padding-top: 40px;
   }
 }
