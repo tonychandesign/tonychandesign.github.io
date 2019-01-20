@@ -1,7 +1,8 @@
 /*
  * OUTER CSS LAYER
  */
-body, html {
+body,
+html {
   width: 100%;
   height: 100%;
 }
@@ -15,10 +16,15 @@ body {
   transition: 1.5s opacity;
 }
 body.fade-out {
-    opacity: 0;
-    transition: none;
+  opacity: 0;
+  transition: none;
 }
-h1, h2,h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Lato";
   color: black;
   font-weight: 600;
@@ -44,59 +50,78 @@ p {
 }
 /* navbar navigation text css */
 .navbar-brand {
-  color: #424C55;
-  font-family: 'Lato';
+  color: #424c55;
+  font-family: "Lato";
   margin-right: 0rem;
   font-size: 1.6em;
   font-weight: 600;
-  background-image: linear-gradient(to top, rgba(255,255,255,0), rgba(255,255,255,.3),rgba(255,255,255,0.7), rgba(255,255,255,.95),#ffffff,#ffffff, #ffffff);
+  background-image: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.95),
+    #ffffff,
+    #ffffff,
+    #ffffff
+  );
 }
 .nav-link {
-  color: #424C55;
+  color: #424c55;
 }
 
 /* navbar up and down animation & gradient */
-#navbar{
-    position: absolute;   /* Initially set to absolute so it is movable with the page */
-    top: 60px;
-    display: block;
-    background-image: linear-gradient(to top, rgba(255,255,255,0), rgba(255,255,255,.3),rgba(255,255,255,0.7), rgba(255,255,255,.95),#ffffff,#ffffff, #ffffff);
-    padding-bottom: 70px;
-    will-change: transform; /* possibly helps w/ scrolling performance? */
+#navbar {
+  position: absolute; /* Initially set to absolute so it is movable with the page */
+  top: 60px;
+  display: block;
+  background-image: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.95),
+    #ffffff,
+    #ffffff,
+    #ffffff
+  );
+  padding-bottom: 70px;
+  will-change: transform; /* possibly helps w/ scrolling performance? */
 }
 /* spacing between navbar tabs */
-.navbar-nav > li{
-  margin-left:30px;
+.navbar-nav > li {
+  margin-left: 30px;
 }
 
 /* navbar tab sliding animation */
 .sliding-middle-out {
-	display: inline-block;
-	position: relative;
-  color: #424C55;
+  display: inline-block;
+  position: relative;
+  color: #424c55;
 }
 
 .sliding-middle-out:after {
   width: 0;
-	background: #424C55;
-  content: '';
-	display: block;
-	margin: auto;
-	height: 3px;
-	background: transparent;
-	transition: width .2s ease, background-color .5s ease;
+  background: #424c55;
+  content: "";
+  display: block;
+  margin: auto;
+  height: 3px;
+  background: transparent;
+  transition: width 0.2s ease, background-color 0.5s ease;
 }
 
 .container-fluid {
-  padding-left:0px; 
+  padding-left: 0px;
   padding-right: 0px;
-    /* disable right left scrolling */
-    overflow-x: hidden;
+  /* disable right left scrolling */
+  overflow-x: hidden;
 }
 
-.sliding-middle-out.active:after, .sliding-middle-out:hover:after {
-	width: 100%;
-	background: #424C55;
+.sliding-middle-out.active:after,
+.sliding-middle-out:hover:after {
+  width: 100%;
+  background: #424c55;
 }
 
 /* Tony Chan in navbar alignment when shrinking screen */
@@ -106,7 +131,8 @@ p {
     text-align: left;
   }
 }
-h1 { /* else align the header at at the center */
+h1 {
+  /* else align the header at at the center */
   text-align: center;
 }
 /* aligns nav buttons from right to mid when shrinking screen*/
@@ -150,7 +176,7 @@ h1 { /* else align the header at at the center */
 }
 
 .box:hover::after {
-    opacity: 1;
+  opacity: 1;
 }
 .box3 {
   position: relative;
@@ -169,62 +195,59 @@ h1 { /* else align the header at at the center */
   width: 100%;
   border-radius: 2px;
   opacity: 0;
-  transition: .3s ease;
+  transition: 0.3s ease;
   background-color: #000000;
-  
 }
 .box3:hover .overlay {
-  opacity: .8;
+  opacity: 0.8;
 }
 .ndatext {
   color: #ffffff;
   font-size: 20px;
 }
 
-
 /* modifies the link: no underline/ navy color effect when mouse hovers over it */
 a:hover,
 .a:hover {
   text-decoration: none !important;
-  color: #424C55;
-
+  color: #424c55;
 }
 
 /* Horizontalally centers boxes */
 /*THIS IS ABLE TO CENTER PROPERLY AND ASSIGN MARGINS W/ MIN WIDTH PADDING, HOWEVER CAN'T RENAME AND REUSE W/ DIFFERENT WIDTHS?!*/
-.modal-dialog{
-    position: relative;
-    display: table;
-    overflow-y: auto;
-    overflow-x: auto;
-    width: auto;
-    height: auto;
-    min-width: 90%;
+.modal-dialog {
+  position: relative;
+  display: table;
+  overflow-y: auto;
+  overflow-x: auto;
+  width: auto;
+  height: auto;
+  min-width: 90%;
 }
 
 /* horizontally centers elements inside box */
-.modal-dialog-three{
-    position: relative;
-    display: table;
-    overflow-y: auto;
-    overflow-x: auto;
-    width: auto;
-    height: auto;
-    min-width: 50%;
+.modal-dialog-three {
+  position: relative;
+  display: table;
+  overflow-y: auto;
+  overflow-x: auto;
+  width: auto;
+  height: auto;
+  min-width: 50%;
 }
 /* horizontally centers elements inside box */
-.modal-dialogtwo{
-    width: auto;
-    height: auto;
+.modal-dialogtwo {
+  width: auto;
+  height: auto;
 }
 
 .row-centerer {
-  width:90%;
+  width: 90%;
   margin: auto;
 }
 .vertical-align {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 /*horizontally centers text/pics at small sizes*/
 @media (max-width: 1824px) {
@@ -232,13 +255,13 @@ a:hover,
     text-align: right;
   }
   .paddingnigga {
-      padding-top: 40px;
+    padding-top: 40px;
   }
 }
 
 /*adds and removes padding for resume and about me in index*/
 .resumeaboutpad {
-  margin-top:30px;
+  margin-top: 30px;
 }
 
 @media (max-width: 990px) {
@@ -249,18 +272,18 @@ a:hover,
     text-align: center;
   }
   .paddingnigga {
-    padding-top:0px;
+    padding-top: 0px;
   }
   .resumeaboutpad {
-    margin-top:70px;
+    margin-top: 70px;
   }
 }
 
 /*about me default font size*/
-.aboutmefont{
+.aboutmefont {
   font-size: 20px;
   font-size: 1.7vw;
-  font-weight:300;
+  font-weight: 300;
 }
 
 /* EACH ROW FOR BOXES (INCLUDES BACKGROUND) */
@@ -273,16 +296,16 @@ a:hover,
 }
 .content-section-c {
   padding: 10px 0;
-  max-width: 50%; 
+  max-width: 50%;
 }
 .section-heading {
   margin-bottom: 30px;
 }
 .spacer {
-    margin-top: 40px; /* define margin as you see fit */
+  margin-top: 40px; /* define margin as you see fit */
 }
 .projectheaderspacer {
-    margin-top: 22px;
+  margin-top: 22px;
 }
 
 .section-heading-spacer {
@@ -312,25 +335,25 @@ a:hover,
   margin-top: 0;
 }
 
-@media(max-width:1199px) {
+@media (max-width: 1199px) {
   ul.banner-social-buttons {
     float: left;
     margin-top: 15px;
   }
 }
 
-@media(max-width:767px) {
+@media (max-width: 767px) {
   .banner h2 {
     margin: 0;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
     font-size: 3em;
   }
-  ul.banner-social-buttons>li {
+  ul.banner-social-buttons > li {
     display: block;
     margin-bottom: 20px;
     padding: 0;
   }
-  ul.banner-social-buttons>li:last-child {
+  ul.banner-social-buttons > li:last-child {
     margin-bottom: 0;
   }
 }
@@ -346,43 +369,50 @@ p.copyright {
 
 /* SOCIAL BUTTON CSS */
 a.btn-social,
-.btn-social{
-    border-radius: 50%;
-    color: black;
-    display: inline-block;
-    height: 54px;
-    line-height: 54px;
-    margin: 8px 4px;
-    text-align: center;
-    text-decoration: none;
-    transition: background-color .3s;
-    webkit-transition: background-color .3s;
-    width: 54px;
-}.btn-social .fa,.btn-social i{
-    backface-visibility: hidden;
-    moz-backface-visibility: hidden;
-    ms-transform: scale(1);
-    o-transform: scale(1);
-    transform: scale(1);
-    transition: all .25s;
-    webkit-backface-visibility: hidden;
-    webkit-transform: scale(1);
-    webkit-transition: all .25s;
-}.btn-social:hover,.btn-social:focus
-{
-    color: #374456;
-    outline: none;
-    text-decoration: none;
-}.btn-social:hover .fa,.btn-social:focus .fa,.btn-social:hover i,.btn-social:focus i
-{
-    ms-transform: scale(1.3);
-    o-transform: scale(1.3);
-    transform: scale(1.3);
-    webkit-transform: scale(1.3);
-}.btn-social.btn-lg{
-    font-size: 22px;
-    margin: 10px 20px;
-    padding: 0rem 0rem;
+.btn-social {
+  border-radius: 50%;
+  color: black;
+  display: inline-block;
+  height: 54px;
+  line-height: 54px;
+  margin: 8px 4px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  webkit-transition: background-color 0.3s;
+  width: 54px;
+}
+.btn-social .fa,
+.btn-social i {
+  backface-visibility: hidden;
+  moz-backface-visibility: hidden;
+  ms-transform: scale(1);
+  o-transform: scale(1);
+  transform: scale(1);
+  transition: all 0.25s;
+  webkit-backface-visibility: hidden;
+  webkit-transform: scale(1);
+  webkit-transition: all 0.25s;
+}
+.btn-social:hover,
+.btn-social:focus {
+  color: #374456;
+  outline: none;
+  text-decoration: none;
+}
+.btn-social:hover .fa,
+.btn-social:focus .fa,
+.btn-social:hover i,
+.btn-social:focus i {
+  ms-transform: scale(1.3);
+  o-transform: scale(1.3);
+  transform: scale(1.3);
+  webkit-transform: scale(1.3);
+}
+.btn-social.btn-lg {
+  font-size: 22px;
+  margin: 10px 20px;
+  padding: 0rem 0rem;
 }
 
 /* increase carousel slide speed */
@@ -392,15 +422,12 @@ a.btn-social,
   transition: transform 0.25s ease, -webkit-transform 0.25s ease;
 }
 
-
-
 /**************************** PROJECT ITEM CSS *****************************/
 /* brackets */
 .brackets {
   font: 20px/26px "Lato", sans-serif;
   background-image: linear-gradient(#00cdcd, #00cdcd),
-    linear-gradient(#00cdcd, #00cdcd),
-    linear-gradient(#00cdcd, #00cdcd),
+    linear-gradient(#00cdcd, #00cdcd), linear-gradient(#00cdcd, #00cdcd),
     linear-gradient(#00cdcd, #00cdcd);
 
   background-repeat: no-repeat;
@@ -418,8 +445,7 @@ a.btn-social,
 .brackets-text {
   font: 20px/26px "Lato", sans-serif;
   background-image: linear-gradient(#cf63c5, #cf63c5),
-    linear-gradient(#cf63c5, #cf63c5),
-    linear-gradient(#cf63c5, #cf63c5),
+    linear-gradient(#cf63c5, #cf63c5), linear-gradient(#cf63c5, #cf63c5),
     linear-gradient(#cf63c5, #cf63c5);
 
   background-repeat: no-repeat;
@@ -436,40 +462,40 @@ a.btn-social,
 }
 
 .descriptionspacer {
-    margin-top: 15px; /* used under pictures */
+  margin-top: 15px; /* used under pictures */
 }
 /* descreases margin size on sides of pictures within the box */
 .row-centerer2 {
-  width:99%;
+  width: 99%;
   margin: auto;
 }
 
 /* horizontal allign */
-.titlehoriz{
+.titlehoriz {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 #theprocess {
-  font-weight:500;
+  font-weight: 500;
   font-size: 250%;
-  margin-bottom:0;
-  margin-top:0;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 /* Index header animation CSS*/
-.large-header{
-  background:#ffffff;
+.large-header {
+  background: #ffffff;
 }
-#x-canvas{
-  opacity:0.25;
+#x-canvas {
+  opacity: 0.25;
 }
 .padder {
-  top:80px;
+  top: 80px;
   bottom: 80px;
 }
 .textwidth {
-  width:50%;
+  width: 50%;
 }
 
 .respCoverPadding {
@@ -478,6 +504,10 @@ a.btn-social,
 
 .industrypadding {
   padding-top: 0px;
+}
+.navpadding {
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 /* project/internship description  */
@@ -490,18 +520,17 @@ a.btn-social,
 
 @media screen and (min-height: 900px) {
   .padder {
-    top:120px;
+    top: 120px;
   }
 }
-@media screen and (max-width: 200px) , screen and (max-height: 900px) {
+@media screen and (max-width: 200px), screen and (max-height: 900px) {
   .padder {
-    top:80px;
+    top: 80px;
   }
-  
 }
 @media screen and (max-width: 600px) {
   .textwidth {
-    width:80%;
+    width: 80%;
   }
 }
 
@@ -534,8 +563,30 @@ a.btn-social,
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 375px) {
   .industrypadding {
     padding-top: 40px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .industrypadding {
+    padding-top: 40px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .industrypadding {
+    padding-top: 40px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .navpadding {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .navpadding {
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
