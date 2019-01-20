@@ -563,19 +563,19 @@ a.btn-social,
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 375px) {
   .industrypadding {
-    padding-top: 40px;
+    padding-top: 50px;
   }
 }
 @media screen and (max-width: 414px) {
   .industrypadding {
-    padding-top: 40px;
+    padding-top: 50px;
   }
 }
 @media screen and (max-width: 700px) {
   .industrypadding {
-    padding-top: 40px;
+    padding-top: 50px;
   }
 }
 @media screen and (max-width: 375px) {
