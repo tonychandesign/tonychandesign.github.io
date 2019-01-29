@@ -69,7 +69,59 @@ p {
 .nav-link {
   color: #424c55;
 }
-
+/* main header */
+.indexheader {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  margin: 0 auto;
+  font-size: 24px;
+}
+/* blue line w dot sectioning piece */
+.sectionbar {
+  background-color: #90a5c0;
+  font-size: 2px;
+  margin-top: 2.3rem;
+  line-height: 1.5;
+}
+/* makes sectionbar & gap between text bigger at smaller screen sizes */
+.dynamicbar {
+  padding-right: 0px;
+  max-width: 5%;
+}
+.dynamictext {
+  padding-left: 0px;
+}
+@media (max-width: 900px) {
+  .dynamictext {
+    padding-left: 10px;
+  }
+}
+@media (max-width: 800px) {
+  .dynamicbar {
+    padding-right: 0px;
+    max-width: 10%;
+  }
+  .dynamictext {
+    padding-left: 20px;
+  }
+}
+.sectiondot {
+  height: 12px;
+  width: 12px;
+  background-color: #90a5c0;
+  border-radius: 50%;
+  display: inline-block;
+  margin-top: 2rem;
+}
+/* contains project descriptions */
+.indextext {
+  margin-top: 2vw;
+  margin-bottom: 60px;
+}
+.letstalkpad {
+  padding-top: 6vw;
+}
 /* navbar up and down animation & gradient */
 #navbar {
   position: absolute; /* Initially set to absolute so it is movable with the page */
