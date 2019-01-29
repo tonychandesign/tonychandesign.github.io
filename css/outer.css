@@ -162,7 +162,7 @@ p {
   background: transparent;
   transition: width 0.2s ease, background-color 0.5s ease;
 }
-
+/* padding 0 so that section bars go to end of screen  */
 .container-fluid {
   padding-left: 0px;
   padding-right: 0px;
@@ -315,6 +315,12 @@ a:hover,
 .resumeaboutpad {
   margin-top: 30px;
 }
+/* dynamic resume */
+.dynResume {
+  max-width: 65%;
+  display: block;
+  margin: auto;
+}
 
 @media (max-width: 990px) {
   .picCenter {
@@ -328,6 +334,11 @@ a:hover,
   }
   .resumeaboutpad {
     margin-top: 70px;
+  }
+  .dynResume {
+    max-width: 100%;
+    display: block;
+    margin: auto;
   }
 }
 
