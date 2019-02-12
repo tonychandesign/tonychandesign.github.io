@@ -478,6 +478,22 @@ a.btn-social,
   padding: 0rem 0rem;
 }
 
+/* category button */
+.cat_but {
+  /* background-color: #4CAF50; */
+  border: #90a5c0;
+  border-style: solid;
+  border-radius:40px;
+  border-width: 2px;
+  color: #90a5c0;
+  padding: 10px;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 14px;
+
+}
+
 /* increase carousel slide speed */
 .carousel-item {
   transition: -webkit-transform 0.25s ease;
