@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="161px" height="1080px" viewBox="0 0 161 1080" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="161px" height="278px" viewBox="0 0 161 278" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
     <title>tony_walk</title>
     <desc>Created with Sketch.</desc>
     <g id="tony_walk" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <rect fill="#FFFFFF" x="0" y="0" width="161" height="1080"></rect>
-        <g id="Group" transform="translate(28.000000, 469.000000)" fill="#000000">
+        <g id="Group" transform="translate(28.000000, 12.000000)" fill="#000000">
             <g id="high-five" transform="translate(50.500000, 127.500000) scale(-1, 1) translate(-50.500000, -127.500000) ">
                 <path d="M30.5813657,40.8398438 C28.5489361,40.8398438 26.901308,42.5518545 26.901308,44.6637032 L26.901308,49.965203 C26.901308,52.0770518 28.5489361,53.7890625 30.5813657,53.7890625 C32.6137953,53.7890625 34.2614234,52.0770518 34.2614234,49.965203 L34.2614234,44.6642062 C34.2619074,42.5518545 32.6137953,40.8398438 30.5813657,40.8398438 Z" id="Path"></path>
                 <path d="M17.1993375,40.8398438 C15.1669079,40.8398438 13.5192798,42.5518545 13.5192798,44.6637032 L13.5192798,49.965203 C13.5192798,52.0770518 15.1669079,53.7890625 17.1993375,53.7890625 C19.2317672,53.7890625 20.8793953,52.0770518 20.8793953,49.965203 L20.8793953,44.6642062 C20.8793953,42.5518545 19.2317672,40.8398438 17.1993375,40.8398438 Z" id="Path"></path>
