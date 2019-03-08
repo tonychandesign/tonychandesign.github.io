@@ -52,8 +52,8 @@
             </g>
             <rect id="Rectangle" fill="#000000" x="196" y="167" width="10" height="123"></rect>
         </g>
-        <text id="FAMU-INTERNATIONAL" font-family="GillSans, Gill Sans" font-size="58" font-weight="normal" letter-spacing="-0.22132349" fill="#000000">
-            <tspan x="591" y="90">FAMU INTERNATIONAL</tspan>
+        <text id="FAMU-INTERNATIONAL" font-family="GillSans, Gill Sans" font-size="32" font-weight="normal" letter-spacing="-0.122109585" fill="#000000">
+            <tspan x="728" y="95">FAMU INTERNATIONAL</tspan>
         </text>
     </g>
 </svg>
