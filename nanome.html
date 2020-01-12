@@ -21,16 +21,19 @@
   <link href="css/outer.css" rel="stylesheet">
   <link href="css/d4sd.css" rel="stylesheet">
   <!-- disable scrolling hack for prototype hover effect -->
-  <!-- <link href="css/60fpsScrolling.css" rel="stylesheet"> -->
+  <link href="css/60fpsScrolling.css" rel="stylesheet">
+  <script src="vendor/jquery/jquery.min.js "></script>
+  <script src="js/progress_scroll.js"></script>
 </head>
 
-<body>
+<body class="hideScrollBar">
   <!-- fade in script -->
   <script>
     document.body.className += ' fade-out';
   </script>
   <!-- dynamic resizing  -->
   <div class="container-fluid">
+    <div id="scroll-bar"></div>
     <!--  ///////////////////  NAVBAR  ///////////////////  -->
     <nav id="navbar" class="navbar-expand fixed-top">
       <div class="row row-centerer" style="width: 95%;">
@@ -163,7 +166,7 @@
       <div class="col-1"></div>
       <div class="col-10" style="text-align:center;">
         <!-- vertically alligns words and pictures -->
-        <p class="lead" style="margin-bottom:-.5em;"> Initial Designs </p>
+        <p class="lead" style="margin-bottom:-.5em;"> Original Designs </p>
         <div class="row" style="margin-top:15px;"></div>
         <img class="img-fluid" src="img/nanome/init1.png" alt=" ">
         <div class="row" style="margin-top:15px;"></div>

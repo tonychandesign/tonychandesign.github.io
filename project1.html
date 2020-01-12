@@ -20,15 +20,18 @@
   <!-- Custom styles for this template -->
   <link href="css/outer.css" rel="stylesheet">
   <link href="css/60fpsScrolling.css" rel="stylesheet">
+  <script src="vendor/jquery/jquery.min.js "></script>
+  <script src="js/progress_scroll.js"></script>
 </head>
 
-<body>
+<body class="hideScrollBar">
   <!-- fade in script -->
   <script>
     document.body.className += ' fade-out';
   </script>
   <!-- dynamic resizing  -->
   <div class="container-fluid">
+    <div id="scroll-bar"></div>
       <!--  ///////////////////  NAVBAR  ///////////////////  -->
       <nav id="navbar" class="navbar-expand fixed-top">
         <div class="row row-centerer" style="width: 95%;">

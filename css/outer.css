@@ -668,3 +668,18 @@ a.btn-social,
     margin-right: 10px;
   }
 }
+
+/* The progress bar (scroll indicator) */
+div#scroll-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 4px;
+  z-index: 2030;
+  background: #90a5c0;
+}
+
+.hideScrollBar::-webkit-scrollbar {
+  width: 0 !important;
+}
