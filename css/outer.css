@@ -9,7 +9,7 @@ html {
 body {
   font-family: "Lato";
   color: black;
-  background-color: #ffffff;
+  background-color: #f7f7f7;
   padding-top: 130px; /*150*/
   /*fade out effect */
   opacity: 1;
@@ -55,16 +55,6 @@ p {
   margin-right: 0rem;
   font-size: 1.6em;
   font-weight: 600;
-  background-image: linear-gradient(
-    to top,
-    rgba(255, 255, 255, 0),
-    rgba(255, 255, 255, 0.3),
-    rgba(255, 255, 255, 0.7),
-    rgba(255, 255, 255, 0.95),
-    #ffffff,
-    #ffffff,
-    #ffffff
-  );
 }
 .nav-link {
   color: #424c55;
@@ -127,7 +117,9 @@ p {
   position: absolute; /* Initially set to absolute so it is movable with the page */
   top: 60px;
   display: block;
-  background-image: linear-gradient(
+  padding-bottom: 70px;
+  will-change: transform; /* possibly helps w/ scrolling performance? */
+  background: linear-gradient(
     to top,
     rgba(255, 255, 255, 0),
     rgba(255, 255, 255, 0.3),
@@ -137,8 +129,9 @@ p {
     #ffffff,
     #ffffff
   );
-  padding-bottom: 70px;
-  will-change: transform; /* possibly helps w/ scrolling performance? */
+  transition: background 4s linear;
+  -webkit-transition: background 4s linear;
+  -moz-transition: background 4s linear;
 }
 /* spacing between navbar tabs */
 .navbar-nav > li {
@@ -380,8 +373,6 @@ a:hover,
 .banner {
   /*padding: 100px 0;*/
   color: #000000;
-  /* if you want a background for the bottom set it here as background: */
-  background-color: #ffffff;
 }
 
 .banner h2 {
@@ -563,7 +554,6 @@ a.btn-social,
 
 /* Index header animation CSS*/
 .large-header {
-  background: #ffffff;
 }
 #x-canvas {
   opacity: 0.25;
@@ -682,4 +672,27 @@ div#scroll-bar {
 
 .hideScrollBar::-webkit-scrollbar {
   width: 0 !important;
+}
+
+.white_bg {
+  top: 0vh;
+  background-color: white;
+  height: 90vh;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  /* -webkit-transform: rotate(5deg);
+  transform: rotate(5deg); */
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 76%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 76%);
+}
+@media screen and (max-width: 414px) {
+  .white_bg {
+    top: -35vh;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 86%);
+  }
+}
+.img_shadow {
+  box-shadow: 0 6px 11px rgba(0, 0, 0, 0.17);
+  background: white;
 }
