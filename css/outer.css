@@ -120,10 +120,6 @@ p {
   -webkit-transition: background 4s linear;
   -moz-transition: background 4s linear;
 }
-/* spacing between navbar tabs */
-.navbar-nav > li {
-  margin-left: 30px;
-}
 
 /* navbar tab sliding animation */
 .sliding-middle-out {
@@ -341,7 +337,8 @@ footer {
 p.copyright {
   color: #c4c4ca;
   font-size: 14px;
-  text-align: center;
+  text-align: center !important;
+  margin-bottom: 20px !important;
 }
 
 /* SOCIAL BUTTON CSS */
@@ -554,6 +551,44 @@ div#scroll-bar {
   margin-left: 50px;
 }
 
+.text_xsmall {
+  max-width: 20%;
+  min-width: 300px;
+  margin: auto;
+}
+.text_small {
+  max-width: 40%;
+  min-width: 300px;
+  margin: auto;
+}
+.text_medium {
+  max-width: 50%;
+  min-width: 300px;
+  margin: auto;
+}
+.imgDescription {
+  text-align: center !important;
+}
+.img3Row {
+  max-width: 20%;
+  min-width: 300px;
+  margin: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.img2Row {
+  max-width: 40%;
+  min-width: 300px;
+  margin: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.img1Row {
+  max-width: 55%;
+  min-width: 300px;
+  width: 100%;
+  margin: 0;
+}
 /* Tony Chan in navbar alignment when shrinking screen */
 @media screen and (min-width: 992px) {
   .tonychan {
@@ -727,5 +762,22 @@ div#scroll-bar {
   }
   .viewCaseStudy {
     margin-left: 0px;
+  }
+  .text_small {
+    max-width: 80%;
+  }
+  .text_xsmall {
+    max-width: 80%;
+  }
+  .text_medium {
+    max-width: 80%;
+  }
+  .imgDescription {
+    text-align: center !important;
+    padding-top: 20px;
+  }
+  #theprocess {
+    font-size: 200%;
+    padding-top: 5px;
   }
 }
