@@ -549,7 +549,8 @@ div#scroll-bar {
 }
 .viewCaseStudy {
   margin-left: 50px;
-  font-weight: bold;
+  font-size: 1.4rem;
+  font-weight: 400;
 }
 
 .text_xsmall {
