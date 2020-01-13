@@ -82,20 +82,7 @@ p {
 .dynamictext {
   padding-left: 0px;
 }
-@media (max-width: 900px) {
-  .dynamictext {
-    padding-left: 10px;
-  }
-}
-@media (max-width: 800px) {
-  .dynamicbar {
-    padding-right: 0px;
-    max-width: 10%;
-  }
-  .dynamictext {
-    padding-left: 20px;
-  }
-}
+
 .sectiondot {
   height: 12px;
   width: 12px;
@@ -169,22 +156,9 @@ p {
   background: #424c55;
 }
 
-/* Tony Chan in navbar alignment when shrinking screen */
-@media screen and (min-width: 992px) {
-  .tonychan {
-    margin-left: 30px;
-    text-align: left;
-  }
-}
 h1 {
   /* else align the header at at the center */
   text-align: center;
-}
-/* aligns nav buttons from right to mid when shrinking screen*/
-@media screen and (min-width: 992px) {
-  .right-to-center {
-    float: right;
-  }
 }
 .nav-elem-centerer {
   display: flex;
@@ -294,15 +268,6 @@ a:hover,
   display: flex;
   align-items: center;
 }
-/*horizontally centers text/pics at small sizes*/
-@media (max-width: 1824px) {
-  .picCenter {
-    text-align: right;
-  }
-  .paddingnigga {
-    padding-top: 40px;
-  }
-}
 
 /*adds and removes padding for resume and about me in index*/
 .resumeaboutpad {
@@ -313,26 +278,6 @@ a:hover,
   max-width: 65%;
   display: block;
   margin: auto;
-}
-
-@media (max-width: 990px) {
-  .picCenter {
-    text-align: center;
-  }
-  .niggacenter {
-    text-align: center;
-  }
-  .paddingnigga {
-    padding-top: 0px;
-  }
-  .resumeaboutpad {
-    margin-top: 70px;
-  }
-  .dynResume {
-    max-width: 100%;
-    display: block;
-    margin: auto;
-  }
 }
 
 /*about me default font size*/
@@ -387,29 +332,6 @@ a:hover,
 .banner-social-buttons {
   float: right;
   margin-top: 0;
-}
-
-@media (max-width: 1199px) {
-  ul.banner-social-buttons {
-    float: left;
-    margin-top: 15px;
-  }
-}
-
-@media (max-width: 767px) {
-  .banner h2 {
-    margin: 0;
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
-    font-size: 3em;
-  }
-  ul.banner-social-buttons > li {
-    display: block;
-    margin-bottom: 20px;
-    padding: 0;
-  }
-  ul.banner-social-buttons > li:last-child {
-    margin-bottom: 0;
-  }
 }
 
 footer {
@@ -587,6 +509,129 @@ a.btn-social,
   max-width: 90%;
 }
 
+/* The progress bar (scroll indicator) */
+div#scroll-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 4px;
+  z-index: 2030;
+  background: #90a5c0;
+}
+
+.hideScrollBar::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+.white_bg {
+  top: 0vh;
+  background-color: white;
+  height: 90vh;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  /* -webkit-transform: rotate(5deg);
+  transform: rotate(5deg); */
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 76%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 76%);
+}
+
+.indexSectionHeader {
+  font-size: 36px;
+  font-weight: 500;
+}
+.img_shadow {
+  box-shadow: 0 6px 11px rgba(0, 0, 0, 0.17);
+  background: white;
+}
+
+.aboutMeImg {
+  width: 35%;
+  margin: auto;
+}
+.viewCaseStudy {
+  margin-left: 50px;
+}
+
+/* Tony Chan in navbar alignment when shrinking screen */
+@media screen and (min-width: 992px) {
+  .tonychan {
+    margin-left: 30px;
+    text-align: left;
+  }
+}
+/* aligns nav buttons from right to mid when shrinking screen*/
+@media screen and (min-width: 992px) {
+  .right-to-center {
+    float: right;
+  }
+}
+/*horizontally centers text/pics at small sizes*/
+@media (max-width: 1824px) {
+  .picCenter {
+    text-align: right;
+  }
+  .paddingnigga {
+    padding-top: 40px;
+  }
+}
+@media (max-width: 1199px) {
+  ul.banner-social-buttons {
+    float: left;
+    margin-top: 15px;
+  }
+}
+@media (max-width: 990px) {
+  .picCenter {
+    text-align: center;
+  }
+  .niggacenter {
+    text-align: center;
+  }
+  .paddingnigga {
+    padding-top: 0px;
+  }
+  .resumeaboutpad {
+    margin-top: 70px;
+  }
+  .dynResume {
+    max-width: 100%;
+    display: block;
+    margin: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .banner h2 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+    font-size: 3em;
+  }
+  ul.banner-social-buttons > li {
+    display: block;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+  ul.banner-social-buttons > li:last-child {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 900px) {
+  .dynamictext {
+    padding-left: 10px;
+  }
+}
+@media (max-width: 800px) {
+  .dynamicbar {
+    padding-right: 0px;
+    max-width: 10%;
+  }
+  .dynamictext {
+    padding-left: 20px;
+  }
+}
+
 @media screen and (min-height: 900px) {
   .padder {
     top: 120px;
@@ -656,34 +701,6 @@ a.btn-social,
     margin-right: 10px;
   }
 }
-
-/* The progress bar (scroll indicator) */
-div#scroll-bar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 4px;
-  z-index: 2030;
-  background: #90a5c0;
-}
-
-.hideScrollBar::-webkit-scrollbar {
-  width: 0 !important;
-}
-
-.white_bg {
-  top: 0vh;
-  background-color: white;
-  height: 90vh;
-  width: 100%;
-  position: absolute;
-  z-index: -1;
-  /* -webkit-transform: rotate(5deg);
-  transform: rotate(5deg); */
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 76%);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 76%);
-}
 @media screen and (max-width: 414px) {
   .white_bg {
     top: -35vh;
@@ -691,18 +708,24 @@ div#scroll-bar {
   }
   .lead {
     text-align: left !important;
+    min-width: 300px !important;
+    margin: auto !important;
   }
   .aboutMeImg {
     width: 90% !important;
     padding-top: 50px;
   }
-}
-.img_shadow {
-  box-shadow: 0 6px 11px rgba(0, 0, 0, 0.17);
-  background: white;
-}
-
-.aboutMeImg {
-  width: 35%;
-  margin: auto;
+  .dynamicthumbnail {
+    max-width: 80%;
+  }
+  .dynamicdescription {
+    max-width: 80%;
+  }
+  .indexSectionHeader {
+    font-size: 32px;
+    font-weight: 500;
+  }
+  .viewCaseStudy {
+    margin-left: 0px;
+  }
 }
