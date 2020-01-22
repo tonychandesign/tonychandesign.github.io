@@ -189,10 +189,10 @@ h1 {
   -webkit-transform: scale(1.02, 1.02);
   transform: scale(1.02, 1.02);
 }
-
 .box:hover::after {
   opacity: 1;
 }
+
 .box3 {
   position: relative;
   display: inline-block;
@@ -590,12 +590,27 @@ div#scroll-bar {
   min-width: 300px;
   width: 100%;
   margin: 0;
+  text-align: center;
+}
+.img1RowLong {
+  max-width: 85%;
+  min-width: 350px;
+  width: 100%;
+  margin: 0;
+  text-align: center;
 }
 .vid1Row {
   max-width: 550px;
   min-width: 350px;
   width: 100%;
   padding: 20px;
+  margin: auto;
+}
+.vid1RowLong {
+  max-width: 750px;
+  min-width: 350px;
+  width: 100%;
+  padding: 30px;
   margin: auto;
 }
 /* Tony Chan in navbar alignment when shrinking screen */
@@ -747,7 +762,7 @@ div#scroll-bar {
 }
 @media screen and (max-width: 414px) {
   .white_bg {
-    top: -35vh;
+    top: -27vh;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 86%);
   }
   .lead {
@@ -789,4 +804,29 @@ div#scroll-bar {
     font-size: 200%;
     padding-top: 5px;
   }
+}
+/* test  */
+.img-zoom-container {
+  position: relative;
+}
+
+.img-zoom-lens {
+  position: absolute;
+  margin-left: 365px;
+  border: 1px solid #d4d4d4;
+  /*set the size of the lens:*/
+  width: 200px;
+  height: 115px;
+}
+
+.img-zoom-result {
+  border: 1px solid #d4d4d4;
+  position: fixed;
+  z-index: 10;
+  right: 10px;
+  bottom: 10px;
+  /*set the size of the result div:*/
+  width: 500px;
+  height: 300px;
+  background: #f7f7f7;
 }
