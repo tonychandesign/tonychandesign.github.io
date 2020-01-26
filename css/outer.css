@@ -13,11 +13,10 @@ body {
   padding-top: 130px; /*150*/
   /*fade out effect */
   opacity: 1;
-  transition: 1.5s opacity;
+  transition: 0.7s opacity;
 }
-body.fade-out {
+.fade-out {
   opacity: 0;
-  transition: none;
 }
 h1,
 h2,
@@ -468,7 +467,7 @@ a.btn-social,
 #theprocess {
   font-weight: 500;
   font-size: 250%;
-  margin-bottom: 0;
+  margin-bottom: 1.5em;
   margin-top: 0;
 }
 
@@ -761,6 +760,10 @@ div#scroll-bar {
   }
 }
 @media screen and (max-width: 414px) {
+  .section-heading {
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
   .white_bg {
     top: -27vh;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 86%);
@@ -783,6 +786,7 @@ div#scroll-bar {
   .indexSectionHeader {
     font-size: 32px;
     font-weight: 500;
+    margin-bottom: 20px;
   }
   .viewCaseStudy {
     margin-left: 0px;
@@ -802,6 +806,7 @@ div#scroll-bar {
   }
   #theprocess {
     font-size: 200%;
+    margin-bottom: 1em;
     padding-top: 5px;
   }
 }
