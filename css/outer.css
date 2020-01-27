@@ -835,3 +835,8 @@ div#scroll-bar {
   height: 300px;
   background: #f7f7f7;
 }
+
+/* 3js animation for index */
+.canvas-container {
+  text-align: center;
+}

@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Tony Chan's UX Portfolio" />
   <meta name="author" content="Tony Chan" />
   <title>Designer/Developer: Tony Chan</title>
@@ -21,6 +21,10 @@
 
   <!-- scroll fade in from left/right animation -->
   <link rel="stylesheet" href="fadein_css/style.css" />
+
+  <!-- ajax for warp  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
+  <link href="css/warp.css" rel="stylesheet" />
 </head>
 
 <body style="background: white">
@@ -61,12 +65,20 @@
         <!--  ///////////////////  PORTFOLIO CONTENT  ///////////////////  -->
         <div class="carousel-item active">
           <!-- - - - - - - - - - - - - - - - - - INTRO - - - - - - - - - - - - - - - - - -->
-          <div id="large-header" class="large-header industrypadding">
-            <p class="padder textwidth indexheader">
-              I'm Tony Chan, a full-stack designer with experience in creating
-              delightful, engaging, and functional interfaces
-            </p>
-            <canvas id="x-canvas"></canvas>
+          <div id="large-header" class="large-header indexLiquidPadding">
+
+            <div class="content">
+              <div class="content__img-wrap">
+                <div class="content__img"></div>
+                <div class="content__img"></div>
+                <div class="content__img"></div>
+              </div>
+              <div class="content__text" style="text-align: center">
+                <span class="content__text-inner" 
+                >I'm Tony Chan, a full-stack designer who creates delightful experiences.</span
+              >
+              </div>
+            </div>
           </div>
 
           <div class="row">
@@ -107,7 +119,7 @@
                     <a class="sliding-middle-out" style="color: black;" href="intuit_nda.html">Intuit</a>
                   </h2>
                   <p class="lead ">
-                    Create in-house tools to empower the design studio. Work with business partners
+                    Build in-house tools to empower the design studio. Work with business partners
                      to turn future facing ideas into tangible prototypes to influence business direction.
                   </p>
                   <section>
@@ -429,7 +441,7 @@
                 extensive, but also challenging. My designs and principles are
                 a medium to leave an impression on as many people as possible,
                 from those around me to users who live on the other side of
-                the world. I love what I do. <br />
+                the world. <br />
                 <br />
                 — Tony
               </p>
@@ -477,16 +489,13 @@
   <script src="vendor/bootstrap/js/bootstrap.min.js "></script>
   <script src="custom.js"></script>
 
-  <!-- Web node animation in into developed by Greensock. -->
-  <script src="https://cdn.rawgit.com/greensock/GreenSock-JS/94c5d3100f78656c3a336ff1080ce22fba63394d/src/uncompressed/TweenMax.js"></script>
-  <script src="https://cdn.rawgit.com/greensock/GreenSock-JS/master/src/minified/jquery.gsap.min.js"></script>
-  <script src="https://cdn.rawgit.com/greensock/GreenSock-JS/master/src/minified/TweenLite.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-requestAnimationFrame/0.1.2/jquery.requestAnimationFrame.min.js"></script>
-  <script src="indexheader.js"></script>
+  <!-- index warp animation  -->
+  <script src="js/blotter.min.js"></script>
+  <script src="js/liquidDistortMaterial.js"></script>
+  <script src="js/warpAnimation.js"></script>
 </body>
 <!-- scroll fade left/right animation -->
 <script src="fadein_js/index.js"></script>
 
-<link href="css/60fpsScrolling.css" rel="stylesheet" />
 
 </html>
