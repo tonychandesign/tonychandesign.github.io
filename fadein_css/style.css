@@ -1,67 +1,20 @@
-.animation-element {
-  opacity: 0;
-  position: relative;
-}
-/*animation element sliding left*/
-
-.animation-element.slide-left {
-  opacity: 0;
-  -moz-transition: all 550ms ease-out;
-  -webkit-transition: all 550ms ease-out;
-  -o-transition: all 550ms ease-out;
-  transition: all 550ms ease-out;
-  -moz-transform: translate3d(-20px, 0px, 0px);
-  -webkit-transform: translate3d(-20px, 0px, 0px);
-  -o-transform: translate(-20px, 0px);
-  -ms-transform: translate(-20px, 0px);
-  transform: translate3d(-20px, 0px, 0px);
-}
-.animation-element.slide-right {
-  opacity: 0;
-  -moz-transition: all 550ms ease-out;
-  -webkit-transition: all 550ms ease-out;
-  -o-transition: all 550ms ease-out;
-  transition: all 550ms ease-out;
-  -moz-transform: translate3d(20px, 0px, 0px);
-  -webkit-transform: translate3d(20px, 0px, 0px);
-  -o-transform: translate(20px, 0px);
-  -ms-transform: translate(20px, 0px);
-  transform: translate3d(20px, 0px, 0px);
-}
-.animation-element.slide-up {
-  opacity: 0;
-  -moz-transition: all 550ms ease-out;
-  -webkit-transition: all 550ms ease-out;
-  -o-transition: all 550ms ease-out;
-  transition: all 550ms ease-out;
-  -moz-transform: translate3d(0px, 10px, 0px);
-  -webkit-transform: translate3d(0px, 10px, 0px);
-  -o-transform: translate(0px, 10px);
-  -ms-transform: translate(0px, 10px);
-  transform: translate3d(0px, 10px, 0px);
+.module {
 }
 
-.animation-element.slide-left.in-view {
-  opacity: 1;
-  -moz-transform: translate3d(0px, 0px, 0px);
-  -webkit-transform: translate3d(0px, 0px, 0px);
-  -o-transform: translate(0px, 0px);
-  -ms-transform: translate(0px, 0px);
-  transform: translate3d(0px, 0px, 0px);
+.slide-left {
+  transform: translateX(150px);
+  opacity: 0;
+  animation: slide-left 0.4s ease forwards;
 }
-.animation-element.slide-right.in-view {
+.already-visible {
+  transform: translateY(0);
   opacity: 1;
-  -moz-transform: translate3d(0px, 0px, 0px);
-  -webkit-transform: translate3d(0px, 0px, 0px);
-  -o-transform: translate(0px, 0px);
-  -ms-transform: translate(0px, 0px);
-  transform: translate3d(0px, 0px, 0px);
+  animation: none;
 }
-.animation-element.slide-up.in-view {
-  opacity: 1;
-  -moz-transform: translate3d(0px, 0px, 0px);
-  -webkit-transform: translate3d(0px, 0px, 0px);
-  -o-transform: translate(0px, 0px);
-  -ms-transform: translate(0px, 0px);
-  transform: translate3d(0px, 0px, 0px);
+
+@keyframes slide-left {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
