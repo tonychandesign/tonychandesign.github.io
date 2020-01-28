@@ -123,7 +123,7 @@
 
       volatility = MathUtils.lerp(
         volatility,
-        Math.min(MathUtils.lineEq(0.3, 0, 100, 0, mouseDistance), 0.3),
+        Math.min(MathUtils.lineEq(0.1, 0, 100, 0, mouseDistance), 0.3),
         0.05
       );
       material.uniforms.uVolatility.value = volatility;
