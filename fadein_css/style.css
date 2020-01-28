@@ -1,8 +1,15 @@
-.module {
+.module1 {
 }
-
 .slide-left {
   transform: translateX(150px);
+  opacity: 0;
+  animation: slide-left 0.4s ease forwards;
+}
+
+.module2 {
+}
+.slide-right {
+  transform: translateX(-150px);
   opacity: 0;
   animation: slide-left 0.4s ease forwards;
 }

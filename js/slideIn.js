@@ -26,9 +26,16 @@
 
 var win = $(window);
 
-var allMods = $(".module");
+var allMods = $(".module2");
+var allMods2 = $(".module1");
 
 allMods.each(function(i, el) {
+  var el = $(el);
+  if (el.visible(true)) {
+    el.addClass("already-visible");
+  }
+});
+allMods2.each(function(i, el) {
   var el = $(el);
   if (el.visible(true)) {
     el.addClass("already-visible");
@@ -40,6 +47,12 @@ win.scroll(function(event) {
     var el = $(el);
     if (el.visible(true)) {
       el.addClass("slide-left");
+    }
+  });
+  allMods2.each(function(i, el) {
+    var el = $(el);
+    if (el.visible(true)) {
+      el.addClass("slide-right");
     }
   });
 });
