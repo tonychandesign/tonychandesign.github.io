@@ -26,6 +26,7 @@
 
 var win = $(window);
 
+// modified for left right functionality
 var allMods = $(".module2");
 var allMods2 = $(".module1");
 
