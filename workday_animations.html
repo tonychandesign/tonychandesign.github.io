@@ -6,8 +6,11 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+    <meta
+      name="keywords"
+      content="UX design product interaction visual mostion creative animations computer science engineering design systems"
+    />
+    <meta name="author" content="Tony Chan" />
 
     <title>Tony Chan: Workday- Animations</title>
 
@@ -29,17 +32,20 @@
     <!-- Custom styles for this template -->
     <link href="css/outer.css" rel="stylesheet" />
     <link href="css/d4sd.css" rel="stylesheet" />
-    <!-- disable scrolling hack for prototype hover effect -->
-    <link href="css/60fpsScrolling.css" rel="stylesheet" />
-    <script src="vendor/jquery/jquery.min.js "></script>
-    <script src="js/progress_scroll.js"></script>
+    <link href="css/sideNav.css" rel="stylesheet" />
   </head>
 
-  <body class="hideScrollBar">
+  <body
+    class="hideScrollBar"
+    data-spy="scroll"
+    data-target="#scrollspy"
+    data-offset="100"
+  >
     <!-- fade in script -->
     <script>
       document.body.className += " fade-out";
     </script>
+
     <!-- dynamic resizing  -->
     <div class="container-fluid">
       <div id="scroll-bar"></div>
@@ -93,28 +99,108 @@
           />
         </div>
       </div>
-      <div class="row spacer "></div>
 
-      <div class="row" style="padding-top: 3vw;">
-        <div class="col-2" style="padding-right: 0px; max-width: 13%;">
-          <p
-            class="titlehoriz"
-            style="background-color:#90A5C0; font-size: 2px; margin-top: 1.8rem; line-height: 1.5;"
-          >
-            &nbsp;
+      <nav id="scrollspy">
+        <ul id="bar-fixed">
+          <div class="sidebar">
+            <li>
+              <a
+                class="bar nav-link"
+                data-easing="easeInOutQuart"
+                href="#context"
+                style="padding-top: 0px"
+                >Context</a
+              >
+            </li>
+            <li>
+              <a
+                class="bar nav-link"
+                data-easing="easeInOutQuart"
+                href="#topNav"
+                >Top Navigation</a
+              >
+            </li>
+            <li>
+              <a
+                class="bar nav-link"
+                data-easing="easeInOutQuart"
+                href="#botNav"
+                >Bottom Navigation</a
+              >
+            </li>
+            <li>
+              <a
+                class="bar nav-link"
+                data-easing="easeInOutQuart"
+                href="#mobile_conclusion"
+                >Mobile Conclusion</a
+              >
+            </li>
+            <li>
+              <a
+                class="bar nav-link"
+                data-easing="easeInOutQuart"
+                href="#contextual"
+                >Contextual Animations</a
+              >
+            </li>
+            <li>
+              <a
+                class="bar nav-link"
+                data-easing="easeInOutQuart"
+                href="#emptystate"
+                >Delightful Empty States</a
+              >
+            </li>
+            <li>
+              <a
+                class="bar nav-link"
+                data-easing="easeInOutQuart"
+                href="#learnings"
+                style="padding-bottom: 0px"
+                >Learnings</a
+              >
+            </li>
+          </div>
+        </ul>
+      </nav>
+
+      <div class="row" style="justify-content: center; padding-top: 4em; ">
+        <div class="text_small">
+          <p>
+            <span>Timeline:</span>
+            <span class="lead myRoleText">Jun - Sept 2018</span>
           </p>
-        </div>
-        <div class="col-1" style="max-width: 2%; padding-left: 0px;">
-          <span
-            style="  height: 12px; width: 12px; background-color: #90A5C0; border-radius: 50%; display: inline-block; margin-top: 1.5rem"
-          ></span>
-        </div>
-        <div class="col-9 dynamictext">
-          <div id="theprocess">Background</div>
+
+          <p>
+            <span>Employment Type:</span>
+            <span class="lead myRoleText">Internship</span>
+          </p>
+
+          <p>
+            <span>My Role:</span>
+            <span class="lead myRoleText">Product Designer</span>
+          </p>
+
+          <p>
+            <span>Tools:</span>
+            <span class="lead myRoleText">Framer Studio, CoffeeScript</span>
+          </p>
+
+          <p>
+            <span>Skills:</span>
+            <span class="lead myRoleText"
+              >Interaction Design, Motion Design
+            </span>
+          </p>
         </div>
       </div>
 
-      <div class="row" style="justify-content: center; ">
+      <div class="row theprocessWrap" id="context">
+        <div class="text_small theprocess">Context</div>
+      </div>
+
+      <div class="row" style="justify-content: center;">
         <div class="text_small">
           <p
             class="lead"
@@ -130,25 +216,9 @@
           </p>
         </div>
       </div>
-      <div class="row spacer "></div>
 
-      <div class="row" style="padding-top: 2vw;">
-        <div class="col-2" style="padding-right: 0px; max-width: 13%;">
-          <p
-            class="titlehoriz"
-            style="background-color:#90A5C0; font-size: 2px; margin-top: 1.8rem; line-height: 1.5;"
-          >
-            &nbsp;
-          </p>
-        </div>
-        <div class="col-1" style="max-width: 2%; padding-left: 0px;">
-          <span
-            style="  height: 12px; width: 12px; background-color: #90A5C0; border-radius: 50%; display: inline-block; margin-top: 1.5rem"
-          ></span>
-        </div>
-        <div class="col-9 dynamictext">
-          <div id="theprocess">Top Navigation Animations</div>
-        </div>
+      <div class="row theprocessWrap" id="topNav">
+        <div class="text_small theprocess">Top Navigation</div>
       </div>
 
       <div class="row" style="justify-content: center;">
@@ -163,7 +233,7 @@
         </div>
       </div>
 
-      <div class="row" style="justify-content: center; padding-top: 20px">
+      <div class="row " style="justify-content: center;">
         <div class="vid1Row">
           <!-- vertically alligns words and pictures -->
           <p class="lead imgDescription" style="margin-bottom:-.5em;">
@@ -191,17 +261,20 @@
       >
         Ideation
       </p>
-      <div class="row" style="justify-content: center; padding-top: 20px">
+      <div
+        class="row longImage"
+        style="justify-content: center; padding-top: 20px"
+      >
         <div class="img2Row" style="padding: 20px;">
           <img
-            class="img-fluid img_shadow"
+            class="img-fluid img_shadow "
             src="img/workday/sketch2.png"
             alt=" "
           />
         </div>
         <div class="img2Row" style="padding: 20px;">
           <img
-            class="img-fluid img_shadow"
+            class="img-fluid img_shadow "
             src="img/workday/sketch3.png"
             alt=" "
           />
@@ -226,7 +299,7 @@
       <div class="row spacer "></div>
 
       <div class="row" style="justify-content: center; padding-top: 20px">
-        <div class="img2Row">
+        <div class="img3Row">
           <!-- vertically alligns words and pictures -->
           <p class="lead imgDescription" style="margin-bottom:-.5em;">
             Seach -> Settings
@@ -238,11 +311,11 @@
             loop
             muted
             src="img/workday/search_gear.mov"
-            style="width: 300px; min-width: 300px;"
+            style="width: 200px;"
           ></video>
           <div class="row" style="margin-top:15px;"></div>
         </div>
-        <div class="img2Row">
+        <div class="img3Row">
           <!-- vertically alligns words and pictures -->
           <p class="lead imgDescription" style="margin-bottom:-.5em;">
             Search -> Menu
@@ -255,7 +328,7 @@
             loop
             muted
             src="img/workday/search_menu.mov"
-            style="width: 300px; min-width: 300px; "
+            style="width: 200px; "
           ></video>
 
           <div class="row" style="margin-top:15px;"></div>
@@ -264,7 +337,7 @@
       <div class="row spacer "></div>
 
       <div class="row" style="justify-content: center; padding-top: 20px">
-        <div class="img1Row">
+        <div class="img2Row">
           <!-- vertically alligns words and pictures -->
           <p class="lead imgDescription">In Context</p>
           <div class="row" style="margin-top:15px;"></div>
@@ -305,25 +378,9 @@
           <div class="row" style="margin-top:15px;"></div>
         </div>
       </div>
-      <div class="row spacer "></div>
 
-      <div class="row" style="padding-top: 6vw;">
-        <div class="col-2" style="padding-right: 0px; max-width: 13%;">
-          <p
-            class="titlehoriz"
-            style="background-color:#90A5C0; font-size: 2px; margin-top: 1.8rem; line-height: 1.5;"
-          >
-            &nbsp;
-          </p>
-        </div>
-        <div class="col-1" style="max-width: 2%; padding-left: 0px;">
-          <span
-            style="  height: 12px; width: 12px; background-color: #90A5C0; border-radius: 50%; display: inline-block; margin-top: 1.5rem"
-          ></span>
-        </div>
-        <div class="col-9 dynamictext">
-          <div id="theprocess">Bottom Bar Animations</div>
-        </div>
+      <div class="row theprocessWrap" id="botNav">
+        <div class="text_small theprocess">Bottom Navigation</div>
       </div>
 
       <div class="row" style="justify-content: center;">
@@ -428,23 +485,8 @@
         </div>
       </div>
 
-      <div class="row" style="padding-top: 7vw;">
-        <div class="col-2" style="padding-right: 0px; max-width: 13%;">
-          <p
-            class="titlehoriz"
-            style="background-color:#90A5C0; font-size: 2px; margin-top: 1.8rem; line-height: 1.5;"
-          >
-            &nbsp;
-          </p>
-        </div>
-        <div class="col-1" style="max-width: 2%; padding-left: 0px;">
-          <span
-            style="  height: 12px; width: 12px; background-color: #90A5C0; border-radius: 50%; display: inline-block; margin-top: 1.5rem"
-          ></span>
-        </div>
-        <div class="col-9 dynamictext">
-          <div id="theprocess">Mobile Conclusion Page</div>
-        </div>
+      <div class="row theprocessWrap" id="mobile_conclusion">
+        <div class="text_small theprocess">Mobile Conclusion</div>
       </div>
 
       <div class="row" style="justify-content: center;">
@@ -543,23 +585,8 @@
         </div>
       </div>
 
-      <div class="row" style="padding-top: 6vw;">
-        <div class="col-2" style="padding-right: 0px; max-width: 13%;">
-          <p
-            class="titlehoriz"
-            style="background-color:#90A5C0; font-size: 2px; margin-top: 1.8rem; line-height: 1.5;"
-          >
-            &nbsp;
-          </p>
-        </div>
-        <div class="col-1" style="max-width: 2%; padding-left: 0px;">
-          <span
-            style="  height: 12px; width: 12px; background-color: #90A5C0; border-radius: 50%; display: inline-block; margin-top: 1.5rem"
-          ></span>
-        </div>
-        <div class="col-9 dynamictext">
-          <div id="theprocess">Contextual Animations</div>
-        </div>
+      <div class="row theprocessWrap" id="contextual">
+        <div class="text_small theprocess">Contextual Animations</div>
       </div>
 
       <div class="row" style="justify-content: center;">
@@ -576,7 +603,7 @@
         </div>
       </div>
 
-      <div class="row" style="text-align: center; padding-top: 20px;">
+      <div class="row " style="text-align: center; padding-top: 20px;">
         <div class="vid1Row">
           <!-- vertically alligns words and pictures -->
           <p class="lead imgDescription" style="margin-bottom:-.5em;">
@@ -598,23 +625,8 @@
         </div>
       </div>
 
-      <div class="row" style="padding-top: 6vw;">
-        <div class="col-2" style="padding-right: 0px; max-width: 13%;">
-          <p
-            class="titlehoriz"
-            style="background-color:#90A5C0; font-size: 2px; margin-top: 1.8rem; line-height: 1.5;"
-          >
-            &nbsp;
-          </p>
-        </div>
-        <div class="col-1" style="max-width: 2%; padding-left: 0px;">
-          <span
-            style="  height: 12px; width: 12px; background-color: #90A5C0; border-radius: 50%; display: inline-block; margin-top: 1.5rem"
-          ></span>
-        </div>
-        <div class="col-9 dynamictext">
-          <div id="theprocess">Empty State Animations</div>
-        </div>
+      <div class="row theprocessWrap " id="emptystate">
+        <div class="text_small theprocess">Delightful Empty States</div>
       </div>
 
       <div class="row" style="justify-content: center;">
@@ -633,7 +645,10 @@
         </div>
       </div>
 
-      <div class="row" style="justify-content: center; padding-top:3em;">
+      <div
+        class="row longImage"
+        style="justify-content: center; padding-top:3em;"
+      >
         <div class="img2Row">
           <!-- vertically alligns words and pictures -->
           <p class="lead imgDescription" style="margin-bottom:-.5em;">
@@ -688,7 +703,7 @@
       </div>
       <div class="row" style="margin-top:40px;"></div>
 
-      <div class="row" style="justify-content: center; padding-top:3em;">
+      <div class="row " style="justify-content: center; padding-top:3em;">
         <div class="vid1Row">
           <!-- vertically alligns words and pictures -->
           <p class="lead imgDescription" style="margin-bottom:-.5em;">
@@ -710,23 +725,8 @@
         </div>
       </div>
 
-      <div class="row" style="padding-top: 6vw;">
-        <div class="col-2" style="padding-right: 0px; max-width: 13%;">
-          <p
-            class="titlehoriz"
-            style="background-color:#90A5C0; font-size: 2px; margin-top: 1.8rem; line-height: 1.5;"
-          >
-            &nbsp;
-          </p>
-        </div>
-        <div class="col-1" style="max-width: 2%; padding-left: 0px;">
-          <span
-            style="  height: 12px; width: 12px; background-color: #90A5C0; border-radius: 50%; display: inline-block; margin-top: 1.5rem"
-          ></span>
-        </div>
-        <div class="col-9 dynamictext">
-          <div id="theprocess">Conclusion</div>
-        </div>
+      <div class="row theprocessWrap" id="learnings">
+        <div class="text_small theprocess">Learnings</div>
       </div>
 
       <div class="row" style="justify-content: center;">
@@ -776,23 +776,8 @@
         </div>
       </div>
 
-      <div class="row" style="padding-top: 8vw;">
-        <div class="col-2" style="padding-right: 0px; max-width: 13%;">
-          <p
-            class="titlehoriz"
-            style="background-color:#90A5C0; font-size: 2px; margin-top: 1.8rem; line-height: 1.5;"
-          >
-            &nbsp;
-          </p>
-        </div>
-        <div class="col-1" style="max-width: 2%; padding-left: 0px;">
-          <span
-            style="  height: 12px; width: 12px; background-color: #90A5C0; border-radius: 50%; display: inline-block; margin-top: 1.5rem"
-          ></span>
-        </div>
-        <div class="col-9 dynamictext">
-          <div id="theprocess">My Other Work</div>
-        </div>
+      <div class="row" style="text-align: center; padding-bottom: 40px;">
+        <div class="text_medium theprocess">My Other Work</div>
       </div>
 
       <div class="row">
@@ -816,9 +801,9 @@
         >
           <div style="margin-top: 2vw; margin-bottom: 60px;">
             <div class="row-centerer dynamicdescription">
-              <h2 class="section-heading" style="font-weight: 400">
+              <h3 class="section-heading" style="font-weight: 400">
                 <a class="sliding-middle-out" href="project1.html">EventQR</a>
-              </h2>
+              </h3>
               <p class="lead ">
                 A web app that lets users create & scan events encrypted into a
                 QR code, which can be synced onto their Google Calendar.
@@ -850,11 +835,11 @@
         >
           <div class="" style="margin-top: 2vw; margin-bottom: 60px;">
             <div class="row-centerer dynamicdescription">
-              <h2 class="section-heading" style="font-weight: 400">
+              <h3 class="section-heading" style="font-weight: 400">
                 <a class="sliding-middle-out" href="birch.html"
                   >Birch Aquarium</a
                 >
-              </h2>
+              </h3>
               <p class="lead ">
                 Designing an exhibit in the Birch Aquarium at the Scripps
                 Institution of Oceanography to teach people about bubbles.
@@ -915,10 +900,26 @@
     </div>
 
     <!-- JavaScript -->
-    <script src="vendor/jquery/jquery.min.js "></script>
+    <!-- different jquery for scrollspy  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/progress_scroll.js"></script>
+    <script src="js/sideNav.js "></script>
+    <script src="js/smooth-scroll.min.js"></script>
+    <script src="js/navSlideIn.js"></script>
+    <script>
+      // Instantiate Scrolls
+      var scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 200
+      });
+
+      if (document.querySelector("[data-easing]")) {
+        var easeOutQuart = new SmoothScroll('[data-easing="easeOutQuart"]', {
+          easing: "easeOutQuart"
+        });
+      }
+    </script>
     <script src="vendor/popper/popper.min.js "></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js "></script>
     <script src="custom.js "></script>
-    <script src="60fpsScrolling.js "></script>
   </body>
 </html>

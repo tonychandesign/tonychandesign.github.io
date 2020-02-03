@@ -6,10 +6,13 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+    <meta
+      name="keywords"
+      content="UX design product interaction visual mostion creative animations computer science engineering design systems"
+    />
+    <meta name="author" content="Tony Chan" />
 
-    <title>Tony Chan: MIA</title>
+    <title>Tony Chan: D4SD pt 2</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
@@ -29,13 +32,15 @@
     <!-- Custom styles for this template -->
     <link href="css/outer.css" rel="stylesheet" />
     <link href="css/d4sd.css" rel="stylesheet" />
-    <!-- disable scrolling hack for prototype hover effect -->
-    <link href="css/60fpsScrolling.css" rel="stylesheet" />
-    <script src="vendor/jquery/jquery.min.js "></script>
-    <script src="js/progress_scroll.js"></script>
+    <link href="css/sideNav.css" rel="stylesheet" />
   </head>
 
-  <body class="hideScrollBar">
+  <body
+    class="hideScrollBar"
+    data-spy="scroll"
+    data-target="#scrollspy"
+    data-offset="100"
+  >
     <!-- fade in script -->
     <script>
       document.body.className += " fade-out";
@@ -89,25 +94,97 @@
           />
         </div>
       </div>
-      <div class="row spacer "></div>
 
-      <div class="row" style="padding-top: 4em;">
-        <div class="col-2" style="padding-right: 0px; max-width: 13%;">
-          <p
-            class="titlehoriz"
-            style="background-color:#90A5C0; font-size: 2px; margin-top: 1.8rem; line-height: 1.5;"
-          >
-            &nbsp;
+      <nav id="scrollspy">
+        <ul id="bar-fixed">
+          <div class="sidebar">
+            <li>
+              <a
+                class="bar nav-link"
+                data-easing="easeInOutQuart"
+                href="#reflection"
+                style="padding-top: 0px"
+                >Reflection</a
+              >
+            </li>
+            <li>
+              <a
+                class="bar nav-link"
+                data-easing="easeInOutQuart"
+                href="#broader"
+                >Going Broader</a
+              >
+            </li>
+            <li>
+              <a
+                class="bar nav-link"
+                data-easing="easeInOutQuart"
+                href="#usatesting"
+                >Usability Testing</a
+              >
+            </li>
+            <li>
+              <a
+                class="bar nav-link"
+                data-easing="easeInOutQuart"
+                href="#companal"
+                >Competitive Analysis</a
+              >
+            </li>
+            <li>
+              <a
+                class="bar nav-link"
+                data-easing="easeInOutQuart"
+                href="#testing2"
+                >More Testing</a
+              >
+            </li>
+            <li>
+              <a
+                class="bar nav-link"
+                data-easing="easeInOutQuart"
+                href="#learnings"
+                style="padding-bottom: 0px"
+                >Learnings</a
+              >
+            </li>
+          </div>
+        </ul>
+      </nav>
+
+      <div class="row" style="justify-content: center; padding-top: 4em; ">
+        <div class="text_small">
+          <p>
+            <span>Timeline:</span>
+            <span class="lead myRoleText">Nov - Dec 2017</span>
+          </p>
+
+          <p>
+            <span>Project Type:</span>
+            <span class="lead myRoleText">School Project</span>
+          </p>
+
+          <p>
+            <span>My Role:</span>
+            <span class="lead myRoleText">Product Designer</span>
+          </p>
+
+          <p>
+            <span>Tools:</span>
+            <span class="lead myRoleText">Adobe XD, Illustrator, inVision</span>
+          </p>
+
+          <p>
+            <span>Skills:</span>
+            <span class="lead myRoleText"
+              >User Research, Interaction Design
+            </span>
           </p>
         </div>
-        <div class="col-1" style="max-width: 2%; padding-left: 0px;">
-          <span
-            style="  height: 12px; width: 12px; background-color: #90A5C0; border-radius: 50%; display: inline-block; margin-top: 1.5rem"
-          ></span>
-        </div>
-        <div class="col-9 dynamictext">
-          <div id="theprocess">Week 5: Reflection</div>
-        </div>
+      </div>
+
+      <div class="row theprocessWrap" id="reflection">
+        <div class="text_small theprocess">Reflection</div>
       </div>
 
       <div class="row" style="justify-content: center;">
@@ -121,71 +198,71 @@
           <ul class="fa-ul">
             <li
               class="lead"
-              style="font-size: 18px; line-height: 2;padding-left: 2vw;"
+              style="font-size: 18px; line-height: 2;padding-left: 10px;"
             >
               <i
                 class="fa-li fa fa-circle"
-                style="color:#90A5C0; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"
+                style="color:#90A5C0; line-height: 1.8; font-size: 10px; padding-top: 7px"
               ></i
               >feasibility
             </li>
             <li
               class="lead"
-              style="font-size: 18px; line-height: 2;padding-left: 2vw;"
+              style="font-size: 18px; line-height: 2;padding-left: 10px;"
             >
               <i
                 class="fa-li fa fa-circle"
-                style="color:#90A5C0; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"
+                style="color:#90A5C0; line-height: 1.8;font-size: 10px; padding-top: 7px"
               ></i
               >marketing cost
             </li>
             <li
               class="lead"
-              style="font-size: 18px; line-height: 2;padding-left: 2vw;"
+              style="font-size: 18px; line-height: 2;padding-left: 10px;"
             >
               <i
                 class="fa-li fa fa-circle"
-                style="color:#90A5C0; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"
+                style="color:#90A5C0; line-height: 1.8; font-size: 10px; padding-top: 7px"
               ></i
               >funding
             </li>
             <li
               class="lead"
-              style="font-size: 18px; line-height: 2;padding-left: 2vw;"
+              style="font-size: 18px; line-height: 2;padding-left: 10px;"
             >
               <i
                 class="fa-li fa fa-circle"
-                style="color:#90A5C0; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"
+                style="color:#90A5C0; line-height: 1.8; font-size: 10px; padding-top: 7px"
               ></i
               >user demographic representation
             </li>
             <li
               class="lead"
-              style="font-size: 18px; line-height: 2;padding-left: 2vw;"
+              style="font-size: 18px; line-height: 2;padding-left: 10px;"
             >
               <i
                 class="fa-li fa fa-circle"
-                style="color:#90A5C0; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"
+                style="color:#90A5C0; line-height: 1.8; font-size: 10px; padding-top: 7px"
               ></i
               >consumer motivation
             </li>
             <li
               class="lead"
-              style="font-size: 18px; line-height: 2;padding-left: 2vw;"
+              style="font-size: 18px; line-height: 2;padding-left: 10px;"
             >
               <i
                 class="fa-li fa fa-circle"
-                style="color:#90A5C0; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"
+                style="color:#90A5C0; line-height: 1.8; font-size: 10px; padding-top: 7px"
               ></i
               >enterprise motivation
             </li>
             <li
               class="lead"
-              style="font-size: 18px; line-height: 2;padding-left: 2vw;"
+              style="font-size: 18px; line-height: 2;padding-left: 10px;"
             >
               <i
                 class="fa-li fa fa-circle"
-                style="color:#90A5C0; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"
+                style="color:#90A5C0; line-height: 1.8;font-size: 10px; padding-top: 7px"
               ></i
               >accuracy & consistency of data
             </li>
@@ -308,23 +385,8 @@
         </div>
       </div>
 
-      <div class="row" style="padding-top: 4em;">
-        <div class="col-2" style="padding-right: 0px; max-width: 13%;">
-          <p
-            class="titlehoriz"
-            style="background-color:#90A5C0; font-size: 2px; margin-top: 1.8rem; line-height: 1.5;"
-          >
-            &nbsp;
-          </p>
-        </div>
-        <div class="col-1" style="max-width: 2%; padding-left: 0px;">
-          <span
-            style="  height: 12px; width: 12px; background-color: #90A5C0; border-radius: 50%; display: inline-block; margin-top: 1.5rem"
-          ></span>
-        </div>
-        <div class="col-9 dynamictext">
-          <div id="theprocess">Week 6: Ideation</div>
-        </div>
+      <div class="row theprocessWrap" id="broader">
+        <div class="text_small theprocess">Going Broader</div>
       </div>
 
       <div class="row" style="justify-content: center;">
@@ -356,65 +418,38 @@
         </div>
       </div>
 
-      <div class="row" style="padding-top: 6em;">
-        <div class="col-2" style="padding-right: 0px; max-width: 13%;">
-          <p
-            class="titlehoriz"
-            style="background-color:#90A5C0; font-size: 2px; margin-top: 1.8rem; line-height: 1.5;"
-          >
-            &nbsp;
-          </p>
-        </div>
-        <div class="col-1" style="max-width: 2%; padding-left: 0px;">
-          <span
-            style="  height: 12px; width: 12px; background-color: #90A5C0; border-radius: 50%; display: inline-block; margin-top: 1.5rem"
-          ></span>
-        </div>
-        <div class="col-9 dynamictext">
-          <div id="theprocess">Week 7: Prototyping & User Testing</div>
-        </div>
+      <div class="row theprocessWrap" id="usatesting">
+        <div class="text_small theprocess">Usability Testing</div>
       </div>
 
       <div class="row">
-        <section class="col-md-1 order-md-1 " style="padding:0px 0;"></section>
-        <section
-          class="col-md-4 order-md-3 vertical-align "
-          style="padding:0px 0;"
-        >
-          <div style="margin-bottom: 60px;">
-            <div
-              class="row-centerer dynamicdescription animation-element slide-right"
-            >
-              <p class="lead" style="text-align: justify">
-                <strong>Idea 1:</strong> The Onion Light. Cars decelerate at
-                different rates depending on the different pressures applied on
-                the brakes; however, conventional tail lights only communicate
-                that the car is slowing down. We believed that communicating the
-                deceleration rate may be helpful since so many accidents are
-                rear-end related. <br /><br />The prototype was a graduated
-                brake light with different colors (ranging from yellow to red)
-                to communicate different appropriate braking intensities.
-              </p>
-            </div>
-          </div>
-        </section>
-        <section class="col-md-5 order-md-2 titlehoriz" style="padding:0px 0;">
-          <div
-            class="modal-dialogtwo dynamicthumbnail"
-            style="margin-top: 0px;"
-          >
-            <p
-              class="lead imgDescription"
-              style="margin-top:-2.5em;margin-bottom:.1em; text-align: center;"
-            >
-              Onion Light Prototype
-            </p>
-            <div class="titlehoriz">
-              <img class="img-fluid" src="img/proj5.2/onionlight.gif" alt=" " />
-            </div>
-          </div>
-        </section>
-        <section class="col-md-2 order-md-4 " style="padding:0px 0;"></section>
+        <div class="text_small">
+          <p class="lead" style="text-align: justify">
+            <strong>Idea 1:</strong> The Onion Light. Cars decelerate at
+            different rates depending on the different pressures applied on the
+            brakes; however, conventional tail lights only communicate that the
+            car is slowing down. We believed that communicating the deceleration
+            rate may be helpful since so many accidents are rear-end related.
+            <br /><br />The prototype was a graduated brake light with different
+            colors (ranging from yellow to red) to communicate different
+            appropriate braking intensities.
+          </p>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top: 2.5em;">
+        <div class="text_small">
+          <p class="lead imgDescription" style="margin-bottom:-.5em;">
+            Gradient Light Prototype
+          </p>
+          <div class="row" style="margin-top:15px;"></div>
+          <img
+            class="img-fluid img_shadow"
+            src="img/proj5.2/onionlight.gif"
+            alt=" "
+          />
+          <div class="row" style="margin-top:15px;"></div>
+        </div>
       </div>
 
       <div class="row" style="justify-content: center;margin-top: 2.5em;">
@@ -424,8 +459,8 @@
             style="margin-bottom:0; word-spacing: 3px; text-align: justify;"
           >
             We wanted to quickly see if people would understand the meaning
-            behind the new light. We showed the different states and animation
-            to students around campus and asked
+            behind the new light. We showed the animation to people around the
+            mall and asked
             <strong>“what do you think the lights communicate?”</strong> and
             <strong>“what purpose does it serve?”</strong> To our surprise, most
             of them responded that they were not sure if it had to do with
@@ -438,7 +473,7 @@
         </div>
       </div>
 
-      <div class="row" style="margin-top: 7.5vw;">
+      <div class="row longImage" style="margin-top: 7.5vw;">
         <section class="col-md-1 order-md-1 " style="padding:0px 0;"></section>
         <section
           class="col-md-5 order-md-2 vertical-align "
@@ -505,23 +540,8 @@
         </div>
       </div>
 
-      <div class="row" style="padding-top: 7em;">
-        <div class="col-2" style="padding-right: 0px; max-width: 13%;">
-          <p
-            class="titlehoriz"
-            style="background-color:#90A5C0; font-size: 2px; margin-top: 1.8rem; line-height: 1.5;"
-          >
-            &nbsp;
-          </p>
-        </div>
-        <div class="col-1" style="max-width: 2%; padding-left: 0px;">
-          <span
-            style="  height: 12px; width: 12px; background-color: #90A5C0; border-radius: 50%; display: inline-block; margin-top: 1.5rem"
-          ></span>
-        </div>
-        <div class="col-9 dynamictext">
-          <div id="theprocess">Week 8: MIA & Competitive Analysis</div>
-        </div>
+      <div class="row theprocessWrap" id="companal">
+        <div class="text_small theprocess">Competitive Analysis</div>
       </div>
 
       <div class="row" style="justify-content: center;">
@@ -568,7 +588,7 @@
       </div>
 
       <!-- what data do we track? -->
-      <div class="row" style="margin-top: 7.5vw;">
+      <div class="row longImage" style="margin-top: 7.5vw;">
         <section class="col-md-1 order-md-1 " style="padding:0px 0;"></section>
         <section
           class="col-md-5 order-md-2 vertical-align "
@@ -677,87 +697,56 @@
         </div>
       </div>
 
-      <div class="row" style="padding-top: 7em;">
-        <div class="col-2" style="padding-right: 0px; max-width: 13%;">
-          <p
-            class="titlehoriz"
-            style="background-color:#90A5C0; font-size: 2px; margin-top: 1.8rem; line-height: 1.5;"
-          >
-            &nbsp;
-          </p>
-        </div>
-        <div class="col-1" style="max-width: 2%; padding-left: 0px;">
-          <span
-            style="  height: 12px; width: 12px; background-color: #90A5C0; border-radius: 50%; display: inline-block; margin-top: 1.5rem"
-          ></span>
-        </div>
-        <div class="col-9 dynamictext">
-          <div id="theprocess">Week 9: Features & Usability Testing</div>
-        </div>
+      <div class="row theprocessWrap" id="testing2">
+        <div class="text_small theprocess">More Testing</div>
       </div>
 
       <div class="row">
-        <section class="col-md-1 order-md-1 " style="padding:0px 0;"></section>
-        <section
-          class="col-md-5 order-md-2 vertical-align "
-          style="padding:0px 0;"
-        >
-          <div style="margin-bottom: 60px;">
-            <div
-              class="row-centerer dynamicdescription animation-element slide-right"
+        <div class="text_small">
+          <p class="lead" style="text-align: justify; margin-bottom: 0px;">
+            For the prototype, we used the Voice Memo app on the iPhone to
+            record
+            <strong
+              >two types of phrases: Real Time Alerts and Safety
+              Reminders.</strong
             >
-              <p class="lead" style="text-align: justify; margin-bottom: 0px;">
-                For the prototype, we used the Voice Memo app on the iPhone to
-                record
-                <strong
-                  >two types of phrases: Real Time Alerts and Safety
-                  Reminders.</strong
-                >
-                The entire feature set of MIA can be found
-                <a
-                  href="https://docs.google.com/spreadsheets/d/1leFx5Sz2zWaiwcYZT_k9y5H2tAi3FbnZUkEZfqpreFE/edit?usp=sharing"
-                  target="_blank"
-                  style="margin-bottom:0em;color:#94BEE4;"
-                  >here</a
-                >. <br /><br />
-                We ran usability tests by sitting in the back of the users' car
-                and triggering such phrases when the activation conditions were
-                met. The testing script can be found
-                <a
-                  href="img/proj5.2/Tonychan_MIA_testscript.pdf"
-                  download="Tony_Testing_Plan.pdf "
-                  target="_blank"
-                  style="color:#94BEE4; "
-                  >here</a
-                >.
-              </p>
-            </div>
-          </div>
-        </section>
-        <section class="col-md-5 order-md-3 titlehoriz" style="padding:0px 0;">
-          <div
-            class="modal-dialogtwo dynamicthumbnail"
-            style="margin-top: 0px;"
-          >
-            <p
-              class="lead imgDescription"
-              style="margin-top:-2.5em;margin-bottom:.1em; text-align: center;"
-            >
-              Example Phrases
-            </p>
-            <div class="titlehoriz">
-              <img
-                class="img-fluid img_shadow"
-                src="img/proj5.2/phrases.png"
-                style="padding: 20px;"
-              />
-            </div>
-          </div>
-        </section>
-        <section class="col-md-1 order-md-4 " style="padding:0px 0;"></section>
+            The entire feature set of MIA can be found
+            <a
+              href="https://docs.google.com/spreadsheets/d/1leFx5Sz2zWaiwcYZT_k9y5H2tAi3FbnZUkEZfqpreFE/edit?usp=sharing"
+              target="_blank"
+              style="margin-bottom:0em;color:#94BEE4;"
+              >here</a
+            >. <br /><br />
+            We ran usability tests by sitting in the back of the users' car and
+            triggering such phrases when the activation conditions were met. The
+            testing script can be found
+            <a
+              href="img/proj5.2/Tonychan_MIA_testscript.pdf"
+              download="Tony_Testing_Plan.pdf "
+              target="_blank"
+              style="color:#94BEE4; "
+              >here</a
+            >.
+          </p>
+        </div>
       </div>
 
-      <div class="row" style="margin-top: 7.5vw;">
+      <div class="row" style="margin-top: 2.5em;">
+        <div class="text_small">
+          <p class="lead imgDescription" style="margin-bottom:-.5em;">
+            Example Phrases
+          </p>
+          <div class="row" style="margin-top:15px;"></div>
+          <img
+            class="img-fluid img_shadow"
+            src="img/proj5.2/phrases.png"
+            alt=" "
+          />
+          <div class="row" style="margin-top:15px;"></div>
+        </div>
+      </div>
+
+      <div class="row longImage" style="margin-top: 7.5vw;">
         <section class="col-md-1 order-md-1 " style="padding:0px 0;"></section>
         <section
           class="col-md-5 order-md-3 vertical-align "
@@ -864,66 +853,34 @@
         </div>
       </div>
 
-      <!-- Phrase Iteration -->
       <div class="row">
-        <section class="col-md-1 order-md-1 " style="padding:0px 0;"></section>
-        <section
-          class="col-md-5 order-md-2 vertical-align "
-          style="padding:0px 0;"
-        >
-          <div style="margin-bottom: 60px;">
-            <div
-              class="row-centerer dynamicdescription animation-element slide-right"
-            >
-              <p class="lead" style="text-align: justify; margin-bottom: 0px;">
-                The users also saw potential for improvement in the syntax of
-                some of the phrases. They preferred shortened phrases with more
-                contextual information and instructions on what action they
-                should be performing.
-              </p>
-            </div>
-          </div>
-        </section>
-        <section class="col-md-5 order-md-3 titlehoriz" style="padding:0px 0;">
-          <div
-            class="modal-dialogtwo dynamicthumbnail"
-            style="margin-top: 0px;"
-          >
-            <p
-              class="lead "
-              style="margin-top:-2.5em;margin-bottom:.1em; text-align: center;"
-            >
-              Phrase Iteration
-            </p>
-            <div class="titlehoriz">
-              <img
-                class="img-fluid img_shadow"
-                src="img/proj5.2/phrasechanges.png"
-                style="padding: 20px;"
-              />
-            </div>
-          </div>
-        </section>
-        <section class="col-md-1 order-md-4 " style="padding:0px 0;"></section>
-      </div>
-
-      <div class="row" style="padding-top: 7em;">
-        <div class="col-2" style="padding-right: 0px; max-width: 13%;">
-          <p
-            class="titlehoriz"
-            style="background-color:#90A5C0; font-size: 2px; margin-top: 1.8rem; line-height: 1.5;"
-          >
-            &nbsp;
+        <div class="text_small">
+          <p class="lead" style="text-align: justify; margin-bottom: 0px;">
+            The users also saw potential for improvement in the syntax of some
+            of the phrases. They preferred shortened phrases with more
+            contextual information and instructions on what action they should
+            be performing.
           </p>
         </div>
-        <div class="col-1" style="max-width: 2%; padding-left: 0px;">
-          <span
-            style="  height: 12px; width: 12px; background-color: #90A5C0; border-radius: 50%; display: inline-block; margin-top: 1.5rem"
-          ></span>
+      </div>
+
+      <div class="row" style="margin-top: 2.5em;">
+        <div class="text_small">
+          <p class="lead imgDescription" style="margin-bottom:-.5em;">
+            Phrase Iteration
+          </p>
+          <div class="row" style="margin-top:15px;"></div>
+          <img
+            class="img-fluid img_shadow"
+            src="img/proj5.2/phrasechanges.png"
+            alt=" "
+          />
+          <div class="row" style="margin-top:15px;"></div>
         </div>
-        <div class="col-9 dynamictext">
-          <div id="theprocess">Week 10: More Testing & Final Iterations</div>
-        </div>
+      </div>
+
+      <div class="row theprocessWrap" id="learnings">
+        <div class="text_small theprocess">Learnings</div>
       </div>
 
       <div class="row" style="justify-content: center;">
@@ -984,23 +941,8 @@
         </div>
       </div>
 
-      <div class="row" style="padding-top: 6em;">
-        <div class="col-2" style="padding-right: 0px; max-width: 13%;">
-          <p
-            class="titlehoriz"
-            style="background-color:#90A5C0; font-size: 2px; margin-top: 1.8rem; line-height: 1.5;"
-          >
-            &nbsp;
-          </p>
-        </div>
-        <div class="col-1" style="max-width: 2%; padding-left: 0px;">
-          <span
-            style="  height: 12px; width: 12px; background-color: #90A5C0; border-radius: 50%; display: inline-block; margin-top: 1.5rem"
-          ></span>
-        </div>
-        <div class="col-9 dynamictext">
-          <div id="theprocess">My Other Work</div>
-        </div>
+      <div class="row" style="text-align: center; padding-bottom: 40px;">
+        <div class="text_medium theprocess">My Other Work</div>
       </div>
 
       <div class="row">
@@ -1024,11 +966,11 @@
         >
           <div style="margin-top: 2vw; margin-bottom: 60px;">
             <div class="row-centerer dynamicdescription">
-              <h2 class="section-heading" style="font-weight: 400">
+              <h3 class="section-heading" style="font-weight: 400">
                 <a class="sliding-middle-out" href="project5.html">
                   D4SD Hackathon</a
                 >
-              </h2>
+              </h3>
               <p class="lead ">
                 I competed in a city wide design competition to improve
                 transportation in San Diego during Fall 2017.
@@ -1060,11 +1002,11 @@
         >
           <div style="margin-top: 2vw; margin-bottom: 60px;">
             <div class="row-centerer dynamicdescription">
-              <h2 class="section-heading" style="font-weight: 400">
+              <h3 class="section-heading" style="font-weight: 400">
                 <a class="sliding-middle-out" href="workday_pre.html"
                   >Workday</a
                 >
-              </h2>
+              </h3>
               <p class="lead ">
                 Redesigning the system wide conclusion interface and mobile
                 animations.
@@ -1125,10 +1067,26 @@
     </div>
 
     <!-- JavaScript -->
-    <script src="vendor/jquery/jquery.min.js "></script>
+    <!-- different jquery for scrollspy  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/progress_scroll.js"></script>
+    <script src="js/sideNav.js "></script>
+    <script src="js/smooth-scroll.min.js"></script>
+    <script src="js/navSlideIn.js"></script>
+    <script>
+      // Instantiate Scrolls
+      var scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 200
+      });
+
+      if (document.querySelector("[data-easing]")) {
+        var easeOutQuart = new SmoothScroll('[data-easing="easeOutQuart"]', {
+          easing: "easeOutQuart"
+        });
+      }
+    </script>
     <script src="vendor/popper/popper.min.js "></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js "></script>
     <script src="custom.js "></script>
-    <script src="60fpsScrolling.js "></script>
   </body>
 </html>

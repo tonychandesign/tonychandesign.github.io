@@ -1,30 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="keywords"
+      content="UX design product interaction visual mostion creative animations computer science engineering design systems"
+    />
+    <meta name="author" content="Tony Chan" />
 
-  <title>Tony Chan: EventQR</title>
+    <title>Tony Chan: EventQR</title>
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Custom fonts for this template -->
-  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet"
-    type="text/css">
-  <!-- Button Stylesheet -->
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <!-- Custom styles for this template -->
-  <link href="css/outer.css" rel="stylesheet">
-  <link href="css/60fpsScrolling.css" rel="stylesheet">
-  <script src="vendor/jquery/jquery.min.js "></script>
-  <script src="js/progress_scroll.js"></script>
-</head>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Custom fonts for this template -->
+    <link
+      href="vendor/font-awesome/css/font-awesome.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Button Stylesheet -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <!-- Custom styles for this template -->
+    <link href="css/outer.css" rel="stylesheet" />
+    <link href="css/d4sd.css" rel="stylesheet" />
+    <link href="css/sideNav.css" rel="stylesheet" />
+  </head>
 
-<body class="hideScrollBar">
+<body class="hideScrollBar"     
+  data-spy="scroll"
+  data-target="#scrollspy"
+  data-offset="100">
   <!-- fade in script -->
   <script>
     document.body.className += ' fade-out';
@@ -80,10 +95,123 @@
       </div>
     </div>
     <div class="row spacer "></div>
+    <nav id="scrollspy">
+      <ul id="bar-fixed">
+        <div class="sidebar">
+          <li>
+            <a
+              class="bar nav-link"
+              data-easing="easeInOutQuart"
+              href="#context"
+              style="padding-top: 0px"
+              >Context</a
+            >
+          </li>
+          <li>
+            <a
+              class="bar nav-link"
+              data-easing="easeInOutQuart"
+              href="#research"
+              >Research</a
+            >
+          </li>
+          <li>
+            <a
+              class="bar nav-link"
+              data-easing="easeInOutQuart"
+              href="#gobroad"
+              >Going Broad</a
+            >
+          </li>
+          <li>
+            <a
+              class="bar nav-link"
+              data-easing="easeInOutQuart"
+              href="#usertest"
+              >User Tests</a
+            >
+          </li>
+          <li>
+            <a
+              class="bar nav-link"
+              data-easing="easeInOutQuart"
+              href="#wireframes"
+              >Wireframes</a
+            >
+          </li>
+          <li>
+            <a
+              class="bar nav-link"
+              data-easing="easeInOutQuart"
+              href="#development"
+              >Development</a
+            >
+          </li>
+          <li>
+            <a
+              class="bar nav-link"
+              data-easing="easeInOutQuart"
+              href="#usatests"
+              >Usability Tests</a
+            >
+          </li>
+          <li>
+            <a
+              class="bar nav-link"
+              data-easing="easeInOutQuart"
+              href="#iterate"
+              >Iterate, Iterate, Iterate</a
+            >
+          </li>
+          <li>
+            <a
+              class="bar nav-link"
+              data-easing="easeInOutQuart"
+              href="#presentation"
+              style="padding-bottom: 0px"
+              >Presentation</a
+            >
+          </li>
+        </div>
+      </ul>
+    </nav>
 
+    <div class="row" style="justify-content: center; padding-top: 4em; ">
+      <div class="text_small">
+        <p>
+          <span>Timeline:</span>
+          <span class="lead myRoleText">Mar - Jun 2016</span>
+        </p>
 
+        <p>
+          <span>Project Type:</span>
+          <span class="lead myRoleText">School Project</span>
+        </p>
+
+        <p>
+          <span>My Role:</span>
+          <span class="lead myRoleText">Product Designer, Front-end Developer</span>
+        </p>
+
+        <p>
+          <span>Tools:</span>
+          <span class="lead myRoleText">Sketch, JQuery, Google Analytics & Calendar API</span>
+        </p>
+
+        <p>
+          <span>Skills:</span>
+          <span class="lead myRoleText"
+            >Interaction Design, User Research, Software Development
+          </span>
+        </p>
+      </div>
+    </div>
+
+    <div class="row theprocessWrap" id="context">
+      <div class="text_small theprocess">Context</div>
+    </div>
     <!-- - - - - - - - - - - - - - -  INTRO TO THE APP - - - - - - - - - - - - - - -->
-    <div class="row" style="margin-top: 2.5vw;">
+    <div class="row" >
       <div class="text_small">
         <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">Looking to get connected and
           get out more? Plug in with
@@ -107,20 +235,6 @@
         <div class="row" style="margin-top:15px;"></div>
         <p class="lead imgDescription" style="margin-bottom:-.5em;" style="font-size:9px;color:#dc6265; margin-bottom:-.5rem;">Full
           compatibility with Android devices only</p>
-      </div>
-    </div>
-
-    <!-- "THE PROCESS" -->
-    <div class="row" style="padding-top: 6.5vw;">
-      <div class="col-2" style="padding-right: 0px; max-width: 13%;">
-        <p class="titlehoriz" style="background-color:#90A5C0; font-size: 2px; margin-top: 1.8rem; line-height: 1.5;">&nbsp;
-        </p>
-      </div>
-      <div class="col-1" style="max-width: 2%; padding-left: 0px;">
-        <span style="  height: 12px; width: 12px; background-color: #90A5C0; border-radius: 50%; display: inline-block; margin-top: 1.5rem"></span>
-      </div>
-      <div class="col-9 dynamictext">
-        <div id="theprocess"> Background</div>
       </div>
     </div>
 
@@ -159,17 +273,8 @@
       </div>
     </div>
 
-    <div class="row" style="padding-top: 5vw;">
-      <div class="col-2" style="padding-right: 0px; max-width: 13%;">
-        <p class="titlehoriz" style="background-color:#90A5C0; font-size: 2px; margin-top: 1.8rem; line-height: 1.5;">&nbsp;
-        </p>
-      </div>
-      <div class="col-1" style="max-width: 2%; padding-left: 0px;">
-        <span style="  height: 12px; width: 12px; background-color: #90A5C0; border-radius: 50%; display: inline-block; margin-top: 1.5rem"></span>
-      </div>
-      <div class="col-9 dynamictext">
-        <div id="theprocess"> Week 1: User Research</div>
-      </div>
+    <div class="row theprocessWrap" id="research">
+      <div class="text_small theprocess">Research</div>
     </div>
 
     <div class="row">
@@ -202,18 +307,8 @@
     </div>
     <div class="row spacer "></div>
 
-    <!-- - - - - - -  DESCRIBE OUR TWO DIFFERENT SOLUTIONS TO THE PROBLEM - - - - - - -->
-    <div class="row" style="padding-top: 3vw;">
-      <div class="col-2" style="padding-right: 0px; max-width: 13%;">
-        <p class="titlehoriz" style="background-color:#90A5C0; font-size: 2px; margin-top: 1.8rem; line-height: 1.5;">&nbsp;
-        </p>
-      </div>
-      <div class="col-1" style="max-width: 2%; padding-left: 0px;">
-        <span style="  height: 12px; width: 12px; background-color: #90A5C0; border-radius: 50%; display: inline-block; margin-top: 1.5rem"></span>
-      </div>
-      <div class="col-9 dynamictext">
-        <div id="theprocess"> Week 2: Ideation</div>
-      </div>
+    <div class="row theprocessWrap" id="gobroad">
+      <div class="text_small theprocess">Going Broad</div>
     </div>
 
     <div class="row" >
@@ -291,18 +386,8 @@
     </div>
     <div class="row spacer "></div>
 
-    <!-- FIRST USER TESTING FEEDBACK ON THE PAPERPROTOTYPES(A4) -->
-    <div class="row" style="padding-top: 3vw;">
-      <div class="col-2" style="padding-right: 0px; max-width: 13%;">
-        <p class="titlehoriz" style="background-color:#90A5C0; font-size: 2px; margin-top: 1.8rem; line-height: 1.5;">&nbsp;
-        </p>
-      </div>
-      <div class="col-1" style="max-width: 2%; padding-left: 0px;">
-        <span style="  height: 12px; width: 12px; background-color: #90A5C0; border-radius: 50%; display: inline-block; margin-top: 1.5rem"></span>
-      </div>
-      <div class="col-9 dynamictext">
-        <div id="theprocess"> Week 3: User Tests</div>
-      </div>
+    <div class="row theprocessWrap" id="usertest">
+      <div class="text_small theprocess">User Tests</div>
     </div>
 
     <div class="row">
@@ -347,47 +432,31 @@
       </div>
     </div>
 
-    <!-- - - - - - - - - - - - - - - - - - DESIGN - - - - - - - - - - - - - - - -->
-    <div class="row" style="padding-top: 6.5vw;">
-      <div class="col-2" style="padding-right: 0px; max-width: 13%;">
-        <p class="titlehoriz" style="background-color:#90A5C0; font-size: 2px; margin-top: 1.8rem; line-height: 1.5;">&nbsp;
+    <div class="row theprocessWrap" id="wireframes">
+      <div class="text_small theprocess">Wireframes</div>
+    </div>
+
+    <div class="row" style="margin-top: 2.5em;">
+      <div class="text_small">
+        <p class="lead" style="text-align: justify; margin-bottom: 0px;">I lead the design since my teammates were
+          pure Computer Science
+          majors. Keeping the testing feedback in mind, I decided to simplify the functionality. I focused on
+          creating an intuitive navigation framework and
+          separating the features for our two main user groups so that beginners would more easily figure out how
+          to complete each function.
         </p>
       </div>
-      <div class="col-1" style="max-width: 2%; padding-left: 0px;">
-        <span style="  height: 12px; width: 12px; background-color: #90A5C0; border-radius: 50%; display: inline-block; margin-top: 1.5rem"></span>
-      </div>
-      <div class="col-9 dynamictext">
-        <div id="theprocess"> Week 4: Design</div>
-      </div>
     </div>
 
-    <!-- WIREFRAME -->
-    <div class="row">
-      <section class="col-md-1 order-md-1 " style="padding:0px 0;"></section>
-      <section class="col-md-5 order-md-2 vertical-align " style="padding:0px 0;">
-        <div style="margin-bottom: 60px;">
-          <div class="row-centerer dynamicdescription animation-element slide-right">
-            <p class="lead" style="text-align: justify; margin-bottom: 0px;">I lead the design since my teammates were
-              pure Computer Science
-              majors. Keeping the testing feedback in mind, I decided to simplify the functionality. I focused on
-              creating an intuitive navigation framework and
-              separating the features for our two main user groups so that beginners would more easily figure out how
-              to complete each function.
-            </p>
-          </div>
-        </div>
-      </section>
-      <section class="col-md-5 order-md-3 titlehoriz" style="padding:0px 0;">
-        <div class="modal-dialogtwo dynamicthumbnail" style="margin-top: 0px;">
-          <p class="lead imgDescription" style="margin-top:-2.5em;margin-bottom:.1em; text-align: center;"> Wireframes </p>
-          <div class="titlehoriz">
-            <img class="img-fluid img_shadow" src="img/proj1/wireframes.png" alt=" ">
-          </div>
-        </div>
-      </section>
-      <section class="col-md-1 order-md-4 " style="padding:0px 0;"></section>
+    <div class="row" style="margin-top: 2.5em;">
+      <div class="text_small">
+        <!-- vertically alligns words and pictures -->
+        <p class="lead imgDescription" style="margin-bottom:-.5em;"> Wireframes </p>
+        <div class="row" style="margin-top:15px;"></div>
+        <img class="img-fluid img_shadow" src="img/proj1/wireframes.png" alt=" ">
+        <div class="row" style="margin-top:15px;"></div>
+      </div>
     </div>
-
 
     <!-- SKELETON -->
     <p class="lead imgDescription" style="margin-bottom:-.5em !important; margin-top:2.5em; text-align: center">
@@ -401,21 +470,10 @@
         <div class="row" style="margin-top:15px;"></div>
       </div>
     </div>
-    <div class="row spacer "></div>
 
 
-    <!-- DEVELOPMENT -->
-    <div class="row" style="padding-top: 6.5vw;">
-      <div class="col-2" style="padding-right: 0px; max-width: 13%;">
-        <p class="titlehoriz" style="background-color:#90A5C0; font-size: 2px; margin-top: 1.8rem; line-height: 1.5;">&nbsp;
-        </p>
-      </div>
-      <div class="col-1" style="max-width: 2%; padding-left: 0px;">
-        <span style="  height: 12px; width: 12px; background-color: #90A5C0; border-radius: 50%; display: inline-block; margin-top: 1.5rem"></span>
-      </div>
-      <div class="col-9 dynamictext">
-        <div id="theprocess"> Week 5-6: Implementation</div>
-      </div>
+    <div class="row theprocessWrap" id="development">
+      <div class="text_small theprocess">Development</div>
     </div>
 
     <div class="row">
@@ -440,7 +498,7 @@
       Devplan
     </p>
     <div class="row">
-      <div class="img1Row" style="margin: auto; min-width: 350px;">
+      <div class="text_small" style="margin: auto; min-width: 350px;">
         <!-- vertically alligns words and pictures -->
         <div class="row" style="margin-top:15px;"></div>
         <img class="img-fluid img_shadow" src="img/proj1/devplan.png" alt=" ">
@@ -482,20 +540,9 @@
         <div class="row" style="margin-top:15px;"></div>
       </div>
     </div>
-    <div class="row spacer "></div>
 
-
-    <div class="row" style="padding-top: 4.5vw;">
-      <div class="col-2" style="padding-right: 0px; max-width: 13%;">
-        <p class="titlehoriz" style="background-color:#90A5C0; font-size: 2px; margin-top: 1.8rem; line-height: 1.5;">&nbsp;
-        </p>
-      </div>
-      <div class="col-1" style="max-width: 2%; padding-left: 0px;">
-        <span style="  height: 12px; width: 12px; background-color: #90A5C0; border-radius: 50%; display: inline-block; margin-top: 1.5rem"></span>
-      </div>
-      <div class="col-9 dynamictext">
-        <div id="theprocess"> Week 7-8: Usability Tests</div>
-      </div>
+    <div class="row theprocessWrap" id="usatests">
+      <div class="text_small theprocess">Usability Tests</div>
     </div>
 
     <div class="row">
@@ -532,19 +579,19 @@
           <div class="row-centerer dynamicdescription animation-element slide-right">
             <p class="lead" style="text-align: justify; margin-bottom: 0px;">I focused on testing 4 main functions:
               <ul class="fa-ul">
-                <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;"><i class="fa-li fa fa-circle"
-                    style="color:#90A5C0; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Create
+                <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px"><i class="fa-li fa fa-circle"
+                    style="color:#90A5C0; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Create
                   a QR code for an event</li>
-                <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;"><i class="fa-li fa fa-circle"
-                    style="color:#90A5C0; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Scan
+                <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px"><i class="fa-li fa fa-circle"
+                    style="color:#90A5C0; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Scan
                   and sync a QR code event into
                   the calendar</li>
-                <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;"><i class="fa-li fa fa-circle"
-                    style="color:#90A5C0; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>View
+                <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px"><i class="fa-li fa fa-circle"
+                    style="color:#90A5C0; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>View
                   the list of events you have
                   scanned</li>
-                <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;"><i class="fa-li fa fa-circle"
-                    style="color:#90A5C0; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Navigate
+                <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px"><i class="fa-li fa fa-circle"
+                    style="color:#90A5C0; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Navigate
                   to the help page</li>
               </ul>
             </p>
@@ -568,16 +615,16 @@
       <div class="text_small">
         <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">Findings:
           <ul class="fa-ul">
-            <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;"><i class="fa-li fa fa-circle"
-                style="color:#90A5C0; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Users
+            <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle"
+                style="color:#90A5C0; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Users
               confused the phone
               icon, which represents scanning, with the QR code icon, which represents creating an event.</li>
-            <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;"><i class="fa-li fa fa-circle"
-                style="color:#90A5C0; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Users
+            <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle"
+                style="color:#90A5C0; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Users
               had a long pause and said that they were confused by
               the “capture” and “save” buttons.</li>
-            <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;"><i class="fa-li fa fa-circle"
-                style="color:#90A5C0; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Some
+            <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle"
+                style="color:#90A5C0; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Some
               users felt that the view calendar feature was unnecessary, since they would use their own calendar app.</li>
           </ul>
         </p>
@@ -608,7 +655,7 @@
     <p class="lead imgDescription" style="margin-bottom:-.5vw; margin-top:1.5em; text-align: center">
       Google Analytics A/B Testing
     </p>
-    <div class="row" style="justify-content: center;">
+    <div class="row longImage" style="justify-content: center;">
       <div class="img2Row">
         <!-- vertically alligns words and pictures -->
         <div class="row" style="margin-top:15px;"></div>
@@ -656,60 +703,47 @@
     <div class="row spacer "></div>
 
 
-    <div class="row" style="padding-top: 6.5vw;">
-      <div class="col-2" style="padding-right: 0px; max-width: 13%;">
-        <p class="titlehoriz" style="background-color:#90A5C0; font-size: 2px; margin-top: 1.8rem; line-height: 1.5;">&nbsp;
+    <div class="row theprocessWrap" id="iterate">
+      <div class="text_small theprocess">Iterate, Iterate, Iterate</div>
+    </div>
+
+    <div class="row" style="margin-top: 2.5em;">
+      <div class="text_small">
+        <p class="lead" style="text-align: justify; margin-bottom: 0px;">With the feedback in mind, we iterated by:
+          <ul class="fa-ul">
+            <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle"
+                style="color:#90A5C0; line-height: 1.8;font-size: 10px; padding-top: 7px"></i>Making
+              the create vs scan
+              function more distinct</li>
+            <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle"
+                style="color:#90A5C0; line-height: 1.8;font-size: 10px; padding-top: 7px"></i>Removing
+              the calendar</li>
+            <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle"
+                style="color:#90A5C0; line-height: 1.8;font-size: 10px; padding-top: 7px"></i>Implementing
+              an automatic camera</li>
+            <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle"
+                style="color:#90A5C0; line-height: 1.8;font-size: 10px; padding-top: 7px"></i>Making
+              the camera interface
+              fullscreen</li>
+            <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle"
+                style="color:#90A5C0; line-height: 1.8;font-size: 10px; padding-top: 7px"></i>Adding
+              a scan successful popup</li>
+            <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle"
+                style="color:#90A5C0; line-height: 1.8;font-size: 10px; padding-top: 7px"></i>Stylizing
+              the background</li>
+          </ul>
         </p>
-      </div>
-      <div class="col-1" style="max-width: 2%; padding-left: 0px;">
-        <span style="  height: 12px; width: 12px; background-color: #90A5C0; border-radius: 50%; display: inline-block; margin-top: 1.5rem"></span>
-      </div>
-      <div class="col-9 dynamictext">
-        <div id="theprocess"> Week 9: Iterate, Iterate, Iterate </div>
       </div>
     </div>
 
-    <div class="row">
-      <section class="col-md-2 order-md-1 " style="padding:0px 0;"></section>
-      <section class="col-md-4 order-md-2 vertical-align titlehoriz" style="padding:0px 0;">
-        <div style="margin-bottom: 60px;">
-          <div class="row-centerer dynamicdescription animation-element slide-right">
-            <p class="lead" style="text-align: justify; margin-bottom: 0px;">With the feedback in mind, we iterated by:
-              <ul class="fa-ul">
-                <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;"><i class="fa-li fa fa-circle"
-                    style="color:#90A5C0; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Making
-                  the create vs scan
-                  function more distinct</li>
-                <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;"><i class="fa-li fa fa-circle"
-                    style="color:#90A5C0; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Removing
-                  the calendar</li>
-                <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;"><i class="fa-li fa fa-circle"
-                    style="color:#90A5C0; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Implementing
-                  an automatic camera</li>
-                <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;"><i class="fa-li fa fa-circle"
-                    style="color:#90A5C0; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Making
-                  the camera interface
-                  fullscreen</li>
-                <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;"><i class="fa-li fa fa-circle"
-                    style="color:#90A5C0; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Adding
-                  a scan successful popup</li>
-                <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;"><i class="fa-li fa fa-circle"
-                    style="color:#90A5C0; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Stylizing
-                  the background</li>
-              </ul>
-            </p>
-          </div>
-        </div>
-      </section>
-      <section class="col-md-4 order-md-3 titlehoriz" style="padding:0px 0;">
-        <div class="modal-dialogtwo dynamicthumbnail" style="margin-top: 0px;">
-          <p class="lead imgDescription" style="margin-top:-2.5em;margin-bottom:.1em; text-align: center;"> Icon POC </p>
-          <div class="titlehoriz">
-            <img class="img-fluid img_shadow" src="img/proj1/indexproj1_small.png" style="border-radius: 27px;">
-          </div>
-        </div>
-      </section>
-      <section class="col-md-2 order-md-4 " style="padding:0px 0;"></section>
+    <div class="row" style="margin-top: 2.5em;">
+      <div class="text_small">
+        <!-- vertically alligns words and pictures -->
+        <p class="lead imgDescription" style="margin-bottom:-.5em;"> Icon POC </p>
+        <div class="row" style="margin-top:15px;"></div>
+        <img class="img-fluid img_shadow" src="img/proj1/indexproj1_small.png"  style="border-radius: 25px;"alt=" ">
+        <div class="row" style="margin-top:15px;"></div>
+      </div>
     </div>
 
     <!-- PICTURES OF FINAL APP -->
@@ -726,79 +760,42 @@
       </div>
     </div>
 
-    <!-- - - - - - - - - - - - - THE FINAL STRETCH - - - - - - - - - - - - -->
-    <div class="row" style="padding-top: 9.5vw;">
-      <div class="col-2" style="padding-right: 0px; max-width: 13%;">
-        <p class="titlehoriz" style="background-color:#90A5C0; font-size: 2px; margin-top: 1.8rem; line-height: 1.5;">&nbsp;
-        </p>
-      </div>
-      <div class="col-1" style="max-width: 2%; padding-left: 0px;">
-        <span style="  height: 12px; width: 12px; background-color: #90A5C0; border-radius: 50%; display: inline-block; margin-top: 1.5rem"></span>
-      </div>
-      <div class="col-9 dynamictext">
-        <div id="theprocess"> Week 10: Presentation </div>
-      </div>
-    </div>
-    <!-- - - - - - - - - - - - SCREENSHOT OF POSTER AND SLIDE - - - - - - - - - -->
-    <div class="modal-dialog ">
-      <div class="row ">
-        <div class="col-md-1"></div>
-        <div class="col-md-5 mr-auto vertical-align ">
-          <div class="container " style="text-align: center; ">
-            <!-- descriptin at top left -->
-            <div class="row row-centerer" style="max-width: 80%">
-              <p class="lead" style="margin-bottom:0em; text-align: justify"> We finished the course by pitching the
-                project in front of an audience of
-                300-400 people. It was a great experience and other teams also had brilliantly executed ideas. </p>
-            </div>
-            <div class="row spacer "></div>
-            <!-- Poster @ bottom left -->
-            <div class="row" style="margin-bottom:40px; ">
-              <p class="lead row-centerer imgDescription"> Pitch Slide </p>
-              <div class="modal-dialogtwo">
-                <!-- picture row -->
-                <div class="row row-centerer2 ">
-                  <!-- vertically alligns words and pictures -->
-                  <div class="vertical-align ">
-                    <div class="col-lg-12 ">
-                      <div class="row descriptionspacer "></div>
-                      <img class="img-fluid img_shadow" src="img/proj1/presentation/slide.png " alt=" ">
-                      <div class="row" style="margin-top:18px;"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Slide at right-->
-        <div class="col-md-5 mr-auto vertical-align ">
-          <div class="row" style=" width: 100%; text-align: center; margin: auto;">
-            <p class="lead row-centerer imgDescription"> Presentation Poster </p>
-            <div class="modal-dialogtwo">
-              <!-- picture row -->
-              <div class="row row-centerer2 ">
-                <!-- vertically alligns words and pictures -->
-                <div class="vertical-align ">
-                  <div class="col-lg-12" style="padding-left:0px;padding-right:0px;">
-                    <div class="row descriptionspacer "></div>
-                    <img class="img-fluid img_shadow" src="img/proj1/presentation/poster.png " style="width:90%; ">
-                    <div class="row" style="margin-top:18px;"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-1"></div>
-      </div>
+    <div class="row theprocessWrap" id="presentation">
+      <div class="text_small theprocess">Presentation</div>
     </div>
 
-    <!-- picture spacer -->
-    <div class="row spacer "></div>
+    <div class="row">
+      <div class="text_small">
+        <p class="lead" style="margin-bottom:0em; text-align: justify"> We finished the course by pitching the
+          project in front of an audience of
+          300-400 people. It was a great experience and other teams also had brilliantly executed ideas. </p>
+      </div>
+    </div>
+    <p class="lead imgDescription" style="margin-bottom:-.5vw; margin-top:1.5em; text-align: center">
+      Pitch Slide
+    </p>
+    <div class="row">
+      <div class="text_small" style="margin: auto; min-width: 350px;">
+        <!-- vertically alligns words and pictures -->
+        <div class="row" style="margin-top:15px;"></div>
+        <img class="img-fluid img_shadow" src="img/proj1/presentation/slide.png" alt=" ">
+        <div class="row" style="margin-top:15px;"></div>
+      </div>
+    </div>
+    <p class="lead imgDescription" style="margin-bottom:-.5vw; margin-top:1.5em; text-align: center">
+      Presentation Poster
+    </p>
+    <div class="row">
+      <div class="text_small" style="margin: auto; min-width: 350px;">
+        <!-- vertically alligns words and pictures -->
+        <div class="row" style="margin-top:15px;"></div>
+        <img class="img-fluid img_shadow" src="img/proj1/presentation/poster.png" alt=" ">
+        <div class="row" style="margin-top:15px;"></div>
+      </div>
+    </div>
 
     <!-- CONCLUSIONS -->
-    <div class="row" style="margin-top: 2.5vw;">
+    <div class="row" style="margin-top: 2.5em;">
       <div class="text_small">
         <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">In conclusion, I learned
           that I have to thoroughly research possible
@@ -812,22 +809,8 @@
     </div>
 
 
-    <div style="margin-top: 80px;"></div>
-
-
-
-
-    <div class="row" style="padding-top: 3vw;">
-      <div class="col-2" style="padding-right: 0px; max-width: 13%;">
-        <p class="titlehoriz" style="background-color:#90A5C0; font-size: 2px; margin-top: 1.8rem; line-height: 1.5;">&nbsp;
-        </p>
-      </div>
-      <div class="col-1" style="max-width: 2%; padding-left: 0px;">
-        <span style="  height: 12px; width: 12px; background-color: #90A5C0; border-radius: 50%; display: inline-block; margin-top: 1.5rem"></span>
-      </div>
-      <div class="col-9 dynamictext">
-        <div id="theprocess"> My Other Work</div>
-      </div>
+    <div class="row" style="text-align: center; padding-bottom: 40px;">
+      <div class="text_medium theprocess">My Other Work</div>
     </div>
 
     <div class="row">
@@ -851,11 +834,11 @@
       >
         <div style="margin-top: 2vw; margin-bottom: 60px;">
           <div class="row-centerer dynamicdescription">
-            <h2 class="section-heading" style="font-weight: 400">
+            <h3 class="section-heading" style="font-weight: 400">
               <a class="sliding-middle-out" href="project5.html">
                 D4SD Hackathon</a
               >
-            </h2>
+            </h3>
             <p class="lead ">
               I competed in a city wide design competition to improve
               transportation in San Diego during Fall 2017.
@@ -886,11 +869,11 @@
       >
         <div style="margin-top: 2vw; margin-bottom: 60px;">
           <div class="row-centerer dynamicdescription">
-            <h2 class="section-heading" style="font-weight: 400">
+            <h3 class="section-heading" style="font-weight: 400">
               <a class="sliding-middle-out" href="workday_pre.html"
                 >Workday</a
               >
-            </h2>
+            </h3>
             <p class="lead ">
               Redesigning the system wide conclusion interface and mobile
               animations.
@@ -929,15 +912,28 @@
     <!-- container fluid wrapper end div -->
   </div>
 
+    <!-- JavaScript -->
+    <!-- different jquery for scrollspy  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/progress_scroll.js"></script>
+    <script src="js/sideNav.js "></script>
+    <script src="js/smooth-scroll.min.js"></script>
+    <script src="js/navSlideIn.js"></script>
+    <script>
+      // Instantiate Scrolls
+      var scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 200
+      });
 
-
-
-  <!-- JavaScript -->
-  <script src="vendor/jquery/jquery.min.js "></script>
-  <script src="vendor/popper/popper.min.js "></script>
-  <script src="vendor/bootstrap/js/bootstrap.min.js "></script>
-  <script src="custom.js "></script>
-  <script src="60fpsScrolling.js "></script>
+      if (document.querySelector("[data-easing]")) {
+        var easeOutQuart = new SmoothScroll('[data-easing="easeOutQuart"]', {
+          easing: "easeOutQuart"
+        });
+      }
+    </script>
+    <script src="vendor/popper/popper.min.js "></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js "></script>
+    <script src="custom.js "></script>
 
 </body>
 

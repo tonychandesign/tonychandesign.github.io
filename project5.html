@@ -1,32 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="keywords"
+      content="UX design product interaction visual mostion creative animations computer science engineering design systems"
+    />
+    <meta name="author" content="Tony Chan" />
 
-  <title>Tony Chan: MEA</title>
+    <title>Tony Chan: D4SD</title>
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Custom fonts for this template -->
-  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet"
-    type="text/css">
-  <!-- Button Stylesheet -->
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <!-- Custom styles for this template -->
-  <link href="css/outer.css" rel="stylesheet">
-  <link href="css/d4sd.css" rel="stylesheet">
-  <!-- disable scrolling hack for prototype hover effect -->
-  <link href="css/60fpsScrolling.css" rel="stylesheet">
-  <script src="vendor/jquery/jquery.min.js "></script>
-  <script src="js/progress_scroll.js"></script>
-</head>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Custom fonts for this template -->
+    <link
+      href="vendor/font-awesome/css/font-awesome.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Button Stylesheet -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <!-- Custom styles for this template -->
+    <link href="css/outer.css" rel="stylesheet" />
+    <link href="css/d4sd.css" rel="stylesheet" />
+    <link href="css/sideNav.css" rel="stylesheet" />
+  </head>
 
-<body class="hideScrollBar">
+<body class="hideScrollBar"     
+  data-spy="scroll"
+  data-target="#scrollspy"
+  data-offset="100">
   <!-- fade in script -->
   <script>
     document.body.className += ' fade-out';
@@ -79,10 +92,100 @@
         <img class="img-fluid" src="img/proj5/meacover.png" style="margin: auto;">
       </div>
     </div>
-    <div class="row spacer"></div>
 
+    <nav id="scrollspy">
+      <ul id="bar-fixed">
+        <div class="sidebar">
+          <li>
+            <a
+              class="bar nav-link"
+              data-easing="easeInOutQuart"
+              href="#context"
+              style="padding-top: 0px"
+              >Context</a
+            >
+          </li>
+          <li>
+            <a
+              class="bar nav-link"
+              data-easing="easeInOutQuart"
+              href="#research"
+              >Research</a
+            >
+          </li>
+          <li>
+            <a
+              class="bar nav-link"
+              data-easing="easeInOutQuart"
+              href="#ideation"
+              >Going Broad</a
+            >
+          </li>
+          <li>
+            <a
+              class="bar nav-link"
+              data-easing="easeInOutQuart"
+              href="#prototyping"
+              >Prototyping</a
+            >
+          </li>
+          <li>
+            <a
+              class="bar nav-link"
+              data-easing="easeInOutQuart"
+              href="#submission"
+              >Submission</a
+            >
+          </li>
+          <li>
+            <a
+              class="bar nav-link"
+              data-easing="easeInOutQuart"
+              href="#part2"
+              style="padding-bottom: 0px"
+              >Part 2</a
+            >
+          </li>
+        </div>
+      </ul>
+    </nav>
 
-    <div class="row" style="margin-top: 2.5vw;">
+    <div class="row" style="justify-content: center; padding-top: 4em; ">
+      <div class="text_small">
+        <p>
+          <span>Timeline:</span>
+          <span class="lead myRoleText">Oct - Nov 2017</span>
+        </p>
+
+        <p>
+          <span>Project Type:</span>
+          <span class="lead myRoleText">Hackathon</span>
+        </p>
+
+        <p>
+          <span>My Role:</span>
+          <span class="lead myRoleText">Product Designer</span>
+        </p>
+
+        <p>
+          <span>Tools:</span>
+          <span class="lead myRoleText">Adobe XD, Illustrator, inVision</span>
+        </p>
+
+        <p>
+          <span>Skills:</span>
+          <span class="lead myRoleText"
+            >User Research, Interaction Design
+          </span>
+        </p>
+      </div>
+    </div>
+
+    <div class="row theprocessWrap" id="context">
+      <div class="text_small theprocess">Context</div>
+    </div>
+
+    <div class="row">
       <div class="text_small">
             <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">MEA connects autonomous
               vehicle
@@ -110,18 +213,6 @@
     </div>
     <div class="row spacer " style="margin-bottom: -150px;"></div>
 
-    <div class="row" style="padding-top: 1vw;">
-      <div class="col-2" style="padding-right: 0px; max-width: 13%;">
-        <p class="titlehoriz" style="background-color:#90A5C0; font-size: 2px; margin-top: 1.8rem; line-height: 1.5;">&nbsp;
-        </p>
-      </div>
-      <div class="col-1" style="max-width: 2%; padding-left: 0px;">
-        <span style="  height: 12px; width: 12px; background-color: #90A5C0; border-radius: 50%; display: inline-block; margin-top: 1.5rem"></span>
-      </div>
-      <div class="col-9 dynamictext">
-        <div id="theprocess"> Background</div>
-      </div>
-    </div>
 
     <div class="row" >
       <div class="text_small">
@@ -134,36 +225,10 @@
               teamed up 4 others. Check out the contest details <a href="https://www.d4sd.org" target="_blank" style="margin-bottom:0em;color:#E01A4F;">here</a>.</p>
           </div>
       </div>
-    <div class="row spacer "></div>
 
-    <!-- My role -->
-    <div class="row" style="margin-top: 2.5vw;">
-      <div class="text_small">
-          <p style="margin-bottom:0; color:#E01A4F;">My Role: </p>
-          <p class="lead" style="margin-bottom:0; text-align: justify;">
-            <strong>Content Strategist:</strong> I focused on questions like what content can we offer to meet our
-            stakeholders' expectations? How many features are appropriate and what form should it take? What style or
-            tone should it have?
-            <br><br>
-            <strong>User Researcher and Designer:</strong> I was responsible for interviewing users and incorporating
-            their feedback into our prototypes.</p>
-        </div>
+      <div class="row theprocessWrap" id="research">
+        <div class="text_small theprocess">Research</div>
       </div>
-
-      <div class="row spacer "></div>
-
-    <div class="row" style="padding-top: 3vw;">
-      <div class="col-2" style="padding-right: 0px; max-width: 13%;">
-        <p class="titlehoriz" style="background-color:#90A5C0; font-size: 2px; margin-top: 1.8rem; line-height: 1.5;">&nbsp;
-        </p>
-      </div>
-      <div class="col-1" style="max-width: 2%; padding-left: 0px;">
-        <span style="  height: 12px; width: 12px; background-color: #90A5C0; border-radius: 50%; display: inline-block; margin-top: 1.5rem"></span>
-      </div>
-      <div class="col-9 dynamictext">
-        <div id="theprocess"> Week 1: Research</div>
-      </div>
-    </div>
 
     <div class="row">
       <div class="text_small">
@@ -176,14 +241,14 @@
           for the highest number of pedestrian injuries and deaths in the past 15 years.
           <br /> <br /> Observations: <br />
           <ul class="fa-ul">
-            <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;"><i class="fa-li fa fa-circle"
-                style="color:#90A5C0; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Drivers
+            <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle"
+                style="color:#90A5C0; line-height: 1.8;  font-size: 10px; padding-top: 7px"></i>Drivers
               often rushed to turn right but would come to an abrupt stop when realizing there were pedestrians.</li>
-            <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;"><i class="fa-li fa fa-circle"
-                style="color:#90A5C0; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Drivers
+            <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle"
+                style="color:#90A5C0; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Drivers
               often looked left for cars but not right.</li>
-            <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;"><i class="fa-li fa fa-circle"
-                style="color:#90A5C0; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Some
+            <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle"
+                style="color:#90A5C0; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Some
               pedestrians J walked to make it to the bus.</li>
           </ul>
         </p>
@@ -218,35 +283,32 @@
         <div class="row" style="margin-top:15px;"></div>
       </div>
     </div>
-    
-    <div class="row spacer "></div>
-
 
     <div class="row" style="margin-top: 2.5em;">
-      <section class="col-md-2 order-md-1 " style="padding:0px 0;"></section>
-      <section class="col-md-4 order-md-2 vertical-align " style="padding:0px 0;">
+      <section class="col-md-3 order-md-1 " style="padding:0px 0;"></section>
+      <section class="col-md-3 order-md-2 vertical-align " style="padding:0px 0;">
         <div >
           <div class="row-centerer dynamicdescription">
             <p class="lead" style="text-align: justify;"> At these intersections, we interviewed J
               walkers about their general commuting patterns. <br>Main Concerns:
               <ul class="fa-ul">
-                <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;"><i class="fa-li fa fa-circle"
-                    style="color:#90A5C0; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Broad
+                <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle"
+                    style="color:#90A5C0; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Broad
                   agreement that the distance between
                   the crosswalks were too far</li>
-                <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;"><i class="fa-li fa fa-circle"
-                    style="color:#90A5C0; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Crosswalks
+                <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle"
+                    style="color:#90A5C0; line-height: 1.8;  font-size: 10px; padding-top: 7px"></i>Crosswalks
                   didn't do a good job
                   in catching a driver’s attention</li>
-                <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;"><i class="fa-li fa fa-circle"
-                    style="color:#90A5C0; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Maybe
+                <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle"
+                    style="color:#90A5C0; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Maybe
                   have insurance companies track driving patterns to enforce safe behavior</li>
               </ul>
             </p>
           </div>
         </div>
       </section>
-      <section class="col-md-4 order-md-3 titlehoriz" style="padding:0px 0;">
+      <section class="col-md-3 order-md-3 titlehoriz" style="padding:0px 0;">
         <div class="modal-dialogtwo dynamicthumbnail" style="margin-top: 0px;">
           <p class="lead imgDescription" style="margin-top:-2.5em;margin-bottom:.1em; text-align: center;"> Field Notes </p>
           <div class="titlehoriz">
@@ -254,7 +316,7 @@
           </div>
         </div>
       </section>
-      <section class="col-md-2 order-md-4 " style="padding:0px 0;"></section>
+      <section class="col-md-3 order-md-4 " style="padding:0px 0;"></section>
     </div>
 
 
@@ -268,6 +330,7 @@
       </div>
     </div>
 
+    <div class="longImage">
     <p class="lead imgDescription" style="margin-bottom:-.5vw; margin-top:1.5em; text-align: center">
       Survey Results
     </p>
@@ -294,11 +357,11 @@
             <p class="lead" style="text-align: justify">Users typically thought that they were good drivers, even
               though more than half of them were involved in an accident. <br>Insights:
               <ul class="fa-ul">
-                <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;"><i class="fa-li fa fa-circle"
-                    style="color:#90A5C0; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Confidence
+                <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle"
+                    style="color:#90A5C0; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Confidence
                   in driving causes people to put their own priorities over the safety of others</li>
-                <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;"><i class="fa-li fa fa-circle"
-                    style="color:#90A5C0; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Being
+                <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle"
+                    style="color:#90A5C0; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Being
                   in a car lowers empathy because drivers don’t see each other as people,
                   but as vehicles</li>
               </ul>
@@ -316,27 +379,15 @@
       </section>
       <section class="col-md-1 order-md-4 " style="padding:0px 0;"></section>
     </div>
-    <div class="row spacer "></div>
+  </div>
 
 
-    <div class="row" style="padding-top: 4.5em;">
-      <div class="col-2" style="padding-right: 0px; max-width: 13%;">
-        <p class="titlehoriz" style="background-color:#90A5C0; font-size: 2px; margin-top: 1.8rem; line-height: 1.5;">&nbsp;
-        </p>
-      </div>
-      <div class="col-1" style="max-width: 2%; padding-left: 0px;">
-        <span style="  height: 12px; width: 12px; background-color: #90A5C0; border-radius: 50%; display: inline-block; margin-top: 1.5rem"></span>
-      </div>
-      <div class="col-9 dynamictext">
-        <div id="theprocess"> Week 2: Ideation</div>
-      </div>
+    <div class="row theprocessWrap" id="ideation">
+      <div class="text_small theprocess">Going Broad</div>
     </div>
 
-    <div class="row">
-      <section class="col-md-1 order-md-1 " style="padding:0px 0;"></section>
-      <section class="col-md-5 order-md-2 vertical-align " style="padding:0px 0;">
-        <div style="margin-top: 2vw;">
-          <div class="row-centerer dynamicdescription animation-element slide-right">
+        <div class="row">
+          <div class="text_small">
             <p class="lead" style="text-align: justify; margin-bottom: 0px;"> We began to ideate on ways to increase
               the feeling of
               empathy
@@ -351,18 +402,16 @@
             </p>
           </div>
         </div>
-      </section>
-      <section class="col-md-5 order-md-3 titlehoriz" style="padding:0px 0;">
-        <div class="modal-dialogtwo dynamicthumbnail" style="margin-top: 0px;">
-          <p class="lead imgDescription" style="margin-top:-2.5em;margin-bottom:.1em; text-align: center;"> Needfinding </p>
-          <div class="titlehoriz">
+    
+
+        <div class="row" style="margin-top: 2.5em;">
+          <div class="text_small">
+            <p class="lead imgDescription" style="margin-bottom:-.5em;"> Needfinding </p>
+            <div class="row" style="margin-top:15px;"></div>
             <img class="img-fluid img_shadow" src="img/proj5/empathize.png" alt=" ">
+            <div class="row" style="margin-top:15px;"></div>
           </div>
         </div>
-      </section>
-      <section class="col-md-1 order-md-4 " style="padding:0px 0;"></section>
-    </div>
-
 
     <!-- initial problem -->
     <div class="row" style="margin-top: 2.5em;">
@@ -377,7 +426,6 @@
       </div>
     </div>
 
-
     <!-- double diamond -->
     <div class="row" style="margin-top: 2.5em;">
       <div class="text_small">
@@ -388,7 +436,6 @@
         <div class="row" style="margin-top:15px;"></div>
       </div>
     </div>
-    <div class="row spacer "></div>
 
     <div class="row" style="margin-top: 2.5em;">
       <div class="text_small">
@@ -422,47 +469,42 @@
         <div class="row" style="margin-top:15px;"></div>
       </div>
     </div>
-    <div class="row spacer "></div>
 
-    <div class="row" style="margin-top: 2.5em;">
+    <div class="row" style="justify-content: center; padding-top: 20px;">
       <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;"><strong>Problem Statement:</strong>
-          A
+        <p class="lead" style="margin-bottom:2vw;margin-top:2vw; word-spacing: 3px; font-size:
+        24px; font-style: italic;">
+          <b style="font-style: normal">Problem Statement:</b> "A
           challenge that AVs
           are facing is how to coexist with human drivers on the road. Companies need an abundance of data on
           regular human driving patterns to create a safe transitionary period in which AVs
-          and humans share the road.
+          and humans share the road."
         </p>
       </div>
     </div>
 
+    <div class="row margin-top: 2.5em;" >
+      <div class="text_small">
+        <p class="lead" style="text-align: justify; margin-bottom: 0px;">Our hypothesis: AV companies will pay
+          drivers in exchange for their data. We learned that companies like Tesla open source their drivers’ data,
+          so it may not
+          be feasible to assume that companies would pay for it. Mr. Robinson (Freshform & Design Forward CEO)
+          pointed out that our solution may be unique because the current data available to AV
+          companies comes from “super-users” such as Uber drivers and Tesla owners, who do not represent
+          the average driver. <strong>Longitudinal data from everyday users over time can reveal interesting
+            fluctuations in driving patterns and trends.</strong>
+        </p>
+      </div>
+    </div>
 
-    <div class="row" style="margin-top: 7.5vw;">
-      <section class="col-md-1 order-md-1 " style="padding:0px 0;"></section>
-      <section class="col-md-5 order-md-2 vertical-align " style="padding:0px 0;">
-        <div>
-          <div class="row-centerer dynamicdescription animation-element slide-right">
-            <p class="lead" style="text-align: justify; margin-bottom: 0px;">Our current idea: AV companies will pay
-              drivers in exchange for their data. We learned that companies like Tesla open source their drivers’ data,
-              so it may not
-              be feasible to assume that companies would pay for it. Mr. Robinson (Freshform & Design Forward CEO)
-              pointed out that our solution may be unique because the current data available to AV
-              companies comes from “super-users” such as Uber drivers and Tesla owners, who do not represent
-              the average driver. <strong>Longitudinal data from everyday users over time can reveal interesting
-                fluctuations in driving patterns and trends.</strong>
-            </p>
-          </div>
-        </div>
-      </section>
-      <section class="col-md-5 order-md-3 titlehoriz" style="padding:0px 0;">
-        <div class="modal-dialogtwo dynamicthumbnail" style="margin-top: 0px;">
-          <p class="lead imgDescription" style="margin-top:-2.5em;margin-bottom:.1em; text-align: center;"> Feedback from a CEO </p>
-          <div class="titlehoriz">
-            <img class="img-fluid img_shadow" src="img/proj5/groupwork.png" alt=" ">
-          </div>
-        </div>
-      </section>
-      <section class="col-md-1 order-md-4 " style="padding:0px 0;"></section>
+    <div class="row" style="justify-content: center; margin-top: 1.5em;">
+      <div class="text_small">
+        <!-- vertically alligns words and pictures -->
+        <p class="lead imgDescription" style="margin-bottom:.5em;">Contest Day</p>
+        <div class="row" style="margin-top:15px;"></div>
+        <img class="img-fluid img_shadow" src="img/proj5/groupwork.png" alt=" " />
+        <div class="row" style="margin-top:15px;"></div>
+      </div>
     </div>
 
     <div class="row" style="margin-top: 3.5em;">
@@ -492,7 +534,7 @@
     <div class="vertical-align titlehoriz ">
       <p class="lead imgDescription" style="margin-bottom:.5em; "> Storyboards </p>
     </div>
-    <div class="row titlehoriz ">
+    <div class="row titlehoriz longImage">
       <div class="col-1 "></div>
       <div class="col-10 ">
         <div class="modal-dialogtwo ">
@@ -511,19 +553,9 @@
       </div>
       <div class="col-1 "></div>
     </div>
-    <div class="row spacer "></div>
 
-    <div class="row" style="padding-top: 3.5em;">
-      <div class="col-2" style="padding-right: 0px; max-width: 13%;">
-        <p class="titlehoriz" style="background-color:#90A5C0; font-size: 2px; margin-top: 1.8rem; line-height: 1.5;">&nbsp;
-        </p>
-      </div>
-      <div class="col-1" style="max-width: 2%; padding-left: 0px;">
-        <span style="  height: 12px; width: 12px; background-color: #90A5C0; border-radius: 50%; display: inline-block; margin-top: 1.5rem"></span>
-      </div>
-      <div class="col-9 dynamictext">
-        <div id="theprocess"> Week 3: Prototyping</div>
-      </div>
+    <div class="row theprocessWrap" id="prototyping">
+      <div class="text_small theprocess">Prototyping</div>
     </div>
 
     <div class="row">
@@ -546,6 +578,7 @@
       </div>
     </div>
 
+    <div class="longImage">
     <div class="row" style="margin-top: 5.5vw;">
       <section class="col-md-1 order-md-1 " style="padding:0px 0;"></section>
       <section class="col-md-5 order-md-2 vertical-align " style="padding:0px 0;">
@@ -599,6 +632,7 @@
       </section>
       <section class="col-md-1 order-md-4 " style="padding:0px 0;"></section>
     </div>
+  </div>
 
     <div class="row" style="margin-top: 3.5em;">
       <div class="text_small">
@@ -629,49 +663,36 @@
     </div>
     <div class="row spacer "></div>
 
-    <div class="row" style="padding-top: 3.5em;">
-      <div class="col-2" style="padding-right: 0px; max-width: 13%;">
-        <p class="titlehoriz" style="background-color:#90A5C0; font-size: 2px; margin-top: 1.8rem; line-height: 1.5;">&nbsp;
+    <div class="row theprocessWrap" id="submission">
+      <div class="text_small theprocess">Submission</div>
+    </div>
+
+    <div class="row" >
+      <div class="text_small">
+        <p class="lead" style="text-align: justify; margin-bottom: 0px;">I sketched out several logos and realized
+          that the “M” shape is
+          very
+          aesthetically pleasing. We wanted something symmetrical that also evokes a “car” feeling when you see it.
+          We chose the arced m because it reminded us of a database and the
+          circle around it is supposed to resemble a wheel.
         </p>
       </div>
-      <div class="col-1" style="max-width: 2%; padding-left: 0px;">
-        <span style="  height: 12px; width: 12px; background-color: #90A5C0; border-radius: 50%; display: inline-block; margin-top: 1.5rem"></span>
-      </div>
-      <div class="col-9 dynamictext">
-        <div id="theprocess"> Week 4: Contest Submission</div>
+    </div>
+
+    <div class="row" style="justify-content: center; margin-top: 1.5em;">
+      <div class="text_small">
+        <!-- vertically alligns words and pictures -->
+        <p class="lead imgDescription" style="margin-bottom:.5em;">Logo Sketches</p>
+        <div class="row" style="margin-top:15px;"></div>
+        <img class="img-fluid img_shadow" src="img/proj5/logosketch.jpg" alt=" " />
+        <div class="row" style="margin-top:15px;"></div>
       </div>
     </div>
 
-    <div class="row">
-      <section class="col-md-1 order-md-1 " style="padding:0px 0;"></section>
-      <section class="col-md-5 order-md-2 vertical-align " style="padding:0px 0;">
-        <div>
-          <div class="row-centerer dynamicdescription animation-element slide-right">
-            <p class="lead" style="text-align: justify; margin-bottom: 0px;">I sketched out several logos and realized
-              that the “M” shape is
-              very
-              aesthetically pleasing. We wanted something symmetrical that also evokes a “car” feeling when you see it.
-              We chose the arced m because it reminded us of a database and the
-              circle around it is supposed to resemble a wheel.
-            </p>
-          </div>
-        </div>
-      </section>
-      <section class="col-md-5 order-md-3 titlehoriz" style="padding:0px 0;">
-        <div class="modal-dialogtwo dynamicthumbnail" style="margin-top: 0px;">
-          <p class="lead imgDescription" style="margin-top:-2.5em;margin-bottom:.1em; text-align: center;"> Logo Sketch </p>
-          <div class="titlehoriz">
-            <img class="img-fluid img_shadow" src="img/proj5/logosketch.jpg" alt=" ">
-          </div>
-        </div>
-      </section>
-      <section class="col-md-1 order-md-4 " style="padding:0px 0;"></section>
-    </div>
-
-    <div class="vertical-align titlehoriz " style="margin-top: 4.5vw;">
+    <div class="vertical-align titlehoriz " style="margin-top: 2.5em;">
       <p class="lead imgDescription" style="margin-bottom:-.5em; "> Digital Logo </p>
     </div>
-    <div class="row ">
+    <div class="row longImage">
       <div class="col-sm-1 "></div>
       <div class="col-sm-10 ">
         <div class="row " style=" width: 100%; text-align: center; ">
@@ -736,7 +757,7 @@
 
 
 
-      <div class="row" style="justify-content: center; padding-top: 15px">
+      <div class="row longImage" style="justify-content: center; padding-top: 15px">
         <div class="img2Row" style="text-align: center;">
           <p class="lead imgDescription" style="margin-bottom:-.5vw; margin-top:1.5em; text-align: center">
             Paper Draft
@@ -782,45 +803,30 @@
         <div class="row" style="margin-top:15px;"></div>
       </div>
     </div>
-    <div class="row spacer "></div>
-
-    <div class="row" style="margin-top: 7.5vw;">
-      <section class="col-md-1 order-md-1 " style="padding:0px 0;"></section>
-      <section class="col-md-5 order-md-2 vertical-align " style="padding:0px 0;">
-        <div style="margin-bottom: 60px;">
-          <div class="row-centerer dynamicdescription animation-element slide-right">
-            <p class="lead" style="text-align: justify; margin-bottom: 0px;">I had an awesome experience at the
-              contest. I got an opportunity to network with industry professionals and felt inspired by everyone’s passion for human
-              centered design. It was very humbling to find out that the winner was a high school team because it taught me that 
-              there’s exceptional talent everywhere. I have a long way to go until I’m an expert in human centered design, but I will take every opportunity I can to
-              improve my skills.
-            </p>
-          </div>
-        </div>
-      </section>
-      <section class="col-md-5 order-md-3 titlehoriz" style="padding:0px 0;">
-        <div class="modal-dialogtwo dynamicthumbnail" style="margin-top: 0px;">
-          <p class="lead imgDescription" style="margin-top:-2.5em;margin-bottom:.1em; text-align: center;"> Contest Day </p>
-          <div class="titlehoriz">
-            <img class="img-fluid img_shadow" src="img/proj5/team.jpg" alt=" ">
-          </div>
-        </div>
-      </section>
-      <section class="col-md-1 order-md-4 " style="padding:0px 0;"></section>
-    </div>
-    <div class="row spacer "></div>
-
-    <div class="row" style="padding-top: 3vw;">
-      <div class="col-2" style="padding-right: 0px; max-width: 13%;">
-        <p class="titlehoriz" style="background-color:#90A5C0; font-size: 2px; margin-top: 1.8rem; line-height: 1.5;">&nbsp;
+    
+    <div class="row margin-top: 2.5em;" >
+      <div class="text_small">
+        <p class="lead" style="text-align: justify; margin-bottom: 0px;">I had an awesome experience at the
+          contest. I got an opportunity to network with industry professionals and felt inspired by everyone’s passion for human
+          centered design. It was very humbling to find out that the winner was a high school team because it taught me that 
+          there’s exceptional talent everywhere. I have a long way to go until I’m an expert in human centered design, but I will take every opportunity I can to
+          improve my skills.
         </p>
       </div>
-      <div class="col-1" style="max-width: 2%; padding-left: 0px;">
-        <span style="  height: 12px; width: 12px; background-color: #90A5C0; border-radius: 50%; display: inline-block; margin-top: 1.5rem"></span>
+    </div>
+
+    <div class="row" style="justify-content: center; margin-top: 1.5em;">
+      <div class="text_small">
+        <!-- vertically alligns words and pictures -->
+        <p class="lead imgDescription" style="margin-bottom:.5em;">Contest Day</p>
+        <div class="row" style="margin-top:15px;"></div>
+        <img class="img-fluid img_shadow" src="img/proj5/team.jpg" alt=" " />
+        <div class="row" style="margin-top:15px;"></div>
       </div>
-      <div class="col-9 dynamictext">
-        <div id="theprocess"> Part 2</div>
-      </div>
+    </div>
+
+    <div class="row theprocessWrap" id="part2">
+      <div class="text_small theprocess">Part 2</div>
     </div>
 
     <div class="row" style="justify-content: center;">
@@ -828,25 +834,22 @@
           <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;"> Although the contest ended, there was still 6
               weeks left in
               the class. This gave us the opportunity to iterate and improve on our solution based on the feedback from
-              the judges and other professionals. <br /><br />Click <a href="project5part2.html" style="margin-bottom:0em;color:#E01A4F;"><strong>here</strong></a>
-              to check out part 2! (It gets better!)
-          </p>
+              the judges and other professionals. 
+          </p><br />
+        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">          <a
+          class="sliding-middle-out"
+          style="font-size: 1.4rem; font-weight: 400"
+          href="project5part2.html"
+          >Check out part 2</a
+        > (It gets better!)
+      </p>
         </div>
       </div>
       <div class="row spacer "></div>
 
-    <div class="row" style="padding-top: 3em;">
-      <div class="col-2" style="padding-right: 0px; max-width: 13%;">
-        <p class="titlehoriz" style="background-color:#90A5C0; font-size: 2px; margin-top: 1.8rem; line-height: 1.5;">&nbsp;
-        </p>
+      <div class="row" style="text-align: center; padding-bottom: 40px;">
+        <div class="text_medium theprocess">My Other Work</div>
       </div>
-      <div class="col-1" style="max-width: 2%; padding-left: 0px;">
-        <span style="  height: 12px; width: 12px; background-color: #90A5C0; border-radius: 50%; display: inline-block; margin-top: 1.5rem"></span>
-      </div>
-      <div class="col-9 dynamictext">
-        <div id="theprocess"> My Other Work</div>
-      </div>
-    </div>
 
     <div class="row">
       <!-- EQR -->
@@ -863,7 +866,7 @@
       <section class="col-md-4 order-md-3 vertical-align" style="padding:0px 0;">
         <div style="margin-top: 2vw; margin-bottom: 60px;">
           <div class="row-centerer dynamicdescription">
-            <h2 class="section-heading" style="font-weight: 400"><a class="sliding-middle-out" href="project1.html">EventQR</a></h2>
+            <h3 class="section-heading" style="font-weight: 400"><a class="sliding-middle-out" href="project1.html">EventQR</a></h3>
             <p class="lead "> A web app that lets users create & scan events encrypted into a QR code, which can be synced onto their Google Calendar.</p>
           </div>
         </div>
@@ -892,11 +895,11 @@
       >
         <div style="margin-top: 2vw; margin-bottom: 60px;">
           <div class="row-centerer dynamicdescription">
-            <h2 class="section-heading" style="font-weight: 400">
+            <h3 class="section-heading" style="font-weight: 400">
               <a class="sliding-middle-out" href="workday_pre.html"
                 >Workday</a
               >
-            </h2>
+            </h3>
             <p class="lead ">
               Redesigning the system wide conclusion interface and mobile
               animations.
@@ -938,12 +941,28 @@
 
 
 
-  <!-- JavaScript -->
-  <script src="vendor/jquery/jquery.min.js "></script>
-  <script src="vendor/popper/popper.min.js "></script>
-  <script src="vendor/bootstrap/js/bootstrap.min.js "></script>
-  <script src="custom.js "></script>
-  <script src="60fpsScrolling.js"></script>
+    <!-- JavaScript -->
+    <!-- different jquery for scrollspy  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/progress_scroll.js"></script>
+    <script src="js/sideNav.js "></script>
+    <script src="js/smooth-scroll.min.js"></script>
+    <script src="js/navSlideIn.js"></script>
+    <script>
+      // Instantiate Scrolls
+      var scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 200
+      });
+
+      if (document.querySelector("[data-easing]")) {
+        var easeOutQuart = new SmoothScroll('[data-easing="easeOutQuart"]', {
+          easing: "easeOutQuart"
+        });
+      }
+    </script>
+    <script src="vendor/popper/popper.min.js "></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js "></script>
+    <script src="custom.js "></script>
 
 </body>
 

@@ -1,32 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="keywords"
+      content="UX design product interaction visual mostion creative animations computer science engineering design systems"
+    />
+    <meta name="author" content="Tony Chan" />
 
-  <title>Tony Chan: Workday- Slim Conclusions</title>
+    <title>Tony Chan: Workday- Slim Conclusion</title>
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-  <!-- Custom fonts for this template -->
-  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet"
-    type="text/css" />
-  <!-- Button Stylesheet -->
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-  <!-- Custom styles for this template -->
-  <link href="css/outer.css" rel="stylesheet" />
-  <link href="css/d4sd.css" rel="stylesheet" />
-  <!-- disable scrolling hack for prototype hover effect -->
-  <link href="css/60fpsScrolling.css" rel="stylesheet">
-  <script src="vendor/jquery/jquery.min.js "></script>
-  <script src="js/progress_scroll.js"></script>
-</head>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Custom fonts for this template -->
+    <link
+      href="vendor/font-awesome/css/font-awesome.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Button Stylesheet -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <!-- Custom styles for this template -->
+    <link href="css/outer.css" rel="stylesheet" />
+    <link href="css/d4sd.css" rel="stylesheet" />
+    <link href="css/sideNav.css" rel="stylesheet" />
+  </head>
 
-<body class="hideScrollBar">
+<body class="hideScrollBar"     
+data-spy="scroll"
+data-target="#scrollspy"
+data-offset="100">
   <!-- fade in script -->
   <script>
     document.body.className += " fade-out";
@@ -69,20 +82,107 @@
         <img class="img-fluid" src="img/workday_photos/workdaycover.png" style="margin: auto;"/>
       </div>
     </div>
-    <div class="row spacer "></div>
 
-    <div class="row" style="padding-top: 5em;">
-      <div class="col-2" style="padding-right: 0px; max-width: 13%;">
-        <p class="titlehoriz" style="background-color:#90A5C0; font-size: 2px; margin-top: 1.8rem; line-height: 1.5;">
-          &nbsp;
+    <nav id="scrollspy">
+      <ul id="bar-fixed">
+        <div class="sidebar">
+          <li>
+            <a
+              class="bar nav-link"
+              data-easing="easeInOutQuart"
+              href="#context"
+              style="padding-top: 0px"
+              >Context</a
+            >
+          </li>
+          <li>
+            <a
+              class="bar nav-link"
+              data-easing="easeInOutQuart"
+              href="#quantdata"
+              >Quantitative Data</a
+            >
+          </li>
+          <li>
+            <a
+              class="bar nav-link"
+              data-easing="easeInOutQuart"
+              href="#research"
+              >Going Broad</a
+            >
+          </li>
+          <li>
+            <a
+              class="bar nav-link"
+              data-easing="easeInOutQuart"
+              href="#usaTesting"
+              >Usability Testing</a
+            >
+          </li>
+          <li>
+            <a
+              class="bar nav-link"
+              data-easing="easeInOutQuart"
+              href="#pivot"
+              >Pivot</a
+            >
+          </li>
+          <li>
+            <a
+              class="bar nav-link"
+              data-easing="easeInOutQuart"
+              href="#moreTesting"
+              >More Testing</a
+            >
+          </li>
+          <li>
+            <a
+              class="bar nav-link"
+              data-easing="easeInOutQuart"
+              href="#learnings"
+              style="padding-bottom: 0px"
+              >Learnings</a
+            >
+          </li>
+        </div>
+      </ul>
+    </nav>
+
+    <div class="row" style="justify-content: center; padding-top: 4em; ">
+      <div class="text_small">
+        <p>
+          <span>Timeline:</span>
+          <span class="lead myRoleText">Jun - Sept 2018</span>
+        </p>
+
+        <p>
+          <span>Employment Type:</span>
+          <span class="lead myRoleText">Internship</span>
+        </p>
+
+        <p>
+          <span>My Role:</span>
+          <span class="lead myRoleText">Product Designer</span>
+        </p>
+
+        <p>
+          <span>Tools:</span>
+          <span class="lead myRoleText"
+            >Sketch, Framer Studio</span
+          >
+        </p>
+
+        <p>
+          <span>Skills:</span>
+          <span class="lead myRoleText"
+            >Interaction Design, Visual Design
+          </span>
         </p>
       </div>
-      <div class="col-1" style="max-width: 2%; padding-left: 0px;">
-        <span style="  height: 12px; width: 12px; background-color: #90A5C0; border-radius: 50%; display: inline-block; margin-top: 1.5rem"></span>
-      </div>
-      <div class="col-9 dynamictext">
-        <div id="theprocess">Background</div>
-      </div>
+    </div>
+
+    <div class="row theprocessWrap" id="context">
+      <div class="text_small theprocess">Context</div>
     </div>
 
     <div class="row">
@@ -102,13 +202,7 @@
       Original Designs
     </p>
     <div class="row" style="justify-content: center;">
-      <div class="img2Row">
-        <!-- vertically alligns words and pictures -->
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid " src="img/workday/old_1.png" alt=" " />
-        <div class="row" style="margin-top:15px;"></div>
-      </div>
-      <div class="img2Row">
+      <div class="img2Row" style="margin-right: -5px;">
         <!-- vertically alligns words and pictures -->
         <div class="row" style="margin-top:15px;"></div>
         <img class="img-fluid " src="img/workday/old_2.png" alt=" " />
@@ -172,7 +266,7 @@
     <p class="lead imgDescription" style="margin-bottom:-.5vw; margin-top:1.5em; text-align: center">
       Dublin's Solution
     </p>
-    <div class="row" style="justify-content: center;">
+    <div class="row longImage" style="justify-content: center;">
       <div class="img2Row">
         <!-- vertically alligns words and pictures -->
         <div class="row" style="margin-top:15px;"></div>
@@ -219,18 +313,8 @@
       </div>
     </div>
 
-    <div class="row" style="padding-top: 5em;">
-      <div class="col-2" style="padding-right: 0px; max-width: 13%;">
-        <p class="titlehoriz" style="background-color:#90A5C0; font-size: 2px; margin-top: 1.8rem; line-height: 1.5;">
-          &nbsp;
-        </p>
-      </div>
-      <div class="col-1" style="max-width: 2%; padding-left: 0px;">
-        <span style="  height: 12px; width: 12px; background-color: #90A5C0; border-radius: 50%; display: inline-block; margin-top: 1.5rem"></span>
-      </div>
-      <div class="col-9 dynamictext">
-        <div id="theprocess">Initial Approach: Data Science</div>
-      </div>
+    <div class="row theprocessWrap" id="quantdata">
+      <div class="text_small theprocess">Quantitative Data</div>
     </div>
 
     <div class="row">
@@ -291,7 +375,7 @@
     </div>
 
     <div class="row" style="justify-content: center; padding-top: 20px">
-      <div class="img1Row">
+      <div class="img2Row">
         <!-- vertically alligns words and pictures -->
         <p class="lead imgDescription" style="margin-bottom:.5em;">Survey Data</p>
         <div class="row" style="margin-top:15px;"></div>
@@ -321,22 +405,13 @@
       </div>
     </div>
 
-    <div class="row" style="padding-top: 5em;">
-      <div class="col-2" style="padding-right: 0px; max-width: 13%;">
-        <p class="titlehoriz" style="background-color:#90A5C0; font-size: 2px; margin-top: 1.8rem; line-height: 1.5;">
-          &nbsp;
-        </p>
-      </div>
-      <div class="col-1" style="max-width: 2%; padding-left: 0px;">
-        <span style="  height: 12px; width: 12px; background-color: #90A5C0; border-radius: 50%; display: inline-block; margin-top: 1.5rem"></span>
-      </div>
-      <div class="col-9 dynamictext">
-        <div id="theprocess">Research & Ideation</div>
-      </div>
+    <div class="row theprocessWrap" id="research">
+      <div class="text_small theprocess">
+        Going Broad</div>
     </div>
 
     <div class="row" style="justify-content: center;">
-      <div class="img1Row">
+      <div class="img2Row">
         <!-- vertically alligns words and pictures -->
         <p class="lead imgDescription" style="margin-bottom:.5em;">What others were doing</p>
         <img class="img-fluid img_shadow" src="img/workday/comp_anal.png" alt=" " />
@@ -366,7 +441,7 @@
     <div class="row" style="justify-content: center; padding-top: 20px;">
       <div class="text_small">
         <p class="lead" style="margin-bottom:2vw;margin-top:2vw; word-spacing: 3px; font-size:
-        32px; font-style: italic;">
+        24px; font-style: italic;">
           <b style="font-style: normal">Problem Statement:</b> "High volume users feel burdened by a full page conclusion and need a simpler
           confirmation notice to save time".
         </p>
@@ -404,13 +479,13 @@
       Paper Sketches
     </p>
     <div class="row" style="justify-content: center; padding-top: 15px">
-      <div class="img2Row">
+      <div class="img3Row">
         <!-- vertically alligns words and pictures -->
         <div class="row" style="margin-top:15px;"></div>
         <img class="img-fluid img_shadow" src="img/workday/lofisketch1.png" alt=" " />
         <div class="row" style="margin-top:15px;"></div>
       </div>
-      <div class="img2Row">
+      <div class="img3Row">
         <!-- vertically alligns words and pictures -->
         <div class="row" style="margin-top:15px;"></div>
         <img class="img-fluid img_shadow" src="img/workday/lofisketch2.png" alt=" " />
@@ -418,13 +493,13 @@
       </div>
     </div>
     <div class="row" style="justify-content: center; padding-top: 15px">
-      <div class="img2Row">
+      <div class="img3Row">
         <!-- vertically alligns words and pictures -->
         <div class="row" style="margin-top:15px;"></div>
         <img class="img-fluid img_shadow" src="img/workday/lofisketch3.png" alt=" " />
         <div class="row" style="margin-top:15px;"></div>
       </div>
-      <div class="img2Row">
+      <div class="img3Row">
         <!-- vertically alligns words and pictures -->
         <div class="row" style="margin-top:15px;"></div>
         <img class="img-fluid img_shadow" src="img/workday/lofisketch4.png" alt=" " />
@@ -433,46 +508,50 @@
     </div>
 
     <p class="lead imgDescription" style="margin-bottom:-.5vw; margin-top:1.5em; text-align: center">
-      Lofi Digitization
+      Lofi Wireframes
     </p>
-    <div class="row" style="justify-content: center; padding-top: 15px">
-      <div class="img3Row">
-        <!-- vertically alligns words and pictures -->
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid img_shadow" src="img/workday/lofi1.png" alt=" " />
-        <div class="row" style="margin-top:15px;"></div>
+    <div class="longImage">
+      <div class="row" style="justify-content: center; padding-top: 15px">
+        <div class="img2Row">
+          <!-- vertically alligns words and pictures -->
+          <div class="row" style="margin-top:15px;"></div>
+          <img class="img-fluid img_shadow" src="img/workday/lofi1.png" alt=" " />
+          <div class="row" style="margin-top:15px;"></div>
+        </div>
+        <div class="img2Row">
+          <!-- vertically alligns words and pictures -->
+          <div class="row" style="margin-top:15px;"></div>
+          <img class="img-fluid img_shadow" src="img/workday/lofi2.png" alt=" " />
+          <div class="row" style="margin-top:15px;"></div>
+        </div>
       </div>
-      <div class="img3Row">
-        <!-- vertically alligns words and pictures -->
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid img_shadow" src="img/workday/lofi2.png" alt=" " />
-        <div class="row" style="margin-top:15px;"></div>
+      <div class="row" style="justify-content: center; padding-top: 15px">
+        <div class="img2Row">
+          <!-- vertically alligns words and pictures -->
+          <div class="row" style="margin-top:15px;"></div>
+          <img class="img-fluid img_shadow" src="img/workday/lofi4.png" alt=" " />
+          <div class="row" style="margin-top:15px;"></div>
+        </div>
+        <div class="img2Row">
+          <!-- vertically alligns words and pictures -->
+          <div class="row" style="margin-top:15px;"></div>
+          <img class="img-fluid img_shadow" src="img/workday/lofi3.png" alt=" " />
+          <div class="row" style="margin-top:15px;"></div>
+        </div>
       </div>
-      <div class="img3Row">
-        <!-- vertically alligns words and pictures -->
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid img_shadow" src="img/workday/lofi3.png" alt=" " />
-        <div class="row" style="margin-top:15px;"></div>
-      </div>
-    </div>
-    <div class="row" style="justify-content: center; padding-top: 15px">
-      <div class="img3Row">
-        <!-- vertically alligns words and pictures -->
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid img_shadow" src="img/workday/lofi4.png" alt=" " />
-        <div class="row" style="margin-top:15px;"></div>
-      </div>
-      <div class="img3Row">
-        <!-- vertically alligns words and pictures -->
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid img_shadow" src="img/workday/lofi5.png" alt=" " />
-        <div class="row" style="margin-top:15px;"></div>
-      </div>
-      <div class="img3Row">
-        <!-- vertically alligns words and pictures -->
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid img_shadow" src="img/workday/lofi6.png" alt=" " />
-        <div class="row" style="margin-top:15px;"></div>
+      <div class="row" style="justify-content: center; padding-top: 15px">
+        <div class="img2Row">
+          <!-- vertically alligns words and pictures -->
+          <div class="row" style="margin-top:15px;"></div>
+          <img class="img-fluid img_shadow" src="img/workday/lofi5.png" alt=" " />
+          <div class="row" style="margin-top:15px;"></div>
+        </div>
+        <div class="img2Row">
+          <!-- vertically alligns words and pictures -->
+          <div class="row" style="margin-top:15px;"></div>
+          <img class="img-fluid img_shadow" src="img/workday/lofi6.png" alt=" " />
+          <div class="row" style="margin-top:15px;"></div>
+        </div>
       </div>
     </div>
 
@@ -501,18 +580,9 @@
       </div>
     </div>
 
-    <div class="row" style="padding-top: 5em;">
-      <div class="col-2" style="padding-right: 0px; max-width: 13%;">
-        <p class="titlehoriz" style="background-color:#90A5C0; font-size: 2px; margin-top: 1.8rem; line-height: 1.5;">
-          &nbsp;
-        </p>
-      </div>
-      <div class="col-1" style="max-width: 2%; padding-left: 0px;">
-        <span style="  height: 12px; width: 12px; background-color: #90A5C0; border-radius: 50%; display: inline-block; margin-top: 1.5rem"></span>
-      </div>
-      <div class="col-9 dynamictext">
-        <div id="theprocess">Usability Testing Round 1</div>
-      </div>
+    <div class="row theprocessWrap" id="usaTesting">
+      <div class="text_small theprocess">
+        Usability Testing</div>
     </div>
 
     <div class="row" style="justify-content: center;">
@@ -562,12 +632,6 @@
         <img class="img-fluid img_shadow" src="img/workday/usatest2.png" alt=" " />
         <div class="row" style="margin-top:15px;"></div>
       </div>
-      <div class="img3Row">
-        <!-- vertically alligns words and pictures -->
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid img_shadow" src="img/workday/usatest3.png" alt=" " />
-        <div class="row" style="margin-top:15px;"></div>
-      </div>
     </div>
 
     <div class="row" style="justify-content: center; padding-top: 20px;">
@@ -600,7 +664,7 @@
     <p class="lead imgDescription" style="margin-bottom:-.5vw; margin-top:1.5em; text-align: center">
       Original Design
     </p>
-    <div class="row" style="justify-content: center; padding-top: 15px">
+    <div class="row longImage" style="justify-content: center; padding-top: 15px">
       <div class="img2Row">
         <!-- vertically alligns words and pictures -->
         <div class="row" style="margin-top:15px;"></div>
@@ -703,7 +767,7 @@
     <p class="lead imgDescription" style="margin-bottom:-.5vw; margin-top:1.5em; text-align: center">
       Slim Design
     </p>
-    <div class="row" style="justify-content: center">
+    <div class="row longImage" style="justify-content: center">
       <div class="img2Row">
         <!-- vertically alligns words and pictures -->
         <div class="row" style="margin-top:15px;"></div>
@@ -779,7 +843,7 @@
     <div class="row" style="justify-content: center; padding-top: 20px">
       <div class="text_small">
         <p class="lead" style="margin-bottom:2vw;margin-top:2vw; word-spacing: 3px; font-size:
-        32px; font-style: italic;">
+        24px; font-style: italic;">
           <b style="font-style: normal">New Problem Statement:</b> High volume users and users completing easy/medium difficulty tasks feel burdened
           by a full page conclusion because there is too much information. They need a condensed confirmation notice
           that not only makes them feel confident but also saves them time.
@@ -787,18 +851,9 @@
       </div>
     </div>
 
-    <div class="row" style="padding-top: 5em;">
-      <div class="col-2" style="padding-right: 0px; max-width: 13%;">
-        <p class="titlehoriz" style="background-color:#90A5C0; font-size: 2px; margin-top: 1.8rem; line-height: 1.5;">
-          &nbsp;
-        </p>
-      </div>
-      <div class="col-1" style="max-width: 2%; padding-left: 0px;">
-        <span style="  height: 12px; width: 12px; background-color: #90A5C0; border-radius: 50%; display: inline-block; margin-top: 1.5rem"></span>
-      </div>
-      <div class="col-9 dynamictext">
-        <div id="theprocess">Iteration Towards a Hybrid Design</div>
-      </div>
+    <div class="row theprocessWrap" id="pivot">
+      <div class="text_small theprocess">
+        Pivot</div>
     </div>
 
     <div class="row" style="justify-content: center;">
@@ -863,18 +918,9 @@
     </div>
     <div class="row spacer "></div>
 
-    <div class="row" style="padding-top: 5em;">
-      <div class="col-2" style="padding-right: 0px; max-width: 13%;">
-        <p class="titlehoriz" style="background-color:#90A5C0; font-size: 2px; margin-top: 1.8rem; line-height: 1.5;">
-          &nbsp;
-        </p>
-      </div>
-      <div class="col-1" style="max-width: 2%; padding-left: 0px;">
-        <span style="  height: 12px; width: 12px; background-color: #90A5C0; border-radius: 50%; display: inline-block; margin-top: 1.5rem"></span>
-      </div>
-      <div class="col-9 dynamictext">
-        <div id="theprocess">Usability Testing Round 2</div>
-      </div>
+    <div class="row theprocessWrap" id="moreTesting">
+      <div class="text_small theprocess">
+        More Testing</div>
     </div>
 
     <div class="row" style="justify-content: center;">
@@ -950,18 +996,9 @@
       </div>
     </div>
 
-    <div class="row" style="padding-top: 5em;">
-      <div class="col-2" style="padding-right: 0px; max-width: 13%;">
-        <p class="titlehoriz" style="background-color:#90A5C0; font-size: 2px; margin-top: 1.8rem; line-height: 1.5;">
-          &nbsp;
-        </p>
-      </div>
-      <div class="col-1" style="max-width: 2%; padding-left: 0px;">
-        <span style="  height: 12px; width: 12px; background-color: #90A5C0; border-radius: 50%; display: inline-block; margin-top: 1.5rem"></span>
-      </div>
-      <div class="col-9 dynamictext">
-        <div id="theprocess">Conclusion</div>
-      </div>
+    <div class="row theprocessWrap" id="learnings">
+      <div class="text_small theprocess">
+        Learnings</div>
     </div>
 
     <div class="row" style="justify-content: center;">
@@ -1090,18 +1127,8 @@
       </div>
     </div>
 
-    <div class="row" style="padding-top: 5em;">
-      <div class="col-2" style="padding-right: 0px; max-width: 13%;">
-        <p class="titlehoriz" style="background-color:#90A5C0; font-size: 2px; margin-top: 1.8rem; line-height: 1.5;">
-          &nbsp;
-        </p>
-      </div>
-      <div class="col-1" style="max-width: 2%; padding-left: 0px;">
-        <span style="  height: 12px; width: 12px; background-color: #90A5C0; border-radius: 50%; display: inline-block; margin-top: 1.5rem"></span>
-      </div>
-      <div class="col-9 dynamictext">
-        <div id="theprocess">My Other Work</div>
-      </div>
+    <div class="row" style="text-align: center; padding-bottom: 40px;">
+      <div class="text_medium theprocess">My Other Work</div>
     </div>
 
     <div class="row">
@@ -1119,7 +1146,7 @@
       <section class="col-md-4 order-md-3 vertical-align" style="padding:0px 0;">
         <div style="margin-top: 2vw; margin-bottom: 60px;">
           <div class="row-centerer dynamicdescription">
-            <h2 class="section-heading" style="font-weight: 400"><a class="sliding-middle-out " href="project1.html">EventQR</a></h2>
+            <h3 class="section-heading" style="font-weight: 400"><a class="sliding-middle-out " href="project1.html">EventQR</a></h3>
             <p class="lead ">
               A web app that lets users create & scan events encrypted into a
               QR code, which can be synced onto their Google Calendar.
@@ -1145,9 +1172,9 @@
       <section class="col-md-4 order-md-2 vertical-align" style="padding:0px 0;">
         <div class="" style="margin-top: 2vw; margin-bottom: 60px;">
           <div class="row-centerer dynamicdescription">
-            <h2 class="section-heading" style="font-weight: 400">
+            <h3 class="section-heading" style="font-weight: 400">
               <a class="sliding-middle-out" href="birch.html">Birch Aquarium</a>
-            </h2>
+            </h3>
             <p class="lead ">
               Designing an exhibit in the Birch Aquarium at the Scripps
               Institution of Oceanography to teach people about bubbles.
@@ -1186,12 +1213,28 @@
     <!-- container fluid wrapper end div -->
   </div>
 
-  <!-- JavaScript -->
-  <script src="vendor/jquery/jquery.min.js "></script>
-  <script src="vendor/popper/popper.min.js "></script>
-  <script src="vendor/bootstrap/js/bootstrap.min.js "></script>
-  <script src="custom.js "></script>
-  <script src="60fpsScrolling.js "></script>
+    <!-- JavaScript -->
+    <!-- different jquery for scrollspy  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/progress_scroll.js"></script>
+    <script src="js/sideNav.js "></script>
+    <script src="js/smooth-scroll.min.js"></script>
+    <script src="js/navSlideIn.js"></script>
+    <script>
+      // Instantiate Scrolls
+      var scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 200
+      });
+
+      if (document.querySelector("[data-easing]")) {
+        var easeOutQuart = new SmoothScroll('[data-easing="easeOutQuart"]', {
+          easing: "easeOutQuart"
+        });
+      }
+    </script>
+    <script src="vendor/popper/popper.min.js "></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js "></script>
+    <script src="custom.js "></script>
 </body>
 
 </html>

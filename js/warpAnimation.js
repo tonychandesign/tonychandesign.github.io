@@ -49,6 +49,9 @@
   // window.addEventListener("resize", createBlotterText);
 
   const getMousePos = ev => {
+    if ($(window).scrollTop() + $(window).height() > 2000) {
+      return { x: $(window).width() / 2, y: $(window).height() / 2 };
+    }
     let posx = 0;
     let posy = 0;
     if (!ev) ev = window.event;
