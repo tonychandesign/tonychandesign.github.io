@@ -41,6 +41,10 @@ p {
   line-height: 2;
   font-size: 18px;
 }
+.lead {
+  font-weight: 400;
+  color: #838383;
+}
 
 .remove-padding {
   padding-left: 0;
@@ -547,9 +551,11 @@ div#scroll-bar {
 }
 
 .indexSectionHeader {
-  font-size: 36px;
+  font-size: 3em;
   font-weight: 500;
+  margin: auto;
 }
+
 .img_shadow {
   box-shadow: 0 6px 11px rgba(0, 0, 0, 0.17);
   background: white;
@@ -793,7 +799,6 @@ div#scroll-bar {
   .indexSectionHeader {
     font-size: 32px;
     font-weight: 500;
-    margin-bottom: 20px;
   }
   .viewCaseStudy {
     margin-left: 0px;
