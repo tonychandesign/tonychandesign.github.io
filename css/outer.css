@@ -306,7 +306,7 @@ a:hover,
   max-width: 50%;
 }
 .section-heading {
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 }
 .spacer {
   margin-top: 40px; /* define margin as you see fit */
@@ -507,7 +507,7 @@ a.btn-social,
 }
 
 .industrypadding {
-  padding-top: 0px;
+  padding-top: -50px;
 }
 .navpadding {
   margin-left: 30px;
@@ -756,13 +756,6 @@ div#scroll-bar {
 
 @media screen and (max-width: 414px) {
   .industrypadding {
-    margin-bottom: 90px;
-    margin-top: 20px;
-  }
-}
-@media screen and (max-width: 375px) {
-  .industrypadding {
-    margin-bottom: 120px;
     margin-top: 20px;
   }
 }
@@ -774,9 +767,9 @@ div#scroll-bar {
 }
 @media screen and (max-width: 414px) {
   .section-heading {
-    margin-bottom: 15px;
     margin-top: 15px;
   }
+
   .white_bg {
     top: -27vh;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 86%);
