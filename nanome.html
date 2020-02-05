@@ -1,31 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="keywords"
+      content="UX design product interaction visual mostion creative animations computer science engineering design systems"
+    />
+    <meta name="author" content="Tony Chan" />
 
-  <title>Tony Chan: Nanome</title>
+    <title>Tony Chan: Nanome</title>
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Custom fonts for this template -->
-  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet"
-    type="text/css">
-  <!-- Button Stylesheet -->
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <!-- Custom styles for this template -->
-  <link href="css/outer.css" rel="stylesheet">
-  <link href="css/d4sd.css" rel="stylesheet">
-  <!-- disable scrolling hack for prototype hover effect -->
-  <script src="vendor/jquery/jquery.min.js "></script>
-  <script src="js/progress_scroll.js"></script>
-</head>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Custom fonts for this template -->
+    <link
+      href="vendor/font-awesome/css/font-awesome.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Button Stylesheet -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <!-- Custom styles for this template -->
+    <link href="css/outer.css" rel="stylesheet" />
+    <link href="css/d4sd.css" rel="stylesheet" />
+    <link href="css/sideNav.css" rel="stylesheet" />
+  </head>
 
-<body class="hideScrollBar">
+<body class="hideScrollBar"     
+  data-spy="scroll"
+  data-target="#scrollspy"
+  data-offset="100">
   <!-- fade in script -->
   <script>
     document.body.className += ' fade-out';
@@ -67,19 +81,153 @@
         <img class="img-fluid" src="img/nanome_photos/nanomecover.png" style="margin: auto;">
       </div>
     </div>
-    <div class="row spacer "></div>
 
-    <div class="row" style="padding-top: 3vw;">
-      <div class="col-2" style="padding-right: 0px; max-width: 13%;">
-        <p class="titlehoriz" style="background-color:#90A5C0; font-size: 2px; margin-top: 1.8rem; line-height: 1.5;">&nbsp;
+    <nav id="scrollspy">
+      <ul id="bar-fixed">
+        <div class="sidebar">
+          <li>
+            <a
+              class="bar nav-link"
+              data-easing="easeInOutQuart"
+              href="#context"
+              style="padding-top: 0px"
+              >Context</a
+            >
+          </li>
+          <li>
+            <a
+              class="bar nav-link"
+              data-easing="easeInOutQuart"
+              href="#research"
+              >Research</a
+            >
+          </li>
+          <li>
+            <a
+              class="bar nav-link"
+              data-easing="easeInOutQuart"
+              href="#usatests"
+              >Usability Tests</a
+            >
+          </li>
+          <li>
+            <a
+              class="bar nav-link"
+              data-easing="easeInOutQuart"
+              href="#login"
+              >Login/Pilot</a
+            >
+          </li>
+          <li>
+            <a
+              class="bar nav-link"
+              data-easing="easeInOutQuart"
+              href="#livetourn"
+              >Live Tournaments</a
+            >
+          </li>
+          <li>
+            <a
+              class="bar nav-link"
+              data-easing="easeInOutQuart"
+              href="#tournDeets"
+              >Tournament Details</a
+            >
+          </li>
+          <li>
+            <a
+              class="bar nav-link"
+              data-easing="easeInOutQuart"
+              href="#myaccount"
+              >My Account</a
+            >
+          </li>
+          <li>
+            <a
+              class="bar nav-link"
+              data-easing="easeInOutQuart"
+              href="#createtournament"
+              >Create Tournament</a
+            >
+          </li>
+          <li>
+            <a
+              class="bar nav-link"
+              data-easing="easeInOutQuart"
+              href="#edittournament"
+              >Edit Tournament</a
+            >
+          </li>
+          <li>
+            <a
+              class="bar nav-link"
+              data-easing="easeInOutQuart"
+              href="#contributing"
+              >Contributing</a
+            >
+          </li>
+          <li>
+            <a
+              class="bar nav-link"
+              data-easing="easeInOutQuart"
+              href="#rewards"
+              >Rewards</a
+            >
+          </li>
+          <li>
+            <a
+              class="bar nav-link"
+              data-easing="easeInOutQuart"
+              href="#ip"
+              >Intellectual Property</a
+            >
+          </li>
+          <li>
+            <a
+              class="bar nav-link"
+              data-easing="easeInOutQuart"
+              href="#learnings"
+              style="padding-bottom: 0px"
+              >Learnings</a
+            >
+          </li>
+        </div>
+      </ul>
+    </nav>
+
+    <div class="row" style="justify-content: center; padding-top: 4em; ">
+      <div class="text_small">
+        <p>
+          <span>Timeline:</span>
+          <span class="lead myRoleText">Jan - Jun 2018</span>
+        </p>
+
+        <p>
+          <span>Employment Type:</span>
+          <span class="lead myRoleText">Contract</span>
+        </p>
+
+        <p>
+          <span>My Role:</span>
+          <span class="lead myRoleText">Product Designer</span>
+        </p>
+
+        <p>
+          <span>Tools:</span>
+          <span class="lead myRoleText">AdobeXD</span>
+        </p>
+
+        <p>
+          <span>Skills:</span>
+          <span class="lead myRoleText"
+            >Interaction Design, User Research
+          </span>
         </p>
       </div>
-      <div class="col-1" style="max-width: 2%; padding-left: 0px;">
-        <span style="  height: 12px; width: 12px; background-color: #90A5C0; border-radius: 50%; display: inline-block; margin-top: 1.5rem"></span>
-      </div>
-      <div class="col-9 dynamictext">
-        <div id="theprocess">Background</div>
-      </div>
+    </div>
+
+    <div class="row theprocessWrap" id="context">
+      <div class="text_small theprocess">Context</div>
     </div>
 
     <div class="row" style="justify-content: center;">
@@ -92,23 +240,6 @@
         </p>
       </div>
 
-    </div>
-
-    <div class="row" style="justify-content: center; padding-top: 20px">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">My Role:
-          <ul class="fa-ul">
-            <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;"><i class="fa-li fa fa-circle"
-                style="color:#90A5C0; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i><strong>UX
-                Designer & Researcher:</strong> I pioneered the designs and ran usability tests on users to
-              incorporate their feedback into our product.</li>
-            <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;"><i class="fa-li fa fa-circle"
-                style="color:#90A5C0; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i><strong>Product
-                Manager:</strong> I worked with the team to discuss which features should be included in the product
-              and the limitations to our technology stack. </li>
-          </ul>
-        </p>
-      </div>
     </div>
 
     <div class="row" style="justify-content: center; padding-top: 20px">
@@ -153,46 +284,39 @@
     <p class="lead imgDescription" style="margin-bottom:-.5vw; margin-top:1.5em; text-align: center">
       Original Designs
     </p>
-    <div class="row" style="justify-content: center">
-      <div class="img2Row">
-        <!-- vertically alligns words and pictures -->
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid img_shadow" src="img/nanome/init1.png" alt=" " />
-        <div class="row" style="margin-top:15px;"></div>
+    <div class="longImage">
+      <div class="row" style="justify-content: center">
+        <div class="img2Row">
+          <!-- vertically alligns words and pictures -->
+          <div class="row" style="margin-top:15px;"></div>
+          <img class="img-fluid img_shadow" src="img/nanome/init1.png" alt=" " />
+          <div class="row" style="margin-top:15px;"></div>
+        </div>
+        <div class="img2Row">
+          <!-- vertically alligns words and pictures -->
+          <div class="row" style="margin-top:15px;"></div>
+          <img class="img-fluid img_shadow" src="img/nanome/init2.png" alt=" " />
+          <div class="row" style="margin-top:15px;"></div>
+        </div>
       </div>
-      <div class="img2Row">
-        <!-- vertically alligns words and pictures -->
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid img_shadow" src="img/nanome/init2.png" alt=" " />
-        <div class="row" style="margin-top:15px;"></div>
-      </div>
-    </div>
-        <div class="row" style="justify-content: center">
-      <div class="img2Row">
-        <!-- vertically alligns words and pictures -->
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid img_shadow" src="img/nanome/init3.png" alt=" " />
-        <div class="row" style="margin-top:15px;"></div>
-      </div>
-      <div class="img2Row">
-        <!-- vertically alligns words and pictures -->
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid img_shadow" src="img/nanome/init4.png" alt=" " />
-        <div class="row" style="margin-top:15px;"></div>
+      <div class="row" style="justify-content: center">
+        <div class="img2Row">
+          <!-- vertically alligns words and pictures -->
+          <div class="row" style="margin-top:15px;"></div>
+          <img class="img-fluid img_shadow" src="img/nanome/init3.png" alt=" " />
+          <div class="row" style="margin-top:15px;"></div>
+        </div>
+        <div class="img2Row">
+          <!-- vertically alligns words and pictures -->
+          <div class="row" style="margin-top:15px;"></div>
+          <img class="img-fluid img_shadow" src="img/nanome/init4.png" alt=" " />
+          <div class="row" style="margin-top:15px;"></div>
+        </div>
       </div>
     </div>
 
-    <div class="row" style="padding-top: 6em;">
-      <div class="col-2" style="padding-right: 0px; max-width: 13%;">
-        <p class="titlehoriz" style="background-color:#90A5C0; font-size: 2px; margin-top: 1.8rem; line-height: 1.5;">&nbsp;
-        </p>
-      </div>
-      <div class="col-1" style="max-width: 2%; padding-left: 0px;">
-        <span style="  height: 12px; width: 12px; background-color: #90A5C0; border-radius: 50%; display: inline-block; margin-top: 1.5rem"></span>
-      </div>
-      <div class="col-9 dynamictext">
-        <div id="theprocess">Research</div>
-      </div>
+    <div class="row theprocessWrap" id="research">
+      <div class="text_small theprocess">Research</div>
     </div>
 
     <div class="row" style="justify-content: center;">
@@ -201,23 +325,23 @@
           be found <a href="img/nanome/comp_anal.pdf" download="comp_anal.pdf " target="_blank" style="color:#90A5C0; ">here</a>.
           The highlights:</p>
         <ul class="fa-ul">
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;"><i class="fa-li fa fa-circle"
-              style="color:#90A5C0; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Competitors
+          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle"
+              style="color:#90A5C0; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Competitors
             had a public interface to show everyone’s profile activity</li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;"><i class="fa-li fa fa-circle"
-              style="color:#90A5C0; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Usually
+          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle"
+              style="color:#90A5C0; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Usually
             one winner per challenge</li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;"><i class="fa-li fa fa-circle"
-              style="color:#90A5C0; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Smart
+          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle"
+              style="color:#90A5C0; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Smart
             contracts were peer reviewed</li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;"><i class="fa-li fa fa-circle"
-              style="color:#90A5C0; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Challenges
+          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle"
+              style="color:#90A5C0; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Challenges
             were more focused on programing a product instead of R&D</li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;"><i class="fa-li fa fa-circle"
-              style="color:#90A5C0; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Github
+          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle"
+              style="color:#90A5C0; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Github
             integration</li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;"><i class="fa-li fa fa-circle"
-              style="color:#90A5C0; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Easy
+          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle"
+              style="color:#90A5C0; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Easy
             account creation/login process through Metamask</li>
         </ul>
       </div>
@@ -235,6 +359,7 @@
     <p class="lead imgDescription" style="margin-bottom:-.5vw; margin-top:1.5em; text-align: center">
       A few personas
     </p>
+    <div class="longImage">
     <div class="row" style="justify-content: center;">
       <div class="img2Row">
         <!-- vertically alligns words and pictures -->
@@ -263,6 +388,7 @@
         <div class="row" style="margin-top:15px;"></div>
       </div>
     </div>
+  </div>
 
     <div class="row" style="justify-content: center; padding-top: 20px">
       <div class="text_small">
@@ -301,17 +427,8 @@
       </div>
     </div>
 
-    <div class="row" style="padding-top: 7em;">
-      <div class="col-2" style="padding-right: 0px; max-width: 13%;">
-        <p class="titlehoriz" style="background-color:#90A5C0; font-size: 2px; margin-top: 1.8rem; line-height: 1.5;">&nbsp;
-        </p>
-      </div>
-      <div class="col-1" style="max-width: 2%; padding-left: 0px;">
-        <span style="  height: 12px; width: 12px; background-color: #90A5C0; border-radius: 50%; display: inline-block; margin-top: 1.5rem"></span>
-      </div>
-      <div class="col-9 dynamictext">
-        <div id="theprocess">Usability Tests</div>
-      </div>
+    <div class="row theprocessWrap" id="usatests">
+      <div class="text_small theprocess">Usability Tests</div>
     </div>
 
     <div class="row" style="justify-content: center;">
@@ -331,14 +448,14 @@
             target="_blank" style="margin-bottom:0em;color:#0086CB;">here</a>. The goals was to see how familiar
           the user was with blockchain technology and computer interfaces. </p>
         <ul class="fa-ul">
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;"><i class="fa-li fa fa-circle"
-              style="color:#90A5C0; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Novice:
+          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle"
+              style="color:#90A5C0; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Novice:
             not familiar with blockchain technology</li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;"><i class="fa-li fa fa-circle"
-              style="color:#90A5C0; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Intermediate:
+          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle"
+              style="color:#90A5C0; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Intermediate:
             CS background and some familiarity </li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;"><i class="fa-li fa fa-circle"
-              style="color:#90A5C0; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Expert:
+          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle"
+              style="color:#90A5C0; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Expert:
             Fluent with both current state of cryptocurrency and how the blockchain data structure works.</li>
         </ul>
       </div>
@@ -360,40 +477,31 @@
       <div class="text_small">
         <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">Main findings:</p>
         <ul class="fa-ul">
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;"><i class="fa-li fa fa-circle"
-              style="color:#90A5C0; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Confusion
+          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px"><i class="fa-li fa fa-circle"
+              style="color:#90A5C0; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Confusion
             with the modal design when going through long use cases (creating a tournament)</li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;"><i class="fa-li fa fa-circle"
-              style="color:#90A5C0; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Confusion
+          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px"><i class="fa-li fa fa-circle"
+              style="color:#90A5C0; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Confusion
             with unlocking a tournament because there wasn’t a status indicator</li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;"><i class="fa-li fa fa-circle"
-              style="color:#90A5C0; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Confusion
+          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px"><i class="fa-li fa fa-circle"
+              style="color:#90A5C0; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Confusion
             between round reward and total reward</li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;"><i class="fa-li fa fa-circle"
-              style="color:#90A5C0; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Wanted
+          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px"><i class="fa-li fa fa-circle"
+              style="color:#90A5C0; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Wanted
             a FAQ or hints </li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;"><i class="fa-li fa fa-circle"
-              style="color:#90A5C0; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Confusion
+          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px"><i class="fa-li fa fa-circle"
+              style="color:#90A5C0; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Confusion
             with the icons- words could be better</li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;"><i class="fa-li fa fa-circle"
-              style="color:#90A5C0; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Confusion
+          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px"><i class="fa-li fa fa-circle"
+              style="color:#90A5C0; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Confusion
             in creating a tournament- specifically the subject of “rounds” per tournament</li>
         </ul>
       </div>
     </div>
     <div class="row spacer "></div>
 
-    <div class="row" style="padding-top: 5vw;">
-      <div class="col-2" style="padding-right: 0px; max-width: 13%;">
-        <p class="titlehoriz" style="background-color:#90A5C0; font-size: 2px; margin-top: 1.8rem; line-height: 1.5;">&nbsp;
-        </p>
-      </div>
-      <div class="col-1" style="max-width: 2%; padding-left: 0px;">
-        <span style="  height: 12px; width: 12px; background-color: #90A5C0; border-radius: 50%; display: inline-block; margin-top: 1.5rem"></span>
-      </div>
-      <div class="col-9 dynamictext">
-        <div id="theprocess">Login/Pilot</div>
-      </div>
+    <div class="row theprocessWrap" id="login">
+      <div class="text_small theprocess">Login/Pilot</div>
     </div>
 
     <div class="row" style="justify-content: center;">
@@ -408,6 +516,7 @@
     <p class="lead imgDescription" style="margin-bottom:-.5vw; margin-top:2.5em; text-align: center">
       Before Logging In
     </p>
+    <div class="longImage">
     <div class="row" style="justify-content: center">
       <div class="img2Row">
         <!-- vertically alligns words and pictures -->
@@ -449,6 +558,7 @@
         <div class="row" style="margin-top:15px;"></div>
       </div>
     </div>
+  </div>
 
     <div class="row" style="justify-content: center; padding-top: 2.5em">
       <div class="text_small">
@@ -469,17 +579,8 @@
       </div>
     </div>
 
-    <div class="row" style="padding-top: 7em;">
-      <div class="col-2" style="padding-right: 0px; max-width: 13%;">
-        <p class="titlehoriz" style="background-color:#90A5C0; font-size: 2px; margin-top: 1.8rem; line-height: 1.5;">&nbsp;
-        </p>
-      </div>
-      <div class="col-1" style="max-width: 2%; padding-left: 0px;">
-        <span style="  height: 12px; width: 12px; background-color: #90A5C0; border-radius: 50%; display: inline-block; margin-top: 1.5rem"></span>
-      </div>
-      <div class="col-9 dynamictext">
-        <div id="theprocess">Live Tournaments</div>
-      </div>
+    <div class="row theprocessWrap" id="livetourn">
+      <div class="text_small theprocess">Live Tournaments</div>
     </div>
 
     <div class="row" style="justify-content: center">
@@ -494,7 +595,7 @@
     <p class="lead imgDescription" style="margin-bottom:-.5vw; margin-top:2.5em; text-align: center">
       Live Tournaments v1
     </p>
-    <div class="row" style="justify-content: center">
+    <div class="row longImage" style="justify-content: center">
       <div class="img2Row">
         <!-- vertically alligns words and pictures -->
         <div class="row" style="margin-top:15px;"></div>
@@ -514,17 +615,17 @@
         <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">Due to limited resources, I
           could only user test on UX classmates and friends interested in cryptocurrency. Feedback:</p>
         <ul class="fa-ul">
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;"><i class="fa-li fa fa-circle"
-              style="color:#90A5C0; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Wanted
+          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px"><i class="fa-li fa fa-circle"
+              style="color:#90A5C0; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Wanted
             more space between the listings </li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;"><i class="fa-li fa fa-circle"
-              style="color:#90A5C0; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Wanted
+          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px"><i class="fa-li fa fa-circle"
+              style="color:#90A5C0; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Wanted
             visual indicators like pictures</li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;"><i class="fa-li fa fa-circle"
-              style="color:#90A5C0; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Wanted
+          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px"><i class="fa-li fa fa-circle"
+              style="color:#90A5C0; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Wanted
             category distinction</li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;"><i class="fa-li fa fa-circle"
-              style="color:#90A5C0; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Wanted
+          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px"><i class="fa-li fa fa-circle"
+              style="color:#90A5C0; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Wanted
             short description of the tournament </li>
         </ul>
       </div>
@@ -561,37 +662,28 @@
       </div>
     </div>
 
-    <div class="row" style="padding-top: 7em;">
-      <div class="col-2" style="padding-right: 0px; max-width: 13%;">
-        <p class="titlehoriz" style="background-color:#90A5C0; font-size: 2px; margin-top: 1.8rem; line-height: 1.5;">&nbsp;
-        </p>
-      </div>
-      <div class="col-1" style="max-width: 2%; padding-left: 0px;">
-        <span style="  height: 12px; width: 12px; background-color: #90A5C0; border-radius: 50%; display: inline-block; margin-top: 1.5rem"></span>
-      </div>
-      <div class="col-9 dynamictext">
-        <div id="theprocess">Tournament Details</div>
-      </div>
+    <div class="row theprocessWrap" id="tournDeets">
+      <div class="text_small theprocess">Tournament Details</div>
     </div>
 
     <div class="row" style="justify-content: center;">
       <div class="text_small">
         <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">Important factors:</p>
         <ul class="fa-ul">
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;"><i class="fa-li fa fa-circle"
-              style="color:#90A5C0; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Tournament
+          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle"
+              style="color:#90A5C0; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Tournament
             summary </li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;"><i class="fa-li fa fa-circle"
-              style="color:#90A5C0; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Prior
+          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle"
+              style="color:#90A5C0; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Prior
             submissions</li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;"><i class="fa-li fa fa-circle"
-              style="color:#90A5C0; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Previous
+          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle"
+              style="color:#90A5C0; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Previous
             winners</li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;"><i class="fa-li fa fa-circle"
-              style="color:#90A5C0; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Rounds
+          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle"
+              style="color:#90A5C0; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Rounds
             number, reward, remaining time</li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;"><i class="fa-li fa fa-circle"
-              style="color:#90A5C0; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Clarification
+          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle"
+              style="color:#90A5C0; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Clarification
             on how to enter a tournament (and it’s costs) </li>
         </ul>
       </div>
@@ -623,20 +715,21 @@
         <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">My initial designs were modal
           based but I soon learned this wouldn’t work because:</p>
         <ul class="fa-ul">
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;"><i class="fa-li fa fa-circle"
-              style="color:#90A5C0; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Programming
+          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle"
+              style="color:#90A5C0; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Programming
             limitation: stored data on the fields (Creating a Tournament task) disappear after opening another use
             case. </li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;"><i class="fa-li fa fa-circle"
-              style="color:#90A5C0; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Programming
+          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle"
+              style="color:#90A5C0; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Programming
             limitation: slow load time when all data is stored in modals of one page.</li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;"><i class="fa-li fa fa-circle"
-              style="color:#90A5C0; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Usability
+          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle"
+              style="color:#90A5C0; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Usability
             issue: modal flows for completing processes are confusing. </li>
         </ul>
       </div>
     </div>
 
+    <div class="longImage">
     <div class="row" style="justify-content: center; padding-top: 2.5em">
       <div class="img1RowLong">
         <!-- vertically alligns words and pictures -->
@@ -681,19 +774,10 @@
         <div class="row" style="margin-top:15px;"></div>
       </div>
     </div>
+  </div>
 
-    <div class="row spacer "></div>
-    <div class="row" style="padding-top: 5vw;">
-      <div class="col-2" style="padding-right: 0px; max-width: 13%;">
-        <p class="titlehoriz" style="background-color:#90A5C0; font-size: 2px; margin-top: 1.8rem; line-height: 1.5;">&nbsp;
-        </p>
-      </div>
-      <div class="col-1" style="max-width: 2%; padding-left: 0px;">
-        <span style="  height: 12px; width: 12px; background-color: #90A5C0; border-radius: 50%; display: inline-block; margin-top: 1.5rem"></span>
-      </div>
-      <div class="col-9 dynamictext">
-        <div id="theprocess">My Account</div>
-      </div>
+    <div class="row theprocessWrap" id="myaccount">
+      <div class="text_small theprocess">My Account</div>
     </div>
 
     <div class="row" style="justify-content: center;">
@@ -705,6 +789,7 @@
       </div>
     </div>
 
+
     <p class="lead imgDescription" style="margin-top:2.5em; margin-bottom: -.5em;text-align: center">
       My Account v1
     </p>
@@ -713,12 +798,6 @@
         <!-- vertically alligns words and pictures -->
         <div class="row" style="margin-top:15px;"></div>
         <img class="img-fluid img_shadow" src="img/nanome/acc1.png" alt=" " />
-        <div class="row" style="margin-top:15px;"></div>
-      </div>
-      <div class="img2Row">
-        <!-- vertically alligns words and pictures -->
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid img_shadow" src="img/nanome/acc2.png" alt=" " />
         <div class="row" style="margin-top:15px;"></div>
       </div>
     </div>
@@ -731,10 +810,11 @@
       </div>
     </div>
 
+    
     <p class="lead imgDescription" style="margin-top:2.5em; margin-bottom: -.5em;text-align: center">
       v3
     </p>
-    <div class="row" style="justify-content: center">
+    <div class="row longImage" style="justify-content: center">
       <div class="img2Row">
         <!-- vertically alligns words and pictures -->
         <div class="row" style="margin-top:15px;"></div>
@@ -749,18 +829,9 @@
       </div>
     </div>
 
-    <div class="row spacer "></div>
-    <div class="row" style="padding-top: 5vw;">
-      <div class="col-2" style="padding-right: 0px; max-width: 13%;">
-        <p class="titlehoriz" style="background-color:#90A5C0; font-size: 2px; margin-top: 1.8rem; line-height: 1.5;">&nbsp;
-        </p>
-      </div>
-      <div class="col-1" style="max-width: 2%; padding-left: 0px;">
-        <span style="  height: 12px; width: 12px; background-color: #90A5C0; border-radius: 50%; display: inline-block; margin-top: 1.5rem"></span>
-      </div>
-      <div class="col-9 dynamictext">
-        <div id="theprocess">Creating a Tournament</div>
-      </div>
+
+    <div class="row theprocessWrap" id="createtournament">
+      <div class="text_small theprocess">Create Tournament</div>
     </div>
 
     <div class="row" style="justify-content: center;">
@@ -769,17 +840,17 @@
           designing an interaction for tournament creation. A technical requirement was that the user had to first pay
           to become a peer on the network to add data onto it.</p>
         <ul class="fa-ul">
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;"><i class="fa-li fa fa-circle"
-              style="color:#90A5C0; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>How
+          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle"
+              style="color:#90A5C0; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>How
             should the user allocate MTX? Per each round? Should it be percentage based? </li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;"><i class="fa-li fa fa-circle"
-              style="color:#90A5C0; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Should
+          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle"
+              style="color:#90A5C0; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Should
             every round be an equal percentage? </li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;"><i class="fa-li fa fa-circle"
-              style="color:#90A5C0; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>When do
+          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle"
+              style="color:#90A5C0; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>When do
             they allocate this value? </li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;"><i class="fa-li fa fa-circle"
-              style="color:#90A5C0; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>What if
+          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle"
+              style="color:#90A5C0; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>What if
             they want to change the reward due to inadequate submissions?</li>
         </ul>
       </div>
@@ -809,17 +880,18 @@
       <div class="text_small">
         <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">The user struggled harder than expected when trying to understand how rounds worked so we broke down the process with a stepped progress interaction.  The team decided to push towards a full screened interface rather than a modal because:</p>
         <ul class="fa-ul">
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;"><i class="fa-li fa fa-circle"
-              style="color:#90A5C0; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Modal
+          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle"
+              style="color:#90A5C0; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Modal
             design was prone to user misclicking and exiting the tournament creation process.</li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;"><i class="fa-li fa fa-circle"
-              style="color:#90A5C0; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Using a
+          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle"
+              style="color:#90A5C0; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Using a
             full screen design also let the user see which step they were at in the process which created a smoother
             user experience.</li>
         </ul>
       </div>
     </div>
 
+    <div class="longImage">
     <p class="lead imgDescription" style="margin-bottom:-.5vw; margin-top:1.5em; text-align: center">
       v5
     </p>
@@ -869,21 +941,11 @@
         <div class="row" style="margin-top:15px;"></div>
       </div>
     </div>
+  </div>
 
-    <div class="row spacer "></div>
-    <div class="row" style="padding-top: 5vw;">
-      <div class="col-2" style="padding-right: 0px; max-width: 13%;">
-        <p class="titlehoriz" style="background-color:#90A5C0; font-size: 2px; margin-top: 1.8rem; line-height: 1.5;">&nbsp;
-        </p>
-      </div>
-      <div class="col-1" style="max-width: 2%; padding-left: 0px;">
-        <span style="  height: 12px; width: 12px; background-color: #90A5C0; border-radius: 50%; display: inline-block; margin-top: 1.5rem"></span>
-      </div>
-      <div class="col-9 dynamictext">
-        <div id="theprocess">Edit My Tournament</div>
-      </div>
+    <div class="row theprocessWrap" id="edittournament">
+      <div class="text_small theprocess">Edit Tournament</div>
     </div>
-
 
     <div class="row" style="justify-content: center;">
       <div class="img1Row">
@@ -915,18 +977,9 @@
       </div>
     </div>
 
-    <div class="row spacer "></div>
-    <div class="row" style="padding-top: 5vw;">
-      <div class="col-2" style="padding-right: 0px; max-width: 13%;">
-        <p class="titlehoriz" style="background-color:#90A5C0; font-size: 2px; margin-top: 1.8rem; line-height: 1.5;">&nbsp;
-        </p>
-      </div>
-      <div class="col-1" style="max-width: 2%; padding-left: 0px;">
-        <span style="  height: 12px; width: 12px; background-color: #90A5C0; border-radius: 50%; display: inline-block; margin-top: 1.5rem"></span>
-      </div>
-      <div class="col-9 dynamictext">
-        <div id="theprocess">Contributing to a Tournament</div>
-      </div>
+    <div class="longImage">
+    <div class="row theprocessWrap" id="contributing">
+      <div class="text_small theprocess">Contributing</div>
     </div>
 
     <p class="lead imgDescription" style="margin-bottom:-.5vw; text-align: center">
@@ -980,29 +1033,24 @@
         <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">Development faced some
           concerns:</p>
         <ul class="fa-ul">
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;"><i class="fa-li fa fa-circle"
-              style="color:#90A5C0; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Users
+          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle"
+              style="color:#90A5C0; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Users
             had to pay MTX to become a peer on the network</li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;"><i class="fa-li fa fa-circle"
-              style="color:#90A5C0; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Transaction
+          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle"
+              style="color:#90A5C0; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Transaction
             speed is relative to # of miners on the network </li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;"><i class="fa-li fa fa-circle"
-              style="color:#90A5C0; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Potential
+          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle"
+              style="color:#90A5C0; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Potential
             spam bots </li>
         </ul>
       </div>
+    </div>
     </div>
 
     <p class="lead imgDescription" style="margin-bottom:-.5vw; margin-top:1.5em; text-align: center">
       Prerequisite to contribute
     </p>
     <div class="row" style="justify-content: center">
-      <div class="img2Row">
-        <!-- vertically alligns words and pictures -->
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid img_shadow" src="img/nanome/enter8.png" alt=" " />
-        <div class="row" style="margin-top:15px;"></div>
-      </div>
       <div class="img2Row">
         <!-- vertically alligns words and pictures -->
         <div class="row" style="margin-top:15px;"></div>
@@ -1027,29 +1075,13 @@
       <div class="img2Row">
         <!-- vertically alligns words and pictures -->
         <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid img_shadow" src="img/nanome/enter10.png" alt=" " />
-        <div class="row" style="margin-top:15px;"></div>
-      </div>
-      <div class="img2Row">
-        <!-- vertically alligns words and pictures -->
-        <div class="row" style="margin-top:15px;"></div>
         <img class="img-fluid img_shadow" src="img/nanome/enter11.png" alt=" " />
         <div class="row" style="margin-top:15px;"></div>
       </div>
     </div>
 
-    <div class="row spacer "></div>
-    <div class="row" style="padding-top: 5vw;">
-      <div class="col-2" style="padding-right: 0px; max-width: 13%;">
-        <p class="titlehoriz" style="background-color:#90A5C0; font-size: 2px; margin-top: 1.8rem; line-height: 1.5;">&nbsp;
-        </p>
-      </div>
-      <div class="col-1" style="max-width: 2%; padding-left: 0px;">
-        <span style="  height: 12px; width: 12px; background-color: #90A5C0; border-radius: 50%; display: inline-block; margin-top: 1.5rem"></span>
-      </div>
-      <div class="col-9 dynamictext">
-        <div id="theprocess">Allocating Rewards</div>
-      </div>
+    <div class="row theprocessWrap" id="rewards">
+      <div class="text_small theprocess">Rewards</div>
     </div>
 
     <div class="row" style="justify-content: center;">
@@ -1065,7 +1097,7 @@
     <p class="lead imgDescription" style="margin-bottom:-.5vw; margin-top:1.5em; text-align: center">
       Allocating Rewards v1
     </p>
-    <div class="row" style="justify-content: center">
+    <div class="row " style="justify-content: center">
       <div class="img2Row">
         <!-- vertically alligns words and pictures -->
         <div class="row" style="margin-top:15px;"></div>
@@ -1073,7 +1105,7 @@
         <div class="row" style="margin-top:15px;"></div>
       </div>
     </div>
-    <div class="row" style="justify-content: center">
+    <div class="row longImage" style="justify-content: center">
       <div class="img2Row">
         <!-- vertically alligns words and pictures -->
         <div class="row" style="margin-top:15px;"></div>
@@ -1094,13 +1126,13 @@
           changed the round reward system (where the user decides how much reward must be allocated in each round when
           they create the tournament) to a minimum reward per round in the later iterations. </p>
         <ul class="fa-ul">
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;"><i class="fa-li fa fa-circle"
-              style="color:#90A5C0; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>This
+          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle"
+              style="color:#90A5C0; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>This
             was because of the edge case where there were no viable solutions submitted for that round. We don’t want
             to force the host to give rewards to unsatisfying solutions. Having a minimum reward per round makes the
             creation process easier and tournament results more flexible.</li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;"><i class="fa-li fa fa-circle"
-              style="color:#90A5C0; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>For
+          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle"
+              style="color:#90A5C0; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>For
             example, if someone completely solves the solution in the first round, then all of the reward can go to
             them.</li>
         </ul>
@@ -1127,18 +1159,8 @@
       </div>
     </div>
 
-    <div class="row spacer "></div>
-    <div class="row" style="padding-top: 5vw;">
-      <div class="col-2" style="padding-right: 0px; max-width: 13%;">
-        <p class="titlehoriz" style="background-color:#90A5C0; font-size: 2px; margin-top: 1.8rem; line-height: 1.5;">&nbsp;
-        </p>
-      </div>
-      <div class="col-1" style="max-width: 2%; padding-left: 0px;">
-        <span style="  height: 12px; width: 12px; background-color: #90A5C0; border-radius: 50%; display: inline-block; margin-top: 1.5rem"></span>
-      </div>
-      <div class="col-9 dynamictext">
-        <div id="theprocess">Intellectual Property Marketplace</div>
-      </div>
+    <div class="row theprocessWrap" id="ip">
+      <div class="text_small theprocess">Intellectual Property</div>
     </div>
 
     <div class="row" style="justify-content: center;">
@@ -1242,18 +1264,8 @@
       </div>
     </div>
 
-    <div class="row spacer "></div>
-    <div class="row" style="padding-top: 4em;">
-      <div class="col-2" style="padding-right: 0px; max-width: 13%;">
-        <p class="titlehoriz" style="background-color:#90A5C0; font-size: 2px; margin-top: 1.8rem; line-height: 1.5;">&nbsp;
-        </p>
-      </div>
-      <div class="col-1" style="max-width: 2%; padding-left: 0px;">
-        <span style="  height: 12px; width: 12px; background-color: #90A5C0; border-radius: 50%; display: inline-block; margin-top: 1.5rem"></span>
-      </div>
-      <div class="col-9 dynamictext">
-        <div id="theprocess">Conclusion</div>
-      </div>
+    <div class="row theprocessWrap" id="learnings">
+      <div class="text_small theprocess">Learnings</div>
     </div>
 
     <div class="row" style="justify-content: center;">
@@ -1285,18 +1297,9 @@
         </p>
       </div>
     </div>
-    <div class="row spacer "></div>
-    <div class="row" style="padding-top: 3vw;">
-      <div class="col-2" style="padding-right: 0px; max-width: 13%;">
-        <p class="titlehoriz" style="background-color:#90A5C0; font-size: 2px; margin-top: 1.8rem; line-height: 1.5;">&nbsp;
-        </p>
-      </div>
-      <div class="col-1" style="max-width: 2%; padding-left: 0px;">
-        <span style="  height: 12px; width: 12px; background-color: #90A5C0; border-radius: 50%; display: inline-block; margin-top: 1.5rem"></span>
-      </div>
-      <div class="col-9 dynamictext">
-        <div id="theprocess"> My Other Work</div>
-      </div>
+
+    <div class="row" style="text-align: center; padding-bottom: 40px;">
+      <div class="text_medium theprocess">My Other Work</div>
     </div>
 
     <div class="row">
@@ -1320,11 +1323,11 @@
       >
         <div style="margin-top: 2vw; margin-bottom: 60px;">
           <div class="row-centerer dynamicdescription">
-            <h2 class="section-heading" style="font-weight: 400">
+            <h3 class="section-heading" style="font-weight: 400">
               <a class="sliding-middle-out" href="project5.html">
                 D4SD Hackathon</a
               >
-            </h2>
+            </h3>
             <p class="lead ">
               I competed in a city wide design competition to improve
               transportation in San Diego during Fall 2017.
@@ -1356,11 +1359,11 @@
       >
         <div style="margin-top: 2vw; margin-bottom: 60px;">
           <div class="row-centerer dynamicdescription">
-            <h2 class="section-heading" style="font-weight: 400">
+            <h3 class="section-heading" style="font-weight: 400">
               <a class="sliding-middle-out" href="workday_pre.html"
                 >Workday</a
               >
-            </h2>
+            </h3>
             <p class="lead ">
               Redesigning the system wide conclusion interface and mobile
               animations.
@@ -1399,14 +1402,28 @@
     <!-- container fluid wrapper end div -->
   </div>
 
+    <!-- JavaScript -->
+    <!-- different jquery for scrollspy  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/progress_scroll.js"></script>
+    <script src="js/sideNav.js "></script>
+    <script src="js/smooth-scroll.min.js"></script>
+    <script src="js/navSlideIn.js"></script>
+    <script>
+      // Instantiate Scrolls
+      var scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 200
+      });
 
-
-
-  <!-- JavaScript -->
-  <script src="vendor/jquery/jquery.min.js "></script>
-  <script src="vendor/popper/popper.min.js "></script>
-  <script src="vendor/bootstrap/js/bootstrap.min.js "></script>
-  <script src="custom.js "></script>
+      if (document.querySelector("[data-easing]")) {
+        var easeOutQuart = new SmoothScroll('[data-easing="easeOutQuart"]', {
+          easing: "easeOutQuart"
+        });
+      }
+    </script>
+    <script src="vendor/popper/popper.min.js "></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js "></script>
+    <script src="custom.js "></script>
 
 </body>
 
