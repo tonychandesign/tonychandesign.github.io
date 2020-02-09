@@ -609,6 +609,10 @@ div#scroll-bar {
   min-width: 300px;
   margin: auto;
 }
+.text_small p .intro {
+  font-weight: bold;
+  color: #b08449;
+}
 .text_medium {
   max-width: 50%;
   min-width: 300px;
