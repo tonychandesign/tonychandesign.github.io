@@ -7,7 +7,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 100vw;
-  height: calc(100vh - 13rem);
+  height: 100vh;
   position: relative;
   justify-content: flex-start;
   align-items: center;
@@ -15,9 +15,9 @@ body {
 
 .content__img-wrap {
   position: relative;
-  margin-top: -170px;
-  width: 90%;
-  height: calc(100% - 13rem);
+  margin-top: -270px;
+  width: 110%;
+  height: 110%;
 }
 
 .content__img {
@@ -26,7 +26,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url(../img/index_tony.jpeg) no-repeat 50% 100%;
+  background: url(../img/index_tony.png) no-repeat 50% 100%;
   background-size: cover;
   opacity: 1;
   will-change: transform;
@@ -36,7 +36,7 @@ body {
   position: absolute;
   font-size: 20px;
   color: white;
-  margin-top: -110px;
+  margin-top: -150px;
 }
 .content__text-inner {
   opacity: 0;
@@ -97,7 +97,7 @@ body {
     pointer-events: auto;
   }
   .content {
-    height: 85vh;
+    height: 131vh;
     justify-content: center;
   }
   .grid {
@@ -120,7 +120,7 @@ body {
 
 @media screen and (max-width: 414px) {
   .content__text {
-    margin-top: 20px;
+    margin-top: 320px;
     width: 300px;
     font-weight: 600;
   }
@@ -129,7 +129,7 @@ body {
     margin-bottom: -300px;
   }
   .content {
-    margin-bottom: -120px;
+    margin-bottom: 60px;
   }
   .indexLiquidPadding {
     margin-top: 11em;

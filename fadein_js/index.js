@@ -2,6 +2,8 @@
 $(document).ready(function() {
   //window and animation items
   var animation_elements = $.find(".animation-element");
+  var navBG = $.find(".navbar-expand");
+  var warpedHeader = $.find(".content");
   var web_window = $(window);
 
   //check to see if any animation containers are currently in view
@@ -27,6 +29,28 @@ $(document).ready(function() {
         element.addClass("in-view");
       }
     });
+
+    // disable scroll listener if on resume or about me section
+    var active = $(".navbar-nav .active ");
+    if (active.hasClass("navAbout") || active.hasClass("navResume")) {
+      return;
+    }
+    // make nav background transparent so text inverts colors
+    var element = $(warpedHeader);
+    var ele_h = $(element).outerHeight();
+    var ele_t = $(element).offset().top + 100;
+    var ele_bot = ele_t + ele_h - 300;
+    if (ele_bot >= window_top_position && ele_t <= window_bottom_position) {
+      $(navBG).removeClass("whiteNav");
+      $(navBG).addClass("transNav");
+      $(".nav-item").addClass("whiteText");
+      $(".tonychan").addClass("whiteText");
+    } else {
+      $(navBG).addClass("whiteNav");
+      $(navBG).removeClass("transNav");
+      $(".nav-item").removeClass("whiteText");
+      $(".tonychan").removeClass("whiteText");
+    }
   }
 
   //on or scroll, detect elements in view

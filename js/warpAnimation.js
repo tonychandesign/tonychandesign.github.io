@@ -87,7 +87,7 @@
       paddingRight: 100,
       paddingTop: 100,
       paddingBottom: 100,
-      fill: "white"
+      fill: "#C9A87C"
     });
     try {
       elem.removeChild(textEl);
@@ -186,7 +186,7 @@
       paddingRight: 100,
       paddingTop: 100,
       paddingBottom: 100,
-      fill: "white"
+      fill: "#C9A87C"
     });
     try {
       elem.removeChild(textEl);

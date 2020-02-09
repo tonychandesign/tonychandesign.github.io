@@ -39,11 +39,12 @@ h6 {
 
 p {
   line-height: 2;
-  font-size: 18px;
+  font-size: 14px;
 }
 .lead {
   font-weight: 400;
   color: #616161;
+  font-size: 1.1em !important;
 }
 
 .remove-padding {
@@ -61,14 +62,10 @@ p {
 }
 /* navbar navigation text css */
 .navbar-brand {
-  color: #424c55;
   font-family: "Lato";
   margin-right: 0rem;
-  font-size: 1.6em;
+  font-size: 1.4em;
   font-weight: 600;
-}
-.nav-link {
-  color: #424c55;
 }
 /* main header */
 .indexheader {
@@ -114,33 +111,37 @@ p {
 #navbar {
   position: fixed; /* Initially set to absolute so it is movable with the page */
   top: 0px;
-  padding-top: 10px;
-  padding-bottom: 70px;
-  background: linear-gradient(
-    to top,
-    rgba(255, 255, 255, 0),
-    rgba(255, 255, 255, 0.3),
-    rgba(255, 255, 255, 0.7),
-    rgba(255, 255, 255, 0.95),
-    #ffffff,
-    #ffffff,
-    #ffffff
-  );
-  transition: top 300ms ease;
-  -webkit-transition: top 300ms ease;
-  -moz-transition: top 300ms ease;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 10px;
+  transition: top 200ms ease-in-out;
+  -webkit-transition: top 200ms ease-in-out;
+  -moz-transition: top 200ms ease-in-out;
+}
+.whiteNav {
+  background: rgba(255, 255, 255, 1);
+}
+.transNav {
+  background: rgba(255, 255, 255, 0);
+}
+.navbar-expand {
+  transition: all 300ms ease !important;
+  -webkit-transition: all 300ms ease !important;
+  -moz-transition: all 300ms ease !important;
+}
+.whiteText {
+  color: white !important;
 }
 
 /* navbar tab sliding animation */
 .sliding-middle-out {
   display: inline-block;
   position: relative;
-  color: #424c55;
+  color: inherit;
 }
-
 .sliding-middle-out:after {
   width: 0;
-  background: #424c55;
+  background: black;
   content: "";
   display: block;
   margin: auto;
@@ -159,7 +160,33 @@ p {
 .sliding-middle-out.active:after,
 .sliding-middle-out:hover:after {
   width: 100%;
-  background: #424c55;
+  padding-left: 10px;
+  background: #b08449;
+}
+.tony-middle-out {
+  display: inline-block;
+  position: relative;
+  color: inherit;
+}
+.tony-middle-out:after {
+  width: 0;
+  background: black;
+  content: "";
+  display: block;
+  margin: auto;
+  margin-top: 3px;
+  margin-bottom: -3px;
+  height: 3px;
+  background: transparent;
+  transition: width 0.2s ease, background-color 0.5s ease;
+}
+.tony-middle-out.active:after,
+.tony-middle-out:hover:after {
+  width: 100%;
+  background: #b08449;
+}
+.active {
+  color: #b08449 !important;
 }
 
 h1 {
@@ -178,8 +205,8 @@ h1 {
   background-color: #fff;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   border-radius: 2px;
-  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -webkit-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .box::after {
   content: "";
@@ -192,8 +219,8 @@ h1 {
   height: 100%;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   opacity: 0;
-  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -webkit-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .box:hover {
   -webkit-transform: scale(1.02, 1.02);
@@ -235,7 +262,7 @@ h1 {
 a:hover,
 .a:hover {
   text-decoration: none !important;
-  color: #424c55;
+  color: inherit !important;
 }
 
 /* Horizontalally centers boxes */
@@ -402,11 +429,11 @@ a.btn-social,
 /* category button */
 .cat_but {
   /* background-color: #4CAF50; */
-  border: #90a5c0;
+  border: #b08449;
   border-style: solid;
   border-radius: 40px;
   border-width: 2px;
-  color: #90a5c0;
+  color: #b08449;
   padding: 10px;
   text-align: center;
   display: inline-block;
@@ -416,9 +443,9 @@ a.btn-social,
 
 /* increase carousel slide speed */
 .carousel-item {
-  transition: -webkit-transform 0.25s ease;
-  transition: transform 0.25s ease;
-  transition: transform 0.25s ease, -webkit-transform 0.25s ease;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
 }
 
 /**************************** PROJECT ITEM CSS *****************************/
@@ -488,9 +515,6 @@ a.btn-social,
   justify-content: left;
 }
 
-/* Index header animation CSS*/
-.large-header {
-}
 #x-canvas {
   opacity: 0.25;
 }
@@ -503,15 +527,18 @@ a.btn-social,
 }
 
 .respCoverPadding {
-  padding-top: 60px;
+  padding-top: 0px;
 }
 
 .industrypadding {
   padding-top: -50px;
 }
 .navpadding {
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.nav-link {
+  padding: 0px 10px;
 }
 
 /* project/internship description  */
@@ -530,7 +557,7 @@ div#scroll-bar {
   width: 0;
   height: 4px;
   z-index: 2030;
-  background: #90a5c0;
+  background: #b08449;
 }
 
 .hideScrollBar::-webkit-scrollbar {
@@ -554,6 +581,7 @@ div#scroll-bar {
   font-size: 3em;
   font-weight: 500;
   margin: auto;
+  color: black;
 }
 
 .img_shadow {
@@ -630,6 +658,10 @@ div#scroll-bar {
   width: 100%;
   padding: 30px;
   margin: auto;
+}
+.tonychan {
+  font-size: 1.6em;
+  font-weight: 900;
 }
 /* Tony Chan in navbar alignment when shrinking screen */
 @media screen and (min-width: 992px) {

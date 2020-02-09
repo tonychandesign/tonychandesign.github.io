@@ -22,7 +22,6 @@
   <!-- scroll fade in from left/right animation -->
   <link rel="stylesheet" href="fadein_css/style.css" />
 
-
   <!-- ajax for warp  -->
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
   <link href="css/warp.css" rel="stylesheet" />
@@ -32,24 +31,26 @@
   <!-- fade in script -->
 
   <!-- dynamic resizing  -->
-  <div class="container-fluid">
+  <div class="container-fluid" style="margin-top: -130px;background: white;">
     <!--  ///////////////////  NAVBAR  ///////////////////  -->
-    <nav id="navbar" class="navbar-expand fixed-top">
-      <div class="row row-centerer" style="width: 95%;">
-        <div class="col-lg-4">
-          <h1 class="tonychan"><a href="index.html">Tony Chan</a></h1>
+    <nav id="navbar" class="navbar-expand fixed-top whiteNav">
+      <div class="row row-centerer">
+        <div class="col-lg-4 " style="margin: auto;">
+          <h1 class="tonychan">
+            <a href="index.html" class="tony-middle-out">Tony Chan</a>
+          </h1>
         </div>
         <div class="col-lg-2"></div>
         <div class="col-lg-6">
           <div id="menu">
             <ul class="navbar-nav navbar-brand right-to-center nav-elem-centerer">
-              <li class="sliding-middle-out nav-item active" style="margin-left: 30px;">
+              <li class="sliding-middle-out nav-item active navPortfolio" style="margin-left: 30px;">
                 <a class="move-slide nav-link" href="" data-id="0">Portfolio</a>
               </li>
-              <li class="sliding-middle-out nav-item navpadding">
+              <li class="sliding-middle-out nav-item navpadding navResume">
                 <a class="move-slide nav-link" href="" data-id="1">Resume</a>
               </li>
-              <li class="sliding-middle-out nav-item" style="margin-right: 30px; margin-left: 0px;">
+              <li class="sliding-middle-out nav-item navAbout" style="margin-right: 30px; margin-left: 0px;">
                 <a class="move-slide nav-link" href="" data-id="2">About Me</a>
               </li>
             </ul>
@@ -63,22 +64,19 @@
         <!--  ///////////////////  PORTFOLIO CONTENT  ///////////////////  -->
         <div class="carousel-item active">
           <!-- - - - - - - - - - - - - - - - - - INTRO - - - - - - - - - - - - - - - - - -->
-          <div id="large-header" class="large-header indexLiquidPadding">
-
-            <div class="content">
-              <div class="content__img-wrap">
-                <div class="content__img"></div>
-              </div>
-              <div class="content__text" style="text-align: center">
-                <span class="content__text-inner" 
-                >I'm Tony Chan, a designer who's wondering if he's related to Jackie Chan 🤔</span
-              >
-              </div>
+          <div class="content">
+            <div class="content__img-wrap">
+              <div class="content__img"></div>
+            </div>
+            <div class="content__text" style="text-align: center">
+              <span class="content__text-inner"> I'm Tony Chan, a designer who's wondering if he's related to Jackie Chan 🤔</span>
             </div>
           </div>
 
           <div class="row">
-            <div class="indexSectionHeader industrypadding">Industry Experience</div>
+            <div class="indexSectionHeader industrypadding">
+              Industry Experience
+            </div>
           </div>
 
           <div class="row" style="margin-top: 3em;">
@@ -105,15 +103,26 @@
                     <a class="sliding-middle-out" href="intuit_nda.html">Intuit</a>
                   </h2>
                   <p class="lead ">
-                    Build in-house tools to empower the design studio. Work with business partners
-                     to turn future facing ideas into tangible prototypes to influence business direction.
+                    Build in-house tools to empower the design studio. Work
+                    with business partners to turn future facing ideas into
+                    tangible prototypes to influence business direction.
                   </p>
                   <section>
-                    <div class="cat_but" style="margin-top: 10px; margin-right: 10px;">Prototyping</div>
-                    <div class="cat_but" style="margin-right: 10px; margin-top: 10px;">Development</div>
-                    <div class="cat_but" style="margin-right: 10px; margin-top: 10px;">Product Design</div>
-                    <div class="cat_but" style="margin-right: 10px; margin-top: 10px;">UX Research</div>
-                    <div class="cat_but" style="margin-top: 10px;">Motion Design</div>
+                    <div class="cat_but" style="margin-top: 10px; margin-right: 10px;">
+                      Prototyping
+                    </div>
+                    <div class="cat_but" style="margin-right: 10px; margin-top: 10px;">
+                      Development
+                    </div>
+                    <div class="cat_but" style="margin-right: 10px; margin-top: 10px;">
+                      Product Design
+                    </div>
+                    <div class="cat_but" style="margin-right: 10px; margin-top: 10px;">
+                      UX Research
+                    </div>
+                    <div class="cat_but" style="margin-top: 10px;">
+                      Motion Design
+                    </div>
                   </section>
                 </div>
               </div>
@@ -127,8 +136,7 @@
             <section class="col-md-5 order-md-3 titlehoriz" style="padding:0px 0;">
               <div class="box btn-group modal-dialogtwo dynamicthumbnail" style="margin-top: 0px;">
                 <a href="workday_pre.html">
-                  <div class="overlay vertical-align titlehoriz">
-                  </div>
+                  <div class="overlay vertical-align titlehoriz"></div>
                   <div class="titlehoriz">
                     <img class="img-fluid" src="img/idx_wrkdy.png" alt=" " />
                   </div>
@@ -142,14 +150,20 @@
                     <a class="sliding-middle-out" href="workday_pre.html">Workday</a>
                   </h2>
                   <p class="lead ">
-                    A summer internship at Workday's Design Systems team
-                    where I worked on redesigning the system wide conclusion
+                    A summer internship at Workday's Design Systems team where
+                    I worked on redesigning the system wide conclusion
                     interface and mobile animations.
                   </p>
                   <section>
-                    <div class="cat_but" style="margin-top: 10px; margin-right: 10px;">Product Design</div>
-                    <div class="cat_but" style="margin-right: 10px; margin-top: 10px;">Motion Design</div>
-                    <div class="cat_but" style="margin-top: 10px;">UX Research</div>
+                    <div class="cat_but" style="margin-top: 10px; margin-right: 10px;">
+                      Product Design
+                    </div>
+                    <div class="cat_but" style="margin-right: 10px; margin-top: 10px;">
+                      Motion Design
+                    </div>
+                    <div class="cat_but" style="margin-top: 10px;">
+                      UX Research
+                    </div>
                   </section>
                 </div>
               </div>
@@ -187,10 +201,15 @@
                     marketplace on a blockchain network.
                   </p>
                   <section>
-                    <div class="cat_but" style="margin-top: 10px; margin-right: 10px;">Product Design</div>
-                    <div class="cat_but" style="margin-right: 10px; margin-top: 10px;">Visual
-                      Design</div>
-                    <div class="cat_but" style="margin-top: 10px;">UX Research</div>
+                    <div class="cat_but" style="margin-top: 10px; margin-right: 10px;">
+                      Product Design
+                    </div>
+                    <div class="cat_but" style="margin-right: 10px; margin-top: 10px;">
+                      Visual Design
+                    </div>
+                    <div class="cat_but" style="margin-top: 10px;">
+                      UX Research
+                    </div>
                   </section>
                 </div>
               </div>
@@ -217,12 +236,16 @@
                     <a class="sliding-middle-out" href="asgs.html">A.S. Graphic Studio</a>
                   </h2>
                   <p class="lead ">
-                    Collaborate with a visual designer to implement UCSD's 2018
-                    Sun God Festival website.
+                    Collaborate with a visual designer to implement UCSD's
+                    2018 Sun God Festival website.
                   </p>
                   <section>
-                    <div class="cat_but" style="margin-top: 10px; margin-right: 10px;">Web Development</div>
-                    <div class="cat_but" style="margin-top: 10px;">Interaction Design</div>
+                    <div class="cat_but" style="margin-top: 10px; margin-right: 10px;">
+                      Web Development
+                    </div>
+                    <div class="cat_but" style="margin-top: 10px;">
+                      Interaction Design
+                    </div>
                   </section>
                 </div>
               </div>
@@ -231,7 +254,9 @@
           </div>
 
           <div class="row">
-            <div class=" indexSectionHeader" style="margin-top: 3em;">Selected Projects</div>
+            <div class=" indexSectionHeader" style="margin-top: 3em;">
+              Selected Projects
+            </div>
           </div>
 
           <div class="row" style="margin-top: 3em;">
@@ -257,8 +282,12 @@
                     transportation in San Diego.
                   </p>
                   <section>
-                    <div class="cat_but" style="margin-top: 10px; margin-right: 10px;">Interaction Design</div>
-                    <div class="cat_but" style="margin-top: 10px;">UX Research</div>
+                    <div class="cat_but" style="margin-top: 10px; margin-right: 10px;">
+                      Interaction Design
+                    </div>
+                    <div class="cat_but" style="margin-top: 10px;">
+                      UX Research
+                    </div>
                   </section>
                 </div>
               </div>
@@ -289,8 +318,12 @@
                     Institution of Oceanography to teach people about bubbles.
                   </p>
                   <section>
-                    <div class="cat_but" style="margin-top: 10px; margin-right: 10px;">Interaction Design</div>
-                    <div class="cat_but" style="margin-top: 10px;">UX Research</div>
+                    <div class="cat_but" style="margin-top: 10px; margin-right: 10px;">
+                      Interaction Design
+                    </div>
+                    <div class="cat_but" style="margin-top: 10px;">
+                      UX Research
+                    </div>
                   </section>
                 </div>
               </div>
@@ -321,9 +354,15 @@
                     Calendar.
                   </p>
                   <section>
-                    <div class="cat_but" style="margin-top: 10px; margin-right: 10px;">Web Development</div>
-                    <div class="cat_but" style="margin-right: 10px; margin-top: 10px;">Interaction Design</div>
-                    <div class="cat_but" style="margin-top: 10px;">UX Research</div>
+                    <div class="cat_but" style="margin-top: 10px; margin-right: 10px;">
+                      Web Development
+                    </div>
+                    <div class="cat_but" style="margin-right: 10px; margin-top: 10px;">
+                      Interaction Design
+                    </div>
+                    <div class="cat_but" style="margin-top: 10px;">
+                      UX Research
+                    </div>
                   </section>
                 </div>
               </div>
@@ -335,10 +374,12 @@
           <aside class="banner ">
             <div class="row ">
               <div class="col-lg-12 text-center">
-                <a href="mailto:tonychan96@gmail.com" target="_blank" class="btn-social btn-lg"><i class="fa fa-envelope"></i></a>
+                <a href="mailto:tonychan96@gmail.com" target="_blank" class="btn-social btn-lg"><i
+                    class="fa fa-envelope"></i></a>
                 <a href="https://www.linkedin.com/in/tony-chan-206086115/" target="_blank" class="btn-social btn-lg"><i
                     class="fa fa-linkedin"></i></a>
-                <a href="https://github.com/GMTChan" target="_blank" class="btn-social btn-lg"><i class="fa fa-github"></i></a>
+                <a href="https://github.com/GMTChan" target="_blank" class="btn-social btn-lg"><i
+                    class="fa fa-github"></i></a>
               </div>
             </div>
             <div class="row ">
@@ -350,7 +391,7 @@
         </div>
 
         <!-- RESUME  -->
-        <div class="carousel-item">
+        <div class="carousel-item" style="margin-top: 80px;">
           <section class="content-section-b">
             <div class="modal-dialog">
               <div class="row row-centerer">
@@ -374,10 +415,12 @@
           <aside class="banner ">
             <div class="row ">
               <div class="col-lg-12 text-center">
-                <a href="mailto:tonychan96@gmail.com" target="_blank" class="btn-social btn-lg"><i class="fa fa-envelope"></i></a>
+                <a href="mailto:tonychan96@gmail.com" target="_blank" class="btn-social btn-lg"><i
+                    class="fa fa-envelope"></i></a>
                 <a href="https://www.linkedin.com/in/tony-chan-206086115/" target="_blank" class="btn-social btn-lg"><i
                     class="fa fa-linkedin"></i></a>
-                <a href="https://github.com/GMTChan" target="_blank" class="btn-social btn-lg"><i class="fa fa-github"></i></a>
+                <a href="https://github.com/GMTChan" target="_blank" class="btn-social btn-lg"><i
+                    class="fa fa-github"></i></a>
               </div>
             </div>
             <div class="row ">
@@ -388,7 +431,7 @@
           </aside>
         </div>
 
-        <div class="carousel-item">
+        <div class="carousel-item" style="margin-top: 80px;">
           <!-- ABOUT ME TAB  -->
           <div style="padding-top: 30px;"></div>
           <div class="row" style="margin-top: 2.5vw;">
@@ -407,19 +450,10 @@
             <div class="col-md-3 col-2"></div>
             <div class="col-md-6 col-8">
               <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">
-                Born and raised in Los Angeles, California, my interest in
-                design developed when I got my first computer at the age of
-                12. I enjoyed installing themes, elements, and shortcuts to
-                personalize the experience because not only did it allow me to
-                navigate the interface more easily, but it also gave me a
-                satisfying sense of ownership. <br /><br />
-                I’m interested in working on projects that are not only
-                extensive, but also challenging. My designs and principles are
-                a medium to leave an impression on as many people as possible,
-                from those around me to users who live on the other side of
-                the world. <br />
-                <br />
-                — Tony
+                I'm a designer and engineer in California with the ability to bring ideas from concept to production 
+                through a variety of mediums.  My multidisciplinary background allows me to tackle problems with a 
+                unique & technical perspective.   I'm a strong collaborator based on the awareness of these disciplines, 
+                resulting in comprehensive & elegant deliverables. I believe in empathy, minimalism, and attention to detail.
               </p>
             </div>
             <div class="col-md-3 col-2"></div>
@@ -440,10 +474,12 @@
           <aside class="banner ">
             <div class="row ">
               <div class="col-lg-12 text-center">
-                <a href="mailto:tonychan96@gmail.com" target="_blank" class="btn-social btn-lg"><i class="fa fa-envelope"></i></a>
+                <a href="mailto:tonychan96@gmail.com" target="_blank" class="btn-social btn-lg"><i
+                    class="fa fa-envelope"></i></a>
                 <a href="https://www.linkedin.com/in/tony-chan-206086115/" target="_blank" class="btn-social btn-lg"><i
                     class="fa fa-linkedin"></i></a>
-                <a href="https://github.com/GMTChan" target="_blank" class="btn-social btn-lg"><i class="fa fa-github"></i></a>
+                <a href="https://github.com/GMTChan" target="_blank" class="btn-social btn-lg"><i
+                    class="fa fa-github"></i></a>
               </div>
             </div>
             <div class="row ">
@@ -472,6 +508,5 @@
   <!-- scroll fade left/right animation -->
   <script src="fadein_js/index.js"></script>
 </body>
-
 
 </html>
