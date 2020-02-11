@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
   <!-- Custom styles -->
   <link href="css/outer.css" rel="stylesheet" />
+  <link href="css/loader.css" rel="stylesheet" />
 
   <!-- scroll fade in from left/right animation -->
   <link rel="stylesheet" href="fadein_css/style.css" />
@@ -28,8 +29,8 @@
 </head>
 
 <body style="background: white">
-  <!-- fade in script -->
-
+  <!-- loader script -->
+  <div style="z-index: 10000;" id="loadingDiv"><div class="loader"></div></div>
   <!-- dynamic resizing  -->
   <div class="container-fluid" style="margin-top: -130px;background: white;">
     <!--  ///////////////////  NAVBAR  ///////////////////  -->
@@ -507,6 +508,7 @@
   <script src="js/warpAnimation.js"></script>
   <!-- scroll fade left/right animation -->
   <script src="fadein_js/index.js"></script>
+  <script src="js/loader.js"></script>
 </body>
 
 </html>
