@@ -62,7 +62,7 @@
 
 
         #loadingDiv {
-            position:absolute;;
+            position:absolute;
             top:0;
             left:0;
             margin-left: auto;
@@ -72,3 +72,35 @@
             height:110%;
             background-color:#000;
         }
+
+  .parallax {
+    width: 120vw;
+    height: 120vh;
+    margin-left: -10vw;
+    overflow: hidden;
+    left: 0;
+}
+.parallaxBG {
+    width: 147vw;
+    margin-left: -20vw;
+    height: 130vh;
+    margin-top: -20vh;
+    background: url(../img/index_tony.png) no-repeat 50% 100%;
+    background-size: cover;
+}
+.heroText {
+  text-align: center;
+  padding-top: 65vh;
+  padding-left: 100px;
+  padding-right: 100px;
+  font-size: 28px;
+  font-weight: 900;
+  color: #C9A87C;
+  font-family: "Lato";
+}
+
+@media screen and (max-width: 414px) {
+  .heroText {
+      padding-top: 55vh;
+  }
+}

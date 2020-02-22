@@ -3,7 +3,7 @@ $(document).ready(function() {
   //window and animation items
   var animation_elements = $.find(".animation-element");
   var navBG = $.find(".navbar-expand");
-  var warpedHeader = $.find(".content");
+  var warpedHeader = $.find(".parallax");
   var web_window = $(window);
 
   //check to see if any animation containers are currently in view
