@@ -298,6 +298,11 @@ a:hover,
   width: 90%;
   margin: auto;
 }
+@media screen and (max-width: 414px) {
+  .row-centerer {
+    width: 100%;
+  }
+}
 .vertical-align {
   display: flex;
   align-items: center;
