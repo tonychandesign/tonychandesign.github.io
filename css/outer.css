@@ -103,6 +103,7 @@ p {
 .indextext {
   margin-top: 2vw;
   margin-bottom: 60px;
+  width: 100%;
 }
 .letstalkpad {
   padding-top: 6vw;
@@ -373,7 +374,7 @@ footer {
 }
 p.copyright {
   color: #c4c4ca;
-  font-size: 14px;
+  font-size: 12px !Important;
   text-align: center !important;
   margin-bottom: 20px !important;
 }
@@ -549,6 +550,7 @@ a.btn-social,
   max-width: 90%;
 }
 
+
 /* The progress bar (scroll indicator) */
 div#scroll-bar {
   position: fixed;
@@ -575,6 +577,19 @@ div#scroll-bar {
   transform: rotate(5deg); */
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 76%);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 76%);
+}
+.fullWidthWork {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+@media (max-width: 900px) {
+  .fullWidthWork {
+    width: 75%;
+    margin: auto; 
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 }
 
 .indexSectionHeader {
@@ -761,9 +776,12 @@ div#scroll-bar {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 900px) {
   .dynamicdescription {
-    max-width: 60%;
+    max-width: 65%;
+    min-width: 300px;
+    margin: auto;
+    padding-bottom: 20px;
   }
   .dynamicthumbnail {
     max-width: 70%;
