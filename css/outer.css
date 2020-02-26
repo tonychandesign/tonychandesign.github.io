@@ -5,6 +5,7 @@ body,
 html {
   width: 100%;
   height: 100%;
+
 }
 body {
   font-family: "Lato";
@@ -120,7 +121,7 @@ p {
 /* navbar up and down animation & gradient */
 #navbar {
   position: fixed; /* Initially set to absolute so it is movable with the page */
-  top: 0px;
+  top: -140px;
   padding-top: 20px;
   padding-bottom: 25px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 10px;
@@ -464,44 +465,6 @@ a.btn-social,
 }
 
 /**************************** PROJECT ITEM CSS *****************************/
-/* brackets */
-.brackets {
-  font: 20px/26px "Lato", sans-serif;
-  background-image: linear-gradient(#00cdcd, #00cdcd),
-    linear-gradient(#00cdcd, #00cdcd), linear-gradient(#00cdcd, #00cdcd),
-    linear-gradient(#00cdcd, #00cdcd);
-
-  background-repeat: no-repeat;
-  background-size: 60px 3px;
-  background-position: top left, top right, bottom left, bottom right;
-
-  border: solid #00cdcd;
-  text-align: justify;
-  border-width: 0 3px;
-  display: inline-block;
-  vertical-align: top;
-  padding: 20px 20px;
-  margin: auto;
-}
-.brackets-text {
-  font: 20px/26px "Lato", sans-serif;
-  background-image: linear-gradient(#cf63c5, #cf63c5),
-    linear-gradient(#cf63c5, #cf63c5), linear-gradient(#cf63c5, #cf63c5),
-    linear-gradient(#cf63c5, #cf63c5);
-
-  background-repeat: no-repeat;
-  background-size: 15px 3px;
-  background-position: top left, top right, bottom left, bottom right;
-
-  border: solid #cf63c5;
-  text-align: justify;
-  border-width: 0 3px;
-  display: inline-block;
-  vertical-align: top;
-  padding: 20px 20px;
-  margin: auto;
-}
-
 .descriptionspacer {
   margin-top: 15px; /* used under pictures */
 }
@@ -542,7 +505,7 @@ a.btn-social,
 }
 
 .respCoverPadding {
-  padding-top: 0px;
+  padding-top: 20px;
 }
 
 .industrypadding {
@@ -562,22 +525,6 @@ a.btn-social,
 }
 .dynamicthumbnail {
   max-width: 90%;
-}
-
-
-/* The progress bar (scroll indicator) */
-div#scroll-bar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 4px;
-  z-index: 2030;
-  background: #b08449;
-}
-
-.hideScrollBar::-webkit-scrollbar {
-  width: 0 !important;
 }
 
 .white_bg {
