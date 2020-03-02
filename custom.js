@@ -1,5 +1,5 @@
 // var menu_pageid = 0;
-$(function() {
+$(function () {
   // Check for slide on new load
   // specifically it loads designated carousel item when navigating from proj page
   var query = window.location.search;
@@ -43,8 +43,7 @@ $(function() {
   }
 
   var prevScrollpos = window.pageYOffset;
-  console.log(window.pageYOffset)
-  window.onscroll = function() {
+  window.onscroll = function () {
     var currentScrollPos = window.pageYOffset;
     if (prevScrollpos < 0) {
       // do nothing
@@ -53,14 +52,14 @@ $(function() {
       if (prevScrollpos > currentScrollPos) {
         document.getElementById("navbar").style.top = "0";
       } else {
-          document.getElementById("navbar").style.top = "-140px";
+        document.getElementById("navbar").style.top = "-140px";
       }
     }
     prevScrollpos = currentScrollPos;
   };
 
   // Carousel JS scrolling implemented onto click action move-slide
-  $(".move-slide").on("click touchend", function(e) {
+  $(".move-slide").on("click touchend", function (e) {
     // touchend fixes the double click bug on ios safari
     e.preventDefault();
 
@@ -71,7 +70,7 @@ $(function() {
       // Scroll to top function when clicking navbar item
       $("html, body").animate({ scrollTop: 0 });
 
-      setTimeout(function() {
+      setTimeout(function () {
         // delayed carousel shift
         carousel.carousel(link.data("id"));
         var active = $(".navbar-nav .active ");
