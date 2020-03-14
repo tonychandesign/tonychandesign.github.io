@@ -597,6 +597,14 @@ a.btn-social,
   padding-bottom: 20px;
 }
 
+.indexSectionHeader {
+  font-size: 3.5em;
+  font-weight: 500;
+  color: white;
+  margin-left: 9.5%;
+  margin-bottom: 50px;
+}
+
 @media (max-width: 900px) {
   .fullWidthWork {
     width: 75%;
@@ -604,13 +612,10 @@ a.btn-social,
     padding-top: 20px;
     padding-bottom: 20px;
   }
-}
 
-.indexSectionHeader {
-  font-size: 3em;
-  font-weight: 500;
-  margin: auto;
-  color: white;
+  .indexSectionHeader {
+    margin-left: 14%;
+  }
 }
 
 .img_shadow {
@@ -764,6 +769,10 @@ a.btn-social,
 }
 
 @media (max-width: 767px) {
+  .indexSectionHeader {
+    font-size: 2.5em;
+  }
+
   .banner h2 {
     margin: 0;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
@@ -861,6 +870,10 @@ a.btn-social,
   .industrypadding {
     margin-top: 20px;
   }
+
+  .indexSectionHeader {
+    margin-left: 7%;
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -897,11 +910,6 @@ a.btn-social,
 
   .dynamicdescription {
     max-width: 80%;
-  }
-
-  .indexSectionHeader {
-    font-size: 32px;
-    font-weight: 500;
   }
 
   .viewCaseStudy {
