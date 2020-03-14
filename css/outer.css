@@ -198,7 +198,6 @@ p {
 
 .tony-middle-out:after {
   width: 0;
-  background: black;
   content: "";
   display: block;
   margin: auto;
