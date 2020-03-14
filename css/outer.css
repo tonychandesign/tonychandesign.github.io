@@ -137,7 +137,11 @@ p {
 }
 
 .whiteNav {
-  background: rgba(255, 255, 255, 1);
+  background: #ffffff;
+}
+
+.darkNav {
+  background: #161616;
 }
 
 .transNav {
@@ -276,18 +280,23 @@ h1 {
   height: 100%;
   width: 100%;
   border-radius: 2px;
-  opacity: 0;
-  transition: 0.3s ease;
-  background-color: #000000;
+  transition: 0.3s ease-out;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .box3:hover .overlay {
-  opacity: 0.8;
+  background-color: rgba(0, 0, 0, .9);
 }
 
 .ndatext {
   color: #ffffff;
   font-size: 20px;
+  opacity: 0;
+  transition: 0.3s ease-out;
+}
+
+.box3:hover .ndatext {
+  opacity: 1;
 }
 
 /* modifies the link: no underline/ navy color effect when mouse hovers over it */
@@ -454,7 +463,6 @@ a.btn-social,
 
 .btn-social:hover,
 .btn-social:focus {
-  color: #374456;
   outline: none;
   text-decoration: none;
 }
@@ -478,11 +486,11 @@ a.btn-social,
 /* category button */
 .cat_but {
   /* background-color: #4CAF50; */
-  border: #b08449;
+  border: white;
   border-style: solid;
   border-radius: 40px;
   border-width: 2px;
-  color: #b08449;
+  color: white;
   padding: 10px;
   text-align: center;
   display: inline-block;
@@ -495,6 +503,10 @@ a.btn-social,
   transition: -webkit-transform 0.2s ease-in-out;
   transition: transform 0.2s ease-in-out;
   transition: -webkit-transform 0.2s ease-in-out;
+}
+
+.carousel-inner {
+  background: #161616;
 }
 
 /**************************** PROJECT ITEM CSS *****************************/
@@ -599,7 +611,7 @@ a.btn-social,
   font-size: 3em;
   font-weight: 500;
   margin: auto;
-  color: black;
+  color: white;
 }
 
 .img_shadow {

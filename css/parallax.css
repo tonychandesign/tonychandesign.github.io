@@ -1,33 +1,24 @@
-.parallax {
-  width: 120vw;
-  height: 120vh;
-  margin-left: -10vw;
-  overflow: hidden;
-  left: 0;
-}
-
-.parallaxBG {
-  width: 147vw;
-  margin-left: -20vw;
-  height: 130vh;
-  margin-top: -20vh;
-  background: url(../img/index_tony.png) no-repeat 50% 100%;
-  background-size: cover;
+.heroWrapper {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
 }
 
 .heroText {
-  text-align: center;
-  padding-top: 65vh;
-  padding-left: 120px;
-  padding-right: 120px;
-  font-size: 28px;
-  font-weight: 900;
-  color: #c9a87c;
+  text-align: left;
+  margin: auto;
+  font-size: 48px;
+  font-weight: 500;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
   font-family: "Lato";
 }
 
 @media screen and (max-width: 414px) {
   .heroText {
-    padding-top: 55vh;
+    font-size: 35px;
   }
 }

@@ -19,21 +19,6 @@ $(function () {
       $('.navbar-nav [data-id="' + page_id + '"]')
         .parent("li")
         .toggleClass("active");
-
-      // change nav color
-      var navBG = $.find(".navbar-expand");
-      var link = $(".active");
-      if (link.hasClass("navAbout") || link.hasClass("navResume")) {
-        $(navBG).addClass("whiteNav");
-        $(navBG).removeClass("transNav");
-        $(".nav-item").removeClass("whiteText");
-        $(".tonychan").removeClass("whiteText");
-      } else {
-        $(navBG).removeClass("whiteNav");
-        $(navBG).addClass("transNav");
-        $(".nav-item").addClass("whiteText");
-        $(".tonychan").addClass("whiteText");
-      }
     }
   } else {
     var defaultActive = $('.navbar-nav [data-id="0"]').parent("li");
@@ -76,20 +61,6 @@ $(function () {
         var active = $(".navbar-nav .active ");
         var navBG = $.find(".navbar-expand");
         active.toggleClass("active");
-        if (
-          link.parent().hasClass("navAbout") ||
-          link.parent().hasClass("navResume")
-        ) {
-          $(navBG).addClass("whiteNav");
-          $(navBG).removeClass("transNav");
-          $(".nav-item").removeClass("whiteText");
-          $(".tonychan").removeClass("whiteText");
-        } else {
-          $(navBG).removeClass("whiteNav");
-          $(navBG).addClass("transNav");
-          $(".nav-item").addClass("whiteText");
-          $(".tonychan").addClass("whiteText");
-        }
         link.parent().toggleClass("active");
       }, 400); //.4 sec delay
     } else {
@@ -100,20 +71,6 @@ $(function () {
       // remove active from old
       active.toggleClass("active ");
       // add active to new position
-      if (
-        link.parent().hasClass("navAbout") ||
-        link.parent().hasClass("navResume")
-      ) {
-        $(navBG).addClass("whiteNav");
-        $(navBG).removeClass("transNav");
-        $(".nav-item").removeClass("whiteText");
-        $(".tonychan").removeClass("whiteText");
-      } else {
-        $(navBG).removeClass("whiteNav");
-        $(navBG).addClass("transNav");
-        $(".nav-item").addClass("whiteText");
-        $(".tonychan").addClass("whiteText");
-      }
       link.parent().toggleClass("active ");
     }
   });
