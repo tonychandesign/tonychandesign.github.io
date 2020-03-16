@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1415px" height="457px" viewBox="0 0 1415 457" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>stat1</title>
+    <desc>Created with Sketch.</desc>
+    <g id="stat1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FFFFFF" x="0" y="0" width="1415" height="457"></rect>
+        <text id="69%" font-family="AvenirNextforINTUIT-Bold, AvenirNext forINTUIT" font-size="291" font-weight="bold" letter-spacing="20.7857143" fill="#00AEEE">
+            <tspan x="121.284929" y="332">69% </tspan>
+        </text>
+        <text id="of-visitors-come-wit" font-family="AvenirNextforINTUIT-Bold, AvenirNext forINTUIT" font-size="43" font-weight="bold" letter-spacing="3.07142857" fill="#565656">
+            <tspan x="901" y="278">of visitors come </tspan>
+            <tspan x="901" y="330">with children</tspan>
+        </text>
+    </g>
+</svg>

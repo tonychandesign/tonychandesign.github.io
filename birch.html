@@ -4,8 +4,9 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
+  <meta name="keywords"
+    content="UX design product interaction visual mostion creative animations computer science engineering design systems" />
+  <meta name="author" content="Tony Chan" />
 
   <title>Tony Chan: Birch Aquarium</title>
 
@@ -19,10 +20,11 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
   <!-- Custom styles for this template -->
   <link href="css/outer.css" rel="stylesheet" />
-  <link href="css/sharedrobe.css" rel="stylesheet" />
+  <link href="css/d4sd.css" rel="stylesheet" />
+  <link href="css/sideNav.css" rel="stylesheet" />
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#scrollspy" data-offset="100">
   <!-- fade in script -->
   <script>
     document.body.className += " fade-out";
@@ -59,65 +61,442 @@
 
     <!-- - - - - ///////////////////  CONTENT  /////////////////// - - - - -->
     <!-- - - - - - - - - - - - - - -PROJECT TITLE - - - - - - - - - - - - - - -->
-    <!-- horizontally alligns words and pictures -->
     <div class="respCoverPadding"></div>
-    <div class="row" style="margin-right: -16px; margin-left: -16px; margin-top: -40px;">
+    <div class="row" style="margin-right: -16px; margin-left: -16px; margin-top: -10px;">
       <!-- vertically alligns words and pictures -->
       <div class="vertical-align row-centerer">
         <img class="img-fluid" src="img/birch_photos/birchcover.png" style="margin: auto;" />
       </div>
     </div>
-    <div class="row spacer "></div>
 
-    <div class="row theprocessWrap">
-      <div class="text_small theprocess">Case Study Coming Soon</div>
+    <nav id="scrollspy">
+      <ul id="bar-fixed">
+        <div class="sidebar">
+          <li>
+            <a class="bar nav-link" data-easing="easeInOutQuart" href="#context" style="padding-top: 0px">Context</a>
+          </li>
+          <li>
+            <a class="bar nav-link" data-easing="easeInOutQuart" href="#research">Research</a>
+          </li>
+          <li>
+            <a class="bar nav-link" data-easing="easeInOutQuart" href="#ideation">Ideation</a>
+          </li>
+          <li>
+            <a class="bar nav-link" data-easing="easeInOutQuart" href="#clientmeeting">Client Meeting</a>
+          </li>
+          <li>
+            <a class="bar nav-link" data-easing="easeInOutQuart" href="#usaTesting">Usability Testing</a>
+          </li>
+          <li>
+            <a class="bar nav-link" data-easing="easeInOutQuart" href="#learnings"
+              style="padding-bottom: 0px">Learnings</a>
+          </li>
+        </div>
+      </ul>
+    </nav>
+
+    <div class="row" style="justify-content: center; padding-top: 11em; ">
+      <div class="text_small">
+        <p>
+          <span class="intro">Timeline:</span>
+          <span class="lead myRoleText">Jan - Mar 2017</span>
+        </p>
+
+        <p>
+          <span class="intro">Employment Type:</span>
+          <span class="lead myRoleText">Academic Credit</span>
+        </p>
+
+        <p>
+          <span class="intro">My Role:</span>
+          <span class="lead myRoleText">UX Designer</span>
+        </p>
+
+        <p>
+          <span class="intro">Tools:</span>
+          <span class="lead myRoleText">Figma, Python</span>
+        </p>
+
+        <p>
+          <span class="intro">Skills:</span>
+          <span class="lead myRoleText">UX Research, Interaction Design, Prototyping
+          </span>
+        </p>
+      </div>
+    </div>
+
+    <div class="row theprocessWrap" id="context">
+      <div class="text_small theprocess START">Context</div>
+    </div>
+
+    <div class="row">
+      <div class="text_small">
+        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">
+          The Birch Aquarium is the public exploration center for The Scripps Institute of Oceanography, one of the
+          oldest and largest facilities for ocean and Earth science research. The aquarium invited a team of students
+          consisting of artists, designers, and engineers to build an interactive exhibit about bubbles, driven by the
+          research of scientists Dale Stokes and Grant Deane.
+        </p>
+      </div>
+    </div>
+
+    <div class="row" style="justify-content: center; padding-top: 20px">
+      <div class="img2Row">
+        <!-- vertically alligns words and pictures -->
+        <div class="row" style="margin-top:15px;"></div>
+        <img class="img-fluid img_shadow" src="img/birch_photos/turtle.png" alt=" " />
+        <div class="row" style="margin-top:15px;"></div>
+      </div>
+    </div>
+
+    <div class="row" style="justify-content: center; margin-top: 1.5em;">
+      <a class="sliding-middle-out" style="font-size: 1.4rem; font-weight: 400;" href="https://aquarium.ucsd.edu/"
+        target="_blank">Check out the Birch Aquarium here</a>
+    </div>
+
+    <div class="row theprocessWrap" id="research">
+      <div class="text_small theprocess">
+        Research</div>
+    </div>
+
+    <div class="row">
+      <div class="text_small">
+        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">
+          Bubbles are more than just pretty clumps of water- they serve as the transfer agent between ocean and
+          atmosphere. It’s a process constantly occurring all over the world. Waves push gas under the ocean’s surface
+          and bubbles eject particles from beneath the ocean into the air when they explode.
+        </p>
+      </div>
+    </div>
+
+    <div class="row" style="justify-content: center;  padding-top: 20px">
+      <div class="img2Row">
+        <!-- vertically alligns words and pictures -->
+        <p class="lead imgDescription" style="margin-bottom:.5em;">Grant dropping knowledge bombs</p>
+        <img class="img-fluid img_shadow" src="img/birch_photos/learning.png" alt=" " />
+        <div class="row" style="margin-top:15px;"></div>
+      </div>
+    </div>
+
+    <div class="row" style="padding-top: 20px;">
+      <div class="text_small">
+        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">
+          Carbon emissions and pollution are changing the way gases move between the ocean and air. Dale and Grant are
+          trying to teach how reducing our human impact can benefit this natural, cyclical process.
+        </p>
+      </div>
+    </div>
+
+    <div class="row" style="justify-content: center;  padding-top: 20px">
+      <div class="text_small">
+        <!-- vertically alligns words and pictures -->
+        <p class="lead imgDescription" style="margin-bottom:.5em;">Bubbles mediate particle transfers</p>
+        <img class="img-fluid img_shadow" src="img/birch_photos/bubbleCycle.svg" alt=" " />
+        <div class="row" style="margin-top:15px;"></div>
+      </div>
+    </div>
+
+    <div class="row" style="padding-top: 20px;">
+      <div class="text_small">
+        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">
+          The aquarium supplied us with an abundant amount of quantitative data on their attendees. A majority of
+          visitors were either younger than 15 or older than 35. Our clients wanted this new exhibit to target younger
+          visitors because elementary field trips make up a large part of the daily traffic.
+        </p>
+      </div>
+    </div>
+
+    <div class="row" style="justify-content: center;  padding-top: 20px">
+      <div class="img2Row">
+        <p class="lead imgDescription" style="margin-bottom:.5em;">Some Stats</p>
+        <img class="img-fluid img_shadow" src="img/birch_photos/stat1.svg" alt=" " />
+        <div class="row" style="margin-top:15px;"></div>
+      </div>
+    </div>
+    <div class="row" style="justify-content: center;  padding-top: 10px">
+      <div class="img2Row">
+        <img class="img-fluid img_shadow" src="img/birch_photos/stat2.svg" alt=" " />
+        <div class="row" style="margin-top:15px;"></div>
+      </div>
+    </div>
+
+    <div class="row" style="padding-top: 20px;">
+      <div class="text_small">
+        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">
+          The first task was to do some field observations to learn more about our visitors’ behaviors. The team also
+          interviewed Birch researchers who had knowledge around how guests experience, interact with, and interpret
+          the
+          different exhibits.
+        </p>
+      </div>
+    </div>
+
+    <p class="lead imgDescription" style="margin-bottom:-20px; margin-top:1.5em; text-align: center">
+      Observations
+    </p>
+    <div class="row longImage" style="justify-content: center; padding-top: 15px">
+      <div class="img2Row">
+        <!-- vertically alligns words and pictures -->
+        <div class="row" style="margin-top:15px;"></div>
+        <img class="img-fluid img_shadow" src="img/birch_photos/userData1.svg" alt=" " />
+        <div class="row" style="margin-top:15px;"></div>
+      </div>
+      <div class="img2Row">
+        <!-- vertically alligns words and pictures -->
+        <div class="row" style="margin-top:15px;"></div>
+        <img class="img-fluid img_shadow" src="img/birch_photos/userData2.svg" alt=" " />
+        <div class="row" style="margin-top:15px;"></div>
+      </div>
+    </div>
+
+
+    <div class="row" style="justify-content: center; padding-top: 20px">
+      <div class="img1Row">
+        <!-- vertically alligns words and pictures -->
+        <p class="lead imgDescription" style="margin-bottom:-.5em;">Personas</p>
+        <div class="row" style="margin-top:15px;"></div>
+        <img class="img-fluid img_shadow" src="img/birch_photos/personaSketch.png" alt=" " />
+        <div class="row" style="margin-top:15px;"></div>
+      </div>
+    </div>
+
+    <div class="row" style="justify-content: center; padding-top: 20px;">
+      <div class="text_small">
+        <p class="lead quote">
+          <b style="font-style: normal">Problem Statement:</b> "How might we teach kids that bubbles transfer molecules
+          between the atmosphere and ocean all across the world?".
+        </p>
+      </div>
+    </div>
+
+    <div class="row theprocessWrap" id="ideation">
+      <div class="text_small theprocess">
+        Ideation</div>
+    </div>
+
+    <div class="row" style="justify-content: center; padding-top: 20px">
+      <div class="text_small">
+        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">
+          The biggest obstacle was balancing our design goals while still allowing the artists to express their own
+          personal styles. For example, the lead professor had many abstract ideas but we had to remind him that
+          children would not understand the lesson we are trying to teach. Constantly referring back to the problem
+          statement was useful in getting the team aligned.
+        </p>
+      </div>
+    </div>
+
+    <div class="row" style="justify-content: center; padding-top: 20px">
+      <div class="text_small">
+        <!-- vertically alligns words and pictures -->
+        <p class="lead imgDescription" style="margin-bottom:-.5em;">Whiteboard session</p>
+        <div class="row" style="margin-top:15px;"></div>
+        <img class="img-fluid img_shadow" src="img/birch_photos/whiteboard.png" alt=" " />
+        <div class="row" style="margin-top:15px;"></div>
+      </div>
+    </div>
+
+    <div class="row" style="justify-content: center; padding-top: 20px">
+      <div class="text_small">
+        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">
+          A notable constraint was that we could only use the tools available in the Art & Technology Lab at UCSD. Being
+          a multidisciplinary team with experience in holograms, LED lights, programming, and sound manipulation, we
+          tackled the challenge in many creative and diverse ways.
+        </p>
+      </div>
+    </div>
+
+    <div class="row" style="justify-content: center; padding-top: 20px">
+      <div class="text_small">
+        <!-- vertically alligns words and pictures -->
+        <p class="lead imgDescription" style="margin-bottom:-.5em;">Narrowing Ideas</p>
+        <div class="row" style="margin-top:15px;"></div>
+        <img class="img-fluid img_shadow" src="img/birch_photos/ideation.png" alt=" " />
+        <div class="row" style="margin-top:15px;"></div>
+      </div>
+    </div>
+
+    <div class="row theprocessWrap" id="clientmeeting">
+      <div class="text_small theprocess">
+        Client Meeting</div>
     </div>
 
     <div class="row" style="justify-content: center;">
       <div class="text_small">
         <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">
-          I worked as a user researcher and interaction designer to produce an
-          exhibit which educates visitors how bubbles affect our environment.
+          We narrowed on ideas related to 3D projections and sensors then presented a low fidelity prototype to the
+          Birch faculty. We hooked up touch sensitive sensors to a Raspberry Pi and created an app with Pygame. Every
+          time the sensor was triggered, bubbles would form at the bottom of the interface. Our vision was to show how
+          clean or dirty bubbles expel their contents into the air when they touch the surface of the ocean. We would
+          eventually add sensors to create waves that drag particles from the air down into the ocean.
         </p>
       </div>
     </div>
 
+    <div class="row" style="justify-content: center; padding-top: 20px">
+      <div class="text_small">
+        <p class="lead imgDescription" style="margin-bottom:-.5em;">Visuals</p>
+        <div class="row" style="margin-top:15px;"></div>
+        <img class="img-fluid img_shadow" src="img/birch_photos/lofiProto1.png" alt=" " />
+        <div class="row" style="margin-top:15px;"></div>
+      </div>
+    </div>
+    <div class="row" style="justify-content: center; padding-top: 20px">
+      <div class="text_small">
+        <div class="row" style="margin-top:15px;"></div>
+        <img class="img-fluid img_shadow" src="img/birch_photos/lofiProto2.png" alt=" " />
+        <div class="row" style="margin-top:15px;"></div>
+      </div>
+    </div>
+
+    <div class="row" style="justify-content: center; padding-top: 20px">
+      <div class="text_small">
+        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">
+          The researchers loved the idea but wanted us to build on it. They wanted us to dive deeper into how the
+          molecule transmission occurs- to elaborate on the process of how bubbles explode. We eventually narrowed on
+          using a 3D projection to showcase the lifecycle of a bubble in slow motion.
+        </p>
+      </div>
+    </div>
+
+    <p class="lead imgDescription" style="margin-bottom:-20px; margin-top:1.5em; text-align: center">
+      Scrappy prototyping
+    </p>
+    <div class="row longImage" style="justify-content: center; padding-top: 15px">
+      <div class="img2Row">
+        <!-- vertically alligns words and pictures -->
+        <div class="row" style="margin-top:15px;"></div>
+        <img class="img-fluid img_shadow" src="img/birch_photos/midFiProto1.png" alt=" " />
+        <div class="row" style="margin-top:15px;"></div>
+      </div>
+      <div class="img2Row">
+        <!-- vertically alligns words and pictures -->
+        <div class="row" style="margin-top:15px;"></div>
+        <img class="img-fluid img_shadow" src="img/birch_photos/midFiProto2.png" alt=" " />
+        <div class="row" style="margin-top:15px;"></div>
+      </div>
+    </div>
+
+    <div class="text_small" style="padding-top: 20px">
+      <!-- vertically alligns words and pictures -->
+      <p class="lead imgDescription" style="margin-bottom:-.5em;">
+        Experimenting with 3D projections
+      </p>
+      <div class="row" style="margin-top:15px;"></div>
+      <div class="img_shadow">
+        <video class="embed-responsive-item" style="margin-bottom: -6px;margin-left: 1px" autoplay muted loop
+          src="img/birch_photos/3dProjection.mov" width="100%"></video>
+      </div>
+      <div class="row" style="margin-top:15px;"></div>
+    </div>
+
+
+    <div class="row theprocessWrap" id="usaTesting">
+      <div class="text_small theprocess">
+        Usability Testing</div>
+    </div>
+
+    <div class="row" style="justify-content: center;">
+      <div class="text_small">
+        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">
+          At the end of the course quarter, we set up an exhibit to showcase our ideas to visitors at the Birch
+          Aquarium. It was a great opportunity to observe how visitors would react to our ideas in context. There were a
+          few pivots along the way, the main one being the incorporation of a bubble cluster hologram on top of the slow
+          motion bubble projection. The intent was to emphasize that this reaction is happening at scale. In total there
+          were 3 prototypes being showcased and tested- the Pygame, hologram, and 3D projection.
+        </p>
+      </div>
+    </div>
+
+    <p class="lead imgDescription" style="margin-bottom:-20px; margin-top:1.5em; text-align: center">
+      Pygame Prototype
+    </p>
+    <div class="row longImage" style="justify-content: center; padding-top: 15px">
+      <div class="img2Row">
+        <!-- vertically alligns words and pictures -->
+        <div class="row" style="margin-top:15px;"></div>
+        <img class="img-fluid img_shadow" src="img/birch_photos/hifi1.png" alt=" " />
+        <div class="row" style="margin-top:15px;"></div>
+      </div>
+      <div class="img2Row">
+        <!-- vertically alligns words and pictures -->
+        <div class="row" style="margin-top:15px;"></div>
+        <img class="img-fluid img_shadow" src="img/birch_photos/hifi2.png" alt=" " />
+        <div class="row" style="margin-top:15px;"></div>
+      </div>
+    </div>
+
+    <div class="row" style="justify-content: center; padding-top: 20px">
+      <div class="text_small">
+        <!-- vertically alligns words and pictures -->
+        <p class="lead imgDescription" style="margin-bottom:-.5em;">3D Projection Prototype</p>
+        <div class="row" style="margin-top:15px;"></div>
+        <img class="img-fluid img_shadow" src="img/birch_photos/hifi3.png" alt=" " />
+        <div class="row" style="margin-top:15px;"></div>
+      </div>
+    </div>
+
+    <div class="text_small" style="padding-top: 20px">
+      <!-- vertically alligns words and pictures -->
+      <p class="lead imgDescription" style="margin-bottom:-.5em;">
+        Hologram Prototype
+      </p>
+      <div class="row" style="margin-top:15px;"></div>
+      <div class="img_shadow">
+        <video class="embed-responsive-item" style="margin-bottom: -6px;margin-left: 1px" autoplay muted loop
+          src="img/birch_photos/hologram.mp4" width="100%"></video>
+      </div>
+      <div class="row" style="margin-top:15px;"></div>
+    </div>
+
+    <div class="row" style="justify-content: center; padding-top: 20px">
+      <div class="img1Row">
+        <div class="row" style="margin-top:15px;"></div>
+        <img class="img-fluid img_shadow" src="img/birch_photos/usaResults.svg" alt=" " />
+        <div class="row" style="margin-top:15px;"></div>
+      </div>
+    </div>
+
+
+    <div class="row theprocessWrap" id="learnings">
+      <div class="text_small theprocess">
+        Learnings</div>
+    </div>
+
+    <div class="row" style="justify-content: center;">
+      <div class="text_small">
+        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">
+          Overall the visitors felt a disconnect between all of the prototypes. They felt that each one was their own
+          exhibit. We needed to have more visual cohesion & styling for the next iterations. We also needed to improve
+          the interaction with the Pygame prototype. Instead of a circular motion, an up and down movement similar to
+          splashing water might’ve been more effective
+          <br /><br />
+          Although many of us wanted to stay and continue to work on this project, we could only take this class once.
+          We handed all the work to our professor, who would continue the project with a new batch of students the
+          following quarter. I’m stoked to have been in the pilot for this interactive course- it’s by far one of my
+          favorites at UCSD.
+
+        </p>
+      </div>
+    </div>
+
+    <div class="row" style="margin-top: 2.5em;">
+      <div class="text_small">
+        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: left; width: 100%; color: #a7afb2">
+          Persona avatars were designed by Lluisa Iborra from the Noun Project
+        </p>
+      </div>
+    </div>
+
+    <div class="row spacer "></div>
+
     <div class="row" style="text-align: center; padding-bottom: 40px;">
-      <div class="text_medium theprocess">My Other Work</div>
+      <div class="text_medium theprocess END">My Other Work</div>
     </div>
 
     <div class="row">
       <!-- D4SD -->
       <section class="col-md-2 order-md-1" style="padding:0px 0;"></section>
       <section class="col-md-4 order-md-2 titlehoriz" style="padding:0px 0;">
-        <div class="box btn-group modal-dialogtwo dynamicthumbnail" style="margin-top: 0px;">
-          <a href="project5.html">
-            <div class="titlehoriz">
-              <img class="img-fluid" src="img/idx_mea.png" alt=" " />
-            </div>
-          </a>
-        </div>
-      </section>
-      <section class="col-md-4 order-md-3 vertical-align" style="padding:0px 0;">
-        <div class="fullWidthWork">
-          <div class="row-centerer">
-            <h3 class="section-heading" style="font-weight: 400">
-              <a class="sliding-middle-out" href="project5.html">D4SD Hackathon</a>
-            </h3>
-            <p class="lead ">
-              I competed in a city wide design competition to improve
-              transportation in San Diego during Fall 2017.
-            </p>
-          </div>
-        </div>
-      </section>
-      <section class="col-md-2 order-md-4" style="padding:0px 0;"></section>
-    </div>
-
-    <div class="row" style="margin-top: 7vw;">
-      <!-- EventQR -->
-      <section class="col-md-2 order-md-1 " style="padding:0px 0;"></section>
-      <section class="col-md-4 order-md-3 titlehoriz" style="padding:0px 0;">
         <div class="box btn-group modal-dialogtwo dynamicthumbnail" style="margin-top: 0px;">
           <a href="project1.html">
             <div class="titlehoriz">
@@ -126,15 +505,41 @@
           </a>
         </div>
       </section>
+      <section class="col-md-4 order-md-3 vertical-align" style="padding:0px 0;">
+        <div class="fullWidthWork">
+          <div class="row-centerer">
+            <h3 class="section-heading" style="font-weight: 400"><a class="sliding-middle-out "
+                href="project1.html">EventQR</a></h3>
+            <p class="lead ">
+              A web app that lets users create & scan events encrypted into a
+              QR code, which can be synced onto their Google Calendar.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="col-md-2 order-md-4" style="padding:0px 0;"></section>
+    </div>
+
+    <div class="row" style="margin-top: 7vw;">
+      <section class="col-md-2 order-md-1 " style="padding:0px 0;"></section>
+      <section class="col-md-4 order-md-3 titlehoriz" style="padding:0px 0;">
+        <div class="box btn-group modal-dialogtwo dynamicthumbnail" style="margin-top: 0px;">
+          <a href="workday_pre.html">
+            <div class="titlehoriz">
+              <img class="img-fluid" src="img/idx_wrkdy.png" alt=" " />
+            </div>
+          </a>
+        </div>
+      </section>
       <section class="col-md-4 order-md-2 vertical-align" style="padding:0px 0;">
         <div class="fullWidthWork">
           <div class="row-centerer">
             <h3 class="section-heading" style="font-weight: 400">
-              <a class="sliding-middle-out" href="project1.html">EventQR</a>
+              <a class="sliding-middle-out" href="workday_pre.html">Workday</a>
             </h3>
             <p class="lead ">
-              A web app that lets users create & scan events encrypted into a
-              QR code, which can be synced onto their Google Calendar.
+              Redesigning the system wide conclusion interface and mobile
+              animations.
             </p>
           </div>
         </div>
@@ -146,11 +551,9 @@
 
     <!-- CONTACT/EMAIL ME -->
     <div class="vertical-align titlehoriz">
-      <h2 style=" font-weight: 400; ">
-        <a href="mailto:tonychan96@gmail.com " class="tony-middle-out">
+      <h2 style=" font-weight: 400; "> <a href="mailto:tonychan96@gmail.com " class="tony-middle-out">
           Lets talk
-        </a>
-      </h2>
+        </a> </h2>
     </div>
     <div class="row letstalkpad"></div>
 
@@ -174,7 +577,23 @@
   </div>
 
   <!-- JavaScript -->
-  <script src="vendor/jquery/jquery.min.js "></script>
+  <!-- different jquery for scrollspy  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/sideNav.js "></script>
+  <script src="js/smooth-scroll.min.js"></script>
+  <script src="js/navSlideIn.js"></script>
+  <script>
+    // Instantiate Scrolls
+    var scroll = new SmoothScroll('a[href*="#"]', {
+      speed: 200
+    });
+
+    if (document.querySelector("[data-easing]")) {
+      var easeOutQuart = new SmoothScroll('[data-easing="easeOutQuart"]', {
+        easing: "easeOutQuart"
+      });
+    }
+  </script>
   <script src="vendor/popper/popper.min.js "></script>
   <script src="vendor/bootstrap/js/bootstrap.min.js "></script>
   <script src="custom.js "></script>
