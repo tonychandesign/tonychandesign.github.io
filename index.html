@@ -20,6 +20,8 @@
   <link href="css/outer.css" rel="stylesheet" />
   <link href="css/parallax.css" rel="stylesheet" />
 
+  <link href="physicsEngine/app.css" rel="stylesheet" />
+
   <!-- scroll fade in from left/right animation -->
   <link rel="stylesheet" href="fadein_css/style.css" />
 
@@ -65,6 +67,9 @@
             <div class="heroText">I'm Tony Chan, a multidisciplinary creative who's wondering if he's related to
               Jackie Chan 🤔</div>
           </div>
+          <canvas id="canvas" oncontextmenu="return false"></canvas>
+
+
 
           <div class="indexSectionHeader industrypadding">
             Industry Experience
@@ -496,6 +501,12 @@
   <script type="text/javascript" src="custom.js"></script>
   <!-- scroll fade left/right animation -->
   <script type="text/javascript" src="fadein_js/index.js"></script>
+  <!-- stat monitor -->
+  <script type="text/javascript" src="physicsEngine/matter.min.js"></script>
+  <script type="text/javascript" src="physicsEngine/app.js"></script>
+  <script>
+    runPlatformer(this);
+  </script>
 </body>
 
 </html>
