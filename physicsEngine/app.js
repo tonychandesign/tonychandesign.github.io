@@ -128,7 +128,7 @@ const mechProto = function () {
   this.Fy = -0.04 * this.mass; //jump Force
   this.angle = 0;
   this.walk_cycle = 0;
-  this.pause_steps = 0;
+  this.punch_cycle = 0;
   this.stepSize = 0;
   this.handMovement = 0;
   this.flipLegs = -1;
@@ -164,6 +164,10 @@ const mechProto = function () {
     x: 0,
     y: 0
   };
+  this.punchXOff = 10; // smoothly transition punch to standstill
+  this.punchXOffGoal = 50;
+  this.punchYOff = 0; // smoothly transition punch to standstill
+  this.punchYOffGoal = 20;
   this.legLength1 = 55;
   this.legLength2 = 45;
   this.canvasX = canvas.width / 2;
@@ -316,12 +320,25 @@ const mechProto = function () {
         // use the force on the mouse position lol
         this.forcePoke();
       }
-      if (keys[80]) {
+      if (keys[80] && this.onGround) {
+        // punch 
+        this.punchXOffGoal = 8;
+        this.punchYOffGoal = -10;
+        // quicker punch animation 
+        this.punchXOff = this.punchXOff * 0.85 + this.punchXOffGoal * 0.9;
+        this.punchYOff = this.punchYOff * 0.85 + this.punchYOffGoal * 0.9;
         game.mouseDown = true;
       }
       else {
+        // console.log("off punch")
+        this.punchXOffGoal = 0;
+        this.punchYOffGoal = 0; //reset punch to standing goal
+        // slower punch animation 
+        this.punchXOff = this.punchXOff * 0.85 + this.punchXOffGoal * 0.15;
+        this.punchYOff = this.punchYOff * 0.85 + this.punchYOffGoal * 0.15;
         game.mouseDown = false;
       }
+
 
     } else {
       // in air **********************************
@@ -352,6 +369,8 @@ const mechProto = function () {
     }
     //smoothly move height towards height goal ************
     this.yOff = this.yOff * 0.85 + this.yOffGoal * 0.15;
+    // // smothes out punch animation 
+
   };
   this.deathCheck = function () {
     if (this.y > 4000) {
@@ -477,10 +496,17 @@ const mechProto = function () {
   };
   this.drawUpperBody = function (stroke) {
     ctx.save();
-    this.flipLegs == 1 ? this.upperBody.x = -10 : this.upperBody.x = 10
+    if (this.flipLegs == 1) {
+      this.upperBody.x = -10
+      this.hip.x = -2
+    }
+    else {
+      this.upperBody.x = 10
+      this.hip.x = +2
+    }
     ctx.strokeStyle = stroke;
     ctx.fillStyle = stroke;
-    ctx.lineWidth = 15;
+    ctx.lineWidth = 17;
     ctx.beginPath();
     ctx.moveTo(this.hip.x, this.hip.y);
     ctx.lineTo(this.upperBody.x, this.upperBody.y)
@@ -500,30 +526,31 @@ const mechProto = function () {
     ctx.restore();
   };
   this.calcArm = function (cycle_offset, offset) {
-    !this.onGround ? this.handMovement = 20 : 0;
-    // !this.onGround ? cycle_offset = Math.PI : 0;
-    this.head.x = 0 + offset;
-    this.head.y = -44 + offset;
-    //stepSize goes to zero if Vx is zero or not on ground (make this transition cleaner)
-    //changes to stepsize are smoothed by adding only a percent of the new value each cycle
-    let temp = 8 * Math.sqrt(Math.abs(this.Vx))
-    if (Math.abs(this.Vx) < 1) {
-      temp += 10;
-    }
-    this.handMovement =
-      0.9 * this.handMovement +
-      0.1 * (temp * this.onGround);
-    let stepAngle = 0;
-    // if (!this.onGround) {
-    //   stepAngle = 0.01 * this.walk_cycle + cycle_offset;
+    // if (game.mouseDown) {
+    //   // punch overwrite 
+    //   this.punchAnim(cycle_offset, offset);
     // }
     // else {
-    //   stepAngle = 0.037 * this.walk_cycle + cycle_offset;
-    // };
+    !this.onGround ? this.handMovement = 20 : 0;
+    this.head.x = 0 + offset;
+    this.head.y = -44 + offset;
+    //changes to stepsize are smoothed by adding only a percent of the new value each cycle
+    let temp = 8 * Math.sqrt(Math.abs(this.Vx))
+    // add extra offset when in character is standstill
+    if (Math.abs(this.Vx) < 1) {
+      temp += 5;
+    }
+    // speed up punch
+    // let punchSpeed;
+    // game.mouseDown ? punchSpeed = 2 : punchSpeed = 1;
+    this.handMovement =
+      0.9 * this.handMovement +
+      0.1 * (temp * this.onGround)
+    let stepAngle = 0;
     stepAngle = 0.02 * this.walk_cycle + cycle_offset;
-    this.hand.x = 2 * this.handMovement * Math.cos(stepAngle) + offset;
+    this.hand.x = 2 * this.handMovement * Math.cos(stepAngle) + offset + this.punchXOff;
     this.hand.y =
-      offset + this.handMovement * Math.sin(stepAngle) + this.yOff + -30;
+      offset + this.handMovement * Math.sin(stepAngle) + this.yOff + this.punchYOff + -30;
     const Ymax = this.yOff + -30;
     if (this.hand.y > Ymax) this.hand.y = Ymax;
 
@@ -542,27 +569,14 @@ const mechProto = function () {
       (l / d) * (this.hand.x - this.head.x) -
       (h / d) * (this.hand.y - this.head.y) +
       this.head.x +
-      offset + 15;
+      offset + 15 - this.punchXOff / 2;
     this.elbow.y =
       (l / d) * (this.hand.y - this.head.y) +
       (h / d) * (this.hand.x - this.head.x) +
-      this.head.y;
+      this.head.y + this.punchYOff / 3;
+    // }
 
-    // punch overwrite 
-    if (game.mouseDown) {
-      // straight
-      this.hand.x = 25;
-      this.hand.y = 0;
-      this.elbow.x = -10;
-      this.elbow.y = 0;
-      // guard
-      if (offset == 7) {
-        this.hand.x = 95;
-        this.hand.y = -35;
-        this.elbow.x = this.hand.x;
-        this.elbow.y = this.hand.y;
-      }
-    }
+    // console.log("calcArm" + this.hand.x)
   };
 
   this.drawLeg = function (stroke) {
@@ -576,7 +590,7 @@ const mechProto = function () {
     ctx.lineTo(this.foot.x, this.foot.y);
     ctx.stroke();
     //toe lines
-    ctx.lineWidth = 12;
+    ctx.lineWidth = 15;
     ctx.beginPath();
     ctx.moveTo(this.foot.x, this.foot.y);
     ctx.lineTo(this.foot.x - 15, this.foot.y + 5);
@@ -587,26 +601,16 @@ const mechProto = function () {
     !this.onGround ? this.stepSize = 25 : 0;
     this.hip.x = 0 + offset;
     this.hip.y = 24 + offset;
-    //stepSize goes to zero if Vx is zero or not on ground (make this transition cleaner)
     //changes to stepsize are smoothed by adding only a percent of the new value each cycle
     let temp = 8 * Math.sqrt(Math.abs(this.Vx))
+    // add extra offset when in character is standstill
     if (Math.abs(this.Vx) < 1) {
       temp += 3;
     }
     this.stepSize =
       0.9 * this.stepSize +
       0.1 * (temp * this.onGround);
-    // this.stepSize = 15;.01
     let stepAngle = 0;
-    console.log(this.walk_cycle)
-    if (!this.onGround) {
-      // this.walk_cycle = this.walk_cycle / 2
-      // this.pause_steps = this.walk_cycle
-      // stepAngle = 0.03 * this.walk_cycle + cycle_offset;
-    }
-    else {
-      // stepAngle = 0.03 * this.walk_cycle + cycle_offset;
-    };
     stepAngle = 0.02 * this.walk_cycle + cycle_offset;
     this.foot.x = 2 * this.stepSize * Math.cos(stepAngle) + offset;
     this.foot.y =
@@ -635,15 +639,13 @@ const mechProto = function () {
       (h / d) * (this.foot.x - this.hip.x) +
       this.hip.y;
   };
+  this.walkCycle_CD = 0;
   this.draw = function () {
     ctx.fillStyle = this.fill;
-    // go 2x slow when in the air
-    !this.onGround ? this.walk_cycle += this.flipLegs * (this.Vx) / 3 : this.walk_cycle += this.flipLegs * this.Vx;
 
     //draw body
     ctx.save();
     ctx.translate(this.x, this.y);
-
     this.calcLeg(Math.PI, -3);
     this.drawLeg("#444");
     // remember offset is hard coded in calcArm 
@@ -672,6 +674,40 @@ const mechProto = function () {
     ctx.fill();
     ctx.stroke();
     ctx.restore();
+
+    // go 3x slow when in the air
+    if (!this.onGround) {
+      this.walk_cycle += this.flipLegs * (this.Vx) / 3
+    }
+    else {
+      // punch case
+      if (game.mouseDown) {
+        // freeze walk cycle when punching 
+        this.walkCycle_CD = game.cycle + 30;
+
+        // get walk cycle position, will be starting & ending point for punch animation 
+        // console.log(this.walk_cycle);
+        this.punch_cycle = this.walk_cycle;
+        // hand location start and end is in walk_cycle
+
+        // look punch cycle to follow game cycle count
+
+        // if (game.mouseDown && fireBulletCD < game.cycle) {
+        //   fireBulletCD = game.cycle + 20;
+        //   fireBullet();
+        // }
+
+
+        // console.log("walk cycle: " + this.walk_cycle)
+        // console.log("punch cycle: " + this.punch_cycle)
+        this.punch_cycle += this.flipLegs * game.cycle * 15
+      }
+      // walk case 
+      else {
+        // this.walk_cycle = this.punch_cycle;
+        this.walk_cycle += this.flipLegs * this.Vx;
+      }
+    }
 
     //draw holding graphics
     if (this.isHolding) {
@@ -765,13 +801,15 @@ const bullet = [];
 
 function fireBullet(type) {
   const len = bullet.length;
-  let dist = 55; //radial distance mech head
-  let dir = 0;
+  let dist; //radial distance mech head
+  let dir;
   if (mech.flipLegs == -1) {
-    dist = 55;
+    dist = -10;
+    dir = 0;
   }
   else {
-    dist = -55;
+    dist = 10;
+    dir = 185.3;
   }
   bullet[len] = Bodies.rectangle(
     mech.x + dist,
@@ -795,13 +833,10 @@ function fireBullet(type) {
   //add force to fire bullets
   const vel = 0.0025;
   const f = {
-    x: (vel * Math.cos(dir)) / game.delta * 100,
-    y: (vel * Math.sin(dir)) / game.delta * 100
+    x: (vel * Math.cos(dir)) / game.delta * 200,
+    y: (vel * Math.sin(dir)) / game.delta * 200
   };
   bullet[len].force = f;
-  //equal but opposite force on player
-  // player.force.x -= f.x;
-  // player.force.y -= f.y;
 
   World.add(engine.world, bullet[len]); //add bullet to world
 }
@@ -849,7 +884,7 @@ const engine = Engine.create();
 //define player *************************************************************
 //***************************************************************************
 //player as a series of vertices
-const playerBody = Matter.Bodies.rectangle(0, -10, 50, 95);
+const playerBody = Matter.Bodies.rectangle(-5, -10, 80, 95);
 //this sensor check if the player is on the ground to enable jumping
 var jumpSensor = Bodies.rectangle(0, 50, 40, 20, {
   sleepThreshold: 99999999999,
