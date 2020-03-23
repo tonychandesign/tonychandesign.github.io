@@ -164,9 +164,10 @@ const mechProto = function () {
     x: 0,
     y: 0
   };
-  this.punchXOff = 10; // smoothly transition punch to standstill
+  // smoothly transition punch to standstill
+  this.punchXOff = 10;
   this.punchXOffGoal = 50;
-  this.punchYOff = 0; // smoothly transition punch to standstill
+  this.punchYOff = 0;
   this.punchYOffGoal = 20;
   this.legLength1 = 55;
   this.legLength2 = 45;
@@ -322,8 +323,8 @@ const mechProto = function () {
       }
       if (keys[80] && this.onGround) {
         // punch 
-        this.punchXOffGoal = 8;
-        this.punchYOffGoal = -10;
+        this.punchXOffGoal = 11;
+        this.punchYOffGoal = -11;
         // quicker punch animation 
         this.punchXOff = this.punchXOff * 0.85 + this.punchXOffGoal * 0.9;
         this.punchYOff = this.punchYOff * 0.85 + this.punchYOffGoal * 0.9;
@@ -369,8 +370,6 @@ const mechProto = function () {
     }
     //smoothly move height towards height goal ************
     this.yOff = this.yOff * 0.85 + this.yOffGoal * 0.15;
-    // // smothes out punch animation 
-
   };
   this.deathCheck = function () {
     if (this.y > 4000) {
@@ -538,17 +537,24 @@ const mechProto = function () {
     let temp = 8 * Math.sqrt(Math.abs(this.Vx))
     // add extra offset when in character is standstill
     if (Math.abs(this.Vx) < 1) {
-      temp += 5;
+      temp += 7;
     }
-    // speed up punch
-    // let punchSpeed;
-    // game.mouseDown ? punchSpeed = 2 : punchSpeed = 1;
+    let punchSpeed;
+    if (game.mouseDown) {
+      punchSpeed = 2;
+      temp += 5;
+      this.punch_cycle = this.punch_cycle + offset
+
+    } else {
+      punchSpeed = 1;
+      this.punch_cycle = this.walk_cycle
+    }
     this.handMovement =
       0.9 * this.handMovement +
       0.1 * (temp * this.onGround)
     let stepAngle = 0;
-    stepAngle = 0.02 * this.walk_cycle + cycle_offset;
-    this.hand.x = 2 * this.handMovement * Math.cos(stepAngle) + offset + this.punchXOff;
+    stepAngle = 0.02 * this.punch_cycle * punchSpeed + cycle_offset;
+    this.hand.x = this.handMovement * Math.cos(stepAngle) * punchSpeed + offset + this.punchXOff;
     this.hand.y =
       offset + this.handMovement * Math.sin(stepAngle) + this.yOff + this.punchYOff + -30;
     const Ymax = this.yOff + -30;
@@ -605,7 +611,7 @@ const mechProto = function () {
     let temp = 8 * Math.sqrt(Math.abs(this.Vx))
     // add extra offset when in character is standstill
     if (Math.abs(this.Vx) < 1) {
-      temp += 3;
+      temp += 5;
     }
     this.stepSize =
       0.9 * this.stepSize +
@@ -649,12 +655,12 @@ const mechProto = function () {
     this.calcLeg(Math.PI, -3);
     this.drawLeg("#444");
     // remember offset is hard coded in calcArm 
-    this.calcArm(Math.PI, 10);
+    this.calcArm(Math.PI, 8);
     this.drawArm("#444");
     this.drawUpperBody("#333");
     this.calcLeg(0, 0);
     this.drawLeg("#333");
-    this.calcArm(0, 7);
+    this.calcArm(0, 10);
     this.drawArm("#333");
 
     // DRAW HEAD
@@ -680,33 +686,7 @@ const mechProto = function () {
       this.walk_cycle += this.flipLegs * (this.Vx) / 3
     }
     else {
-      // punch case
-      if (game.mouseDown) {
-        // freeze walk cycle when punching 
-        this.walkCycle_CD = game.cycle + 30;
-
-        // get walk cycle position, will be starting & ending point for punch animation 
-        // console.log(this.walk_cycle);
-        this.punch_cycle = this.walk_cycle;
-        // hand location start and end is in walk_cycle
-
-        // look punch cycle to follow game cycle count
-
-        // if (game.mouseDown && fireBulletCD < game.cycle) {
-        //   fireBulletCD = game.cycle + 20;
-        //   fireBullet();
-        // }
-
-
-        // console.log("walk cycle: " + this.walk_cycle)
-        // console.log("punch cycle: " + this.punch_cycle)
-        this.punch_cycle += this.flipLegs * game.cycle * 15
-      }
-      // walk case 
-      else {
-        // this.walk_cycle = this.punch_cycle;
-        this.walk_cycle += this.flipLegs * this.Vx;
-      }
+      this.walk_cycle += this.flipLegs * this.Vx;
     }
 
     //draw holding graphics
