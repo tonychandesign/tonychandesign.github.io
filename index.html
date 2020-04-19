@@ -1,512 +1,758 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Tony Chan's UX Portfolio" />
+    <meta name="author" content="Tony Chan" />
+    <title>Designer/Developer: Tony Chan</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Tony Chan's UX Portfolio" />
-  <meta name="author" content="Tony Chan" />
-  <title>Designer/Developer: Tony Chan</title>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Custom fonts -->
+    <link
+      href="vendor/font-awesome/css/font-awesome.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Button Stylesheet -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <!-- Custom styles -->
+    <link href="css/outer.css" rel="stylesheet" />
+    <link href="css/parallax.css" rel="stylesheet" />
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-  <!-- Custom fonts -->
-  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet"
-    type="text/css" />
-  <!-- Button Stylesheet -->
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-  <!-- Custom styles -->
-  <link href="css/outer.css" rel="stylesheet" />
-  <link href="css/parallax.css" rel="stylesheet" />
+    <link href="physicsEngine/game.css" rel="stylesheet" />
 
-  <link href="physicsEngine/app.css" rel="stylesheet" />
+    <!-- scroll fade in from left/right animation -->
+    <link rel="stylesheet" href="fadein_css/style.css" />
 
-  <!-- scroll fade in from left/right animation -->
-  <link rel="stylesheet" href="fadein_css/style.css" />
+    <!-- ajax for warp  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
+  </head>
 
-  <!-- ajax for warp  -->
-  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
-</head>
-
-<body style="background:#1b1b1d">
-  <!-- dynamic resizing  -->
-  <div class="container-fluid" style="margin-top: -130px">
-    <!--  ///////////////////  NAVBAR  ///////////////////  -->
-    <nav id="navbar" class="navbar-expand fixed-top darkNav" style="top: -140px">
-      <div class="row row-centerer">
-        <div class="col-lg-4 " style="margin: auto;">
-          <h1 class="tonychan">
-            <a href="index.html" class="tony-middle-out" style="color: white !important;">Tony Chan</a>
-          </h1>
-        </div>
-        <div class="col-lg-2"></div>
-        <div class="col-lg-6">
-          <div id="menu">
-            <ul class="navbar-nav navbar-brand right-to-center nav-elem-centerer">
-              <li class="sliding-middle-out nav-item active navPortfolio whiteText" style="margin-left: 30px;">
-                <a class="move-slide nav-link" href="" data-id="0">Portfolio</a>
-              </li>
-              <li class="sliding-middle-out nav-item navpadding navResume whiteText">
-                <a class="move-slide nav-link" href="" data-id="1">Resume</a>
-              </li>
-              <li class="sliding-middle-out nav-item navAbout whiteText" style="margin-right: 30px; margin-left: 0px;">
-                <a class="move-slide nav-link" href="" data-id="2">About Me</a>
-              </li>
-            </ul>
+  <body style="background: #1b1b1d;">
+    <!-- dynamic resizing  -->
+    <div class="container-fluid" style="margin-top: -130px;">
+      <!--  ///////////////////  NAVBAR  ///////////////////  -->
+      <nav
+        id="navbar"
+        class="navbar-expand fixed-top darkNav"
+        style="top: -140px;"
+      >
+        <div class="row row-centerer">
+          <div class="col-lg-4" style="margin: auto;">
+            <h1 class="tonychan">
+              <a
+                href="index.html"
+                class="tony-middle-out"
+                style="color: white !important;"
+                >Tony Chan</a
+              >
+            </h1>
           </div>
-        </div>
-      </div>
-    </nav>
-
-    <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="false">
-      <div class="carousel-inner">
-        <!--  ///////////////////  PORTFOLIO CONTENT  ///////////////////  -->
-        <div class="carousel-item active">
-          <div class="heroWrapper">
-            <div class="heroText">I'm Tony Chan, a multidisciplinary creative who's wondering if he's related to
-              Jackie Chan 🤔</div>
-          </div>
-          <canvas id="canvas" oncontextmenu="return false"></canvas>
-
-
-
-          <div class="indexSectionHeader industrypadding">
-            Industry Experience
-          </div>
-
-          <div class="row" style="margin-top: 3em;">
-            <!-- INTUIT -->
-            <section class="col-md-1 order-md-1" style="padding:0px 0;"></section>
-            <section class="col-md-5 order-md-2 titlehoriz" style="padding:0px 0;">
-              <div class="box3 btn-group modal-dialogtwo dynamicthumbnail" style="margin-top: 0px;">
-                <a href="intuit_nda.html">
-                  <div class="overlay vertical-align titlehoriz">
-                    <center class="ndatext" style="line-height: 2;">
-                      NDA<br />Available on request
-                    </center>
-                  </div>
-                  <div class="titlehoriz">
-                    <img class="img-fluid" src="img/darkMod/dark_INTUIT.png" alt=" " />
-                  </div>
-                </a>
-              </div>
-            </section>
-            <section class="col-md-5 order-md-3 vertical-align " style="padding:0px 0;">
-              <div class="indextext">
-                <div class="row-centerer dynamicdescription module1 animation-element slide-right">
-                  <h2 class="section-heading" style="font-weight: 400">
-                    <a class="sliding-middle-out indexProjectTitles" style="color: white !important;"
-                      href="intuit_nda.html">Intuit</a>
-                  </h2>
-                  <p class="lead " style="color: #CFCFCF">
-                    Build in-house tools to empower the design studio. Work
-                    with business partners to turn future facing ideas into
-                    tangible prototypes to influence business direction.
-                  </p>
-                  <section>
-                    <div class="cat_but" style=" margin-right: 10px;">
-                      Prototyping
-                    </div>
-                    <div class="cat_but" style="margin-right: 10px; ">
-                      Development
-                    </div>
-                    <div class="cat_but" style="margin-right: 10px; ">
-                      Product Design
-                    </div>
-                    <div class="cat_but" style="margin-right: 10px; ">
-                      UX Research
-                    </div>
-                    <div class="cat_but">
-                      Motion Design
-                    </div>
-                  </section>
-                </div>
-              </div>
-            </section>
-            <section class="col-md-1 order-md-4" style="padding:0px 0;"></section>
-          </div>
-
-          <div class="row" style="margin-top: 7vw;">
-            <!-- WORKDAY -->
-            <section class="col-md-1 order-md-1 " style="padding:0px 0;"></section>
-            <section class="col-md-5 order-md-3 titlehoriz" style="padding:0px 0;">
-              <div class="box2 btn-group modal-dialogtwo dynamicthumbnail" style="margin-top: 0px;">
-                <a href="workday_pre.html">
-                  <div class="overlay vertical-align titlehoriz"></div>
-                  <div class="titlehoriz">
-                    <img class="img-fluid" src="img/darkMod/dark_WORKDAY.png" alt=" " />
-                  </div>
-                </a>
-              </div>
-            </section>
-            <section class="col-md-5 order-md-2 vertical-align " style="padding:0px 0;">
-              <div class="indextext">
-                <div class="row-centerer dynamicdescription module2 animation-element slide-left">
-                  <h2 class="section-heading" style="font-weight: 400">
-                    <a class="sliding-middle-out indexProjectTitles" style="color: white !important;"
-                      href="workday_pre.html">Workday</a>
-                  </h2>
-                  <p class="lead " style="color: #CFCFCF">
-                    A summer internship at Workday's Design Systems team where
-                    I worked on redesigning the system wide conclusion
-                    interface and mobile animations.
-                  </p>
-                  <section>
-                    <div class="cat_but" style=" margin-right: 10px;">
-                      Product Design
-                    </div>
-                    <div class="cat_but" style="margin-right: 10px; ">
-                      Motion Design
-                    </div>
-                    <div class="cat_but">
-                      UX Research
-                    </div>
-                  </section>
-                </div>
-              </div>
-            </section>
-            <section class="col-md-1 order-md-4 " style="padding:0px 0;"></section>
-          </div>
-
-          <div class="row" style="margin-top: 7vw;">
-            <!-- NANOME -->
-            <section class="col-md-1 order-md-1" style="padding:0px 0;"></section>
-            <section class="col-md-5 order-md-2 titlehoriz" style="padding:0px 0;">
-              <div class="box3 btn-group modal-dialogtwo dynamicthumbnail" style="margin-top: 0px;">
-                <a href="nanome_nda.html">
-                  <div class="overlay vertical-align titlehoriz">
-                    <center class="ndatext" style="line-height: 2;">
-                      NDA<br />Available on request
-                    </center>
-                    <!-- <center class="ndatext">Available during interview</center> -->
-                  </div>
-                  <div class="titlehoriz">
-                    <img class="img-fluid" src="img/darkMod/dark_NANOME.png" alt=" " />
-                  </div>
-                </a>
-              </div>
-            </section>
-            <section class="col-md-5 order-md-3 vertical-align" style="padding:0px 0;">
-              <div class="indextext">
-                <div class="row-centerer dynamicdescription module1 animation-element slide-right">
-                  <h2 class="section-heading" style="font-weight: 400">
-                    <a class="sliding-middle-out indexProjectTitles" style="color: white !important;"
-                      href="nanome_nda.html">Nanome</a>
-                  </h2>
-                  <p class="lead " style="color: #CFCFCF">
-                    Pioneer the design of Matryx: a tournament styled,
-                    collaborative platform with an intellectual property
-                    marketplace on a blockchain network.
-                  </p>
-                  <section>
-                    <div class="cat_but" style=" margin-right: 10px;">
-                      Product Design
-                    </div>
-                    <div class="cat_but" style="margin-right: 10px; ">
-                      Visual Design
-                    </div>
-                    <div class="cat_but">
-                      UX Research
-                    </div>
-                  </section>
-                </div>
-              </div>
-            </section>
-            <section class="col-md-1 order-md-4" style="padding:0px 0;"></section>
-          </div>
-
-          <div class="row" style="margin-top: 7vw;">
-            <!-- ASGS -->
-            <section class="col-md-1 order-md-1 " style="padding:0px 0;"></section>
-            <section class="col-md-5 order-md-3 titlehoriz" style="padding:0px 0;">
-              <div class="box2 btn-group modal-dialogtwo dynamicthumbnail" style="margin-top: 0px;">
-                <a href="asgs.html">
-                  <div class="titlehoriz">
-                    <img class="img-fluid" src="img/darkMod/dark_SGF.png" alt=" " />
-                  </div>
-                </a>
-              </div>
-            </section>
-            <section class="col-md-5 order-md-2 vertical-align" style="padding:0px 0;">
-              <div class="indextext">
-                <div class="row-centerer dynamicdescription module2 animation-element slide-left">
-                  <h2 class="section-heading" style="font-weight: 400">
-                    <a class="sliding-middle-out indexProjectTitles" style="color: white !important;"
-                      href="asgs.html">A.S. Graphic
-                      Studio</a>
-                  </h2>
-                  <p class="lead " style="color: #CFCFCF">
-                    Collaborate with a visual designer to implement UCSD's
-                    2018 Sun God Festival website.
-                  </p>
-                  <section>
-                    <div class="cat_but" style="margin-right: 10px;">
-                      Web Development
-                    </div>
-                    <div class="cat_but">
-                      Interaction Design
-                    </div>
-                  </section>
-                </div>
-              </div>
-            </section>
-            <section class="col-md-1 order-md-4 " style="padding:0px 0;"></section>
-          </div>
-
-
-          <div class="indexSectionHeader" style="margin-top: 3em;">
-            Selected Projects
-          </div>
-
-          <div class="row" style="margin-top: 3em;">
-            <!-- D4SD -->
-            <section class="col-md-1 order-md-1" style="padding:0px 0;"></section>
-            <section class="col-md-5 order-md-2 titlehoriz" style="padding:0px 0;">
-              <div class="box2 btn-group modal-dialogtwo dynamicthumbnail" style="margin-top: 0px;">
-                <a href="project5.html">
-                  <div class="titlehoriz">
-                    <img class="img-fluid" src="img/darkMod/dark_D4SD.png" alt=" " />
-                  </div>
-                </a>
-              </div>
-            </section>
-            <section class="col-md-5 order-md-3 vertical-align" style="padding:0px 0;">
-              <div class="indextext">
-                <div class="row-centerer dynamicdescription module1 animation-element slide-right">
-                  <h2 class="section-heading" style="font-weight: 400">
-                    <a class="sliding-middle-out indexProjectTitles" style="color: white !important;"
-                      href="project5.html">D4SD
-                      Hackathon</a>
-                  </h2>
-                  <p class="lead " style="color: #CFCFCF">
-                    I competed in a city wide design competition to improve
-                    transportation in San Diego.
-                  </p>
-                  <section>
-                    <div class="cat_but" style="margin-right: 10px;">
-                      Interaction Design
-                    </div>
-                    <div class="cat_but">
-                      UX Research
-                    </div>
-                  </section>
-                </div>
-              </div>
-            </section>
-            <section class="col-md-1 order-md-4" style="padding:0px 0;"></section>
-          </div>
-
-          <div class="row" style="margin-top: 7vw;">
-            <!-- EventQR -->
-            <section class="col-md-1 order-md-1 " style="padding:0px 0;"></section>
-            <section class="col-md-5 order-md-3 titlehoriz" style="padding:0px 0;">
-              <div class="box2 btn-group modal-dialogtwo dynamicthumbnail" style="margin-top: 0px;">
-                <a href="birch.html">
-                  <div class="titlehoriz">
-                    <img class="img-fluid" src="img/darkMod/dark_BIRCH.png" alt=" " />
-                  </div>
-                </a>
-              </div>
-            </section>
-            <section class="col-md-5 order-md-2 vertical-align" style="padding:0px 0;">
-              <div class="indextext">
-                <div class="row-centerer dynamicdescription module2 animation-element slide-left">
-                  <h2 class="section-heading" style="font-weight: 400">
-                    <a class="sliding-middle-out indexProjectTitles" style="color: white !important;"
-                      href="birch.html">Birch Aquarium</a>
-                  </h2>
-                  <p class="lead " style="color: #CFCFCF">
-                    I designed an exhibit in the Birch Aquarium at the Scripps
-                    Institution of Oceanography to teach people about bubbles.
-                  </p>
-                  <section>
-                    <div class="cat_but" style="margin-right: 10px;">
-                      Interaction Design
-                    </div>
-                    <div class="cat_but">
-                      UX Research
-                    </div>
-                  </section>
-                </div>
-              </div>
-            </section>
-            <section class="col-md-1 order-md-4 " style="padding:0px 0;"></section>
-          </div>
-
-          <div class="row" style="margin-top: 7vw;margin-bottom: 4vw">
-            <section class="col-md-1 order-md-1" style="padding:0px 0;"></section>
-            <section class="col-md-5 order-md-2 titlehoriz" style="padding:0px 0;">
-              <div class="box2 btn-group modal-dialogtwo dynamicthumbnail" style="margin-top: 0px;">
-                <a href="project1.html">
-                  <div class="titlehoriz">
-                    <img class="img-fluid" src="img/darkMod/dark_EQR.png" alt=" " />
-                  </div>
-                </a>
-              </div>
-            </section>
-            <section class="col-md-5 order-md-3 vertical-align" style="padding:0px 0;">
-              <div class="indextext">
-                <div class="row-centerer dynamicdescription module1 animation-element slide-right">
-                  <h2 class="section-heading" style="font-weight: 400">
-                    <a class="sliding-middle-out indexProjectTitles" style="color: white !important;"
-                      href="project1.html">EventQR</a>
-                  </h2>
-                  <p class="lead " style="color: #CFCFCF">
-                    A web app that lets users create & scan events encrypted
-                    into a QR code, which can be synced onto their Google
-                    Calendar.
-                  </p>
-                  <section>
-                    <div class="cat_but" style="margin-right: 10px;">
-                      Web Development
-                    </div>
-                    <div class="cat_but" style="margin-right: 10px;">
-                      Interaction Design
-                    </div>
-                    <div class="cat_but">
-                      UX Research
-                    </div>
-                  </section>
-                </div>
-              </div>
-            </section>
-            <section class="col-md-1 order-md-4" style="padding:0px 0;"></section>
-          </div>
-
-          <!--  ///////////////////  FOOTER/CONTACT  ///////////////////  -->
-          <aside class="banner ">
-            <div class="row ">
-              <div class="col-lg-12 text-center">
-                <a href="mailto:tonychan96@gmail.com" target="_blank" class="btn-social btn-lg"><i
-                    class="fa fa-envelope" style="color: #94999d"></i></a>
-                <a href="https://www.linkedin.com/in/tonychan96/" target="_blank" class="btn-social btn-lg"><i
-                    class="fa fa-linkedin" style="color: #94999d"></i></a>
-              </div>
-            </div>
-            <div class="row ">
-              <div class="col-lg-12 text-center">
-                <p class="copyright">© 2020 Made with procrastination by Tony Chan</p>
-              </div>
-            </div>
-          </aside>
-        </div>
-
-        <!-- RESUME  -->
-        <div class="carousel-item" style="margin-top: 80px;">
-          <section class="content-section-b">
-            <div class="modal-dialog">
-              <div class="row row-centerer">
-                <div class="modal-dialogtwo resumeaboutpad row-centerer">
-                  <!-- RESUME PICTURE  -->
-                  <img class="img-fluid dynResume img_shadow" src="img/Tony's_Resume.jpg" />
-                </div>
-              </div>
-            </div>
-            <!-- DOWNLOAD BUTTON  -->
-            <div class="row">
-              <div class="col-lg-12 text-center">
-                <li class="sliding-middle-out" style="color: white">
-                  <a href="img/resume.pdf" download="Tony's Résumé.pdf">Download</a>
+          <div class="col-lg-2"></div>
+          <div class="col-lg-6">
+            <div id="menu">
+              <ul
+                class="navbar-nav navbar-brand right-to-center nav-elem-centerer"
+              >
+                <li
+                  class="sliding-middle-out nav-item active navPortfolio whiteText"
+                  style="margin-left: 30px;"
+                >
+                  <a class="move-slide nav-link" href="" data-id="0"
+                    >Portfolio</a
+                  >
                 </li>
-              </div>
+                <li
+                  class="sliding-middle-out nav-item navpadding navResume whiteText"
+                >
+                  <a class="move-slide nav-link" href="" data-id="1">Resume</a>
+                </li>
+                <li
+                  class="sliding-middle-out nav-item navAbout whiteText"
+                  style="margin-right: 30px; margin-left: 0px;"
+                >
+                  <a class="move-slide nav-link" href="" data-id="2"
+                    >About Me</a
+                  >
+                </li>
+              </ul>
             </div>
-          </section>
-
-          <!--  ///////////////////  FOOTER/CONTACT  ///////////////////  -->
-          <aside class="banner ">
-            <div class="row ">
-              <div class="col-lg-12 text-center">
-                <a href="mailto:tonychan96@gmail.com" target="_blank" class="btn-social btn-lg"><i
-                    class="fa fa-envelope" style="color: #94999d"></i></a>
-                <a href="https://www.linkedin.com/in/tonychan96/" target="_blank" class="btn-social btn-lg"><i
-                    class="fa fa-linkedin" style="color: #94999d"></i></a>
-              </div>
-            </div>
-            <div class="row ">
-              <div class="col-lg-12 text-center">
-                <p class="lead copyright">© 2020 Made with procrastination by Tony Chan</p>
-              </div>
-            </div>
-          </aside>
+          </div>
         </div>
+      </nav>
 
-        <div class="carousel-item" style="margin-top: 80px;">
-          <!-- ABOUT ME TAB  -->
-          <div style="padding-top: 30px;"></div>
-          <div class="row" style="margin-top: 2.5vw;">
-            <div class="col-2"></div>
-            <div class="col-8" style="text-align:center;">
-              <!-- vertically alligns words and pictures -->
-              <div class="row" style="margin-top:15px;"></div>
-              <img class="img-fluid aboutMeImg" src="img/aboutme.png" alt=" " />
-              <div class="row" style="margin-top:15px;"></div>
+      <div
+        id="carousel"
+        class="carousel slide"
+        data-ride="carousel"
+        data-interval="false"
+      >
+        <div class="carousel-inner">
+          <!--  ///////////////////  PORTFOLIO CONTENT  ///////////////////  -->
+          <div class="carousel-item active">
+            <div class="heroWrapper">
+              <!-- <div class="heroText">I'm Tony Chan, a multidisciplinary creative who's wondering if he's related to
+              Jackie Chan 🤔</div> -->
             </div>
-            <div class="col-2"></div>
-          </div>
-
-          <div class="row spacer "></div>
-          <div class="row" style="margin-top: 2.5vw;">
-            <div class="col-md-3 col-2"></div>
-            <div class="col-md-6 col-8">
-              <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify; color: #CFCFCF">
-                I'm a designer and engineer in California with the ability to bring ideas from concept to production
-                through a variety of mediums. My multidisciplinary background allows me to tackle problems with a
-                unique & technical perspective. I'm a strong collaborator based on the awareness of these disciplines,
-                resulting in comprehensive & elegant deliverables. I believe in empathy, minimalism, and attention to
-                detail.
-              </p>
+            <canvas
+              id="canvas"
+              oncontextmenu="return false"
+              height="1000"
+            ></canvas>
+            <div class="introWrap" onclick="runPlatformer(this)">
+              <span class="helper"></span
+              ><img style="width: 80%;" src="./physicsEngine/start.svg" />
+              <!-- <object type="image/svg+xml" data="./physicsEngine/start.svg"></object> -->
             </div>
-            <div class="col-md-3 col-2"></div>
-          </div>
 
-          <!-- collage -->
-          <div class="row" style="margin-top: 2.5vw;">
-            <div class="col-2"></div>
-            <div class="col-8" style="text-align:center;">
-              <!-- vertically alligns words and pictures -->
-              <img class="img-fluid " src="img/collage.png" alt=" " />
+            <div
+              class="indexSectionHeader industrypadding"
+              style="padding-top: 30px;"
+            >
+              Industry Experience
             </div>
-            <div class="col-2"></div>
-          </div>
-          <div class="row spacer "></div>
 
-          <!--  ///////////////////  FOOTER/CONTACT  ///////////////////  -->
-          <aside class="banner ">
-            <div class="row ">
-              <div class="col-lg-12 text-center">
-                <a href="mailto:tonychan96@gmail.com" target="_blank" class="btn-social btn-lg"><i
-                    class="fa fa-envelope" style="color: #94999d"></i></a>
-                <a href="https://www.linkedin.com/in/tonychan96/" target="_blank" class="btn-social btn-lg"><i
-                    class="fa fa-linkedin" style="color: #94999d"></i></a>
+            <div class="row" style="margin-top: 3em;">
+              <!-- INTUIT -->
+              <section
+                class="col-md-1 order-md-1"
+                style="padding: 0px 0;"
+              ></section>
+              <section
+                class="col-md-5 order-md-2 titlehoriz"
+                style="padding: 0px 0;"
+              >
+                <div
+                  class="box3 btn-group modal-dialogtwo dynamicthumbnail"
+                  style="margin-top: 0px;"
+                >
+                  <a href="intuit_nda.html">
+                    <div class="overlay vertical-align titlehoriz">
+                      <center class="ndatext" style="line-height: 2;">
+                        NDA<br />Available on request
+                      </center>
+                    </div>
+                    <div class="titlehoriz">
+                      <img
+                        class="img-fluid"
+                        src="img/darkMod/dark_INTUIT.png"
+                        alt=" "
+                      />
+                    </div>
+                  </a>
+                </div>
+              </section>
+              <section
+                class="col-md-5 order-md-3 vertical-align"
+                style="padding: 0px 0;"
+              >
+                <div class="indextext">
+                  <div
+                    class="row-centerer dynamicdescription module1 animation-element slide-right"
+                  >
+                    <h2 class="section-heading" style="font-weight: 400;">
+                      <a
+                        class="sliding-middle-out indexProjectTitles"
+                        style="color: white !important;"
+                        href="intuit_nda.html"
+                        >Intuit</a
+                      >
+                    </h2>
+                    <p class="lead" style="color: #cfcfcf;">
+                      Build in-house tools to empower the design studio. Work
+                      with business partners to turn future facing ideas into
+                      tangible prototypes to influence business direction.
+                    </p>
+                    <section>
+                      <div class="cat_but" style="margin-right: 10px;">
+                        Prototyping
+                      </div>
+                      <div class="cat_but" style="margin-right: 10px;">
+                        Development
+                      </div>
+                      <div class="cat_but" style="margin-right: 10px;">
+                        Product Design
+                      </div>
+                      <div class="cat_but" style="margin-right: 10px;">
+                        UX Research
+                      </div>
+                      <div class="cat_but">
+                        Motion Design
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </section>
+              <section
+                class="col-md-1 order-md-4"
+                style="padding: 0px 0;"
+              ></section>
+            </div>
+
+            <div class="row" style="margin-top: 7vw;">
+              <!-- WORKDAY -->
+              <section
+                class="col-md-1 order-md-1"
+                style="padding: 0px 0;"
+              ></section>
+              <section
+                class="col-md-5 order-md-3 titlehoriz"
+                style="padding: 0px 0;"
+              >
+                <div
+                  class="box2 btn-group modal-dialogtwo dynamicthumbnail"
+                  style="margin-top: 0px;"
+                >
+                  <a href="workday_pre.html">
+                    <div class="overlay vertical-align titlehoriz"></div>
+                    <div class="titlehoriz">
+                      <img
+                        class="img-fluid"
+                        src="img/darkMod/dark_WORKDAY.png"
+                        alt=" "
+                      />
+                    </div>
+                  </a>
+                </div>
+              </section>
+              <section
+                class="col-md-5 order-md-2 vertical-align"
+                style="padding: 0px 0;"
+              >
+                <div class="indextext">
+                  <div
+                    class="row-centerer dynamicdescription module2 animation-element slide-left"
+                  >
+                    <h2 class="section-heading" style="font-weight: 400;">
+                      <a
+                        class="sliding-middle-out indexProjectTitles"
+                        style="color: white !important;"
+                        href="workday_pre.html"
+                        >Workday</a
+                      >
+                    </h2>
+                    <p class="lead" style="color: #cfcfcf;">
+                      A summer internship at Workday's Design Systems team where
+                      I worked on redesigning the system wide conclusion
+                      interface and mobile animations.
+                    </p>
+                    <section>
+                      <div class="cat_but" style="margin-right: 10px;">
+                        Product Design
+                      </div>
+                      <div class="cat_but" style="margin-right: 10px;">
+                        Motion Design
+                      </div>
+                      <div class="cat_but">
+                        UX Research
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </section>
+              <section
+                class="col-md-1 order-md-4"
+                style="padding: 0px 0;"
+              ></section>
+            </div>
+
+            <div class="row" style="margin-top: 7vw;">
+              <!-- NANOME -->
+              <section
+                class="col-md-1 order-md-1"
+                style="padding: 0px 0;"
+              ></section>
+              <section
+                class="col-md-5 order-md-2 titlehoriz"
+                style="padding: 0px 0;"
+              >
+                <div
+                  class="box3 btn-group modal-dialogtwo dynamicthumbnail"
+                  style="margin-top: 0px;"
+                >
+                  <a href="nanome_nda.html">
+                    <div class="overlay vertical-align titlehoriz">
+                      <center class="ndatext" style="line-height: 2;">
+                        NDA<br />Available on request
+                      </center>
+                      <!-- <center class="ndatext">Available during interview</center> -->
+                    </div>
+                    <div class="titlehoriz">
+                      <img
+                        class="img-fluid"
+                        src="img/darkMod/dark_NANOME.png"
+                        alt=" "
+                      />
+                    </div>
+                  </a>
+                </div>
+              </section>
+              <section
+                class="col-md-5 order-md-3 vertical-align"
+                style="padding: 0px 0;"
+              >
+                <div class="indextext">
+                  <div
+                    class="row-centerer dynamicdescription module1 animation-element slide-right"
+                  >
+                    <h2 class="section-heading" style="font-weight: 400;">
+                      <a
+                        class="sliding-middle-out indexProjectTitles"
+                        style="color: white !important;"
+                        href="nanome_nda.html"
+                        >Nanome</a
+                      >
+                    </h2>
+                    <p class="lead" style="color: #cfcfcf;">
+                      Pioneer the design of Matryx: a tournament styled,
+                      collaborative platform with an intellectual property
+                      marketplace on a blockchain network.
+                    </p>
+                    <section>
+                      <div class="cat_but" style="margin-right: 10px;">
+                        Product Design
+                      </div>
+                      <div class="cat_but" style="margin-right: 10px;">
+                        Visual Design
+                      </div>
+                      <div class="cat_but">
+                        UX Research
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </section>
+              <section
+                class="col-md-1 order-md-4"
+                style="padding: 0px 0;"
+              ></section>
+            </div>
+
+            <div class="row" style="margin-top: 7vw;">
+              <!-- ASGS -->
+              <section
+                class="col-md-1 order-md-1"
+                style="padding: 0px 0;"
+              ></section>
+              <section
+                class="col-md-5 order-md-3 titlehoriz"
+                style="padding: 0px 0;"
+              >
+                <div
+                  class="box2 btn-group modal-dialogtwo dynamicthumbnail"
+                  style="margin-top: 0px;"
+                >
+                  <a href="asgs.html">
+                    <div class="titlehoriz">
+                      <img
+                        class="img-fluid"
+                        src="img/darkMod/dark_SGF.png"
+                        alt=" "
+                      />
+                    </div>
+                  </a>
+                </div>
+              </section>
+              <section
+                class="col-md-5 order-md-2 vertical-align"
+                style="padding: 0px 0;"
+              >
+                <div class="indextext">
+                  <div
+                    class="row-centerer dynamicdescription module2 animation-element slide-left"
+                  >
+                    <h2 class="section-heading" style="font-weight: 400;">
+                      <a
+                        class="sliding-middle-out indexProjectTitles"
+                        style="color: white !important;"
+                        href="asgs.html"
+                        >A.S. Graphic Studio</a
+                      >
+                    </h2>
+                    <p class="lead" style="color: #cfcfcf;">
+                      Collaborate with a visual designer to implement UCSD's
+                      2018 Sun God Festival website.
+                    </p>
+                    <section>
+                      <div class="cat_but" style="margin-right: 10px;">
+                        Web Development
+                      </div>
+                      <div class="cat_but">
+                        Interaction Design
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </section>
+              <section
+                class="col-md-1 order-md-4"
+                style="padding: 0px 0;"
+              ></section>
+            </div>
+
+            <div class="indexSectionHeader" style="margin-top: 3em;">
+              Selected Projects
+            </div>
+
+            <div class="row" style="margin-top: 3em;">
+              <!-- D4SD -->
+              <section
+                class="col-md-1 order-md-1"
+                style="padding: 0px 0;"
+              ></section>
+              <section
+                class="col-md-5 order-md-2 titlehoriz"
+                style="padding: 0px 0;"
+              >
+                <div
+                  class="box2 btn-group modal-dialogtwo dynamicthumbnail"
+                  style="margin-top: 0px;"
+                >
+                  <a href="project5.html">
+                    <div class="titlehoriz">
+                      <img
+                        class="img-fluid"
+                        src="img/darkMod/dark_D4SD.png"
+                        alt=" "
+                      />
+                    </div>
+                  </a>
+                </div>
+              </section>
+              <section
+                class="col-md-5 order-md-3 vertical-align"
+                style="padding: 0px 0;"
+              >
+                <div class="indextext">
+                  <div
+                    class="row-centerer dynamicdescription module1 animation-element slide-right"
+                  >
+                    <h2 class="section-heading" style="font-weight: 400;">
+                      <a
+                        class="sliding-middle-out indexProjectTitles"
+                        style="color: white !important;"
+                        href="project5.html"
+                        >D4SD Hackathon</a
+                      >
+                    </h2>
+                    <p class="lead" style="color: #cfcfcf;">
+                      I competed in a city wide design competition to improve
+                      transportation in San Diego.
+                    </p>
+                    <section>
+                      <div class="cat_but" style="margin-right: 10px;">
+                        Interaction Design
+                      </div>
+                      <div class="cat_but">
+                        UX Research
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </section>
+              <section
+                class="col-md-1 order-md-4"
+                style="padding: 0px 0;"
+              ></section>
+            </div>
+
+            <div class="row" style="margin-top: 7vw;">
+              <!-- EventQR -->
+              <section
+                class="col-md-1 order-md-1"
+                style="padding: 0px 0;"
+              ></section>
+              <section
+                class="col-md-5 order-md-3 titlehoriz"
+                style="padding: 0px 0;"
+              >
+                <div
+                  class="box2 btn-group modal-dialogtwo dynamicthumbnail"
+                  style="margin-top: 0px;"
+                >
+                  <a href="birch.html">
+                    <div class="titlehoriz">
+                      <img
+                        class="img-fluid"
+                        src="img/darkMod/dark_BIRCH.png"
+                        alt=" "
+                      />
+                    </div>
+                  </a>
+                </div>
+              </section>
+              <section
+                class="col-md-5 order-md-2 vertical-align"
+                style="padding: 0px 0;"
+              >
+                <div class="indextext">
+                  <div
+                    class="row-centerer dynamicdescription module2 animation-element slide-left"
+                  >
+                    <h2 class="section-heading" style="font-weight: 400;">
+                      <a
+                        class="sliding-middle-out indexProjectTitles"
+                        style="color: white !important;"
+                        href="birch.html"
+                        >Birch Aquarium</a
+                      >
+                    </h2>
+                    <p class="lead" style="color: #cfcfcf;">
+                      I designed an exhibit in the Birch Aquarium at the Scripps
+                      Institution of Oceanography to teach people about bubbles.
+                    </p>
+                    <section>
+                      <div class="cat_but" style="margin-right: 10px;">
+                        Interaction Design
+                      </div>
+                      <div class="cat_but">
+                        UX Research
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </section>
+              <section
+                class="col-md-1 order-md-4"
+                style="padding: 0px 0;"
+              ></section>
+            </div>
+
+            <div class="row" style="margin-top: 7vw; margin-bottom: 4vw;">
+              <section
+                class="col-md-1 order-md-1"
+                style="padding: 0px 0;"
+              ></section>
+              <section
+                class="col-md-5 order-md-2 titlehoriz"
+                style="padding: 0px 0;"
+              >
+                <div
+                  class="box2 btn-group modal-dialogtwo dynamicthumbnail"
+                  style="margin-top: 0px;"
+                >
+                  <a href="project1.html">
+                    <div class="titlehoriz">
+                      <img
+                        class="img-fluid"
+                        src="img/darkMod/dark_EQR.png"
+                        alt=" "
+                      />
+                    </div>
+                  </a>
+                </div>
+              </section>
+              <section
+                class="col-md-5 order-md-3 vertical-align"
+                style="padding: 0px 0;"
+              >
+                <div class="indextext">
+                  <div
+                    class="row-centerer dynamicdescription module1 animation-element slide-right"
+                  >
+                    <h2 class="section-heading" style="font-weight: 400;">
+                      <a
+                        class="sliding-middle-out indexProjectTitles"
+                        style="color: white !important;"
+                        href="project1.html"
+                        >EventQR</a
+                      >
+                    </h2>
+                    <p class="lead" style="color: #cfcfcf;">
+                      A web app that lets users create & scan events encrypted
+                      into a QR code, which can be synced onto their Google
+                      Calendar.
+                    </p>
+                    <section>
+                      <div class="cat_but" style="margin-right: 10px;">
+                        Web Development
+                      </div>
+                      <div class="cat_but" style="margin-right: 10px;">
+                        Interaction Design
+                      </div>
+                      <div class="cat_but">
+                        UX Research
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </section>
+              <section
+                class="col-md-1 order-md-4"
+                style="padding: 0px 0;"
+              ></section>
+            </div>
+
+            <!--  ///////////////////  FOOTER/CONTACT  ///////////////////  -->
+            <aside class="banner">
+              <div class="row">
+                <div class="col-lg-12 text-center">
+                  <a
+                    href="mailto:tonychan96@gmail.com"
+                    target="_blank"
+                    class="btn-social btn-lg"
+                    ><i class="fa fa-envelope" style="color: #94999d;"></i
+                  ></a>
+                  <a
+                    href="https://www.linkedin.com/in/tonychan96/"
+                    target="_blank"
+                    class="btn-social btn-lg"
+                    ><i class="fa fa-linkedin" style="color: #94999d;"></i
+                  ></a>
+                </div>
               </div>
-            </div>
-            <div class="row ">
-              <div class="col-lg-12 text-center">
-                <p class="lead copyright">© 2020 Made with procrastination by Tony Chan</p>
+            </aside>
+          </div>
+
+          <!-- RESUME  -->
+          <div class="carousel-item" style="margin-top: 80px;">
+            <section class="content-section-b">
+              <div class="modal-dialog">
+                <div class="row row-centerer">
+                  <div class="modal-dialogtwo resumeaboutpad row-centerer">
+                    <!-- RESUME PICTURE  -->
+                    <img
+                      class="img-fluid dynResume img_shadow"
+                      src="img/Tony's_Resume.jpg"
+                    />
+                  </div>
+                </div>
               </div>
+              <!-- DOWNLOAD BUTTON  -->
+              <div class="row">
+                <div class="col-lg-12 text-center">
+                  <li class="sliding-middle-out" style="color: white;">
+                    <a href="img/resume.pdf" download="Tony's Résumé.pdf"
+                      >Download</a
+                    >
+                  </li>
+                </div>
+              </div>
+            </section>
+
+            <!--  ///////////////////  FOOTER/CONTACT  ///////////////////  -->
+            <aside class="banner">
+              <div class="row">
+                <div class="col-lg-12 text-center">
+                  <a
+                    href="mailto:tonychan96@gmail.com"
+                    target="_blank"
+                    class="btn-social btn-lg"
+                    ><i class="fa fa-envelope" style="color: #94999d;"></i
+                  ></a>
+                  <a
+                    href="https://www.linkedin.com/in/tonychan96/"
+                    target="_blank"
+                    class="btn-social btn-lg"
+                    ><i class="fa fa-linkedin" style="color: #94999d;"></i
+                  ></a>
+                </div>
+              </div>
+            </aside>
+          </div>
+
+          <div class="carousel-item" style="margin-top: 80px;">
+            <!-- ABOUT ME TAB  -->
+            <div style="padding-top: 30px;"></div>
+            <div class="row" style="margin-top: 2.5vw;">
+              <div class="col-2"></div>
+              <div class="col-8" style="text-align: center;">
+                <!-- vertically alligns words and pictures -->
+                <div class="row" style="margin-top: 15px;"></div>
+                <img
+                  class="img-fluid aboutMeImg"
+                  src="img/aboutme.png"
+                  alt=" "
+                />
+                <div class="row" style="margin-top: 15px;"></div>
+              </div>
+              <div class="col-2"></div>
             </div>
-          </aside>
+
+            <div class="row spacer"></div>
+            <div class="row" style="margin-top: 2.5vw;">
+              <div class="col-md-3 col-2"></div>
+              <div class="col-md-6 col-8">
+                <p
+                  class="lead"
+                  style="
+                    margin-bottom: 0;
+                    word-spacing: 3px;
+                    text-align: justify;
+                    color: #cfcfcf;
+                  "
+                >
+                  I'm a designer and engineer in California with the ability to
+                  bring ideas from concept to production through a variety of
+                  mediums. My multidisciplinary background allows me to tackle
+                  problems with a unique & technical perspective. I'm a strong
+                  collaborator based on the awareness of these disciplines,
+                  resulting in comprehensive & elegant deliverables. I believe
+                  in empathy, minimalism, and attention to detail.
+                </p>
+              </div>
+              <div class="col-md-3 col-2"></div>
+            </div>
+
+            <!-- collage -->
+            <div class="row" style="margin-top: 2.5vw;">
+              <div class="col-2"></div>
+              <div class="col-8" style="text-align: center;">
+                <!-- vertically alligns words and pictures -->
+                <img class="img-fluid" src="img/collage.png" alt=" " />
+              </div>
+              <div class="col-2"></div>
+            </div>
+            <div class="row spacer"></div>
+
+            <!--  ///////////////////  FOOTER/CONTACT  ///////////////////  -->
+            <aside class="banner">
+              <div class="row">
+                <div class="col-lg-12 text-center">
+                  <a
+                    href="mailto:tonychan96@gmail.com"
+                    target="_blank"
+                    class="btn-social btn-lg"
+                    ><i class="fa fa-envelope" style="color: #94999d;"></i
+                  ></a>
+                  <a
+                    href="https://www.linkedin.com/in/tonychan96/"
+                    target="_blank"
+                    class="btn-social btn-lg"
+                    ><i class="fa fa-linkedin" style="color: #94999d;"></i
+                  ></a>
+                </div>
+              </div>
+            </aside>
+          </div>
         </div>
       </div>
+
+      <!-- container fluid wrapper end div -->
     </div>
 
-    <!-- container fluid wrapper end div -->
-  </div>
-
-  <!-- JavaScript -->
-  <script type="text/javascript" src="vendor/jquery/jquery.min.js "></script>
-  <script type="text/javascript" src="vendor/popper/popper.min.js "></script>
-  <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js "></script>
-  <script type="text/javascript" src="custom.js"></script>
-  <!-- scroll fade left/right animation -->
-  <script type="text/javascript" src="fadein_js/index.js"></script>
-  <!-- stat monitor -->
-  <script type="text/javascript" src="physicsEngine/matter.min.js"></script>
-  <script type="text/javascript" src="physicsEngine/app.js"></script>
-  <script>
+    <!-- JavaScript -->
+    <script type="text/javascript" src="vendor/jquery/jquery.min.js "></script>
+    <script type="text/javascript" src="vendor/popper/popper.min.js "></script>
+    <script
+      type="text/javascript"
+      src="vendor/bootstrap/js/bootstrap.min.js "
+    ></script>
+    <script type="text/javascript" src="custom.js"></script>
+    <!-- scroll fade left/right animation -->
+    <script type="text/javascript" src="fadein_js/index.js"></script>
+    <!-- stat monitor -->
+    <script type="text/javascript" src="physicsEngine/matter.min.js"></script>
+    <script type="text/javascript" src="physicsEngine/app.js"></script>
+    <!-- <script>
     runPlatformer(this);
-  </script>
-</body>
-
+  </script> -->
+  </body>
 </html>

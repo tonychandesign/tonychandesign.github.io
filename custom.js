@@ -30,14 +30,23 @@ $(function () {
   var prevScrollpos = window.pageYOffset;
   window.onscroll = function () {
     var currentScrollPos = window.pageYOffset;
+    // hide nav in index landing page for the game
+    if (
+      window.location.href.includes("index.html") &&
+      $(".navbar-nav .active ").attr("class").includes("navPortfolio") &&
+      window.pageYOffset == 0
+    ) {
+      setTimeout(function () {
+        $("#navbar").css("top", "-140px");
+      }, 3000);
+    }
     if (prevScrollpos < 0) {
       // do nothing
-    }
-    else {
+    } else {
       if (prevScrollpos > currentScrollPos) {
-        document.getElementById("navbar").style.top = "0";
+        $("#navbar").css("top", "0px");
       } else {
-        document.getElementById("navbar").style.top = "-140px";
+        $("#navbar").css("top", "-140px");
       }
     }
     prevScrollpos = currentScrollPos;

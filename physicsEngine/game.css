@@ -1,0 +1,25 @@
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.introWrap {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  text-align: center;
+  height: 100vh;
+}
+
+.intro {
+  z-index: 2;
+}
+
+.helper {
+  display: inline-block;
+  height: 100vh;
+  vertical-align: middle;
+}
+// SVG TRACE
