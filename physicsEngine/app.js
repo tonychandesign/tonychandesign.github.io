@@ -927,8 +927,8 @@ function spawn() {
   }
 
   for (let i = 0; i < 4; i++) {
-    //stack of medium hexagons
-    body[body.length] = Bodies.polygon(-820, -1700 - i * 27, 6, 27, {
+    //stack of hexagons
+    body[body.length] = Bodies.polygon(-815, -1700 - i * 27, 6, 27, {
       angle: Math.PI / 2,
       density: 0.035,
     });
@@ -946,24 +946,7 @@ function spawn() {
       );
     }
   }
-  // for (let i = 0; i < 10; i++) {
-  //   //stairs of boxes taller on right
-  //   for (let j = 0; j < i; j++) {
-  //     const r = 50;
-  //     body[body.length] = Bodies.rectangle(
-  //       1239 + r / 2 + i * r,
-  //       900 + r - i * r,
-  //       r,
-  //       r,
-  //       {
-  //         restitution: 0.6,
-  //         friction: 0.3,
-  //         frictionStatic: 0.9
-  //       }
-  //     );
-  //   }
-  // }
-
+  // stack of boxes at end of birch cave
   composites[composites.length] = Composites.stack(
     790,
     780,
@@ -1004,7 +987,6 @@ function spawn() {
       );
     }
   }
-
   // actual catapult
   cata[cata.length] = Bodies.rectangle(-200, -2250, 320, 20, {
     collisionFilter: { group: 5 },
@@ -1038,8 +1020,7 @@ function spawn() {
     }),
   ]);
 
-  //map statics  **************************************************************
-  //***************************************************************************
+  //map objects
   function mapRect(x, y, width, height, properties) {
     //addes reactangles to map array
     map[map.length] = Bodies.rectangle(
@@ -1052,7 +1033,6 @@ function spawn() {
   }
 
   function mapVertex(x, y, vector, properties) {
-    //addes reactangles to map array
     map[map.length] = Matter.Bodies.fromVertices(
       x,
       y,
@@ -1082,7 +1062,7 @@ function spawn() {
   // intuit tunnel
   mapRect(-2100, -1000, 1670, 150); // platform floor bottom
   mapRect(-2100, -1600, 1060, 150); // platform floor middle
-  mapVertex(-825, -1440, "0 0 100 20 100 0 0 20"); // smaller platform floor middle on right - block hanging platform, no chamfer for hex to stay still
+  mapVertex(-820, -1440, "0 0 100 20 100 0 0 20"); // smaller platform floor middle on right - block hanging platform, no chamfer for hex to stay still
   mapRect(-1400, -2200, 1700, 150); // platform ceiling
   mapVertex(-165, -1250, "0 0 -800 0 -800 600"); //angled ceiling
   mapRect(-580, -2200, 150, 1350); // right wall of cave
@@ -1524,8 +1504,7 @@ function spawn() {
     World.add(engine.world, movingBodies[i]);
   }
 
-  //add arrays to the world******************************************************
-  //*****************************************************************************
+  // add objects to matterjs world
   for (let i = 0; i < body.length; i++) {
     body[i].collisionFilter.group = 1;
     // console.log(body[i]);
@@ -1549,11 +1528,7 @@ function spawn() {
   }
 }
 
-// matter events *********************************************************
-//************************************************************************
-//************************************************************************
-//************************************************************************
-
+// conditional checks
 function playerOnGroundCheck(event) {
   //runs on collisions events
   function enter() {
@@ -1628,11 +1603,7 @@ Events.on(engine, "collisionEnd", function (event) {
   playerOffGroundCheck(event);
 });
 
-// render ***********************************************************
-//*******************************************************************
-//*******************************************************************
-//*******************************************************************
-
+// draw out objects
 function drawMatterWireFrames() {
   ctx.textAlign = "center";
   ctx.textBaseline = "middle";
@@ -1654,7 +1625,6 @@ function drawMatterWireFrames() {
 }
 
 function drawMap() {
-  //draw map
   ctx.beginPath();
   for (let i = 0; i < map.length; i += 1) {
     let vertices = map[i].vertices;
@@ -1670,7 +1640,6 @@ function drawMap() {
 }
 
 function drawBody() {
-  //draw body
   ctx.beginPath();
   for (let i = 0; i < body.length; i += 1) {
     let vertices = body[i].vertices;
@@ -1699,7 +1668,6 @@ function drawCons() {
 }
 
 function drawMovingBodies() {
-  //draw map
   ctx.beginPath();
   for (let i = 0; i < movingBodies.length; i += 1) {
     let vertices = movingBodies[i].vertices;
@@ -1744,12 +1712,10 @@ function drawExpBodies() {
 
 // combined bodies
 function drawComBodies() {
-  //draw map
   ctx.beginPath();
   for (let i = 0; i < compBodies.length; i += 1) {
     // j starts at one to ignore index 0 wrapper body
     for (let j = 1; j < compBodies[i].parts.length; j++) {
-      // console.log(compBodies[i].parts[0])
       let vertices = compBodies[i].parts[j].vertices;
       ctx.moveTo(vertices[0].x, vertices[0].y);
       for (let j = 1; j < vertices.length; j += 1) {
@@ -1780,7 +1746,6 @@ function drawMovingCombined() {
 }
 
 function drawComposites() {
-  // console.log(bridge.bodies)
   //draw bridge
   ctx.moveTo(bridge.bodies[0].vertices[0].x, bridge.bodies[0].vertices[0].y);
   for (let i = 0; i < bridge.bodies.length; i++) {
@@ -1825,7 +1790,6 @@ function drawComposites() {
     ctx.stroke();
   }
 
-  // console.log(composites);
   ctx.moveTo(
     composites[0].bodies[0].vertices[0].x,
     composites[0].bodies[0].vertices[0].y
@@ -2010,11 +1974,7 @@ function drawPlayerBodyTesting() {
   ctx.stroke();
 }
 
-//main loop ************************************************************
-//**********************************************************************
-//**********************************************************************
-//**********************************************************************
-
+// cycle loop
 function cycle() {
   game.timing();
   game.wipe();
@@ -2057,15 +2017,6 @@ function cycle() {
     drawModalPlatforms();
     ctx.restore();
   }
-  //svg graphics , just here until I convert svg to png in inkscape
-  /*   document.getElementById('background').setAttribute('transform',
-                                                     'translate(' + (canvas.width/2) + ',' + (canvas.height/2) + ')'
-                                                     + 'scale(' + game.zoom + ')'
-                                                     + 'translate(' + (mech.transX - canvas.width/2) + ',' + (mech.transY - canvas.height/2) + ')'); */
-  // document.getElementById('foreground').setAttribute('transform',
-  //                                                    'translate(' + (canvas.width/2) + ',' + (canvas.height/2) + ')'
-  //                                                    + 'scale(' + game.zoom + ')'
-  //                                                    + 'translate(' + (mech.transX - canvas.width/2) + ',' + (mech.transY - canvas.height/2) + ')');
 
   requestAnimationFrame(cycle);
 }
