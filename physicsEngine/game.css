@@ -1,8 +1,14 @@
-canvas {
+#canvas {
   position: absolute;
   top: 0;
   left: 0;
   z-index: 0;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+#canvas.fade {
+  opacity: 1;
 }
 
 .introWrap {
@@ -22,4 +28,3 @@ canvas {
   height: 100vh;
   vertical-align: middle;
 }
-// SVG TRACE

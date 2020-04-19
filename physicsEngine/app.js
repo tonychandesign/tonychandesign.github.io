@@ -1,5 +1,13 @@
 "use strict";
 
+/** Credits
+ * MatterJS for the physics engine
+ * Michael Hadley for his great medium articple on how to make a game with Phaser 3 / MatterJS
+ * ** https://itnext.io/@michaelwesthadley
+ * Landgreen for his well made 2D platformer/shooter, n-gon.  Learned a lot about canvas rendering for character models/physics
+ * ** https://github.com/landgreen/n-gon
+ */
+
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 
@@ -44,7 +52,7 @@ document.body.addEventListener("keydown", function (e) {
 
 // game Object Prototype *********************************************
 //*********************************************************************
-const gameProto = function () {
+const gameSandbox = function () {
   this.testing = false; //testing mode: shows wireframe and some variables
   //time related vars and methods
   this.cycle = 0; //total cycles, 60 per second
@@ -59,7 +67,6 @@ const gameProto = function () {
     this.lastTimeStamp = engine.timing.timestamp; //track last engine timestamp
   };
   this.zoom = 0;
-  // this.zoom = 200;
   this.scaleZoom = function () {
     if (this.zoom != 1) {
       ctx.translate(canvas.width / 3, canvas.height / 3);
@@ -67,29 +74,26 @@ const gameProto = function () {
       ctx.translate(-canvas.width / 3, -canvas.height / 3);
     }
   };
-  this.keyZoom = function () {
-    if (keys[187]) {
-      //plus
-      this.zoom *= 1.01;
-    } else if (keys[189]) {
-      //minus
-      this.zoom *= 0.99;
-    } else if (keys[48]) {
-      this.zoom = 1;
-    }
-  };
+
+  // this.keyZoom = function () {
+  //   if (keys[187]) {
+  //     //plus
+  //     this.zoom *= 1.01;
+  //   } else if (keys[189]) {
+  //     //minus
+  //     this.zoom *= 0.99;
+  //   } else if (keys[48]) {
+  //     this.zoom = 1;
+  //   }
+  // };
   this.wipe = function () {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
   };
 };
-const game = new gameProto();
+const game = new gameSandbox();
 
-// player Object Prototype *********************************************
-//**********************************************************************
-//**********************************************************************
-//**********************************************************************
-
-const mechProto = function () {
+//************************************************** player object ***********************************************************
+const character = function () {
   this.width = 50;
   this.radius = 30;
   this.stroke = "#333";
@@ -109,7 +113,7 @@ const mechProto = function () {
   this.isHeadClear = true;
   this.spawnPos = {
     x: -1600,
-    y: 450,
+    y: 0,
   };
   this.spawnVel = {
     x: 0,
@@ -171,17 +175,18 @@ const mechProto = function () {
   this.punchYOffGoal = 20;
   this.legLength1 = 55;
   this.legLength2 = 45;
-  this.canvasX = canvas.width / 4;
+  this.canvasX = canvas.width / 2;
   this.canvasY = canvas.height;
   this.transX = this.canvasX - this.x;
   this.transY = this.canvasX - this.x;
   this.mouse = {
     x: canvas.width / 3,
-    y: canvas.height / 3,
+    y: canvas.height,
   };
+  // manually adjust values for eye tracking
   this.getMousePos = function (x, y) {
-    this.mouse.x = x;
-    this.mouse.y = y;
+    this.mouse.x = x + 40;
+    this.mouse.y = y - 155;
   };
 
   this.move = function () {
@@ -664,24 +669,12 @@ const mechProto = function () {
     ctx.fillText("Sy: " + this.Sy, 5, line);
   };
 };
-const mech = new mechProto();
+const mech = new character();
 
-//bullets**************************************************************
-//*********************************************************************
-//*********************************************************************
-//*********************************************************************
-
-const bullet = [];
-//mouse click events
-// window.onmousedown = function (e) {
-//   game.mouseDown = true;
-// };
-// window.onmouseup = function (e) {
-//   game.mouseDown = false;
-// };
-
-function fireBullet(type) {
-  const len = bullet.length;
+//************************************************** Punch ***********************************************************
+const punch = [];
+function firePunch(type) {
+  const len = punch.length;
   let dist; //radial distance mech head
   let dir;
   if (mech.flipLegs == -1) {
@@ -691,7 +684,7 @@ function fireBullet(type) {
     dist = 50;
     dir = 185.3;
   }
-  bullet[len] = Bodies.rectangle(mech.x + dist, mech.y - 20, 150, 50, {
+  punch[len] = Bodies.rectangle(mech.x + dist, mech.y - 20, 150, 50, {
     angle: dir,
     frictionAir: 0,
     restitution: 0.25,
@@ -699,47 +692,43 @@ function fireBullet(type) {
       group: -2, //can't collide with player (at first)
     },
   });
-  bullet[len].birthCycle = game.cycle;
-  Matter.Body.setVelocity(bullet[len], {
+  punch[len].birthCycle = game.cycle;
+  Matter.Body.setVelocity(punch[len], {
     x: mech.Vx,
     y: mech.Vy,
   });
-  //add force to fire bullets
+  //add force to fire punchs
   const vel = 0.005;
   const f = {
     x: ((vel * Math.cos(dir)) / game.delta) * 200,
     y: ((vel * Math.sin(dir)) / game.delta) * 200,
   };
-  bullet[len].force = f;
+  punch[len].force = f;
 
-  World.add(engine.world, bullet[len]); //add bullet to world
+  World.add(engine.world, punch[len]); //add punch to world
 }
 
-let fireBulletCD = 0;
-function bulletLoop() {
+let firePunchCD = 0;
+function punchLoop() {
   //fire check
-  if (game.mouseDown && fireBulletCD < game.cycle) {
-    fireBulletCD = game.cycle + 10;
-    fireBullet();
+  if (game.mouseDown && firePunchCD < game.cycle) {
+    firePunchCD = game.cycle + 10;
+    firePunch();
   }
-  //all bullet loop
-  let i = bullet.length;
+  //all punch loop
+  let i = punch.length;
   while (i--) {
     // despawn after 1 frames
-    if (bullet[i].birthCycle + 1 < game.cycle) {
-      Matter.World.remove(engine.world, bullet[i]);
-      bullet.splice(i, 1);
+    if (punch[i].birthCycle + 1 < game.cycle) {
+      Matter.World.remove(engine.world, punch[i]);
+      punch.splice(i, 1);
     }
   }
 }
 
-//matter.js ***********************************************************
-//*********************************************************************
-//*********************************************************************
-//*********************************************************************
-//*********************************************************************
+//************************************************** matter.js ***********************************************************
 
-// module aliases
+// init
 const Engine = Matter.Engine,
   World = Matter.World,
   Events = Matter.Events,
@@ -756,21 +745,18 @@ const Engine = Matter.Engine,
 const engine = Engine.create();
 //engine.enableSleeping = true;
 
-//define player *************************************************************
-//***************************************************************************
-//player as a series of vertices
-// const playerBody = Matter.Bodies.rectangle(-5, -10, 80, 100);
+// set player
 let vector = Vertices.fromPath("0 40  -15 85  20 130  30 130  65 85  50 40");
 const playerBody = Matter.Bodies.fromVertices(0, 0, vector);
-//this sensor check if the player is on the ground to enable jumping
+// checks if the player is on the ground to enable jumping
 var jumpSensor = Bodies.rectangle(0, 50, 40, 20, {
   sleepThreshold: 99999999999,
   isSensor: true,
 });
-//this part of the player lowers on crouch
+// for crouching
 vector = Vertices.fromPath("0 -66 8 -92  0 -37 50 -37 50 -66 42 -92");
 const playerHead = Matter.Bodies.fromVertices(0, -115, vector);
-//a part of player that senses if the player's head is empty and can return after crouching
+// crouching check
 const headSensor = Bodies.rectangle(0, -57, 48, 45, {
   sleepThreshold: 99999999999,
   isSensor: true,
@@ -2033,10 +2019,10 @@ function cycle() {
   game.timing();
   game.wipe();
   mech.keyMove();
-  game.keyZoom();
+  // game.keyZoom();
   if (game.testing) {
     mech.deathCheck();
-    bulletLoop();
+    punchLoop();
     ctx.save();
     game.scaleZoom();
     ctx.translate(mech.transX, mech.transY);
@@ -2050,7 +2036,7 @@ function cycle() {
   } else {
     mech.move();
     mech.deathCheck();
-    bulletLoop();
+    punchLoop();
     mech.look();
     game.wipe();
     ctx.save();
@@ -2085,17 +2071,20 @@ function cycle() {
 }
 
 function runPlatformer(el) {
-  el.onclick = null; //removes the onclick effect so the function only runs once
-  el.style.display = "none"; //hides the element that spawned the function
-  Engine.run(engine); //starts game engine
-  // console.clear(); //gets rid of annoying console message about vertecies not working
+  el.onclick = null;
+  el.style.display = "none";
+  Engine.run(engine);
+  document.getElementById("canvas").classList.toggle("fade");
+  console.clear(); // convex vertice warnings
   open();
-  requestAnimationFrame(cycle); //starts game loop
+  requestAnimationFrame(cycle); //starts game
 }
 
 function open() {
   const introCycles = 200;
-  game.zoom = game.cycle / introCycles / 1.5;
+
+  game.zoom = 0.8;
+
   if (game.cycle < introCycles) {
     requestAnimationFrame(open);
   } else {
