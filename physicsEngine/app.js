@@ -32,14 +32,14 @@ document.body.addEventListener("keydown", function (e) {
   //   event.preventDefault();
   // }
   keys[e.keyCode] = true;
-  // if (keys[84]) {
-  //   //t = testing mode
-  //   if (game.testing) {
-  //     game.testing = false;
-  //   } else {
-  //     game.testing = true;
-  //   }
-  // }
+  if (keys[84]) {
+    //t = testing mode
+    if (game.testing) {
+      game.testing = false;
+    } else {
+      game.testing = true;
+    }
+  }
 });
 
 // game Object Prototype *********************************************
@@ -197,7 +197,7 @@ const mechProto = function () {
     this.transY = this.canvasY - this.Sy;
     //angle player head towards mouse
     this.angle = Math.atan2(
-      this.mouse.y - this.canvasY / 1.55,
+      this.mouse.y - this.canvasY / 2.1,
       this.mouse.x - this.canvasX
     );
   };
