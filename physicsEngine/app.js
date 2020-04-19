@@ -13,7 +13,7 @@ const ctx = canvas.getContext("2d");
 
 function setupCanvas() {
   canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight; // might need to increase, will have to readjust mech this.canvas
+  canvas.height = window.innerHeight; // might need to increase, will have to readjust playerInstance this.canvas
   ctx.font = "15px Arial";
   ctx.lineJoin = "round";
   ctx.lineCap = "round";
@@ -26,7 +26,7 @@ window.onresize = function () {
 
 //mouse move input
 window.onmousemove = function (e) {
-  mech.getMousePos(e.clientX, e.clientY);
+  playerInstance.getMousePos(e.clientX, e.clientY);
 };
 //mouse click input
 
@@ -41,7 +41,6 @@ document.body.addEventListener("keydown", function (e) {
   // }
   keys[e.keyCode] = true;
   if (keys[84]) {
-    //t = testing mode
     if (game.testing) {
       game.testing = false;
     } else {
@@ -282,7 +281,7 @@ const character = function () {
           y: 0,
         });
         // player.force.y = this.Fy / game.delta; //jump force / delta so that force is the same on game slowdowns
-        player.force.y = -mech.Fy;
+        player.force.y = -playerInstance.Fy;
       }
       //horizontal move on ground
       if (keys[65]) {
@@ -393,13 +392,36 @@ const character = function () {
     ) {
       player.frictionAir = 0.01;
     }
+    if (keys[76]) {
+      Matter.Body.setPosition(player, this.spawnPos);
+      Matter.Body.setVelocity(player, this.spawnVel);
+      //reset nonstatic bodies
+
+      for (let i = 0; i < cons.length; i++) {
+        Matter.Composite.remove(engine.world, cons[i]);
+      }
+      for (let i = 0; i < body.length; i++) {
+        Matter.Composite.remove(engine.world, body[i]);
+      }
+      for (let i = 0; i < composites.length; i++) {
+        Matter.Composite.remove(engine.world, composites[i]);
+      }
+      for (let i = 0; i < compBodies.length; i++) {
+        Matter.Composite.remove(engine.world, compBodies[i]);
+      }
+      Matter.Composite.remove(engine.world, pyramid);
+      composites = [];
+      compBodies = [];
+      cons = [];
+      body = [];
+      pyramid = 0;
+      spawnBodies();
+    }
   };
   this.deathCheck = function () {
     if (this.y > 4000) {
-      // if player is 4000px deep reset to spawn Position and Velocity
       Matter.Body.setPosition(player, this.spawnPos);
       Matter.Body.setVelocity(player, this.spawnVel);
-      // this.Sy = mech.y  //moves camera to new position quickly
     }
   };
   this.drawUpperBody = function (stroke) {
@@ -669,33 +691,39 @@ const character = function () {
     ctx.fillText("Sy: " + this.Sy, 5, line);
   };
 };
-const mech = new character();
+const playerInstance = new character();
 
 //************************************************** Punch ***********************************************************
 const punch = [];
 function firePunch(type) {
   const len = punch.length;
-  let dist; //radial distance mech head
+  let dist; //radial distance playerInstance head
   let dir;
-  if (mech.flipLegs == -1) {
+  if (playerInstance.flipLegs == -1) {
     dist = -50;
     dir = 0;
   } else {
     dist = 50;
     dir = 185.3;
   }
-  punch[len] = Bodies.rectangle(mech.x + dist, mech.y - 20, 150, 50, {
-    angle: dir,
-    frictionAir: 0,
-    restitution: 0.25,
-    collisionFilter: {
-      group: -2, //can't collide with player (at first)
-    },
-  });
+  punch[len] = Bodies.rectangle(
+    playerInstance.x + dist,
+    playerInstance.y - 20,
+    150,
+    50,
+    {
+      angle: dir,
+      frictionAir: 0,
+      restitution: 0.25,
+      collisionFilter: {
+        group: -2, //can't collide with player (at first)
+      },
+    }
+  );
   punch[len].birthCycle = game.cycle;
   Matter.Body.setVelocity(punch[len], {
-    x: mech.Vx,
-    y: mech.Vy,
+    x: playerInstance.Vx,
+    y: playerInstance.Vy,
   });
   //add force to fire punchs
   const vel = 0.005;
@@ -776,10 +804,10 @@ const player = Body.create({
     group: -2,
   },
 });
-Matter.Body.setPosition(player, mech.spawnPos);
+Matter.Body.setPosition(player, playerInstance.spawnPos);
 
-Matter.Body.setVelocity(player, mech.spawnVel);
-Matter.Body.setMass(player, mech.mass);
+Matter.Body.setVelocity(player, playerInstance.spawnVel);
+Matter.Body.setMass(player, playerInstance.mass);
 World.add(engine.world, [player]);
 //holding body constraint
 const holdConstraint = Constraint.create({
@@ -794,146 +822,24 @@ const holdConstraint = Constraint.create({
 
 World.add(engine.world, holdConstraint);
 
-//spawn bodies  *************************************************************
-//***************************************************************************
-//arrays that hold all the elements that are drawn by the renderer
-const body = []; //non static bodies
-const map = []; //all static bodies
-const cons = []; //all constaints between a point and a body
-const consBB = []; //all constaints between two bodies
-const movingBodies = []; // all moving bodies
-const compBodies = []; // compound bodies
-const moveCombined = []; // compound bodies
+// matterjs bodies
+let body = []; //non static bodies
+let map = []; // static bodies
+let cons = []; // constaints between a point and a body
+let consBB = []; // constaints between two bodies
+let movingBodies = []; //  moving bodies
+let compBodies = []; // compound bodies
+let moveCombined = []; // moving combined bodies
 let bridge;
 let cata = [];
 let pyramid;
-let expBodies = []; // expanding bodies
-const modalPlatforms = []; // triggers modal when stepped on
+let expBodies = []; // expanding/scaling bodies
+let modalPlatforms = []; // triggers modal when stepped on
 let composites = [];
 
 spawn();
 
 function spawn() {
-  //spawns bodies and map elements
-  function BodyRect(x, y, width, height, properties) {
-    //speeds up adding reactangles to map array
-    body[body.length] = Bodies.rectangle(
-      x + width / 2,
-      y + height / 2,
-      width,
-      height,
-      properties
-    );
-  }
-  //premade property options
-  //Object.assign({}, propsHeavy, propsBouncy, propsNoRotation)      //will combine properties into a new object
-  const propsBouncy = {
-    friction: 0,
-    frictionAir: 0,
-    frictionStatic: 0,
-    restitution: 1,
-  };
-  const propsOverBouncy = {
-    friction: 0,
-    frictionAir: 0,
-    frictionStatic: 0,
-    restitution: 1.05,
-  };
-  const propsHeavy = {
-    density: 0.01, //default density 0.001
-  };
-  const propsNoRotation = {
-    inertia: Infinity, //prevents player rotation
-  };
-
-  function constraintPB(x, y, bodyIndex, stiffness) {
-    cons[cons.length] = Constraint.create({
-      pointA: {
-        x: x,
-        y: y,
-      },
-      bodyB: body[bodyIndex],
-      stiffness: stiffness,
-    });
-  }
-
-  function constraintBB(bodyIndexA, bodyIndexB, stiffness) {
-    consBB[consBB.length] = Constraint.create({
-      bodyA: body[bodyIndexA],
-      bodyB: body[bodyIndexB],
-      stiffness: stiffness,
-    });
-  }
-
-  // compound bodies
-  let startX = 1220;
-  let startY = 390; // +100 for first loop offset
-  for (let k = 0; k < 6; k++) {
-    for (let j = 0; j < 1; j++) {
-      let numCol = compBodies.length;
-      for (let i = 0; i + 1 < 2; i++) {
-        // x decreases- looping fro left to right position wise
-        // the U
-        if (k % 2 == 0) {
-          compBodies[i + numCol] = Body.create({
-            parts: [
-              Bodies.rectangle(startX, startY + 15, 40, 50 / 5, {
-                friction: 1,
-                velocity: 0,
-              }), // middle
-              Bodies.rectangle(startX - 15, startY, 50 / 5, 40, {
-                friction: 1,
-                velocity: 0,
-              }), // left
-              Bodies.rectangle(startX + 15, startY, 50 / 5, 40, {
-                friction: 1,
-                velocity: 0,
-              }),
-            ], // right
-          });
-          startY = startY - 60;
-        } else {
-          // the X
-          compBodies[i + numCol] = Body.create({
-            parts: [
-              Bodies.rectangle(startX, startY, 50, 50 / 5, {
-                friction: 1,
-                velocity: 0,
-              }),
-              Bodies.rectangle(startX, startY, 50 / 5, 50, {
-                friction: 1,
-                velocity: 0,
-              }),
-            ],
-          });
-          Body.rotate(compBodies[i + numCol], Math.PI / 3.7);
-          startY = startY - 40;
-        }
-      }
-    }
-
-    //260 and 275
-    startY = 390;
-    if (k % 2 == 0) {
-      startX = startX + 40;
-    } else {
-      startX = startX + 65;
-    }
-  }
-
-  for (let i = 0; i < compBodies.length; i++) {
-    compBodies[i].collisionFilter.group = 1;
-    World.add(engine.world, compBodies[i]);
-  }
-
-  for (let i = 0; i < 4; i++) {
-    //stack of hexagons
-    body[body.length] = Bodies.polygon(-815, -1700 - i * 27, 6, 27, {
-      angle: Math.PI / 2,
-      density: 0.035,
-    });
-  }
-
   for (let i = 0; i < 5; i++) {
     //stairs on birch cave
     for (let j = 0; j < 5 - i; j++) {
@@ -946,47 +852,7 @@ function spawn() {
       );
     }
   }
-  // stack of boxes at end of birch cave
-  composites[composites.length] = Composites.stack(
-    790,
-    780,
-    1,
-    8,
-    0,
-    0,
-    function (x, y) {
-      return Bodies.rectangle(x, y, 28, 28);
-    }
-  );
-  (function newtonsCradle() {
-    //build a newton's cradle
-    const x = -600;
-    const r = 20;
-    for (let i = 0; i < 5; i++) {
-      body[body.length] = Bodies.circle(
-        x + i * r * 2,
-        720,
-        r,
-        Object.assign({}, propsHeavy, propsOverBouncy, propsNoRotation)
-      );
-      constraintPB(x + i * r * 2, 550, body.length - 1, 0.9);
-    }
-    body[body.length - 1].force.x = 0.02 * body[body.length - 1].mass; //give the last one a kick
-  })();
 
-  // CATAPULT
-  // objects
-  for (let i = 0; i < 2; i++) {
-    for (let j = 0; j < 2; j++) {
-      body[body.length] = Bodies.rectangle(
-        -340 + j * 20,
-        -2260 - i * 50,
-        20,
-        20,
-        { density: 0.000000001, restitution: 0 }
-      );
-    }
-  }
   // actual catapult
   cata[cata.length] = Bodies.rectangle(-200, -2250, 320, 20, {
     collisionFilter: { group: 5 },
@@ -1004,12 +870,8 @@ function spawn() {
     collisionFilter: false,
     chamfer: { radius: 4 },
   });
-
   for (let i = 0; i < cata.length; i++) {
     World.add(engine.world, cata[i]);
-  }
-  for (let i = 0; i < composites.length; i++) {
-    World.add(engine.world, composites[i]);
   }
   World.add(engine.world, [
     Constraint.create({
@@ -1348,16 +1210,10 @@ function spawn() {
     }
   });
 
-  // pyramid of circles
-  pyramid = Composites.pyramid(1570, -4000, 7, 7, 0, 0, function (x, y) {
-    return Bodies.circle(x, y, 20, { density: 0.0000001, restitution: 0.8 });
-  });
-  World.add(engine.world, pyramid);
-
   // special combined body to get to ASGS- moves left right & rotates
   moveCombined[moveCombined.length] = Body.create({
     parts: [
-      Bodies.rectangle(1400, -480, 245, 50), //short
+      Bodies.rectangle(1400, -480, 250, 50), //short
       Bodies.rectangle(1300, -480, 50, 400),
     ], //long
     isStatic: true,
@@ -1472,6 +1328,156 @@ function spawn() {
     }),
   ]);
 
+  for (let i = 0; i < movingBodies.length; i++) {
+    movingBodies[i].collisionFilter.group = 1;
+    World.add(engine.world, movingBodies[i]);
+  }
+
+  for (let i = 0; i < map.length; i++) {
+    map[i].collisionFilter.group = -1;
+    Matter.Body.setStatic(map[i], true); //make static
+    World.add(engine.world, map[i]); //add to world
+  }
+
+  for (let i = 0; i < consBB.length; i++) {
+    World.add(engine.world, consBB[i]);
+  }
+  for (let i = 0; i < modalPlatforms.length; i++) {
+    modalPlatforms[i].collisionFilter.group = -1;
+    Matter.Body.setStatic(modalPlatforms[i], true); //make static
+    World.add(engine.world, modalPlatforms[i]);
+  }
+}
+
+// non static bodies
+spawnBodies();
+function spawnBodies() {
+  function constraintPB(x, y, bodyIndex, stiffness) {
+    cons[cons.length] = Constraint.create({
+      pointA: {
+        x: x,
+        y: y,
+      },
+      bodyB: body[bodyIndex],
+      stiffness: stiffness,
+    });
+  }
+
+  function constraintBB(bodyIndexA, bodyIndexB, stiffness) {
+    consBB[consBB.length] = Constraint.create({
+      bodyA: body[bodyIndexA],
+      bodyB: body[bodyIndexB],
+      stiffness: stiffness,
+    });
+  }
+  // stack of boxes at end of birch cave
+  composites[composites.length] = Composites.stack(
+    790,
+    780,
+    1,
+    8,
+    0,
+    0,
+    function (x, y) {
+      return Bodies.rectangle(x, y, 28, 28);
+    }
+  );
+
+  // compound bodies (UX bodies)
+  let startX = 1220;
+  let startY = 390; // +100 for first loop offset
+  for (let k = 0; k < 6; k++) {
+    for (let j = 0; j < 1; j++) {
+      let numCol = compBodies.length;
+      for (let i = 0; i + 1 < 2; i++) {
+        // x decreases- looping fro left to right position wise
+        // the U
+        if (k % 2 == 0) {
+          compBodies[i + numCol] = Body.create({
+            parts: [
+              Bodies.rectangle(startX, startY + 15, 40, 50 / 5, {
+                friction: 1,
+                velocity: 0,
+              }), // middle
+              Bodies.rectangle(startX - 15, startY, 50 / 5, 40, {
+                friction: 1,
+                velocity: 0,
+              }), // left
+              Bodies.rectangle(startX + 15, startY, 50 / 5, 40, {
+                friction: 1,
+                velocity: 0,
+              }),
+            ], // right
+          });
+          startY = startY - 60;
+        } else {
+          // the X
+          compBodies[i + numCol] = Body.create({
+            parts: [
+              Bodies.rectangle(startX, startY, 50, 50 / 5, {
+                friction: 1,
+                velocity: 0,
+              }),
+              Bodies.rectangle(startX, startY, 50 / 5, 50, {
+                friction: 1,
+                velocity: 0,
+              }),
+            ],
+          });
+          Body.rotate(compBodies[i + numCol], Math.PI / 3.7);
+          startY = startY - 40;
+        }
+      }
+    }
+
+    //260 and 275
+    startY = 390;
+    if (k % 2 == 0) {
+      startX = startX + 40;
+    } else {
+      startX = startX + 65;
+    }
+  }
+  const propsOverBouncy = {
+    friction: 0,
+    frictionAir: 0,
+    frictionStatic: 0,
+    restitution: 1.05,
+  };
+  const propsHeavy = {
+    density: 0.01, //default density 0.001
+  };
+  const propsNoRotation = {
+    inertia: Infinity, //prevents player rotation
+  };
+  (function newtonsCradle() {
+    //build a newton's cradle
+    const x = -600;
+    const r = 20;
+    for (let i = 0; i < 5; i++) {
+      body[body.length] = Bodies.circle(
+        x + i * r * 2,
+        720,
+        r,
+        Object.assign({}, propsHeavy, propsOverBouncy, propsNoRotation)
+      );
+      constraintPB(x + i * r * 2, 550, body.length - 1, 0.9);
+    }
+    body[body.length - 1].force.x = 0.02 * body[body.length - 1].mass; //give the last one a kick
+  })();
+
+  // stack of objects on catapult
+  for (let i = 0; i < 2; i++) {
+    for (let j = 0; j < 2; j++) {
+      body[body.length] = Bodies.rectangle(
+        -340 + j * 20,
+        -2260 - i * 50,
+        20,
+        20,
+        { density: 0.000000001, restitution: 0 }
+      );
+    }
+  }
   // right hanging platform
   body[body.length] = Bodies.rectangle(1700, -2260, 450, 40, {
     inertia: Infinity,
@@ -1484,10 +1490,8 @@ function spawn() {
   constraintPB(1800, -3000, body.length - 1, 0.0025);
   // circle to weigh down the platform
   body[body.length] = Bodies.circle(1675, -2900, 100, { density: 0.01 });
-  // body[body.length] = Bodies.rectangle(1700, -2900, 100, 100);
-  // body[body.length] = Bodies.rectangle(1700, -2900, 100, 100);
 
-  // left hanging platform in reverse C cave
+  // left hanging platform in intuit cave
   body[body.length] = Bodies.rectangle(-850, -1440, 450, 50, {
     inertia: Infinity,
     friction: 0.1,
@@ -1497,66 +1501,68 @@ function spawn() {
   });
   constraintPB(-700, -2200, body.length - 1, 0.005);
   constraintPB(-900, -2200, body.length - 1, 0.005);
-  // boxes to weigh down the platform
-
-  for (let i = 0; i < movingBodies.length; i++) {
-    movingBodies[i].collisionFilter.group = 1;
-    World.add(engine.world, movingBodies[i]);
+  // stack of hexagons
+  for (let i = 0; i < 4; i++) {
+    //stack of hexagons
+    body[body.length] = Bodies.polygon(-815, -1700 - i * 27, 6, 27, {
+      angle: Math.PI / 2,
+      density: 0.035,
+    });
   }
+  // pyramid of circles
+  pyramid = Composites.pyramid(1570, -4000, 7, 7, 0, 0, function (x, y) {
+    return Bodies.circle(x, y, 20, { density: 0.0000001, restitution: 0.8 });
+  });
 
-  // add objects to matterjs world
+  //init objects to matterjs world
+  for (let i = 0; i < cons.length; i++) {
+    World.add(engine.world, cons[i]);
+  }
   for (let i = 0; i < body.length; i++) {
     body[i].collisionFilter.group = 1;
     // console.log(body[i]);
     World.add(engine.world, body[i]); //add to world
   }
-  for (let i = 0; i < map.length; i++) {
-    map[i].collisionFilter.group = -1;
-    Matter.Body.setStatic(map[i], true); //make static
-    World.add(engine.world, map[i]); //add to world
+  for (let i = 0; i < compBodies.length; i++) {
+    compBodies[i].collisionFilter.group = 1;
+    World.add(engine.world, compBodies[i]);
   }
-  for (let i = 0; i < cons.length; i++) {
-    World.add(engine.world, cons[i]);
+  for (let i = 0; i < composites.length; i++) {
+    World.add(engine.world, composites[i]);
   }
-  for (let i = 0; i < consBB.length; i++) {
-    World.add(engine.world, consBB[i]);
-  }
-  for (let i = 0; i < modalPlatforms.length; i++) {
-    modalPlatforms[i].collisionFilter.group = -1;
-    Matter.Body.setStatic(modalPlatforms[i], true); //make static
-    World.add(engine.world, modalPlatforms[i]);
-  }
+  World.add(engine.world, pyramid);
 }
 
 // conditional checks
 function playerOnGroundCheck(event) {
   //runs on collisions events
   function enter() {
-    mech.numTouching++;
-    if (!mech.onGround) mech.enterLand();
+    playerInstance.numTouching++;
+    if (!playerInstance.onGround) playerInstance.enterLand();
   }
   const pairs = event.pairs;
   for (let i = 0, j = pairs.length; i != j; ++i) {
     let pair = pairs[i];
     if (pair.bodyA === jumpSensor) {
-      mech.onBody = pair.bodyB.id;
+      playerInstance.onBody = pair.bodyB.id;
       enter();
     } else if (pair.bodyB === jumpSensor) {
       enter();
-      mech.onBody = pair.bodyA.id;
+      playerInstance.onBody = pair.bodyA.id;
     }
   }
 }
 
 function playerTouchCaseStudy() {
   // check what bodys player is touching- if match- show modal for casestudy
-  // console.log(mech.onBody)
+  // console.log(playerInstance.onBody)
 }
 
 function playerOffGroundCheck(event) {
   //runs on collisions events
   function enter() {
-    if (mech.onGround && mech.numTouching === 0) mech.enterAir();
+    if (playerInstance.onGround && playerInstance.numTouching === 0)
+      playerInstance.enterAir();
   }
   const pairs = event.pairs;
   for (let i = 0, j = pairs.length; i != j; ++i) {
@@ -1571,21 +1577,21 @@ function playerOffGroundCheck(event) {
 
 function playerHeadCheck(event) {
   //runs on collisions events
-  if (mech.crouch) {
-    mech.isHeadClear = true;
+  if (playerInstance.crouch) {
+    playerInstance.isHeadClear = true;
     const pairs = event.pairs;
     for (let i = 0, j = pairs.length; i != j; ++i) {
       let pair = pairs[i];
       if (pair.bodyA === headSensor) {
-        mech.isHeadClear = false;
+        playerInstance.isHeadClear = false;
       } else if (pair.bodyB === headSensor) {
-        mech.isHeadClear = false;
+        playerInstance.isHeadClear = false;
       }
     }
   }
 }
 Events.on(engine, "beforeUpdate", function (event) {
-  mech.numTouching = 0;
+  playerInstance.numTouching = 0;
 });
 
 //determine if player is on the ground
@@ -1978,35 +1984,35 @@ function drawPlayerBodyTesting() {
 function cycle() {
   game.timing();
   game.wipe();
-  mech.keyMove();
+  playerInstance.keyMove();
   // game.keyZoom();
   if (game.testing) {
-    mech.deathCheck();
+    playerInstance.deathCheck();
     punchLoop();
     ctx.save();
     game.scaleZoom();
-    ctx.translate(mech.transX, mech.transY);
-    mech.draw();
+    ctx.translate(playerInstance.transX, playerInstance.transY);
+    playerInstance.draw();
     drawMatterWireFrames();
     drawPlayerBodyTesting();
     drawComBodies();
     drawMovingCombined();
     ctx.restore();
-    mech.info();
+    playerInstance.info();
   } else {
-    mech.move();
-    mech.deathCheck();
+    playerInstance.move();
+    playerInstance.deathCheck();
     punchLoop();
-    mech.look();
+    playerInstance.look();
     game.wipe();
     ctx.save();
     game.scaleZoom();
-    ctx.translate(mech.transX, mech.transY);
+    ctx.translate(playerInstance.transX, playerInstance.transY);
     designerDev();
     drawSVGs();
     drawCons();
     drawBody();
-    mech.draw();
+    playerInstance.draw();
     drawMap();
     drawMovingBodies();
     drawExpBodies();
