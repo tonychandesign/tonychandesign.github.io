@@ -28,3 +28,56 @@
   height: 100vh;
   vertical-align: middle;
 }
+
+.hideGameMobile {
+  display: block;
+}
+@media screen and (max-width: 414px) {
+  .hideGameMobile {
+    display: none;
+  }
+}
+
+.showMobile {
+  display: none;
+}
+@media screen and (max-width: 414px) {
+  .showMobile {
+    display: block;
+  }
+}
+.fadeInUp {
+  opacity: 0;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+}
+.animatedFadeInUp {
+  opacity: 0;
+}
+.animated {
+  animation-duration: 400ms;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 400ms;
+  -webkit-animation-fill-mode: both;
+}
+@keyframes fadeInUp {
+  from {
+    padding-top: 30px;
+  }
+
+  to {
+    padding-top: 0px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    padding-top: 30px;
+  }
+
+  to {
+    padding-top: 0px;
+    opacity: 1;
+  }
+}
