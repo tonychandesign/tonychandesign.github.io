@@ -32,7 +32,7 @@ $(function () {
     var currentScrollPos = window.pageYOffset;
     // hide nav in index landing page for the game
     if (
-      (window.location.href === "https://tonychan96.github.io/" ||
+      (window.location.href === "https://tonychandesign.github.io/" ||
         window.location.href.includes("index.html")) &&
       $(".navbar-nav .active ").attr("class").includes("navPortfolio") &&
       window.pageYOffset == 0
