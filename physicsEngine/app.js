@@ -35,6 +35,22 @@ const keys = [];
 document.body.addEventListener("keyup", function (e) {
   keys[e.keyCode] = false;
 });
+const modal = document.querySelector("[data-modal=form]");
+const modalBody = modal.querySelector(".modal-body");
+const closeBtn = modal.querySelector(".close");
+closeBtn.addEventListener("click", () => {
+  modal.classList.remove("is-open");
+  let tp1 = prev1;
+  let tp2 = prev2;
+  setTimeout(() => {
+    if (tp1 == prev1 && tp2 == prev2) {
+      prev1 = 0;
+      prev2 = 0;
+    }
+  }, 5000);
+});
+modal.addEventListener("click", () => modal.classList.remove("is-open")); // close modal when clicking outside
+modalBody.addEventListener("click", (e) => e.stopPropagation());
 document.body.addEventListener("keydown", function (e) {
   // if (e.keyCode) {
   //   event.preventDefault();
@@ -46,6 +62,10 @@ document.body.addEventListener("keydown", function (e) {
     } else {
       game.testing = true;
     }
+  }
+
+  if (keys[27]) {
+    modal.classList.remove("is-open");
   }
 });
 
@@ -1532,8 +1552,9 @@ function spawnBodies() {
   }
   World.add(engine.world, pyramid);
 }
-
-// conditional checks
+// stops modal from continiously popping up even if user has been on portfolio platforms
+let prev1;
+let prev2;
 function playerOnGroundCheck(event) {
   //runs on collisions events
   function enter() {
@@ -1545,17 +1566,86 @@ function playerOnGroundCheck(event) {
     let pair = pairs[i];
     if (pair.bodyA === jumpSensor) {
       playerInstance.onBody = pair.bodyB.id;
+
+      playerTouchCaseStudy(pair.bodyB.id);
       enter();
     } else if (pair.bodyB === jumpSensor) {
       enter();
       playerInstance.onBody = pair.bodyA.id;
     }
+    if (pair.bodyA === jumpSensor || pair.bodyB === jumpSensor) {
+    }
   }
 }
+/*************************************** Modal that opens when player steps on case studies  **************************************/
 
-function playerTouchCaseStudy() {
+function playerTouchCaseStudy(onBody) {
   // check what bodys player is touching- if match- show modal for casestudy
-  // console.log(playerInstance.onBody)
+  const modal = document.querySelector("[data-modal=form]");
+  const modalBody = modal.querySelector(".modal-body");
+  if (playerInstance.onBody !== prev1 && playerInstance.onBody !== prev2) {
+    prev2 = prev1;
+    prev1 = onBody;
+    const modalTitle = document.getElementById("modal-title");
+    const modalText = document.getElementById("modal-text");
+    const modalImg = document.getElementById("modal-img");
+    modalImg.style.boxShadow =
+      "0 0 4px 1px rgba(0, 0, 0, 0.01), 0 3px 24px rgba(0, 0, 0, 0.6);";
+    modalImg.style.webkitBoxShadow =
+      "0 0 4px 1px rgba(0, 0, 0, 0.01), 0 3px 24px rgba(0, 0, 0, 0.6);";
+    if (playerInstance.onBody === 54) {
+      // ucsd
+      modalTitle.innerHTML = "UCSD";
+      modalText.innerHTML =
+        "I graduated cum laude in 2018, with a focus in human computer interaction and computer science.  I spent my final quarter studying film directing and acting in the Czech Republic.";
+      modalImg.src = "./img/darkMod/ucsd.svg";
+      modalImg.style.boxShadow = "none";
+      modalImg.style.webkitBoxShadow = "none";
+      modal.classList.add("is-open");
+    } else if (playerInstance.onBody === 60) {
+      // workday
+      modalTitle.innerHTML = "Workday";
+      modalText.innerHTML =
+        "I was the design systems intern responsible for redesigning the global conclusion interface and creating mobile animations.";
+      modalImg.src = "./img/darkMod/dark_WORKDAY.png";
+      modal.classList.add("is-open");
+    } else if (playerInstance.onBody === 59) {
+      // birch
+      modalTitle.innerHTML = "Birch Aquarium";
+      modalText.innerHTML =
+        "I created an exhibit in the Birch Aquarium at the Scripps Institution of Oceanography to teach people about bubbles.";
+      modalImg.src = "./img/darkMod/dark_BIRCH.png";
+      modal.classList.add("is-open");
+    } else if (playerInstance.onBody === 58) {
+      // asgs
+      modalTitle.innerHTML = "A.S. Graphic Studio";
+      modalText.innerHTML =
+        "I collaborated with a visual designer to implement UCSD's 2018 Sun God Festival website.";
+      modalImg.src = "./img/darkMod/dark_SGF.png";
+      modal.classList.add("is-open");
+    } else if (playerInstance.onBody === 55) {
+      // intuit
+      modalTitle.innerHTML = "Intuit";
+      modalText.innerHTML =
+        "I build in-house tools to empower the design studio and work with business partners to turn future facing ideas into high fidelity prototypes to influence business direction.";
+      modalImg.src = "./img/darkMod/dark_INTUIT.png";
+      modal.classList.add("is-open");
+    } else if (playerInstance.onBody === 56) {
+      // d4sd
+      modalTitle.innerHTML = "D4SD Hackathon";
+      modalText.innerHTML =
+        "I competed in a city wide design competition to improve transportation in San Diego.";
+      modalImg.src = "./img/darkMod/dark_D4SD.png";
+      modal.classList.add("is-open");
+    } else if (playerInstance.onBody === 57) {
+      // eqr
+      modalTitle.innerHTML = "Event Queuer";
+      modalText.innerHTML =
+        "A web app that lets users create & scan events encoded into a QR code, which can be synced onto their Google Calendar.";
+      modalImg.src = "./img/darkMod/dark_EQR.png";
+      modal.classList.add("is-open");
+    }
+  }
 }
 
 function playerOffGroundCheck(event) {
@@ -1598,12 +1688,10 @@ Events.on(engine, "beforeUpdate", function (event) {
 Events.on(engine, "collisionStart", function (event) {
   playerOnGroundCheck(event);
   playerHeadCheck(event);
-  playerTouchCaseStudy();
 });
 Events.on(engine, "collisionActive", function (event) {
   playerOnGroundCheck(event);
   playerHeadCheck(event);
-  playerTouchCaseStudy();
 });
 Events.on(engine, "collisionEnd", function (event) {
   playerOffGroundCheck(event);

@@ -1,781 +1,1114 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="keywords"
+      content="UX design product interaction visual mostion creative animations computer science engineering design systems"
+    />
+    <meta name="author" content="Tony Chan" />
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="keywords"
-    content="UX design product interaction visual mostion creative animations computer science engineering design systems" />
-  <meta name="author" content="Tony Chan" />
+    <title>Tony Chan: D4SD pt 2</title>
 
-  <title>Tony Chan: D4SD pt 2</title>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Custom fonts for this template -->
+    <link
+      href="vendor/font-awesome/css/font-awesome.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Button Stylesheet -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <!-- Custom styles for this template -->
+    <link href="css/outer.css" rel="stylesheet" />
+    <link href="css/d4sd.css" rel="stylesheet" />
+    <link href="css/sideNav.css" rel="stylesheet" />
+  </head>
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-  <!-- Custom fonts for this template -->
-  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet"
-    type="text/css" />
-  <!-- Button Stylesheet -->
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-  <!-- Custom styles for this template -->
-  <link href="css/outer.css" rel="stylesheet" />
-  <link href="css/d4sd.css" rel="stylesheet" />
-  <link href="css/sideNav.css" rel="stylesheet" />
-</head>
-
-<body data-spy="scroll" data-target="#scrollspy" data-offset="100">
-  <!-- fade in script -->
-  <script>
-    document.body.className += " fade-out";
-  </script>
-  <!-- dynamic resizing  -->
-  <div class="container-fluid">
-    <!--  ///////////////////  NAVBAR  ///////////////////  -->
-    <nav id="navbar" class="navbar-expand fixed-top whiteNav">
-      <div class="row row-centerer">
-        <div class="col-lg-4" style="margin: auto;">
-          <h1 class="tonychan">
-            <a href="index.html" class="tony-middle-out">Tony Chan</a>
-          </h1>
-        </div>
-        <div class="col-lg-2"></div>
-        <div class="col-lg-6">
-          <div id="menu">
-            <ul class="navbar-nav navbar-brand right-to-center nav-elem-centerer">
-              <li class="sliding-middle-out nav-item active" style="margin-left: 30px;">
-                <a class="nav-link" href="index.html?page=0">Portfolio</a>
-              </li>
-              <li class="sliding-middle-out nav-item navpadding">
-                <a class="nav-link" href="index.html?page=1">Resume</a>
-              </li>
-              <li class="sliding-middle-out nav-item" style="margin-right: 30px; margin-left: 0px;">
-                <a class="nav-link" href="index.html?page=2">About Me</a>
-              </li>
-            </ul>
+  <body data-spy="scroll" data-target="#scrollspy" data-offset="100">
+    <!-- fade in script -->
+    <script>
+      document.body.className += " fade-out";
+    </script>
+    <!-- dynamic resizing  -->
+    <div class="container-fluid">
+      <!--  ///////////////////  NAVBAR  ///////////////////  -->
+      <nav id="navbar" class="navbar-expand fixed-top whiteNav">
+        <div class="row row-centerer">
+          <div class="col-lg-4" style="margin: auto;">
+            <h1 class="tonychan">
+              <a href="index.html" class="tony-middle-out">Tony Chan</a>
+            </h1>
+          </div>
+          <div class="col-lg-2"></div>
+          <div class="col-lg-6">
+            <div id="menu">
+              <ul
+                class="navbar-nav navbar-brand right-to-center nav-elem-centerer"
+              >
+                <li
+                  class="sliding-middle-out nav-item active"
+                  style="margin-left: 30px;"
+                >
+                  <a class="nav-link" href="index.html?page=0">Portfolio</a>
+                </li>
+                <li class="sliding-middle-out nav-item navpadding">
+                  <a class="nav-link" href="index.html?page=1">Resume</a>
+                </li>
+                <li
+                  class="sliding-middle-out nav-item"
+                  style="margin-right: 30px; margin-left: 0px;"
+                >
+                  <a class="nav-link" href="index.html?page=2">About Me</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
-    <div class="white_bg"></div>
-    <!-- - - - - ///////////////////  CONTENT  /////////////////// - - - - -->
-    <!-- - - - - - - - - - - - - - -PROJECT TITLE - - - - - - - - - - - - - - -->
-    <div class="respCoverPadding"></div>
-    <div class="row" style="margin-right: -16px; margin-left: -16px">
-      <!-- vertically alligns words and pictures -->
-      <div class="vertical-align row-centerer">
-        <img class="img-fluid " src="img/proj5.2/miacover.png" style="margin: auto;" />
-      </div>
-    </div>
-
-    <nav id="scrollspy">
-      <ul id="bar-fixed">
-        <div class="sidebar">
-          <li>
-            <a class="bar nav-link" data-easing="easeInOutQuart" href="#reflection"
-              style="padding-top: 0px">Reflection</a>
-          </li>
-          <li>
-            <a class="bar nav-link" data-easing="easeInOutQuart" href="#broader">Going Broader</a>
-          </li>
-          <li>
-            <a class="bar nav-link" data-easing="easeInOutQuart" href="#usatesting">Usability Testing</a>
-          </li>
-          <li>
-            <a class="bar nav-link" data-easing="easeInOutQuart" href="#companal">Competitive Analysis</a>
-          </li>
-          <li>
-            <a class="bar nav-link" data-easing="easeInOutQuart" href="#testing2">More Testing</a>
-          </li>
-          <li>
-            <a class="bar nav-link" data-easing="easeInOutQuart" href="#learnings"
-              style="padding-bottom: 0px">Learnings</a>
-          </li>
+      </nav>
+      <div class="white_bg"></div>
+      <!-- - - - - ///////////////////  CONTENT  /////////////////// - - - - -->
+      <!-- - - - - - - - - - - - - - -PROJECT TITLE - - - - - - - - - - - - - - -->
+      <div class="respCoverPadding"></div>
+      <div class="row" style="margin-right: -16px; margin-left: -16px;">
+        <!-- vertically alligns words and pictures -->
+        <div class="vertical-align row-centerer">
+          <img
+            class="img-fluid"
+            src="img/proj5.2/miacover.png"
+            style="margin: auto;"
+          />
         </div>
-      </ul>
-    </nav>
-
-    <div class="row" style="justify-content: center; padding-top: 11em; ">
-      <div class="text_small">
-        <p>
-          <span class="intro">Timeline:</span>
-          <span class="lead myRoleText">Nov - Dec 2017</span>
-        </p>
-
-        <p>
-          <span class="intro">Project Type:</span>
-          <span class="lead myRoleText">School Project</span>
-        </p>
-
-        <p>
-          <span class="intro">My Role:</span>
-          <span class="lead myRoleText">Product Designer</span>
-        </p>
-
-        <p>
-          <span class="intro">Tools:</span>
-          <span class="lead myRoleText">Adobe XD, Illustrator, inVision</span>
-        </p>
-
-        <p>
-          <span class="intro">Skills:</span>
-          <span class="lead myRoleText">User Research, Interaction Design
-          </span>
-        </p>
       </div>
-    </div>
 
-    <div class="row theprocessWrap" id="reflection">
-      <div class="text_small theprocess START">Reflection</div>
-    </div>
-
-    <div class="row" style="justify-content: center;">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">
-          Main critiques after the D4SD competition:
-        </p>
-        <ul class="fa-ul">
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>feasibility
-          </li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8;font-size: 10px; padding-top: 7px"></i>marketing cost
-          </li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>funding
-          </li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>user demographic
-            representation
-          </li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>consumer motivation
-          </li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>enterprise motivation
-          </li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8;font-size: 10px; padding-top: 7px"></i>accuracy & consistency of
-            data
-          </li>
+      <nav id="scrollspy">
+        <ul id="bar-fixed">
+          <div class="sidebar">
+            <li>
+              <a
+                class="bar nav-link"
+                data-easing="easeInOutQuart"
+                href="#reflection"
+                style="padding-top: 0px;"
+                >Reflection</a
+              >
+            </li>
+            <li>
+              <a
+                class="bar nav-link"
+                data-easing="easeInOutQuart"
+                href="#broader"
+                >Going Broader</a
+              >
+            </li>
+            <li>
+              <a
+                class="bar nav-link"
+                data-easing="easeInOutQuart"
+                href="#usatesting"
+                >Usability Testing</a
+              >
+            </li>
+            <li>
+              <a
+                class="bar nav-link"
+                data-easing="easeInOutQuart"
+                href="#companal"
+                >Competitive Analysis</a
+              >
+            </li>
+            <li>
+              <a
+                class="bar nav-link"
+                data-easing="easeInOutQuart"
+                href="#testing2"
+                >More Testing</a
+              >
+            </li>
+            <li>
+              <a
+                class="bar nav-link"
+                data-easing="easeInOutQuart"
+                href="#learnings"
+                style="padding-bottom: 0px;"
+                >Learnings</a
+              >
+            </li>
+          </div>
         </ul>
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">
-          Our team highlighted a problem that would occur with the
-          introduction of AVs; however, we were unable to clearly provide a
-          solution that encompasses our problem statement: “How can we better
-          facilitate communication between human drivers and AVs.”
-        </p>
-      </div>
-    </div>
+      </nav>
 
-    <div class="row" style="justify-content: center; margin-top: 3.5em;">
-      <div class="img1Row">
-        <!-- vertically alligns words and pictures -->
-        <p class="lead imgDescription" style="margin-bottom:.5em;">
-          Feedback from D4SD Judges
-        </p>
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid img_shadow" src="img/proj5.2/judgefeedback.png" alt=" " />
-        <div class="row" style="margin-top:15px;"></div>
-      </div>
-    </div>
-
-    <div class="row" style="justify-content: center;margin-top: 3.5em; ">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">
-          We went back to the need finding phase and researched more on the
-          current breakdowns. Our hearts were still attached to MEA and we
-          didn’t want to completely abandon the topic of AV accidents yet. We
-          found that California’s DMV had recorded all AV related accidents
-          within the past 3 years. After reading through all the reports, we
-          found an interesting fact:
-          <strong>a majority of accidents are either rear end or left-turn
-            related.</strong>
-          <br />
-          <br />
-          After looking through numerous articles and studies we realized that
-          rear ends belonged to a much bigger and more dangerous story:
-          distracted driving. Every year, over 391,000 people are injured due
-          to distracted driving. In 2015 alone, there were 3,477 accidents
-          from distracted driving. <br /><br />When looking into distracted
-          driving, we found that
-          <strong>both novel and experienced drivers perform the same behavior
-            while driving </strong>(such as texting, talking on the phone, and eating).
-        </p>
-        <p class="lead quote">
-          Distraction is a key factor in 68% of teen crashes.
-        </p>
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">
-          In a study done by Geoffrey Underwood (2014), after conducting an
-          eye tracking experiment on both novel and experienced drivers, he
-          discovered that new drivers have not developed the necessary mental
-          models to deal with such habits while driving. As a result, teen
-          crash rates are a lot higher than any other group.
-        </p>
-      </div>
-    </div>
-
-    <div class="row" style="justify-content: center; margin-top: 3.5em;">
-      <div class="vid1RowLong">
-        <!-- vertically alligns words and pictures -->
-        <p class="lead imgDescription" style="margin-bottom:.5em;">
-          Statistics
-        </p>
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid img_shadow" src="img/proj5.2/stats.png" alt=" " />
-        <div class="row" style="margin-top:15px;"></div>
-      </div>
-    </div>
-
-    <div class="row" style="justify-content: center; margin-top: 2.5em;">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">
-          We were able to assign the causes of most accidents into 3 main
-          reasons:
-          <strong>Distracted driving, bad habits, cognitive overload.</strong>
-          With this in mind, we decided on a new problem statement:
-        </p>
-      </div>
-    </div>
-    <div class="row" style="justify-content: center;margin-top: 2.5em;">
-      <div class="text_small">
-        <p class="lead quote">
-          “How can we encourage active driving depending on specific driver
-          habits?”
-        </p>
-      </div>
-    </div>
-
-    <div class="row theprocessWrap" id="broader">
-      <div class="text_small theprocess">Going Broader</div>
-    </div>
-
-    <div class="row" style="justify-content: center;">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">
-          We began generating new ideas that focused on utilizing different
-          senses and modalities to encourage active driving. We created excel
-          sheets to analyze the pros and cons of each idea.
-        </p>
-      </div>
-    </div>
-
-    <div class="row" style="justify-content: center; margin-top: 3.5em;">
-      <div class="img1Row">
-        <!-- vertically alligns words and pictures -->
-        <p class="lead imgDescription" style="margin-bottom:.5em;">
-          Ideation: Phase 2
-        </p>
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid img_shadow" src="img/proj5.2/ideation.png" alt=" " />
-        <div class="row" style="margin-top:15px;"></div>
-      </div>
-    </div>
-
-    <div class="row theprocessWrap" id="usatesting">
-      <div class="text_small theprocess">Usability Testing</div>
-    </div>
-
-    <div class="row">
-      <div class="text_small">
-        <p class="lead" style="text-align: justify">
-          <strong>Idea 1:</strong> The Onion Light. Cars decelerate at
-          different rates depending on the different pressures applied on the
-          brakes; however, conventional tail lights only communicate that the
-          car is slowing down. We believed that communicating the deceleration
-          rate may be helpful since so many accidents are rear-end related.
-          <br /><br />The prototype was a graduated brake light with different
-          colors (ranging from yellow to red) to communicate different
-          appropriate braking intensities.
-        </p>
-      </div>
-    </div>
-
-    <div class="row" style="margin-top: 2.5em;">
-      <div class="text_small">
-        <p class="lead imgDescription" style="margin-bottom:-.5em;">
-          Gradient Light Prototype
-        </p>
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid img_shadow" src="img/proj5.2/onionlight.gif" alt=" " />
-        <div class="row" style="margin-top:15px;"></div>
-      </div>
-    </div>
-
-    <div class="row" style="justify-content: center;margin-top: 2.5em;">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">
-          We wanted to quickly see if people would understand the meaning
-          behind the new light. We showed the animation to people around the
-          mall and asked
-          <strong>“what do you think the lights communicate?”</strong> and
-          <strong>“what purpose does it serve?”</strong> To our surprise, most
-          of them responded that they were not sure if it had to do with
-          braking, signaling, or something else. Some also related it to
-          emergency lights which is very far from what we were trying to
-          communicate. Around the same time, we also found out that modifying
-          brake lights and graduated brake lights are actually illegal in most
-          of North America.
-        </p>
-      </div>
-    </div>
-
-    <div class="row longImage" style="margin-top: 7.5vw;">
-      <section class="col-md-1 order-md-1 " style="padding:0px 0;"></section>
-      <section class="col-md-5 order-md-2 vertical-align " style="padding:0px 0;">
-        <div style="margin-bottom: 60px;">
-          <div class="row-centerer dynamicdescription animation-element slide-right">
-            <p class="lead" style="text-align: justify; margin-bottom: 0px;">
-              <strong>Idea 2:</strong> The Vibrating Seat. We noticed that
-              drivers had to stay aware of so many different elements on the
-              road but could can only look forward. Utilizing tactile cues, we
-              imaged cars installed with sensors around it, communicating
-              information on the surroundings by vibrating different parts of
-              the driver’s seat. For example, a butt vibration would prompt
-              you to slow down if you are not aware that you are tailgating
-              someone. Different vibrations on the back would represent
-              different objects around the car.
-            </p>
-          </div>
-        </div>
-      </section>
-      <section class="col-md-5 order-md-3 titlehoriz" style="padding:0px 0;">
-        <div class="modal-dialogtwo dynamicthumbnail" style="margin-top: 0px;">
-          <p class="lead imgDescription" style="margin-top:-2.5em;margin-bottom:.1em; text-align: center;">
-            Vibrating Seat Prototype
+      <div class="row" style="justify-content: center; padding-top: 11em;">
+        <div class="text_small">
+          <p>
+            <span class="intro">Timeline:</span>
+            <span class="lead myRoleText">Nov - Dec 2017</span>
           </p>
-          <div class="titlehoriz">
-            <img class="img-fluid img_shadow" src="img/proj5.2/vibratingseat.jpeg" alt=" " />
-          </div>
-        </div>
-      </section>
-      <section class="col-md-1 order-md-4 " style="padding:0px 0;"></section>
-    </div>
 
-    <div class="row" style="justify-content: center;margin-top: 2.5em;">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">
-          We tested the prototype on 15 users to see if if people could
-          actually distinguish between the different vibrations quickly
-          enough, remember what they mean, and carry out the appropriate
-          response. Across the board, users agreed that it was too difficult
-          to distinguish between the vibrations on different parts of the back
-          while driving; however, they could distinguish the vibrations
-          accurately while parked though. <br /><br />This may have meant that
-          it took a lot of effort to keep track of different senses while
-          driving. Many users also said that they found the vibrations
-          distracting
-        </p>
-      </div>
-    </div>
-
-    <div class="row theprocessWrap" id="companal">
-      <div class="text_small theprocess">Competitive Analysis</div>
-    </div>
-
-    <div class="row" style="justify-content: center;">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">
-          After testing visual and tactile senses, we decided to try audio.
-          Inspired by Iron Man’s Jarvis, we came up with an auditory prototype
-          that not only alerts drivers of potential obstacles, but also acts
-          as a teaching assistant to new drivers to enforce good driving
-          habits. <br /><br />
-          We discovered that there were
-          <strong>two kinds of listening: passive and active.</strong> The
-          main example of active is when you are engaging in a conversation
-          with someone. Active listening causes a decrease in activation in
-          the parietal lobe — the brain region responsible for motor control.
-          Research has shown that engaging in active listening causes
-          driver’s’ reaction times to increase by 13.84%.<br /><br />Passive
-          listening includes listening to music or GPS commands and only
-          increases your reaction time by 1.94%. This meant that having an
-          audio assistant in your car could provide more contextual
-          information about the road while minimizing distractions.
-        </p>
-      </div>
-    </div>
-
-    <div class="row" style="justify-content: center; margin-top: 3.5em;">
-      <div class="vid1RowLong">
-        <!-- vertically alligns words and pictures -->
-        <p class="lead imgDescription" style="margin-bottom:.5em;">
-          Audio Statistics
-        </p>
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid img_shadow" src="img/proj5.2/audiostats.png" alt=" " style="padding: 20px;" />
-        <div class="row" style="margin-top:15px;"></div>
-      </div>
-    </div>
-
-    <!-- what data do we track? -->
-    <div class="row longImage" style="margin-top: 7.5vw;">
-      <section class="col-md-1 order-md-1 " style="padding:0px 0;"></section>
-      <section class="col-md-5 order-md-2 vertical-align " style="padding:0px 0;">
-        <div style="margin-bottom: 60px;">
-          <div class="row-centerer dynamicdescription animation-element slide-right">
-            <p class="lead" style="text-align: justify; margin-bottom: 0px;">
-              With our research and feedback from the judges, we took MEA to a
-              new direction: MIA (My Instructional Assistant).
-              <strong>MIA helps build good driving habits with an AI teaching
-                assistant that reduces visual cognitive load by providing real
-                time audio feedback on the surroundings.
-              </strong>
-              <br /><br />Instead of creating safer roads by enhancing AI, we
-              wanted to focus on the human aspect. The solution will utilize
-              car sensor technology:
-              <strong>Ultrasonic, radar, lidar, and eye-tracking </strong> to
-              sense blind spots, obstacles, proximity to other cars, and
-              drivers' gaze.
-            </p>
-          </div>
-        </div>
-      </section>
-      <section class="col-md-5 order-md-3 titlehoriz" style="padding:0px 0;">
-        <div class="modal-dialogtwo dynamicthumbnail" style="margin-top: 0px;">
-          <p class="lead imgDescription" style="margin-top:-2.5em;margin-bottom:.1em; text-align: center;">
-            Pivoting Ideas
+          <p>
+            <span class="intro">Project Type:</span>
+            <span class="lead myRoleText">School Project</span>
           </p>
-          <div class="titlehoriz">
-            <img class="img-fluid img_shadow" src="img/proj5.2/meatomia.png" style="padding: 10px;" />
-          </div>
-        </div>
-      </section>
-      <section class="col-md-1 order-md-4 " style="padding:0px 0;"></section>
-    </div>
 
-    <div class="row" style="justify-content: center; margin-top: 3.5em;">
-      <div class="vid1RowLong">
-        <!-- vertically alligns words and pictures -->
-        <p class="lead imgDescription" style="margin-bottom:.5em;">
-          Stakeholders
-        </p>
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid img_shadow" src="img/proj5.2/stakeholders.png" alt=" " style="padding: 20px;" />
-        <div class="row" style="margin-top:15px;"></div>
-      </div>
-    </div>
-
-    <div class="row" style="justify-content: center;margin-top: 2.5em;">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">
-          Our main competitor was Microsoft’s Cortana: a digital assistant
-          that may be implemented into BMW and Nissan cars. The assistant is
-          voice controlled, but could provide suggestions to the driver
-          without having to prompt it, such as detecting traffic and
-          suggesting an alternative route. Cortana is being marketed as a
-          virtual assistant that increases productivity by connecting drivers
-          to their apps via an auditory system. It doesn't try to help the
-          driver improve their behaviors. <br /><br />
-          I've include some more relevant competitors below. The main point is
-          that these competitors either focus on monitoring driving behaviors
-          or limiting phone usage.
-          <strong>None of them try to actively teach good driving habits.</strong>
-        </p>
-      </div>
-    </div>
-
-    <div class="row" style="justify-content: center; margin-top: 3.5em;">
-      <div class="vid1RowLong">
-        <!-- vertically alligns words and pictures -->
-        <p class="lead imgDescription" style="margin-bottom:.5em;">
-          Competitive Analysis
-        </p>
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid img_shadow" src="img/proj5.2/companal.png" alt=" " style="padding: 20px;" />
-        <div class="row" style="margin-top:15px;"></div>
-      </div>
-    </div>
-
-    <div class="row theprocessWrap" id="testing2">
-      <div class="text_small theprocess">More Testing</div>
-    </div>
-
-    <div class="row">
-      <div class="text_small">
-        <p class="lead" style="text-align: justify; margin-bottom: 0px;">
-          For the prototype, we used the Voice Memo app on the iPhone to
-          record
-          <strong>two types of phrases: Real Time Alerts and Safety
-            Reminders.</strong>
-          The entire feature set of MIA can be found
-          <a href="https://docs.google.com/spreadsheets/d/1leFx5Sz2zWaiwcYZT_k9y5H2tAi3FbnZUkEZfqpreFE/edit?usp=sharing"
-            target="_blank" style="margin-bottom:0em;color:#94BEE4;">here</a>. <br /><br />
-          We ran usability tests by sitting in the back of the users' car and
-          triggering such phrases when the activation conditions were met. The
-          testing script can be found
-          <a href="img/proj5.2/Tonychan_MIA_testscript.pdf" download="Tony_Testing_Plan.pdf " target="_blank"
-            style="color:#94BEE4; ">here</a>.
-        </p>
-      </div>
-    </div>
-
-    <div class="row" style="margin-top: 2.5em;">
-      <div class="text_small">
-        <p class="lead imgDescription" style="margin-bottom:-.5em;">
-          Example Phrases
-        </p>
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid img_shadow" src="img/proj5.2/phrases.png" alt=" " />
-        <div class="row" style="margin-top:15px;"></div>
-      </div>
-    </div>
-
-    <div class="row longImage" style="margin-top: 7.5vw;">
-      <section class="col-md-1 order-md-1 " style="padding:0px 0;"></section>
-      <section class="col-md-5 order-md-3 vertical-align " style="padding:0px 0;">
-        <div style="margin-bottom: 60px;">
-          <div class="row-centerer dynamicdescription animation-element slide-right">
-            <p class="lead" style="text-align: justify">
-              The main feedback we got was that users wanted the ability to
-              <strong>customize the frequency of the phrases.</strong> Some
-              users found certain phrases more usefull than others. Users also
-              thought it'd be useful to have an
-              <strong>accompanying app which visualizes their driving
-                trends.</strong>
-            </p>
-          </div>
-        </div>
-      </section>
-      <section class="col-md-5 order-md-2 titlehoriz" style="padding:0px 0;">
-        <div class="modal-dialogtwo dynamicthumbnail" style="margin-top: 0px;">
-          <p class="lead imgDescription" style="margin-top:-2.5em;margin-bottom:.1em; text-align: center;">
-            Usability Tests
+          <p>
+            <span class="intro">My Role:</span>
+            <span class="lead myRoleText">Product Designer</span>
           </p>
-          <div class="titlehoriz">
-            <img class="img-fluid img_shadow" src="img/proj5.2/usatesting.png" alt=" " />
-          </div>
+
+          <p>
+            <span class="intro">Tools:</span>
+            <span class="lead myRoleText">Adobe XD, Illustrator, inVision</span>
+          </p>
+
+          <p>
+            <span class="intro">Skills:</span>
+            <span class="lead myRoleText"
+              >User Research, Interaction Design
+            </span>
+          </p>
         </div>
-      </section>
-      <section class="col-md-1 order-md-4 " style="padding:0px 0;"></section>
-    </div>
-
-    <div class="row" style="justify-content: center; margin-top: 3.5em;">
-      <div class="vid1RowLong">
-        <!-- vertically alligns words and pictures -->
-        <p class="lead imgDescription" style="margin-bottom:.5em;">
-          Feedback
-        </p>
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid img_shadow" src="img/proj5.2/feedback.png" alt=" " style="padding: 20px;" />
-        <div class="row" style="margin-top:15px;"></div>
       </div>
-    </div>
 
-    <div class="row" style="justify-content: center;margin-top: 2.5em;">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">
-          To increase customizability, the
-          <strong>AI system should adapt to different driving behaviors.</strong>
-          Users wanted the option to turn on/off specific phrases. We agreed
-          that they should have the ability to do this for the real time
-          alerts; however, letting them enable/disable safety reminders would
-          result in letting users abuse certain violations, which wouldn't
-          improve bad driving habits. <br /><br />
-          We decided to let users modify the frequency of safety reminders,
-          but the AI will automatically scale the frequency of the phrases
-          back up depending on the severity and frequency of the violation.
-          The AI will also scale down the frequency of phrases if the driver
-          shows improvement.
-        </p>
+      <div class="row theprocessWrap" id="reflection">
+        <div class="text_small theprocess START">Reflection</div>
       </div>
-    </div>
 
-    <div class="row" style="justify-content: center; margin-top: 2.5em; margin-bottom: 3.5em">
-      <div class="vid1RowLong">
-        <!-- vertically alligns words and pictures -->
-        <p class="lead imgDescription" style="margin-bottom:.5em;">
-          Feedback on Customizability
-        </p>
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid img_shadow" src="img/proj5.2/feedbackai.png" alt=" " style="padding: 20px;" />
-        <div class="row" style="margin-top:15px;"></div>
+      <div class="row" style="justify-content: center;">
+        <div class="text_small">
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            Main critiques after the D4SD competition:
+          </p>
+          <ul class="fa-ul">
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i
+                class="fa-li fa fa-circle"
+                style="
+                  color: #b08449;
+                  line-height: 1.8;
+                  font-size: 10px;
+                  padding-top: 7px;
+                "
+              ></i
+              >feasibility
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i
+                class="fa-li fa fa-circle"
+                style="
+                  color: #b08449;
+                  line-height: 1.8;
+                  font-size: 10px;
+                  padding-top: 7px;
+                "
+              ></i
+              >marketing cost
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i
+                class="fa-li fa fa-circle"
+                style="
+                  color: #b08449;
+                  line-height: 1.8;
+                  font-size: 10px;
+                  padding-top: 7px;
+                "
+              ></i
+              >funding
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i
+                class="fa-li fa fa-circle"
+                style="
+                  color: #b08449;
+                  line-height: 1.8;
+                  font-size: 10px;
+                  padding-top: 7px;
+                "
+              ></i
+              >user demographic representation
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i
+                class="fa-li fa fa-circle"
+                style="
+                  color: #b08449;
+                  line-height: 1.8;
+                  font-size: 10px;
+                  padding-top: 7px;
+                "
+              ></i
+              >consumer motivation
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i
+                class="fa-li fa fa-circle"
+                style="
+                  color: #b08449;
+                  line-height: 1.8;
+                  font-size: 10px;
+                  padding-top: 7px;
+                "
+              ></i
+              >enterprise motivation
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i
+                class="fa-li fa fa-circle"
+                style="
+                  color: #b08449;
+                  line-height: 1.8;
+                  font-size: 10px;
+                  padding-top: 7px;
+                "
+              ></i
+              >accuracy & consistency of data
+            </li>
+          </ul>
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            Our team highlighted a problem that would occur with the
+            introduction of AVs; however, we were unable to clearly provide a
+            solution that encompasses our problem statement: “How can we better
+            facilitate communication between human drivers and AVs.”
+          </p>
+        </div>
       </div>
-    </div>
 
-    <div class="row">
-      <div class="text_small">
-        <p class="lead" style="text-align: justify; margin-bottom: 0px;">
-          The users also saw potential for improvement in the syntax of some
-          of the phrases. They preferred shortened phrases with more
-          contextual information and instructions on what action they should
-          be performing.
-        </p>
+      <div class="row" style="justify-content: center; margin-top: 3.5em;">
+        <div class="img1Row">
+          <!-- vertically alligns words and pictures -->
+          <p class="lead imgDescription" style="margin-bottom: 0.5em;">
+            Feedback from D4SD Judges
+          </p>
+          <div class="row" style="margin-top: 15px;"></div>
+          <img
+            class="img-fluid img_shadow"
+            src="img/proj5.2/judgefeedback.png"
+            alt=" "
+          />
+          <div class="row" style="margin-top: 15px;"></div>
+        </div>
       </div>
-    </div>
 
-    <div class="row" style="margin-top: 2.5em;">
-      <div class="text_small">
-        <p class="lead imgDescription" style="margin-bottom:-.5em;">
-          Phrase Iteration
-        </p>
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid img_shadow" src="img/proj5.2/phrasechanges.png" alt=" " />
-        <div class="row" style="margin-top:15px;"></div>
+      <div class="row" style="justify-content: center; margin-top: 3.5em;">
+        <div class="text_small">
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            We went back to the need finding phase and researched more on the
+            current breakdowns. Our hearts were still attached to MEA and we
+            didn’t want to completely abandon the topic of AV accidents yet. We
+            found that California’s DMV had recorded all AV related accidents
+            within the past 3 years. After reading through all the reports, we
+            found an interesting fact:
+            <strong
+              >a majority of accidents are either rear end or left-turn
+              related.</strong
+            >
+            <br />
+            <br />
+            After looking through numerous articles and studies we realized that
+            rear ends belonged to a much bigger and more dangerous story:
+            distracted driving. Every year, over 391,000 people are injured due
+            to distracted driving. In 2015 alone, there were 3,477 accidents
+            from distracted driving. <br /><br />When looking into distracted
+            driving, we found that
+            <strong
+              >both novel and experienced drivers perform the same behavior
+              while driving </strong
+            >(such as texting, talking on the phone, and eating).
+          </p>
+          <p class="lead quote">
+            Distraction is a key factor in 68% of teen crashes.
+          </p>
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            In a study done by Geoffrey Underwood (2014), after conducting an
+            eye tracking experiment on both novel and experienced drivers, he
+            discovered that new drivers have not developed the necessary mental
+            models to deal with such habits while driving. As a result, teen
+            crash rates are a lot higher than any other group.
+          </p>
+        </div>
       </div>
-    </div>
 
-    <div class="row theprocessWrap" id="learnings">
-      <div class="text_small theprocess">Learnings</div>
-    </div>
-
-    <div class="row" style="justify-content: center;">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">
-          Since the users suggested an accompanying app for data
-          visualization, I designed one with Figma. Unfortunately, I lost the
-          paper prototype that was used for usability testing. <br /><br />The
-          main feedback was that users wanted the ability to see the location
-          of where they performed a specific violation. The paper prototype
-          also had multiple statistics tabs, which users found confusing. They
-          suggested to have one statistics tab which contained navigable sub
-          tabs. Check out the interactive prototype below.
-        </p>
+      <div class="row" style="justify-content: center; margin-top: 3.5em;">
+        <div class="vid1RowLong">
+          <!-- vertically alligns words and pictures -->
+          <p class="lead imgDescription" style="margin-bottom: 0.5em;">
+            Statistics
+          </p>
+          <div class="row" style="margin-top: 15px;"></div>
+          <img
+            class="img-fluid img_shadow"
+            src="img/proj5.2/stats.png"
+            alt=" "
+          />
+          <div class="row" style="margin-top: 15px;"></div>
+        </div>
       </div>
-    </div>
 
-    <div class="row spacer" style="margin-bottom: -150px;"></div>
+      <div class="row" style="justify-content: center; margin-top: 2.5em;">
+        <div class="text_small">
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            We were able to assign the causes of most accidents into 3 main
+            reasons:
+            <strong>Distracted driving, bad habits, cognitive overload.</strong>
+            With this in mind, we decided on a new problem statement:
+          </p>
+        </div>
+      </div>
+      <div class="row" style="justify-content: center; margin-top: 2.5em;">
+        <div class="text_small">
+          <p class="lead quote">
+            “How can we encourage active driving depending on specific driver
+            habits?”
+          </p>
+        </div>
+      </div>
 
-    <!-- Final Prototype -->
-    <div class="vertical-align titlehoriz">
+      <div class="row theprocessWrap" id="broader">
+        <div class="text_small theprocess">Going Broader</div>
+      </div>
+
+      <div class="row" style="justify-content: center;">
+        <div class="text_small">
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            We began generating new ideas that focused on utilizing different
+            senses and modalities to encourage active driving. We created excel
+            sheets to analyze the pros and cons of each idea.
+          </p>
+        </div>
+      </div>
+
+      <div class="row" style="justify-content: center; margin-top: 3.5em;">
+        <div class="img1Row">
+          <!-- vertically alligns words and pictures -->
+          <p class="lead imgDescription" style="margin-bottom: 0.5em;">
+            Ideation: Phase 2
+          </p>
+          <div class="row" style="margin-top: 15px;"></div>
+          <img
+            class="img-fluid img_shadow"
+            src="img/proj5.2/ideation.png"
+            alt=" "
+          />
+          <div class="row" style="margin-top: 15px;"></div>
+        </div>
+      </div>
+
+      <div class="row theprocessWrap" id="usatesting">
+        <div class="text_small theprocess">Usability Testing</div>
+      </div>
+
       <div class="row">
-        <!-- <div class="wrapper"> -->
-        <iframe style="transform: scale(0.65)" src="https://invis.io/BQQ2DDPFRM9" width="503" height="1000"
-          frameborder="yes" scrolling="no"></iframe>
-        <!-- <iframe width="476" height="900" src="https://invis.io/FRE6X5FEG" frameborder="0"></iframe> -->
-        <!-- </div> -->
-      </div>
-    </div>
-    <div class="row spacer " style="margin-bottom: -200px;"></div>
-
-    <div class="row" style="justify-content: center">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">
-          I had a blast in this hackathon but if I could do one thing
-          differently, I'd spend more time in the ideation phase and be more
-          open to radical ideas. Even less feasible solutions could have good
-          outcomes if you look at it from a different angle and pivot
-          correctly.
-          <br /><br />Although we went through many iterations to reach the
-          final idea, we converged onto one solution too quickly and I feel
-          that we could’ve came up with more creative ideas. We were lost
-          several times throughout the class, but trusted the design process
-          and eventually came up with a solution that we are proud of.
-        </p>
-      </div>
-    </div>
-
-    <div class="row" style="text-align: center; padding-bottom: 40px;">
-      <div class="text_medium theprocess END">My Other Work</div>
-    </div>
-
-    <div class="row">
-      <!-- EQR -->
-      <section class="col-md-2 order-md-1" style="padding:0px 0;"></section>
-      <section class="col-md-4 order-md-2 titlehoriz" style="padding:0px 0;">
-        <div class="box btn-group modal-dialogtwo dynamicthumbnail" style="margin-top: 0px;">
-          <a href="project1.html">
-            <div class="titlehoriz">
-              <img class="img-fluid" src="img/idx_eqr.png" alt=" ">
-            </div>
-          </a>
+        <div class="text_small">
+          <p class="lead" style="text-align: justify;">
+            <strong>Idea 1:</strong> The Onion Light. Cars decelerate at
+            different rates depending on the different pressures applied on the
+            brakes; however, conventional tail lights only communicate that the
+            car is slowing down. We believed that communicating the deceleration
+            rate may be helpful since so many accidents are rear-end related.
+            <br /><br />The prototype was a graduated brake light with different
+            colors (ranging from yellow to red) to communicate different
+            appropriate braking intensities.
+          </p>
         </div>
-      </section>
-      <section class="col-md-4 order-md-3 vertical-align" style="padding:0px 0;">
-        <div class="fullWidthWork">
-          <div class="row-centerer ">
-            <h3 class="section-heading" style="font-weight: 400"><a class="sliding-middle-out"
-                href="project1.html">EventQR</a></h3>
-            <p class="lead "> A web app that lets users create & scan events encrypted into a QR code, which can be
-              synced onto their Google Calendar.</p>
+      </div>
+
+      <div class="row" style="margin-top: 2.5em;">
+        <div class="text_small">
+          <p class="lead imgDescription" style="margin-bottom: -0.5em;">
+            Gradient Light Prototype
+          </p>
+          <div class="row" style="margin-top: 15px;"></div>
+          <img
+            class="img-fluid img_shadow"
+            src="img/proj5.2/onionlight.gif"
+            alt=" "
+          />
+          <div class="row" style="margin-top: 15px;"></div>
+        </div>
+      </div>
+
+      <div class="row" style="justify-content: center; margin-top: 2.5em;">
+        <div class="text_small">
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            We wanted to quickly see if people would understand the meaning
+            behind the new light. We showed the animation to people around the
+            mall and asked
+            <strong>“what do you think the lights communicate?”</strong> and
+            <strong>“what purpose does it serve?”</strong> To our surprise, most
+            of them responded that they were not sure if it had to do with
+            braking, signaling, or something else. Some also related it to
+            emergency lights which is very far from what we were trying to
+            communicate. Around the same time, we also found out that modifying
+            brake lights and graduated brake lights are actually illegal in most
+            of North America.
+          </p>
+        </div>
+      </div>
+
+      <div class="row longImage" style="margin-top: 7.5vw;">
+        <section class="col-md-1 order-md-1" style="padding: 0px 0;"></section>
+        <section
+          class="col-md-5 order-md-2 vertical-align"
+          style="padding: 0px 0;"
+        >
+          <div style="margin-bottom: 60px;">
+            <div
+              class="row-centerer dynamicdescription animation-element slide-right"
+            >
+              <p class="lead" style="text-align: justify; margin-bottom: 0px;">
+                <strong>Idea 2:</strong> The Vibrating Seat. We noticed that
+                drivers had to stay aware of so many different elements on the
+                road but could can only look forward. Utilizing tactile cues, we
+                imaged cars installed with sensors around it, communicating
+                information on the surroundings by vibrating different parts of
+                the driver’s seat. For example, a butt vibration would prompt
+                you to slow down if you are not aware that you are tailgating
+                someone. Different vibrations on the back would represent
+                different objects around the car.
+              </p>
+            </div>
           </div>
-        </div>
-      </section>
-      <section class="col-md-2 order-md-4" style="padding:0px 0;"></section>
-    </div>
-
-    <div class="row" style="margin-top: 7vw;">
-      <!-- Birch -->
-      <section class="col-md-2 order-md-1 " style="padding:0px 0;"></section>
-      <section class="col-md-4 order-md-3 titlehoriz" style="padding:0px 0;">
-        <div class="box btn-group modal-dialogtwo dynamicthumbnail" style="margin-top: 0px;">
-          <a href="workday_pre.html">
-            <div class="titlehoriz">
-              <img class="img-fluid" src="img/idx_wrkdy.png" alt=" " />
-            </div>
-          </a>
-        </div>
-      </section>
-      <section class="col-md-4 order-md-2 vertical-align" style="padding:0px 0;">
-        <div class="fullWidthWork">
-          <div class="row-centerer ">
-            <h3 class="section-heading" style="font-weight: 400">
-              <a class="sliding-middle-out" href="workday_pre.html">Workday</a>
-            </h3>
-            <p class="lead ">
-              Redesigning the system wide conclusion interface and mobile
-              animations.
+        </section>
+        <section class="col-md-5 order-md-3 titlehoriz" style="padding: 0px 0;">
+          <div
+            class="modal-dialogtwo dynamicthumbnail"
+            style="margin-top: 0px;"
+          >
+            <p
+              class="lead imgDescription"
+              style="
+                margin-top: -2.5em;
+                margin-bottom: 0.1em;
+                text-align: center;
+              "
+            >
+              Vibrating Seat Prototype
             </p>
+            <div class="titlehoriz">
+              <img
+                class="img-fluid img_shadow"
+                src="img/proj5.2/vibratingseat.jpeg"
+                alt=" "
+              />
+            </div>
           </div>
-        </div>
-      </section>
-      <section class="col-md-2 order-md-4 " style="padding:0px 0;"></section>
-    </div>
+        </section>
+        <section class="col-md-1 order-md-4" style="padding: 0px 0;"></section>
+      </div>
 
-    <div class="row letstalkpad"></div>
-
-    <!-- CONTACT/EMAIL ME -->
-    <div class="vertical-align titlehoriz">
-      <h2 style=" font-weight: 400; ">
-        <a href="mailto:tonychan96@gmail.com " class="tony-middle-out">
-          Lets talk
-        </a>
-      </h2>
-    </div>
-    <div class="row letstalkpad"></div>
-
-    <!--  ///////////////////  FOOTER/CONTACT  ///////////////////  -->
-    <aside class="banner ">
-      <div class="row ">
-        <div class="col-lg-12 text-center ">
-          <a href="mailto:tonychan96@gmail.com " target="_blank " class="btn-social btn-lg "><i
-              class="fa fa-envelope "></i></a>
-          <a href="https://www.linkedin.com/in/tonychan96/" target="_blank " class="btn-social btn-lg "><i
-              class="fa fa-linkedin "></i></a>
+      <div class="row" style="justify-content: center; margin-top: 2.5em;">
+        <div class="text_small">
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            We tested the prototype on 15 users to see if if people could
+            actually distinguish between the different vibrations quickly
+            enough, remember what they mean, and carry out the appropriate
+            response. Across the board, users agreed that it was too difficult
+            to distinguish between the vibrations on different parts of the back
+            while driving; however, they could distinguish the vibrations
+            accurately while parked though. <br /><br />This may have meant that
+            it took a lot of effort to keep track of different senses while
+            driving. Many users also said that they found the vibrations
+            distracting
+          </p>
         </div>
       </div>
-    </aside>
-    <!-- container fluid wrapper end div -->
-  </div>
 
-  <!-- JavaScript -->
-  <!-- different jquery for scrollspy  -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="js/sideNav.js "></script>
-  <script src="js/smooth-scroll.min.js"></script>
-  <script src="js/navSlideIn.js"></script>
-  <script>
-    // Instantiate Scrolls
-    var scroll = new SmoothScroll('a[href*="#"]', {
-      speed: 200
-    });
+      <div class="row theprocessWrap" id="companal">
+        <div class="text_small theprocess">Competitive Analysis</div>
+      </div>
 
-    if (document.querySelector("[data-easing]")) {
-      var easeOutQuart = new SmoothScroll('[data-easing="easeOutQuart"]', {
-        easing: "easeOutQuart"
+      <div class="row" style="justify-content: center;">
+        <div class="text_small">
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            After testing visual and tactile senses, we decided to try audio.
+            Inspired by Iron Man’s Jarvis, we came up with an auditory prototype
+            that not only alerts drivers of potential obstacles, but also acts
+            as a teaching assistant to new drivers to enforce good driving
+            habits. <br /><br />
+            We discovered that there were
+            <strong>two kinds of listening: passive and active.</strong> The
+            main example of active is when you are engaging in a conversation
+            with someone. Active listening causes a decrease in activation in
+            the parietal lobe — the brain region responsible for motor control.
+            Research has shown that engaging in active listening causes
+            driver’s’ reaction times to increase by 13.84%.<br /><br />Passive
+            listening includes listening to music or GPS commands and only
+            increases your reaction time by 1.94%. This meant that having an
+            audio assistant in your car could provide more contextual
+            information about the road while minimizing distractions.
+          </p>
+        </div>
+      </div>
+
+      <div class="row" style="justify-content: center; margin-top: 3.5em;">
+        <div class="vid1RowLong">
+          <!-- vertically alligns words and pictures -->
+          <p class="lead imgDescription" style="margin-bottom: 0.5em;">
+            Audio Statistics
+          </p>
+          <div class="row" style="margin-top: 15px;"></div>
+          <img
+            class="img-fluid img_shadow"
+            src="img/proj5.2/audiostats.png"
+            alt=" "
+            style="padding: 20px;"
+          />
+          <div class="row" style="margin-top: 15px;"></div>
+        </div>
+      </div>
+
+      <!-- what data do we track? -->
+      <div class="row longImage" style="margin-top: 7.5vw;">
+        <section class="col-md-1 order-md-1" style="padding: 0px 0;"></section>
+        <section
+          class="col-md-5 order-md-2 vertical-align"
+          style="padding: 0px 0;"
+        >
+          <div style="margin-bottom: 60px;">
+            <div
+              class="row-centerer dynamicdescription animation-element slide-right"
+            >
+              <p class="lead" style="text-align: justify; margin-bottom: 0px;">
+                With our research and feedback from the judges, we took MEA to a
+                new direction: MIA (My Instructional Assistant).
+                <strong
+                  >MIA helps build good driving habits with an AI teaching
+                  assistant that reduces visual cognitive load by providing real
+                  time audio feedback on the surroundings.
+                </strong>
+                <br /><br />Instead of creating safer roads by enhancing AI, we
+                wanted to focus on the human aspect. The solution will utilize
+                car sensor technology:
+                <strong>Ultrasonic, radar, lidar, and eye-tracking </strong> to
+                sense blind spots, obstacles, proximity to other cars, and
+                drivers' gaze.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="col-md-5 order-md-3 titlehoriz" style="padding: 0px 0;">
+          <div
+            class="modal-dialogtwo dynamicthumbnail"
+            style="margin-top: 0px;"
+          >
+            <p
+              class="lead imgDescription"
+              style="
+                margin-top: -2.5em;
+                margin-bottom: 0.1em;
+                text-align: center;
+              "
+            >
+              Pivoting Ideas
+            </p>
+            <div class="titlehoriz">
+              <img
+                class="img-fluid img_shadow"
+                src="img/proj5.2/meatomia.png"
+                style="padding: 10px;"
+              />
+            </div>
+          </div>
+        </section>
+        <section class="col-md-1 order-md-4" style="padding: 0px 0;"></section>
+      </div>
+
+      <div class="row" style="justify-content: center; margin-top: 3.5em;">
+        <div class="vid1RowLong">
+          <!-- vertically alligns words and pictures -->
+          <p class="lead imgDescription" style="margin-bottom: 0.5em;">
+            Stakeholders
+          </p>
+          <div class="row" style="margin-top: 15px;"></div>
+          <img
+            class="img-fluid img_shadow"
+            src="img/proj5.2/stakeholders.png"
+            alt=" "
+            style="padding: 20px;"
+          />
+          <div class="row" style="margin-top: 15px;"></div>
+        </div>
+      </div>
+
+      <div class="row" style="justify-content: center; margin-top: 2.5em;">
+        <div class="text_small">
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            Our main competitor was Microsoft’s Cortana: a digital assistant
+            that may be implemented into BMW and Nissan cars. The assistant is
+            voice controlled, but could provide suggestions to the driver
+            without having to prompt it, such as detecting traffic and
+            suggesting an alternative route. Cortana is being marketed as a
+            virtual assistant that increases productivity by connecting drivers
+            to their apps via an auditory system. It doesn't try to help the
+            driver improve their behaviors. <br /><br />
+            I've include some more relevant competitors below. The main point is
+            that these competitors either focus on monitoring driving behaviors
+            or limiting phone usage.
+            <strong
+              >None of them try to actively teach good driving habits.</strong
+            >
+          </p>
+        </div>
+      </div>
+
+      <div class="row" style="justify-content: center; margin-top: 3.5em;">
+        <div class="vid1RowLong">
+          <!-- vertically alligns words and pictures -->
+          <p class="lead imgDescription" style="margin-bottom: 0.5em;">
+            Competitive Analysis
+          </p>
+          <div class="row" style="margin-top: 15px;"></div>
+          <img
+            class="img-fluid img_shadow"
+            src="img/proj5.2/companal.png"
+            alt=" "
+            style="padding: 20px;"
+          />
+          <div class="row" style="margin-top: 15px;"></div>
+        </div>
+      </div>
+
+      <div class="row theprocessWrap" id="testing2">
+        <div class="text_small theprocess">More Testing</div>
+      </div>
+
+      <div class="row">
+        <div class="text_small">
+          <p class="lead" style="text-align: justify; margin-bottom: 0px;">
+            For the prototype, we used the Voice Memo app on the iPhone to
+            record
+            <strong
+              >two types of phrases: Real Time Alerts and Safety
+              Reminders.</strong
+            >
+            The entire feature set of MIA can be found
+            <a
+              href="https://docs.google.com/spreadsheets/d/1leFx5Sz2zWaiwcYZT_k9y5H2tAi3FbnZUkEZfqpreFE/edit?usp=sharing"
+              target="_blank"
+              style="margin-bottom: 0em; color: #94bee4;"
+              >here</a
+            >. <br /><br />
+            We ran usability tests by sitting in the back of the users' car and
+            triggering such phrases when the activation conditions were met. The
+            testing script can be found
+            <a
+              href="img/proj5.2/Tonychan_MIA_testscript.pdf"
+              download="Tony_Testing_Plan.pdf "
+              target="_blank"
+              style="color: #94bee4;"
+              >here</a
+            >.
+          </p>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top: 2.5em;">
+        <div class="text_small">
+          <p class="lead imgDescription" style="margin-bottom: -0.5em;">
+            Example Phrases
+          </p>
+          <div class="row" style="margin-top: 15px;"></div>
+          <img
+            class="img-fluid img_shadow"
+            src="img/proj5.2/phrases.png"
+            alt=" "
+          />
+          <div class="row" style="margin-top: 15px;"></div>
+        </div>
+      </div>
+
+      <div class="row longImage" style="margin-top: 7.5vw;">
+        <section class="col-md-1 order-md-1" style="padding: 0px 0;"></section>
+        <section
+          class="col-md-5 order-md-3 vertical-align"
+          style="padding: 0px 0;"
+        >
+          <div style="margin-bottom: 60px;">
+            <div
+              class="row-centerer dynamicdescription animation-element slide-right"
+            >
+              <p class="lead" style="text-align: justify;">
+                The main feedback we got was that users wanted the ability to
+                <strong>customize the frequency of the phrases.</strong> Some
+                users found certain phrases more usefull than others. Users also
+                thought it'd be useful to have an
+                <strong
+                  >accompanying app which visualizes their driving
+                  trends.</strong
+                >
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="col-md-5 order-md-2 titlehoriz" style="padding: 0px 0;">
+          <div
+            class="modal-dialogtwo dynamicthumbnail"
+            style="margin-top: 0px;"
+          >
+            <p
+              class="lead imgDescription"
+              style="
+                margin-top: -2.5em;
+                margin-bottom: 0.1em;
+                text-align: center;
+              "
+            >
+              Usability Tests
+            </p>
+            <div class="titlehoriz">
+              <img
+                class="img-fluid img_shadow"
+                src="img/proj5.2/usatesting.png"
+                alt=" "
+              />
+            </div>
+          </div>
+        </section>
+        <section class="col-md-1 order-md-4" style="padding: 0px 0;"></section>
+      </div>
+
+      <div class="row" style="justify-content: center; margin-top: 3.5em;">
+        <div class="vid1RowLong">
+          <!-- vertically alligns words and pictures -->
+          <p class="lead imgDescription" style="margin-bottom: 0.5em;">
+            Feedback
+          </p>
+          <div class="row" style="margin-top: 15px;"></div>
+          <img
+            class="img-fluid img_shadow"
+            src="img/proj5.2/feedback.png"
+            alt=" "
+            style="padding: 20px;"
+          />
+          <div class="row" style="margin-top: 15px;"></div>
+        </div>
+      </div>
+
+      <div class="row" style="justify-content: center; margin-top: 2.5em;">
+        <div class="text_small">
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            To increase customizability, the
+            <strong
+              >AI system should adapt to different driving behaviors.</strong
+            >
+            Users wanted the option to turn on/off specific phrases. We agreed
+            that they should have the ability to do this for the real time
+            alerts; however, letting them enable/disable safety reminders would
+            result in letting users abuse certain violations, which wouldn't
+            improve bad driving habits. <br /><br />
+            We decided to let users modify the frequency of safety reminders,
+            but the AI will automatically scale the frequency of the phrases
+            back up depending on the severity and frequency of the violation.
+            The AI will also scale down the frequency of phrases if the driver
+            shows improvement.
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="row"
+        style="
+          justify-content: center;
+          margin-top: 2.5em;
+          margin-bottom: 3.5em;
+        "
+      >
+        <div class="vid1RowLong">
+          <!-- vertically alligns words and pictures -->
+          <p class="lead imgDescription" style="margin-bottom: 0.5em;">
+            Feedback on Customizability
+          </p>
+          <div class="row" style="margin-top: 15px;"></div>
+          <img
+            class="img-fluid img_shadow"
+            src="img/proj5.2/feedbackai.png"
+            alt=" "
+            style="padding: 20px;"
+          />
+          <div class="row" style="margin-top: 15px;"></div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="text_small">
+          <p class="lead" style="text-align: justify; margin-bottom: 0px;">
+            The users also saw potential for improvement in the syntax of some
+            of the phrases. They preferred shortened phrases with more
+            contextual information and instructions on what action they should
+            be performing.
+          </p>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top: 2.5em;">
+        <div class="text_small">
+          <p class="lead imgDescription" style="margin-bottom: -0.5em;">
+            Phrase Iteration
+          </p>
+          <div class="row" style="margin-top: 15px;"></div>
+          <img
+            class="img-fluid img_shadow"
+            src="img/proj5.2/phrasechanges.png"
+            alt=" "
+          />
+          <div class="row" style="margin-top: 15px;"></div>
+        </div>
+      </div>
+
+      <div class="row theprocessWrap" id="learnings">
+        <div class="text_small theprocess">Learnings</div>
+      </div>
+
+      <div class="row" style="justify-content: center;">
+        <div class="text_small">
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            Since the users suggested an accompanying app for data
+            visualization, I designed one with Figma. Unfortunately, I lost the
+            paper prototype that was used for usability testing. <br /><br />The
+            main feedback was that users wanted the ability to see the location
+            of where they performed a specific violation. The paper prototype
+            also had multiple statistics tabs, which users found confusing. They
+            suggested to have one statistics tab which contained navigable sub
+            tabs. Check out the interactive prototype below.
+          </p>
+        </div>
+      </div>
+
+      <div class="row spacer" style="margin-bottom: -150px;"></div>
+
+      <!-- Final Prototype -->
+      <div class="vertical-align titlehoriz">
+        <div class="row">
+          <!-- <div class="wrapper"> -->
+          <iframe
+            style="transform: scale(0.65);"
+            src="https://invis.io/BQQ2DDPFRM9"
+            width="503"
+            height="1000"
+            frameborder="yes"
+            scrolling="no"
+          ></iframe>
+          <!-- <iframe width="476" height="900" src="https://invis.io/FRE6X5FEG" frameborder="0"></iframe> -->
+          <!-- </div> -->
+        </div>
+      </div>
+      <div class="row spacer" style="margin-bottom: -200px;"></div>
+
+      <div class="row" style="justify-content: center;">
+        <div class="text_small">
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            I had a blast in this hackathon but if I could do one thing
+            differently, I'd spend more time in the ideation phase and be more
+            open to radical ideas. Even less feasible solutions could have good
+            outcomes if you look at it from a different angle and pivot
+            correctly.
+            <br /><br />Although we went through many iterations to reach the
+            final idea, we converged onto one solution too quickly and I feel
+            that we could’ve came up with more creative ideas. We were lost
+            several times throughout the class, but trusted the design process
+            and eventually came up with a solution that we are proud of.
+          </p>
+        </div>
+      </div>
+
+      <div class="row" style="text-align: center; padding-bottom: 40px;">
+        <div class="text_medium theprocess END">My Other Work</div>
+      </div>
+
+      <div class="row">
+        <!-- EQR -->
+        <section class="col-md-2 order-md-1" style="padding: 0px 0;"></section>
+        <section class="col-md-4 order-md-2 titlehoriz" style="padding: 0px 0;">
+          <div
+            class="box btn-group modal-dialogtwo dynamicthumbnail"
+            style="margin-top: 0px;"
+          >
+            <a href="project1.html">
+              <div class="titlehoriz">
+                <img class="img-fluid" src="img/idx_eqr.png" alt=" " />
+              </div>
+            </a>
+          </div>
+        </section>
+        <section
+          class="col-md-4 order-md-3 vertical-align"
+          style="padding: 0px 0;"
+        >
+          <div class="fullWidthWork">
+            <div class="row-centerer">
+              <h3 class="section-heading" style="font-weight: 400;">
+                <a class="sliding-middle-out" href="project1.html">EventQR</a>
+              </h3>
+              <p class="lead">
+                A web app that lets users create & scan events encrypted into a
+                QR code, which can be synced onto their Google Calendar.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="col-md-2 order-md-4" style="padding: 0px 0;"></section>
+      </div>
+
+      <div class="row" style="margin-top: 7vw;">
+        <!-- Birch -->
+        <section class="col-md-2 order-md-1" style="padding: 0px 0;"></section>
+        <section class="col-md-4 order-md-3 titlehoriz" style="padding: 0px 0;">
+          <div
+            class="box btn-group modal-dialogtwo dynamicthumbnail"
+            style="margin-top: 0px;"
+          >
+            <a href="workday_pre.html">
+              <div class="titlehoriz">
+                <img class="img-fluid" src="img/idx_wrkdy.png" alt=" " />
+              </div>
+            </a>
+          </div>
+        </section>
+        <section
+          class="col-md-4 order-md-2 vertical-align"
+          style="padding: 0px 0;"
+        >
+          <div class="fullWidthWork">
+            <div class="row-centerer">
+              <h3 class="section-heading" style="font-weight: 400;">
+                <a class="sliding-middle-out" href="workday_pre.html"
+                  >Workday</a
+                >
+              </h3>
+              <p class="lead">
+                Redesigning the global conclusion interface and mobile
+                animations.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="col-md-2 order-md-4" style="padding: 0px 0;"></section>
+      </div>
+
+      <div class="row letstalkpad"></div>
+
+      <!-- CONTACT/EMAIL ME -->
+      <div class="vertical-align titlehoriz">
+        <h2 style="font-weight: 400;">
+          <a href="mailto:tonychan96@gmail.com " class="tony-middle-out">
+            Lets talk
+          </a>
+        </h2>
+      </div>
+      <div class="row letstalkpad"></div>
+
+      <!--  ///////////////////  FOOTER/CONTACT  ///////////////////  -->
+      <aside class="banner">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <a
+              href="mailto:tonychan96@gmail.com "
+              target="_blank "
+              class="btn-social btn-lg"
+              ><i class="fa fa-envelope"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/tonychan96/"
+              target="_blank "
+              class="btn-social btn-lg"
+              ><i class="fa fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+      </aside>
+      <!-- container fluid wrapper end div -->
+    </div>
+
+    <!-- JavaScript -->
+    <!-- different jquery for scrollspy  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/sideNav.js "></script>
+    <script src="js/smooth-scroll.min.js"></script>
+    <script src="js/navSlideIn.js"></script>
+    <script>
+      // Instantiate Scrolls
+      var scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 200,
       });
-    }
-  </script>
-  <script src="vendor/popper/popper.min.js "></script>
-  <script src="vendor/bootstrap/js/bootstrap.min.js "></script>
-  <script src="custom.js "></script>
-</body>
 
+      if (document.querySelector("[data-easing]")) {
+        var easeOutQuart = new SmoothScroll('[data-easing="easeOutQuart"]', {
+          easing: "easeOutQuart",
+        });
+      }
+    </script>
+    <script src="vendor/popper/popper.min.js "></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js "></script>
+    <script src="custom.js "></script>
+  </body>
 </html>
