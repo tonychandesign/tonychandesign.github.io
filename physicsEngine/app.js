@@ -1589,18 +1589,25 @@ function playerTouchCaseStudy(onBody) {
     const modalTitle = document.getElementById("modal-title");
     const modalText = document.getElementById("modal-text");
     const modalImg = document.getElementById("modal-img");
-    modalImg.style.boxShadow =
-      "0 0 4px 1px rgba(0, 0, 0, 0.01), 0 3px 24px rgba(0, 0, 0, 0.6);";
-    modalImg.style.webkitBoxShadow =
-      "0 0 4px 1px rgba(0, 0, 0, 0.01), 0 3px 24px rgba(0, 0, 0, 0.6);";
+    const modalCTA = document.getElementById("modal-cta");
+    if (playerInstance.onBody === 54 || playerInstance.onBody === 32) {
+      modalImg.style.boxShadow = "none";
+      modalImg.style.webkitBoxShadow = "none";
+      console.log("==54 box shadow");
+    } else {
+      console.log("other box shadow");
+      modalImg.style.boxShadow =
+        "0 0 4px 1px rgba(0, 0, 0, 0.01), 0 3px 24px rgba(0, 0, 0, 0.6)";
+      modalImg.style.webkitBoxShadow =
+        "0 0 4px 1px rgba(0, 0, 0, 0.01), 0 3px 24px rgba(0, 0, 0, 0.6)";
+    }
     if (playerInstance.onBody === 54) {
       // ucsd
       modalTitle.innerHTML = "UCSD";
       modalText.innerHTML =
         "I graduated cum laude in 2018, with a focus in human computer interaction and computer science.  I spent my final quarter studying film directing and acting in the Czech Republic.";
       modalImg.src = "./img/darkMod/ucsd.svg";
-      modalImg.style.boxShadow = "none";
-      modalImg.style.webkitBoxShadow = "none";
+      modalCTA.href = "https://ucsd.edu/";
       modal.classList.add("is-open");
     } else if (playerInstance.onBody === 60) {
       // workday
@@ -1608,6 +1615,7 @@ function playerTouchCaseStudy(onBody) {
       modalText.innerHTML =
         "I was the design systems intern responsible for redesigning the global conclusion interface and creating mobile animations.";
       modalImg.src = "./img/darkMod/dark_WORKDAY.png";
+      modalCTA.href = "workday_pre.html";
       modal.classList.add("is-open");
     } else if (playerInstance.onBody === 59) {
       // birch
@@ -1615,6 +1623,7 @@ function playerTouchCaseStudy(onBody) {
       modalText.innerHTML =
         "I created an exhibit in the Birch Aquarium at the Scripps Institution of Oceanography to teach people about bubbles.";
       modalImg.src = "./img/darkMod/dark_BIRCH.png";
+      modalCTA.href = "birch.html";
       modal.classList.add("is-open");
     } else if (playerInstance.onBody === 58) {
       // asgs
@@ -1622,6 +1631,7 @@ function playerTouchCaseStudy(onBody) {
       modalText.innerHTML =
         "I collaborated with a visual designer to implement UCSD's 2018 Sun God Festival website.";
       modalImg.src = "./img/darkMod/dark_SGF.png";
+      modalCTA.href = "asgs.html";
       modal.classList.add("is-open");
     } else if (playerInstance.onBody === 55) {
       // intuit
@@ -1629,6 +1639,7 @@ function playerTouchCaseStudy(onBody) {
       modalText.innerHTML =
         "I build in-house tools to empower the design studio and work with business partners to turn future facing ideas into high fidelity prototypes to influence business direction.";
       modalImg.src = "./img/darkMod/dark_INTUIT.png";
+      modalCTA.href = "intuit_nda.html";
       modal.classList.add("is-open");
     } else if (playerInstance.onBody === 56) {
       // d4sd
@@ -1636,6 +1647,7 @@ function playerTouchCaseStudy(onBody) {
       modalText.innerHTML =
         "I competed in a city wide design competition to improve transportation in San Diego.";
       modalImg.src = "./img/darkMod/dark_D4SD.png";
+      modalCTA.href = "project5.html";
       modal.classList.add("is-open");
     } else if (playerInstance.onBody === 57) {
       // eqr
@@ -1643,6 +1655,7 @@ function playerTouchCaseStudy(onBody) {
       modalText.innerHTML =
         "A web app that lets users create & scan events encoded into a QR code, which can be synced onto their Google Calendar.";
       modalImg.src = "./img/darkMod/dark_EQR.png";
+      modalCTA.href = "project1.html";
       modal.classList.add("is-open");
     }
   }
