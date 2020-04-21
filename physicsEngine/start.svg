@@ -67,45 +67,41 @@
 <style data-made-with="vivus-instant">.uvUUgxpn_0{stroke-dasharray:250 252;stroke-dashoffset:251;animation:uvUUgxpn_draw 2000ms ease-in-out 0ms forwards;}.uvUUgxpn_1{stroke-dasharray:250 252;stroke-dashoffset:251;animation:uvUUgxpn_draw 2000ms ease-in-out 83ms forwards;}.uvUUgxpn_2{stroke-dasharray:250 252;stroke-dashoffset:251;animation:uvUUgxpn_draw 2000ms ease-in-out 166ms forwards;}.uvUUgxpn_3{stroke-dasharray:250 252;stroke-dashoffset:251;animation:uvUUgxpn_draw 2000ms ease-in-out 250ms forwards;}.uvUUgxpn_4{stroke-dasharray:80 82;stroke-dashoffset:81;animation:uvUUgxpn_draw 2000ms ease-in-out 333ms forwards;}.uvUUgxpn_5{stroke-dasharray:250 252;stroke-dashoffset:251;animation:uvUUgxpn_draw 2000ms ease-in-out 416ms forwards;}.uvUUgxpn_6{stroke-dasharray:250 252;stroke-dashoffset:251;animation:uvUUgxpn_draw 2000ms ease-in-out 500ms forwards;}.uvUUgxpn_7{stroke-dasharray:250 252;stroke-dashoffset:251;animation:uvUUgxpn_draw 2000ms ease-in-out 583ms forwards;}.uvUUgxpn_8{stroke-dasharray:87 89;stroke-dashoffset:88;animation:uvUUgxpn_draw 2000ms ease-in-out 666ms forwards;}.uvUUgxpn_9{stroke-dasharray:76 78;stroke-dashoffset:77;animation:uvUUgxpn_draw 2000ms ease-in-out 750ms forwards;}.uvUUgxpn_10{stroke-dasharray:82 84;stroke-dashoffset:83;animation:uvUUgxpn_draw 2000ms ease-in-out 833ms forwards;}.uvUUgxpn_11{stroke-dasharray:21 23;stroke-dashoffset:22;animation:uvUUgxpn_draw 1000ms ease-in-out 916ms forwards;animation-delay: 3s;}.uvUUgxpn_12{stroke-dasharray:21 23;stroke-dashoffset:22;animation:uvUUgxpn_draw 1000ms ease-in-out 1000ms forwards; animation-delay: 3s;}@keyframes uvUUgxpn_draw{100%{stroke-dashoffset:0;}}@keyframes uvUUgxpn_fade{0%{stroke-opacity:1;}94.44444444444444%{stroke-opacity:1;}100%{stroke-opacity:0;}}
 @keyframes fadeInUp {
     from {
-        transform: translate3d(0,20px,0)
+        transform: translateY(20px);
     }
 
     to {
-        transform: translate3d(0,0,0);
-        opacity: 1
+        transform: translateY(0px);
+        opacity: 1;
     }
 }
 
 @-webkit-keyframes fadeInUp {
     from {
-        transform: translate3d(0,20px,0)
     }
 
     to {
-        transform: translate3d(0,0,0);
-        opacity: 1
+        opacity: 1;
     }
 }
 
 @keyframes fadeIn {
     from {
-        opacity: 0
+        opacity: 0;
     }
 
     to {
-
-        opacity: 1
+        opacity: 1;
     }
 }
 
 @-webkit-keyframes fadeIn {
     from {
-        opacity: 0
+        opacity: 0;
     }
 
     to {
-
-        opacity: 1
+        opacity: 1;
     }
 }
 
@@ -113,28 +109,28 @@
     animation-duration: 400ms;
     animation-fill-mode: both;
     -webkit-animation-duration: 1s;
-    -webkit-animation-fill-mode: both
+    -webkit-animation-fill-mode: both;
 }
 .shortDelayAnimated {
     animation-duration: 400ms;
     animation-delay: 2s;
     animation-fill-mode: both;
     -webkit-animation-duration: 1s;
-    -webkit-animation-fill-mode: both
+    -webkit-animation-fill-mode: both;
 }
 .delayAnimated {
     animation-duration: 400ms;
     animation-delay: 2.5s;
     animation-fill-mode: both;
     -webkit-animation-duration: 1s;
-    -webkit-animation-fill-mode: both
+    -webkit-animation-fill-mode: both;
 }
 .delayAnimated2 {
     animation-duration: 400ms;
     animation-delay: 3s;
     animation-fill-mode: both;
     -webkit-animation-duration: 1s;
-    -webkit-animation-fill-mode: both
+    -webkit-animation-fill-mode: both;
 }
 
 .animatedFadeInUp {
