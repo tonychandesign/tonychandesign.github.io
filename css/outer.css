@@ -57,7 +57,7 @@ p {
 
 .quote {
   font-style: italic;
-  color: #b08449 !important;
+  color: black !important;
   font-size: 1.3em !important;
   margin-bottom: 2em;
   margin-top: 2em;
@@ -95,7 +95,7 @@ p {
 }
 /* blue line w dot sectioning piece */
 .sectionbar {
-  background-color: #b08449;
+  background-color: #70aede;
   font-size: 2px;
   margin-top: 2.3rem;
   line-height: 1.5;
@@ -113,7 +113,7 @@ p {
 .sectiondot {
   height: 12px;
   width: 12px;
-  background-color: #b08449;
+  background-color: #70aede;
   border-radius: 50%;
   display: inline-block;
   margin-top: 2rem;
@@ -191,7 +191,7 @@ p {
 .sliding-middle-out:hover:after {
   width: 100%;
   padding-left: 10px;
-  background: #b08449;
+  background: #70aede;
 }
 
 .tony-middle-out {
@@ -215,11 +215,18 @@ p {
 .tony-middle-out.active:after,
 .tony-middle-out:hover:after {
   width: 100%;
-  background: #b08449;
+  background: #70aede;
 }
 
 .active {
-  color: #75abbc !important;
+  color: #70aede !important;
+}
+
+.bullet {
+  color: #94999d;
+  line-height: 1.8;
+  font-size: 10px;
+  padding-top: 5px;
 }
 
 h1 {
@@ -697,7 +704,7 @@ a.btn-social,
 
 .text_small p .intro {
   font-weight: bold;
-  color: #b08449;
+  color: black;
 }
 
 .text_medium {

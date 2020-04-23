@@ -1,1342 +1,2071 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="keywords"
+      content="UX design product interaction visual mostion creative animations computer science engineering design systems"
+    />
+    <meta name="author" content="Tony Chan" />
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="keywords"
-    content="UX design product interaction visual mostion creative animations computer science engineering design systems" />
-  <meta name="author" content="Tony Chan" />
+    <title>Tony Chan: Nanome</title>
 
-  <title>Tony Chan: Nanome</title>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Custom fonts for this template -->
+    <link
+      href="vendor/font-awesome/css/font-awesome.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Button Stylesheet -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <!-- Custom styles for this template -->
+    <link href="css/outer.css" rel="stylesheet" />
+    <link href="css/d4sd.css" rel="stylesheet" />
+    <link href="css/sideNav.css" rel="stylesheet" />
+  </head>
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-  <!-- Custom fonts for this template -->
-  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet"
-    type="text/css" />
-  <!-- Button Stylesheet -->
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-  <!-- Custom styles for this template -->
-  <link href="css/outer.css" rel="stylesheet" />
-  <link href="css/d4sd.css" rel="stylesheet" />
-  <link href="css/sideNav.css" rel="stylesheet" />
-</head>
-
-<body data-spy="scroll" data-target="#scrollspy" data-offset="100">
-  <!-- fade in script -->
-  <script>
-    document.body.className += ' fade-out';
-  </script>
-  <!-- dynamic resizing  -->
-  <div class="container-fluid">
-    <!--  ///////////////////  NAVBAR  ///////////////////  -->
-    <nav id="navbar" class="navbar-expand fixed-top whiteNav">
-      <div class="row row-centerer">
-        <div class="col-lg-4" style="margin: auto;">
-          <h1 class="tonychan">
-            <a href="index.html" class="tony-middle-out">Tony Chan</a>
-          </h1>
+  <body data-spy="scroll" data-target="#scrollspy" data-offset="100">
+    <!-- fade in script -->
+    <script>
+      document.body.className += " fade-out";
+    </script>
+    <!-- dynamic resizing  -->
+    <div class="container-fluid">
+      <!--  ///////////////////  NAVBAR  ///////////////////  -->
+      <nav id="navbar" class="navbar-expand fixed-top whiteNav">
+        <div class="row row-centerer">
+          <div class="col-lg-4" style="margin: auto;">
+            <h1 class="tonychan">
+              <a href="index.html" class="tony-middle-out">Tony Chan</a>
+            </h1>
+          </div>
+          <div class="col-lg-2"></div>
+          <div class="col-lg-6">
+            <div id="menu">
+              <ul
+                class="navbar-nav navbar-brand right-to-center nav-elem-centerer"
+              >
+                <li
+                  class="sliding-middle-out nav-item active"
+                  style="margin-left: 30px;"
+                >
+                  <a class="nav-link" href="index.html?page=0">Portfolio</a>
+                </li>
+                <li class="sliding-middle-out nav-item navpadding">
+                  <a class="nav-link" href="index.html?page=1">Resume</a>
+                </li>
+                <li
+                  class="sliding-middle-out nav-item"
+                  style="margin-right: 30px; margin-left: 0px;"
+                >
+                  <a class="nav-link" href="index.html?page=2">About Me</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="col-lg-2"></div>
-        <div class="col-lg-6">
-          <div id="menu">
-            <ul class="navbar-nav navbar-brand right-to-center nav-elem-centerer">
-              <li class="sliding-middle-out nav-item active" style="margin-left: 30px;">
-                <a class="nav-link" href="index.html?page=0">Portfolio</a>
+      </nav>
+      <div class="white_bg"></div>
+      <!-- - - - - ///////////////////  CONTENT  /////////////////// - - - - -->
+      <!-- - - - - - - - - - - - - - -PROJECT TITLE - - - - - - - - - - - - - - -->
+      <div class="respCoverPadding"></div>
+      <div
+        class="row"
+        style="margin-right: -16px; margin-left: -16px; margin-top: -40px;"
+      >
+        <!-- vertically alligns words and pictures -->
+        <div class="vertical-align row-centerer">
+          <img
+            class="img-fluid"
+            src="img/nanome_photos/nanomecover.png"
+            style="margin: auto;"
+          />
+        </div>
+      </div>
+
+      <nav id="scrollspy">
+        <ul id="bar-fixed">
+          <div class="sidebar">
+            <li>
+              <a
+                class="bar nav-link"
+                data-easing="easeInOutQuart"
+                href="#context"
+                style="padding-top: 0px;"
+                >Context</a
+              >
+            </li>
+            <li>
+              <a
+                class="bar nav-link"
+                data-easing="easeInOutQuart"
+                href="#research"
+                >Research</a
+              >
+            </li>
+            <li>
+              <a
+                class="bar nav-link"
+                data-easing="easeInOutQuart"
+                href="#usatests"
+                >Usability Tests</a
+              >
+            </li>
+            <li>
+              <a class="bar nav-link" data-easing="easeInOutQuart" href="#login"
+                >Login/Pilot</a
+              >
+            </li>
+            <li>
+              <a
+                class="bar nav-link"
+                data-easing="easeInOutQuart"
+                href="#livetourn"
+                >Live Tournaments</a
+              >
+            </li>
+            <li>
+              <a
+                class="bar nav-link"
+                data-easing="easeInOutQuart"
+                href="#tournDeets"
+                >Tournament Details</a
+              >
+            </li>
+            <li>
+              <a
+                class="bar nav-link"
+                data-easing="easeInOutQuart"
+                href="#myaccount"
+                >My Account</a
+              >
+            </li>
+            <li>
+              <a
+                class="bar nav-link"
+                data-easing="easeInOutQuart"
+                href="#createtournament"
+                >Create Tournament</a
+              >
+            </li>
+            <li>
+              <a
+                class="bar nav-link"
+                data-easing="easeInOutQuart"
+                href="#edittournament"
+                >Edit Tournament</a
+              >
+            </li>
+            <li>
+              <a
+                class="bar nav-link"
+                data-easing="easeInOutQuart"
+                href="#contributing"
+                >Contributing</a
+              >
+            </li>
+            <li>
+              <a
+                class="bar nav-link"
+                data-easing="easeInOutQuart"
+                href="#rewards"
+                >Rewards</a
+              >
+            </li>
+            <li>
+              <a class="bar nav-link" data-easing="easeInOutQuart" href="#ip"
+                >Intellectual Property</a
+              >
+            </li>
+            <li>
+              <a
+                class="bar nav-link"
+                data-easing="easeInOutQuart"
+                href="#learnings"
+                style="padding-bottom: 0px;"
+                >Learnings</a
+              >
+            </li>
+          </div>
+        </ul>
+      </nav>
+
+      <div class="row" style="justify-content: center; padding-top: 15em;">
+        <div class="text_small">
+          <p>
+            <span class="intro">Timeline:</span>
+            <span class="lead myRoleText">Jan - Jun 2018</span>
+          </p>
+
+          <p>
+            <span class="intro">Employment Type:</span>
+            <span class="lead myRoleText">Contract</span>
+          </p>
+
+          <p>
+            <span class="intro">My Role:</span>
+            <span class="lead myRoleText">Product Designer</span>
+          </p>
+
+          <p>
+            <span class="intro">Tools:</span>
+            <span class="lead myRoleText">AdobeXD</span>
+          </p>
+
+          <p>
+            <span class="intro">Skills:</span>
+            <span class="lead myRoleText"
+              >Interaction Design, User Research
+            </span>
+          </p>
+        </div>
+      </div>
+
+      <div class="row theprocessWrap" id="context">
+        <div class="text_small theprocess START">Context</div>
+      </div>
+
+      <div class="row" style="justify-content: center;">
+        <div class="text_small">
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            Nanome is a startup funded under UCSD's incubator program, the
+            Basement. The product is a collaborative virtual reality platform
+            for designing atomic, molecular, mathematical, and nanoscale
+            visualizations. I worked under the Matryx team, which helped VR
+            users collaborate through the MTX blockchain on the Ethereum
+            network. More information can be found
+            <a
+              href="https://nanome.ai/ "
+              target="_blank"
+              style="margin-bottom: 0em; color: #0086cb;"
+              >here</a
+            >. Matryx is currently in alpha 2 and can be found
+            <a
+              href="https://alpha.matryx.ai/"
+              target="_blank"
+              style="margin-bottom: 0em; color: #0086cb;"
+              >here</a
+            >.
+          </p>
+        </div>
+      </div>
+
+      <div class="row" style="justify-content: center; padding-top: 20px;">
+        <div class="text_small">
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            I made over 150 wireframes with Adobe XD. I won’t include all
+            iterations/designs for both of our sanities.
+          </p>
+        </div>
+      </div>
+
+      <div class="row" style="justify-content: center; padding-top: 20px;">
+        <div class="img1Row">
+          <!-- vertically alligns words and pictures -->
+          <p class="lead imgDescription" style="margin-bottom: -0.5em;">
+            Overview
+          </p>
+          <div class="row" style="margin-top: 15px;"></div>
+          <img class="img-fluid img_shadow" src="img/nanome/all.png" alt=" " />
+          <div class="row" style="margin-top: 15px;"></div>
+        </div>
+      </div>
+      <div class="row spacer"></div>
+
+      <div class="row" style="justify-content: center; padding-top: 20px;">
+        <div class="text_small">
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            The CEO gave me a color palette and a couple of initial designs to
+            build off of.
+          </p>
+        </div>
+      </div>
+
+      <div class="row" style="justify-content: center; padding-top: 20px;">
+        <div class="img2Row">
+          <!-- vertically alligns words and pictures -->
+          <p class="lead imgDescription" style="margin-bottom: -0.5em;">
+            Color Palette
+          </p>
+          <div class="row" style="margin-top: 15px;"></div>
+          <img
+            class="img-fluid img_shadow"
+            src="img/nanome/palette.png"
+            alt=" "
+          />
+          <div class="row" style="margin-top: 15px;"></div>
+        </div>
+      </div>
+      <div class="row spacer"></div>
+
+      <p
+        class="lead imgDescription"
+        style="margin-bottom: -0.5vw; margin-top: 1.5em; text-align: center;"
+      >
+        Original Designs
+      </p>
+      <div class="longImage">
+        <div class="row" style="justify-content: center;">
+          <div class="img2Row">
+            <!-- vertically alligns words and pictures -->
+            <div class="row" style="margin-top: 15px;"></div>
+            <img
+              class="img-fluid img_shadow"
+              src="img/nanome/init1.png"
+              alt=" "
+            />
+            <div class="row" style="margin-top: 15px;"></div>
+          </div>
+          <div class="img2Row">
+            <!-- vertically alligns words and pictures -->
+            <div class="row" style="margin-top: 15px;"></div>
+            <img
+              class="img-fluid img_shadow"
+              src="img/nanome/init2.png"
+              alt=" "
+            />
+            <div class="row" style="margin-top: 15px;"></div>
+          </div>
+        </div>
+        <div class="row" style="justify-content: center;">
+          <div class="img2Row">
+            <!-- vertically alligns words and pictures -->
+            <div class="row" style="margin-top: 15px;"></div>
+            <img
+              class="img-fluid img_shadow"
+              src="img/nanome/init3.png"
+              alt=" "
+            />
+            <div class="row" style="margin-top: 15px;"></div>
+          </div>
+          <div class="img2Row">
+            <!-- vertically alligns words and pictures -->
+            <div class="row" style="margin-top: 15px;"></div>
+            <img
+              class="img-fluid img_shadow"
+              src="img/nanome/init4.png"
+              alt=" "
+            />
+            <div class="row" style="margin-top: 15px;"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row theprocessWrap" id="research">
+        <div class="text_small theprocess">Research</div>
+      </div>
+
+      <div class="row" style="justify-content: center;">
+        <div class="text_small">
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            Full competitive analysis can be found
+            <a
+              href="img/nanome/comp_anal.pdf"
+              download="comp_anal.pdf "
+              target="_blank"
+              style="color: #70aede;"
+              >here</a
+            >. The highlights:
+          </p>
+          <ul class="fa-ul">
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Competitors had a public
+              interface to show everyone’s profile activity
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Usually one winner per
+              challenge
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Smart contracts were peer
+              reviewed
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Challenges were more
+              focused on programing a product instead of R&D
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Github integration
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Easy account
+              creation/login process through Metamask
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row" style="justify-content: center; padding-top: 20px;">
+        <div class="text_small">
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            We came up with 10 possible personas. For the MVP we focused on
+            early adopters: people who firmly believe in and understand
+            blockchain technology regardless of the volatile state of the crypto
+            industry.
+          </p>
+        </div>
+      </div>
+
+      <p
+        class="lead imgDescription"
+        style="margin-bottom: -0.5vw; margin-top: 1.5em; text-align: center;"
+      >
+        A few personas
+      </p>
+      <div class="longImage">
+        <div class="row" style="justify-content: center;">
+          <div class="img2Row">
+            <!-- vertically alligns words and pictures -->
+            <div class="row" style="margin-top: 15px;"></div>
+            <img
+              class="img-fluid img_shadow"
+              src="img/nanome/student.png"
+              alt=" "
+            />
+            <div class="row" style="margin-top: 15px;"></div>
+          </div>
+          <div class="img2Row">
+            <!-- vertically alligns words and pictures -->
+            <div class="row" style="margin-top: 15px;"></div>
+            <img
+              class="img-fluid img_shadow"
+              src="img/nanome/scientist.png"
+              alt=" "
+            />
+            <div class="row" style="margin-top: 15px;"></div>
+          </div>
+        </div>
+        <div class="row" style="justify-content: center; padding-top: 15px;">
+          <div class="img2Row">
+            <!-- vertically alligns words and pictures -->
+            <div class="row" style="margin-top: 15px;"></div>
+            <img
+              class="img-fluid img_shadow"
+              src="img/nanome/crypto.png"
+              alt=" "
+            />
+            <div class="row" style="margin-top: 15px;"></div>
+          </div>
+          <div class="img2Row">
+            <!-- vertically alligns words and pictures -->
+            <div class="row" style="margin-top: 15px;"></div>
+            <img
+              class="img-fluid img_shadow"
+              src="img/nanome/explorer.png"
+              alt=" "
+            />
+            <div class="row" style="margin-top: 15px;"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" style="justify-content: center; padding-top: 20px;">
+        <div class="text_small">
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            <strong>Primary stakeholders:</strong>
+            Pharma Institutions who want to solve real world problems but don’t
+            have a platform to obtain shared knowledge or hidden talent
+          </p>
+        </div>
+      </div>
+      <div class="row" style="justify-content: center; padding-top: 20px;">
+        <div class="text_small">
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            <strong>Secondary stakeholders:</strong> Scientists who need help
+            with research but don’t have the resources or a team because of
+            location and funding limitations.
+          </p>
+        </div>
+      </div>
+
+      <div class="row" style="justify-content: center; padding-top: 20px;">
+        <div class="text_small">
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            Being in a fast paced startup environment, the CEO insisted that I
+            don’t follow standard UX methodology (user testing then lofi
+            sketches/wires with iterative usability testing towards hifi). I was
+            told to create as many hifi iterations as possible and the team
+            would decide which ones to move forward with.
+          </p>
+        </div>
+      </div>
+
+      <div class="row" style="justify-content: center; padding-top: 2.5em;">
+        <div class="img1Row">
+          <!-- vertically alligns words and pictures -->
+          <p class="lead imgDescription" style="margin-bottom: -0.5em;">
+            Site Map
+          </p>
+          <div class="row" style="margin-top: 15px;"></div>
+          <img
+            class="img-fluid img_shadow"
+            src="img/nanome/sitemap.png"
+            alt=" "
+          />
+          <div class="row" style="margin-top: 15px;"></div>
+        </div>
+      </div>
+
+      <div class="row theprocessWrap" id="usatests">
+        <div class="text_small theprocess">Usability Tests</div>
+      </div>
+
+      <div class="row" style="justify-content: center;">
+        <div class="text_small">
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            To make this huge case study more coherent, I wrote it in a
+            different order than how the internship progressed. I performed one
+            round of usability testing with 9 users in the middle of the
+            internship and will discuss the findings in each section below.
+          </p>
+        </div>
+      </div>
+
+      <div class="row" style="justify-content: center; padding-top: 20px;">
+        <div class="text_small">
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            The survey I used to recruit the users is
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfadMzF0MnQr-spQxrmVmoK9ng-M_HIfY9ins1rE0GsNrA2Zw/viewform?usp=sf_link"
+              target="_blank"
+              style="margin-bottom: 0em; color: #0086cb;"
+              >here</a
+            >. The goals was to see how familiar the user was with blockchain
+            technology and computer interfaces.
+          </p>
+          <ul class="fa-ul">
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Novice: not familiar with
+              blockchain technology
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Intermediate: CS
+              background and some familiarity
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Expert: Fluent with both
+              current state of cryptocurrency and how the blockchain data
+              structure works.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row" style="justify-content: center; padding-top: 20px;">
+        <div class="text_small">
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            The usability testing plan is
+            <a
+              href="img/nanome/test_plan.pdf"
+              download="comp_anal.pdf "
+              target="_blank"
+              style="color: #70aede;"
+              >here</a
+            >. I recruited 4 novice, 3 intermediate, and 2 expert users. I used
+            the functional Alpha 1 MVP (04/12/18) to test already implemented
+            functions (create account, enter tournament, & submit). I used a
+            prototype to test allocating rewards to winners from the host’s
+            point of view but I can’t link it through this case study because I
+            don’t have the pro version of Adobe XD. I have a local version that
+            can be shown during the interview.
+          </p>
+        </div>
+      </div>
+
+      <div class="row" style="justify-content: center; padding-top: 20px;">
+        <div class="text_small">
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            Main findings:
+          </p>
+          <ul class="fa-ul">
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Confusion with the modal
+              design when going through long use cases (creating a tournament)
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Confusion with unlocking
+              a tournament because there wasn’t a status indicator
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Confusion between round
+              reward and total reward
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Wanted a FAQ or hints
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Confusion with the icons-
+              words could be better
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Confusion in creating a
+              tournament- specifically the subject of “rounds” per tournament
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row spacer"></div>
+
+      <div class="row theprocessWrap" id="login">
+        <div class="text_small theprocess">Login/Pilot</div>
+      </div>
+
+      <div class="row" style="justify-content: center;">
+        <div class="text_small">
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            The team wanted to show that the platform had a lot of activity to
+            persuade new users to join. Before logging in, the user would be
+            able to see the activity feed, community feeds, signup, and the
+            requirements to use to platform.
+          </p>
+        </div>
+      </div>
+
+      <p
+        class="lead imgDescription"
+        style="margin-bottom: -0.5vw; margin-top: 2.5em; text-align: center;"
+      >
+        Before Logging In
+      </p>
+      <div class="longImage">
+        <div class="row" style="justify-content: center;">
+          <div class="img2Row">
+            <!-- vertically alligns words and pictures -->
+            <div class="row" style="margin-top: 15px;"></div>
+            <img
+              class="img-fluid img_shadow"
+              src="img/nanome/prelog1.png"
+              alt=" "
+            />
+            <div class="row" style="margin-top: 15px;"></div>
+          </div>
+          <div class="img2Row">
+            <!-- vertically alligns words and pictures -->
+            <div class="row" style="margin-top: 15px;"></div>
+            <img
+              class="img-fluid img_shadow"
+              src="img/nanome/prelog2.png"
+              alt=" "
+            />
+            <div class="row" style="margin-top: 15px;"></div>
+          </div>
+        </div>
+
+        <div class="row" style="justify-content: center; padding-top: 2.5em;">
+          <div class="text_small">
+            <p
+              class="lead"
+              style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+            >
+              For the MVP we removed the activity feed because it was too
+              expensive on development. We replaced it with an introduction
+              video because users reported that the tournament system was
+              confusing.
+            </p>
+          </div>
+        </div>
+
+        <p
+          class="lead imgDescription"
+          style="margin-bottom: -0.5vw; margin-top: 2.5em; text-align: center;"
+        >
+          Later Iteration
+        </p>
+        <div class="row" style="justify-content: center;">
+          <div class="img2Row">
+            <!-- vertically alligns words and pictures -->
+            <div class="row" style="margin-top: 15px;"></div>
+            <img
+              class="img-fluid img_shadow"
+              src="img/nanome/prelog3.png"
+              alt=" "
+            />
+            <div class="row" style="margin-top: 15px;"></div>
+          </div>
+          <div class="img2Row">
+            <!-- vertically alligns words and pictures -->
+            <div class="row" style="margin-top: 15px;"></div>
+            <img
+              class="img-fluid img_shadow"
+              src="img/nanome/prelog4.png"
+              alt=" "
+            />
+            <div class="row" style="margin-top: 15px;"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" style="justify-content: center; padding-top: 2.5em;">
+        <div class="text_small">
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            Towards the end of my internship, we decided to incorporate a
+            tutorial because the usability tests showed that users were confused
+            by how the app worked.
+          </p>
+        </div>
+      </div>
+
+      <div class="row" style="justify-content: center; padding-top: 2.5em;">
+        <div class="img2Row">
+          <!-- vertically alligns words and pictures -->
+          <p class="lead imgDescription" style="margin-bottom: -0.5em;">
+            Tutorial
+          </p>
+          <div class="row" style="margin-top: 15px;"></div>
+          <img class="img-fluid img_shadow" src="img/nanome/tut2.png" alt=" " />
+          <div class="row" style="margin-top: 15px;"></div>
+        </div>
+      </div>
+
+      <div class="row theprocessWrap" id="livetourn">
+        <div class="text_small theprocess">Live Tournaments</div>
+      </div>
+
+      <div class="row" style="justify-content: center;">
+        <div class="text_small">
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            My initial designs followed a list-like design pattern that many
+            competitors had. It’s meant to include as much information as
+            possible so that advanced users could navigate through the interface
+            more quickly.
+          </p>
+        </div>
+      </div>
+
+      <p
+        class="lead imgDescription"
+        style="margin-bottom: -0.5vw; margin-top: 2.5em; text-align: center;"
+      >
+        Live Tournaments v1
+      </p>
+      <div class="row longImage" style="justify-content: center;">
+        <div class="img2Row">
+          <!-- vertically alligns words and pictures -->
+          <div class="row" style="margin-top: 15px;"></div>
+          <img
+            class="img-fluid img_shadow"
+            src="img/nanome/live1.png"
+            alt=" "
+          />
+          <div class="row" style="margin-top: 15px;"></div>
+        </div>
+        <div class="img2Row">
+          <!-- vertically alligns words and pictures -->
+          <div class="row" style="margin-top: 15px;"></div>
+          <img
+            class="img-fluid img_shadow"
+            src="img/nanome/live2.png"
+            alt=" "
+          />
+          <div class="row" style="margin-top: 15px;"></div>
+        </div>
+      </div>
+
+      <div class="row" style="justify-content: center; padding-top: 2.5em;">
+        <div class="text_small">
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            Due to limited resources, I could only user test on UX classmates
+            and friends interested in cryptocurrency. Feedback:
+          </p>
+          <ul class="fa-ul">
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Wanted more space between
+              the listings
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Wanted visual indicators
+              like pictures
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Wanted category
+              distinction
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Wanted short description
+              of the tournament
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row" style="justify-content: center; padding-top: 20px;">
+        <div class="text_small">
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            After running the usability tests, users reported that the interface
+            seemed too cluttered. They also said that there should be more
+            emphasis on the tournament description so that they could quickly
+            determine whether or not they could participate. After a meeting, we
+            decided to move forward with the last iteration because it better
+            aligned with the feedback.
+          </p>
+        </div>
+      </div>
+
+      <div class="row" style="justify-content: center; padding-top: 2.5em;">
+        <div class="img1Row">
+          <!-- vertically alligns words and pictures -->
+          <p class="lead imgDescription" style="margin-bottom: -0.5em;">v3</p>
+          <div class="row" style="margin-top: 15px;"></div>
+          <img
+            class="img-fluid img_shadow"
+            src="img/nanome/live5.png"
+            alt=" "
+          />
+          <div class="row" style="margin-top: 15px;"></div>
+        </div>
+      </div>
+
+      <div class="row" style="justify-content: center; padding-top: 2.5em;">
+        <div class="img1Row">
+          <!-- vertically alligns words and pictures -->
+          <p class="lead imgDescription" style="margin-bottom: -0.5em;">v6</p>
+          <div class="row" style="margin-top: 15px;"></div>
+          <img
+            class="img-fluid img_shadow"
+            src="img/nanome/live6.png"
+            alt=" "
+          />
+          <div class="row" style="margin-top: 15px;"></div>
+        </div>
+      </div>
+
+      <div class="row theprocessWrap" id="tournDeets">
+        <div class="text_small theprocess">Tournament Details</div>
+      </div>
+
+      <div class="row" style="justify-content: center;">
+        <div class="text_small">
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            Important factors:
+          </p>
+          <ul class="fa-ul">
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Tournament summary
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Prior submissions
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Previous winners
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Rounds number, reward,
+              remaining time
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Clarification on how to
+              enter a tournament (and it’s costs)
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row" style="justify-content: center; padding-top: 20px;">
+        <div class="text_small">
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            Each tournament is broken into multiple rounds and each round can
+            have multiple winners. After the winners are picked, that round’s
+            submissions are accessible by anyone; this is how the community
+            works together towards a solution. The blockchain eliminates the
+            possibility of plagiarism because all submissions are cross
+            referenced with the data on the network.
+          </p>
+        </div>
+      </div>
+
+      <div class="row" style="justify-content: center; padding-top: 2.5em;">
+        <div class="img1Row">
+          <!-- vertically alligns words and pictures -->
+          <p class="lead imgDescription" style="margin-bottom: -0.5em;">
+            Tournament Details v1
+          </p>
+          <div class="row" style="margin-top: 15px;"></div>
+          <img
+            class="img-fluid img_shadow"
+            src="img/nanome/deet1.png"
+            alt=" "
+          />
+          <div class="row" style="margin-top: 15px;"></div>
+        </div>
+      </div>
+
+      <div class="row" style="justify-content: center; padding-top: 20px;">
+        <div class="text_small">
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            My initial designs were modal based but I soon learned this wouldn’t
+            work because:
+          </p>
+          <ul class="fa-ul">
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Programming limitation:
+              stored data on the fields (Creating a Tournament task) disappear
+              after opening another use case.
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Programming limitation:
+              slow load time when all data is stored in modals of one page.
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Usability issue: modal
+              flows for completing processes are confusing.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="longImage">
+        <div class="row" style="justify-content: center; padding-top: 2.5em;">
+          <div class="img1RowLong">
+            <!-- vertically alligns words and pictures -->
+            <p class="lead imgDescription" style="margin-bottom: -0.5em;">
+              Second Iteration
+            </p>
+            <div class="row" style="margin-top: 15px;"></div>
+            <img class="img-fluid" src="img/nanome/deet2.png" alt=" " />
+            <div class="row" style="margin-top: 15px;"></div>
+          </div>
+        </div>
+
+        <div class="row" style="justify-content: center; padding-top: 2.5em;">
+          <div class="text_small">
+            <p
+              class="lead"
+              style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+            >
+              Usability tests showed that users didn’t understand the icons on
+              the left hand side (although I wasn’t able to replicate the
+              description on hover effect)
+            </p>
+          </div>
+        </div>
+
+        <div class="row" style="justify-content: center; padding-top: 20px;">
+          <div class="text_small">
+            <p
+              class="lead"
+              style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+            >
+              We also figured that each round would have a different description
+              so I added the feature to see prior round tournament details.
+            </p>
+          </div>
+        </div>
+
+        <p
+          class="lead imgDescription"
+          style="margin-top: 2.5em; margin-bottom: -0.5em; text-align: center;"
+        >
+          v4
+        </p>
+        <div class="row" style="justify-content: center;">
+          <div class="img2Row">
+            <!-- vertically alligns words and pictures -->
+            <div class="row" style="margin-top: 15px;"></div>
+            <img
+              class="img-fluid img_shadow"
+              src="img/nanome/deet4.png"
+              alt=" "
+            />
+            <div class="row" style="margin-top: 15px;"></div>
+          </div>
+          <div class="img2Row">
+            <!-- vertically alligns words and pictures -->
+            <div class="row" style="margin-top: 15px;"></div>
+            <img
+              class="img-fluid img_shadow"
+              src="img/nanome/deet5.png"
+              alt=" "
+            />
+            <div class="row" style="margin-top: 15px;"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row theprocessWrap" id="myaccount">
+        <div class="text_small theprocess">My Account</div>
+      </div>
+
+      <div class="row" style="justify-content: center;">
+        <div class="text_small">
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            For consistency, I kept a similar design to the tournament listing
+            wireframes. I had to add features like My Submissions, an edit
+            feature, and reward per submission.
+          </p>
+        </div>
+      </div>
+
+      <p
+        class="lead imgDescription"
+        style="margin-top: 2.5em; margin-bottom: -0.5em; text-align: center;"
+      >
+        My Account v1
+      </p>
+      <div class="row" style="justify-content: center;">
+        <div class="img2Row">
+          <!-- vertically alligns words and pictures -->
+          <div class="row" style="margin-top: 15px;"></div>
+          <img class="img-fluid img_shadow" src="img/nanome/acc1.png" alt=" " />
+          <div class="row" style="margin-top: 15px;"></div>
+        </div>
+      </div>
+
+      <div class="row" style="justify-content: center; padding-top: 2.5em;">
+        <div class="text_small">
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            After testing, we got feedback that the users felt the categories
+            were all similar. They wanted to have quicker access to all of their
+            assets without going to a new page.
+          </p>
+        </div>
+      </div>
+
+      <p
+        class="lead imgDescription"
+        style="margin-top: 2.5em; margin-bottom: -0.5em; text-align: center;"
+      >
+        v3
+      </p>
+      <div class="row longImage" style="justify-content: center;">
+        <div class="img2Row">
+          <!-- vertically alligns words and pictures -->
+          <div class="row" style="margin-top: 15px;"></div>
+          <img class="img-fluid img_shadow" src="img/nanome/acc4.png" alt=" " />
+          <div class="row" style="margin-top: 15px;"></div>
+        </div>
+        <div class="img2Row">
+          <!-- vertically alligns words and pictures -->
+          <div class="row" style="margin-top: 15px;"></div>
+          <img class="img-fluid img_shadow" src="img/nanome/acc3.png" alt=" " />
+          <div class="row" style="margin-top: 15px;"></div>
+        </div>
+      </div>
+
+      <div class="row theprocessWrap" id="createtournament">
+        <div class="text_small theprocess">Create Tournament</div>
+      </div>
+
+      <div class="row" style="justify-content: center;">
+        <div class="text_small">
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            The most difficult part was designing an interaction for tournament
+            creation. A technical requirement was that the user had to first pay
+            to become a peer on the network to add data onto it.
+          </p>
+          <ul class="fa-ul">
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>How should the user
+              allocate MTX? Per each round? Should it be percentage based?
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Should every round be an
+              equal percentage?
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>When do they allocate
+              this value?
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>What if they want to
+              change the reward due to inadequate submissions?
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row" style="justify-content: center; padding-top: 2.5em;">
+        <div class="img1Row">
+          <!-- vertically alligns words and pictures -->
+          <p class="lead imgDescription" style="margin-bottom: -0.5em;">
+            Create Tournament v1
+          </p>
+          <div class="row" style="margin-top: 15px;"></div>
+          <img
+            class="img-fluid img_shadow"
+            src="img/nanome/create2.png"
+            alt=" "
+          />
+          <div class="row" style="margin-top: 15px;"></div>
+        </div>
+      </div>
+
+      <div class="row" style="justify-content: center; padding-top: 2.5em;">
+        <div class="img1Row">
+          <!-- vertically alligns words and pictures -->
+          <p class="lead imgDescription" style="margin-bottom: -0.5em;">v3</p>
+          <div class="row" style="margin-top: 15px;"></div>
+          <img
+            class="img-fluid img_shadow"
+            src="img/nanome/create3.png"
+            alt=" "
+          />
+          <div class="row" style="margin-top: 15px;"></div>
+        </div>
+      </div>
+
+      <div class="row" style="justify-content: center; padding-top: 20px;">
+        <div class="text_small">
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            The user struggled harder than expected when trying to understand
+            how rounds worked so we broke down the process with a stepped
+            progress interaction. The team decided to push towards a full
+            screened interface rather than a modal because:
+          </p>
+          <ul class="fa-ul">
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Modal design was prone to
+              user misclicking and exiting the tournament creation process.
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Using a full screen
+              design also let the user see which step they were at in the
+              process which created a smoother user experience.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="longImage">
+        <p
+          class="lead imgDescription"
+          style="margin-bottom: -0.5vw; margin-top: 1.5em; text-align: center;"
+        >
+          v5
+        </p>
+        <div class="row" style="justify-content: center;">
+          <div class="img2Row">
+            <!-- vertically alligns words and pictures -->
+            <div class="row" style="margin-top: 15px;"></div>
+            <img
+              class="img-fluid img_shadow"
+              src="img/nanome/create4.png"
+              alt=" "
+            />
+            <div class="row" style="margin-top: 15px;"></div>
+          </div>
+          <div class="img2Row">
+            <!-- vertically alligns words and pictures -->
+            <div class="row" style="margin-top: 15px;"></div>
+            <img
+              class="img-fluid img_shadow"
+              src="img/nanome/create5.png"
+              alt=" "
+            />
+            <div class="row" style="margin-top: 15px;"></div>
+          </div>
+        </div>
+        <div class="row" style="justify-content: center;">
+          <div class="img2Row">
+            <!-- vertically alligns words and pictures -->
+            <div class="row" style="margin-top: 15px;"></div>
+            <img
+              class="img-fluid img_shadow"
+              src="img/nanome/create9.png"
+              alt=" "
+            />
+            <div class="row" style="margin-top: 15px;"></div>
+          </div>
+          <div class="img2Row">
+            <!-- vertically alligns words and pictures -->
+            <div class="row" style="margin-top: 15px;"></div>
+            <img
+              class="img-fluid img_shadow"
+              src="img/nanome/create10.png"
+              alt=" "
+            />
+            <div class="row" style="margin-top: 15px;"></div>
+          </div>
+        </div>
+
+        <div class="row" style="justify-content: center; padding-top: 20px;">
+          <div class="text_small">
+            <p
+              class="lead"
+              style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+            >
+              We incorporated a status indicator/notification system to make it
+              more clear that you can't unlock or become a peer right away. The
+              blockchain needs to process the transaction, which can take up to
+              several minutes depending on how populated the network is.
+            </p>
+          </div>
+        </div>
+
+        <div class="row" style="justify-content: center; padding-top: 2.5em;">
+          <div class="img1RowLong">
+            <!-- vertically alligns words and pictures -->
+            <p class="lead imgDescription" style="margin-bottom: -0.5em;">
+              Notifications
+            </p>
+            <div class="row" style="margin-top: 15px;"></div>
+            <img
+              class="img-fluid img_shadow"
+              src="img/nanome/create11.png"
+              alt=" "
+            />
+            <div class="row" style="margin-top: 15px;"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row theprocessWrap" id="edittournament">
+        <div class="text_small theprocess">Edit Tournament</div>
+      </div>
+
+      <div class="row" style="justify-content: center;">
+        <div class="img1Row">
+          <!-- vertically alligns words and pictures -->
+          <p class="lead imgDescription" style="margin-bottom: -0.5em;">
+            Edit Tournaments v1
+          </p>
+          <div class="row" style="margin-top: 15px;"></div>
+          <img
+            class="img-fluid img_shadow"
+            src="img/nanome/edit1.png"
+            alt=" "
+          />
+          <div class="row" style="margin-top: 15px;"></div>
+        </div>
+      </div>
+
+      <div class="row" style="justify-content: center; padding-top: 20px;">
+        <div class="text_small">
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            After some discussion, the team decided that the MVP should only
+            include a set of predetermined categories. Assigning multiple
+            categories to one tournament was to expensive on the development
+            side for the MVP. When the product grows its user base, having
+            multiple categories will be useful so that users could search more
+            efficiently.
+          </p>
+        </div>
+      </div>
+
+      <div class="row" style="justify-content: center; padding-top: 2.5em;">
+        <div class="img1Row">
+          <!-- vertically alligns words and pictures -->
+          <p class="lead imgDescription" style="margin-bottom: -0.5em;">v3</p>
+          <div class="row" style="margin-top: 15px;"></div>
+          <img
+            class="img-fluid img_shadow"
+            src="img/nanome/edit4.png"
+            alt=" "
+          />
+          <div class="row" style="margin-top: 15px;"></div>
+        </div>
+      </div>
+
+      <div class="longImage">
+        <div class="row theprocessWrap" id="contributing">
+          <div class="text_small theprocess">Contributing</div>
+        </div>
+
+        <p
+          class="lead imgDescription"
+          style="margin-bottom: -0.5vw; text-align: center;"
+        >
+          Contributing v1
+        </p>
+        <div class="row" style="justify-content: center;">
+          <div class="img2Row">
+            <!-- vertically alligns words and pictures -->
+            <div class="row" style="margin-top: 15px;"></div>
+            <img
+              class="img-fluid img_shadow"
+              src="img/nanome/enter2.png"
+              alt=" "
+            />
+            <div class="row" style="margin-top: 15px;"></div>
+          </div>
+          <div class="img2Row">
+            <!-- vertically alligns words and pictures -->
+            <div class="row" style="margin-top: 15px;"></div>
+            <img
+              class="img-fluid img_shadow"
+              src="img/nanome/enter3.png"
+              alt=" "
+            />
+            <div class="row" style="margin-top: 15px;"></div>
+          </div>
+        </div>
+        <div class="row" style="justify-content: center;">
+          <div class="img2Row">
+            <!-- vertically alligns words and pictures -->
+            <div class="row" style="margin-top: 15px;"></div>
+            <img
+              class="img-fluid img_shadow"
+              src="img/nanome/enter4.png"
+              alt=" "
+            />
+            <div class="row" style="margin-top: 15px;"></div>
+          </div>
+          <div class="img2Row">
+            <!-- vertically alligns words and pictures -->
+            <div class="row" style="margin-top: 15px;"></div>
+            <img
+              class="img-fluid img_shadow"
+              src="img/nanome/enter5.png"
+              alt=" "
+            />
+            <div class="row" style="margin-top: 15px;"></div>
+          </div>
+        </div>
+        <div class="row" style="justify-content: center;">
+          <div class="img2Row">
+            <!-- vertically alligns words and pictures -->
+            <div class="row" style="margin-top: 15px;"></div>
+            <img
+              class="img-fluid img_shadow"
+              src="img/nanome/enter6.png"
+              alt=" "
+            />
+            <div class="row" style="margin-top: 15px;"></div>
+          </div>
+          <div class="img2Row">
+            <!-- vertically alligns words and pictures -->
+            <div class="row" style="margin-top: 15px;"></div>
+            <img
+              class="img-fluid img_shadow"
+              src="img/nanome/enter7.png"
+              alt=" "
+            />
+            <div class="row" style="margin-top: 15px;"></div>
+          </div>
+        </div>
+
+        <div class="row" style="justify-content: center; padding-top: 20px;">
+          <div class="text_small">
+            <p
+              class="lead"
+              style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+            >
+              Development faced some concerns:
+            </p>
+            <ul class="fa-ul">
+              <li
+                class="lead"
+                style="font-size: 18px; line-height: 2; padding-left: 10px;"
+              >
+                <i class="fa-li fa fa-circle bullet"></i>Users had to pay MTX to
+                become a peer on the network
               </li>
-              <li class="sliding-middle-out nav-item navpadding">
-                <a class="nav-link" href="index.html?page=1">Resume</a>
+              <li
+                class="lead"
+                style="font-size: 18px; line-height: 2; padding-left: 10px;"
+              >
+                <i class="fa-li fa fa-circle bullet"></i>Transaction speed is
+                relative to # of miners on the network
               </li>
-              <li class="sliding-middle-out nav-item" style="margin-right: 30px; margin-left: 0px;">
-                <a class="nav-link" href="index.html?page=2">About Me</a>
+              <li
+                class="lead"
+                style="font-size: 18px; line-height: 2; padding-left: 10px;"
+              >
+                <i class="fa-li fa fa-circle bullet"></i>Potential spam bots
               </li>
             </ul>
           </div>
         </div>
       </div>
-    </nav>
-    <div class="white_bg"></div>
-    <!-- - - - - ///////////////////  CONTENT  /////////////////// - - - - -->
-    <!-- - - - - - - - - - - - - - -PROJECT TITLE - - - - - - - - - - - - - - -->
-    <div class="respCoverPadding"></div>
-    <div class="row" style="margin-right: -16px; margin-left: -16px; margin-top: -40px;">
-      <!-- vertically alligns words and pictures -->
-      <div class="vertical-align row-centerer">
-        <img class="img-fluid" src="img/nanome_photos/nanomecover.png" style="margin: auto;">
-      </div>
-    </div>
 
-    <nav id="scrollspy">
-      <ul id="bar-fixed">
-        <div class="sidebar">
-          <li>
-            <a class="bar nav-link" data-easing="easeInOutQuart" href="#context" style="padding-top: 0px">Context</a>
-          </li>
-          <li>
-            <a class="bar nav-link" data-easing="easeInOutQuart" href="#research">Research</a>
-          </li>
-          <li>
-            <a class="bar nav-link" data-easing="easeInOutQuart" href="#usatests">Usability Tests</a>
-          </li>
-          <li>
-            <a class="bar nav-link" data-easing="easeInOutQuart" href="#login">Login/Pilot</a>
-          </li>
-          <li>
-            <a class="bar nav-link" data-easing="easeInOutQuart" href="#livetourn">Live Tournaments</a>
-          </li>
-          <li>
-            <a class="bar nav-link" data-easing="easeInOutQuart" href="#tournDeets">Tournament Details</a>
-          </li>
-          <li>
-            <a class="bar nav-link" data-easing="easeInOutQuart" href="#myaccount">My Account</a>
-          </li>
-          <li>
-            <a class="bar nav-link" data-easing="easeInOutQuart" href="#createtournament">Create Tournament</a>
-          </li>
-          <li>
-            <a class="bar nav-link" data-easing="easeInOutQuart" href="#edittournament">Edit Tournament</a>
-          </li>
-          <li>
-            <a class="bar nav-link" data-easing="easeInOutQuart" href="#contributing">Contributing</a>
-          </li>
-          <li>
-            <a class="bar nav-link" data-easing="easeInOutQuart" href="#rewards">Rewards</a>
-          </li>
-          <li>
-            <a class="bar nav-link" data-easing="easeInOutQuart" href="#ip">Intellectual Property</a>
-          </li>
-          <li>
-            <a class="bar nav-link" data-easing="easeInOutQuart" href="#learnings"
-              style="padding-bottom: 0px">Learnings</a>
-          </li>
-        </div>
-      </ul>
-    </nav>
-
-    <div class="row" style="justify-content: center; padding-top: 15em; ">
-      <div class="text_small">
-        <p>
-          <span class="intro">Timeline:</span>
-          <span class="lead myRoleText">Jan - Jun 2018</span>
-        </p>
-
-        <p>
-          <span class="intro">Employment Type:</span>
-          <span class="lead myRoleText">Contract</span>
-        </p>
-
-        <p>
-          <span class="intro">My Role:</span>
-          <span class="lead myRoleText">Product Designer</span>
-        </p>
-
-        <p>
-          <span class="intro">Tools:</span>
-          <span class="lead myRoleText">AdobeXD</span>
-        </p>
-
-        <p>
-          <span class="intro">Skills:</span>
-          <span class="lead myRoleText">Interaction Design, User Research
-          </span>
-        </p>
-      </div>
-    </div>
-
-    <div class="row theprocessWrap" id="context">
-      <div class="text_small theprocess START">Context</div>
-    </div>
-
-    <div class="row" style="justify-content: center;">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">Nanome is a startup funded
-          under UCSD's incubator program, the Basement. The product is a collaborative virtual reality platform for
-          designing atomic, molecular,
-          mathematical, and nanoscale visualizations. I worked under the Matryx team, which helped VR users collaborate
-          through the MTX blockchain on the Ethereum network. More information can be found <a
-            href="https://nanome.ai/ " target="_blank" style="margin-bottom:0em;color:#0086CB;">here</a>. Matryx is
-          currently in alpha 2 and can
-          be found <a href="https://alpha.matryx.ai/" target="_blank" style="margin-bottom:0em;color:#0086CB;">here</a>.
-        </p>
-      </div>
-
-    </div>
-
-    <div class="row" style="justify-content: center; padding-top: 20px">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">I made over 150 wireframes
-          with Adobe XD. I won’t include all iterations/designs for both of our sanities.
-        </p>
-      </div>
-    </div>
-
-    <div class="row" style="justify-content: center; padding-top: 20px">
-      <div class="img1Row">
-        <!-- vertically alligns words and pictures -->
-        <p class="lead imgDescription" style="margin-bottom:-.5em;"> Overview </p>
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid img_shadow" src="img/nanome/all.png" alt=" ">
-        <div class="row" style="margin-top:15px;"></div>
-      </div>
-    </div>
-    <div class="row spacer "></div>
-
-    <div class="row" style="justify-content: center; padding-top: 20px">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">The CEO gave me a color
-          palette and a couple of initial designs to build off of.
-        </p>
-      </div>
-    </div>
-
-    <div class="row" style="justify-content: center; padding-top: 20px">
-      <div class="img2Row">
-        <!-- vertically alligns words and pictures -->
-        <p class="lead imgDescription" style="margin-bottom:-.5em;"> Color Palette </p>
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid img_shadow" src="img/nanome/palette.png" alt=" ">
-        <div class="row" style="margin-top:15px;"></div>
-      </div>
-    </div>
-    <div class="row spacer "></div>
-
-
-    <p class="lead imgDescription" style="margin-bottom:-.5vw; margin-top:1.5em; text-align: center">
-      Original Designs
-    </p>
-    <div class="longImage">
-      <div class="row" style="justify-content: center">
-        <div class="img2Row">
-          <!-- vertically alligns words and pictures -->
-          <div class="row" style="margin-top:15px;"></div>
-          <img class="img-fluid img_shadow" src="img/nanome/init1.png" alt=" " />
-          <div class="row" style="margin-top:15px;"></div>
-        </div>
-        <div class="img2Row">
-          <!-- vertically alligns words and pictures -->
-          <div class="row" style="margin-top:15px;"></div>
-          <img class="img-fluid img_shadow" src="img/nanome/init2.png" alt=" " />
-          <div class="row" style="margin-top:15px;"></div>
-        </div>
-      </div>
-      <div class="row" style="justify-content: center">
-        <div class="img2Row">
-          <!-- vertically alligns words and pictures -->
-          <div class="row" style="margin-top:15px;"></div>
-          <img class="img-fluid img_shadow" src="img/nanome/init3.png" alt=" " />
-          <div class="row" style="margin-top:15px;"></div>
-        </div>
-        <div class="img2Row">
-          <!-- vertically alligns words and pictures -->
-          <div class="row" style="margin-top:15px;"></div>
-          <img class="img-fluid img_shadow" src="img/nanome/init4.png" alt=" " />
-          <div class="row" style="margin-top:15px;"></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row theprocessWrap" id="research">
-      <div class="text_small theprocess">Research</div>
-    </div>
-
-    <div class="row" style="justify-content: center;">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">Full competitive analysis can
-          be found <a href="img/nanome/comp_anal.pdf" download="comp_anal.pdf " target="_blank"
-            style="color:#b08449; ">here</a>.
-          The highlights:</p>
-        <ul class="fa-ul">
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Competitors
-            had a public interface to show everyone’s profile activity</li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Usually
-            one winner per challenge</li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Smart
-            contracts were peer reviewed</li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Challenges
-            were more focused on programing a product instead of R&D</li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Github
-            integration</li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Easy
-            account creation/login process through Metamask</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="row" style="justify-content: center; padding-top: 20px">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">We came up with 10 possible
-          personas. For the MVP we focused on early adopters: people who firmly believe in and understand blockchain
-          technology regardless of the volatile state of the crypto industry.
-        </p>
-      </div>
-    </div>
-
-    <p class="lead imgDescription" style="margin-bottom:-.5vw; margin-top:1.5em; text-align: center">
-      A few personas
-    </p>
-    <div class="longImage">
+      <p
+        class="lead imgDescription"
+        style="margin-bottom: -0.5vw; margin-top: 1.5em; text-align: center;"
+      >
+        Prerequisite to contribute
+      </p>
       <div class="row" style="justify-content: center;">
         <div class="img2Row">
           <!-- vertically alligns words and pictures -->
-          <div class="row" style="margin-top:15px;"></div>
-          <img class="img-fluid img_shadow" src="img/nanome/student.png" alt=" " />
-          <div class="row" style="margin-top:15px;"></div>
-        </div>
-        <div class="img2Row">
-          <!-- vertically alligns words and pictures -->
-          <div class="row" style="margin-top:15px;"></div>
-          <img class="img-fluid img_shadow" src="img/nanome/scientist.png" alt=" " />
-          <div class="row" style="margin-top:15px;"></div>
-        </div>
-      </div>
-      <div class="row" style="justify-content: center; padding-top: 15px">
-        <div class="img2Row">
-          <!-- vertically alligns words and pictures -->
-          <div class="row" style="margin-top:15px;"></div>
-          <img class="img-fluid img_shadow" src="img/nanome/crypto.png" alt=" " />
-          <div class="row" style="margin-top:15px;"></div>
-        </div>
-        <div class="img2Row">
-          <!-- vertically alligns words and pictures -->
-          <div class="row" style="margin-top:15px;"></div>
-          <img class="img-fluid img_shadow" src="img/nanome/explorer.png" alt=" " />
-          <div class="row" style="margin-top:15px;"></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row" style="justify-content: center; padding-top: 20px">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;"><strong>Primary
-            stakeholders:</strong>
-          Pharma Institutions who want to solve real world problems but don’t have a platform to obtain shared
-          knowledge or hidden talent
-        </p>
-      </div>
-    </div>
-    <div class="row" style="justify-content: center; padding-top: 20px">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;"><strong>Secondary
-            stakeholders:</strong> Scientists who need help with research but don’t have the resources or a team
-          because of location and funding limitations.
-        </p>
-      </div>
-    </div>
-
-    <div class="row" style="justify-content: center; padding-top: 20px">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">Being in a fast paced startup
-          environment, the CEO insisted that I don’t follow standard UX methodology (user testing then lofi
-          sketches/wires with iterative usability testing towards hifi). I was told to create as many hifi iterations
-          as possible and the team would decide which ones to move forward with.
-        </p>
-      </div>
-    </div>
-
-    <div class="row" style="justify-content: center; padding-top: 2.5em">
-      <div class="img1Row">
-        <!-- vertically alligns words and pictures -->
-        <p class="lead imgDescription" style="margin-bottom:-.5em;"> Site Map </p>
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid img_shadow" src="img/nanome/sitemap.png" alt=" ">
-        <div class="row" style="margin-top:15px;"></div>
-      </div>
-    </div>
-
-    <div class="row theprocessWrap" id="usatests">
-      <div class="text_small theprocess">Usability Tests</div>
-    </div>
-
-    <div class="row" style="justify-content: center;">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">To make this huge case study
-          more coherent, I wrote it in a different order than how the internship progressed. I performed one round of
-          usability testing with 9 users in the middle of the internship and will discuss the findings in each section
-          below.
-        </p>
-      </div>
-    </div>
-
-    <div class="row" style="justify-content: center; padding-top: 20px">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">The survey I used to recruit
-          the users is <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSfadMzF0MnQr-spQxrmVmoK9ng-M_HIfY9ins1rE0GsNrA2Zw/viewform?usp=sf_link"
-            target="_blank" style="margin-bottom:0em;color:#0086CB;">here</a>. The goals was to see how familiar
-          the user was with blockchain technology and computer interfaces. </p>
-        <ul class="fa-ul">
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Novice:
-            not familiar with blockchain technology</li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Intermediate:
-            CS background and some familiarity </li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Expert:
-            Fluent with both current state of cryptocurrency and how the blockchain data structure works.</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="row" style="justify-content: center; padding-top: 20px">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">The usability testing plan is
-          <a href="img/nanome/test_plan.pdf" download="comp_anal.pdf " target="_blank" style="color:#b08449; ">here</a>.
-          I recruited 4 novice, 3 intermediate, and 2 expert users. I used the functional Alpha 1 MVP (04/12/18) to
-          test already implemented functions (create account, enter tournament, & submit). I used a prototype to test
-          allocating rewards to winners from the host’s point of view but I can’t link it through this case study
-          because I don’t have the pro version of Adobe XD. I have a local version that can be shown during the
-          interview.</p>
-      </div>
-    </div>
-
-    <div class="row" style="justify-content: center; padding-top: 20px">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">Main findings:</p>
-        <ul class="fa-ul">
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px"><i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Confusion
-            with the modal design when going through long use cases (creating a tournament)</li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px"><i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Confusion
-            with unlocking a tournament because there wasn’t a status indicator</li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px"><i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Confusion
-            between round reward and total reward</li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px"><i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Wanted
-            a FAQ or hints </li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px"><i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Confusion
-            with the icons- words could be better</li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px"><i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Confusion
-            in creating a tournament- specifically the subject of “rounds” per tournament</li>
-        </ul>
-      </div>
-    </div>
-    <div class="row spacer "></div>
-
-    <div class="row theprocessWrap" id="login">
-      <div class="text_small theprocess">Login/Pilot</div>
-    </div>
-
-    <div class="row" style="justify-content: center;">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">The team wanted to show that
-          the platform had a lot of activity to persuade new users to join. Before logging in, the user would be able
-          to see the activity feed, community feeds, signup, and the requirements to use to platform.
-        </p>
-      </div>
-    </div>
-
-    <p class="lead imgDescription" style="margin-bottom:-.5vw; margin-top:2.5em; text-align: center">
-      Before Logging In
-    </p>
-    <div class="longImage">
-      <div class="row" style="justify-content: center">
-        <div class="img2Row">
-          <!-- vertically alligns words and pictures -->
-          <div class="row" style="margin-top:15px;"></div>
-          <img class="img-fluid img_shadow" src="img/nanome/prelog1.png" alt=" " />
-          <div class="row" style="margin-top:15px;"></div>
-        </div>
-        <div class="img2Row">
-          <!-- vertically alligns words and pictures -->
-          <div class="row" style="margin-top:15px;"></div>
-          <img class="img-fluid img_shadow" src="img/nanome/prelog2.png" alt=" " />
-          <div class="row" style="margin-top:15px;"></div>
+          <div class="row" style="margin-top: 15px;"></div>
+          <img
+            class="img-fluid img_shadow"
+            src="img/nanome/enter8two.png"
+            alt=" "
+          />
+          <div class="row" style="margin-top: 15px;"></div>
         </div>
       </div>
 
-      <div class="row" style="justify-content: center; padding-top: 2.5em">
+      <div class="row" style="justify-content: center; padding-top: 20px;">
         <div class="text_small">
-          <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">For the MVP we removed the
-            activity feed because it was too expensive on development. We replaced it with an introduction video because
-            users reported that the tournament system was confusing.
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            We shifted to a notification based system so that the user wouldn’t
+            be stuck staring at a loading page while the transaction was
+            processing.
           </p>
         </div>
       </div>
 
-      <p class="lead imgDescription" style="margin-bottom:-.5vw; margin-top:2.5em; text-align: center">
-        Later Iteration
+      <p
+        class="lead imgDescription"
+        style="margin-bottom: -0.5vw; margin-top: 1.5em; text-align: center;"
+      >
+        Prerequisite v3
       </p>
-      <div class="row" style="justify-content: center">
+      <div class="row" style="justify-content: center;">
         <div class="img2Row">
           <!-- vertically alligns words and pictures -->
-          <div class="row" style="margin-top:15px;"></div>
-          <img class="img-fluid img_shadow" src="img/nanome/prelog3.png" alt=" " />
-          <div class="row" style="margin-top:15px;"></div>
-        </div>
-        <div class="img2Row">
-          <!-- vertically alligns words and pictures -->
-          <div class="row" style="margin-top:15px;"></div>
-          <img class="img-fluid img_shadow" src="img/nanome/prelog4.png" alt=" " />
-          <div class="row" style="margin-top:15px;"></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row" style="justify-content: center; padding-top: 2.5em">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">Towards the end of my
-          internship, we decided to incorporate a tutorial because the usability tests showed that users were confused
-          by how the app worked.
-        </p>
-      </div>
-    </div>
-
-    <div class="row" style="justify-content: center; padding-top: 2.5em">
-      <div class="img2Row">
-        <!-- vertically alligns words and pictures -->
-        <p class="lead imgDescription" style="margin-bottom:-.5em;"> Tutorial </p>
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid img_shadow" src="img/nanome/tut2.png" alt=" ">
-        <div class="row" style="margin-top:15px;"></div>
-      </div>
-    </div>
-
-    <div class="row theprocessWrap" id="livetourn">
-      <div class="text_small theprocess">Live Tournaments</div>
-    </div>
-
-    <div class="row" style="justify-content: center">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">My initial designs followed a
-          list-like design pattern that many competitors had. It’s meant to include as much information as possible so
-          that advanced users could navigate through the interface more quickly.
-        </p>
-      </div>
-    </div>
-
-    <p class="lead imgDescription" style="margin-bottom:-.5vw; margin-top:2.5em; text-align: center">
-      Live Tournaments v1
-    </p>
-    <div class="row longImage" style="justify-content: center">
-      <div class="img2Row">
-        <!-- vertically alligns words and pictures -->
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid img_shadow" src="img/nanome/live1.png" alt=" " />
-        <div class="row" style="margin-top:15px;"></div>
-      </div>
-      <div class="img2Row">
-        <!-- vertically alligns words and pictures -->
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid img_shadow" src="img/nanome/live2.png" alt=" " />
-        <div class="row" style="margin-top:15px;"></div>
-      </div>
-    </div>
-
-    <div class="row" style="justify-content: center; padding-top: 2.5em">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">Due to limited resources, I
-          could only user test on UX classmates and friends interested in cryptocurrency. Feedback:</p>
-        <ul class="fa-ul">
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px"><i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Wanted
-            more space between the listings </li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px"><i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Wanted
-            visual indicators like pictures</li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px"><i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Wanted
-            category distinction</li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px"><i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Wanted
-            short description of the tournament </li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="row" style="justify-content: center; padding-top: 20px">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">After running the
-          usability tests, users reported that the interface seemed too cluttered. They also said that there should be
-          more emphasis on the tournament description so that they could quickly determine whether or not they could
-          participate. After a meeting, we decided to move forward with the last iteration because it better aligned
-          with the feedback.
-        </p>
-      </div>
-    </div>
-
-    <div class="row" style="justify-content: center; padding-top: 2.5em">
-      <div class="img1Row">
-        <!-- vertically alligns words and pictures -->
-        <p class="lead imgDescription" style="margin-bottom:-.5em;"> v3 </p>
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid img_shadow" src="img/nanome/live5.png" alt=" ">
-        <div class="row" style="margin-top:15px;"></div>
-      </div>
-    </div>
-
-    <div class="row" style="justify-content: center; padding-top: 2.5em">
-      <div class="img1Row">
-        <!-- vertically alligns words and pictures -->
-        <p class="lead imgDescription" style="margin-bottom:-.5em;"> v6 </p>
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid img_shadow" src="img/nanome/live6.png" alt=" ">
-        <div class="row" style="margin-top:15px;"></div>
-      </div>
-    </div>
-
-    <div class="row theprocessWrap" id="tournDeets">
-      <div class="text_small theprocess">Tournament Details</div>
-    </div>
-
-    <div class="row" style="justify-content: center;">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">Important factors:</p>
-        <ul class="fa-ul">
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Tournament
-            summary </li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Prior
-            submissions</li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Previous
-            winners</li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Rounds
-            number, reward, remaining time</li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Clarification
-            on how to enter a tournament (and it’s costs) </li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="row" style="justify-content: center; padding-top: 20px">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">Each tournament is broken into
-          multiple rounds and each round can have multiple winners. After the winners are picked, that round’s
-          submissions are accessible by anyone; this is how the community works together towards a solution. The
-          blockchain eliminates the possibility of plagiarism because all submissions are cross referenced with the
-          data on the network.
-        </p>
-      </div>
-    </div>
-
-    <div class="row" style="justify-content: center; padding-top: 2.5em">
-      <div class="img1Row">
-        <!-- vertically alligns words and pictures -->
-        <p class="lead imgDescription" style="margin-bottom:-.5em;"> Tournament Details v1 </p>
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid img_shadow" src="img/nanome/deet1.png" alt=" ">
-        <div class="row" style="margin-top:15px;"></div>
-      </div>
-    </div>
-
-    <div class="row" style="justify-content: center; padding-top: 20px">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">My initial designs were modal
-          based but I soon learned this wouldn’t work because:</p>
-        <ul class="fa-ul">
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Programming
-            limitation: stored data on the fields (Creating a Tournament task) disappear after opening another use
-            case. </li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Programming
-            limitation: slow load time when all data is stored in modals of one page.</li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Usability
-            issue: modal flows for completing processes are confusing. </li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="longImage">
-      <div class="row" style="justify-content: center; padding-top: 2.5em">
-        <div class="img1RowLong">
-          <!-- vertically alligns words and pictures -->
-          <p class="lead imgDescription" style="margin-bottom:-.5em;"> Second Iteration </p>
-          <div class="row" style="margin-top:15px;"></div>
-          <img class="img-fluid " src="img/nanome/deet2.png" alt=" ">
-          <div class="row" style="margin-top:15px;"></div>
+          <div class="row" style="margin-top: 15px;"></div>
+          <img
+            class="img-fluid img_shadow"
+            src="img/nanome/enter11.png"
+            alt=" "
+          />
+          <div class="row" style="margin-top: 15px;"></div>
         </div>
       </div>
 
-      <div class="row" style="justify-content: center; padding-top: 2.5em">
+      <div class="row theprocessWrap" id="rewards">
+        <div class="text_small theprocess">Rewards</div>
+      </div>
+
+      <div class="row" style="justify-content: center;">
         <div class="text_small">
-          <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">Usability tests showed that
-            users didn’t understand the icons on the left hand side (although I wasn’t able to replicate the description
-            on hover effect)
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            To reduce calculations when allocating rewards per round, the
+            initial designs were percentage based. At first, the tournament host
+            has the ability to reward 100% of the round reward to anyone. As the
+            host continues to allocate the reward, the 100% is relative to the
+            remaining matryx tokens left in the reward pot.
           </p>
         </div>
       </div>
 
-      <div class="row" style="justify-content: center; padding-top: 20px">
+      <p
+        class="lead imgDescription"
+        style="margin-bottom: -0.5vw; margin-top: 1.5em; text-align: center;"
+      >
+        Allocating Rewards v1
+      </p>
+      <div class="row" style="justify-content: center;">
+        <div class="img2Row">
+          <!-- vertically alligns words and pictures -->
+          <div class="row" style="margin-top: 15px;"></div>
+          <img
+            class="img-fluid img_shadow"
+            src="img/nanome/winner4.png"
+            alt=" "
+          />
+          <div class="row" style="margin-top: 15px;"></div>
+        </div>
+      </div>
+      <div class="row longImage" style="justify-content: center;">
+        <div class="img2Row">
+          <!-- vertically alligns words and pictures -->
+          <div class="row" style="margin-top: 15px;"></div>
+          <img
+            class="img-fluid img_shadow"
+            src="img/nanome/winner7.png"
+            alt=" "
+          />
+          <div class="row" style="margin-top: 15px;"></div>
+        </div>
+        <div class="img2Row">
+          <!-- vertically alligns words and pictures -->
+          <div class="row" style="margin-top: 15px;"></div>
+          <img
+            class="img-fluid img_shadow"
+            src="img/nanome/winner9.png"
+            alt=" "
+          />
+          <div class="row" style="margin-top: 15px;"></div>
+        </div>
+      </div>
+
+      <div class="row" style="justify-content: center; padding-top: 20px;">
         <div class="text_small">
-          <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">We also figured that each
-            round would have a different description so I added the feature to see prior round tournament details.
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            After some discussion, we changed the round reward system (where the
+            user decides how much reward must be allocated in each round when
+            they create the tournament) to a minimum reward per round in the
+            later iterations.
           </p>
-        </div>
-      </div>
-
-      <p class="lead imgDescription" style="margin-top:2.5em; margin-bottom: -.5em;text-align: center">
-        v4
-      </p>
-      <div class="row" style="justify-content: center">
-        <div class="img2Row">
-          <!-- vertically alligns words and pictures -->
-          <div class="row" style="margin-top:15px;"></div>
-          <img class="img-fluid img_shadow" src="img/nanome/deet4.png" alt=" " />
-          <div class="row" style="margin-top:15px;"></div>
-        </div>
-        <div class="img2Row">
-          <!-- vertically alligns words and pictures -->
-          <div class="row" style="margin-top:15px;"></div>
-          <img class="img-fluid img_shadow" src="img/nanome/deet5.png" alt=" " />
-          <div class="row" style="margin-top:15px;"></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row theprocessWrap" id="myaccount">
-      <div class="text_small theprocess">My Account</div>
-    </div>
-
-    <div class="row" style="justify-content: center;">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">For consistency, I kept a
-          similar design to the tournament listing wireframes. I had to add features like My Submissions, an edit
-          feature, and reward per submission.
-        </p>
-      </div>
-    </div>
-
-
-    <p class="lead imgDescription" style="margin-top:2.5em; margin-bottom: -.5em;text-align: center">
-      My Account v1
-    </p>
-    <div class="row" style="justify-content: center">
-      <div class="img2Row">
-        <!-- vertically alligns words and pictures -->
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid img_shadow" src="img/nanome/acc1.png" alt=" " />
-        <div class="row" style="margin-top:15px;"></div>
-      </div>
-    </div>
-
-    <div class="row" style="justify-content: center; padding-top: 2.5em">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">After testing, we got feedback
-          that the users felt the categories were all similar. They wanted
-          to have quicker access to all of their assets without going to a new page.
-        </p>
-      </div>
-    </div>
-
-
-    <p class="lead imgDescription" style="margin-top:2.5em; margin-bottom: -.5em;text-align: center">
-      v3
-    </p>
-    <div class="row longImage" style="justify-content: center">
-      <div class="img2Row">
-        <!-- vertically alligns words and pictures -->
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid img_shadow" src="img/nanome/acc4.png" alt=" " />
-        <div class="row" style="margin-top:15px;"></div>
-      </div>
-      <div class="img2Row">
-        <!-- vertically alligns words and pictures -->
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid img_shadow" src="img/nanome/acc3.png" alt=" " />
-        <div class="row" style="margin-top:15px;"></div>
-      </div>
-    </div>
-
-
-    <div class="row theprocessWrap" id="createtournament">
-      <div class="text_small theprocess">Create Tournament</div>
-    </div>
-
-    <div class="row" style="justify-content: center;">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">The most difficult part was
-          designing an interaction for tournament creation. A technical requirement was that the user had to first pay
-          to become a peer on the network to add data onto it.</p>
-        <ul class="fa-ul">
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>How
-            should the user allocate MTX? Per each round? Should it be percentage based? </li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Should
-            every round be an equal percentage? </li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>When do
-            they allocate this value? </li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>What if
-            they want to change the reward due to inadequate submissions?</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="row" style="justify-content: center; padding-top: 2.5em">
-      <div class="img1Row">
-        <!-- vertically alligns words and pictures -->
-        <p class="lead imgDescription" style="margin-bottom:-.5em;"> Create Tournament v1 </p>
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid img_shadow" src="img/nanome/create2.png" alt=" ">
-        <div class="row" style="margin-top:15px;"></div>
-      </div>
-    </div>
-
-    <div class="row" style="justify-content: center; padding-top: 2.5em">
-      <div class="img1Row">
-        <!-- vertically alligns words and pictures -->
-        <p class="lead imgDescription" style="margin-bottom:-.5em;"> v3 </p>
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid img_shadow" src="img/nanome/create3.png" alt=" ">
-        <div class="row" style="margin-top:15px;"></div>
-      </div>
-    </div>
-
-    <div class="row" style="justify-content: center; padding-top: 20px">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">The user struggled harder than
-          expected when trying to understand how rounds worked so we broke down the process with a stepped progress
-          interaction. The team decided to push towards a full screened interface rather than a modal because:</p>
-        <ul class="fa-ul">
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Modal
-            design was prone to user misclicking and exiting the tournament creation process.</li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Using a
-            full screen design also let the user see which step they were at in the process which created a smoother
-            user experience.</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="longImage">
-      <p class="lead imgDescription" style="margin-bottom:-.5vw; margin-top:1.5em; text-align: center">
-        v5
-      </p>
-      <div class="row" style="justify-content: center">
-        <div class="img2Row">
-          <!-- vertically alligns words and pictures -->
-          <div class="row" style="margin-top:15px;"></div>
-          <img class="img-fluid img_shadow" src="img/nanome/create4.png" alt=" " />
-          <div class="row" style="margin-top:15px;"></div>
-        </div>
-        <div class="img2Row">
-          <!-- vertically alligns words and pictures -->
-          <div class="row" style="margin-top:15px;"></div>
-          <img class="img-fluid img_shadow" src="img/nanome/create5.png" alt=" " />
-          <div class="row" style="margin-top:15px;"></div>
-        </div>
-      </div>
-      <div class="row" style="justify-content: center">
-        <div class="img2Row">
-          <!-- vertically alligns words and pictures -->
-          <div class="row" style="margin-top:15px;"></div>
-          <img class="img-fluid img_shadow" src="img/nanome/create9.png" alt=" " />
-          <div class="row" style="margin-top:15px;"></div>
-        </div>
-        <div class="img2Row">
-          <!-- vertically alligns words and pictures -->
-          <div class="row" style="margin-top:15px;"></div>
-          <img class="img-fluid img_shadow" src="img/nanome/create10.png" alt=" " />
-          <div class="row" style="margin-top:15px;"></div>
-        </div>
-      </div>
-
-      <div class="row" style="justify-content: center; padding-top: 20px">
-        <div class="text_small">
-          <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">We incorporated a status
-            indicator/notification system to make it more clear that you can't unlock or become a peer right away. The
-            blockchain needs to process the transaction, which can take up to several minutes depending on how populated
-            the network is.
-          </p>
-        </div>
-      </div>
-
-      <div class="row" style="justify-content: center; padding-top: 2.5em">
-        <div class="img1RowLong">
-          <!-- vertically alligns words and pictures -->
-          <p class="lead imgDescription" style="margin-bottom:-.5em;"> Notifications </p>
-          <div class="row" style="margin-top:15px;"></div>
-          <img class="img-fluid img_shadow" src="img/nanome/create11.png" alt=" ">
-          <div class="row" style="margin-top:15px;"></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row theprocessWrap" id="edittournament">
-      <div class="text_small theprocess">Edit Tournament</div>
-    </div>
-
-    <div class="row" style="justify-content: center;">
-      <div class="img1Row">
-        <!-- vertically alligns words and pictures -->
-        <p class="lead imgDescription" style="margin-bottom:-.5em;"> Edit Tournaments v1 </p>
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid img_shadow" src="img/nanome/edit1.png" alt=" ">
-        <div class="row" style="margin-top:15px;"></div>
-      </div>
-    </div>
-
-    <div class="row" style="justify-content: center; padding-top: 20px">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">After some discussion, the
-          team decided that the MVP should only include a set of predetermined categories. Assigning multiple
-          categories to one tournament was to expensive on the development side for the MVP. When the product grows its
-          user base, having multiple categories will be useful so that users could search more efficiently.
-        </p>
-      </div>
-    </div>
-
-    <div class="row" style="justify-content: center; padding-top: 2.5em">
-      <div class="img1Row">
-        <!-- vertically alligns words and pictures -->
-        <p class="lead imgDescription" style="margin-bottom:-.5em;"> v3 </p>
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid img_shadow" src="img/nanome/edit4.png" alt=" ">
-        <div class="row" style="margin-top:15px;"></div>
-      </div>
-    </div>
-
-    <div class="longImage">
-      <div class="row theprocessWrap" id="contributing">
-        <div class="text_small theprocess">Contributing</div>
-      </div>
-
-      <p class="lead imgDescription" style="margin-bottom:-.5vw; text-align: center">
-        Contributing v1
-      </p>
-      <div class="row" style="justify-content: center">
-        <div class="img2Row">
-          <!-- vertically alligns words and pictures -->
-          <div class="row" style="margin-top:15px;"></div>
-          <img class="img-fluid img_shadow" src="img/nanome/enter2.png" alt=" " />
-          <div class="row" style="margin-top:15px;"></div>
-        </div>
-        <div class="img2Row">
-          <!-- vertically alligns words and pictures -->
-          <div class="row" style="margin-top:15px;"></div>
-          <img class="img-fluid img_shadow" src="img/nanome/enter3.png" alt=" " />
-          <div class="row" style="margin-top:15px;"></div>
-        </div>
-      </div>
-      <div class="row" style="justify-content: center">
-        <div class="img2Row">
-          <!-- vertically alligns words and pictures -->
-          <div class="row" style="margin-top:15px;"></div>
-          <img class="img-fluid img_shadow" src="img/nanome/enter4.png" alt=" " />
-          <div class="row" style="margin-top:15px;"></div>
-        </div>
-        <div class="img2Row">
-          <!-- vertically alligns words and pictures -->
-          <div class="row" style="margin-top:15px;"></div>
-          <img class="img-fluid img_shadow" src="img/nanome/enter5.png" alt=" " />
-          <div class="row" style="margin-top:15px;"></div>
-        </div>
-      </div>
-      <div class="row" style="justify-content: center">
-        <div class="img2Row">
-          <!-- vertically alligns words and pictures -->
-          <div class="row" style="margin-top:15px;"></div>
-          <img class="img-fluid img_shadow" src="img/nanome/enter6.png" alt=" " />
-          <div class="row" style="margin-top:15px;"></div>
-        </div>
-        <div class="img2Row">
-          <!-- vertically alligns words and pictures -->
-          <div class="row" style="margin-top:15px;"></div>
-          <img class="img-fluid img_shadow" src="img/nanome/enter7.png" alt=" " />
-          <div class="row" style="margin-top:15px;"></div>
-        </div>
-      </div>
-
-      <div class="row" style="justify-content: center; padding-top: 20px">
-        <div class="text_small">
-          <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">Development faced some
-            concerns:</p>
           <ul class="fa-ul">
-            <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle"
-                style="color:#b08449; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Users
-              had to pay MTX to become a peer on the network</li>
-            <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle"
-                style="color:#b08449; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Transaction
-              speed is relative to # of miners on the network </li>
-            <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle"
-                style="color:#b08449; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>Potential
-              spam bots </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>This was because of the
+              edge case where there were no viable solutions submitted for that
+              round. We don’t want to force the host to give rewards to
+              unsatisfying solutions. Having a minimum reward per round makes
+              the creation process easier and tournament results more flexible.
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>For example, if someone
+              completely solves the solution in the first round, then all of the
+              reward can go to them.
+            </li>
           </ul>
         </div>
       </div>
-    </div>
 
-    <p class="lead imgDescription" style="margin-bottom:-.5vw; margin-top:1.5em; text-align: center">
-      Prerequisite to contribute
-    </p>
-    <div class="row" style="justify-content: center">
-      <div class="img2Row">
-        <!-- vertically alligns words and pictures -->
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid img_shadow" src="img/nanome/enter8two.png" alt=" " />
-        <div class="row" style="margin-top:15px;"></div>
-      </div>
-    </div>
-
-    <div class="row" style="justify-content: center; padding-top: 20px">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">We shifted to a notification
-          based system so that the user wouldn’t be stuck staring at a loading page while the transaction was
-          processing.
-        </p>
-      </div>
-    </div>
-
-    <p class="lead imgDescription" style="margin-bottom:-.5vw; margin-top:1.5em; text-align: center">
-      Prerequisite v3
-    </p>
-    <div class="row" style="justify-content: center">
-      <div class="img2Row">
-        <!-- vertically alligns words and pictures -->
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid img_shadow" src="img/nanome/enter11.png" alt=" " />
-        <div class="row" style="margin-top:15px;"></div>
-      </div>
-    </div>
-
-    <div class="row theprocessWrap" id="rewards">
-      <div class="text_small theprocess">Rewards</div>
-    </div>
-
-    <div class="row" style="justify-content: center;">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">To reduce calculations when
-          allocating rewards per round, the initial designs were percentage based. At first, the tournament host has
-          the ability to reward 100% of the round reward to anyone. As the host continues to allocate the reward, the
-          100% is relative to the remaining matryx tokens left in the reward pot.
-        </p>
-      </div>
-    </div>
-
-    <p class="lead imgDescription" style="margin-bottom:-.5vw; margin-top:1.5em; text-align: center">
-      Allocating Rewards v1
-    </p>
-    <div class="row " style="justify-content: center">
-      <div class="img2Row">
-        <!-- vertically alligns words and pictures -->
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid img_shadow" src="img/nanome/winner4.png" alt=" " />
-        <div class="row" style="margin-top:15px;"></div>
-      </div>
-    </div>
-    <div class="row longImage" style="justify-content: center">
-      <div class="img2Row">
-        <!-- vertically alligns words and pictures -->
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid img_shadow" src="img/nanome/winner7.png" alt=" " />
-        <div class="row" style="margin-top:15px;"></div>
-      </div>
-      <div class="img2Row">
-        <!-- vertically alligns words and pictures -->
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid img_shadow" src="img/nanome/winner9.png" alt=" " />
-        <div class="row" style="margin-top:15px;"></div>
-      </div>
-    </div>
-
-    <div class="row" style="justify-content: center; padding-top: 20px">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">After some discussion, we
-          changed the round reward system (where the user decides how much reward must be allocated in each round when
-          they create the tournament) to a minimum reward per round in the later iterations. </p>
-        <ul class="fa-ul">
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>This
-            was because of the edge case where there were no viable solutions submitted for that round. We don’t want
-            to force the host to give rewards to unsatisfying solutions. Having a minimum reward per round makes the
-            creation process easier and tournament results more flexible.</li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; font-size: 10px; padding-top: 7px"></i>For
-            example, if someone completely solves the solution in the first round, then all of the reward can go to
-            them.</li>
-        </ul>
-      </div>
-    </div>
-
-    <p class="lead imgDescription" style="margin-bottom:-.5vw; margin-top:1.5em; text-align: center">
-      v2
-    </p>
-    <div class="row" style="justify-content: center">
-      <div class="img1Row">
-        <!-- vertically alligns words and pictures -->
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid img_shadow" src="img/nanome/winner10.png" alt=" " />
-        <div class="row" style="margin-top:15px;"></div>
-      </div>
-    </div>
-    <div class="row" style="justify-content: center">
-      <div class="img2Row">
-        <!-- vertically alligns words and pictures -->
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid img_shadow" src="img/nanome/winner11.png" alt=" " />
-        <div class="row" style="margin-top:15px;"></div>
-      </div>
-    </div>
-
-    <div class="row theprocessWrap" id="ip">
-      <div class="text_small theprocess">Intellectual Property</div>
-    </div>
-
-    <div class="row" style="justify-content: center;">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">Since data in immutable on the
-          blockchain, it’s easy to determine the owner of any piece of IP. The CEO had a vision to make a marketplace
-          where people can trade the ownership of the “solutions” or IP with MTX tokens. This will enable big
-          pharmaceutical & research companies to obtain licenses through a decentralized network and give commonday
-          researchers or students an opportunity to make money.
-        </p>
-      </div>
-    </div>
-
-    <p class="lead imgDescription" style="margin-bottom:-.5vw; margin-top:1.5em; text-align: center">
-      Uploading Assets
-    </p>
-    <div class="row" style="justify-content: center">
-      <div class="img2Row">
-        <!-- vertically alligns words and pictures -->
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid img_shadow" src="img/nanome/upload1.png" alt=" " />
-        <div class="row" style="margin-top:15px;"></div>
-      </div>
-    </div>
-    <div class="row" style="justify-content: center">
-      <div class="img2Row">
-        <!-- vertically alligns words and pictures -->
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid img_shadow" src="img/nanome/upload2.png" alt=" " />
-        <div class="row" style="margin-top:15px;"></div>
-      </div>
-    </div>
-
-    <p class="lead imgDescription" style="margin-bottom:-.5vw; margin-top:1.5em; text-align: center">
-      Marketplace
-    </p>
-    <div class="row" style="justify-content: center">
-      <div class="img2Row">
-        <!-- vertically alligns words and pictures -->
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid img_shadow" src="img/nanome/market.png" alt=" " />
-        <div class="row" style="margin-top:15px;"></div>
-      </div>
-    </div>
-
-    <p class="lead imgDescription" style="margin-bottom:-.5vw; margin-top:1.5em; text-align: center">
-      View Assets
-    </p>
-    <div class="row" style="justify-content: center">
-      <div class="img2Row">
-        <!-- vertically alligns words and pictures -->
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid img_shadow" src="img/nanome/asset2.png" alt=" " />
-        <div class="row" style="margin-top:15px;"></div>
-      </div>
-    </div>
-
-    <div class="row" style="justify-content: center; padding-top: 20px">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">During my last few days in the
-          internship, we discussed about integrating a reputation system in the product. This is so that the community
-          could self correct itself through reporting others if some managed to obtain intellectual property that
-          wasn’t theirs. This peer correction system was also present in our competitors. From the backend, a user’s
-          reputation would fluctuate depending on how many problems they solve, how much their work is cited, and how
-          long they’ve been on the network.
-        </p>
-      </div>
-    </div>
-
-    <p class="lead imgDescription" style="margin-bottom:-.5vw; margin-top:1.5em; text-align: center">
-      Profile
-    </p>
-    <div class="row" style="justify-content: center">
-      <div class="img2Row">
-        <!-- vertically alligns words and pictures -->
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid img_shadow" src="img/nanome/profile.png" alt=" " />
-        <div class="row" style="margin-top:15px;"></div>
-      </div>
-    </div>
-
-    <div class="row" style="justify-content: center; padding-top: 20px">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">It wasn’t thoroughly discussed
-          so I created a simple 1 to 5 star interface on everyone’s account, which was enough for the MVP. My vision of
-          a more thorough interface was a time graph indicating the fluctuations of a user's reputation. Users could
-          click certain points on the graph and see the reason behind reputation changes.
-        </p>
-      </div>
-    </div>
-
-    <p class="lead imgDescription" style="margin-bottom:-.5vw; margin-top:1.5em; text-align: center">
-      Reputation Blue Sky
-    </p>
-    <div class="row" style="justify-content: center">
-      <div class="img2Row">
-        <!-- vertically alligns words and pictures -->
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid img_shadow" src="img/nanome/rep.jpeg" alt=" " />
-        <div class="row" style="margin-top:15px;"></div>
-      </div>
-    </div>
-
-    <div class="row theprocessWrap" id="learnings">
-      <div class="text_small theprocess">Learnings</div>
-    </div>
-
-    <div class="row" style="justify-content: center;">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">I organized this case study by
-          the product's features so that it would make sense; however, the actual timeline was very messy. I entered
-          very
-          early into the project and the team didn’t have a concrete vision of the direction of the product. For
-          example, there was no onboarding, intellectual property marketplace, or reputation system in the beginning;
-          these and many more features were decided on as I was designing the interface.
-        </p>
-      </div>
-    </div>
-
-    <div class="row" style="justify-content: center; padding-top: 20px">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">This experience was stressful
-          but also extremely rewarding because I had a lot of control over the product’s direction. I love being
-          involved in the content discussions and I learned so much about how to make my designs fit existing APIs
-          because of the limited development resources.
-        </p>
-      </div>
-    </div>
-
-    <div class="row" style="justify-content: center; padding-top: 20px">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">I also gained a lot of
-          experience with hifi prototyping because I had to produce new wireframes for development within hours after
-          discussion. I do wish that I was able to incorporate a more user centered design process. I hope that I
-          created a good foundation for Nanome’s future designers to iterate on.
-        </p>
-      </div>
-    </div>
-
-    <div class="row" style="text-align: center; padding-bottom: 40px;">
-      <div class="text_medium theprocess END">My Other Work</div>
-    </div>
-
-    <div class="row">
-      <!-- D4SD -->
-      <section class="col-md-2 order-md-1" style="padding:0px 0;"></section>
-      <section class="col-md-4 order-md-2 titlehoriz" style="padding:0px 0;">
-        <div class="box btn-group modal-dialogtwo dynamicthumbnail" style="margin-top: 0px;">
-          <a href="project5.html">
-            <div class="titlehoriz">
-              <img class="img-fluid" src="img/idx_mea.png" alt=" " />
-            </div>
-          </a>
+      <p
+        class="lead imgDescription"
+        style="margin-bottom: -0.5vw; margin-top: 1.5em; text-align: center;"
+      >
+        v2
+      </p>
+      <div class="row" style="justify-content: center;">
+        <div class="img1Row">
+          <!-- vertically alligns words and pictures -->
+          <div class="row" style="margin-top: 15px;"></div>
+          <img
+            class="img-fluid img_shadow"
+            src="img/nanome/winner10.png"
+            alt=" "
+          />
+          <div class="row" style="margin-top: 15px;"></div>
         </div>
-      </section>
-      <section class="col-md-4 order-md-3 vertical-align" style="padding:0px 0;">
-        <div class="fullWidthWork">
-          <div class="row-centerer">
-            <h3 class="section-heading" style="font-weight: 400">
-              <a class="sliding-middle-out" href="project5.html">
-                D4SD Hackathon</a>
-            </h3>
-            <p class="lead ">
-              I competed in a city wide design competition to improve
-              transportation in San Diego during Fall 2017.
-            </p>
+      </div>
+      <div class="row" style="justify-content: center;">
+        <div class="img2Row">
+          <!-- vertically alligns words and pictures -->
+          <div class="row" style="margin-top: 15px;"></div>
+          <img
+            class="img-fluid img_shadow"
+            src="img/nanome/winner11.png"
+            alt=" "
+          />
+          <div class="row" style="margin-top: 15px;"></div>
+        </div>
+      </div>
+
+      <div class="row theprocessWrap" id="ip">
+        <div class="text_small theprocess">Intellectual Property</div>
+      </div>
+
+      <div class="row" style="justify-content: center;">
+        <div class="text_small">
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            Since data in immutable on the blockchain, it’s easy to determine
+            the owner of any piece of IP. The CEO had a vision to make a
+            marketplace where people can trade the ownership of the “solutions”
+            or IP with MTX tokens. This will enable big pharmaceutical &
+            research companies to obtain licenses through a decentralized
+            network and give commonday researchers or students an opportunity to
+            make money.
+          </p>
+        </div>
+      </div>
+
+      <p
+        class="lead imgDescription"
+        style="margin-bottom: -0.5vw; margin-top: 1.5em; text-align: center;"
+      >
+        Uploading Assets
+      </p>
+      <div class="row" style="justify-content: center;">
+        <div class="img2Row">
+          <!-- vertically alligns words and pictures -->
+          <div class="row" style="margin-top: 15px;"></div>
+          <img
+            class="img-fluid img_shadow"
+            src="img/nanome/upload1.png"
+            alt=" "
+          />
+          <div class="row" style="margin-top: 15px;"></div>
+        </div>
+      </div>
+      <div class="row" style="justify-content: center;">
+        <div class="img2Row">
+          <!-- vertically alligns words and pictures -->
+          <div class="row" style="margin-top: 15px;"></div>
+          <img
+            class="img-fluid img_shadow"
+            src="img/nanome/upload2.png"
+            alt=" "
+          />
+          <div class="row" style="margin-top: 15px;"></div>
+        </div>
+      </div>
+
+      <p
+        class="lead imgDescription"
+        style="margin-bottom: -0.5vw; margin-top: 1.5em; text-align: center;"
+      >
+        Marketplace
+      </p>
+      <div class="row" style="justify-content: center;">
+        <div class="img2Row">
+          <!-- vertically alligns words and pictures -->
+          <div class="row" style="margin-top: 15px;"></div>
+          <img
+            class="img-fluid img_shadow"
+            src="img/nanome/market.png"
+            alt=" "
+          />
+          <div class="row" style="margin-top: 15px;"></div>
+        </div>
+      </div>
+
+      <p
+        class="lead imgDescription"
+        style="margin-bottom: -0.5vw; margin-top: 1.5em; text-align: center;"
+      >
+        View Assets
+      </p>
+      <div class="row" style="justify-content: center;">
+        <div class="img2Row">
+          <!-- vertically alligns words and pictures -->
+          <div class="row" style="margin-top: 15px;"></div>
+          <img
+            class="img-fluid img_shadow"
+            src="img/nanome/asset2.png"
+            alt=" "
+          />
+          <div class="row" style="margin-top: 15px;"></div>
+        </div>
+      </div>
+
+      <div class="row" style="justify-content: center; padding-top: 20px;">
+        <div class="text_small">
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            During my last few days in the internship, we discussed about
+            integrating a reputation system in the product. This is so that the
+            community could self correct itself through reporting others if some
+            managed to obtain intellectual property that wasn’t theirs. This
+            peer correction system was also present in our competitors. From the
+            backend, a user’s reputation would fluctuate depending on how many
+            problems they solve, how much their work is cited, and how long
+            they’ve been on the network.
+          </p>
+        </div>
+      </div>
+
+      <p
+        class="lead imgDescription"
+        style="margin-bottom: -0.5vw; margin-top: 1.5em; text-align: center;"
+      >
+        Profile
+      </p>
+      <div class="row" style="justify-content: center;">
+        <div class="img2Row">
+          <!-- vertically alligns words and pictures -->
+          <div class="row" style="margin-top: 15px;"></div>
+          <img
+            class="img-fluid img_shadow"
+            src="img/nanome/profile.png"
+            alt=" "
+          />
+          <div class="row" style="margin-top: 15px;"></div>
+        </div>
+      </div>
+
+      <div class="row" style="justify-content: center; padding-top: 20px;">
+        <div class="text_small">
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            It wasn’t thoroughly discussed so I created a simple 1 to 5 star
+            interface on everyone’s account, which was enough for the MVP. My
+            vision of a more thorough interface was a time graph indicating the
+            fluctuations of a user's reputation. Users could click certain
+            points on the graph and see the reason behind reputation changes.
+          </p>
+        </div>
+      </div>
+
+      <p
+        class="lead imgDescription"
+        style="margin-bottom: -0.5vw; margin-top: 1.5em; text-align: center;"
+      >
+        Reputation Blue Sky
+      </p>
+      <div class="row" style="justify-content: center;">
+        <div class="img2Row">
+          <!-- vertically alligns words and pictures -->
+          <div class="row" style="margin-top: 15px;"></div>
+          <img class="img-fluid img_shadow" src="img/nanome/rep.jpeg" alt=" " />
+          <div class="row" style="margin-top: 15px;"></div>
+        </div>
+      </div>
+
+      <div class="row theprocessWrap" id="learnings">
+        <div class="text_small theprocess">Learnings</div>
+      </div>
+
+      <div class="row" style="justify-content: center;">
+        <div class="text_small">
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            I organized this case study by the product's features so that it
+            would make sense; however, the actual timeline was very messy. I
+            entered very early into the project and the team didn’t have a
+            concrete vision of the direction of the product. For example, there
+            was no onboarding, intellectual property marketplace, or reputation
+            system in the beginning; these and many more features were decided
+            on as I was designing the interface.
+          </p>
+        </div>
+      </div>
+
+      <div class="row" style="justify-content: center; padding-top: 20px;">
+        <div class="text_small">
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            This experience was stressful but also extremely rewarding because I
+            had a lot of control over the product’s direction. I love being
+            involved in the content discussions and I learned so much about how
+            to make my designs fit existing APIs because of the limited
+            development resources.
+          </p>
+        </div>
+      </div>
+
+      <div class="row" style="justify-content: center; padding-top: 20px;">
+        <div class="text_small">
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            I also gained a lot of experience with hifi prototyping because I
+            had to produce new wireframes for development within hours after
+            discussion. I do wish that I was able to incorporate a more user
+            centered design process. I hope that I created a good foundation for
+            Nanome’s future designers to iterate on.
+          </p>
+        </div>
+      </div>
+
+      <div class="row" style="text-align: center; padding-bottom: 40px;">
+        <div class="text_medium theprocess END">My Other Work</div>
+      </div>
+
+      <div class="row">
+        <!-- D4SD -->
+        <section class="col-md-2 order-md-1" style="padding: 0px 0;"></section>
+        <section class="col-md-4 order-md-2 titlehoriz" style="padding: 0px 0;">
+          <div
+            class="box btn-group modal-dialogtwo dynamicthumbnail"
+            style="margin-top: 0px;"
+          >
+            <a href="project5.html">
+              <div class="titlehoriz">
+                <img class="img-fluid" src="img/idx_mea.png" alt=" " />
+              </div>
+            </a>
+          </div>
+        </section>
+        <section
+          class="col-md-4 order-md-3 vertical-align"
+          style="padding: 0px 0;"
+        >
+          <div class="fullWidthWork">
+            <div class="row-centerer">
+              <h3 class="section-heading" style="font-weight: 400;">
+                <a class="sliding-middle-out" href="project5.html">
+                  D4SD Hackathon</a
+                >
+              </h3>
+              <p class="lead">
+                I competed in a city wide design competition to improve
+                transportation in San Diego during Fall 2017.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="col-md-2 order-md-4" style="padding: 0px 0;"></section>
+      </div>
+
+      <div class="row" style="margin-top: 7vw;">
+        <!-- Birch -->
+        <section class="col-md-2 order-md-1" style="padding: 0px 0;"></section>
+        <section class="col-md-4 order-md-3 titlehoriz" style="padding: 0px 0;">
+          <div
+            class="box btn-group modal-dialogtwo dynamicthumbnail"
+            style="margin-top: 0px;"
+          >
+            <a href="workday_pre.html">
+              <div class="titlehoriz">
+                <img class="img-fluid" src="img/idx_wrkdy.png" alt=" " />
+              </div>
+            </a>
+          </div>
+        </section>
+        <section
+          class="col-md-4 order-md-2 vertical-align"
+          style="padding: 0px 0;"
+        >
+          <div class="fullWidthWork">
+            <div class="row-centerer">
+              <h3 class="section-heading" style="font-weight: 400;">
+                <a class="sliding-middle-out" href="workday_pre.html"
+                  >Workday</a
+                >
+              </h3>
+              <p class="lead">
+                Redesigning the global conclusion interface and mobile
+                animations.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="col-md-2 order-md-4" style="padding: 0px 0;"></section>
+      </div>
+
+      <div class="row letstalkpad"></div>
+
+      <!-- CONTACT/EMAIL ME -->
+      <div class="vertical-align titlehoriz">
+        <h2 style="font-weight: 400;">
+          <a href="mailto:tonychan96@gmail.com " class="tony-middle-out">
+            Lets talk
+          </a>
+        </h2>
+      </div>
+      <div class="row letstalkpad"></div>
+
+      <!--  ///////////////////  FOOTER/CONTACT  ///////////////////  -->
+      <aside class="banner">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <a
+              href="mailto:tonychan96@gmail.com "
+              target="_blank "
+              class="btn-social btn-lg"
+              ><i class="fa fa-envelope"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/tonychan96/"
+              target="_blank "
+              class="btn-social btn-lg"
+              ><i class="fa fa-linkedin"></i
+            ></a>
           </div>
         </div>
-      </section>
-      <section class="col-md-2 order-md-4" style="padding:0px 0;"></section>
+      </aside>
+      <!-- container fluid wrapper end div -->
     </div>
 
-    <div class="row" style="margin-top: 7vw;">
-      <!-- Birch -->
-      <section class="col-md-2 order-md-1 " style="padding:0px 0;"></section>
-      <section class="col-md-4 order-md-3 titlehoriz" style="padding:0px 0;">
-        <div class="box btn-group modal-dialogtwo dynamicthumbnail" style="margin-top: 0px;">
-          <a href="workday_pre.html">
-            <div class="titlehoriz">
-              <img class="img-fluid" src="img/idx_wrkdy.png" alt=" " />
-            </div>
-          </a>
-        </div>
-      </section>
-      <section class="col-md-4 order-md-2 vertical-align" style="padding:0px 0;">
-        <div class="fullWidthWork">
-          <div class="row-centerer">
-            <h3 class="section-heading" style="font-weight: 400">
-              <a class="sliding-middle-out" href="workday_pre.html">Workday</a>
-            </h3>
-            <p class="lead ">
-              Redesigning the global conclusion interface and mobile
-              animations.
-            </p>
-          </div>
-        </div>
-      </section>
-      <section class="col-md-2 order-md-4 " style="padding:0px 0;"></section>
-    </div>
-
-    <div class="row letstalkpad"></div>
-
-    <!-- CONTACT/EMAIL ME -->
-    <div class="vertical-align titlehoriz">
-      <h2 style=" font-weight: 400; "> <a href="mailto:tonychan96@gmail.com " class="tony-middle-out">
-          Lets talk
-        </a> </h2>
-    </div>
-    <div class="row letstalkpad"></div>
-
-    <!--  ///////////////////  FOOTER/CONTACT  ///////////////////  -->
-    <aside class="banner ">
-      <div class="row ">
-        <div class="col-lg-12 text-center ">
-          <a href="mailto:tonychan96@gmail.com " target="_blank " class="btn-social btn-lg "><i
-              class="fa fa-envelope "></i></a>
-          <a href="https://www.linkedin.com/in/tonychan96/" target="_blank " class="btn-social btn-lg "><i
-              class="fa fa-linkedin "></i></a>
-        </div>
-      </div>
-    </aside>
-    <!-- container fluid wrapper end div -->
-  </div>
-
-  <!-- JavaScript -->
-  <!-- different jquery for scrollspy  -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="js/sideNav.js "></script>
-  <script src="js/smooth-scroll.min.js"></script>
-  <script src="js/navSlideIn.js"></script>
-  <script>
-    // Instantiate Scrolls
-    var scroll = new SmoothScroll('a[href*="#"]', {
-      speed: 200
-    });
-
-    if (document.querySelector("[data-easing]")) {
-      var easeOutQuart = new SmoothScroll('[data-easing="easeOutQuart"]', {
-        easing: "easeOutQuart"
+    <!-- JavaScript -->
+    <!-- different jquery for scrollspy  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/sideNav.js "></script>
+    <script src="js/smooth-scroll.min.js"></script>
+    <script src="js/navSlideIn.js"></script>
+    <script>
+      // Instantiate Scrolls
+      var scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 200,
       });
-    }
-  </script>
-  <script src="vendor/popper/popper.min.js "></script>
-  <script src="vendor/bootstrap/js/bootstrap.min.js "></script>
-  <script src="custom.js "></script>
 
-</body>
-
+      if (document.querySelector("[data-easing]")) {
+        var easeOutQuart = new SmoothScroll('[data-easing="easeOutQuart"]', {
+          easing: "easeOutQuart",
+        });
+      }
+    </script>
+    <script src="vendor/popper/popper.min.js "></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js "></script>
+    <script src="custom.js "></script>
+  </body>
 </html>

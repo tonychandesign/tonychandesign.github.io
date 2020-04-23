@@ -1,1255 +1,1666 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="keywords"
+      content="UX design product interaction visual mostion creative animations computer science engineering design systems"
+    />
+    <meta name="author" content="Tony Chan" />
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="keywords"
-    content="UX design product interaction visual mostion creative animations computer science engineering design systems" />
-  <meta name="author" content="Tony Chan" />
+    <title>Tony Chan: Workday- Slim Conclusion</title>
 
-  <title>Tony Chan: Workday- Slim Conclusion</title>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Custom fonts for this template -->
+    <link
+      href="vendor/font-awesome/css/font-awesome.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Button Stylesheet -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <!-- Custom styles for this template -->
+    <link href="css/outer.css" rel="stylesheet" />
+    <link href="css/d4sd.css" rel="stylesheet" />
+    <link href="css/sideNav.css" rel="stylesheet" />
+  </head>
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-  <!-- Custom fonts for this template -->
-  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet"
-    type="text/css" />
-  <!-- Button Stylesheet -->
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-  <!-- Custom styles for this template -->
-  <link href="css/outer.css" rel="stylesheet" />
-  <link href="css/d4sd.css" rel="stylesheet" />
-  <link href="css/sideNav.css" rel="stylesheet" />
-</head>
-
-<body data-spy="scroll" data-target="#scrollspy" data-offset="100">
-  <!-- fade in script -->
-  <script>
-    document.body.className += " fade-out";
-  </script>
-  <!-- dynamic resizing  -->
-  <div class="container-fluid">
-    <!--  ///////////////////  NAVBAR  ///////////////////  -->
-    <nav id="navbar" class="navbar-expand fixed-top whiteNav">
-      <div class="row row-centerer">
-        <div class="col-lg-4" style="margin: auto;">
-          <h1 class="tonychan">
-            <a href="index.html" class="tony-middle-out">Tony Chan</a>
-          </h1>
+  <body data-spy="scroll" data-target="#scrollspy" data-offset="100">
+    <!-- fade in script -->
+    <script>
+      document.body.className += " fade-out";
+    </script>
+    <!-- dynamic resizing  -->
+    <div class="container-fluid">
+      <!--  ///////////////////  NAVBAR  ///////////////////  -->
+      <nav id="navbar" class="navbar-expand fixed-top whiteNav">
+        <div class="row row-centerer">
+          <div class="col-lg-4" style="margin: auto;">
+            <h1 class="tonychan">
+              <a href="index.html" class="tony-middle-out">Tony Chan</a>
+            </h1>
+          </div>
+          <div class="col-lg-2"></div>
+          <div class="col-lg-6">
+            <div id="menu">
+              <ul
+                class="navbar-nav navbar-brand right-to-center nav-elem-centerer"
+              >
+                <li
+                  class="sliding-middle-out nav-item active"
+                  style="margin-left: 30px;"
+                >
+                  <a class="nav-link" href="index.html?page=0">Portfolio</a>
+                </li>
+                <li class="sliding-middle-out nav-item navpadding">
+                  <a class="nav-link" href="index.html?page=1">Resume</a>
+                </li>
+                <li
+                  class="sliding-middle-out nav-item"
+                  style="margin-right: 30px; margin-left: 0px;"
+                >
+                  <a class="nav-link" href="index.html?page=2">About Me</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="col-lg-2"></div>
-        <div class="col-lg-6">
-          <div id="menu">
-            <ul class="navbar-nav navbar-brand right-to-center nav-elem-centerer">
-              <li class="sliding-middle-out nav-item active" style="margin-left: 30px;">
-                <a class="nav-link" href="index.html?page=0">Portfolio</a>
-              </li>
-              <li class="sliding-middle-out nav-item navpadding">
-                <a class="nav-link" href="index.html?page=1">Resume</a>
-              </li>
-              <li class="sliding-middle-out nav-item" style="margin-right: 30px; margin-left: 0px;">
-                <a class="nav-link" href="index.html?page=2">About Me</a>
-              </li>
-            </ul>
+      </nav>
+      <div class="white_bg"></div>
+
+      <!-- - - - - ///////////////////  CONTENT  /////////////////// - - - - -->
+      <!-- - - - - - - - - - - - - - -PROJECT TITLE - - - - - - - - - - - - - - -->
+      <div class="respCoverPadding"></div>
+      <div
+        class="row"
+        style="margin-right: -16px; margin-left: -16px; margin-top: -10px;"
+      >
+        <!-- vertically alligns words and pictures -->
+        <div class="vertical-align row-centerer">
+          <img
+            class="img-fluid"
+            src="img/workday_photos/workdaycover.png"
+            style="margin: auto;"
+          />
+        </div>
+      </div>
+
+      <nav id="scrollspy">
+        <ul id="bar-fixed">
+          <div class="sidebar">
+            <li>
+              <a
+                class="bar nav-link"
+                data-easing="easeInOutQuart"
+                href="#context"
+                style="padding-top: 0px;"
+                >Context</a
+              >
+            </li>
+            <li>
+              <a
+                class="bar nav-link"
+                data-easing="easeInOutQuart"
+                href="#quantdata"
+                >Quantitative Data</a
+              >
+            </li>
+            <li>
+              <a
+                class="bar nav-link"
+                data-easing="easeInOutQuart"
+                href="#research"
+                >Going Broad</a
+              >
+            </li>
+            <li>
+              <a
+                class="bar nav-link"
+                data-easing="easeInOutQuart"
+                href="#usaTesting"
+                >Usability Testing</a
+              >
+            </li>
+            <li>
+              <a class="bar nav-link" data-easing="easeInOutQuart" href="#pivot"
+                >Pivot</a
+              >
+            </li>
+            <li>
+              <a
+                class="bar nav-link"
+                data-easing="easeInOutQuart"
+                href="#moreTesting"
+                >More Testing</a
+              >
+            </li>
+            <li>
+              <a
+                class="bar nav-link"
+                data-easing="easeInOutQuart"
+                href="#learnings"
+                style="padding-bottom: 0px;"
+                >Learnings</a
+              >
+            </li>
+          </div>
+        </ul>
+      </nav>
+
+      <div class="row" style="justify-content: center; padding-top: 11em;">
+        <div class="text_small">
+          <p>
+            <span class="intro">Timeline:</span>
+            <span class="lead myRoleText">Jun - Sep 2018</span>
+          </p>
+
+          <p>
+            <span class="intro">Employment Type:</span>
+            <span class="lead myRoleText">Internship</span>
+          </p>
+
+          <p>
+            <span class="intro">My Role:</span>
+            <span class="lead myRoleText">Product Designer</span>
+          </p>
+
+          <p>
+            <span class="intro">Tools:</span>
+            <span class="lead myRoleText">Sketch, Framer Studio</span>
+          </p>
+
+          <p>
+            <span class="intro">Skills:</span>
+            <span class="lead myRoleText"
+              >Interaction Design, Visual Design
+            </span>
+          </p>
+        </div>
+      </div>
+
+      <div class="row theprocessWrap" id="context">
+        <div class="text_small theprocess START">Context</div>
+      </div>
+
+      <div class="row">
+        <div class="text_small">
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            Our PMs and designers felt that the global conclusion page needed
+            improvement. My role was to research and redesign a “lighter”
+            conclusion interface which works with Workday’s 50,000+ business
+            tasks.
+          </p>
+        </div>
+      </div>
+
+      <p
+        class="lead imgDescription"
+        style="margin-bottom: -0.5vw; margin-top: 1.5em; text-align: center;"
+      >
+        Original Designs
+      </p>
+      <div class="row" style="justify-content: center;">
+        <div class="img2Row" style="margin-right: -5px;">
+          <!-- vertically alligns words and pictures -->
+          <div class="row" style="margin-top: 15px;"></div>
+          <img class="img-fluid" src="img/workday/old_2.png" alt=" " />
+          <div class="row" style="margin-top: 15px;"></div>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top: 2.5vw;">
+        <div class="text_small">
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            Initial concerns:
+          </p>
+          <ul class="fa-ul">
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>The page felt too
+              “heavy”- do we really need a full page & make the user perform an
+              extra click?
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Possible low confidence
+              in task completion
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Too much white space- the
+              links and information are too spread apart
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top: 2.5vw;">
+        <div class="text_small">
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            Our Dublin, Ireland team actually sent a quickfix design to
+            development for the recruitment use case right before I started my
+            internship.
+          </p>
+          <ul class="fa-ul">
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Recruiters are a subset
+              of users who go through dozens of business process (BP)
+              applications a day.
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>They wanted a lighter
+              conclusion page, like a notification, to save more time.
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Their design had issues
+              with accessibility users since the notification disappears over
+              time and hadn’t been tested the rest of Workday’s tasks.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <p
+        class="lead imgDescription"
+        style="margin-bottom: -0.5vw; margin-top: 1.5em; text-align: center;"
+      >
+        Dublin's Solution
+      </p>
+      <div class="row longImage" style="justify-content: center;">
+        <div class="img2Row">
+          <!-- vertically alligns words and pictures -->
+          <div class="row" style="margin-top: 15px;"></div>
+          <img class="img-fluid" src="img/workday/dublin_concl_1.png" alt=" " />
+          <div class="row" style="margin-top: 15px;"></div>
+        </div>
+        <div class="img2Row">
+          <!-- vertically alligns words and pictures -->
+          <div class="row" style="margin-top: 15px;"></div>
+          <img class="img-fluid" src="img/workday/dublin_concl_2.png" alt=" " />
+          <div class="row" style="margin-top: 15px;"></div>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top: 2.5vw;">
+        <div class="text_small">
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            My job was to work backwards from this specific use case and broaden
+            their design to fit the requirements of multiple use cases.
+          </p>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top: 2.5vw;">
+        <div class="text_small">
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            Initial tasks:
+          </p>
+          <ul class="fa-ul">
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Research the problem,
+              does this need to be fixed?
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>User must feel confident
+              that they’ve successfully submitted something.
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>(Possibly) reduce the
+              number of clicks to complete a task.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row theprocessWrap" id="quantdata">
+        <div class="text_small theprocess">Quantitative Data</div>
+      </div>
+
+      <div class="row">
+        <div class="text_small">
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            Since this is a design systems project, my first approach was to
+            find quantitative data on user tendencies on the conclusion pages.
+            Some questions I had:
+          </p>
+          <ul class="fa-ul">
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>How long did users stay
+              on the conclusion page?
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Did users use the related
+              links on the right hand side?
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>What do users usually
+              click on this page?
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Where do users navigate
+              to after finishing a BP?
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>How many tasks do users
+              typically complete in one sitting?
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Do they expand Details &
+              Process? Is this task specific?
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top: 2.5vw;">
+        <div class="text_small">
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            Unfortunately, the data science department hadn’t set up the
+            infrastructure to measure data on the conclusion page.
+          </p>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top: 3vw;">
+        <div class="text_small">
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            My next option was to send out a survey to see how designers and PMs
+            of different Workday BPs see the conclusion page being used. It
+            consisted of open ended questions like: How could the current
+            conclusion interface be improved? I had 17 responses and here are
+            some findings:
+          </p>
+        </div>
+      </div>
+
+      <div class="row" style="justify-content: center; padding-top: 20px;">
+        <div class="img2Row">
+          <!-- vertically alligns words and pictures -->
+          <p class="lead imgDescription" style="margin-bottom: 0.5em;">
+            Survey Data
+          </p>
+          <div class="row" style="margin-top: 15px;"></div>
+          <img
+            class="img-fluid img_shadow"
+            src="img/workday/survey_data.png"
+            alt=" "
+          />
+          <div class="row" style="margin-top: 15px;"></div>
+        </div>
+      </div>
+
+      <div class="row" style="justify-content: center;">
+        <div class="img1Row">
+          <!-- vertically alligns words and pictures -->
+          <div class="row" style="margin-top: 15px;"></div>
+          <img class="img-fluid" src="img/workday/survey_quotes.png" alt=" " />
+          <div class="row" style="margin-top: 15px;"></div>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top: 2.5vw;">
+        <div class="text_small">
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            Note: Although Workday employees also use Workday for HR management,
+            I had to carefully weigh their input. They are categorized as
+            experts who have a different experience from the average user
+            because they are constantly working on the product. I will go over
+            usability testing with real users later on.
+          </p>
+        </div>
+      </div>
+
+      <div class="row theprocessWrap" id="research">
+        <div class="text_small theprocess">
+          Going Broad
+        </div>
+      </div>
+
+      <div class="row" style="justify-content: center;">
+        <div class="img2Row">
+          <!-- vertically alligns words and pictures -->
+          <p class="lead imgDescription" style="margin-bottom: 0.5em;">
+            What others were doing
+          </p>
+          <img
+            class="img-fluid img_shadow"
+            src="img/workday/comp_anal.png"
+            alt=" "
+          />
+          <div class="row" style="margin-top: 15px;"></div>
+        </div>
+      </div>
+
+      <div class="row" style="justify-content: center; padding-top: 20px;">
+        <div class="text_small">
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            I interviewed several designers from different apps teams to
+            familiarize myself with the user flows and common fustrations.
+          </p>
+        </div>
+      </div>
+
+      <div class="row" style="justify-content: center; padding-top: 20px;">
+        <div class="img1Row">
+          <!-- vertically alligns words and pictures -->
+          <p class="lead imgDescription" style="margin-bottom: -0.5em;">
+            User Flows
+          </p>
+          <div class="row" style="margin-top: 15px;"></div>
+          <img class="img-fluid" src="img/workday/userflows.png" alt=" " />
+          <div class="row" style="margin-top: 15px;"></div>
+        </div>
+      </div>
+
+      <div class="row" style="justify-content: center; padding-top: 20px;">
+        <div class="text_small">
+          <p class="lead quote">
+            <b style="font-style: normal;">Problem Statement:</b> "High volume
+            users feel burdened by a full page conclusion and need a simpler
+            confirmation notice to save time".
+          </p>
+        </div>
+      </div>
+
+      <div class="row" style="justify-content: center; padding-top: 20px;">
+        <div class="text_small">
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            After syncing up with my PM, we decided these specs for the initial
+            design:
+          </p>
+          <ul class="fa-ul">
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Bring the content closer
+              together
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Differentiate conclusion
+              page from typical Workday page
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Show context as to what
+              page will be shown when the user clicks “Done”
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Have multiple versions
+              (toast notification, modal)
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <p
+        class="lead imgDescription"
+        style="margin-bottom: -0.5vw; margin-top: 1.5em; text-align: center;"
+      >
+        Paper Sketches
+      </p>
+      <div class="row" style="justify-content: center; padding-top: 15px;">
+        <div class="img3Row">
+          <!-- vertically alligns words and pictures -->
+          <div class="row" style="margin-top: 15px;"></div>
+          <img
+            class="img-fluid img_shadow"
+            src="img/workday/lofisketch1.png"
+            alt=" "
+          />
+          <div class="row" style="margin-top: 15px;"></div>
+        </div>
+        <div class="img3Row">
+          <!-- vertically alligns words and pictures -->
+          <div class="row" style="margin-top: 15px;"></div>
+          <img
+            class="img-fluid img_shadow"
+            src="img/workday/lofisketch2.png"
+            alt=" "
+          />
+          <div class="row" style="margin-top: 15px;"></div>
+        </div>
+      </div>
+      <div class="row" style="justify-content: center; padding-top: 15px;">
+        <div class="img3Row">
+          <!-- vertically alligns words and pictures -->
+          <div class="row" style="margin-top: 15px;"></div>
+          <img
+            class="img-fluid img_shadow"
+            src="img/workday/lofisketch3.png"
+            alt=" "
+          />
+          <div class="row" style="margin-top: 15px;"></div>
+        </div>
+        <div class="img3Row">
+          <!-- vertically alligns words and pictures -->
+          <div class="row" style="margin-top: 15px;"></div>
+          <img
+            class="img-fluid img_shadow"
+            src="img/workday/lofisketch4.png"
+            alt=" "
+          />
+          <div class="row" style="margin-top: 15px;"></div>
+        </div>
+      </div>
+
+      <p
+        class="lead imgDescription"
+        style="margin-bottom: -0.5vw; margin-top: 1.5em; text-align: center;"
+      >
+        Lofi Wireframes
+      </p>
+      <div class="longImage">
+        <div class="row" style="justify-content: center; padding-top: 15px;">
+          <div class="img2Row">
+            <!-- vertically alligns words and pictures -->
+            <div class="row" style="margin-top: 15px;"></div>
+            <img
+              class="img-fluid img_shadow"
+              src="img/workday/lofi1.png"
+              alt=" "
+            />
+            <div class="row" style="margin-top: 15px;"></div>
+          </div>
+          <div class="img2Row">
+            <!-- vertically alligns words and pictures -->
+            <div class="row" style="margin-top: 15px;"></div>
+            <img
+              class="img-fluid img_shadow"
+              src="img/workday/lofi2.png"
+              alt=" "
+            />
+            <div class="row" style="margin-top: 15px;"></div>
+          </div>
+        </div>
+        <div class="row" style="justify-content: center; padding-top: 15px;">
+          <div class="img2Row">
+            <!-- vertically alligns words and pictures -->
+            <div class="row" style="margin-top: 15px;"></div>
+            <img
+              class="img-fluid img_shadow"
+              src="img/workday/lofi4.png"
+              alt=" "
+            />
+            <div class="row" style="margin-top: 15px;"></div>
+          </div>
+          <div class="img2Row">
+            <!-- vertically alligns words and pictures -->
+            <div class="row" style="margin-top: 15px;"></div>
+            <img
+              class="img-fluid img_shadow"
+              src="img/workday/lofi3.png"
+              alt=" "
+            />
+            <div class="row" style="margin-top: 15px;"></div>
+          </div>
+        </div>
+        <div class="row" style="justify-content: center; padding-top: 15px;">
+          <div class="img2Row">
+            <!-- vertically alligns words and pictures -->
+            <div class="row" style="margin-top: 15px;"></div>
+            <img
+              class="img-fluid img_shadow"
+              src="img/workday/lofi5.png"
+              alt=" "
+            />
+            <div class="row" style="margin-top: 15px;"></div>
+          </div>
+          <div class="img2Row">
+            <!-- vertically alligns words and pictures -->
+            <div class="row" style="margin-top: 15px;"></div>
+            <img
+              class="img-fluid img_shadow"
+              src="img/workday/lofi6.png"
+              alt=" "
+            />
+            <div class="row" style="margin-top: 15px;"></div>
           </div>
         </div>
       </div>
-    </nav>
-    <div class="white_bg"></div>
 
-    <!-- - - - - ///////////////////  CONTENT  /////////////////// - - - - -->
-    <!-- - - - - - - - - - - - - - -PROJECT TITLE - - - - - - - - - - - - - - -->
-    <div class="respCoverPadding"></div>
-    <div class="row" style="margin-right: -16px; margin-left: -16px; margin-top: -10px;">
-      <!-- vertically alligns words and pictures -->
-      <div class="vertical-align row-centerer">
-        <img class="img-fluid" src="img/workday_photos/workdaycover.png" style="margin: auto;" />
-      </div>
-    </div>
-
-    <nav id="scrollspy">
-      <ul id="bar-fixed">
-        <div class="sidebar">
-          <li>
-            <a class="bar nav-link" data-easing="easeInOutQuart" href="#context" style="padding-top: 0px">Context</a>
-          </li>
-          <li>
-            <a class="bar nav-link" data-easing="easeInOutQuart" href="#quantdata">Quantitative Data</a>
-          </li>
-          <li>
-            <a class="bar nav-link" data-easing="easeInOutQuart" href="#research">Going Broad</a>
-          </li>
-          <li>
-            <a class="bar nav-link" data-easing="easeInOutQuart" href="#usaTesting">Usability Testing</a>
-          </li>
-          <li>
-            <a class="bar nav-link" data-easing="easeInOutQuart" href="#pivot">Pivot</a>
-          </li>
-          <li>
-            <a class="bar nav-link" data-easing="easeInOutQuart" href="#moreTesting">More Testing</a>
-          </li>
-          <li>
-            <a class="bar nav-link" data-easing="easeInOutQuart" href="#learnings"
-              style="padding-bottom: 0px">Learnings</a>
-          </li>
+      <div class="row" style="justify-content: center; padding-top: 20px;">
+        <div class="text_small">
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            I brought the designs into office hours to get feedback from the
+            creative directors:
+          </p>
+          <ul class="fa-ul">
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>They liked the modal
+              version the most because it gave context to the page that would
+              appear after clicking “Done”
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>I received advice on
+              justments of content alignment to follow Workday’s design system
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>
+              Moved toast to the middle so users can still access action buttons
+            </li>
+          </ul>
         </div>
-      </ul>
-    </nav>
-
-    <div class="row" style="justify-content: center; padding-top: 11em; ">
-      <div class="text_small">
-        <p>
-          <span class="intro">Timeline:</span>
-          <span class="lead myRoleText">Jun - Sep 2018</span>
-        </p>
-
-        <p>
-          <span class="intro">Employment Type:</span>
-          <span class="lead myRoleText">Internship</span>
-        </p>
-
-        <p>
-          <span class="intro">My Role:</span>
-          <span class="lead myRoleText">Product Designer</span>
-        </p>
-
-        <p>
-          <span class="intro">Tools:</span>
-          <span class="lead myRoleText">Sketch, Framer Studio</span>
-        </p>
-
-        <p>
-          <span class="intro">Skills:</span>
-          <span class="lead myRoleText">Interaction Design, Visual Design
-          </span>
-        </p>
-      </div>
-    </div>
-
-    <div class="row theprocessWrap" id="context">
-      <div class="text_small theprocess START">Context</div>
-    </div>
-
-    <div class="row">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">
-          Our PMs and designers felt that
-          the global conclusion page needed improvement. My role was to
-          research and redesign a “lighter” conclusion interface
-          which works with Workday’s 50,000+ business
-          tasks.
-        </p>
       </div>
 
-    </div>
-
-    <p class="lead imgDescription" style="margin-bottom:-.5vw; margin-top:1.5em; text-align: center">
-      Original Designs
-    </p>
-    <div class="row" style="justify-content: center;">
-      <div class="img2Row" style="margin-right: -5px;">
-        <!-- vertically alligns words and pictures -->
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid " src="img/workday/old_2.png" alt=" " />
-        <div class="row" style="margin-top:15px;"></div>
-      </div>
-    </div>
-
-    <div class="row" style="margin-top: 2.5vw;">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">
-          Initial concerns:
-        </p>
-        <ul class="fa-ul">
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>The
-            page felt too “heavy”- do we really need a full page & make
-            the user perform an extra click?
-          </li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Possible
-            low confidence in task completion
-          </li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Too
-            much white space- the links and information are too spread
-            apart
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="row" style="margin-top: 2.5vw;">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">
-          Our Dublin, Ireland team actually sent a quickfix design to
-          development for the recruitment use case right before I started my
-          internship.
-        </p>
-        <ul class="fa-ul">
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Recruiters
-            are a subset of users who go through dozens of
-            business process (BP) applications a day.
-          </li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>They
-            wanted a lighter conclusion page, like a notification, to
-            save more time.
-          </li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Their
-            design had issues with accessibility users since the
-            notification disappears over time and hadn’t been tested the rest
-            of Workday’s tasks.
-          </li>
-        </ul>
+      <div class="row theprocessWrap" id="usaTesting">
+        <div class="text_small theprocess">
+          Usability Testing
+        </div>
       </div>
 
-    </div>
+      <div class="row" style="justify-content: center;">
+        <div class="text_small">
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            Data science was able to provide the top used tasks on the platform.
+            The PM and I then categorized them as easy, medium, and difficult:
+          </p>
+          <ul class="fa-ul">
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Easy: Low
+              effort/investment to complete. A user can easily go back and
+              change errors without affecting other users. <br />The top used
+              task in this category was:
+              <strong>Create an Expense Report.</strong>
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Medium: Multiple users
+              are involved and user is inclined to pay more attention to the
+              details. <br />The top used task in the category was:
+              <strong>Change Job.</strong>
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Hard: Task is a business
+              transaction involving multiple parties and user needs to pay
+              special attention to the details. <br />The top used task in the
+              category was:
+              <strong>Create a Supplier Invoice.</strong>
+            </li>
+          </ul>
+        </div>
+      </div>
 
-    <p class="lead imgDescription" style="margin-bottom:-.5vw; margin-top:1.5em; text-align: center">
-      Dublin's Solution
-    </p>
-    <div class="row longImage" style="justify-content: center;">
-      <div class="img2Row">
-        <!-- vertically alligns words and pictures -->
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid " src="img/workday/dublin_concl_1.png" alt=" " />
-        <div class="row" style="margin-top:15px;"></div>
+      <p
+        class="lead imgDescription"
+        style="margin-bottom: -0.5vw; margin-top: 1.5em; text-align: center;"
+      >
+        Versions to test
+      </p>
+      <div class="row" style="justify-content: center; padding-top: 15px;">
+        <div class="img3Row">
+          <!-- vertically alligns words and pictures -->
+          <div class="row" style="margin-top: 15px;"></div>
+          <img
+            class="img-fluid img_shadow"
+            src="img/workday/modal_color.png"
+            alt=" "
+          />
+          <div class="row" style="margin-top: 15px;"></div>
+        </div>
+        <div class="img3Row">
+          <!-- vertically alligns words and pictures -->
+          <div class="row" style="margin-top: 15px;"></div>
+          <img
+            class="img-fluid img_shadow"
+            src="img/workday/usatest2.png"
+            alt=" "
+          />
+          <div class="row" style="margin-top: 15px;"></div>
+        </div>
       </div>
-      <div class="img2Row">
-        <!-- vertically alligns words and pictures -->
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid " src="img/workday/dublin_concl_2.png" alt=" " />
-        <div class="row" style="margin-top:15px;"></div>
-      </div>
-    </div>
 
-    <div class="row" style="margin-top: 2.5vw;">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">
-          My job was to work backwards from this specific use case and broaden
-          their design to fit the requirements of multiple use cases.
-        </p>
+      <div class="row" style="justify-content: center; padding-top: 20px;">
+        <div class="text_small">
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            I tested 15 users and the testing script can be found
+            <a
+              href="img/workday/testscript1.pdf"
+              download="tony_testing_plan.pdf "
+              target="_blank"
+              style="margin-bottom: 0em; color: #005cb9;"
+              >here</a
+            >. For each of the above tasks, I tested all three conclusion
+            interfaces (full, modal and slim) in random order. Goals:
+          </p>
+          <ul class="fa-ul">
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Test the validity of the
+              prior research and concerns pointed out by Workday employees.
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>What actions do users
+              typically take when shown a conclusion page?
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>What content is
+              important/not important on the conclusion page?
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
 
-    <div class="row" style="margin-top: 2.5vw;">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">
-          Initial tasks:
-        </p>
-        <ul class="fa-ul">
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Research
-            the problem, does this need to be fixed?
-          </li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>User
-            must feel confident that they’ve successfully submitted
-            something.
-          </li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>(Possibly)
-            reduce the number of clicks to complete a task.
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="row theprocessWrap" id="quantdata">
-      <div class="text_small theprocess">Quantitative Data</div>
-    </div>
-
-    <div class="row">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">
-          Since this is a design systems project, my first approach was to
-          find quantitative data on user tendencies on the conclusion pages.
-          Some questions I had:
-        </p>
-        <ul class="fa-ul">
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>How
-            long did users stay on the conclusion page?
-          </li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Did
-            users use the related links on the right hand side?
-          </li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>What
-            do users usually click on this page?
-          </li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Where
-            do users navigate to after finishing a BP?
-          </li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>How
-            many tasks do users typically complete in one sitting?
-          </li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Do
-            they expand Details & Process? Is this task specific?
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="row" style="margin-top: 2.5vw;">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">
-          Unfortunately, the data science department hadn’t set up the
-          infrastructure to measure data on the conclusion page.
-        </p>
-      </div>
-    </div>
-
-    <div class="row" style="margin-top: 3vw;">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">
-          My next option was to send out a survey to see how designers and PMs
-          of different Workday BPs see the conclusion page being used. It
-          consisted of open ended questions like: How could the current
-          conclusion interface be improved? I had 17 responses and here are
-          some findings:
-        </p>
-      </div>
-    </div>
-
-    <div class="row" style="justify-content: center; padding-top: 20px">
-      <div class="img2Row">
-        <!-- vertically alligns words and pictures -->
-        <p class="lead imgDescription" style="margin-bottom:.5em;">Survey Data</p>
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid img_shadow" src="img/workday/survey_data.png" alt=" " />
-        <div class="row" style="margin-top:15px;"></div>
-      </div>
-    </div>
-
-    <div class="row" style="justify-content: center;">
-      <div class="img1Row">
-        <!-- vertically alligns words and pictures -->
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid " src="img/workday/survey_quotes.png" alt=" " />
-        <div class="row" style="margin-top:15px;"></div>
-      </div>
-    </div>
-
-    <div class="row" style="margin-top: 2.5vw;">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">
-          Note: Although Workday employees also use Workday for HR management,
-          I had to carefully weigh their input. They are categorized as
-          experts who have a different experience from the average user
-          because they are constantly working on the product. I will go over
-          usability testing with real users later on.
-        </p>
-      </div>
-    </div>
-
-    <div class="row theprocessWrap" id="research">
-      <div class="text_small theprocess">
-        Going Broad</div>
-    </div>
-
-    <div class="row" style="justify-content: center;">
-      <div class="img2Row">
-        <!-- vertically alligns words and pictures -->
-        <p class="lead imgDescription" style="margin-bottom:.5em;">What others were doing</p>
-        <img class="img-fluid img_shadow" src="img/workday/comp_anal.png" alt=" " />
-        <div class="row" style="margin-top:15px;"></div>
-      </div>
-    </div>
-
-    <div class="row" style="justify-content: center; padding-top: 20px">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">
-          I interviewed several designers from different apps teams
-          to familiarize myself with the user flows and common fustrations.
-        </p>
-      </div>
-    </div>
-
-    <div class="row" style="justify-content: center; padding-top: 20px">
-      <div class="img1Row">
-        <!-- vertically alligns words and pictures -->
-        <p class="lead imgDescription" style="margin-bottom:-.5em;">User Flows</p>
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid" src="img/workday/userflows.png" alt=" " />
-        <div class="row" style="margin-top:15px;"></div>
-      </div>
-    </div>
-
-    <div class="row" style="justify-content: center; padding-top: 20px;">
-      <div class="text_small">
-        <p class="lead quote">
-          <b style="font-style: normal">Problem Statement:</b> "High volume users feel burdened by a full page
-          conclusion and need a simpler
-          confirmation notice to save time".
-        </p>
-      </div>
-    </div>
-
-    <div class="row" style="justify-content: center; padding-top: 20px;">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">
-          After syncing up with my PM, we decided these specs for the initial design:
-        </p>
-        <ul class="fa-ul">
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Bring
-            the content closer together
-          </li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Differentiate
-            conclusion page from typical Workday page
-          </li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Show
-            context as to what page will be shown when the user clicks
-            “Done”
-          </li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Have
-            multiple versions (toast notification, modal)
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <p class="lead imgDescription" style="margin-bottom:-.5vw; margin-top:1.5em; text-align: center">
-      Paper Sketches
-    </p>
-    <div class="row" style="justify-content: center; padding-top: 15px">
-      <div class="img3Row">
-        <!-- vertically alligns words and pictures -->
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid img_shadow" src="img/workday/lofisketch1.png" alt=" " />
-        <div class="row" style="margin-top:15px;"></div>
-      </div>
-      <div class="img3Row">
-        <!-- vertically alligns words and pictures -->
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid img_shadow" src="img/workday/lofisketch2.png" alt=" " />
-        <div class="row" style="margin-top:15px;"></div>
-      </div>
-    </div>
-    <div class="row" style="justify-content: center; padding-top: 15px">
-      <div class="img3Row">
-        <!-- vertically alligns words and pictures -->
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid img_shadow" src="img/workday/lofisketch3.png" alt=" " />
-        <div class="row" style="margin-top:15px;"></div>
-      </div>
-      <div class="img3Row">
-        <!-- vertically alligns words and pictures -->
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid img_shadow" src="img/workday/lofisketch4.png" alt=" " />
-        <div class="row" style="margin-top:15px;"></div>
-      </div>
-    </div>
-
-    <p class="lead imgDescription" style="margin-bottom:-.5vw; margin-top:1.5em; text-align: center">
-      Lofi Wireframes
-    </p>
-    <div class="longImage">
-      <div class="row" style="justify-content: center; padding-top: 15px">
+      <p
+        class="lead imgDescription"
+        style="margin-bottom: -0.5vw; margin-top: 1.5em; text-align: center;"
+      >
+        Original Design
+      </p>
+      <div
+        class="row longImage"
+        style="justify-content: center; padding-top: 15px;"
+      >
         <div class="img2Row">
           <!-- vertically alligns words and pictures -->
-          <div class="row" style="margin-top:15px;"></div>
-          <img class="img-fluid img_shadow" src="img/workday/lofi1.png" alt=" " />
-          <div class="row" style="margin-top:15px;"></div>
+          <div class="row" style="margin-top: 15px;"></div>
+          <img class="img-fluid" src="img/workday/old_1_b.png" alt=" " />
+          <div class="row" style="margin-top: 15px;"></div>
         </div>
         <div class="img2Row">
           <!-- vertically alligns words and pictures -->
-          <div class="row" style="margin-top:15px;"></div>
-          <img class="img-fluid img_shadow" src="img/workday/lofi2.png" alt=" " />
-          <div class="row" style="margin-top:15px;"></div>
+          <div class="row" style="margin-top: 15px;"></div>
+          <img class="img-fluid" src="img/workday/old_2_b.png" alt=" " />
+          <div class="row" style="margin-top: 15px;"></div>
         </div>
       </div>
-      <div class="row" style="justify-content: center; padding-top: 15px">
+
+      <div class="row" style="justify-content: center; padding-top: 20px;">
+        <div class="text_small">
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            Findings for current full page design:
+          </p>
+          <ul class="fa-ul">
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>First time users thought
+              this was an error page because of all the white space
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Users look at the center
+              (Details and Process) first, not the header on the left hand side
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Almost every user
+              prefered the Details and Process tab to be expanded. Default: not
+              enough information, but expanding Details & Process: too much
+              information
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Empty fields, case #,
+              overall process contained information that users didn’t know what
+              to do with or cared about
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Users wanted more visual
+              indicators to show task completion
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row" style="justify-content: center; padding-top: 20px;">
+        <div class="img1Row">
+          <!-- vertically alligns words and pictures -->
+          <p class="lead imgDescription" style="margin-bottom: 0.5em;">
+            Modal Design
+          </p>
+          <div class="row" style="margin-top: 15px;"></div>
+          <img
+            class="img-fluid img_shadow"
+            src="img/workday/modal_color.png"
+            alt=" "
+          />
+          <div class="row" style="margin-top: 15px;"></div>
+        </div>
+      </div>
+
+      <div class="row" style="justify-content: center; padding-top: 20px;">
+        <div class="text_small">
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            Findings for modal design:
+          </p>
+          <ul class="fa-ul">
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Faster response time-
+              users may have absorbed the details faster because the content was
+              condensed.
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Navigation confusion-
+              users expected the modal to pop up on current page instead of
+              redirecting to a new page and appearing.
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Users wanted more visual
+              indicators for success (like a green check mark)
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>
+              The person directly up next is almost always the same person -
+              redundant. Users doing medium/hard tasks cared about who was
+              further down the approval chain
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>
+              Easy/medium users didn't click View Details. Users doing hard task
+              did
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Users wanted instructions
+              on how to revisit the confirmation after clicking Done
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <p
+        class="lead imgDescription"
+        style="margin-bottom: -0.5vw; margin-top: 1.5em; text-align: center;"
+      >
+        Slim Design
+      </p>
+      <div class="row longImage" style="justify-content: center;">
         <div class="img2Row">
           <!-- vertically alligns words and pictures -->
-          <div class="row" style="margin-top:15px;"></div>
-          <img class="img-fluid img_shadow" src="img/workday/lofi4.png" alt=" " />
-          <div class="row" style="margin-top:15px;"></div>
+          <div class="row" style="margin-top: 15px;"></div>
+          <img
+            class="img-fluid img_shadow"
+            src="img/workday/slim_color.png"
+            alt=" "
+          />
+          <div class="row" style="margin-top: 15px;"></div>
         </div>
         <div class="img2Row">
           <!-- vertically alligns words and pictures -->
-          <div class="row" style="margin-top:15px;"></div>
-          <img class="img-fluid img_shadow" src="img/workday/lofi3.png" alt=" " />
-          <div class="row" style="margin-top:15px;"></div>
+          <div class="row" style="margin-top: 15px;"></div>
+          <img
+            class="img-fluid img_shadow"
+            src="img/workday/slim_expand_color.png"
+            alt=" "
+          />
+          <div class="row" style="margin-top: 15px;"></div>
         </div>
       </div>
-      <div class="row" style="justify-content: center; padding-top: 15px">
-        <div class="img2Row">
+
+      <div class="row" style="justify-content: center; padding-top: 20px;">
+        <div class="text_small">
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            Findings for slim design:
+          </p>
+          <ul class="fa-ul">
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Easy & medium tasks-
+              users said that they only clicked on it to expand because it was
+              their first time- they probably wouldn’t if they got used to the
+              interface.
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Difficult tasks- users
+              wanted confirmation details
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Users felt that the
+              notification should stay there until an action is taken (rather
+              than time based)
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row" style="justify-content: center; padding-top: 20px;">
+        <div class="text_small">
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            General Findings:
+          </p>
+          <ul class="fa-ul">
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Slim and modal version
+              performed better than the full conclusion for easy and medium
+              difficulty tasks
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Full page conclusion
+              performed better for difficult tasks
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>The number of people who
+              preferred the slim vs. modal was about equal
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Data from Dublin: HR
+              professionals tend to look at the 'details and process' section of
+              conclusion pages, as it's important for them to see who's up next
+              in the approval chain. Not only who's directly up next, but who's
+              after that person and maybe even a third approver.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row" style="justify-content: center; padding-top: 20px;">
+        <div class="text_small">
+          <p class="lead quote">
+            <b style="font-style: normal;">New Problem Statement:</b> High
+            volume users and users completing easy/medium difficulty tasks feel
+            burdened by a full page conclusion because there is too much
+            information. They need a condensed confirmation notice that not only
+            makes them feel confident but also saves them time.
+          </p>
+        </div>
+      </div>
+
+      <div class="row theprocessWrap" id="pivot">
+        <div class="text_small theprocess">
+          Pivot
+        </div>
+      </div>
+
+      <div class="row" style="justify-content: center;">
+        <div class="text_small">
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            Seeing that there was no preference over the slim versus the modal
+            design, I took the feedback and created a hybrid design:
+          </p>
+          <ul class="fa-ul">
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Integrated a business
+              process chain to give more context on the following steps
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Increased salience of
+              completion indicators
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Put some context on where
+              the confirmation could be found (always sent to the archived
+              mailbox)
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>An advantage of this
+              design over the pure modal was that it saves a click
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Designed the notification
+              expand on hover to speed up the perception of the interaction
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Removed Do Another and
+              Related Links because prior users didn’t use it.
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Technically, users can
+              still do another or complete related tasks because the
+              notification pops up on the page before starting the business
+              process
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row spacer"></div>
+      <div class="row" style="justify-content: center; padding-top: 20px;">
+        <div class="img1Row">
           <!-- vertically alligns words and pictures -->
-          <div class="row" style="margin-top:15px;"></div>
-          <img class="img-fluid img_shadow" src="img/workday/lofi5.png" alt=" " />
-          <div class="row" style="margin-top:15px;"></div>
+          <p class="lead imgDescription" style="margin-bottom: -0.5em;">
+            Hyrbid Prototype
+          </p>
+          <div class="row" style="margin-top: 15px;"></div>
+          <div class="embed-responsive embed-responsive-4by3 img_shadow">
+            <video class="embed-responsive-item" controls>
+              <source src="img/workday/hybrid.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="row" style="margin-top: 15px;"></div>
         </div>
-        <div class="img2Row">
+      </div>
+      <div class="row spacer"></div>
+
+      <div class="row theprocessWrap" id="moreTesting">
+        <div class="text_small theprocess">
+          More Testing
+        </div>
+      </div>
+
+      <div class="row" style="justify-content: center;">
+        <div class="text_small">
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            I tested on 10 different users and the testing script is linked
+            <a
+              href="img/workday/testscript2.pdf"
+              download="tony_testing_plan.pdf "
+              target="_blank"
+              style="margin-bottom: 0em; color: #005cb9;"
+              >here</a
+            >. I tested both the hybrid design and the full page conclusion
+            design. My goal was to measure the validity of the new design and
+            provide further research for the designer who would take up this
+            project after my internship was over.
+          </p>
+        </div>
+      </div>
+
+      <div class="row" style="justify-content: center; padding-top: 20px;">
+        <div class="text_small">
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            Findings for current full page design:
+          </p>
+          <ul class="fa-ul">
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Similar results to the
+              first round of testing- users spent more time on this page
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Liked how D&P was already
+              expanded- didn't like the blank fields
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Users wanted the action
+              buttons to be closer together.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row" style="justify-content: center; padding-top: 20px;">
+        <div class="text_small">
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            Findings for hybrid design:
+          </p>
+          <ul class="fa-ul">
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Faster task completion
+              time
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Expense Report users
+              didn't care about approval chain, Change Job users did
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row" style="justify-content: center; padding-top: 20px;">
+        <div class="text_small">
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            General Findings:
+          </p>
+          <ul class="fa-ul">
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>8 users prefered the
+              hybrid design and 2 prefered the original full design
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Status of submission and
+              a brief summary of submission remains as the top two factors of a
+              conclusion page
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row theprocessWrap" id="learnings">
+        <div class="text_small theprocess">
+          Learnings
+        </div>
+      </div>
+
+      <div class="row" style="justify-content: center;">
+        <div class="text_small">
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            Unfortunately, my internship came to an end before I could test this
+            design on more use cases. It was difficult to scale a design to work
+            with thousands of other tasks with snippets of qualitative data.
+          </p>
+        </div>
+      </div>
+
+      <div class="row" style="justify-content: center; padding-top: 20px;">
+        <div class="text_small">
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            I could only leave Workday a few definitive suggestions based off of
+            my learnings in this project:
+          </p>
+          <ul class="fa-ul">
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>One conclusion page
+              design will probably not work with all of the edge cases- it may
+              be a better idea to list multiple designs on the design system and
+              have specific teams choose the design that most fit their users.
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Push notification into
+              inbox instead of archive. Perhaps make this use case specific.
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>The hybrid design seems
+              to perform well with easy & medium tasks but there are still many
+              use cases that haven’t been tested so the validity of the results
+              could be skewed
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row" style="justify-content: center; padding-top: 20px;">
+        <div class="text_small">
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            Recommendations for Dublin's quick fix Slim Conclusion
+          </p>
+          <ul class="fa-ul">
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>The design should stay on
+              the screen until an action is taken to account for accessibility
+              users. Many users also prefered it this way.
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Notification should be
+              clickable to view more details on what was just submitted
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Move to the middle so
+              users still have access to action buttons
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row" style="justify-content: center; padding-top: 20px;">
+        <div class="text_small">
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            Recommendations for the current full conclusion page design:
+          </p>
+          <ul class="fa-ul">
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Details and Process
+              should be expanded already, remove empty fields
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>Needs green visual
+              indicators to improve confidence in task completion
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>New users are confused by
+              the meaning of “Up Next.” Some suggested “Submitted to...”
+            </li>
+            <li
+              class="lead"
+              style="font-size: 18px; line-height: 2; padding-left: 10px;"
+            >
+              <i class="fa-li fa fa-circle bullet"></i>“Done” button reduces
+              completion confidence. Users suggested “Close”
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row" style="justify-content: center; padding-top: 20px;">
+        <div class="text_small">
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            Overall, my internship at Workday gave me a priceless experience. I
+            learned that not everything is straightforward as school projects
+            and that it’s essential to make designs scalable. It’s totally
+            possible that there may not be a single design that solves the
+            problem at hand. I also learned a lot about how difficult it is to
+            make changes to an enormous design system because it could cause
+            unexpected effects to different use cases. I’m thankful for all of
+            my teammates walking me through the complexities of designing in a
+            larger organization.
+          </p>
+        </div>
+      </div>
+
+      <div class="row" style="justify-content: center; padding-top: 20px;">
+        <div class="text_small" style="max-width: 40%;">
           <!-- vertically alligns words and pictures -->
-          <div class="row" style="margin-top:15px;"></div>
-          <img class="img-fluid img_shadow" src="img/workday/lofi6.png" alt=" " />
-          <div class="row" style="margin-top:15px;"></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row" style="justify-content: center; padding-top: 20px;">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">
-          I brought the designs into office hours to get feedback from the
-          creative directors:
-        </p>
-        <ul class="fa-ul">
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>They
-            liked the modal version the most because it gave context to
-            the page that would appear after clicking “Done”
-          </li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>I
-            received advice on justments of content alignment to follow
-            Workday’s design system
-          </li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>
-            Moved toast to the middle so users can still access action buttons
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="row theprocessWrap" id="usaTesting">
-      <div class="text_small theprocess">
-        Usability Testing</div>
-    </div>
-
-    <div class="row" style="justify-content: center;">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">
-          Data science was able to provide the top used tasks on the platform. The
-          PM and I then categorized them as easy, medium, and difficult:
-        </p>
-        <ul class="fa-ul">
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Easy:
-            Low effort/investment to complete. A user can easily go
-            back and change errors without affecting other users. <br />The
-            top used task in this category was:
-            <strong>Create an Expense Report.</strong>
-          </li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Medium:
-            Multiple users are involved and user is inclined to pay
-            more attention to the details. <br />The top used task in the
-            category was: <strong>Change Job.</strong>
-          </li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Hard:
-            Task is a business transaction involving multiple
-            parties and user needs to pay special attention to the details.
-            <br />The top used task in the category was:
-            <strong>Create a Supplier Invoice.</strong>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <p class="lead imgDescription" style="margin-bottom:-.5vw; margin-top:1.5em; text-align: center">
-      Versions to test
-    </p>
-    <div class="row" style="justify-content: center; padding-top: 15px">
-      <div class="img3Row">
-        <!-- vertically alligns words and pictures -->
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid img_shadow" src="img/workday/modal_color.png" alt=" " />
-        <div class="row" style="margin-top:15px;"></div>
-      </div>
-      <div class="img3Row">
-        <!-- vertically alligns words and pictures -->
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid img_shadow" src="img/workday/usatest2.png" alt=" " />
-        <div class="row" style="margin-top:15px;"></div>
-      </div>
-    </div>
-
-    <div class="row" style="justify-content: center; padding-top: 20px;">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">
-          I tested 15 users and the testing script can be found
-          <a href="img/workday/testscript1.pdf" download="tony_testing_plan.pdf " target="_blank"
-            style="margin-bottom:0em;color:#005CB9;">here</a>.
-          For each of the above tasks, I tested all three conclusion
-          interfaces (full, modal and slim) in random order. Goals:
-        </p>
-        <ul class="fa-ul">
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Test
-            the validity of the prior research and concerns pointed out
-            by Workday employees.
-          </li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>What
-            actions do users typically take when shown a conclusion
-            page?
-          </li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>What
-            content is important/not important on the conclusion page?
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <p class="lead imgDescription" style="margin-bottom:-.5vw; margin-top:1.5em; text-align: center">
-      Original Design
-    </p>
-    <div class="row longImage" style="justify-content: center; padding-top: 15px">
-      <div class="img2Row">
-        <!-- vertically alligns words and pictures -->
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid " src="img/workday/old_1_b.png" alt=" " />
-        <div class="row" style="margin-top:15px;"></div>
-      </div>
-      <div class="img2Row">
-        <!-- vertically alligns words and pictures -->
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid " src="img/workday/old_2_b.png" alt=" " />
-        <div class="row" style="margin-top:15px;"></div>
-      </div>
-    </div>
-
-    <div class="row" style="justify-content: center; padding-top: 20px;">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">
-          Findings for current full page design:
-        </p>
-        <ul class="fa-ul">
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>First
-            time users thought this was an error page because of all
-            the white space
-          </li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Users
-            look at the center (Details and Process) first, not the
-            header on the left hand side
-          </li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Almost
-            every user prefered the Details and Process tab to be
-            expanded. Default: not enough information, but expanding Details &
-            Process: too much information
-          </li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Empty
-            fields, case #, overall process contained information that
-            users didn’t know what to do with or cared about
-          </li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Users
-            wanted more visual indicators to show task completion
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="row" style="justify-content: center; padding-top: 20px">
-      <div class="img1Row">
-        <!-- vertically alligns words and pictures -->
-        <p class="lead imgDescription" style="margin-bottom:.5em;">Modal Design</p>
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid img_shadow" src="img/workday/modal_color.png" alt=" " />
-        <div class="row" style="margin-top:15px;"></div>
-      </div>
-    </div>
-
-    <div class="row" style="justify-content: center; padding-top: 20px">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">
-          Findings for modal design:
-        </p>
-        <ul class="fa-ul">
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Faster
-            response time- users may have absorbed the details faster
-            because the content was condensed.
-          </li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Navigation
-            confusion- users expected the modal to pop up on
-            current page instead of redirecting to a new page and appearing.
-          </li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Users
-            wanted more visual indicators for success (like a green
-            check mark)
-          </li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>
-            The person directly up next is almost always the same person - redundant. Users doing medium/hard tasks
-            cared about who was further down the approval chain
-          </li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>
-            Easy/medium users
-            didn't click View Details. Users doing hard task did
-          </li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Users
-            wanted instructions on how to revisit the confirmation
-            after clicking Done
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <p class="lead imgDescription" style="margin-bottom:-.5vw; margin-top:1.5em; text-align: center">
-      Slim Design
-    </p>
-    <div class="row longImage" style="justify-content: center">
-      <div class="img2Row">
-        <!-- vertically alligns words and pictures -->
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid img_shadow" src="img/workday/slim_color.png" alt=" " />
-        <div class="row" style="margin-top:15px;"></div>
-      </div>
-      <div class="img2Row">
-        <!-- vertically alligns words and pictures -->
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid img_shadow" src="img/workday/slim_expand_color.png" alt=" " />
-        <div class="row" style="margin-top:15px;"></div>
-      </div>
-    </div>
-
-    <div class="row" style="justify-content: center; padding-top: 20px">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">
-          Findings for slim design:
-        </p>
-        <ul class="fa-ul">
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Easy
-            & medium tasks- users
-            said that they only clicked on it to expand because it was
-            their first time- they probably wouldn’t if they got used to the
-            interface.
-          </li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Difficult
-            tasks- users wanted confirmation details
-          </li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Users
-            felt that the notification should stay there until an
-            action is taken (rather than time based)
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="row" style="justify-content: center; padding-top: 20px">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">
-          General Findings:
-        </p>
-        <ul class="fa-ul">
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Slim
-            and modal version performed better than the full
-            conclusion for easy and medium difficulty tasks
-          </li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Full
-            page conclusion performed better for difficult tasks
-          </li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>The
-            number of people who preferred the slim vs. modal was about
-            equal
-          </li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Data
-            from Dublin: HR professionals tend to look at
-            the 'details and process' section of conclusion pages, as it's
-            important for them to see who's up next in the approval chain. Not
-            only who's directly up next, but who's after that person and maybe
-            even a third approver.
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="row" style="justify-content: center; padding-top: 20px">
-      <div class="text_small">
-        <p class="lead quote">
-          <b style="font-style: normal">New Problem Statement:</b> High volume users and users completing easy/medium
-          difficulty tasks feel burdened
-          by a full page conclusion because there is too much information. They need a condensed confirmation notice
-          that not only makes them feel confident but also saves them time.
-        </p>
-      </div>
-    </div>
-
-    <div class="row theprocessWrap" id="pivot">
-      <div class="text_small theprocess">
-        Pivot</div>
-    </div>
-
-    <div class="row" style="justify-content: center;">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">
-          Seeing that there was no preference over the slim versus the modal
-          design, I took the feedback and created a hybrid design:
-        </p>
-        <ul class="fa-ul">
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Integrated
-            a business process chain to give more context on the
-            following steps
-          </li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Increased
-            salience of completion indicators
-          </li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Put
-            some context on where the confirmation could be found (always
-            sent to the archived mailbox)
-          </li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>An
-            advantage of this design over the pure modal was that it saves
-            a click
-          </li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Designed
-            the notification expand on hover to speed up the
-            perception of the interaction
-          </li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Removed
-            Do Another and Related Links because prior users didn’t
-            use it.
-          </li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Technically,
-            users can still do another or complete related tasks
-            because the notification pops up on the page before starting the
-            business process
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="row spacer"></div>
-    <div class="row" style="justify-content: center; padding-top: 20px">
-      <div class="img1Row">
-        <!-- vertically alligns words and pictures -->
-        <p class="lead imgDescription" style="margin-bottom:-.5em;">Hyrbid Prototype</p>
-        <div class="row" style="margin-top:15px;"></div>
-        <div class="embed-responsive embed-responsive-4by3 img_shadow">
-          <video class="embed-responsive-item" controls>
-            <source src="img/workday/hybrid.mp4" type="video/mp4" />
-          </video>
-        </div>
-        <div class="row" style="margin-top:15px;"></div>
-      </div>
-    </div>
-    <div class="row spacer "></div>
-
-    <div class="row theprocessWrap" id="moreTesting">
-      <div class="text_small theprocess">
-        More Testing</div>
-    </div>
-
-    <div class="row" style="justify-content: center;">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">
-          I tested on 10 different users and the testing script is linked
-          <a href="img/workday/testscript2.pdf" download="tony_testing_plan.pdf " target="_blank"
-            style="margin-bottom:0em;color:#005CB9;">here</a>.
-          I tested both the hybrid design and the full page conclusion
-          design. My goal was to measure the validity of the new design and
-          provide further research for the designer who would take up this
-          project after my internship was over.
-        </p>
-      </div>
-    </div>
-
-    <div class="row" style="justify-content: center; padding-top: 20px">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">
-          Findings for current full page design:
-        </p>
-        <ul class="fa-ul">
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Similar
-            results to the first round of testing- users spent more time on this page
-          </li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Liked
-            how D&P was already expanded- didn't like the blank fields
-          </li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Users
-            wanted the action buttons to be closer together.
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="row" style="justify-content: center; padding-top: 20px">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">
-          Findings for hybrid design:
-        </p>
-        <ul class="fa-ul">
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Faster
-            task completion time
-          </li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Expense
-            Report users didn't care about approval chain, Change Job users did
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="row" style="justify-content: center; padding-top: 20px">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">
-          General Findings:
-        </p>
-        <ul class="fa-ul">
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>8
-            users prefered the hybrid design and 2 prefered the original
-            full design
-          </li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Status
-            of submission and a brief summary of submission remains as the top two factors of a
-            conclusion page
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="row theprocessWrap" id="learnings">
-      <div class="text_small theprocess">
-        Learnings</div>
-    </div>
-
-    <div class="row" style="justify-content: center;">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">
-          Unfortunately, my internship came to an end before I could test this
-          design on more use cases. It was difficult to scale a design to work with thousands of other tasks with
-          snippets of qualitative data.
-        </p>
-      </div>
-    </div>
-
-    <div class="row" style="justify-content: center; padding-top: 20px">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">
-          I could only leave Workday a few definitive suggestions based off of
-          my learnings in this project:
-        </p>
-        <ul class="fa-ul">
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>One
-            conclusion page design will probably not work with all of the
-            edge cases- it may be a better idea to list multiple designs on
-            the design system and have specific teams choose the design that
-            most fit their users.
-          </li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Push
-            notification into inbox instead of archive. Perhaps make this use case specific.
-          </li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>The
-            hybrid design seems to perform well with easy & medium tasks but there are still many use cases that
-            haven’t been tested so the validity of the results could be skewed
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="row" style="justify-content: center; padding-top: 20px">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">
-          Recommendations for Dublin's quick fix Slim Conclusion
-        </p>
-        <ul class="fa-ul">
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>The
-            design should stay on the screen until an action is taken to
-            account for accessibility users. Many users also prefered it this
-            way.
-          </li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Notification
-            should be clickable to view more details on what was
-            just submitted
-          </li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Move
-            to the middle so users still have access to action buttons
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="row" style="justify-content: center; padding-top: 20px">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">
-          Recommendations for the current full conclusion page design:
-        </p>
-        <ul class="fa-ul">
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Details
-            and Process should be expanded already, remove empty fields
-          </li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>Needs
-            green visual indicators to improve confidence in
-            task completion
-          </li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>New
-            users are confused by the meaning of “Up Next.” Some
-            suggested “Submitted to...”
-          </li>
-          <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 2vw;">
-            <i class="fa-li fa fa-circle"
-              style="color:#b08449; line-height: 1.8; padding-left: 2vw; font-size: 10px; padding-top: 7px"></i>“Done”
-            button reduces completion confidence. Users suggested
-            “Close”
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="row" style="justify-content: center; padding-top: 20px">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">
-          Overall, my internship at Workday gave me a priceless experience. I
-          learned that not everything is straightforward as school projects
-          and that it’s essential to make designs scalable. It’s totally
-          possible that there may not be a single design that solves the
-          problem at hand. I also learned a lot about how difficult it is to
-          make changes to an enormous design system because it could cause
-          unexpected effects to different use cases. I’m thankful for all of
-          my teammates walking me through the complexities of designing in a
-          larger organization.
-        </p>
-      </div>
-    </div>
-
-    <div class="row" style="justify-content: center; padding-top: 20px">
-      <div class="text_small" style="max-width: 40%">
-        <!-- vertically alligns words and pictures -->
-        <a href="workday_animations.html">
-          <img class="img-fluid" src="img/workday/pre_animation.png" alt=" ">
-        </a>
-      </div>
-    </div>
-    <div class="row" style="justify-content: center; padding-top: 20px; padding-bottom: 3em;">
-      <div class="text_small">
-        <p class="lead" style="margin-left: 50px; margin-right: 50px; text-align: justify">
-          While I was redesigning the conclusion page, I also worked on mobile
-          animations with Framer.js.
-        </p>
-        <a class="sliding-middle-out viewCaseStudy" href="workday_animations.html">View
-          Case Study</a>
-      </div>
-    </div>
-
-    <div class="row" style="text-align: center; padding-bottom: 40px;">
-      <div class="text_medium theprocess END">My Other Work</div>
-    </div>
-
-    <div class="row">
-      <!-- D4SD -->
-      <section class="col-md-2 order-md-1" style="padding:0px 0;"></section>
-      <section class="col-md-4 order-md-2 titlehoriz" style="padding:0px 0;">
-        <div class="box btn-group modal-dialogtwo dynamicthumbnail" style="margin-top: 0px;">
-          <a href="project1.html">
-            <div class="titlehoriz">
-              <img class="img-fluid" src="img/idx_eqr.png" alt=" " />
-            </div>
+          <a href="workday_animations.html">
+            <img
+              class="img-fluid"
+              src="img/workday/pre_animation.png"
+              alt=" "
+            />
           </a>
         </div>
-      </section>
-      <section class="col-md-4 order-md-3 vertical-align" style="padding:0px 0;">
-        <div class="fullWidthWork">
-          <div class="row-centerer">
-            <h3 class="section-heading" style="font-weight: 400"><a class="sliding-middle-out "
-                href="project1.html">EventQR</a></h3>
-            <p class="lead ">
-              A web app that lets users create & scan events encrypted into a
-              QR code, which can be synced onto their Google Calendar.
-            </p>
-          </div>
-        </div>
-      </section>
-      <section class="col-md-2 order-md-4" style="padding:0px 0;"></section>
-    </div>
-
-    <div class="row" style="margin-top: 7vw;">
-      <!-- Birch -->
-      <section class="col-md-2 order-md-1 " style="padding:0px 0;"></section>
-      <section class="col-md-4 order-md-3 titlehoriz" style="padding:0px 0;">
-        <div class="box btn-group modal-dialogtwo dynamicthumbnail" style="margin-top: 0px;">
-          <a href="birch.html">
-            <div class="titlehoriz">
-              <img class="img-fluid" src="img/idx_birch.png" alt=" " />
-            </div>
-          </a>
-        </div>
-      </section>
-      <section class="col-md-4 order-md-2 vertical-align" style="padding:0px 0;">
-        <div class="fullWidthWork">
-          <div class="row-centerer">
-            <h3 class="section-heading" style="font-weight: 400">
-              <a class="sliding-middle-out" href="birch.html">Birch Aquarium</a>
-            </h3>
-            <p class="lead ">
-              Designing an exhibit in the Birch Aquarium at the Scripps
-              Institution of Oceanography to teach people about bubbles.
-            </p>
-          </div>
-        </div>
-      </section>
-      <section class="col-md-2 order-md-4 " style="padding:0px 0;"></section>
-    </div>
-
-    <div class="row letstalkpad"></div>
-
-    <!-- CONTACT/EMAIL ME -->
-    <div class="vertical-align titlehoriz">
-      <h2 style=" font-weight: 400; "> <a href="mailto:tonychan96@gmail.com " class="tony-middle-out">
-          Lets talk
-        </a> </h2>
-    </div>
-    <div class="row letstalkpad"></div>
-
-    <!--  ///////////////////  FOOTER/CONTACT  ///////////////////  -->
-    <aside class="banner ">
-      <div class="row ">
-        <div class="col-lg-12 text-center ">
-          <a href="mailto:tonychan96@gmail.com " target="_blank " class="btn-social btn-lg "><i
-              class="fa fa-envelope "></i></a>
-          <a href="https://www.linkedin.com/in/tonychan96/" target="_blank " class="btn-social btn-lg "><i
-              class="fa fa-linkedin "></i></a>
+      </div>
+      <div
+        class="row"
+        style="justify-content: center; padding-top: 20px; padding-bottom: 3em;"
+      >
+        <div class="text_small">
+          <p
+            class="lead"
+            style="margin-left: 50px; margin-right: 50px; text-align: justify;"
+          >
+            While I was redesigning the conclusion page, I also worked on mobile
+            animations with Framer.js.
+          </p>
+          <a
+            class="sliding-middle-out viewCaseStudy"
+            href="workday_animations.html"
+            >View Case Study</a
+          >
         </div>
       </div>
-    </aside>
-    <!-- container fluid wrapper end div -->
-  </div>
 
-  <!-- JavaScript -->
-  <!-- different jquery for scrollspy  -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="js/sideNav.js "></script>
-  <script src="js/smooth-scroll.min.js"></script>
-  <script src="js/navSlideIn.js"></script>
-  <script>
-    // Instantiate Scrolls
-    var scroll = new SmoothScroll('a[href*="#"]', {
-      speed: 200
-    });
+      <div class="row" style="text-align: center; padding-bottom: 40px;">
+        <div class="text_medium theprocess END">My Other Work</div>
+      </div>
 
-    if (document.querySelector("[data-easing]")) {
-      var easeOutQuart = new SmoothScroll('[data-easing="easeOutQuart"]', {
-        easing: "easeOutQuart"
+      <div class="row">
+        <!-- D4SD -->
+        <section class="col-md-2 order-md-1" style="padding: 0px 0;"></section>
+        <section class="col-md-4 order-md-2 titlehoriz" style="padding: 0px 0;">
+          <div
+            class="box btn-group modal-dialogtwo dynamicthumbnail"
+            style="margin-top: 0px;"
+          >
+            <a href="project1.html">
+              <div class="titlehoriz">
+                <img class="img-fluid" src="img/idx_eqr.png" alt=" " />
+              </div>
+            </a>
+          </div>
+        </section>
+        <section
+          class="col-md-4 order-md-3 vertical-align"
+          style="padding: 0px 0;"
+        >
+          <div class="fullWidthWork">
+            <div class="row-centerer">
+              <h3 class="section-heading" style="font-weight: 400;">
+                <a class="sliding-middle-out" href="project1.html">EventQR</a>
+              </h3>
+              <p class="lead">
+                A web app that lets users create & scan events encrypted into a
+                QR code, which can be synced onto their Google Calendar.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="col-md-2 order-md-4" style="padding: 0px 0;"></section>
+      </div>
+
+      <div class="row" style="margin-top: 7vw;">
+        <!-- Birch -->
+        <section class="col-md-2 order-md-1" style="padding: 0px 0;"></section>
+        <section class="col-md-4 order-md-3 titlehoriz" style="padding: 0px 0;">
+          <div
+            class="box btn-group modal-dialogtwo dynamicthumbnail"
+            style="margin-top: 0px;"
+          >
+            <a href="birch.html">
+              <div class="titlehoriz">
+                <img class="img-fluid" src="img/idx_birch.png" alt=" " />
+              </div>
+            </a>
+          </div>
+        </section>
+        <section
+          class="col-md-4 order-md-2 vertical-align"
+          style="padding: 0px 0;"
+        >
+          <div class="fullWidthWork">
+            <div class="row-centerer">
+              <h3 class="section-heading" style="font-weight: 400;">
+                <a class="sliding-middle-out" href="birch.html"
+                  >Birch Aquarium</a
+                >
+              </h3>
+              <p class="lead">
+                Designing an exhibit in the Birch Aquarium at the Scripps
+                Institution of Oceanography to teach people about bubbles.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="col-md-2 order-md-4" style="padding: 0px 0;"></section>
+      </div>
+
+      <div class="row letstalkpad"></div>
+
+      <!-- CONTACT/EMAIL ME -->
+      <div class="vertical-align titlehoriz">
+        <h2 style="font-weight: 400;">
+          <a href="mailto:tonychan96@gmail.com " class="tony-middle-out">
+            Lets talk
+          </a>
+        </h2>
+      </div>
+      <div class="row letstalkpad"></div>
+
+      <!--  ///////////////////  FOOTER/CONTACT  ///////////////////  -->
+      <aside class="banner">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <a
+              href="mailto:tonychan96@gmail.com "
+              target="_blank "
+              class="btn-social btn-lg"
+              ><i class="fa fa-envelope"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/tonychan96/"
+              target="_blank "
+              class="btn-social btn-lg"
+              ><i class="fa fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+      </aside>
+      <!-- container fluid wrapper end div -->
+    </div>
+
+    <!-- JavaScript -->
+    <!-- different jquery for scrollspy  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/sideNav.js "></script>
+    <script src="js/smooth-scroll.min.js"></script>
+    <script src="js/navSlideIn.js"></script>
+    <script>
+      // Instantiate Scrolls
+      var scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 200,
       });
-    }
-  </script>
-  <script src="vendor/popper/popper.min.js "></script>
-  <script src="vendor/bootstrap/js/bootstrap.min.js "></script>
-  <script src="custom.js "></script>
-</body>
 
+      if (document.querySelector("[data-easing]")) {
+        var easeOutQuart = new SmoothScroll('[data-easing="easeOutQuart"]', {
+          easing: "easeOutQuart",
+        });
+      }
+    </script>
+    <script src="vendor/popper/popper.min.js "></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js "></script>
+    <script src="custom.js "></script>
+  </body>
 </html>
