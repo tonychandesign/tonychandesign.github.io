@@ -1,4 +1,4 @@
-// var menu_pageid = 0;
+// handles carousel state when navigating from case study -> index
 $(function () {
   // Check for slide on new load
   // specifically it loads designated carousel item when navigating from proj page
@@ -20,6 +20,11 @@ $(function () {
         .parent("li")
         .toggleClass("active");
     }
+    // show nav
+    console.log(page_id);
+    if (page_id == 1 || page_id == 2) {
+      $("#navbar").css("top", "0px");
+    }
   } else {
     var defaultActive = $('.navbar-nav [data-id="0"]').parent("li");
     if (!defaultActive.hasClass("active")) {
@@ -38,7 +43,14 @@ $(function () {
       window.pageYOffset == 0
     ) {
       setTimeout(function () {
-        $("#navbar").css("top", "-140px");
+        // edge case starting at Portfolio -> click resume/aboutme, it scrolls up and still dissappears
+        if (
+          $(".navbar-nav .active ").attr("class").includes("navResume") ==
+            false &&
+          $(".navbar-nav .active ").attr("class").includes("navAbout") == false
+        ) {
+          $("#navbar").css("top", "-140px");
+        }
       }, 3000);
     }
     if (prevScrollpos < 0) {
@@ -47,7 +59,9 @@ $(function () {
       if (prevScrollpos > currentScrollPos) {
         $("#navbar").css("top", "0px");
       } else {
-        $("#navbar").css("top", "-140px");
+        if (prevScrollpos !== 0 && currentScrollPos !== 0) {
+          $("#navbar").css("top", "-140px");
+        }
       }
     }
     prevScrollpos = currentScrollPos;
