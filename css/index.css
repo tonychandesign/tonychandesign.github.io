@@ -56,8 +56,8 @@ p {
   font-weight: 600;
 }
 .indextext {
-  margin-top: 2vw;
-  margin-bottom: 60px;
+  margin-top: 3vw;
+  margin-bottom: 40px;
   width: 100%;
 }
 #navbar {
@@ -360,7 +360,7 @@ a.btn-social {
   text-align: center;
   display: inline-block;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 12px;
   margin-bottom: 10px;
 }
 .carousel-item {

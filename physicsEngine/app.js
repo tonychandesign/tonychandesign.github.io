@@ -1605,7 +1605,7 @@ function playerTouchCaseStudy(onBody) {
       // ucsd
       modalTitle.innerHTML = "UCSD";
       modalText.innerHTML =
-        "I graduated cum laude in 2018, with a focus in human computer interaction and computer science.  I spent my final quarter studying film directing and acting in the Czech Republic.";
+        "I graduated cum laude in 2018, with a focus in human computer interaction and computer science.  I spent my final quarter studying cinematography & film directing in the Czech Republic.";
       modalImg.src = "./img/darkMod/ucsd.svg";
       modalCTA.href = "https://ucsd.edu/";
       modal.classList.add("is-open");
@@ -1613,7 +1613,7 @@ function playerTouchCaseStudy(onBody) {
       // workday
       modalTitle.innerHTML = "Workday";
       modalText.innerHTML =
-        "I was the design systems intern responsible for redesigning the global conclusion interface and creating mobile animations.";
+        "Enhance the mobile experience with animations and redesign the global conclusion interface, which supports 50k+ use cases";
       modalImg.src = "./img/darkMod/dark_WORKDAY.png";
       modalCTA.href = "workday_pre.html";
       modal.classList.add("is-open");
@@ -1621,7 +1621,7 @@ function playerTouchCaseStudy(onBody) {
       // birch
       modalTitle.innerHTML = "Birch Aquarium";
       modalText.innerHTML =
-        "I created an exhibit in the Birch Aquarium at the Scripps Institution of Oceanography to teach people about bubbles.";
+        "Create an exhibit in the Birch Aquarium at the Scripps Institution of Oceanography to teach people about bubbles";
       modalImg.src = "./img/darkMod/dark_BIRCH.png";
       modalCTA.href = "birch.html";
       modal.classList.add("is-open");
@@ -1629,7 +1629,7 @@ function playerTouchCaseStudy(onBody) {
       // asgs
       modalTitle.innerHTML = "A.S. Graphic Studio";
       modalText.innerHTML =
-        "I collaborated with a visual designer to implement UCSD's 2018 Sun God Festival website.";
+        "Implement a refreshed 2018 Sun God Festival website, which had over 30k unique visitors";
       modalImg.src = "./img/darkMod/dark_SGF.png";
       modalCTA.href = "asgs.html";
       modal.classList.add("is-open");
@@ -1637,7 +1637,7 @@ function playerTouchCaseStudy(onBody) {
       // intuit
       modalTitle.innerHTML = "Intuit";
       modalText.innerHTML =
-        "I build in-house tools to empower the design studio and work with business partners to turn future facing ideas into high fidelity prototypes to influence business direction.";
+        "Build in-house tools to empower the design studio and work with business partners to turn future facing ideas into high fidelity prototypes to influence business direction";
       modalImg.src = "./img/darkMod/dark_INTUIT.png";
       modalCTA.href = "intuit_nda.html";
       modal.classList.add("is-open");
@@ -1645,7 +1645,7 @@ function playerTouchCaseStudy(onBody) {
       // d4sd
       modalTitle.innerHTML = "D4SD Hackathon";
       modalText.innerHTML =
-        "I competed in a city wide design competition to improve transportation in San Diego.";
+        "Compete in a city wide design competition to improve transportation in San Diego";
       modalImg.src = "./img/darkMod/dark_D4SD.png";
       modalCTA.href = "project5.html";
       modal.classList.add("is-open");
@@ -1653,7 +1653,7 @@ function playerTouchCaseStudy(onBody) {
       // eqr
       modalTitle.innerHTML = "Event Queuer";
       modalText.innerHTML =
-        "A web app that lets users create & scan events encoded into a QR code, which can be synced onto their Google Calendar.";
+        "A web app that lets users create & scan events encoded into a QR code, which can be synced onto their Google Calendar";
       modalImg.src = "./img/darkMod/dark_EQR.png";
       modalCTA.href = "project1.html";
       modal.classList.add("is-open");

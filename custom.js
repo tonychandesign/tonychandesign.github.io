@@ -32,7 +32,7 @@ $(function () {
     }
   }
 
-  var prevScrollpos = window.pageYOffset;
+  var prevScrollpos = window.pageYOffset; // show/hide
   window.onscroll = function () {
     var currentScrollPos = window.pageYOffset;
     // hide nav in index landing page for the game
