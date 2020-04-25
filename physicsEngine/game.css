@@ -99,6 +99,9 @@
   right: 10px;
   color: white !important;
 }
+.close:focus {
+  outline: 0;
+}
 
 @keyframes pop {
   0% {
@@ -138,13 +141,13 @@ header {
 }
 #modal-img {
   margin: 20px;
-  width: 90%;
+  width: 100%;
   border-radius: 2px;
   opacity: 0.85;
 }
 #modal-text {
-  color: white;
-  font-size: 20px;
+  color: #cfcfcf;
+  font-size: 1.1em;
   margin: 20px;
   width: 100%;
 }
