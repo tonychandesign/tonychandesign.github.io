@@ -400,6 +400,9 @@ a.btn-social {
   margin-left: 9.5%;
   margin-bottom: 50px;
 }
+.industrypadding {
+  margin-top: 2vw;
+}
 @media (max-width: 900px) {
   .indexSectionHeader {
     margin-left: 14%;

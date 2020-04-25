@@ -28,6 +28,10 @@
   height: 100vh;
   vertical-align: middle;
 }
+.startSVGSize {
+  width: 80%;
+  max-width: 1200px;
+}
 .hideGameMobile {
   display: block;
 }
@@ -177,9 +181,15 @@ header {
   .modal-body {
     width: 60%;
   }
+  .startSVGSize {
+    width: 90%;
+  }
 }
 @media screen and (max-width: 600px) {
   .modal-body {
     width: 80%;
+  }
+  .startSVGSize {
+    width: 100%;
   }
 }

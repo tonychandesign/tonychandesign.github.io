@@ -4,67 +4,67 @@
     <title>Artboard</title>
     <desc>Created with Sketch.</desc>
     <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <path id="Rectangle" stroke="#FFFFFF" width="64" height="64" d="M 82,361 L 138,361 A 4,4,0,0,1,142,365 L 142,421 A 4,4,0,0,1,138,425 L 82,425 A 4,4,0,0,1,78,421 L 78,365 A 4,4,0,0,1,82,361" class="uvUUgxpn_0"></path>
-        <path id="Rectangle" stroke="#FFFFFF" width="64" height="64" d="M 158,361 L 214,361 A 4,4,0,0,1,218,365 L 218,421 A 4,4,0,0,1,214,425 L 158,425 A 4,4,0,0,1,154,421 L 154,365 A 4,4,0,0,1,158,361" class="uvUUgxpn_1"></path>
-        <path id="Rectangle" stroke="#FFFFFF" width="64" height="64" d="M 233,361 L 289,361 A 4,4,0,0,1,293,365 L 293,421 A 4,4,0,0,1,289,425 L 233,425 A 4,4,0,0,1,229,421 L 229,365 A 4,4,0,0,1,233,361" class="uvUUgxpn_2"></path>
-        <path id="Rectangle" stroke="#FFFFFF" width="64" height="64" d="M 158,286 L 214,286 A 4,4,0,0,1,218,290 L 218,346 A 4,4,0,0,1,214,350 L 158,350 A 4,4,0,0,1,154,346 L 154,290 A 4,4,0,0,1,158,286" class="uvUUgxpn_3"></path>
+        <path id="Rectangle" stroke="#FFFFFF" width="64" height="64" d="M 67,379 L 123,379 A 4,4,0,0,1,127,383 L 127,439 A 4,4,0,0,1,123,443 L 67,443 A 4,4,0,0,1,63,439 L 63,383 A 4,4,0,0,1,67,379" class="cCCgiVwX_0"></path>
+        <path id="Rectangle" stroke="#FFFFFF" width="64" height="64" d="M 143,379 L 199,379 A 4,4,0,0,1,203,383 L 203,439 A 4,4,0,0,1,199,443 L 143,443 A 4,4,0,0,1,139,439 L 139,383 A 4,4,0,0,1,143,379" class="cCCgiVwX_1"></path>
+        <path id="Rectangle" stroke="#FFFFFF" width="64" height="64" d="M 218,379 L 274,379 A 4,4,0,0,1,278,383 L 278,439 A 4,4,0,0,1,274,443 L 218,443 A 4,4,0,0,1,214,439 L 214,383 A 4,4,0,0,1,218,379" class="cCCgiVwX_2"></path>
+        <path id="Rectangle" stroke="#FFFFFF" width="64" height="64" d="M 143,304 L 199,304 A 4,4,0,0,1,203,308 L 203,364 A 4,4,0,0,1,199,368 L 143,368 A 4,4,0,0,1,139,364 L 139,308 A 4,4,0,0,1,143,304" class="cCCgiVwX_3"></path>
         <g class="shortDelayAnimated animatedFadeInUp fadeIn">
         <text id="W" font-family="AvenirNext-Regular, Avenir Next" font-size="20" font-weight="normal" fill="#FFFFFF">
-            <tspan x="176.78" y="324">W</tspan>
+            <tspan x="160.78" y="342">W</tspan>
         </text>
         <text id="A" font-family="AvenirNext-Regular, Avenir Next" font-size="20" font-weight="normal" fill="#FFFFFF">
-            <tspan x="181" y="399">S</tspan>
+            <tspan x="87.5" y="417">A</tspan>
         </text>
         <text id="S" font-family="AvenirNext-Regular, Avenir Next" font-size="20" font-weight="normal" fill="#FFFFFF">
-            <tspan x="104.36" y="399">A</tspan>
+            <tspan x="165.36" y="417">S</tspan>
         </text>
         <text id="D" font-family="AvenirNext-Regular, Avenir Next" font-size="20" font-weight="normal" fill="#FFFFFF">
-            <tspan x="253.43" y="399">D</tspan>
+            <tspan x="238.43" y="417">D</tspan>
         </text>
         <text id="O" font-family="AvenirNext-Regular, Avenir Next" font-size="20" font-weight="normal" fill="#FFFFFF">
-            <tspan x="821.5" y="324">O</tspan>
+            <tspan x="806.5" y="342">O</tspan>
         </text>
         <text id="P" font-family="AvenirNext-Regular, Avenir Next" font-size="20" font-weight="normal" fill="#FFFFFF">
-            <tspan x="899.2" y="324">P</tspan>
+            <tspan x="884.2" y="342">P</tspan>
         </text>
         <text id="L" font-family="AvenirNext-Regular, Avenir Next" font-size="20" font-weight="normal" fill="#FFFFFF">
-            <tspan x="863.4" y="399">L</tspan>
+            <tspan x="847.4" y="417">L</tspan>
         </text>
         <text id="Move" font-family="AvenirNext-Regular, Avenir Next" font-size="12" font-weight="normal" fill="#FFFFFF">
-            <tspan x="193" y="461">Move</tspan>
+            <tspan x="177" y="479">Move</tspan>
         </text>
         <text id="Restart" font-family="AvenirNext-Regular, Avenir Next" font-size="12" font-weight="normal" fill="#FFFFFF">
-            <tspan x="873" y="461">Restart</tspan>
+            <tspan x="858" y="479">Restart</tspan>
         </text>
         <text id="Dash" font-family="AvenirNext-Regular, Avenir Next" font-size="12" font-weight="normal" fill="#FFFFFF">
-            <tspan x="797.184" y="258">Dash</tspan>
+            <tspan x="782.184" y="274">Dash</tspan>
         </text>
         <text id="Punch" font-family="AvenirNext-Regular, Avenir Next" font-size="12" font-weight="normal" fill="#FFFFFF">
-            <tspan x="911" y="258">Punch</tspan>
+            <tspan x="895" y="274">Punch</tspan>
         </text>
         </g>
         <text id="scroll-down-for-a-mo" class="delayAnimated2 animatedFadeInUp fadeInUp" font-family="AvenirNext-Regular, Avenir Next" font-size="18" font-weight="normal" fill="#94999D">
-            <tspan x="352.157" y="615">scroll down for a more classic layout</tspan>
+            <tspan x="352.157" y="617">scroll down for a more classic layout</tspan>
         </text>
         <text id="Click-to-enter" class="delayAnimated animatedFadeInUp fadeInUp" font-family="AvenirNext-Regular, Avenir Next" font-size="24" font-weight="normal" fill="#94999D">
-            <tspan x="427.256" y="143">Click to enter</tspan>
+            <tspan x="427.256" y="163">Click to enter</tspan>
         </text>
         <text id="I'm-Tony-Chan,-a-mul" class="animated animatedFadeInUp fadeInUp" font-family="AvenirNext-DemiBold, Avenir Next" font-size="30" font-weight="500" fill="#FFFFFF">
-            <tspan x="203.28" y="106"> I'm Tony Chan, a multidisciplinary creative</tspan>
+            <tspan x="203.28" y="126"> I'm Tony Chan, a multidisciplinary creative</tspan>
         </text>
-        <path d="M868,434 L868,470 C902,470 919,470 919,470" id="Line-5" stroke="#FFFFFF" stroke-linecap="square" class="uvUUgxpn_8"></path>
-        <path d="M187,434 L187,470 C216.333333,470 231,470 231,470" id="Line-5" stroke="#FFFFFF" stroke-linecap="square" class="uvUUgxpn_4"></path>
-        <path id="Rectangle" stroke="#FFFFFF" width="64" height="64" d="M 840,361 L 896,361 A 4,4,0,0,1,900,365 L 900,421 A 4,4,0,0,1,896,425 L 840,425 A 4,4,0,0,1,836,421 L 836,365 A 4,4,0,0,1,840,361" class="uvUUgxpn_5"></path>
-        <path id="Rectangle" stroke="#FFFFFF" width="64" height="64" d="M 802,286 L 858,286 A 4,4,0,0,1,862,290 L 862,346 A 4,4,0,0,1,858,350 L 802,350 A 4,4,0,0,1,798,346 L 798,290 A 4,4,0,0,1,802,286" class="uvUUgxpn_6"></path>
-        <path id="Rectangle" stroke="#FFFFFF" width="64" height="64" d="M 877,286 L 933,286 A 4,4,0,0,1,937,290 L 937,346 A 4,4,0,0,1,933,350 L 877,350 A 4,4,0,0,1,873,346 L 873,290 A 4,4,0,0,1,877,286" class="uvUUgxpn_7"></path>
-        <path id="Line-6" stroke="#FFFFFF" stroke-linecap="square" d="M830,278L830,242L790,242" class="uvUUgxpn_9"></path>
-        <path id="Line-6" stroke="#FFFFFF" stroke-linecap="square" transform="translate(929.000000, 260.000000) scale(-1, 1) translate(-929.000000, -260.000000) " d="M952,278L952,242L906,242" class="uvUUgxpn_10"></path>
-        <g id="Group" transform="translate(485.500000, 635.000000)" stroke="#FFFFFF" stroke-linecap="round">
-            <path id="Line-9" transform="translate(7.500000, 8.050000) scale(-1, 1) translate(-7.500000, -8.050000) " d="M0.5,15.6L14.5,0.5" class="uvUUgxpn_11"></path>
-            <path id="Line-9" d="M14.5,15.6L28.5,0.5" class="uvUUgxpn_12"></path>
+        <path d="M171,452 L171,488 C200.333333,488 215,488 215,488" id="Line-5" stroke="#979797" stroke-linecap="square" class="cCCgiVwX_4"></path>
+        <path id="Rectangle" stroke="#FFFFFF" width="64" height="64" d="M 825,379 L 881,379 A 4,4,0,0,1,885,383 L 885,439 A 4,4,0,0,1,881,443 L 825,443 A 4,4,0,0,1,821,439 L 821,383 A 4,4,0,0,1,825,379" class="cCCgiVwX_5"></path>
+        <path id="Rectangle" stroke="#FFFFFF" width="64" height="64" d="M 787,304 L 843,304 A 4,4,0,0,1,847,308 L 847,364 A 4,4,0,0,1,843,368 L 787,368 A 4,4,0,0,1,783,364 L 783,308 A 4,4,0,0,1,787,304" class="cCCgiVwX_6"></path>
+        <path id="Rectangle" stroke="#FFFFFF" width="64" height="64" d="M 862,304 L 918,304 A 4,4,0,0,1,922,308 L 922,364 A 4,4,0,0,1,918,368 L 862,368 A 4,4,0,0,1,858,364 L 858,308 A 4,4,0,0,1,862,304" class="cCCgiVwX_7"></path>
+        <path d="M853,452 L853,488 C887,488 904,488 904,488" id="Line-5" stroke="#979797" stroke-linecap="square" class="cCCgiVwX_8"></path>
+        <path id="Line-6" stroke="#979797" stroke-linecap="square" d="M815,296L815,260L775,260" class="cCCgiVwX_9"></path>
+        <path id="Line-6" stroke="#979797" stroke-linecap="square" transform="translate(913.000000, 278.000000) scale(-1, 1) translate(-913.000000, -278.000000) " d="M936,296L936,260L890,260" class="cCCgiVwX_10"></path>
+        <g id="Group" transform="translate(485.500000, 635.000000)" stroke="#979797" stroke-linecap="round">
+            <path id="Line-9" transform="translate(7.500000, 8.050000) scale(-1, 1) translate(-7.500000, -8.050000) " d="M0.5,15.6L14.5,0.5" class="cCCgiVwX_11"></path>
+            <path id="Line-9" d="M14.5,15.6L28.5,0.5" class="cCCgiVwX_12"></path>
         </g>
     </g>
-<style data-made-with="vivus-instant">.uvUUgxpn_0{stroke-dasharray:250 252;stroke-dashoffset:251;animation:uvUUgxpn_draw 2000ms ease-in-out 0ms forwards;}.uvUUgxpn_1{stroke-dasharray:250 252;stroke-dashoffset:251;animation:uvUUgxpn_draw 2000ms ease-in-out 83ms forwards;}.uvUUgxpn_2{stroke-dasharray:250 252;stroke-dashoffset:251;animation:uvUUgxpn_draw 2000ms ease-in-out 166ms forwards;}.uvUUgxpn_3{stroke-dasharray:250 252;stroke-dashoffset:251;animation:uvUUgxpn_draw 2000ms ease-in-out 250ms forwards;}.uvUUgxpn_4{stroke-dasharray:80 82;stroke-dashoffset:81;animation:uvUUgxpn_draw 2000ms ease-in-out 333ms forwards;}.uvUUgxpn_5{stroke-dasharray:250 252;stroke-dashoffset:251;animation:uvUUgxpn_draw 2000ms ease-in-out 416ms forwards;}.uvUUgxpn_6{stroke-dasharray:250 252;stroke-dashoffset:251;animation:uvUUgxpn_draw 2000ms ease-in-out 500ms forwards;}.uvUUgxpn_7{stroke-dasharray:250 252;stroke-dashoffset:251;animation:uvUUgxpn_draw 2000ms ease-in-out 583ms forwards;}.uvUUgxpn_8{stroke-dasharray:87 89;stroke-dashoffset:88;animation:uvUUgxpn_draw 2000ms ease-in-out 666ms forwards;}.uvUUgxpn_9{stroke-dasharray:76 78;stroke-dashoffset:77;animation:uvUUgxpn_draw 2000ms ease-in-out 750ms forwards;}.uvUUgxpn_10{stroke-dasharray:82 84;stroke-dashoffset:83;animation:uvUUgxpn_draw 2000ms ease-in-out 833ms forwards;}.uvUUgxpn_11{stroke-dasharray:21 23;stroke-dashoffset:22;animation:uvUUgxpn_draw 1000ms ease-in-out 916ms forwards;animation-delay: 3s;}.uvUUgxpn_12{stroke-dasharray:21 23;stroke-dashoffset:22;animation:uvUUgxpn_draw 1000ms ease-in-out 1000ms forwards; animation-delay: 3s;}@keyframes uvUUgxpn_draw{100%{stroke-dashoffset:0;}}@keyframes uvUUgxpn_fade{0%{stroke-opacity:1;}94.44444444444444%{stroke-opacity:1;}100%{stroke-opacity:0;}}
+<style data-made-with="vivus-instant">.cCCgiVwX_0{stroke-dasharray:250 252;stroke-dashoffset:251;animation:cCCgiVwX_draw 2000ms ease-in-out 0ms forwards;}.cCCgiVwX_1{stroke-dasharray:250 252;stroke-dashoffset:251;animation:cCCgiVwX_draw 2000ms ease-in-out 83ms forwards;}.cCCgiVwX_2{stroke-dasharray:250 252;stroke-dashoffset:251;animation:cCCgiVwX_draw 2000ms ease-in-out 166ms forwards;}.cCCgiVwX_3{stroke-dasharray:250 252;stroke-dashoffset:251;animation:cCCgiVwX_draw 2000ms ease-in-out 250ms forwards;}.cCCgiVwX_4{stroke-dasharray:80 82;stroke-dashoffset:81;animation:cCCgiVwX_draw 2000ms ease-in-out 333ms forwards;}.cCCgiVwX_5{stroke-dasharray:250 252;stroke-dashoffset:251;animation:cCCgiVwX_draw 2000ms ease-in-out 416ms forwards;}.cCCgiVwX_6{stroke-dasharray:250 252;stroke-dashoffset:251;animation:cCCgiVwX_draw 2000ms ease-in-out 500ms forwards;}.cCCgiVwX_7{stroke-dasharray:250 252;stroke-dashoffset:251;animation:cCCgiVwX_draw 2000ms ease-in-out 583ms forwards;}.cCCgiVwX_8{stroke-dasharray:87 89;stroke-dashoffset:88;animation:cCCgiVwX_draw 2000ms ease-in-out 666ms forwards;}.cCCgiVwX_9{stroke-dasharray:76 78;stroke-dashoffset:77;animation:cCCgiVwX_draw 2000ms ease-in-out 750ms forwards;}.cCCgiVwX_10{stroke-dasharray:82 84;stroke-dashoffset:83;animation:cCCgiVwX_draw 2000ms ease-in-out 833ms forwards;}.cCCgiVwX_11{stroke-dasharray:21 23;stroke-dashoffset:22;animation:cCCgiVwX_draw 1000ms ease-in-out 700ms forwards;animation-delay: 3s;}.cCCgiVwX_12{stroke-dasharray:21 23;stroke-dashoffset:22;animation:cCCgiVwX_draw 1000ms ease-in-out 700ms forwards;animation-delay: 3s;}@keyframes cCCgiVwX_draw{100%{stroke-dashoffset:0;}}@keyframes cCCgiVwX_fade{0%{stroke-opacity:1;}94.44444444444444%{stroke-opacity:1;}100%{stroke-opacity:0;}}
 @keyframes fadeInUp {
     from {
         transform: translateY(20px);
@@ -147,4 +147,5 @@
     animation-name: fadeIn;
     -webkit-animation-name: fadeIn;
 }
+
 </style></svg>
