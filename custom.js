@@ -6,8 +6,6 @@ $(function () {
   var page_id = query.substring(query.length - 1);
   var carousel = $("#carousel");
 
-  // check url and add the active class to 0 if there's nothing
-
   if (!isNaN(parseInt(page_id))) {
     carousel.carousel(parseInt(page_id));
 
@@ -39,10 +37,16 @@ $(function () {
   var active = $(".navbar-nav .active ");
   if (active.hasClass("navPortfolio")) {
     $("#caroOne").toggleClass("active");
+    $("#navbar").css("top", "-140px");
+    setTimeout(() => {
+      $("#navbar").css("opacity", "1");
+    }, 300); // stops flicker on first load
   } else if (active.hasClass("navResume")) {
     $("#caroTwo").toggleClass("active");
+    $("#navbar").css("opacity", "1");
   } else {
     $("#caroThree").toggleClass("active");
+    $("#navbar").css("opacity", "1");
   }
 
   var prevScrollpos = window.pageYOffset; // show/hide

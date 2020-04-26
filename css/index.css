@@ -63,7 +63,8 @@ p {
 }
 #navbar {
   position: fixed;
-  top: -140px;
+  /* top: -140px; */
+  opacity: 0;
   padding-top: 20px;
   padding-bottom: 25px;
   box-shadow: rgba(0, 0, 0, 0.2) 0 0 10px;
