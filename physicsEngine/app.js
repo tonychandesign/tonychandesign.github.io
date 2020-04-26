@@ -94,17 +94,17 @@ const gameSandbox = function () {
     }
   };
 
-  // this.keyZoom = function () {
-  //   if (keys[187]) {
-  //     //plus
-  //     this.zoom *= 1.01;
-  //   } else if (keys[189]) {
-  //     //minus
-  //     this.zoom *= 0.99;
-  //   } else if (keys[48]) {
-  //     this.zoom = 1;
-  //   }
-  // };
+  this.keyZoom = function () {
+    if (keys[187]) {
+      //plus
+      this.zoom *= 1.01;
+    } else if (keys[189]) {
+      //minus
+      this.zoom *= 0.99;
+    } else if (keys[48]) {
+      this.zoom = 1;
+    }
+  };
   this.wipe = function () {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
   };
@@ -629,34 +629,6 @@ const character = function () {
     } else {
       this.walk_cycle += this.flipLegs * this.Vx;
     }
-
-    //draw holding graphics
-    if (this.isHolding) {
-      if (this.holdKeyDown > 20) {
-        if (this.holdKeyDown > this.throwMax) {
-          ctx.strokeStyle = "rgba(255, 0, 255, 0.8)";
-        } else {
-          ctx.strokeStyle =
-            "rgba(255, 0, 255, " +
-            (0.2 + (0.4 * this.holdKeyDown) / this.throwMax) +
-            ")";
-        }
-      } else {
-        ctx.strokeStyle = "rgba(0, 255, 255, 0.2)";
-      }
-      ctx.lineWidth = 10;
-      ctx.beginPath();
-      ctx.moveTo(
-        holdConstraint.bodyB.position.x + Math.random() * 2,
-        holdConstraint.bodyB.position.y + Math.random() * 2
-      );
-      ctx.lineTo(
-        this.x + 15 * Math.cos(this.angle),
-        this.y + 15 * Math.sin(this.angle)
-      );
-      //ctx.lineTo(holdConstraint.pointA.x,holdConstraint.pointA.y);
-      ctx.stroke();
-    }
   };
   this.info = function () {
     let line = 80;
@@ -829,18 +801,6 @@ Matter.Body.setPosition(player, playerInstance.spawnPos);
 Matter.Body.setVelocity(player, playerInstance.spawnVel);
 Matter.Body.setMass(player, playerInstance.mass);
 World.add(engine.world, [player]);
-//holding body constraint
-const holdConstraint = Constraint.create({
-  pointA: {
-    x: 0,
-    y: 0,
-  },
-  //setting constaint to jump sensor because it has to be on something until the player picks up things
-  bodyB: jumpSensor,
-  stiffness: 0.4,
-});
-
-World.add(engine.world, holdConstraint);
 
 // matterjs bodies
 let body = []; //non static bodies
@@ -867,6 +827,18 @@ function spawn() {
       map[map.length] = Bodies.rectangle(
         280 + r + i * r,
         920 - r - j * r,
+        r,
+        r
+      );
+    }
+  }
+  for (let i = 0; i < 5; i++) {
+    //stairs on intuit cave
+    for (let j = 0; j < 5 - i; j++) {
+      const r = 30;
+      map[map.length] = Bodies.rectangle(
+        -1200 + r + i * r,
+        -1435 - r - j * r,
         r,
         r
       );
@@ -935,16 +907,16 @@ function spawn() {
   mapRect(-700, 525, 350, 25); // newtons cradle ledge
   mapRect(-2100, 650, 1100, 25); // platform left of newtons cradle ledge
   mapRect(-400, 330, 1200, 30); //ceiling for Birch cave
-  mapVertex(1010, 520, "60 0 20 0 -400 320 -360 320"); // angled right wall Birch cave
+  mapVertex(985, 520, "0 0 -40 0 -400 320 -360 320"); // angled right wall Birch cave
   mapRect(625, 650, 200, 30); //platform in  Birch cave
   mapVertex(1661, 972, "0 280 1100 280 1100 0 500 0"); // ramp to tunnel
-  mapVertex(1367, 412, "0 100 529 100 529 0 130 0"); // ceiling of tunnel
+  mapVertex(1342, 412, "18 100 585 100 585 0 130 0"); // ceiling of tunnel
   mapRect(1500, -540, 100, 1000); //left wall of tunnel
 
   // intuit tunnel
   mapRect(-2100, -1000, 1670, 150); // platform floor bottom
-  mapRect(-2100, -1600, 1060, 150); // platform floor middle
-  mapVertex(-820, -1440, "0 0 100 20 100 0 0 20"); // smaller platform floor middle on right - block hanging platform, no chamfer for hex to stay still
+  mapRect(-2100, -1600, 915, 150); // platform floor middle
+  mapVertex(-1100, -1850, "0 0 100 20 100 0 0 20"); // hex platform no chamfer for hex to stay still
   mapRect(-1400, -2200, 1700, 150); // platform ceiling
   mapVertex(-165, -1250, "0 0 -800 0 -800 600"); //angled ceiling
   mapRect(-580, -2200, 150, 1350); // right wall of cave
@@ -1182,6 +1154,7 @@ function spawn() {
     });
   });
 
+  // growing stairs at very top
   let varriedHeight = 0;
   let expStartX = -1200;
   for (let i = 0; i < 13; i++) {
@@ -1404,10 +1377,10 @@ function spawnBodies() {
   );
 
   // compound bodies (UX bodies)
-  let startX = 1220;
-  let startY = 390; // +100 for first loop offset
+  let startX = 1180;
+  let startY = 340; // +100 for first loop offset
   for (let k = 0; k < 6; k++) {
-    for (let j = 0; j < 1; j++) {
+    for (let j = 0; j < 6; j++) {
       let numCol = compBodies.length;
       for (let i = 0; i + 1 < 2; i++) {
         // x decreases- looping fro left to right position wise
@@ -1429,7 +1402,7 @@ function spawnBodies() {
               }),
             ], // right
           });
-          startY = startY - 60;
+          startY = startY - 100;
         } else {
           // the X
           compBodies[i + numCol] = Body.create({
@@ -1445,19 +1418,20 @@ function spawnBodies() {
             ],
           });
           Body.rotate(compBodies[i + numCol], Math.PI / 3.7);
-          startY = startY - 40;
+          startY = startY - 100;
         }
       }
     }
 
     //260 and 275
-    startY = 390;
+    startY = 340;
     if (k % 2 == 0) {
-      startX = startX + 40;
+      startX = startX + 50;
     } else {
-      startX = startX + 65;
+      startX = startX + 70;
     }
   }
+
   const propsOverBouncy = {
     friction: 0,
     frictionAir: 0,
@@ -1506,7 +1480,7 @@ function spawnBodies() {
     frictionStatic: 0.6,
     restitution: 0,
   });
-  constraintPB(1600, -3000, body.length - 1, 0.0025);
+  constraintPB(1550, -3000, body.length - 1, 0.0025);
   constraintPB(1800, -3000, body.length - 1, 0.0025);
   // circle to weigh down the platform
   body[body.length] = Bodies.circle(1675, -2900, 100, { density: 0.01 });
@@ -1519,12 +1493,13 @@ function spawnBodies() {
     frictionStatic: 0.6,
     restitution: 0,
   });
-  constraintPB(-700, -2200, body.length - 1, 0.005);
+  constraintPB(-665, -2200, body.length - 1, 0.005);
   constraintPB(-900, -2200, body.length - 1, 0.005);
   // stack of hexagons
   for (let i = 0; i < 4; i++) {
     //stack of hexagons
-    body[body.length] = Bodies.polygon(-815, -1700 - i * 27, 6, 27, {
+    // body[body.length] = Bodies.polygon(-812.5, -1700 - i * 27, 6, 27, {
+    body[body.length] = Bodies.polygon(-1100, -1900 - i * 27, 6, 27, {
       angle: Math.PI / 2,
       density: 0.035,
     });
@@ -1546,6 +1521,14 @@ function spawnBodies() {
   for (let i = 0; i < compBodies.length; i++) {
     compBodies[i].collisionFilter.group = 1;
     World.add(engine.world, compBodies[i]);
+    World.add(engine.world, [
+      Constraint.create({
+        bodyA: compBodies[i],
+        pointB: Vector.clone(compBodies[i].position),
+        stiffness: 0.1,
+        length: 0,
+      }),
+    ]);
   }
   for (let i = 0; i < composites.length; i++) {
     World.add(engine.world, composites[i]);
@@ -1590,18 +1573,16 @@ function playerTouchCaseStudy(onBody) {
     const modalText = document.getElementById("modal-text");
     const modalImg = document.getElementById("modal-img");
     const modalCTA = document.getElementById("modal-cta");
-    if (playerInstance.onBody === 54 || playerInstance.onBody === 32) {
+    if (playerInstance.onBody === 68 || playerInstance.onBody === 46) {
       modalImg.style.boxShadow = "none";
       modalImg.style.webkitBoxShadow = "none";
-      console.log("==54 box shadow");
     } else {
-      console.log("other box shadow");
       modalImg.style.boxShadow =
         "0 0 4px 1px rgba(0, 0, 0, 0.01), 0 3px 24px rgba(0, 0, 0, 0.6)";
       modalImg.style.webkitBoxShadow =
         "0 0 4px 1px rgba(0, 0, 0, 0.01), 0 3px 24px rgba(0, 0, 0, 0.6)";
     }
-    if (playerInstance.onBody === 54) {
+    if (playerInstance.onBody === 68) {
       // ucsd
       modalTitle.innerHTML = "UCSD";
       modalText.innerHTML =
@@ -1609,7 +1590,7 @@ function playerTouchCaseStudy(onBody) {
       modalImg.src = "./img/darkMod/ucsd.svg";
       modalCTA.href = "https://ucsd.edu/";
       modal.classList.add("is-open");
-    } else if (playerInstance.onBody === 60) {
+    } else if (playerInstance.onBody === 74) {
       // workday
       modalTitle.innerHTML = "Workday";
       modalText.innerHTML =
@@ -1617,7 +1598,7 @@ function playerTouchCaseStudy(onBody) {
       modalImg.src = "./img/darkMod/dark_WORKDAY.png";
       modalCTA.href = "workday_pre.html";
       modal.classList.add("is-open");
-    } else if (playerInstance.onBody === 59) {
+    } else if (playerInstance.onBody === 73) {
       // birch
       modalTitle.innerHTML = "Birch Aquarium";
       modalText.innerHTML =
@@ -1625,7 +1606,7 @@ function playerTouchCaseStudy(onBody) {
       modalImg.src = "./img/darkMod/dark_BIRCH.png";
       modalCTA.href = "birch.html";
       modal.classList.add("is-open");
-    } else if (playerInstance.onBody === 58) {
+    } else if (playerInstance.onBody === 72) {
       // asgs
       modalTitle.innerHTML = "A.S. Graphic Studio";
       modalText.innerHTML =
@@ -1633,7 +1614,7 @@ function playerTouchCaseStudy(onBody) {
       modalImg.src = "./img/darkMod/dark_SGF.png";
       modalCTA.href = "asgs.html";
       modal.classList.add("is-open");
-    } else if (playerInstance.onBody === 55) {
+    } else if (playerInstance.onBody === 69) {
       // intuit
       modalTitle.innerHTML = "Intuit";
       modalText.innerHTML =
@@ -1641,7 +1622,7 @@ function playerTouchCaseStudy(onBody) {
       modalImg.src = "./img/darkMod/dark_INTUIT.png";
       modalCTA.href = "intuit_nda.html";
       modal.classList.add("is-open");
-    } else if (playerInstance.onBody === 56) {
+    } else if (playerInstance.onBody === 70) {
       // d4sd
       modalTitle.innerHTML = "D4SD Hackathon";
       modalText.innerHTML =
@@ -1649,7 +1630,7 @@ function playerTouchCaseStudy(onBody) {
       modalImg.src = "./img/darkMod/dark_D4SD.png";
       modalCTA.href = "project5.html";
       modal.classList.add("is-open");
-    } else if (playerInstance.onBody === 57) {
+    } else if (playerInstance.onBody === 71) {
       // eqr
       modalTitle.innerHTML = "Event Queuer";
       modalText.innerHTML =
@@ -1726,7 +1707,7 @@ function drawMatterWireFrames() {
     }
     ctx.lineTo(vertices[0].x, vertices[0].y);
   }
-  ctx.lineWidth = 1;
+  ctx.lineWidth = 2;
   ctx.strokeStyle = "#000";
   ctx.stroke();
 }
@@ -1741,7 +1722,7 @@ function drawMap() {
     }
     ctx.lineTo(vertices[0].x, vertices[0].y);
   }
-  ctx.lineWidth = 1;
+  ctx.lineWidth = 2;
   ctx.strokeStyle = "#fff";
   ctx.stroke();
 }
@@ -1756,10 +1737,8 @@ function drawBody() {
     }
     ctx.lineTo(vertices[0].x, vertices[0].y);
   }
-  ctx.lineWidth = 1.5;
-  ctx.fillStyle = "#777";
-  ctx.fill();
-  ctx.strokeStyle = "#222";
+  ctx.lineWidth = 2;
+  ctx.strokeStyle = "#3ea6ff";
   ctx.stroke();
 }
 
@@ -1769,8 +1748,8 @@ function drawCons() {
     ctx.moveTo(cons[i].pointA.x, cons[i].pointA.y);
     ctx.lineTo(cons[i].bodyB.position.x, cons[i].bodyB.position.y);
   }
-  ctx.lineWidth = 1;
-  ctx.strokeStyle = "#fff";
+  ctx.lineWidth = 2;
+  ctx.strokeStyle = "#94999d";
   ctx.stroke();
 }
 
@@ -1784,7 +1763,7 @@ function drawMovingBodies() {
     }
     ctx.lineTo(vertices[0].x, vertices[0].y);
   }
-  ctx.lineWidth = 1;
+  ctx.lineWidth = 2;
   ctx.strokeStyle = "#fff";
   ctx.stroke();
 }
@@ -1811,13 +1790,12 @@ function drawExpBodies() {
       }
       ctx.lineWidth = 2;
 
-      ctx.strokeStyle = "#777";
+      ctx.strokeStyle = "#fff";
       ctx.stroke();
     }
   }
 }
 
-// combined bodies
 function drawComBodies() {
   ctx.beginPath();
   for (let i = 0; i < compBodies.length; i += 1) {
@@ -1825,13 +1803,16 @@ function drawComBodies() {
     for (let j = 1; j < compBodies[i].parts.length; j++) {
       let vertices = compBodies[i].parts[j].vertices;
       ctx.moveTo(vertices[0].x, vertices[0].y);
-      for (let j = 1; j < vertices.length; j += 1) {
-        ctx.lineTo(vertices[j].x, vertices[j].y);
+      for (let k = 1; k < vertices.length; k += 1) {
+        ctx.lineTo(vertices[k].x, vertices[k].y);
       }
       ctx.lineTo(vertices[0].x, vertices[0].y);
     }
   }
-  ctx.fillStyle = "#777";
+  ctx.lineWidth = 4;
+  ctx.fillStyle = "#1b1b1d";
+  ctx.strokeStyle = "#fff";
+  ctx.stroke();
   ctx.fill();
 }
 
@@ -1847,7 +1828,7 @@ function drawMovingCombined() {
       ctx.lineTo(vertices[0].x, vertices[0].y);
     }
   }
-  ctx.lineWidth = 1;
+  ctx.lineWidth = 2;
   ctx.strokeStyle = "#fff";
   ctx.stroke();
 }
@@ -1871,7 +1852,7 @@ function drawComposites() {
       }
     }
     ctx.lineWidth = 2;
-    ctx.strokeStyle = "#777";
+    ctx.strokeStyle = "#fff";
     ctx.stroke();
   }
 
@@ -1892,8 +1873,8 @@ function drawComposites() {
         );
       }
     }
-    ctx.lineWidth = 3;
-    ctx.strokeStyle = "#777";
+    ctx.lineWidth = 2;
+    ctx.strokeStyle = "#3ea6ff";
     ctx.stroke();
   }
 
@@ -1917,8 +1898,8 @@ function drawComposites() {
             composites[i].bodies[k].vertices[0].y
           );
         }
-        ctx.lineWidth = 3;
-        ctx.strokeStyle = "#777";
+        ctx.lineWidth = 2;
+        ctx.strokeStyle = "#3ea6ff";
         ctx.stroke();
       }
     }
@@ -1950,7 +1931,7 @@ function drawCatapult() {
     }
     ctx.lineTo(vertices[0].x, vertices[0].y);
   }
-  ctx.lineWidth = 1;
+  ctx.lineWidth = 2;
   ctx.strokeStyle = "#fff";
   ctx.stroke();
 }
@@ -2089,7 +2070,7 @@ function cycle() {
   game.timing();
   game.wipe();
   playerInstance.keyMove();
-  // game.keyZoom();
+  game.keyZoom();
   if (game.testing) {
     playerInstance.deathCheck();
     punchLoop();
