@@ -14,7 +14,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-family: "Lato";
+  font-family: "Open Sans", sans-serif;
 }
 
 @media screen and (max-width: 414px) {
