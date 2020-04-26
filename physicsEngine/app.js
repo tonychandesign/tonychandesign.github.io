@@ -2002,6 +2002,8 @@ let ucsd = new Image();
 ucsd.src = "./physicsEngine/ucsd.svg";
 let workday = new Image();
 workday.src = "./physicsEngine/workday.svg";
+let controlsImg = new Image();
+controlsImg.src = "./physicsEngine/controls.svg";
 var moveCycleSVG = -1;
 function drawSVGs() {
   moveCycleSVG += 0.025;
@@ -2018,6 +2020,7 @@ function drawSVGs() {
   ctx.drawImage(workday, px, 300);
   ctx.drawImage(eqr, 1400, -3395);
   ctx.drawImage(d4sd, -1850, -3980);
+  ctx.drawImage(controlsImg, -1920, -200, 824.2, 390);
   ctx.restore();
 }
 

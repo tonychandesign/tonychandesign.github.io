@@ -6,6 +6,8 @@ $(function () {
   var page_id = query.substring(query.length - 1);
   var carousel = $("#carousel");
 
+  // check url and add the active class to 0 if there's nothing
+
   if (!isNaN(parseInt(page_id))) {
     carousel.carousel(parseInt(page_id));
 
@@ -21,15 +23,26 @@ $(function () {
         .toggleClass("active");
     }
     // show nav
-    console.log(page_id);
+    // console.log($('.navbar-nav [data-id="0"]').parent("li"));
     if (page_id == 1 || page_id == 2) {
       $("#navbar").css("top", "0px");
     }
   } else {
     var defaultActive = $('.navbar-nav [data-id="0"]').parent("li");
+
     if (!defaultActive.hasClass("active")) {
       defaultActive.toggleClass("active");
     }
+  }
+
+  // set which carousel page onload
+  var active = $(".navbar-nav .active ");
+  if (active.hasClass("navPortfolio")) {
+    $("#caroOne").toggleClass("active");
+  } else if (active.hasClass("navResume")) {
+    $("#caroTwo").toggleClass("active");
+  } else {
+    $("#caroThree").toggleClass("active");
   }
 
   var prevScrollpos = window.pageYOffset; // show/hide
