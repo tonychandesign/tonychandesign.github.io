@@ -39,8 +39,9 @@ $(function () {
     $("#caroOne").toggleClass("active");
     $("#navbar").css("top", "-140px");
     setTimeout(() => {
+      // stops flicker on first load
       $("#navbar").css("opacity", "1");
-    }, 300); // stops flicker on first load
+    }, 300);
   } else if (active.hasClass("navResume")) {
     $("#caroTwo").toggleClass("active");
     $("#navbar").css("opacity", "1");

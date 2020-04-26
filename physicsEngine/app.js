@@ -866,7 +866,7 @@ function spawn() {
       const r = 40;
       map[map.length] = Bodies.rectangle(
         280 + r + i * r,
-        350 - r - j * r,
+        920 - r - j * r,
         r,
         r
       );
@@ -929,12 +929,12 @@ function spawn() {
   map[map.length] = Bodies.rectangle(0, -4200, 4200, 200); //ceiling
   mapRect(-2100, 400, 1000, 700); // starting block
   mapRect(-2100, -420, 600, 50); // starting top platform for UCSD
-  mapVertex(100, 234, "600 0 600 200 0 200"); // ramp
-  mapRect(-300, 300, 50, 250); // cave left wall under first ramp
+  mapVertex(67, 234, "600 0 600 200 -100 200"); // ramp
+  mapRect(-400, 300, 50, 250); // cave left wall under first ramp
   mapRect(250, 300, 50, 600); // cave right wall
-  mapRect(-700, 525, 450, 25); // newtons cradle ledge
+  mapRect(-700, 525, 350, 25); // newtons cradle ledge
   mapRect(-2100, 650, 1100, 25); // platform left of newtons cradle ledge
-  mapRect(-300, 330, 1100, 30); //ceiling for Birch cave
+  mapRect(-400, 330, 1200, 30); //ceiling for Birch cave
   mapVertex(1010, 520, "60 0 20 0 -400 320 -360 320"); // angled right wall Birch cave
   mapRect(625, 650, 200, 30); //platform in  Birch cave
   mapVertex(1661, 972, "0 280 1100 280 1100 0 500 0"); // ramp to tunnel
@@ -1007,13 +1007,13 @@ function spawn() {
     }
   );
   //birch
-  modalPlatforms[modalPlatforms.length] = Bodies.rectangle(550, 900, 400, 20, {
+  modalPlatforms[modalPlatforms.length] = Bodies.rectangle(550, 330, 400, 20, {
     chamfer: { radius: 4 },
   });
   //workday (moves left right)
-  modalPlatforms[modalPlatforms.length] = Bodies.rectangle(5, 700, 400, 20, {
+  modalPlatforms[modalPlatforms.length] = Bodies.rectangle(-50, 700, 400, 20, {
     chamfer: { radius: 4 },
-    ogX: 5,
+    ogX: -50,
     ogY: 700,
     movement: "leftRight",
   });
@@ -1168,7 +1168,7 @@ function spawn() {
         }
       }
     }
-
+    // moving workday platform
     var px =
       modalPlatforms[modalPlatforms.length - 1].ogX +
       45 * Math.sin(moveCycle / 2);
@@ -1472,7 +1472,7 @@ function spawnBodies() {
   };
   (function newtonsCradle() {
     //build a newton's cradle
-    const x = -600;
+    const x = -625;
     const r = 20;
     for (let i = 0; i < 5; i++) {
       body[body.length] = Bodies.circle(
@@ -2009,7 +2009,7 @@ function drawSVGs() {
   moveCycleSVG += 0.025;
   ctx.save();
   ctx.drawImage(asgs, -350, -1845);
-  ctx.drawImage(birch, 350, 500);
+  ctx.drawImage(birch, 350, -70);
   ctx.drawImage(ucsd, -1900, -820);
   ctx.drawImage(intuit, -1800, -1395);
   // workday moving playform
