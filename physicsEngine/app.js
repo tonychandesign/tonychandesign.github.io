@@ -56,13 +56,13 @@ document.body.addEventListener("keydown", function (e) {
   //   event.preventDefault();
   // }
   keys[e.keyCode] = true;
-  if (keys[84]) {
-    if (game.testing) {
-      game.testing = false;
-    } else {
-      game.testing = true;
-    }
-  }
+  // if (keys[84]) {
+  //   if (game.testing) {
+  //     game.testing = false;
+  //   } else {
+  //     game.testing = true;
+  //   }
+  // }
 
   if (keys[27]) {
     modal.classList.remove("is-open");
@@ -94,17 +94,17 @@ const gameSandbox = function () {
     }
   };
 
-  this.keyZoom = function () {
-    if (keys[187]) {
-      //plus
-      this.zoom *= 1.01;
-    } else if (keys[189]) {
-      //minus
-      this.zoom *= 0.99;
-    } else if (keys[48]) {
-      this.zoom = 1;
-    }
-  };
+  // this.keyZoom = function () {
+  //   if (keys[187]) {
+  //     //plus
+  //     this.zoom *= 1.01;
+  //   } else if (keys[189]) {
+  //     //minus
+  //     this.zoom *= 0.99;
+  //   } else if (keys[48]) {
+  //     this.zoom = 1;
+  //   }
+  // };
   this.wipe = function () {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
   };
@@ -115,7 +115,7 @@ const game = new gameSandbox();
 const character = function () {
   this.width = 50;
   this.radius = 30;
-  this.stroke = "#333";
+  this.stroke = "#fff";
   this.fill = "#4B4B4C";
   this.height = 42;
   this.yOffWhen = {
@@ -593,34 +593,35 @@ const character = function () {
 
     //draw body
     ctx.save();
+    ctx.strokeStyle = "#C1CFDA";
     ctx.translate(this.x, this.y);
     this.calcLeg(Math.PI, -3);
-    this.drawLeg("#444");
+    this.drawLeg("#637074");
     // remember offset is hard coded in calcArm
     this.calcArm(Math.PI, 8);
-    this.drawArm("#444");
-    this.drawUpperBody("#333");
+    this.drawArm("#99A7BD");
+    this.drawUpperBody("#8A95A5");
     this.calcLeg(0, 0);
-    this.drawLeg("#333");
+    this.drawLeg("#8A95A5");
     this.calcArm(0, 10);
-    this.drawArm("#333");
+    this.drawArm("#99A7BD");
 
     // DRAW HEAD
     // calc x head postion depending if facing left or right
     let headXpos = this.flipLegs == 1 ? -10 : 10;
     ctx.translate(headXpos, -50);
     ctx.rotate(this.angle);
-    ctx.strokeStyle = this.stroke;
+
     ctx.lineWidth = 2;
-    // ctx.fillStyle = this.fill;
     ctx.beginPath();
     ctx.arc(0, 0, 18, 0, 2 * Math.PI);
+    ctx.strokeStyle = "#000";
+    ctx.fillStyle = "#99A7BD";
     ctx.fill();
     ctx.beginPath();
     ctx.arc(10, 0, 3, 0, 2 * Math.PI);
-    ctx.fillStyle = "#333";
+    ctx.fillStyle = "#1d1d1d";
     ctx.fill();
-    ctx.stroke();
     ctx.restore();
 
     // go 3x slow when in the air
@@ -1378,7 +1379,7 @@ function spawnBodies() {
 
   // compound bodies (UX bodies)
   let startX = 1180;
-  let startY = 340; // +100 for first loop offset
+  let startY = 250; // +100 for first loop offset
   for (let k = 0; k < 6; k++) {
     for (let j = 0; j < 6; j++) {
       let numCol = compBodies.length;
@@ -1423,8 +1424,7 @@ function spawnBodies() {
       }
     }
 
-    //260 and 275
-    startY = 340;
+    startY = 250;
     if (k % 2 == 0) {
       startX = startX + 50;
     } else {
@@ -1525,7 +1525,7 @@ function spawnBodies() {
       Constraint.create({
         bodyA: compBodies[i],
         pointB: Vector.clone(compBodies[i].position),
-        stiffness: 0.1,
+        stiffness: 0.01,
         length: 0,
       }),
     ]);
@@ -1811,7 +1811,7 @@ function drawComBodies() {
   }
   ctx.lineWidth = 4;
   ctx.fillStyle = "#1b1b1d";
-  ctx.strokeStyle = "#fff";
+  ctx.strokeStyle = "#3ea6ff";
   ctx.stroke();
   ctx.fill();
 }
@@ -2070,7 +2070,7 @@ function cycle() {
   game.timing();
   game.wipe();
   playerInstance.keyMove();
-  game.keyZoom();
+  // game.keyZoom();
   if (game.testing) {
     playerInstance.deathCheck();
     punchLoop();
