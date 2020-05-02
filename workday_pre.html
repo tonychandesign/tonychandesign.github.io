@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="js/darkVsLightPreprocess.js "></script>
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -24,13 +25,10 @@
     <!-- Custom styles for this template -->
     <link href="css/outer.css" rel="stylesheet" />
     <link href="css/sharedrobe.css" rel="stylesheet" />
+    <!-- <link href="css/overideDark.css" rel="stylesheet" /> -->
   </head>
 
   <body class="animated dark-to-light">
-    <!-- fade in script -->
-    <script>
-      document.body.className += " fade-out";
-    </script>
     <!-- dynamic resizing  -->
     <div class="container-fluid">
       <!--  ///////////////////  NAVBAR  ///////////////////  -->
@@ -74,8 +72,8 @@
           src="img/wire_covers/workday.svg"
         />
         <img
-          class="img-fluid wire-proj-hero fadeOut animated"
           id="darkWire"
+          class="img-fluid wire-proj-hero fadeOut animated"
           src="img/wire_covers/wire_workday.svg"
         />
       </div>

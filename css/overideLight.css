@@ -1,0 +1,13 @@
+@keyframes darkToLight {
+  from {
+    background-color: #f7f7f7;
+  }
+
+  to {
+    background-color: #f7f7f7;
+  }
+}
+.dark-to-light {
+  animation-name: darkToLight;
+  -webkit-animation-name: darkToLight;
+}
