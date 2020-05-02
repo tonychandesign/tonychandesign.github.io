@@ -22,7 +22,7 @@
   <link href="css/sideNav.css" rel="stylesheet" />
 </head>
 
-<body data-spy="scroll" data-target="#scrollspy" data-offset="100">
+<body data-spy="scroll" data-target="#scrollspy" data-offset="100" class="animated dark-to-light">
   <!-- fade in script -->
   <script>
     document.body.className += ' fade-out';
@@ -30,7 +30,7 @@
   <!-- dynamic resizing  -->
   <div class="container-fluid">
     <!--  ///////////////////  NAVBAR  ///////////////////  -->
-    <nav id="navbar" class="navbar-expand fixed-top whiteNav">
+    <nav id="navbar" class="navbar-expand fixed-top slideNavIn animated">
       <div class="row row-centerer">
         <div class="col-lg-4" style="margin: auto;">
           <h1 class="tonychan">
@@ -55,15 +55,10 @@
         </div>
       </div>
     </nav>
-    <div class="white_bg"></div>
-    <!-- - - - - ///////////////////  CONTENT  /////////////////// - - - - -->
-    <!-- - - - - - - - - - - - - - -PROJECT TITLE - - - - - - - - - - - - - - -->
-    <div class="respCoverPadding"></div>
-    <div class="row" style="margin-right: -16px; margin-left: -16px">
-      <!-- vertically alligns words and pictures -->
-      <div class="vertical-align row-centerer">
-        <img class="img-fluid" src="img/asgs_photos/asgscover.png" style="margin: auto;">
-      </div>
+    <div class="white_bg fadeIn animatedDelay"></div>
+    <div style="height: 100vh">
+        <img class="img-fluid wire-proj-hero fadeIn animated" src="img/wire_covers/asgs.svg">
+        <img class="img-fluid wire-proj-hero fadeOut animated" src="img/wire_covers/wire_asgs.svg">
     </div>
 
     <nav id="scrollspy">
@@ -92,7 +87,7 @@
       </ul>
     </nav>
 
-    <div class="row" style="justify-content: center; padding-top: 11em; ">
+    <div class="row" style="justify-content: center;">
       <div class="text_small">
         <p>
           <span class="intro">Timeline:</span>

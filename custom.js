@@ -85,6 +85,10 @@ $(function () {
     prevScrollpos = currentScrollPos;
   };
 
+  setTimeout(() => {
+    $("#navbar").removeClass("slideNavIn animated");
+  }, 2750);
+
   // Carousel JS scrolling implemented onto click action move-slide
   $(".move-slide").on("click touchend", function (e) {
     // touchend fixes the double click bug on ios safari

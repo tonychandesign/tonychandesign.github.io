@@ -9,20 +9,10 @@ body {
   font-weight: 300;
   color: #000;
   position: relative;
-  background-color: #f7f7f7;
+  /* background-color: #f7f7f7; */
   padding-top: 130px;
-  animation: fadeInAnimation ease 1.5s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
 }
-@keyframes fadeInAnimation {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
+
 h1,
 h2,
 h3,
@@ -67,21 +57,128 @@ p {
 }
 #navbar {
   position: fixed;
-  top: 0;
   padding-top: 20px;
   padding-bottom: 25px;
   box-shadow: rgba(0, 0, 0, 0.2) 0 0 10px;
   transition: top 0.2s ease-in-out;
   -webkit-transition: top 0.2s ease-in-out;
   -moz-transition: top 0.2s ease-in-out;
+  color: black;
+  background: white;
 }
-.whiteNav {
-  background: #fff;
+.slideNavIn {
+  animation-name: slideNavIn;
+  -webkit-animation-name: slideNavIn;
+}
+@keyframes slideNavIn {
+  from {
+    top: -140px;
+  }
+
+  to {
+    top: 0px;
+  }
 }
 .navbar-expand {
   transition: all 0.3s ease !important;
   -webkit-transition: all 0.3s ease !important;
   -moz-transition: all 0.3s ease !important;
+}
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+  overflow-x: hidden;
+}
+.wire-proj-hero {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+.animated {
+  animation-duration: 400ms;
+  animation-fill-mode: both;
+  animation-delay: 2000ms;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+}
+.animatedDelay {
+  animation-duration: 400ms;
+  animation-fill-mode: both;
+  animation-delay: 2400ms;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+}
+.fadeIn {
+  opacity: 0;
+  animation-name: fadeIn;
+  -webkit-animation-name: fadeIn;
+}
+.fadeOut {
+  opacity: 1;
+  animation-name: fadeOut;
+  -webkit-animation-name: fadeOut;
+}
+@-webkit-keyframes darkToLight {
+  from {
+    background-color: #1b1b1d;
+  }
+
+  to {
+    background-color: #f7f7f7;
+  }
+}
+@keyframes darkToLight {
+  from {
+    background-color: #1b1b1d;
+  }
+
+  to {
+    background-color: #f7f7f7;
+  }
+}
+.dark-to-light {
+  background-color: #1b1b1d;
+  animation-name: darkToLight;
+  -webkit-animation-name: darkToLight;
 }
 .sliding-middle-out {
   display: inline-block;
@@ -97,11 +194,6 @@ p {
   height: 3px;
   background: 0 0;
   transition: width 0.2s ease, background-color 0.5s ease;
-}
-.container-fluid {
-  padding-left: 0;
-  padding-right: 0;
-  overflow-x: hidden;
 }
 .sliding-middle-out.active:after,
 .sliding-middle-out:hover:after {

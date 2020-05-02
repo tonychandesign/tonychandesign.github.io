@@ -620,7 +620,7 @@ const character = function () {
     ctx.fill();
     ctx.beginPath();
     ctx.arc(10, 0, 3, 0, 2 * Math.PI);
-    ctx.fillStyle = "#1d1d1d";
+    ctx.fillStyle = "#1B1B1D";
     ctx.fill();
     ctx.restore();
 
@@ -1810,7 +1810,7 @@ function drawComBodies() {
     }
   }
   ctx.lineWidth = 4;
-  ctx.fillStyle = "#1b1b1d";
+  ctx.fillStyle = "#1B1B1D";
   ctx.strokeStyle = "#3ea6ff";
   ctx.stroke();
   ctx.fill();

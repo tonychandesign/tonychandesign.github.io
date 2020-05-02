@@ -11,17 +11,6 @@ body {
   position: relative;
   background-color: #f7f7f7;
   padding-top: 130px;
-  animation: fadeInAnimation ease 1.5s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-}
-@keyframes fadeInAnimation {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 h1,
 h2,
