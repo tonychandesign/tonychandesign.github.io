@@ -167,6 +167,10 @@ h1 {
 .box2:hover::after {
   opacity: 1;
 }
+.box2:active {
+  -webkit-transform: scale(0.98, 0.98);
+  transform: scale(0.98, 0.98);
+}
 .box3 {
   position: relative;
   display: inline-block;
@@ -187,6 +191,10 @@ h1 {
 }
 .box3:hover .overlay {
   background-color: rgba(0, 0, 0, 0.9);
+}
+.box3:active {
+  -webkit-transform: scale(0.98, 0.98);
+  transform: scale(0.98, 0.98);
 }
 .ndatext {
   color: #fff;
