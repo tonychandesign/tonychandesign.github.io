@@ -438,12 +438,12 @@ const character = function () {
       spawnBodies();
     }
   };
-  this.deathCheck = function () {
-    if (this.y > 4000) {
-      Matter.Body.setPosition(player, this.spawnPos);
-      Matter.Body.setVelocity(player, this.spawnVel);
-    }
-  };
+  // this.deathCheck = function () {
+  //   if (this.y > 4000) {
+  //     Matter.Body.setPosition(player, this.spawnPos);
+  //     Matter.Body.setVelocity(player, this.spawnVel);
+  //   }
+  // };
   this.drawUpperBody = function (stroke) {
     ctx.save();
     if (this.flipLegs == 1) {
@@ -2083,43 +2083,42 @@ function cycle() {
   game.wipe();
   playerInstance.keyMove();
   // game.keyZoom();
-  if (game.testing) {
-    playerInstance.deathCheck();
-    punchLoop();
-    ctx.save();
-    game.scaleZoom();
-    ctx.translate(playerInstance.transX, playerInstance.transY);
-    playerInstance.draw();
-    drawMatterWireFrames();
-    drawPlayerBodyTesting();
-    drawComBodies();
-    drawMovingCombined();
-    ctx.restore();
-    playerInstance.info();
-  } else {
-    playerInstance.move();
-    playerInstance.deathCheck();
-    punchLoop();
-    playerInstance.look();
-    game.wipe();
-    ctx.save();
-    game.scaleZoom();
-    ctx.translate(playerInstance.transX, playerInstance.transY);
-    designerDev();
-    drawSVGs();
-    drawCons();
-    drawBody();
-    playerInstance.draw();
-    drawMap();
-    drawMovingBodies();
-    drawExpBodies();
-    drawMovingCombined();
-    drawComposites();
-    drawCatapult();
-    drawComBodies();
-    drawModalPlatforms();
-    ctx.restore();
-  }
+  // if (game.testing) {
+  //   // playerInstance.deathCheck();
+  //   punchLoop();
+  //   ctx.save();
+  //   game.scaleZoom();
+  //   ctx.translate(playerInstance.transX, playerInstance.transY);
+  //   playerInstance.draw();
+  //   drawMatterWireFrames();
+  //   drawPlayerBodyTesting();
+  //   drawComBodies();
+  //   drawMovingCombined();
+  //   ctx.restore();
+  //   playerInstance.info();
+  // } else {
+  playerInstance.move();
+  // playerInstance.deathCheck();
+  punchLoop();
+  playerInstance.look();
+  ctx.save();
+  game.scaleZoom();
+  ctx.translate(playerInstance.transX, playerInstance.transY); // moves camera
+  playerInstance.draw();
+  designerDev();
+  drawSVGs();
+  drawCons();
+  drawBody();
+  drawMap();
+  drawMovingBodies();
+  drawExpBodies();
+  drawMovingCombined();
+  drawComposites();
+  drawCatapult();
+  drawComBodies();
+  drawModalPlatforms();
+  ctx.restore();
+  // }
 
   requestAnimationFrame(cycle);
 }
