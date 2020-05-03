@@ -69,6 +69,7 @@ p {
 .slideNavIn {
   animation-name: slideNavIn;
   -webkit-animation-name: slideNavIn;
+  animation-timing-function: ease-in-out;
 }
 @keyframes slideNavIn {
   from {

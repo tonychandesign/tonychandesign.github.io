@@ -85,9 +85,10 @@ $(function () {
     prevScrollpos = currentScrollPos;
   };
 
+  // remove slide nav animation so that the scroll auto hide nav works
   setTimeout(() => {
     $("#navbar").removeClass("slideNavIn animated");
-  }, 2750);
+  }, 2900);
 
   // Carousel JS scrolling implemented onto click action move-slide
   $(".move-slide").on("click touchend", function (e) {
