@@ -1563,81 +1563,92 @@ function playerOnGroundCheck(event) {
 /*************************************** Modal that opens when player steps on case studies  **************************************/
 
 function playerTouchCaseStudy(onBody) {
-  // check what bodys player is touching- if match- show modal for casestudy
-  const modal = document.querySelector("[data-modal=form]");
-  const modalBody = modal.querySelector(".modal-body");
   if (playerInstance.onBody !== prev1 && playerInstance.onBody !== prev2) {
-    prev2 = prev1;
-    prev1 = onBody;
-    const modalTitle = document.getElementById("modal-title");
-    const modalText = document.getElementById("modal-text");
-    const modalImg = document.getElementById("modal-img");
-    const modalCTA = document.getElementById("modal-cta");
-    if (playerInstance.onBody === 68 || playerInstance.onBody === 46) {
-      modalImg.style.boxShadow = "none";
-      modalImg.style.webkitBoxShadow = "none";
-    } else {
-      modalImg.style.boxShadow =
-        "0 0 4px 1px rgba(0, 0, 0, 0.01), 0 3px 24px rgba(0, 0, 0, 0.6)";
-      modalImg.style.webkitBoxShadow =
-        "0 0 4px 1px rgba(0, 0, 0, 0.01), 0 3px 24px rgba(0, 0, 0, 0.6)";
-    }
-    if (playerInstance.onBody === 68) {
-      // ucsd
-      modalTitle.innerHTML = "UCSD";
-      modalText.innerHTML =
-        "I graduated cum laude in 2018, with a focus in human computer interaction and computer science.  I spent my final quarter studying cinematography & film directing in the Czech Republic.";
-      modalImg.src = "./img/darkMod/ucsd.svg";
-      modalCTA.href = "https://ucsd.edu/";
-      modal.classList.add("is-open");
-    } else if (playerInstance.onBody === 74) {
-      // workday
-      modalTitle.innerHTML = "Workday";
-      modalText.innerHTML =
-        "Enhance the mobile experience with animations and redesign the global conclusion interface, which supports 50k+ use cases";
-      modalImg.src = "./img/darkMod/dark_WORKDAY.png";
-      modalCTA.href = "workday_pre.html";
-      modal.classList.add("is-open");
-    } else if (playerInstance.onBody === 73) {
-      // birch
-      modalTitle.innerHTML = "Birch Aquarium";
-      modalText.innerHTML =
-        "Create an exhibit in the Birch Aquarium at the Scripps Institution of Oceanography to teach people about bubbles";
-      modalImg.src = "./img/darkMod/dark_BIRCH.png";
-      modalCTA.href = "birch.html";
-      modal.classList.add("is-open");
-    } else if (playerInstance.onBody === 72) {
-      // asgs
-      modalTitle.innerHTML = "A.S. Graphic Studio";
-      modalText.innerHTML =
-        "Implement a refreshed 2018 Sun God Festival website, which had over 30k unique visitors";
-      modalImg.src = "./img/darkMod/dark_SGF.png";
-      modalCTA.href = "asgs.html";
-      modal.classList.add("is-open");
-    } else if (playerInstance.onBody === 69) {
-      // intuit
-      modalTitle.innerHTML = "Intuit";
-      modalText.innerHTML =
-        "Build in-house tools to empower the design studio and work with business partners to turn future facing ideas into high fidelity prototypes to influence business direction";
-      modalImg.src = "./img/darkMod/dark_INTUIT.png";
-      modalCTA.href = "intuit_nda.html";
-      modal.classList.add("is-open");
-    } else if (playerInstance.onBody === 70) {
-      // d4sd
-      modalTitle.innerHTML = "D4SD Hackathon";
-      modalText.innerHTML =
-        "Compete in a city wide design competition to improve transportation in San Diego";
-      modalImg.src = "./img/darkMod/dark_D4SD.png";
-      modalCTA.href = "project5.html";
-      modal.classList.add("is-open");
-    } else if (playerInstance.onBody === 71) {
-      // eqr
-      modalTitle.innerHTML = "Event Queuer";
-      modalText.innerHTML =
-        "A web app that lets users create & scan events encoded into a QR code, which can be synced onto their Google Calendar";
-      modalImg.src = "./img/darkMod/dark_EQR.png";
-      modalCTA.href = "project1.html";
-      modal.classList.add("is-open");
+    // dont init modal until there's a match
+    if (
+      playerInstance.onBody === 68 ||
+      playerInstance.onBody === 74 ||
+      playerInstance.onBody === 73 ||
+      playerInstance.onBody === 72 ||
+      playerInstance.onBody === 69 ||
+      playerInstance.onBody === 70 ||
+      playerInstance.onBody === 71
+    ) {
+      const modal = document.querySelector("[data-modal=form]");
+      const modalBody = modal.querySelector(".modal-body");
+      prev2 = prev1;
+      prev1 = onBody;
+      const modalTitle = document.getElementById("modal-title");
+      const modalText = document.getElementById("modal-text");
+      const modalImg = document.getElementById("modal-img");
+      const modalCTA = document.getElementById("modal-cta");
+      if (playerInstance.onBody === 68 || playerInstance.onBody === 46) {
+        modalImg.style.boxShadow = "none";
+        modalImg.style.webkitBoxShadow = "none";
+      } else {
+        modalImg.style.boxShadow =
+          "0 0 4px 1px rgba(0, 0, 0, 0.01), 0 3px 24px rgba(0, 0, 0, 0.6)";
+        modalImg.style.webkitBoxShadow =
+          "0 0 4px 1px rgba(0, 0, 0, 0.01), 0 3px 24px rgba(0, 0, 0, 0.6)";
+      }
+
+      if (playerInstance.onBody === 68) {
+        // ucsd
+        modalImg.src = "./img/darkMod/ucsd.svg";
+        modalTitle.innerHTML = "UCSD";
+        modalText.innerHTML =
+          "I graduated cum laude in 2018, with a focus in human computer interaction and computer science.  I spent my final quarter studying cinematography & film directing in the Czech Republic.";
+        modalCTA.href = "https://ucsd.edu/";
+        modal.classList.add("is-open");
+      } else if (playerInstance.onBody === 74) {
+        // workday
+        modalImg.src = "./img/darkMod/dark_WORKDAY.png";
+        modalTitle.innerHTML = "Workday";
+        modalText.innerHTML =
+          "Enhance the mobile experience with animations and redesign the global conclusion interface, which supports 50k+ use cases";
+        modalCTA.href = "workday_pre.html";
+        modal.classList.add("is-open");
+      } else if (playerInstance.onBody === 73) {
+        // birch
+        modalImg.src = "./img/darkMod/dark_BIRCH.png";
+        modalTitle.innerHTML = "Birch Aquarium";
+        modalText.innerHTML =
+          "Create an exhibit in the Birch Aquarium at the Scripps Institution of Oceanography to teach people about bubbles";
+        modalCTA.href = "birch.html";
+        modal.classList.add("is-open");
+      } else if (playerInstance.onBody === 72) {
+        // asgs
+        modalImg.src = "./img/darkMod/dark_SGF.png";
+        modalTitle.innerHTML = "A.S. Graphic Studio";
+        modalText.innerHTML =
+          "Implement a refreshed 2018 Sun God Festival website, which had over 30k unique visitors";
+        modalCTA.href = "asgs.html";
+        modal.classList.add("is-open");
+      } else if (playerInstance.onBody === 69) {
+        // intuit
+        modalImg.src = "./img/darkMod/dark_INTUIT.png";
+        modalTitle.innerHTML = "Intuit";
+        modalText.innerHTML =
+          "Build in-house tools to empower the design studio and work with business partners to turn future facing ideas into high fidelity prototypes to influence business direction";
+        modalCTA.href = "intuit_nda.html";
+        modal.classList.add("is-open");
+      } else if (playerInstance.onBody === 70) {
+        // d4sd
+        modalImg.src = "./img/darkMod/dark_D4SD.png";
+        modalTitle.innerHTML = "D4SD Hackathon";
+        modalText.innerHTML =
+          "Compete in a city wide design competition to improve transportation in San Diego";
+        modalCTA.href = "project5.html";
+        modal.classList.add("is-open");
+      } else if (playerInstance.onBody === 71) {
+        // eqr
+        modalImg.src = "./img/darkMod/dark_EQR.png";
+        modalTitle.innerHTML = "Event Queuer";
+        modalText.innerHTML =
+          "A web app that lets users create & scan events encoded into a QR code, which can be synced onto their Google Calendar";
+        modalCTA.href = "project1.html";
+        modal.classList.add("is-open");
+      }
     }
   }
 }
@@ -1986,6 +1997,7 @@ workday.src = "./physicsEngine/workday.svg";
 let controlsImg = new Image();
 controlsImg.src = "./physicsEngine/controls.svg";
 var moveCycleSVG = -1;
+// loops
 function drawSVGs() {
   moveCycleSVG += 0.025;
   ctx.save();
