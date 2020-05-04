@@ -1996,6 +1996,10 @@ let workday = new Image();
 workday.src = "./physicsEngine/workday.svg";
 let controlsImg = new Image();
 controlsImg.src = "./physicsEngine/controls.svg";
+let volleyball = new Image();
+volleyball.src = "./physicsEngine/volleyball.svg";
+let plane = new Image();
+plane.src = "./physicsEngine/plane.svg";
 var moveCycleSVG = -1;
 // loops
 function drawSVGs() {
@@ -2014,6 +2018,8 @@ function drawSVGs() {
   ctx.drawImage(eqr, 1400, -3395);
   ctx.drawImage(d4sd, -1850, -3980);
   ctx.drawImage(controlsImg, -1920, -200, 824.2, 390);
+  ctx.drawImage(volleyball, -2080, -1010);
+  ctx.drawImage(plane, -400, 893);
   ctx.restore();
 }
 
@@ -2104,9 +2110,9 @@ function cycle() {
   ctx.save();
   game.scaleZoom();
   ctx.translate(playerInstance.transX, playerInstance.transY); // moves camera
-  playerInstance.draw();
   designerDev();
   drawSVGs();
+  playerInstance.draw(); // needs to be here for z index
   drawCons();
   drawBody();
   drawMap();
