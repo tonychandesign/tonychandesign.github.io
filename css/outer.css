@@ -255,6 +255,10 @@ h1 {
 .box:hover::after {
   opacity: 1;
 }
+.box:active {
+  -webkit-transform: scale(0.98, 0.98);
+  transform: scale(0.98, 0.98);
+}
 .box2 {
   position: relative;
   display: inline-block;
@@ -311,7 +315,7 @@ a:hover {
   height: auto;
 }
 .row-centerer {
-  width: 90%;
+  width: 86%;
   margin: auto;
 }
 @media screen and (max-width: 414px) {
@@ -545,13 +549,16 @@ a.btn-social {
   font-size: 1.6em;
   font-weight: 900;
 }
+@media screen and (max-width: 1300px) {
+  .row-centerer {
+    width: 90%;
+  }
+}
 @media screen and (min-width: 992px) {
   .tonychan {
     margin-left: 30px;
     text-align: left;
   }
-}
-@media screen and (min-width: 992px) {
   .right-to-center {
     float: right;
   }
@@ -603,18 +610,12 @@ a.btn-social {
     padding-left: 0px;
   }
 }
-@media screen and (max-width: 375px) {
-  .navpadding {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-}
 @media screen and (max-width: 414px) {
   .section-heading {
     margin-top: 15px;
   }
   .white_bg {
-    top: -27vh;
+    top: -13vh;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 86%);
   }
   .lead {
@@ -650,7 +651,7 @@ a.btn-social {
     min-width: 300px;
   }
   .navpadding {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
   }
 }
