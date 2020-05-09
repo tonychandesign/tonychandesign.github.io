@@ -425,9 +425,19 @@ a.btn-social {
   justify-content: left;
 }
 .viewCaseStudy {
-  margin-left: 50px;
   font-size: 1.4rem;
-  font-weight: 400;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.viewCaseStudyContainer {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.viewCaseStudyText {
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-left: 50px;
 }
 .respCoverPadding {
   padding-top: 20px;
@@ -585,6 +595,12 @@ a.btn-social {
 @media screen and (max-width: 600px) {
   .respCoverPadding {
     padding-top: 180px;
+  }
+  .viewCaseStudyContainer {
+    flex-direction: column;
+  }
+  .viewCaseStudyText {
+    padding-left: 0px;
   }
 }
 @media screen and (max-width: 375px) {
