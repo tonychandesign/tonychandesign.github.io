@@ -94,17 +94,17 @@ const gameSandbox = function () {
     }
   };
 
-  this.keyZoom = function () {
-    if (keys[187]) {
-      //plus
-      this.zoom *= 1.01;
-    } else if (keys[189]) {
-      //minus
-      this.zoom *= 0.99;
-    } else if (keys[48]) {
-      this.zoom = 1;
-    }
-  };
+  // this.keyZoom = function () {
+  //   if (keys[187]) {
+  //     //plus
+  //     this.zoom *= 1.01;
+  //   } else if (keys[189]) {
+  //     //minus
+  //     this.zoom *= 0.99;
+  //   } else if (keys[48]) {
+  //     this.zoom = 1;
+  //   }
+  // };
   this.wipe = function () {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
   };
@@ -2034,7 +2034,7 @@ function drawSVGs() {
   ctx.drawImage(switchConsole, -2080, -4000);
   ctx.drawImage(skateboard, -1700, -1610);
   ctx.drawImage(beach, -190, -2217);
-  ctx.drawImage(music, 0, -3900);
+  ctx.drawImage(music, 1895, -1900);
   ctx.restore();
 }
 
@@ -2103,7 +2103,7 @@ function cycle() {
   game.timing();
   game.wipe();
   playerInstance.keyMove();
-  game.keyZoom();
+  // game.keyZoom();
   // if (game.testing) {
   //   // playerInstance.deathCheck();
   //   punchLoop();
