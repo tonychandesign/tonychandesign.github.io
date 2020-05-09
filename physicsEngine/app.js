@@ -94,17 +94,17 @@ const gameSandbox = function () {
     }
   };
 
-  // this.keyZoom = function () {
-  //   if (keys[187]) {
-  //     //plus
-  //     this.zoom *= 1.01;
-  //   } else if (keys[189]) {
-  //     //minus
-  //     this.zoom *= 0.99;
-  //   } else if (keys[48]) {
-  //     this.zoom = 1;
-  //   }
-  // };
+  this.keyZoom = function () {
+    if (keys[187]) {
+      //plus
+      this.zoom *= 1.01;
+    } else if (keys[189]) {
+      //minus
+      this.zoom *= 0.99;
+    } else if (keys[48]) {
+      this.zoom = 1;
+    }
+  };
   this.wipe = function () {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
   };
@@ -2000,6 +2000,16 @@ let volleyball = new Image();
 volleyball.src = "./physicsEngine/volleyball.svg";
 let plane = new Image();
 plane.src = "./physicsEngine/plane.svg";
+let js = new Image();
+js.src = "./physicsEngine/js.svg";
+let switchConsole = new Image();
+switchConsole.src = "./physicsEngine/game.svg";
+let skateboard = new Image();
+skateboard.src = "./physicsEngine/skateboard.svg";
+let beach = new Image();
+beach.src = "./physicsEngine/beach.svg";
+let music = new Image();
+music.src = "./physicsEngine/music.svg";
 var moveCycleSVG = -1;
 // loops
 function drawSVGs() {
@@ -2019,7 +2029,12 @@ function drawSVGs() {
   ctx.drawImage(d4sd, -1850, -3980);
   ctx.drawImage(controlsImg, -1920, -200, 824.2, 390);
   ctx.drawImage(volleyball, -2080, -1010);
-  ctx.drawImage(plane, -400, 893);
+  ctx.drawImage(plane, -1000, 893);
+  ctx.drawImage(js, 1883, 883);
+  ctx.drawImage(switchConsole, -2080, -4000);
+  ctx.drawImage(skateboard, -1700, -1610);
+  ctx.drawImage(beach, -190, -2217);
+  ctx.drawImage(music, 0, -3900);
   ctx.restore();
 }
 
@@ -2088,7 +2103,7 @@ function cycle() {
   game.timing();
   game.wipe();
   playerInstance.keyMove();
-  // game.keyZoom();
+  game.keyZoom();
   // if (game.testing) {
   //   // playerInstance.deathCheck();
   //   punchLoop();
