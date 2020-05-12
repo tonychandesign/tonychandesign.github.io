@@ -346,20 +346,6 @@ a.btn-social {
   margin: 10px 20px;
   padding: 0 0;
 }
-.cat_but {
-  border: #94999d;
-  border-style: solid;
-  border-radius: 40px;
-  border-width: 2px;
-  color: #94999d;
-  padding: 10px;
-  text-align: center;
-  display: inline-block;
-  text-decoration: none;
-  font-size: 12px;
-  margin-bottom: 10px;
-  font-weight: 400;
-}
 .carousel-item {
   transition: -webkit-transform 0.2s ease-in-out;
   transition: transform 0.2s ease-in-out;
