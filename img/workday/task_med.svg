@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="334px" height="150px" viewBox="0 0 334 150" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>task_med</title>
+    <g id="task_med" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FFFFFF" x="0" y="0" width="334" height="150"></rect>
+        <g id="Group-3" transform="translate(148.000000, 31.000000)">
+            <text id="Change-Job" font-family="GillSans-SemiBold, Gill Sans" font-size="16" font-weight="500" letter-spacing="-0.0492307826" fill="#616161">
+                <tspan x="0" y="15">Change Job</tspan>
+            </text>
+            <text id="Involves-many-users" font-family="GillSans, Gill Sans" font-size="12" font-weight="normal" letter-spacing="-0.036923087" fill="#616161">
+                <tspan x="0" y="36">Involves many users in approval </tspan>
+                <tspan x="0" y="50">process and errors will waste</tspan>
+                <tspan x="0" y="64">a lot of time</tspan>
+            </text>
+            <g id="Group-2" transform="translate(0.000000, 73.000000)">
+                <g id="Group">
+                    <rect id="Rectangle" stroke="#EC7400" x="0" y="0" width="44" height="15" rx="4"></rect>
+                    <text id="MEDIUM" font-family="GillSans, Gill Sans" font-size="8" font-weight="normal" letter-spacing="-0.0246153913" fill="#EC7400">
+                        <tspan x="7" y="10">MEDIUM</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+        <g id="Group-2" transform="translate(30.000000, 25.000000)" fill-rule="nonzero">
+            <g id="emoji">
+                <circle id="Oval" fill="#FFEAA3" cx="50" cy="50" r="50"></circle>
+                <path d="M33.0644531,46.7742188 L33.0644531,46.7742188 C30.8375,46.7742188 29.0322266,44.9689453 29.0322266,42.7419922 L29.0322266,39.5162109 C29.0322266,37.2892578 30.8375,35.4839844 33.0644531,35.4839844 L33.0644531,35.4839844 C35.2914062,35.4839844 37.0966797,37.2892578 37.0966797,39.5162109 L37.0966797,42.7419922 C37.0966797,44.9689453 35.2914062,46.7742188 33.0644531,46.7742188 Z" id="Path" fill="#7D5046"></path>
+                <path d="M66.9355469,46.7742188 L66.9355469,46.7742188 C64.7085937,46.7742188 62.9033203,44.9689453 62.9033203,42.7419922 L62.9033203,39.5162109 C62.9033203,37.2892578 64.7085937,35.4839844 66.9355469,35.4839844 L66.9355469,35.4839844 C69.1625,35.4839844 70.9677734,37.2892578 70.9677734,39.5162109 L70.9677734,42.7419922 C70.9677734,44.9689453 69.1625,46.7742188 66.9355469,46.7742188 Z" id="Path" fill="#7D5046"></path>
+                <path d="M49.9943359,79.0322266 L49.9943359,79.0322266 C45.5404297,79.0322266 41.9298828,75.4216797 41.9298828,70.9677734 L41.9298828,66.1291016 C41.9298828,61.6751953 45.5404297,58.0646484 49.9943359,58.0646484 L49.9943359,58.0646484 C54.4482422,58.0646484 58.0587891,61.6751953 58.0587891,66.1291016 L58.0587891,70.9677734 C58.0587891,75.4216797 54.4482422,79.0322266 49.9943359,79.0322266 Z" id="Path" fill="#7D5046"></path>
+            </g>
+        </g>
+    </g>
+</svg>

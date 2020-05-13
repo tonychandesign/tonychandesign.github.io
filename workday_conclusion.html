@@ -244,34 +244,21 @@
 
       <div class="row" style="margin-top: 2.5vw;">
         <div class="text_small">
-          <p
-            class="lead"
-            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
-          >
+          <p class="lead barText">
             Initial concerns:
           </p>
-          <ul class="fa-ul">
-            <li
-              class="lead"
-              style="font-size: 18px; line-height: 2; padding-left: 10px;"
-            >
-              <i class="fa-li fa fa-circle bullet"></i>The page felt too
-              “heavy”- do we really need a full page & make the user perform an
-              extra click?
+          <ul class="fa-ul barGroup">
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>There are a lot of empty
+              and duplicate fields when expanded.
             </li>
-            <li
-              class="lead"
-              style="font-size: 18px; line-height: 2; padding-left: 10px;"
-            >
-              <i class="fa-li fa fa-circle bullet"></i>Possible low confidence
-              in task completion
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>Users mentioned of low
+              confidence in task completion.
             </li>
-            <li
-              class="lead"
-              style="font-size: 18px; line-height: 2; padding-left: 10px;"
-            >
-              <i class="fa-li fa fa-circle bullet"></i>Information are too
-              spread apart
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>Information isn't
+              arranged in a visually appealing way.
             </li>
           </ul>
         </div>
@@ -283,35 +270,12 @@
             class="lead"
             style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
           >
-            Our Dublin, Ireland team actually sent a quickfix design to
-            development for the recruitment use case right before I started my
-            internship.
+            Our Ireland team shipped a quick-fix design for the recruitment use
+            case right before I started. Recruiters were an edge case because
+            they went through dozens applications a day. They wanted something
+            lighter because the full paged conclusion required them to click
+            Done every time, which they felt was tedious.
           </p>
-          <ul class="fa-ul">
-            <li
-              class="lead"
-              style="font-size: 18px; line-height: 2; padding-left: 10px;"
-            >
-              <i class="fa-li fa fa-circle bullet"></i>Recruiters are a subset
-              of users who go through dozens of business process (BP)
-              applications a day.
-            </li>
-            <li
-              class="lead"
-              style="font-size: 18px; line-height: 2; padding-left: 10px;"
-            >
-              <i class="fa-li fa fa-circle bullet"></i>They wanted a lighter
-              conclusion page, like a notification, to save more time.
-            </li>
-            <li
-              class="lead"
-              style="font-size: 18px; line-height: 2; padding-left: 10px;"
-            >
-              <i class="fa-li fa fa-circle bullet"></i>Their design had issues
-              with accessibility users since the notification disappears over
-              time and hadn’t been tested the rest of Workday’s tasks.
-            </li>
-          </ul>
         </div>
       </div>
 
@@ -319,7 +283,7 @@
         class="lead imgDescription"
         style="margin-bottom: -0.5vw; margin-top: 1.5em; text-align: center;"
       >
-        Team Ireland's Temp Design
+        Recruitment's Conclusion Design
       </p>
       <div class="row" style="justify-content: center;">
         <div class="img2Row" style="margin-right: -5px;">
@@ -348,33 +312,21 @@
 
       <div class="row" style="margin-top: 2.5vw;">
         <div class="text_small">
-          <p
-            class="lead"
-            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
-          >
+          <p class="lead barText">
             Goals:
           </p>
-          <ul class="fa-ul">
-            <li
-              class="lead"
-              style="font-size: 18px; line-height: 2; padding-left: 10px;"
-            >
-              <i class="fa-li fa fa-circle bullet"></i>Research the problem,
+          <ul class="fa-ul barGroup">
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>Research the problem,
               does this need to be fixed?
             </li>
-            <li
-              class="lead"
-              style="font-size: 18px; line-height: 2; padding-left: 10px;"
-            >
-              <i class="fa-li fa fa-circle bullet"></i>User must feel confident
-              that they’ve successfully submitted something.
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>Ensure that users feel
+              confident that they’ve successfully completed a task.
             </li>
-            <li
-              class="lead"
-              style="font-size: 18px; line-height: 2; padding-left: 10px;"
-            >
-              <i class="fa-li fa fa-circle bullet"></i>(Possibly) reduce the
-              number of clicks to complete a task.
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>Maintain accessibility
+              guidelines.
             </li>
           </ul>
         </div>
@@ -390,9 +342,9 @@
             class="lead"
             style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
           >
-            Since this is a design systems project, my first approach was to
-            find quantitative data on user tendencies on the conclusion pages.
-            Some questions I had:
+            Since the conclusion page was scaled across all of Workday's tasks,
+            I needed quantitative data on how different users interacted with
+            it. Some questions I had:
           </p>
           <ul class="fa-ul">
             <li
@@ -447,8 +399,9 @@
             class="lead"
             style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
           >
-            Unfortunately, the data science department hadn’t set up the
-            infrastructure to measure data on the conclusion page.
+            Unfortunately, data science confirmed that analytics was not set up
+            in the conclusion page because of limitations in Workday's tech
+            stack.
           </p>
         </div>
       </div>
@@ -459,11 +412,9 @@
             class="lead"
             style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
           >
-            My next option was to send out a survey to see how designers and PMs
-            of different Workday BPs see the conclusion page being used. It
-            consisted of open ended questions like: How could the current
-            conclusion interface be improved? I had 17 responses and here are
-            some findings:
+            I surveyed designers and PMs, asking how their users interacted with
+            the conclusion page. It consisted of open ended questions like: How
+            do you see the current conclusion page being used?
           </p>
         </div>
       </div>
@@ -484,31 +435,27 @@
         </div>
       </div>
 
-      <div class="row" style="justify-content: center;">
-        <div class="img1Row">
-          <!-- vertically alligns words and pictures -->
-          <div class="row" style="margin-top: 15px;"></div>
-          <img
-            class="img-fluid img_shadow"
-            src="img/workday/survey_quotes.png"
-            alt=" "
-          />
-          <div class="row" style="margin-top: 15px;"></div>
-        </div>
-      </div>
-
       <div class="row" style="margin-top: 2.5vw;">
         <div class="text_small">
-          <p
-            class="lead"
-            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
-          >
-            Note: Although Workday employees also use Workday for HR management,
-            I had to carefully weigh their input. They are categorized as
-            experts who have a different experience from the average user
-            because they are constantly working on the product. I will go over
-            usability testing with real users later on.
+          <p class="lead barText">
+            Recurring Comments:
           </p>
+          <ul class="fa-ul barGroup">
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>Users had low confidence
+              in task completion- is the task completed on this page or after
+              clicking `Done`?
+            </li>
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>Users reported being
+              confused as to where they’re taken after clicking 'Done.'
+            </li>
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>The conclusion pages
+              look too similar for multi stepped business processes so some
+              users forget which step they’re in.
+            </li>
+          </ul>
         </div>
       </div>
 
@@ -533,8 +480,8 @@
             style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
           >
             I interviewed designers from different teams and walked through a
-            handful of user flows using Workday's research verified list of
-            personas to try to understand how different users might feel.
+            handful of user flows using preset personas to understand how
+            different users might feel.
           </p>
         </div>
       </div>
@@ -573,8 +520,7 @@
             class="lead"
             style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
           >
-            After syncing up with my PM, we decided these specs for the initial
-            design:
+            My PM and I aligned on these principles for the initial designs:
           </p>
           <ul class="fa-ul">
             <li
@@ -582,28 +528,28 @@
               style="font-size: 18px; line-height: 2; padding-left: 10px;"
             >
               <i class="fa-li fa fa-circle bullet"></i>Bring the content closer
-              together
+              together and emphasize the status in header
             </li>
             <li
               class="lead"
               style="font-size: 18px; line-height: 2; padding-left: 10px;"
             >
-              <i class="fa-li fa fa-circle bullet"></i>Differentiate conclusion
-              page from typical Workday page
+              <i class="fa-li fa fa-circle bullet"></i>Visually differentiate
+              the conclusion page from the typical Workday page layout
             </li>
             <li
               class="lead"
               style="font-size: 18px; line-height: 2; padding-left: 10px;"
             >
-              <i class="fa-li fa fa-circle bullet"></i>Show context as to what
-              page will be shown when the user clicks “Done”
+              <i class="fa-li fa fa-circle bullet"></i>Show context on the next
+              page in the flow when the user clicks 'Done'
             </li>
             <li
               class="lead"
               style="font-size: 18px; line-height: 2; padding-left: 10px;"
             >
-              <i class="fa-li fa fa-circle bullet"></i>Have multiple versions
-              (toast notification, modal)
+              <i class="fa-li fa fa-circle bullet"></i>Test multiple
+              interactions (toast notification, modal)
             </li>
           </ul>
         </div>
@@ -757,15 +703,16 @@
               class="lead"
               style="font-size: 18px; line-height: 2; padding-left: 10px;"
             >
-              <i class="fa-li fa fa-circle bullet"></i>I received advice on
-              justments of content alignment to follow Workday’s design system
+              <i class="fa-li fa fa-circle bullet"></i>Added a checkmark visual
+              for the toast to increase visibility for accessibility users
             </li>
             <li
               class="lead"
               style="font-size: 18px; line-height: 2; padding-left: 10px;"
             >
               <i class="fa-li fa fa-circle bullet"></i>
-              Moved toast to the middle so users can still access action buttons
+              Moved the toast to the top center because pages had action buttons
+              on the right
             </li>
           </ul>
         </div>
@@ -783,40 +730,35 @@
             class="lead"
             style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
           >
-            Data science was able to provide the top used tasks on the platform.
-            The PM and I then categorized them as easy, medium, and difficult:
+            Data science provided the most used tasks on the platform. I
+            categorized them based on how much manual input was required, the
+            time it took to complete, and the business impact of each task. The
+            top tasks for each category would be used for usability testing.
           </p>
-          <ul class="fa-ul">
-            <li
-              class="lead"
-              style="font-size: 18px; line-height: 2; padding-left: 10px;"
-            >
-              <i class="fa-li fa fa-circle bullet"></i>Easy: Low
-              effort/investment to complete. A user can easily go back and
-              change errors without affecting other users. <br />The top used
-              task in this category was:
-              <strong>Create an Expense Report.</strong>
-            </li>
-            <li
-              class="lead"
-              style="font-size: 18px; line-height: 2; padding-left: 10px;"
-            >
-              <i class="fa-li fa fa-circle bullet"></i>Medium: Multiple users
-              are involved and user is inclined to pay more attention to the
-              details. <br />The top used task in the category was:
-              <strong>Change Job.</strong>
-            </li>
-            <li
-              class="lead"
-              style="font-size: 18px; line-height: 2; padding-left: 10px;"
-            >
-              <i class="fa-li fa fa-circle bullet"></i>Hard: Task is a business
-              transaction involving multiple parties and user needs to pay
-              special attention to the details. <br />The top used task in the
-              category was:
-              <strong>Create a Supplier Invoice.</strong>
-            </li>
-          </ul>
+
+          <!-- vertically alligns words and pictures -->
+          <div class="row" style="margin-top: 15px;"></div>
+          <img
+            class="img-fluid img_shadow"
+            style="width: 100%;"
+            src="img/workday/task_easy.svg"
+            alt=" "
+          />
+          <div class="row" style="margin-top: 25px;"></div>
+          <img
+            class="img-fluid img_shadow"
+            style="width: 100%;"
+            src="img/workday/task_med.svg"
+            alt=" "
+          />
+          <div class="row" style="margin-top: 25px;"></div>
+          <img
+            class="img-fluid img_shadow"
+            style="width: 100%;"
+            src="img/workday/task_hard.svg"
+            alt=" "
+          />
+          <div class="row" style="margin-top: 15px;"></div>
         </div>
       </div>
 
@@ -856,38 +798,41 @@
               class="lead"
               style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
             >
-              I tested 15 users and the testing script can be found
+              I recruited 15 users, 5 for each difficulty, and created a testing
+              script (found
               <a
                 href="img/workday/testscript1.pdf"
                 download="tony_testing_plan.pdf "
                 target="_blank"
                 style="margin-bottom: 0em; color: #005cb9;"
                 >here</a
-              >. For each of the above tasks, I tested all three conclusion
-              interfaces (full, modal and slim) in random order. Goals:
+              >). Each user ran through their task 3 times and were either shown
+              the original, slim, or modal conclusion page at the end.
             </p>
-            <ul class="fa-ul">
-              <li
-                class="lead"
-                style="font-size: 18px; line-height: 2; padding-left: 10px;"
-              >
-                <i class="fa-li fa fa-circle bullet"></i>Test the validity of
-                the prior research and concerns pointed out by Workday
-                employees.
+          </div>
+        </div>
+        <div class="row" style="margin-top: 1.5vw;">
+          <div class="text_small">
+            <p class="lead barText">
+              Goals:
+            </p>
+            <ul class="fa-ul barGroup">
+              <li class="lead barItemWrap">
+                <i class="fa-li fa fa-circle barItem"></i>Test the validity of
+                the observations pointed out by Workday employees in the earlier
+                survey.
               </li>
-              <li
-                class="lead"
-                style="font-size: 18px; line-height: 2; padding-left: 10px;"
-              >
-                <i class="fa-li fa fa-circle bullet"></i>What actions do users
+              <li class="lead barItemWrap">
+                <i class="fa-li fa fa-circle barItem"></i>What actions do users
                 typically take when shown a conclusion page?
               </li>
-              <li
-                class="lead"
-                style="font-size: 18px; line-height: 2; padding-left: 10px;"
-              >
-                <i class="fa-li fa fa-circle bullet"></i>What content is
-                important/not important on the conclusion page?
+              <li class="lead barItemWrap">
+                <i class="fa-li fa fa-circle barItem"></i>What is/isn't
+                important important on the conclusion page?
+              </li>
+              <li class="lead barItemWrap">
+                <i class="fa-li fa fa-circle barItem"></i>Are there any common
+                behaviors across the categories?
               </li>
             </ul>
           </div>

@@ -56,6 +56,7 @@ p {
   font-weight: 400;
   color: #616161;
   font-size: 1.2em !important;
+  line-height: 35px;
 }
 .quote {
   font-style: italic;
@@ -241,9 +242,28 @@ p {
 }
 .bullet {
   color: #94999d;
-  line-height: 1.8;
   font-size: 10px;
-  padding-top: 5px;
+  padding-top: 12px;
+}
+/* list items with bar on the left hand side in case studies */
+.barText {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.barGroup {
+  padding-left: 0;
+  margin-left: 1em;
+}
+.barItemWrap {
+  line-height: 2;
+  padding-left: 15px;
+  margin-bottom: 20px;
+}
+.barItem {
+  height: 100%;
+  background: #065fd4;
+  font-size: 2px;
+  border-radius: 100px;
 }
 h1 {
   text-align: center;

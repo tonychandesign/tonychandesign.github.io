@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="334px" height="151px" viewBox="0 0 334 151" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>task_easy</title>
+    <g id="task_easy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(0.000000, 0.000000)">
+        <rect fill="#FFFFFF" x="0" y="0" width="334" height="150"></rect>
+        <g id="emoji-(1)" transform="translate(30.000000, 25.000000)" fill-rule="nonzero">
+            <circle id="Oval" fill="#FFEAA3" cx="50" cy="50" r="50"></circle>
+            <path d="M49.9999031,74 C43.1172863,74 36.5861239,71.4669259 32.5285109,67.2249536 C31.7800719,66.4436259 31.8331581,65.2267369 32.645727,64.5078185 C33.4582958,63.7889002 34.7253917,63.8392002 35.4722808,64.6212731 C38.7861046,68.0860162 44.2171798,70.1539079 49.9999031,70.1539079 C55.7826265,70.1539079 61.2137017,68.0858299 64.5277192,64.6212731 C65.2746083,63.8392002 66.5417042,63.7889002 67.354273,64.5078185 C68.1668419,65.2267369 68.2199281,66.4436259 67.4714891,67.2249536 C63.4136823,71.4671122 56.8825199,74 49.9999031,74 Z" id="Path" fill="#7D5046"></path>
+            <path d="M33,50 L33,50 C30.7908452,50 29,48.2411341 29,46.0714286 L29,42.9285714 C29,40.7588659 30.7908452,39 33,39 L33,39 C35.2091548,39 37,40.7588659 37,42.9285714 L37,46.0714286 C37,48.2411341 35.2091548,50 33,50 Z" id="Path" fill="#7D5046"></path>
+            <path d="M67,50 L67,50 C64.7908452,50 63,48.2411341 63,46.0714286 L63,42.9285714 C63,40.7588659 64.7908452,39 67,39 L67,39 C69.2091548,39 71,40.7588659 71,42.9285714 L71,46.0714286 C71,48.2411341 69.2091548,50 67,50 Z" id="Path" fill="#7D5046"></path>
+        </g>
+        <g id="Group" transform="translate(148.000000, 38.000000)">
+            <text id="Submit-Expense-Repor" font-family="GillSans-SemiBold, Gill Sans" font-size="16" font-weight="500" letter-spacing="-0.0492307826" fill="#616161">
+                <tspan x="0" y="15">Submit Expense Report</tspan>
+            </text>
+            <text id="Involves-one-or-two" font-family="GillSans, Gill Sans" font-size="12" font-weight="normal" letter-spacing="-0.036923087" fill="#616161">
+                <tspan x="0" y="36">Involves one or two users and</tspan>
+                <tspan x="0" y="50">errors can be easily fixed</tspan>
+            </text>
+            <g id="Group-2" transform="translate(0.000000, 59.000000)">
+                <rect id="Rectangle" stroke="#1CAF47" x="0" y="0" width="44" height="15" rx="4"></rect>
+                <text id="EASY" font-family="GillSans, Gill Sans" font-size="8" font-weight="normal" letter-spacing="-0.0246153913" fill="#0C9434">
+                    <tspan x="13" y="10">EASY</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

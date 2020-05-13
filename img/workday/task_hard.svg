@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="334px" height="151px" viewBox="0 0 334 151" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>task_hard</title>
+    <g id="task_hard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(0.000000, 0.000000)">
+        <rect fill="#FFFFFF" x="0" y="0" width="334" height="150"></rect>
+        <g id="Group-3" transform="translate(148.000000, 31.000000)">
+            <text id="Create-Supplier-Invo" font-family="GillSans-SemiBold, Gill Sans" font-size="16" font-weight="500" letter-spacing="-0.0492307826" fill="#616161">
+                <tspan x="0" y="15">Create Supplier Invoice</tspan>
+            </text>
+            <text id="Involves-multiple-bu" font-family="GillSans, Gill Sans" font-size="12" font-weight="normal" letter-spacing="-0.036923087" fill="#616161">
+                <tspan x="0" y="36">Involves multiple businesses</tspan>
+                <tspan x="0" y="50">and errors will cost thousands </tspan>
+                <tspan x="0" y="64">to millions of dollars</tspan>
+            </text>
+            <g id="Group-2" transform="translate(0.000000, 73.000000)">
+                <rect id="Rectangle" stroke="#CE0000" x="0" y="0" width="44" height="15" rx="4"></rect>
+                <text id="HARD" font-family="GillSans, Gill Sans" font-size="8" font-weight="normal" letter-spacing="-0.0246153913" fill="#CE0000">
+                    <tspan x="11" y="10">HARD</tspan>
+                </text>
+            </g>
+        </g>
+        <g id="thinking" transform="translate(30.000000, 25.000000)" fill-rule="nonzero">
+            <circle id="Oval" fill="#FFEAA3" cx="50" cy="50" r="50"></circle>
+            <g id="Group-2" transform="translate(28.000000, 36.000000)" fill="#7D5046">
+                <g id="Group" transform="translate(6.000000, 27.000000)">
+                    <path d="M26.3460575,10.8840156 C26.0460767,10.8840156 25.7412763,10.8148148 25.4536341,10.668616 C25.3447079,10.6136452 14.4287642,5.12729045 2.36244457,4.84736842 C1.26315789,4.82222222 0.392519761,3.90097466 0.417389628,2.78966862 C0.442259495,1.67894737 1.35492578,0.758674464 2.45247735,0.824561404 C15.4439946,1.12553606 26.7703875,6.83294347 27.2461924,7.07582846 C28.227299,7.57582846 28.6205899,8.78538012 28.1262772,9.77738791 C27.7765568,10.4793372 27.075188,10.8840156 26.3460575,10.8840156 Z" id="Path"></path>
+                </g>
+                <path d="M4.33988818,12.0307992 L4.33988818,12.0307992 C2.15828032,11.7588694 0.607673029,9.75009747 0.876614613,7.54424951 L1.26624253,4.34892788 C1.53518411,2.14307992 3.52188163,0.575243665 5.70348949,0.847173489 L5.70348949,0.847173489 C7.88509736,1.11910331 9.43570465,3.12787524 9.16676306,5.3337232 L8.77713515,8.52904483 C8.50819356,10.7348928 6.52149605,12.302729 4.33988818,12.0307992 Z" id="Path"></path>
+                <path d="M37.6737999,15.5520468 L37.6737999,15.5520468 C35.492192,15.280117 33.9415847,13.271345 34.2105263,11.0654971 L34.6001542,7.87017544 C34.8690958,5.66432749 36.8557933,4.09649123 39.0374012,4.36842105 L39.0374012,4.36842105 C41.2190091,4.64035088 42.7696163,6.64912281 42.5006748,8.85497076 L42.1110468,12.0502924 C41.8421053,14.2563353 39.8554078,15.8241715 37.6737999,15.5520468 Z" id="Path"></path>
+            </g>
+        </g>
+    </g>
+</svg>
