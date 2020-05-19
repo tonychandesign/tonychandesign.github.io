@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1614px" height="1145px" viewBox="0 0 1614 1145" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>userTestData</title>
+    <g id="userTestData" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FFFFFF" x="0" y="0" width="1614" height="1145"></rect>
+        <circle id="Oval" fill="#F1C40F" cx="579.5" cy="478.5" r="400.5"></circle>
+        <circle id="Oval" fill-opacity="0.749317089" fill="#BA274A" cx="1181" cy="736" r="255"></circle>
+        <text id="Sample-size-n=17" font-family="AvenirNextforINTUIT-Regular, AvenirNext forINTUIT" font-size="33" font-weight="normal" letter-spacing="2.35714286" fill="#000000">
+            <tspan x="655.801357" y="1093">Sample size </tspan>
+            <tspan x="870.471071" y="1093" font-family="AvenirNextforINTUIT-Italic, AvenirNext forINTUIT" font-style="italic">n=17</tspan>
+        </text>
+        <text id="Artists-performing" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="56" font-weight="400" letter-spacing="4" fill="#000000">
+            <tspan x="309.22" y="499">Artists performing</tspan>
+        </text>
+        <text id="Registration" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="45" font-weight="400" letter-spacing="3.21428571" fill="#000000">
+            <tspan x="1036.47929" y="752">Registration</tspan>
+        </text>
+        <circle id="Oval" fill="#8D99AE" cx="1125" cy="316" r="169"></circle>
+        <text id="Date-of-event" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="40" font-weight="400" letter-spacing="2.85714286" fill="#000000">
+            <tspan x="1046.48" y="316">Date of </tspan>
+            <tspan x="1066.19714" y="364">event</tspan>
+        </text>
+    </g>
+</svg>

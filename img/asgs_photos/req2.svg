@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500px" height="500px" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>req2</title>
+    <g id="req2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FFFFFF" x="0" y="0" width="500" height="500"></rect>
+        <path d="M375.452851,240.556842 C375.43793,312.956315 331.99974,378.283325 265.244062,406.300865 L265.199299,406.323246 L247.417431,414 L231.966938,407.259527 C166.445958,378.611583 124.074604,313.922437 124,242.410753 L124,152.912039 L247.913548,85 L375.452851,152.960533 L375.452851,240.556842 Z" id="Path" stroke="#3A556A" stroke-width="16" stroke-linejoin="round" fill-rule="nonzero"></path>
+        <g id="Group" transform="translate(169.000000, 169.000000)">
+            <circle id="Oval" stroke="#F46275" stroke-width="10" cx="81" cy="81" r="81"></circle>
+            <rect id="Rectangle" fill="#F46275" x="74" y="31" width="15" height="100" rx="7.5"></rect>
+            <rect id="Rectangle" fill="#F46275" transform="translate(80.500000, 81.000000) rotate(90.000000) translate(-80.500000, -81.000000) " x="73" y="31" width="15" height="100" rx="7.5"></rect>
+        </g>
+    </g>
+</svg>

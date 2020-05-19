@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1479px" height="984px" viewBox="0 0 1479 984" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>outcome</title>
+    <g id="outcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FFFFFF" x="0" y="0" width="1479" height="984"></rect>
+        <text id="2017" font-family="AvenirNextforINTUIT-Bold, AvenirNext forINTUIT" font-size="40" font-weight="bold" letter-spacing="2.85714286" fill="#000000">
+            <tspan x="790.105714" y="133">2017</tspan>
+        </text>
+        <text id="2018" font-family="AvenirNextforINTUIT-Bold, AvenirNext forINTUIT" font-size="40" font-weight="bold" letter-spacing="2.85714286" fill="#000000">
+            <tspan x="1228.10571" y="133">2018</tspan>
+        </text>
+        <text id="#-unique-visitors" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="40" font-weight="400" letter-spacing="2.85714286" fill="#132925">
+            <tspan x="104" y="240"># unique visitors</tspan>
+        </text>
+        <text id="Time-per-session" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="40" font-weight="400" letter-spacing="2.85714286" fill="#132925">
+            <tspan x="104" y="400">Time per session</tspan>
+        </text>
+        <text id="Bounce-rate" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="40" font-weight="400" letter-spacing="2.85714286" fill="#132925">
+            <tspan x="104" y="560">Bounce rate</tspan>
+        </text>
+        <text id="52%" font-family="AvenirNextforINTUIT-Regular, AvenirNext forINTUIT" font-size="40" font-weight="normal" letter-spacing="2.85714286" fill="#000000">
+            <tspan x="803.354286" y="560">52%</tspan>
+        </text>
+        <text id="~1m-32s" font-family="AvenirNextforINTUIT-Regular, AvenirNext forINTUIT" font-size="40" font-weight="normal" letter-spacing="2.85714286" fill="#000000">
+            <tspan x="758.34" y="400">~1m 32s</tspan>
+        </text>
+        <text id="26,105" font-family="AvenirNextforINTUIT-Regular, AvenirNext forINTUIT" font-size="40" font-weight="normal" letter-spacing="2.85714286" fill="#000000">
+            <tspan x="776.228571" y="240">26,105</tspan>
+        </text>
+        <text id="$12,809" font-family="AvenirNextforINTUIT-Regular, AvenirNext forINTUIT" font-size="40" font-weight="normal" letter-spacing="2.85714286" fill="#000000">
+            <tspan x="763.2" y="720">$12,809</tspan>
+        </text>
+        <text id="77" font-family="AvenirNextforINTUIT-Regular, AvenirNext forINTUIT" font-size="40" font-weight="normal" letter-spacing="2.85714286" fill="#000000">
+            <tspan x="821.442857" y="880">77</tspan>
+        </text>
+        <text id="~1m-19s" font-family="AvenirNextforINTUIT-Regular, AvenirNext forINTUIT" font-size="40" font-weight="normal" letter-spacing="2.85714286" fill="#000000">
+            <tspan x="1196.34" y="400">~1m 19s</tspan>
+        </text>
+        <text id="31,171" font-family="AvenirNextforINTUIT-Regular, AvenirNext forINTUIT" font-size="40" font-weight="normal" letter-spacing="2.85714286" fill="#000000">
+            <tspan x="1214.22857" y="240">31,171</tspan>
+        </text>
+        <text id="$14,401" font-family="AvenirNextforINTUIT-Regular, AvenirNext forINTUIT" font-size="40" font-weight="normal" letter-spacing="2.85714286" fill="#000000">
+            <tspan x="1201.2" y="720">$14,401</tspan>
+        </text>
+        <text id="126" font-family="AvenirNextforINTUIT-Regular, AvenirNext forINTUIT" font-size="40" font-weight="normal" letter-spacing="2.85714286" fill="#000000">
+            <tspan x="1246.41429" y="880">126</tspan>
+        </text>
+        <text id="46%" font-family="AvenirNextforINTUIT-Regular, AvenirNext forINTUIT" font-size="40" font-weight="normal" letter-spacing="2.85714286" fill="#000000">
+            <tspan x="1241.35429" y="560">46%</tspan>
+        </text>
+        <text id="Merch-revenue" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="40" font-weight="400" letter-spacing="2.85714286" fill="#132925">
+            <tspan x="104" y="720">Merch revenue</tspan>
+        </text>
+        <text id="SG-Babies-returned" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="40" font-weight="400" letter-spacing="2.85714286" fill="#132925">
+            <tspan x="104" y="880">SG Babies returned</tspan>
+        </text>
+    </g>
+</svg>

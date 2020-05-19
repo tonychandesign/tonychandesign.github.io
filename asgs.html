@@ -1,29 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <script src="js/darkVsLightPreprocess.js "></script>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="keywords"
+      content="UX design product interaction visual mostion creative animations computer science engineering design systems"
+    />
+    <meta name="author" content="Tony Chan" />
 
-<head>
-  <script src="js/darkVsLightPreprocess.js "></script>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="keywords"
-    content="UX design product interaction visual mostion creative animations computer science engineering design systems" />
-  <meta name="author" content="Tony Chan" />
+    <title>Tony Chan: A.S. Graphic Studio</title>
 
-  <title>Tony Chan: A.S. Graphic Studio</title>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Custom fonts for this template -->
+    <link
+      href="vendor/font-awesome/css/font-awesome.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Button Stylesheet -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <!-- Custom styles for this template -->
+    <link href="css/outer.css" rel="stylesheet" />
+    <link href="css/d4sd.css" rel="stylesheet" />
+    <link href="css/sideNav.css" rel="stylesheet" />
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-  <!-- Custom fonts for this template -->
-  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-  <!-- Button Stylesheet -->
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-  <!-- Custom styles for this template -->
-  <link href="css/outer.css" rel="stylesheet" />
-  <link href="css/d4sd.css" rel="stylesheet" />
-  <link href="css/sideNav.css" rel="stylesheet" />
-
-      <!-- favicon  -->
-      <link
+    <!-- favicon  -->
+    <link
       rel="apple-touch-icon"
       sizes="180x180"
       href="./apple-touch-icon.png"
@@ -43,576 +51,887 @@
     <link rel="manifest" href="./site.webmanifest" />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
-</head>
+  </head>
 
-<body data-spy="scroll" data-target="#scrollspy" data-offset="100" class="animated dark-to-light">
-  <!-- fade in script -->
-  <script>
-    document.body.className += ' fade-out';
-  </script>
-  <!-- dynamic resizing  -->
-  <div class="container-fluid">
-    <!--  ///////////////////  NAVBAR  ///////////////////  -->
-    <nav id="navbar" class="navbar-expand fixed-top slideNavIn animated">
-      <div class="row row-centerer">
-        <div class="col-lg-4" style="margin: auto;">
-          <h1 class="tonychan">
-            <a href="index.html" class="tony-middle-out">Tony Chan</a>
-          </h1>
-        </div>
-        <div class="col-lg-2"></div>
-        <div class="col-lg-6">
-          <div id="menu">
-            <ul class="navbar-nav navbar-brand right-to-center nav-elem-centerer">
-              <li class="sliding-middle-out nav-item active" style="margin-left: 30px;">
-                <a class="nav-link" href="index.html?page=0">Portfolio</a>
-              </li>
-              <li class="sliding-middle-out nav-item navpadding">
-                <a class="nav-link" href="index.html?page=1">Resume</a>
-              </li>
-              <li class="sliding-middle-out nav-item" style="margin-right: 20px; margin-left: 0px;">
-                <a class="nav-link" href="index.html?page=2">About Me</a>
-              </li>
-            </ul>
+  <body
+    data-spy="scroll"
+    data-target="#scrollspy"
+    data-offset="100"
+    class="animated dark-to-light"
+  >
+    <!-- fade in script -->
+    <script>
+      document.body.className += " fade-out";
+    </script>
+    <!-- dynamic resizing  -->
+    <div class="container-fluid">
+      <!--  ///////////////////  NAVBAR  ///////////////////  -->
+      <nav id="navbar" class="navbar-expand fixed-top slideNavIn animated">
+        <div class="row row-centerer">
+          <div class="col-lg-4" style="margin: auto;">
+            <h1 class="tonychan">
+              <a href="index.html" class="tony-middle-out">Tony Chan</a>
+            </h1>
           </div>
-        </div>
-      </div>
-    </nav>
-    <div class="white_bg fadeIn animatedDelay"></div>
-    <div style="height: 100vh">
-        <img class="img-fluid wire-proj-hero fadeIn animated" src="img/wire_covers/asgs.svg">
-        <img class="img-fluid wire-proj-hero fadeOut animated" id="darkWire" src="img/wire_covers/wire_asgs.svg">
-    </div>
-
-    <nav id="scrollspy">
-      <ul id="bar-fixed">
-        <div class="sidebar">
-          <li>
-            <a class="bar nav-link" data-easing="easeInOutQuart" href="#context" style="padding-top: 0px">Context</a>
-          </li>
-          <li>
-            <a class="bar nav-link" data-easing="easeInOutQuart" href="#requirements">Requirements</a>
-          </li>
-          <li>
-            <a class="bar nav-link" data-easing="easeInOutQuart" href="#usertesting">User Testing</a>
-          </li>
-          <li>
-            <a class="bar nav-link" data-easing="easeInOutQuart" href="#review">Design Review</a>
-          </li>
-          <li>
-            <a class="bar nav-link" data-easing="easeInOutQuart" href="#execution">Execution</a>
-          </li>
-          <li>
-            <a class="bar nav-link" data-easing="easeInOutQuart" href="#stats" style="padding-bottom: 0px">Cool
-              Stats</a>
-          </li>
-        </div>
-      </ul>
-    </nav>
-
-    <div class="row" style="justify-content: center;">
-      <div class="text_small" style="width: fit-content;">
-        <p>
-          <span class="intro">Timeline:</span>
-          <span class="lead myRoleText">Mar - Apr 2018</span>
-        </p>
-
-        <p>
-          <span class="intro">Project Type:</span>
-          <span class="lead myRoleText">Part time job</span>
-        </p>
-
-        <p>
-          <span class="intro">My Role:</span>
-          <span class="lead myRoleText">Webmaster</span>
-        </p>
-
-        <p>
-          <span class="intro">Tools:</span>
-          <span class="lead myRoleText">VSCode</span>
-        </p>
-
-        <p>
-          <span class="intro">Skills:</span>
-          <span class="lead myRoleText">Design, Web Development
-          </span>
-        </p>
-      </div>
-    </div>
-
-    <div class="row theprocessWrap" id="context">
-      <div class="text_small theprocess START">Context</div>
-    </div>
-
-    <div class="row">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">The Sun God Festival is a
-          daylong music and arts festival at UC San Diego. Named as one of Live Nation’s "Top 5 College Concerts That
-          Should Be Actual Festivals", it is one of the largest university events in the world, bringing in over 20,000
-          attendees each year.
-          <br /><br />
-          I was the webmaster for UCSD’s Associated Students Graphic Studio, which produced content for all
-          extracurricular events around campus. I was responsible for a variety of websites related to recreational
-          concerts and events.
-          <br /><br />
-          This case study goes over the 2018 Sun God Festival, where I collaborated with one visual designer to build a
-          refreshed website. I worked within the requirements set by the events coordination team to design & implement
-          an engaging user experience.
-        </p>
-      </div>
-    </div>
-
-    <div class="row" style="justify-content: center; margin-top: 1.5em;">
-      <div class="text_small">
-        <!-- vertically alligns words and pictures -->
-        <p class="lead imgDescription" style="margin-bottom:.5em;">Stakeholders</p>
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid img_shadow" src="img/asgs_photos/stakeholders.png" alt=" " />
-        <div class="row" style="margin-top:15px;"></div>
-      </div>
-    </div>
-
-    <div class="row" style="justify-content: center; margin-top: 1.5em;">
-      <div class="img1Row">
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid img_shadow" src="img/asgs_photos/new_sgf.png" alt=" " />
-        <div class="row" style="margin-top:15px;"></div>
-      </div>
-    </div>
-
-    <div class="row" style="justify-content: center; margin-top: 1.5em;">
-      <a class="sliding-middle-out" style="font-size: 1.4rem; font-weight: 400;" href="sungodfestival/home.html"
-        target="_blank">View Forked Website</a>
-    </div>
-
-    <div class="row theprocessWrap" id="requirements">
-      <div class="text_small theprocess">Requirements</div>
-    </div>
-
-    <div class="row">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">To set some more context, there
-          is a new theme for the festival every year. The year before carried a refreshing beach vibe.
-        </p>
-      </div>
-    </div>
-    <div class="row" style="justify-content: center; margin-top: 1.5em;">
-      <div class="img1Row">
-        <p class="lead imgDescription" style="margin-bottom:.5em;">2017 Sun God Festival</p>
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid img_shadow" src="img/asgs_photos/old_sgf.png" alt=" " />
-        <div class="row" style="margin-top:15px;"></div>
-      </div>
-    </div>
-
-    <div class="row" style="margin-top: 2.5em;">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">There were a few requirements
-          from the events coordination team. The ASGS Manager wanted a jungle theme. Both the Special Events Director
-          and ASCE VP wanted an emphasis on safety because of the increasing number of student overdoses in previous
-          years. The Sponsorship Director wanted a redesigned student engagement activity to increase the awareness of
-          the festival.
-        </p>
-      </div>
-    </div>
-
-    <div class="row titlehoriz" style="margin-top: 2.5em;">
-      <div class="col-1 "></div>
-      <div class="col-10 ">
-        <div class="modal-dialogtwo ">
-          <div class="row row-centerer2 " style="width: 70%">
-            <div class="col-md-4" style="padding: 10px; text-align: center;">
-              <p class="imgDescription" style="margin-bottom:.5em;    font-weight: 400;
-              color: #616161;
-              font-size: 1.1em !important;">Jungle Theme</p>
-              <img class="img-fluid img_shadow" src="img/asgs_photos/req1.png">
-            </div>
-            <div class="col-md-4" style="padding: 10px; text-align: center;">
-              <p class="imgDescription" style="margin-bottom:.5em;    font-weight: 400;
-              color: #616161;
-              font-size: 1.1em !important;">Safety</p>
-              <img class="img-fluid img_shadow" src="img/asgs_photos/req2.png">
-            </div>
-            <div class="col-md-4" style="padding: 10px; text-align: center;">
-              <p class="imgDescription" style="margin-bottom:.5em;    font-weight: 400;
-              color: #616161;
-              font-size: 1.1em !important;">Engagement Activity</p>
-              <img class="img-fluid img_shadow" src="img/asgs_photos/req3.png">
+          <div class="col-lg-2"></div>
+          <div class="col-lg-6">
+            <div id="menu">
+              <ul
+                class="navbar-nav navbar-brand right-to-center nav-elem-centerer"
+              >
+                <li
+                  class="sliding-middle-out nav-item active"
+                  style="margin-left: 30px;"
+                >
+                  <a class="nav-link" href="index.html?page=0">Portfolio</a>
+                </li>
+                <li class="sliding-middle-out nav-item navpadding">
+                  <a class="nav-link" href="index.html?page=1">Resume</a>
+                </li>
+                <li
+                  class="sliding-middle-out nav-item"
+                  style="margin-right: 20px; margin-left: 0px;"
+                >
+                  <a class="nav-link" href="index.html?page=2">About Me</a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
+      </nav>
+      <div class="white_bg fadeIn animatedDelay"></div>
+      <div style="height: 100vh;">
+        <img
+          class="img-fluid wire-proj-hero fadeIn animated"
+          src="img/wire_covers/asgs.svg"
+        />
+        <img
+          class="img-fluid wire-proj-hero fadeOut animated"
+          id="darkWire"
+          src="img/wire_covers/wire_asgs.svg"
+        />
       </div>
-      <div class="col-1 "></div>
-    </div>
 
-    <div class="row" style="justify-content: center; margin-top: 1.5em;">
-      <div class="img1Row">
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid img_shadow" src="img/asgs_photos/siteMap.png" />
-        <div class="row" style="margin-top:15px;"></div>
-      </div>
-    </div>
-
-    <div class="row theprocessWrap" id="usertesting">
-      <div class="text_small theprocess">User Testing</div>
-    </div>
-
-    <div class="row">
-      <div class="text_small">
-        <p class="lead" style="text-align: justify; margin-bottom: 0px;"> I interviewed a few students around campus to
-          understand how they felt about prior year’s website and what they thought were the most essential features.
-        </p>
-      </div>
-    </div>
-
-    <div class="row" style="justify-content: center; margin-top: 1.5em;">
-      <div class="img1Row" style="max-width: 30%">
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid img_shadow" src="img/asgs_photos/interview.png" alt=" " />
-        <div class="row" style="margin-top:15px;"></div>
-      </div>
-    </div>
-
-    <div class="row" style="justify-content: center; margin-top: 1.5em;">
-      <div class="img1Row" style="max-width: 30%">
-        <p class="lead imgDescription" style="margin-bottom:-.5em;"> User Data </p>
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid img_shadow" src="img/asgs_photos/userTestData.png" alt=" " />
-        <div class="row" style="margin-top:15px;"></div>
-      </div>
-    </div>
-
-    <div class="row theprocessWrap" id="review">
-      <div class="text_small theprocess">Design Review</div>
-    </div>
-
-    <div class="row">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">I ran a quick n’ scrappy AB
-          test with random students around campus (n=11). Then I presented all of the data to the ASCE board with
-          suggestions on which designs to move forward with.
-        </p>
-      </div>
-    </div>
-
-    <div class="longImage">
-      <div class="row titlehoriz" style="margin-top: 2.5em;">
-        <div class="col-1 "></div>
-        <div class="col-10 ">
-          <div class="modal-dialogtwo ">
-            <p class="lead imgDescription" style="margin-bottom:-.1em;">Homepage</p>
-            <div class="row row-centerer2 ">
-              <div class="col-md-4" style="padding: 10px; text-align: center;">
-                <img class="img-fluid img_shadow" src="img/asgs_photos/home1.jpeg">
-              </div>
-              <div class="col-md-4" style="padding: 10px; text-align: center;">
-                <img class="img-fluid img_shadow" src="img/asgs_photos/home2.jpeg">
-              </div>
-              <div class="col-md-4" style="padding: 10px; text-align: center;">
-                <img class="img-fluid img_shadow" src="img/asgs_photos/home3.jpeg">
-              </div>
-            </div>
+      <nav id="scrollspy">
+        <ul id="bar-fixed">
+          <div class="sidebar">
+            <li>
+              <a
+                class="bar nav-link"
+                data-easing="easeInOutQuart"
+                href="#context"
+                style="padding-top: 0px;"
+                >Context</a
+              >
+            </li>
+            <li>
+              <a
+                class="bar nav-link"
+                data-easing="easeInOutQuart"
+                href="#requirements"
+                >Requirements</a
+              >
+            </li>
+            <li>
+              <a
+                class="bar nav-link"
+                data-easing="easeInOutQuart"
+                href="#usertesting"
+                >User Testing</a
+              >
+            </li>
+            <li>
+              <a
+                class="bar nav-link"
+                data-easing="easeInOutQuart"
+                href="#review"
+                >Design Review</a
+              >
+            </li>
+            <li>
+              <a
+                class="bar nav-link"
+                data-easing="easeInOutQuart"
+                href="#execution"
+                >Execution</a
+              >
+            </li>
+            <li>
+              <a
+                class="bar nav-link"
+                data-easing="easeInOutQuart"
+                href="#stats"
+                style="padding-bottom: 0px;"
+                >Cool Stats</a
+              >
+            </li>
           </div>
+        </ul>
+      </nav>
+
+      <div class="row" style="justify-content: center;">
+        <div class="text_small" style="width: fit-content;">
+          <p>
+            <span class="intro">Timeline:</span>
+            <span class="lead myRoleText">Mar - Apr 2018</span>
+          </p>
+
+          <p>
+            <span class="intro">Project Type:</span>
+            <span class="lead myRoleText">Part time job</span>
+          </p>
+
+          <p>
+            <span class="intro">My Role:</span>
+            <span class="lead myRoleText">Webmaster</span>
+          </p>
+
+          <p>
+            <span class="intro">Tools:</span>
+            <span class="lead myRoleText">VSCode</span>
+          </p>
+
+          <p>
+            <span class="intro">Skills:</span>
+            <span class="lead myRoleText">Design, Web Development </span>
+          </p>
         </div>
-        <div class="col-1 "></div>
+      </div>
+
+      <div class="row theprocessWrap" id="context">
+        <div class="text_small theprocess START">Context</div>
+      </div>
+
+      <div class="row">
+        <div class="text_small">
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            The Sun God Festival is a daylong music and arts festival at UC San
+            Diego. Named as one of Live Nation’s "Top 5 College Concerts That
+            Should Be Actual Festivals", it's one of the largest university
+            events in the world, bringing in over 20,000 attendees each year.
+            <br /><br />
+            I was the webmaster for UCSD’s Associated Students Graphic Studio,
+            which produced content for all extracurricular events around campus.
+            I was responsible for all of websites related to recreational
+            events.
+            <br /><br />
+            This case study goes over the 2018 Sun God Festival, which I built
+            with a visual designer. I worked under the constraints of the events
+            coordination team to design & implement an engaging user experience.
+          </p>
+        </div>
+      </div>
+
+      <div class="row" style="justify-content: center; margin-top: 1.5em;">
+        <div class="text_small">
+          <!-- vertically alligns words and pictures -->
+          <p class="lead imgDescription" style="margin-bottom: 0.5em;">
+            Stakeholders
+          </p>
+          <div class="row" style="margin-top: 15px;"></div>
+          <img
+            class="img-fluid img_shadow"
+            src="img/asgs_photos/stakeholders.svg"
+            alt=" "
+          />
+          <div class="row" style="margin-top: 15px;"></div>
+        </div>
+      </div>
+
+      <div class="row" style="justify-content: center; margin-top: 1.5em;">
+        <div class="img1Row">
+          <div class="row" style="margin-top: 15px;"></div>
+          <img
+            class="img-fluid img_shadow"
+            src="img/asgs_photos/new_sgf.png"
+            alt=" "
+          />
+          <div class="row" style="margin-top: 15px;"></div>
+        </div>
+      </div>
+
+      <div class="row" style="justify-content: center; margin-top: 1.5em;">
+        <a
+          class="sliding-middle-out"
+          style="font-size: 1.4rem; font-weight: 400;"
+          href="sungodfestival/home.html"
+          target="_blank"
+          >View Forked Website</a
+        >
+      </div>
+
+      <div class="row theprocessWrap" id="requirements">
+        <div class="text_small theprocess">Requirements</div>
+      </div>
+
+      <div class="row">
+        <div class="text_small">
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            The 2017 Sun God Festival website centered around a refreshing beach
+            vibe. The events coordination team wanted a full refresh on the
+            website.
+          </p>
+        </div>
+      </div>
+      <div class="row" style="justify-content: center; margin-top: 1.5em;">
+        <div class="img1Row">
+          <p class="lead imgDescription" style="margin-bottom: 0.5em;">
+            2017 Website
+          </p>
+          <div class="row" style="margin-top: 15px;"></div>
+          <img
+            class="img-fluid img_shadow"
+            src="img/asgs_photos/old_sgf.png"
+            alt=" "
+          />
+          <div class="row" style="margin-top: 15px;"></div>
+        </div>
       </div>
 
       <div class="row" style="margin-top: 2.5em;">
         <div class="text_small">
-          <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">What users thought: <br />
-            <ul class="fa-ul">
-              <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle bullet"></i>Liked the rotating
-                carousel for the artists</li>
-              <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle bullet"></i>Wanted a bigger
-                emphasis
-                on the countdown/date</li>
-              <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle bullet"></i>Wanted performance set
-                times</li>
-            </ul>
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            The ASGS Manager wanted a jungle theme. Both the Special Events
+            Director and ASCE VP wanted an emphasis on safety because of the
+            increasing number of student overdoses in previous years. The
+            Sponsorship Director wanted a redesigned student engagement activity
+            to increase the awareness of the festival.
           </p>
-          <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">Although the students wanted
-            it, the events board pressed for a lower emphasis on the artists on the homepage. They said it would take
-            attention away from the apparel and sun god babies.</p>
         </div>
       </div>
 
       <div class="row titlehoriz" style="margin-top: 2.5em;">
-        <div class="col-1 "></div>
-        <div class="col-10 ">
-          <div class="modal-dialogtwo ">
-            <p class="lead imgDescription" style="margin-bottom:-.1em;">Safety Tips</p>
-            <div class="row row-centerer2 ">
+        <div class="col-1"></div>
+        <div class="col-10">
+          <div class="modal-dialogtwo">
+            <div class="row row-centerer2" style="width: 70%;">
               <div class="col-md-4" style="padding: 10px; text-align: center;">
-                <img class="img-fluid img_shadow" src="img/asgs_photos/noti1.jpeg">
+                <p
+                  class="imgDescription"
+                  style="
+                    margin-bottom: 0.5em;
+                    font-weight: 400;
+                    color: #616161;
+                    font-size: 1.1em !important;
+                  "
+                >
+                  Jungle Theme
+                </p>
+                <img
+                  class="img-fluid img_shadow"
+                  src="img/asgs_photos/req1.svg"
+                />
               </div>
               <div class="col-md-4" style="padding: 10px; text-align: center;">
-                <img class="img-fluid img_shadow" src="img/asgs_photos/noti2.jpeg">
+                <p
+                  class="imgDescription"
+                  style="
+                    margin-bottom: 0.5em;
+                    font-weight: 400;
+                    color: #616161;
+                    font-size: 1.1em !important;
+                  "
+                >
+                  Safety
+                </p>
+                <img
+                  class="img-fluid img_shadow"
+                  src="img/asgs_photos/req2.svg"
+                />
               </div>
               <div class="col-md-4" style="padding: 10px; text-align: center;">
-                <img class="img-fluid img_shadow" src="img/asgs_photos/noti3.jpeg">
+                <p
+                  class="imgDescription"
+                  style="
+                    margin-bottom: 0.5em;
+                    font-weight: 400;
+                    color: #616161;
+                    font-size: 1.1em !important;
+                  "
+                >
+                  Engagement Activity
+                </p>
+                <img
+                  class="img-fluid img_shadow"
+                  src="img/asgs_photos/req3.svg"
+                />
               </div>
             </div>
           </div>
         </div>
-        <div class="col-1 "></div>
+        <div class="col-1"></div>
       </div>
 
-      <div class="row" style="margin-top: 2.5em;">
+      <div class="row" style="justify-content: center; margin-top: 1.5em;">
+        <div class="img1Row">
+          <div class="row" style="margin-top: 15px;"></div>
+          <img class="img-fluid img_shadow" src="img/asgs_photos/siteMap.svg" />
+          <div class="row" style="margin-top: 15px;"></div>
+        </div>
+      </div>
+
+      <div class="row theprocessWrap" id="usertesting">
+        <div class="text_small theprocess">User Testing</div>
+      </div>
+
+      <div class="row">
         <div class="text_small">
-          <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">What users thought: <br />
-            <ul class="fa-ul">
-              <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle bullet"></i>Classic top right
-                toast felt too similar to a notification</li>
-              <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle bullet"></i>“The persistent bottom
-                would be annoying… I’d try to ignore it after getting used to it”</li>
-              <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle bullet"></i>Bottom toast would be
-                distracting</li>
-              <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle bullet"></i>“Is this necessary?
-                Don’t we need to do safety training when we register?”</li>
-            </ul>
+          <p class="lead" style="text-align: justify; margin-bottom: 0px;">
+            I interviewed a few students around campus to understand how they
+            felt about prior year’s website and what they thought were the most
+            essential features.
           </p>
-          <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">The students weren’t too fond
-            of the safety tips but it was a firm requirement. The team had initially wanted the persistent bottom nav
-            design with rotating safety tips but after hearing the feedback, everyone aligned on the bottom toast. </p>
         </div>
       </div>
 
-      <div class="row titlehoriz" style="margin-top: 2.5em;">
-        <div class="col-1 "></div>
-        <div class="col-10 ">
-          <div class="modal-dialogtwo ">
-            <p class="lead imgDescription" style="margin-bottom:-.1em;">Engagement Activity</p>
-            <div class="row row-centerer2 ">
-              <div class="col-md-4" style="padding: 10px; text-align: center;">
-                <img class="img-fluid img_shadow" src="img/asgs_photos/sgb1.jpeg">
-              </div>
-              <div class="col-md-4" style="padding: 10px; text-align: center;">
-                <img class="img-fluid img_shadow" src="img/asgs_photos/sgb2.jpeg">
-              </div>
-              <div class="col-md-4" style="padding: 10px; text-align: center;">
-                <img class="img-fluid img_shadow" src="img/asgs_photos/sgb3.jpeg">
+      <div class="row" style="justify-content: center; margin-top: 1.5em;">
+        <div class="img1Row">
+          <div class="row" style="margin-top: 15px;"></div>
+          <img
+            class="img-fluid img_shadow"
+            src="img/asgs_photos/interview.svg"
+            alt=" "
+          />
+          <div class="row" style="margin-top: 15px;"></div>
+        </div>
+      </div>
+
+      <div class="row" style="justify-content: center; margin-top: 1.5em;">
+        <div class="img2Row">
+          <p class="lead imgDescription" style="margin-bottom: -0.5em;">
+            User Data
+          </p>
+          <div class="row" style="margin-top: 15px;"></div>
+          <img
+            class="img-fluid img_shadow"
+            src="img/asgs_photos/userTestData.svg"
+            alt=" "
+          />
+          <div class="row" style="margin-top: 15px;"></div>
+        </div>
+      </div>
+
+      <div class="row theprocessWrap" id="review">
+        <div class="text_small theprocess">Design Review</div>
+      </div>
+
+      <div class="row">
+        <div class="text_small">
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            I ran a quick n’ scrappy AB test with random students around campus
+            (n=11). Then I presented all of the data to the ASCE board with
+            suggestions on which designs to move forward with.
+          </p>
+        </div>
+      </div>
+
+      <div class="longImage">
+        <div class="row titlehoriz" style="margin-top: 2.5em;">
+          <div class="col-1"></div>
+          <div class="col-10">
+            <div class="modal-dialogtwo">
+              <p class="lead imgDescription" style="margin-bottom: -0.1em;">
+                Homepage
+              </p>
+              <div class="row row-centerer2">
+                <div
+                  class="col-md-4"
+                  style="padding: 10px; text-align: center;"
+                >
+                  <img
+                    class="img-fluid img_shadow"
+                    src="img/asgs_photos/home1.jpeg"
+                  />
+                </div>
+                <div
+                  class="col-md-4"
+                  style="padding: 10px; text-align: center;"
+                >
+                  <img
+                    class="img-fluid img_shadow"
+                    src="img/asgs_photos/home2.jpeg"
+                  />
+                </div>
+                <div
+                  class="col-md-4"
+                  style="padding: 10px; text-align: center;"
+                >
+                  <img
+                    class="img-fluid img_shadow"
+                    src="img/asgs_photos/home3.jpeg"
+                  />
+                </div>
               </div>
             </div>
           </div>
+          <div class="col-1"></div>
         </div>
-        <div class="col-1 "></div>
-      </div>
-    </div>
 
-    <div class="row" style="margin-top: 2.5em;">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">What users thought: <br />
-          <ul class="fa-ul">
-            <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle bullet"></i>Raffle ticket design
-              was too dependent on luck. “What if no one ever found the baby holding the top prize?”</li>
-            <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle bullet"></i>Would trade babies if
-              they had to match certain words for prizes</li>
-            <li class="lead" style="font-size: 18px; line-height: 2;padding-left: 10px;"><i class="fa-li fa fa-circle bullet"></i>Would google the “Fun
-              Fact” questions so the difficulty of the questions didn’t matter</li>
-          </ul>
-        </p>
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">In the previous year,
-          returning more babies resulted in a better prize. The team liked the “Letters” design because they thought
-          there was potential for publicity if students used social media to trade the babies.</p>
-      </div>
-    </div>
-
-    <div class="row theprocessWrap" id="execution">
-      <div class="text_small theprocess">Execution</div>
-    </div>
-
-    <div class="row">
-      <div class="text_small">
-        <p class="lead" style="text-align: justify; margin-bottom: 0px;">I used Bootstrap for its css framework and
-          JQuery for javascript event handling. I also used Shopify’s API to embed an online shop into the apparel
-          section of the website. The homepage’s carousel was created with carouFredSel, an open source project by Verti
-          Studio.
-        </p>
-      </div>
-    </div>
-
-    <div class="row titlehoriz" style="margin-top: 2.5em;">
-      <div class="col-1 "></div>
-      <div class="col-10 ">
-        <div class="modal-dialogtwo ">
-          <p class="lead imgDescription" style="margin-bottom:-.1em;">Frameworks and libraries</p>
-          <div class="row" style="margin: auto; width: 55%">
-            <div class="col-md-3" style="padding: 10px; text-align: center;">
-              <img class="img-fluid img_shadow" src="img/asgs_photos/api1.png">
-            </div>
-            <div class="col-md-3" style="padding: 10px; text-align: center;">
-              <img class="img-fluid img_shadow" src="img/asgs_photos/api2.png">
-            </div>
-            <div class="col-md-3" style="padding: 10px; text-align: center;">
-              <img class="img-fluid img_shadow" src="img/asgs_photos/api3.png">
-            </div>
-            <div class="col-md-3" style="padding: 10px; text-align: center;">
-              <img class="img-fluid img_shadow" src="img/asgs_photos/api4.png">
-            </div>
+        <div class="row" style="margin-top: 2.5vw;">
+          <div class="text_small">
+            <p class="lead barText">
+              Feedback on the homepage:
+            </p>
+            <ul class="fa-ul barGroup">
+              <li class="lead barItemWrap">
+                <i class="fa-li fa fa-circle barItem"></i>Liked the rotating
+                carousel for the artists
+              </li>
+              <li class="lead barItemWrap">
+                <i class="fa-li fa fa-circle barItem"></i>Wanted a bigger
+                emphasis on the countdown/date
+              </li>
+              <li class="lead barItemWrap">
+                <i class="fa-li fa fa-circle barItem"></i>Questioned where
+                performance set times would be
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
-      <div class="col-1 "></div>
-    </div>
 
-    <div class="row" style="justify-content: center; margin-top: 2.5em;">
-      <a class="sliding-middle-out" style="font-size: 1.4rem; font-weight: 400;" href="sungodfestival/home.html"
-        target="_blank">View Forked Website</a>
-    </div>
-
-    <div class="row theprocessWrap" id="stats">
-      <div class="text_small theprocess">Cool Stats</div>
-    </div>
-
-    <div class="row" style="justify-content: center; margin-top: 1.5em;">
-      <div class="img1Row">
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid img_shadow" src="img/asgs_photos/outcome.png" alt=" " />
-        <div class="row" style="margin-top:15px;"></div>
-      </div>
-    </div>
-
-    <div class="row" style="margin-top: 2.5em;">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: justify;">I’m stoked to have had this
-          opportunity to work on a website seen by so many of my peers. The A.S. Graphic Studio was full of extremely
-          bright and friendly colleagues. We had weekly potlucks, birthday celebrations, costume parties, and even field
-          trips to local design agencies. I also enjoyed seeing how the inner workings of coordinating an event looked
-          like. Thank you for reading.
-        </p>
-      </div>
-    </div>
-
-    <div class="row" style="justify-content: center; margin-top: 1.5em;">
-      <div class="text_small">
-        <div class="row" style="margin-top:15px;"></div>
-        <img class="img-fluid img_shadow" src="img/asgs_photos/asgs.png" alt=" " />
-        <div class="row" style="margin-top:15px;"></div>
-      </div>
-    </div>
-
-    <div class="row" style="margin-top: 2.5em;">
-      <div class="text_small">
-        <p class="lead" style="margin-bottom:0; word-spacing: 3px; text-align: left; width: 100%; color: #a7afb2">
-          Stakeholder avatars were designed by Freepik from FlatIcon.com.
-        </p>
-      </div>
-    </div>
-
-    <div class="row spacer "></div>
-
-    <div class="row" style="text-align: center; padding-bottom: 40px;">
-      <div class="text_medium theprocess END">My Other Work</div>
-    </div>
-
-    <div class="row">
-      <!-- EQR -->
-      <section class="col-md-2 order-md-1" style="padding:0px 0;"></section>
-      <section class="col-md-4 order-md-2 titlehoriz" style="padding:0px 0;">
-        <div class="box btn-group modal-dialogtwo dynamicthumbnail" style="margin-top: 0px;">
-          <a href="project1.html">
-            <div class="titlehoriz">
-              <img class="img-fluid" src="img/idx_eqr.png" alt=" ">
-            </div>
-          </a>
-        </div>
-      </section>
-      <section class="col-md-4 order-md-3 vertical-align" style="padding:0px 0;">
-        <div class="fullWidthWork">
-          <div class="row-centerer ">
-            <h3 class="section-heading" style="font-weight: 400"><a class="sliding-middle-out"
-                href="project1.html">EventQR</a></h3>
-            <p class="lead "> A web app that lets users create & scan events encrypted into a QR code, which can be
-              synced onto their Google Calendar.</p>
-          </div>
-        </div>
-      </section>
-      <section class="col-md-2 order-md-4" style="padding:0px 0;"></section>
-    </div>
-
-    <div class="row" style="margin-top: 7vw;">
-      <!-- Birch -->
-      <section class="col-md-2 order-md-1 " style="padding:0px 0;"></section>
-      <section class="col-md-4 order-md-3 titlehoriz" style="padding:0px 0;">
-        <div class="box btn-group modal-dialogtwo dynamicthumbnail" style="margin-top: 0px;">
-          <a href="workday_pre.html">
-            <div class="titlehoriz">
-              <img class="img-fluid" src="img/idx_wrkdy.png" alt=" " />
-            </div>
-          </a>
-        </div>
-      </section>
-      <section class="col-md-4 order-md-2 vertical-align" style="padding:0px 0;">
-        <div class="fullWidthWork">
-          <div class="row-centerer ">
-            <h3 class="section-heading" style="font-weight: 400">
-              <a class="sliding-middle-out" href="workday_pre.html">Workday</a>
-            </h3>
-            <p class="lead ">
-              Redesigning the global conclusion interface and mobile
-              animations.
+        <div class="row" style="margin-top: 2.5em;">
+          <div class="text_small">
+            <p
+              class="lead"
+              style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+            >
+              Regardless of the student's input, the events board pressed for a
+              lower emphasis on the artists on the homepage. They wanted to
+              highlight the apparel because that was a major source of revenue.
             </p>
           </div>
         </div>
-      </section>
-      <section class="col-md-2 order-md-4 " style="padding:0px 0;"></section>
-    </div>
 
-    <div class="row letstalkpad"></div>
+        <div class="row titlehoriz" style="margin-top: 2.5em;">
+          <div class="col-1"></div>
+          <div class="col-10">
+            <div class="modal-dialogtwo">
+              <p class="lead imgDescription" style="margin-bottom: -0.1em;">
+                Safety Tips
+              </p>
+              <div class="row row-centerer2">
+                <div
+                  class="col-md-4"
+                  style="padding: 10px; text-align: center;"
+                >
+                  <img
+                    class="img-fluid img_shadow"
+                    src="img/asgs_photos/noti1.jpeg"
+                  />
+                </div>
+                <div
+                  class="col-md-4"
+                  style="padding: 10px; text-align: center;"
+                >
+                  <img
+                    class="img-fluid img_shadow"
+                    src="img/asgs_photos/noti2.jpeg"
+                  />
+                </div>
+                <div
+                  class="col-md-4"
+                  style="padding: 10px; text-align: center;"
+                >
+                  <img
+                    class="img-fluid img_shadow"
+                    src="img/asgs_photos/noti3.jpeg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-1"></div>
+        </div>
 
-    <!-- CONTACT/EMAIL ME -->
-    <div class="vertical-align titlehoriz">
-      <h2 style=" font-weight: 400; "> <a href="mailto:design.tonychan@gmail.com" class="tony-middle-out">
-          Lets talk
-        </a></h2>
-    </div>
-    <div class="row letstalkpad"></div>
+        <div class="row" style="margin-top: 2.5vw;">
+          <div class="text_small">
+            <p class="lead barText">
+              Feedback on the safety tips:
+            </p>
+            <ul class="fa-ul barGroup">
+              <li class="lead barItemWrap">
+                <i class="fa-li fa fa-circle barItem"></i>The top right toast
+                felt like a notification
+              </li>
+              <li class="lead barItemWrap">
+                <i class="fa-li fa fa-circle barItem"></i>“The persistent bottom
+                bar would be annoying… I’d probably ignore it after getting used
+                to it”
+              </li>
+              <li class="lead barItemWrap">
+                <i class="fa-li fa fa-circle barItem"></i>“Is this necessary?
+                Don’t we need to pass a safety training before we register?”
+              </li>
+            </ul>
+          </div>
+        </div>
 
-    <!--  ///////////////////  FOOTER/CONTACT  ///////////////////  -->
-    <aside class="banner ">
-      <div class="row ">
-        <div class="col-lg-12 text-center ">
-          <a href="mailto:design.tonychan@gmail.com" target="_blank " class="btn-social btn-lg "><i
-              class="fa fa-envelope "></i></a>
-          <a href="https://www.linkedin.com/in/tonychan96/ " target="_blank " class="btn-social btn-lg "><i
-              class="fa fa-linkedin "></i></a>
-              <a
+        <div class="row" style="margin-top: 2.5em;">
+          <div class="text_small">
+            <p
+              class="lead"
+              style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+            >
+              The students weren’t too fond of the safety tips but it was a firm
+              requirement. The team had initially leaned towards the persistent
+              bottom bar design but eventually settled on the bottom toast
+              because we felt that an animation would better attract attention.
+            </p>
+          </div>
+        </div>
+
+        <div class="row titlehoriz" style="margin-top: 2.5em;">
+          <div class="col-1"></div>
+          <div class="col-10">
+            <div class="modal-dialogtwo">
+              <p class="lead imgDescription" style="margin-bottom: -0.1em;">
+                Engagement Activity
+              </p>
+              <div class="row row-centerer2">
+                <div
+                  class="col-md-4"
+                  style="padding: 10px; text-align: center;"
+                >
+                  <img
+                    class="img-fluid img_shadow"
+                    src="img/asgs_photos/sgb1.jpeg"
+                  />
+                </div>
+                <div
+                  class="col-md-4"
+                  style="padding: 10px; text-align: center;"
+                >
+                  <img
+                    class="img-fluid img_shadow"
+                    src="img/asgs_photos/sgb2.jpeg"
+                  />
+                </div>
+                <div
+                  class="col-md-4"
+                  style="padding: 10px; text-align: center;"
+                >
+                  <img
+                    class="img-fluid img_shadow"
+                    src="img/asgs_photos/sgb3.jpeg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-1"></div>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top: 2.5vw;">
+        <div class="text_small">
+          <p class="lead barText">
+            Feedback on the engagement activity:
+          </p>
+          <ul class="fa-ul barGroup">
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>Raffle ticket design was
+              too dependent on luck. “What if no one ever found the baby holding
+              the top prize?”
+            </li>
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>Users would trade babies
+              if they had to match certain words for prizes
+            </li>
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>Finding answers to “Fun
+              Fact” questions felt like extra homework
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top: 2.5em;">
+        <div class="text_small">
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            In the previous year, returning more babies resulted in a better
+            prize. The team liked the “Letters” design because they felt that
+            there would be more publicity and buzz if students were trading with
+            one another.
+          </p>
+        </div>
+      </div>
+
+      <div class="row theprocessWrap" id="execution">
+        <div class="text_small theprocess">Execution</div>
+      </div>
+
+      <div class="row">
+        <div class="text_small">
+          <p class="lead" style="text-align: justify; margin-bottom: 0px;">
+            I used Bootstrap as the css framework and JQuery for event handling.
+            I also used Shopify’s API to embed an online shop into the apparel
+            section of the website. The homepage’s carousel was created with
+            carouFredSel, an open source project by Verti Studio.
+          </p>
+        </div>
+      </div>
+
+      <div class="row titlehoriz" style="margin-top: 2.5em;">
+        <div class="col-1"></div>
+        <div class="col-10">
+          <div class="modal-dialogtwo">
+            <p class="lead imgDescription" style="margin-bottom: -0.1em;">
+              Frameworks and libraries
+            </p>
+            <div class="row" style="margin: auto; width: 55%;">
+              <div class="col-md-3" style="padding: 10px; text-align: center;">
+                <img
+                  class="img-fluid img_shadow"
+                  src="img/asgs_photos/api1.png"
+                />
+              </div>
+              <div class="col-md-3" style="padding: 10px; text-align: center;">
+                <img
+                  class="img-fluid img_shadow"
+                  src="img/asgs_photos/api2.png"
+                />
+              </div>
+              <div class="col-md-3" style="padding: 10px; text-align: center;">
+                <img
+                  class="img-fluid img_shadow"
+                  src="img/asgs_photos/api3.png"
+                />
+              </div>
+              <div class="col-md-3" style="padding: 10px; text-align: center;">
+                <img
+                  class="img-fluid img_shadow"
+                  src="img/asgs_photos/api4.png"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1"></div>
+      </div>
+
+      <div class="row" style="justify-content: center; margin-top: 2.5em;">
+        <a
+          class="sliding-middle-out"
+          style="font-size: 1.4rem; font-weight: 400;"
+          href="sungodfestival/home.html"
+          target="_blank"
+          >View Forked Website</a
+        >
+      </div>
+
+      <div class="row theprocessWrap" id="stats">
+        <div class="text_small theprocess">Cool Stats</div>
+      </div>
+
+      <div class="row" style="justify-content: center; margin-top: 1.5em;">
+        <div class="img1Row">
+          <div class="row" style="margin-top: 15px;"></div>
+          <img
+            class="img-fluid img_shadow"
+            src="img/asgs_photos/outcome.svg"
+            alt=" "
+          />
+          <div class="row" style="margin-top: 15px;"></div>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top: 2.5em;">
+        <div class="text_small">
+          <p
+            class="lead"
+            style="margin-bottom: 0; word-spacing: 3px; text-align: justify;"
+          >
+            I’m stoked to have worked on a website seen by so many of my peers.
+            The A.S. Graphic Studio was full of extremely bright and friendly
+            colleagues. We had weekly potlucks, birthday celebrations, costume
+            parties, and even field trips to local design agencies. I also
+            enjoyed seeing how the inner workings of event coordination looked
+            like. Thank you for reading.
+          </p>
+        </div>
+      </div>
+
+      <div class="row" style="justify-content: center; margin-top: 1.5em;">
+        <div class="text_small">
+          <div class="row" style="margin-top: 15px;"></div>
+          <img
+            class="img-fluid img_shadow"
+            src="img/asgs_photos/asgs.png"
+            alt=" "
+          />
+          <div class="row" style="margin-top: 15px;"></div>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top: 2.5em;">
+        <div class="text_small">
+          <p
+            class="lead"
+            style="
+              margin-bottom: 0;
+              word-spacing: 3px;
+              text-align: left;
+              width: 100%;
+              color: #a7afb2;
+            "
+          >
+            Stakeholder avatars were designed by Freepik from FlatIcon.com.
+          </p>
+        </div>
+      </div>
+
+      <div class="row spacer"></div>
+
+      <div class="row" style="text-align: center; padding-bottom: 40px;">
+        <div class="text_medium theprocess END">My Other Work</div>
+      </div>
+
+      <div class="row">
+        <!-- EQR -->
+        <section class="col-md-2 order-md-1" style="padding: 0px 0;"></section>
+        <section class="col-md-4 order-md-2 titlehoriz" style="padding: 0px 0;">
+          <div
+            class="box btn-group modal-dialogtwo dynamicthumbnail"
+            style="margin-top: 0px;"
+          >
+            <a href="project1.html">
+              <div class="titlehoriz">
+                <img class="img-fluid" src="img/idx_eqr.png" alt=" " />
+              </div>
+            </a>
+          </div>
+        </section>
+        <section
+          class="col-md-4 order-md-3 vertical-align"
+          style="padding: 0px 0;"
+        >
+          <div class="fullWidthWork">
+            <div class="row-centerer">
+              <h3 class="section-heading" style="font-weight: 400;">
+                <a class="sliding-middle-out" href="project1.html">EventQR</a>
+              </h3>
+              <p class="lead">
+                A web app that lets users create & scan events encrypted into a
+                QR code, which can be synced onto their Google Calendar.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="col-md-2 order-md-4" style="padding: 0px 0;"></section>
+      </div>
+
+      <div class="row" style="margin-top: 7vw;">
+        <!-- Birch -->
+        <section class="col-md-2 order-md-1" style="padding: 0px 0;"></section>
+        <section class="col-md-4 order-md-3 titlehoriz" style="padding: 0px 0;">
+          <div
+            class="box btn-group modal-dialogtwo dynamicthumbnail"
+            style="margin-top: 0px;"
+          >
+            <a href="workday_pre.html">
+              <div class="titlehoriz">
+                <img class="img-fluid" src="img/idx_wrkdy.png" alt=" " />
+              </div>
+            </a>
+          </div>
+        </section>
+        <section
+          class="col-md-4 order-md-2 vertical-align"
+          style="padding: 0px 0;"
+        >
+          <div class="fullWidthWork">
+            <div class="row-centerer">
+              <h3 class="section-heading" style="font-weight: 400;">
+                <a class="sliding-middle-out" href="workday_pre.html"
+                  >Workday</a
+                >
+              </h3>
+              <p class="lead">
+                Redesigning the global conclusion interface and mobile
+                animations.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="col-md-2 order-md-4" style="padding: 0px 0;"></section>
+      </div>
+
+      <div class="row letstalkpad"></div>
+
+      <!-- CONTACT/EMAIL ME -->
+      <div class="vertical-align titlehoriz">
+        <h2 style="font-weight: 400;">
+          <a href="mailto:design.tonychan@gmail.com" class="tony-middle-out">
+            Lets talk
+          </a>
+        </h2>
+      </div>
+      <div class="row letstalkpad"></div>
+
+      <!--  ///////////////////  FOOTER/CONTACT  ///////////////////  -->
+      <aside class="banner">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <a
+              href="mailto:design.tonychan@gmail.com"
+              target="_blank "
+              class="btn-social btn-lg"
+              ><i class="fa fa-envelope"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/tonychan96/ "
+              target="_blank "
+              class="btn-social btn-lg"
+              ><i class="fa fa-linkedin"></i
+            ></a>
+            <a
               href="https://github.com/tonychandesign"
               target="_blank "
               class="btn-social btn-lg"
               ><i class="fa fa-github"></i
             ></a>
+          </div>
         </div>
-      </div>
-    </aside>
-    <!-- container fluid wrapper end div -->
-  </div>
+      </aside>
+      <!-- container fluid wrapper end div -->
+    </div>
 
-
-
-
-  <!-- JavaScript -->
-  <!-- different jquery for scrollspy  -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="js/sideNav.js "></script>
-  <script src="js/smooth-scroll.min.js"></script>
-  <script src="js/specNavSlideIn.js"></script>
-  <script>
-    // Instantiate Scrolls
-    var scroll = new SmoothScroll('a[href*="#"]', {
-      speed: 200
-    });
-
-    if (document.querySelector("[data-easing]")) {
-      var easeOutQuart = new SmoothScroll('[data-easing="easeOutQuart"]', {
-        easing: "easeOutQuart"
+    <!-- JavaScript -->
+    <!-- different jquery for scrollspy  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/sideNav.js "></script>
+    <script src="js/smooth-scroll.min.js"></script>
+    <script src="js/specNavSlideIn.js"></script>
+    <script>
+      // Instantiate Scrolls
+      var scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 200,
       });
-    }
-  </script>
-  <script src="vendor/popper/popper.min.js "></script>
-  <script src="vendor/bootstrap/js/bootstrap.min.js "></script>
-  <script src="custom.js "></script>
-  <script src="js/darkModeHander.js "></script>
-</body>
 
+      if (document.querySelector("[data-easing]")) {
+        var easeOutQuart = new SmoothScroll('[data-easing="easeOutQuart"]', {
+          easing: "easeOutQuart",
+        });
+      }
+    </script>
+    <script src="vendor/popper/popper.min.js "></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js "></script>
+    <script src="custom.js "></script>
+    <script src="js/darkModeHander.js "></script>
+  </body>
 </html>
