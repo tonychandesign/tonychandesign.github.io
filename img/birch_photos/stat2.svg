@@ -1,16 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="1415px" height="457px" viewBox="0 0 1415 457" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
-    <title>stat2</title>
-    <desc>Created with Sketch.</desc>
-    <g id="stat2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <rect fill="#FFFFFF" x="0" y="0" width="1415" height="457"></rect>
-        <text id="minutes-spent-per-ex" font-family="AvenirNextforINTUIT-Bold, AvenirNext forINTUIT" font-size="43" font-weight="bold" letter-spacing="3.07142857" fill="#565656">
-            <tspan x="838" y="272">minutes spent </tspan>
-            <tspan x="838" y="324">per exhibit</tspan>
-        </text>
-        <text id="4-6" font-family="AvenirNextforINTUIT-Bold, AvenirNext forINTUIT" font-size="291" font-weight="bold" letter-spacing="20.7857143" fill="#00AEEE">
-            <tspan x="229.402429" y="332">4-6</tspan>
-        </text>
-    </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1415" height="457" xmlns:v="https://vecta.io/nano"><style><![CDATA[.B{font-family:AvenirNextforINTUIT-Bold, AvenirNext forINTUIT}]]></style><g fill-rule="evenodd"><path fill="#fff" d="M0 0h1415v457H0z"/><text font-size="43" font-weight="bold" letter-spacing="3.071" fill="#565656" class="B"><tspan x="838" y="272">minutes spent </tspan><tspan x="838" y="324">per exhibit</tspan></text><text font-size="291" font-weight="bold" letter-spacing="20.786" fill="#065fd4" class="B"><tspan x="229.402" y="332">4-6</tspan></text></g></svg>
