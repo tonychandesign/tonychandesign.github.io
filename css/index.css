@@ -214,21 +214,11 @@ h1 {
   transition: 0.3s ease-out;
   background-color: rgba(0, 0, 0, 0);
 }
-.box3:hover .overlay {
-  background-color: rgba(0, 0, 0, 0.9);
-}
-.box3:active {
-  -webkit-transform: scale(0.98, 0.98);
-  transform: scale(0.98, 0.98);
-}
 .ndatext {
   color: #fff;
   font-size: 20px;
   opacity: 0;
   transition: 0.3s ease-out;
-}
-.box3:hover .ndatext {
-  opacity: 1;
 }
 .a:hover,
 a:hover {
@@ -265,9 +255,10 @@ a:hover {
   margin-top: 30px;
 }
 .dynResume {
-  max-width: 65%;
+  max-width: 75%;
   display: block;
   margin: auto;
+  margin-bottom: 30px;
 }
 .content-section-a {
   padding: 100px 0;
