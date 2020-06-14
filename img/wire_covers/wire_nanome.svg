@@ -2,9 +2,9 @@
 <svg width="2000px" height="1000px" viewBox="0 0 2000 1000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>wire_nanome</title>
     <g id="wire_nanome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <rect id="Rectangle" class="animated fadeInUp delay1" stroke="#FFFFFF" stroke-width="3" fill="#1B1B1D" x="1102.13833" y="166" width="702" height="411" rx="7"></rect>
-        <rect id="Rectangle" class="animated fadeInUp delay2" stroke="#FFFFFF" stroke-width="3" fill="#1B1B1D" x="751.138333" y="288" width="702" height="411" rx="7"></rect>
-        <rect id="Rectangle" class="animated fadeInUp delay3" stroke="#FFFFFF" stroke-width="3" fill="#1B1B1D" x="1007.13833" y="423" width="702" height="411" rx="7"></rect>
+        <rect id="Rectangle" class="animated fadeInUp delay1" stroke="#FFFFFF" stroke-width="3" fill="#202124" x="1102.13833" y="166" width="702" height="411" rx="7"></rect>
+        <rect id="Rectangle" class="animated fadeInUp delay2" stroke="#FFFFFF" stroke-width="3" fill="#202124" x="751.138333" y="288" width="702" height="411" rx="7"></rect>
+        <rect id="Rectangle" class="animated fadeInUp delay3" stroke="#FFFFFF" stroke-width="3" fill="#202124" x="1007.13833" y="423" width="702" height="411" rx="7"></rect>
         <g id="Group" transform="translate(195.000000, 263.000000)" fill="#FFFFFF" fill-rule="nonzero">
                 <g class="animated fadeInUp">
             <polygon id="Path" points="162.093502 11 162.093502 51.0759313 135.006974 11 126 11 126 64 133.980569 64 133.980569 23.2680139 161.581357 64 170 64 170 11"></polygon>

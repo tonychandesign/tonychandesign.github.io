@@ -87,7 +87,7 @@ p {
   -moz-transition: top 0.2s ease-in-out;
 }
 .darkNav {
-  background: #1b1b1d;
+  background: #202124;
 }
 .navbar-expand {
   transition: all 0.3s ease !important;
@@ -160,7 +160,7 @@ h1 {
 .box2 {
   position: relative;
   display: inline-block;
-  background-color: #1b1b1d;
+  background-color: #202124;
   box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.01), 0 3px 24px rgba(0, 0, 0, 0.6);
   -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.01),
     0 3px 24px rgba(0, 0, 0, 0.6);
@@ -199,7 +199,7 @@ h1 {
 .box3 {
   position: relative;
   display: inline-block;
-  background-color: #1b1b1d;
+  background-color: #202124;
   box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.01), 0 3px 24px rgba(0, 0, 0, 0.6);
   -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.01),
     0 3px 24px rgba(0, 0, 0, 0.6);
@@ -343,7 +343,7 @@ a.btn-social {
   transition: -webkit-transform 0.2s ease-in-out;
 }
 .carousel-inner {
-  background: #1b1b1d;
+  background: #202124;
 }
 .row-centerer2 {
   width: 99%;

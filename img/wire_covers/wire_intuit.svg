@@ -15,10 +15,10 @@
               <path d="M394.515357,104.982143 C397.501862,104.982143 400,107.348033 400,110.451785 C400,113.610078 397.501862,115.982143 394.515357,115.982143 C391.515544,115.982143 389,113.610078 389,110.451785 C389.001024,107.348033 391.516567,104.982143 394.515357,104.982143 Z M394.515357,115.175332 C397.04933,115.175332 399.007911,113.146985 399.007911,110.451785 C399.007911,107.821417 397.04933,105.788954 394.515357,105.788954 C391.953742,105.788954 389.992089,107.822446 389.992089,110.451785 C389.992089,113.148014 391.953742,115.175332 394.515357,115.175332 Z M392.379654,107.26056 L394.849125,107.26056 C396.37258,107.26056 397.091307,107.86361 397.091307,109.101611 C397.091307,110.257286 396.363366,110.750222 395.407111,110.850044 L397.238738,113.690348 L396.167815,113.690348 L394.428332,110.921052 L393.372766,110.921052 L393.372766,113.690348 L392.37863,113.690348 L392.37863,107.26056 L392.379654,107.26056 Z M393.372766,110.113212 L394.413999,110.113212 C395.292442,110.113212 396.095123,110.072048 396.095123,109.05736 C396.095123,108.202182 395.367182,108.072516 394.69248,108.072516 L393.37379,108.072516 L393.37379,110.113212 L393.372766,110.113212 Z" id="Shape"></path>
           </g>
         </g>
-        <rect id="Rectangle" class="animated fadeInUp delay1" stroke="#FFFFFF" stroke-width="3" fill="#1B1B1D" x="1103" y="158" width="702" height="411" rx="7"></rect>
-        <rect id="Rectangle" class="animated fadeInUp delay2" stroke="#FFFFFF" stroke-width="3" fill="#1B1B1D" x="834" y="328" width="702" height="411" rx="7"></rect>
-        <rect id="Rectangle" class="animated fadeInUp delay3" stroke="#FFFFFF" stroke-width="3" fill="#1B1B1D" x="1357" y="419" width="209" height="423" rx="22"></rect>
-        <rect id="Rectangle" class="animated fadeInUp delay4" stroke="#FFFFFF" stroke-width="3" fill="#1B1B1D" x="1596" y="419" width="209" height="423" rx="22"></rect>
+        <rect id="Rectangle" class="animated fadeInUp delay1" stroke="#FFFFFF" stroke-width="3" fill="#202124" x="1103" y="158" width="702" height="411" rx="7"></rect>
+        <rect id="Rectangle" class="animated fadeInUp delay2" stroke="#FFFFFF" stroke-width="3" fill="#202124" x="834" y="328" width="702" height="411" rx="7"></rect>
+        <rect id="Rectangle" class="animated fadeInUp delay3" stroke="#FFFFFF" stroke-width="3" fill="#202124" x="1357" y="419" width="209" height="423" rx="22"></rect>
+        <rect id="Rectangle" class="animated fadeInUp delay4" stroke="#FFFFFF" stroke-width="3" fill="#202124" x="1596" y="419" width="209" height="423" rx="22"></rect>
         <ellipse id="Home" class="animated fadeInUp delay3" stroke="#FFFFFF" stroke-width="3" cx="1461.5" cy="813" rx="15" ry="13.5"></ellipse>
         <ellipse id="Home" class="animated fadeInUp delay4" stroke="#FFFFFF" stroke-width="3" cx="1700.5" cy="813" rx="15" ry="13.5"></ellipse>
     </g>
