@@ -7,20 +7,48 @@
 .heroText {
   text-align: left;
   margin: auto;
-  font-size: 48px;
-  font-weight: 500;
+  font-size: 5rem;
+  font-weight: 900;
+  line-height: 6.5rem;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  margin-top: -30px;
+  margin-top: -50px;
   color: white;
-  font-family: "Open Sans", sans-serif;
-  min-width: 80%;
+  width: 55%;
+  text-shadow: 0px 4px 10px #000;
 }
 
+.SubHeroText {
+  text-align: left;
+  margin: auto;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #94999d;
+  position: absolute;
+  top: 61%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 55%;
+  opacity: 100%;
+  transition: top 0.25s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 1052px) {
+  .SubHeroText {
+    top: 66%;
+  }
+}
+@media screen and (max-width: 678px) {
+  .SubHeroText {
+    top: 72%;
+  }
+}
 @media screen and (max-width: 414px) {
   .heroText {
+    min-width: 100%%;
     font-size: 35px;
+    line-height: 3.5rem;
   }
 }

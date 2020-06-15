@@ -1,30 +1,24 @@
 @font-face {
   font-family: "Lato";
   src: url("../Lato/Lato-Regular.ttf") format("truetype");
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
-}
-
-@font-face {
-  font-family: "Lato";
-  src: url("../Lato/Lato-Italic.ttf") format("truetype");
-  font-weight: normal;
-  font-style: italic;
 }
 
 @font-face {
   font-family: "Lato";
   src: url("../Lato/Lato-Bold.ttf") format("truetype");
-  font-weight: bold;
+  font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Lato";
-  src: url("../Lato/Lato-BoldItalic.ttf") format("truetype");
-  font-weight: bold;
-  font-style: italic;
+  src: url("../Lato/Lato-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
 }
+
 body,
 html {
   width: 100%;
@@ -32,7 +26,7 @@ html {
 }
 body {
   font-family: "Lato";
-  font-weight: 300;
+  font-weight: 400;
   color: #000;
   position: relative;
   background-color: #f7f7f7;
@@ -54,10 +48,11 @@ p {
 .lead {
   font-weight: 400;
   color: #616161;
-  font-size: 1.1em !important;
+  font-size: 1.3em !important;
 }
 .indexProjectTitles {
   padding-bottom: 10px;
+  font-weight: 600;
 }
 .network-name {
   text-transform: uppercase;
@@ -81,7 +76,7 @@ p {
   opacity: 0;
   padding-top: 20px;
   padding-bottom: 25px;
-  box-shadow: rgba(0, 0, 0, 0.2) 0 0 10px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0 0 10px;
   transition: top 0.2s ease-in-out;
   -webkit-transition: top 0.2s ease-in-out;
   -moz-transition: top 0.2s ease-in-out;
@@ -227,7 +222,6 @@ a:hover {
 }
 .modal-dialog {
   position: relative;
-  display: table;
   overflow-y: auto;
   overflow-x: auto;
   width: auto;
@@ -251,14 +245,18 @@ a:hover {
   display: flex;
   align-items: center;
 }
-.resumeaboutpad {
-  margin-top: 30px;
+.sandboxPhotoPad {
+  margin-top: 40px;
 }
 .dynResume {
   max-width: 75%;
   display: block;
   margin: auto;
   margin-bottom: 30px;
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.01), 0 3px 24px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.01),
+    0 3px 24px rgba(0, 0, 0, 0.6);
+  border-radius: 4px;
 }
 .content-section-a {
   padding: 100px 0;
@@ -369,7 +367,7 @@ a.btn-social {
 }
 .indexSectionHeader {
   font-size: 3.5em;
-  font-weight: 400;
+  font-weight: 600;
   color: #fff;
   margin-left: 9.5%;
   margin-bottom: 50px;
@@ -411,6 +409,43 @@ a.btn-social {
   font-size: 1.6em;
   font-weight: 900;
 }
+
+.subCarousel {
+  display: flex;
+  justify-content: center;
+  font-size: 1.4em;
+  color: white !important;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+.sandBoxItems {
+  margin: 0px 20px;
+  cursor: pointer;
+}
+.subNavHighlight {
+  color: white;
+  transition: all 0.2s ease;
+}
+.subNavHighlight.active:after,
+.subNavHighlight:hover:after,
+.subNavHighlight:hover {
+  transition: all 0.2s ease;
+  color: #3ea6ff !important;
+}
+#sandbox_photography {
+  transition: opacity 0.2s ease;
+}
+
+#sandbox_comingSoon {
+  width: 100vw;
+  height: 55vh;
+  color: #414449;
+  font-size: 5em;
+  margin-top: 20%;
+  text-align: center;
+  display: none;
+}
+
 @media screen and (max-width: 1300px) {
   .row-centerer {
     width: 90%;
@@ -427,8 +462,11 @@ a.btn-social {
   }
 }
 @media (max-width: 990px) {
-  .resumeaboutpad {
+  .sandboxPhotoPad {
     margin-top: 70px;
+  }
+  .subCarousel {
+    margin-top: 90px;
   }
   .dynResume {
     max-width: 100%;
@@ -463,6 +501,10 @@ a.btn-social {
   }
   .indexSectionHeader {
     margin-left: 7%;
+  }
+  #sandbox_comingSoon {
+    margin-top: 55%;
+    font-size: 3em;
   }
 }
 
