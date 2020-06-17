@@ -2145,6 +2145,7 @@ function cycle() {
 }
 
 function runPlatformer(el) {
+  $("#navbar").css("top", "-140px");
   el.onclick = null;
   el.style.display = "none";
   Engine.run(engine);

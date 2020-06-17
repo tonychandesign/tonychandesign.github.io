@@ -21,7 +21,6 @@ $(function () {
         .toggleClass("active");
     }
     // show nav
-    // console.log($('.navbar-nav [data-id="0"]').parent("li"));
     if (page_id == 1 || page_id == 2) {
       $("#navbar").css("top", "0px");
     }
@@ -58,7 +57,8 @@ $(function () {
       (window.location.href === "https://tonychandesign.github.io/" ||
         window.location.href.includes("index.html")) &&
       $(".navbar-nav .active ").attr("class").includes("navPortfolio") &&
-      window.pageYOffset == 0
+      window.pageYOffset == 0 &&
+      $(".introWrap").css("display") === "none"
     ) {
       setTimeout(function () {
         // edge case starting at Portfolio -> click resume/aboutme, it scrolls up and still dissappears
