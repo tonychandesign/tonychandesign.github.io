@@ -32,11 +32,17 @@ $(function () {
     codeTab.removeClass("active");
     photoTab.removeClass("active");
     motionTab.removeClass("active");
+
+    photoEle.css({ display: "none" });
+    comingSoon.css({ display: "block" });
   });
   motionTab.click(function () {
     motionTab.addClass("active");
     codeTab.removeClass("active");
     photoTab.removeClass("active");
     designTab.removeClass("active");
+
+    photoEle.css({ display: "none" });
+    comingSoon.css({ display: "block" });
   });
 });
