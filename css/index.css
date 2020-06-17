@@ -53,6 +53,8 @@ p {
 .indexProjectTitles {
   padding-bottom: 10px;
   font-weight: 600;
+  color: white;
+  letter-spacing: 2px;
 }
 .network-name {
   text-transform: uppercase;
@@ -62,36 +64,75 @@ p {
 }
 .navbar-brand {
   margin-right: 0;
-  font-size: 1.4em;
+  font-size: 1.2em;
   font-weight: 600;
+}
+.whiteText {
+  transition: color 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -webkit-transition: color 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -moz-transition: color 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  color: #94999d !important;
+}
+.whiteText:hover {
+  color: white !important;
+}
+.nav-item:hover {
+  color: white !important;
 }
 .indextext {
   margin-top: 3vw;
   margin-bottom: 40px;
   width: 100%;
 }
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+  overflow-x: hidden;
+}
+.indexProjectWrapper {
+  display: flex;
+  width: 100%;
+  position: relative;
+  justify-content: space-around;
+}
+.indexProjectImage {
+  max-width: 60vw;
+  width: 100%;
+}
+.indexProjectTextWrap {
+  position: absolute;
+  left: 43%;
+  top: 22%;
+}
+.indexProjectText {
+  border: 1px solid white;
+  border-radius: 4px;
+  padding: 50px;
+  position: absolute;
+  background: #202124;
+  width: fit-content;
+}
+
 #navbar {
   position: fixed;
   /* top: -140px; */
   opacity: 0;
   padding-top: 20px;
-  padding-bottom: 25px;
+  padding-bottom: 20px;
   box-shadow: rgba(0, 0, 0, 0.4) 0 0 10px;
-  transition: top 0.2s ease-in-out;
-  -webkit-transition: top 0.2s ease-in-out;
-  -moz-transition: top 0.2s ease-in-out;
+  transition: top 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -webkit-transition: top 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -moz-transition: top 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .darkNav {
   background: #202124;
 }
 .navbar-expand {
-  transition: all 0.3s ease !important;
-  -webkit-transition: all 0.3s ease !important;
-  -moz-transition: all 0.3s ease !important;
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
+  -webkit-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
+  -moz-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
 }
-.whiteText {
-  color: #fff !important;
-}
+
 .sliding-middle-out {
   display: inline-block;
   position: relative;
@@ -103,20 +144,21 @@ p {
   content: "";
   display: block;
   margin: auto;
-  height: 3px;
+  height: 2px;
   background: 0 0;
-  transition: width 0.2s ease, background-color 0.5s ease;
-}
-.container-fluid {
-  padding-left: 0;
-  padding-right: 0;
-  overflow-x: hidden;
+
+  transition: width 0.2s cubic-bezier(0.165, 0.84, 0.44, 1),
+    background-color 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -webkit-transition: width 0.2s cubic-bezier(0.165, 0.84, 0.44, 1),
+    background-color 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -moz-transition: width 0.2s cubic-bezier(0.165, 0.84, 0.44, 1),
+    background-color 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .sliding-middle-out.active:after,
 .sliding-middle-out:hover:after {
   width: 100%;
   padding-left: 10px;
-  background: #3ea6ff;
+  background: #fff;
 }
 .tony-middle-out {
   display: inline-block;
@@ -130,17 +172,22 @@ p {
   margin: auto;
   margin-top: 3px;
   margin-bottom: -3px;
-  height: 3px;
+  height: 2px;
   background: 0 0;
-  transition: width 0.2s ease, background-color 0.5s ease;
+  transition: width 0.2s cubic-bezier(0.165, 0.84, 0.44, 1),
+    background-color 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -webkit-transition: width 0.2s cubic-bezier(0.165, 0.84, 0.44, 1),
+    background-color 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -moz-transition: width 0.2s cubic-bezier(0.165, 0.84, 0.44, 1),
+    background-color 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .tony-middle-out.active:after,
 .tony-middle-out:hover:after {
   width: 100%;
-  background: #3ea6ff;
+  background: #fff;
 }
 .active {
-  color: #3ea6ff !important;
+  color: #fff !important;
 }
 h1 {
   text-align: center;
@@ -163,6 +210,7 @@ h1 {
   opacity: 0.85;
   -webkit-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -moz-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .box2::after {
   content: "";
@@ -178,6 +226,7 @@ h1 {
   opacity: 0;
   -webkit-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -moz-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .box2:hover {
   -webkit-transform: scale(1.02, 1.02);
@@ -206,14 +255,18 @@ h1 {
   height: 100%;
   width: 100%;
   border-radius: 4px;
-  transition: 0.3s ease-out;
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -webkit-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -moz-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
   background-color: rgba(0, 0, 0, 0);
 }
 .ndatext {
   color: #fff;
   font-size: 20px;
   opacity: 0;
-  transition: 0.3s ease-out;
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -webkit-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -moz-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .a:hover,
 a:hover {
@@ -300,8 +353,9 @@ a.btn-social {
   margin: 8px 4px;
   text-align: center;
   text-decoration: none;
-  transition: background-color 0.3s;
-  webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  webkit-transition: background-color 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -moz-transition: background-color 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
   width: 54px;
 }
 .btn-social .fa,
@@ -311,10 +365,11 @@ a.btn-social {
   ms-transform: scale(1);
   o-transform: scale(1);
   transform: scale(1);
-  transition: all 0.25s;
+  transition: all 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
+  webkit-transition: all 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -moz-transition: all 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
   webkit-backface-visibility: hidden;
   webkit-transform: scale(1);
-  webkit-transition: all 0.25s;
 }
 .btn-social:focus,
 .btn-social:hover {
@@ -406,8 +461,8 @@ a.btn-social {
   text-align: center;
 }
 .tonychan {
-  font-size: 1.6em;
-  font-weight: 900;
+  font-size: 1.4em;
+  font-weight: 600;
 }
 
 .subCarousel {
@@ -421,19 +476,6 @@ a.btn-social {
 .sandBoxItems {
   margin: 0px 20px;
   cursor: pointer;
-}
-.subNavHighlight {
-  color: white;
-  transition: all 0.2s ease;
-}
-.subNavHighlight.active:after,
-.subNavHighlight:hover:after,
-.subNavHighlight:hover {
-  transition: all 0.2s ease;
-  color: #3ea6ff !important;
-}
-#sandbox_photography {
-  transition: opacity 0.2s ease;
 }
 
 #sandbox_comingSoon {

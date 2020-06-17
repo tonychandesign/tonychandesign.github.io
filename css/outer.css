@@ -75,9 +75,17 @@ p {
 }
 .navbar-brand {
   margin-right: 0;
-  font-size: 1.4em;
-
+  font-size: 1.2em;
   font-weight: 600;
+}
+.nav-item {
+  color: #a9a9a9 !important;
+  transition: color 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -webkit-transition: color 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -moz-transition: color 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.nav-item:hover {
+  color: black !important;
 }
 .letstalkpad {
   padding-top: 6vw;
@@ -85,18 +93,17 @@ p {
 #navbar {
   position: fixed;
   padding-top: 20px;
-  padding-bottom: 25px;
+  padding-bottom: 20px;
   box-shadow: rgba(0, 0, 0, 0.2) 0 0 10px;
-  transition: top 0.2s ease-in-out;
-  -webkit-transition: top 0.2s ease-in-out;
-  -moz-transition: top 0.2s ease-in-out;
-  color: black;
+  transition: top 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -webkit-transition: top 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -moz-transition: top 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
   background: white;
 }
 .slideNavIn {
   animation-name: slideNavIn;
   -webkit-animation-name: slideNavIn;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 @keyframes slideNavIn {
   from {
@@ -108,9 +115,9 @@ p {
   }
 }
 .navbar-expand {
-  transition: all 0.3s ease !important;
-  -webkit-transition: all 0.3s ease !important;
-  -moz-transition: all 0.3s ease !important;
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
+  -webkit-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
+  -moz-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
 }
 .container-fluid {
   padding-left: 0;
@@ -206,36 +213,20 @@ p {
   content: "";
   display: block;
   margin: auto;
-  height: 3px;
+  height: 2px;
   background: 0 0;
-  transition: width 0.2s ease, background-color 0.5s ease;
+  transition: width 0.2s cubic-bezier(0.165, 0.84, 0.44, 1),
+    background-color 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -webkit-transition: width 0.2s cubic-bezier(0.165, 0.84, 0.44, 1),
+    background-color 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -moz-transition: width 0.2s cubic-bezier(0.165, 0.84, 0.44, 1),
+    background-color 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .sliding-middle-out.active:after,
 .sliding-middle-out:hover:after {
   width: 100%;
   padding-left: 10px;
-  background: #065fd4;
-}
-.tony-middle-out {
-  display: inline-block;
-  position: relative;
-  color: inherit;
-}
-.tony-middle-out:after {
-  width: 0;
-  content: "";
-  display: block;
-  margin: auto;
-  margin-top: 3px;
-  margin-bottom: -3px;
-  height: 3px;
-  background: 0 0;
-  transition: width 0.2s ease, background-color 0.5s ease;
-}
-.tony-middle-out.active:after,
-.tony-middle-out:hover:after {
-  width: 100%;
-  background: #065fd4;
+  background: #000;
 }
 .active {
   color: #065fd4 !important;
@@ -280,6 +271,7 @@ h1 {
   border-radius: 2px;
   -webkit-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -moz-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .box::after {
   content: "";
@@ -294,6 +286,7 @@ h1 {
   opacity: 0;
   -webkit-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -moz-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .box:hover {
   -webkit-transform: scale(1.02, 1.02);
@@ -317,6 +310,7 @@ h1 {
   opacity: 0.85;
   -webkit-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -moz-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .box2::after {
   content: "";
@@ -333,6 +327,7 @@ h1 {
   opacity: 0;
   -webkit-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -moz-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .box2:hover {
   -webkit-transform: scale(1.02, 1.02);
@@ -360,6 +355,7 @@ a:hover {
 .modal-dialogtwo {
   width: auto;
   height: auto;
+  border-radius: 4px;
 }
 .row-centerer {
   width: 86%;
@@ -416,8 +412,9 @@ a.btn-social {
   margin: 8px 4px;
   text-align: center;
   text-decoration: none;
-  transition: background-color 0.3s;
-  webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  webkit-transition: background-color 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -moz-transition: background-color 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
   width: 54px;
 }
 .btn-social .fa,
@@ -427,10 +424,11 @@ a.btn-social {
   ms-transform: scale(1);
   o-transform: scale(1);
   transform: scale(1);
-  transition: all 0.25s;
+  transition: all 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
+  webkit-transition: all 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -moz-transition: all 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
   webkit-backface-visibility: hidden;
   webkit-transform: scale(1);
-  webkit-transition: all 0.25s;
 }
 .btn-social:focus,
 .btn-social:hover {
@@ -479,6 +477,32 @@ a.btn-social {
   font-size: 1.4rem;
   font-weight: 600;
   margin-top: 10px;
+}
+.tony-middle-out {
+  display: inline-block;
+  position: relative;
+  color: inherit;
+}
+.tony-middle-out:after {
+  width: 0;
+  content: "";
+  display: block;
+  margin: auto;
+  margin-top: 3px;
+  margin-bottom: -3px;
+  height: 2px;
+  background: 0 0;
+  transition: width 0.2s cubic-bezier(0.165, 0.84, 0.44, 1),
+    background-color 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -webkit-transition: width 0.2s cubic-bezier(0.165, 0.84, 0.44, 1),
+    background-color 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -moz-transition: width 0.2s cubic-bezier(0.165, 0.84, 0.44, 1),
+    background-color 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.tony-middle-out.active:after,
+.tony-middle-out:hover:after {
+  width: 100%;
+  background: #000;
 }
 .viewCaseStudyContainer {
   height: 100%;
@@ -532,6 +556,10 @@ a.btn-social {
 .img_shadow {
   box-shadow: 0 6px 11px rgba(0, 0, 0, 0.17);
   background: #fff;
+  border-radius: 4px;
+}
+.img-fluid {
+  border-radius: 4px;
 }
 .text_small {
   max-width: 40%;
@@ -594,8 +622,15 @@ a.btn-social {
   margin: auto;
 }
 .tonychan {
-  font-size: 1.6em;
+  font-size: 1.4em;
+  color: #a9a9a9;
   font-weight: 600;
+  transition: color 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -webkit-transition: color 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -moz-transition: color 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.tonychan:hover {
+  color: black;
 }
 @media screen and (max-width: 1300px) {
   .row-centerer {
