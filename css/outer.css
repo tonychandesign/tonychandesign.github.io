@@ -187,6 +187,7 @@ p {
   opacity: 0;
   animation-name: fadeIn;
   -webkit-animation-name: fadeIn;
+  -webkit-transform: translateZ(0);
 }
 .fadeOut {
   opacity: 1;
