@@ -499,8 +499,7 @@ a.btn-social {
   -moz-transition: width 0.2s cubic-bezier(0.165, 0.84, 0.44, 1),
     background-color 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
-.tony-middle-out.active:after,
-.tony-middle-out:hover:after {
+.tony-middle-out.active:after {
   width: 100%;
   background: #000;
 }
@@ -628,9 +627,6 @@ a.btn-social {
   transition: color 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
   -webkit-transition: color 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
   -moz-transition: color 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-.tonychan:hover {
-  color: black;
 }
 @media screen and (max-width: 1300px) {
   .row-centerer {

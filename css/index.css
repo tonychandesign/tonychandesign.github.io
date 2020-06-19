@@ -79,6 +79,7 @@ p {
 .nav-item:hover {
   color: white !important;
 }
+
 .indextext {
   margin-top: 3vw;
   margin-bottom: 40px;
@@ -181,8 +182,7 @@ p {
   -moz-transition: width 0.2s cubic-bezier(0.165, 0.84, 0.44, 1),
     background-color 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
-.tony-middle-out.active:after,
-.tony-middle-out:hover:after {
+.tony-middle-out.active:after {
   width: 100%;
   background: #fff;
 }
