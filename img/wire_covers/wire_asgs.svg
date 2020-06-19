@@ -3,8 +3,8 @@
     <title>wire_asgs</title>
     <g id="wire_asgs" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <rect id="Rectangle" stroke="#FFFFFF" class="animated fadeInUp delay1" stroke-width="3" fill="#202124" x="1102.13833" y="166" width="702" height="411" rx="7"></rect>
-        <rect id="Rectangle" stroke="#FFFFFF" class="animated fadeInUp delay2" stroke-width="3" fill="#202124" x="751.138333" y="288" width="702" height="411" rx="7"></rect>
-        <rect id="Rectangle" stroke="#FFFFFF" class="animated fadeInUp delay3" stroke-width="3" fill="#202124" x="1007.13833" y="423" width="702" height="411" rx="7"></rect>
+        <rect id="Rectangle" stroke="#FFFFFF" class="animated fadeInUp delay1" stroke-width="3" fill="#202124" x="751.138333" y="288" width="702" height="411" rx="7"></rect>
+        <rect id="Rectangle" stroke="#FFFFFF" class="animated fadeInUp delay1" stroke-width="3" fill="#202124" x="1007.13833" y="423" width="702" height="411" rx="7"></rect>
         <g id="Group-2" transform="translate(195.000000, 240.000000)" fill="#FFFFFF">
                 <g class="animated fadeInUp">
             <polygon id="Fill-1" points="323 80 339 80 339 64 323 64"></polygon>
@@ -50,20 +50,14 @@
     </g>
         <style>
     .animated {
-      animation-duration: .6s;
+      animation-duration: .35s;
       animation-fill-mode: both;
-      -webkit-animation-duration: .6s;
+      -webkit-animation-duration: .35s;
       animation-timing-function: ease-in-out;
       -webkit-animation-fill-mode: both;
     }
     .delay1 {
-      animation-delay: .4s;
-    }
-    .delay2 {
-      animation-delay: .7s;
-    }
-    .delay3 {
-      animation-delay: 1s;
+      animation-delay: .2s;
     }
 
     @keyframes fadeInUp {

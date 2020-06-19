@@ -9,31 +9,22 @@
             <tspan x="200" y="342">Mine Earn Automate</tspan>
         </text>
         <rect id="Rectangle" class="animated fadeInUp delay1" stroke="#FFFFFF" stroke-width="3" fill="#202124" x="1103" y="158" width="702" height="411" rx="7"></rect>
-        <rect id="Rectangle" class="animated fadeInUp delay2" stroke="#FFFFFF" stroke-width="3" fill="#202124" x="834" y="328" width="702" height="411" rx="7"></rect>
-        <rect id="Rectangle" class="animated fadeInUp delay3" stroke="#FFFFFF" stroke-width="3" fill="#202124" x="1357" y="419" width="209" height="423" rx="22"></rect>
-        <rect id="Rectangle" class="animated fadeInUp delay4" stroke="#FFFFFF" stroke-width="3" fill="#202124" x="1596" y="419" width="209" height="423" rx="22"></rect>
-        <ellipse id="Home" class="animated fadeInUp delay3" stroke="#FFFFFF" stroke-width="3" cx="1461.5" cy="813" rx="15" ry="13.5"></ellipse>
-        <ellipse id="Home" class="animated fadeInUp delay4" stroke="#FFFFFF" stroke-width="3" cx="1700.5" cy="813" rx="15" ry="13.5"></ellipse>
+        <rect id="Rectangle" class="animated fadeInUp delay1" stroke="#FFFFFF" stroke-width="3" fill="#202124" x="834" y="328" width="702" height="411" rx="7"></rect>
+        <rect id="Rectangle" class="animated fadeInUp delay1" stroke="#FFFFFF" stroke-width="3" fill="#202124" x="1357" y="419" width="209" height="423" rx="22"></rect>
+        <rect id="Rectangle" class="animated fadeInUp delay1" stroke="#FFFFFF" stroke-width="3" fill="#202124" x="1596" y="419" width="209" height="423" rx="22"></rect>
+        <ellipse id="Home" class="animated fadeInUp delay1" stroke="#FFFFFF" stroke-width="3" cx="1461.5" cy="813" rx="15" ry="13.5"></ellipse>
+        <ellipse id="Home" class="animated fadeInUp delay1" stroke="#FFFFFF" stroke-width="3" cx="1700.5" cy="813" rx="15" ry="13.5"></ellipse>
     </g>
         <style>
-    .animated {
-      animation-duration: .6s;
+        .animated {
+      animation-duration: .35s;
       animation-fill-mode: both;
-      -webkit-animation-duration: .6s;
+      -webkit-animation-duration: .35s;
       animation-timing-function: ease-in-out;
       -webkit-animation-fill-mode: both;
     }
     .delay1 {
-      animation-delay: .4s;
-    }
-    .delay2 {
-      animation-delay: .7s;
-    }
-    .delay3 {
-      animation-delay: 1s;
-    }
-    .delay4 {
-      animation-delay: 1.3s;
+      animation-delay: .2s;
     }
 
     @keyframes fadeInUp {
@@ -60,6 +51,5 @@
         animation-name: fadeInUp;
         -webkit-animation-name: fadeInUp;
     }
-    
     </style>
 </svg>

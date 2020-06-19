@@ -3,9 +3,9 @@
     <title>wire_workday</title>
     <g id="wire_workday" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <rect id="Rectangle" class="animated fadeInUp delay1" stroke="#FFFFFF" stroke-width="3" fill="#202124" x="1103" y="158" width="702" height="411" rx="7"></rect>
-        <rect id="Rectangle" class="animated fadeInUp delay2" stroke="#FFFFFF" stroke-width="3" fill="#202124" x="834" y="328" width="702" height="411" rx="7"></rect>
-        <rect id="Rectangle" class="animated fadeInUp delay3" stroke="#FFFFFF" stroke-width="3" fill="#202124" x="1357" y="419" width="209" height="423" rx="22"></rect>
-        <rect id="Rectangle" class="animated fadeInUp delay4" stroke="#FFFFFF" stroke-width="3" fill="#202124" x="1596" y="419" width="209" height="423" rx="22"></rect>
+        <rect id="Rectangle" class="animated fadeInUp delay1" stroke="#FFFFFF" stroke-width="3" fill="#202124" x="834" y="328" width="702" height="411" rx="7"></rect>
+        <rect id="Rectangle" class="animated fadeInUp delay1" stroke="#FFFFFF" stroke-width="3" fill="#202124" x="1357" y="419" width="209" height="423" rx="22"></rect>
+        <rect id="Rectangle" class="animated fadeInUp delay1" stroke="#FFFFFF" stroke-width="3" fill="#202124" x="1596" y="419" width="209" height="423" rx="22"></rect>
         <g id="Group" transform="translate(195.000000, 238.371684)" fill="#FFFFFF" fill-rule="nonzero">
         <g class="animated fadeInUp">
             <path d="M204.455932,78.559271 C218.776006,79.0535514 233.189779,76.8937348 246.696184,72.0878518 C267.015056,64.9354419 285.174824,51.8279772 298.462597,34.8493856 C304.307631,27.4006484 309.203653,19.2131005 313.040545,10.5505456 C313.72087,9.10906176 314.245029,7.48889818 313.880641,5.88278806 C313.434565,3.1865307 311.077651,0.957651377 308.36676,0.688226405 C305.551357,0.275456104 302.641854,2.03695738 301.637983,4.69707726 C294.007845,22.7015717 280.985957,38.3406675 264.742232,49.1662512 C254.700321,55.8950495 243.43831,60.79489 231.672561,63.5381261 C216.499978,67.0968646 200.52534,67.0968646 185.349554,63.5489673 C163.681244,58.5455328 143.841283,46.0825198 129.848359,28.7650389 C123.915231,21.4684807 119.016406,13.3347375 115.323267,4.68141769 C114.524014,2.67056782 112.687656,1.09417074 110.54497,0.741228039 C108.478767,0.341306619 106.229568,1.05682868 104.788831,2.59989897 C103.090219,4.30639098 102.534827,7.03396749 103.410561,9.27368805 C113.574602,33.3701582 132.394674,53.6127671 155.533353,65.6618052 C170.604227,73.571496 187.463008,77.9834805 204.455932,78.559271 L204.455932,78.559271" id="path14" transform="translate(208.500000, 39.628316) scale(-1, 1) rotate(-180.000000) translate(-208.500000, -39.628316) "></path>
@@ -20,28 +20,19 @@
             <path d="M392.828919,137.508671 C392.824003,136.843609 392.820726,136.178547 392.828919,135.508853 C393.432277,135.544448 394.05284,135.508853 394.648007,135.668179 C395.207946,135.89244 395.152239,136.580664 395.000273,137.041579 C394.421081,137.589086 393.560076,137.446785 392.828919,137.508671 Z M391.008192,138.591331 C392.749044,138.495434 394.700847,138.970247 396.268842,138.031431 C397.532906,137.114274 396.920126,135.119089 395.493037,134.693769 C395.904287,133.642071 396.476925,132.664572 397,131.662367 C396.340934,131.649974 395.692927,131.639165 395.044921,131.628316 C394.576324,132.556322 394.116739,133.495137 393.669033,134.430864 C393.383943,134.438585 393.104178,134.441673 392.828919,134.446306 C392.824003,133.510579 392.824003,132.574892 392.824003,131.639165 C392.207946,131.646886 391.604997,131.654606 391,131.659279 C391.004915,133.971494 390.996723,136.283709 391.008192,138.591331 L391.008192,138.591331" id="path32" transform="translate(394.000000, 135.128316) scale(-1, 1) rotate(-180.000000) translate(-394.000000, -135.128316) "></path>
         </g>
         </g>
-        <ellipse id="Home" class="animated fadeInUp delay3" stroke="#FFFFFF" stroke-width="3" cx="1461.5" cy="813" rx="15" ry="13.5"></ellipse>
-        <ellipse id="Home" class="animated fadeInUp delay4" stroke="#FFFFFF" stroke-width="3" cx="1700.5" cy="813" rx="15" ry="13.5"></ellipse>
+        <ellipse id="Home" class="animated fadeInUp delay1" stroke="#FFFFFF" stroke-width="3" cx="1461.5" cy="813" rx="15" ry="13.5"></ellipse>
+        <ellipse id="Home" class="animated fadeInUp delay1" stroke="#FFFFFF" stroke-width="3" cx="1700.5" cy="813" rx="15" ry="13.5"></ellipse>
     </g>
         <style>
-    .animated {
-      animation-duration: .6s;
+     .animated {
+      animation-duration: .35s;
       animation-fill-mode: both;
-      -webkit-animation-duration: .6s;
+      -webkit-animation-duration: .35s;
       animation-timing-function: ease-in-out;
       -webkit-animation-fill-mode: both;
     }
     .delay1 {
-      animation-delay: .4s;
-    }
-    .delay2 {
-      animation-delay: .7s;
-    }
-    .delay3 {
-      animation-delay: 1s;
-    }
-    .delay4 {
-      animation-delay: 1.3s;
+      animation-delay: .2s;
     }
 
     @keyframes fadeInUp {
