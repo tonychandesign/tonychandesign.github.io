@@ -1981,35 +1981,35 @@ function designerDev() {
   })();
 }
 let asgs = new Image();
-asgs.src = "./physicsEngine/asgs.svg";
+// asgs.src = "./physicsEngine/asgs.svg";
 let birch = new Image();
-birch.src = "./physicsEngine/birch.svg";
+// birch.src = "./physicsEngine/birch.svg";
 let d4sd = new Image();
-d4sd.src = "./physicsEngine/d4sd.svg";
+// d4sd.src = "./physicsEngine/d4sd.svg";
 let eqr = new Image();
-eqr.src = "./physicsEngine/eqr.svg";
+// eqr.src = "./physicsEngine/eqr.svg";
 let intuit = new Image();
-intuit.src = "./physicsEngine/intuit.svg";
+// intuit.src = "./physicsEngine/intuit.svg";
 let ucsd = new Image();
-ucsd.src = "./physicsEngine/ucsd.svg";
+// ucsd.src = "./physicsEngine/ucsd.svg";
 let workday = new Image();
-workday.src = "./physicsEngine/workday.svg";
+// workday.src = "./physicsEngine/workday.svg";
 let controlsImg = new Image();
-controlsImg.src = "./physicsEngine/controls.svg";
+// controlsImg.src = "./physicsEngine/controls.svg";
 let volleyball = new Image();
-volleyball.src = "./physicsEngine/volleyball.svg";
+// volleyball.src = "./physicsEngine/volleyball.svg";
 let plane = new Image();
-plane.src = "./physicsEngine/plane.svg";
+// plane.src = "./physicsEngine/plane.svg";
 let js = new Image();
-js.src = "./physicsEngine/js.svg";
+// js.src = "./physicsEngine/js.svg";
 let switchConsole = new Image();
-switchConsole.src = "./physicsEngine/game.svg";
+// switchConsole.src = "./physicsEngine/game.svg";
 let skateboard = new Image();
-skateboard.src = "./physicsEngine/skateboard.svg";
+// skateboard.src = "./physicsEngine/skateboard.svg";
 let beach = new Image();
-beach.src = "./physicsEngine/beach.svg";
+// beach.src = "./physicsEngine/beach.svg";
 let music = new Image();
-music.src = "./physicsEngine/music.svg";
+// music.src = "./physicsEngine/music.svg";
 var moveCycleSVG = -1;
 // loops
 function drawSVGs() {
@@ -2148,6 +2148,23 @@ function runPlatformer(el) {
   $("#navbar").css("top", "-140px");
   el.onclick = null;
   el.style.display = "none";
+
+  asgs.src = "./physicsEngine/asgs.svg";
+  birch.src = "./physicsEngine/birch.svg";
+  d4sd.src = "./physicsEngine/d4sd.svg";
+  eqr.src = "./physicsEngine/eqr.svg";
+  intuit.src = "./physicsEngine/intuit.svg";
+  ucsd.src = "./physicsEngine/ucsd.svg";
+  workday.src = "./physicsEngine/workday.svg";
+  controlsImg.src = "./physicsEngine/controls.svg";
+  volleyball.src = "./physicsEngine/volleyball.svg";
+  plane.src = "./physicsEngine/plane.svg";
+  js.src = "./physicsEngine/js.svg";
+  switchConsole.src = "./physicsEngine/game.svg";
+  skateboard.src = "./physicsEngine/skateboard.svg";
+  beach.src = "./physicsEngine/beach.svg";
+  music.src = "./physicsEngine/music.svg";
+
   Engine.run(engine);
   document.getElementById("canvas").classList.toggle("fade");
   console.clear(); // convex vertice warnings
