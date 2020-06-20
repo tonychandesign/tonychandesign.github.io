@@ -131,7 +131,7 @@ const character = function () {
   this.crouch = false;
   this.isHeadClear = true;
   this.spawnPos = {
-    x: -1600,
+    x: -1480,
     y: 0,
   };
   this.spawnVel = {
@@ -2013,7 +2013,7 @@ function drawSVGs() {
   ctx.drawImage(workday, px, 300);
   ctx.drawImage(eqr, 1400, -3395);
   ctx.drawImage(d4sd, -1850, -3980);
-  ctx.drawImage(controlsImg, -1920, -200, 824.2, 390);
+  ctx.drawImage(controlsImg, -1940, -60, 850, 453);
   ctx.drawImage(volleyball, -2080, -1010);
   ctx.drawImage(plane, -1000, 893);
   ctx.drawImage(js, 1883, 883);

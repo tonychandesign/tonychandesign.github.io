@@ -1,52 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="634px" height="300px" viewBox="0 0 634 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+<svg width="634px" height="338px" viewBox="0 0 634 338" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>controls</title>
-    <desc>Created with Sketch.</desc>
     <g id="controls" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <rect id="Rectangle" stroke="#FFFFFF" x="46" y="155" width="64" height="64" rx="4"></rect>
-        <rect id="Rectangle" stroke="#FFFFFF" x="122" y="155" width="64" height="64" rx="4"></rect>
-        <rect id="Rectangle" stroke="#FFFFFF" x="197" y="155" width="64" height="64" rx="4"></rect>
-        <rect id="Rectangle" stroke="#FFFFFF" x="122" y="80" width="64" height="64" rx="4"></rect>
+        <rect id="Rectangle" stroke="#FFFFFF" x="46" y="143" width="64" height="64" rx="4"></rect>
+        <rect id="Rectangle" stroke="#FFFFFF" x="122" y="143" width="64" height="64" rx="4"></rect>
+        <rect id="Rectangle" stroke="#FFFFFF" x="197" y="143" width="64" height="64" rx="4"></rect>
+        <rect id="Rectangle" stroke="#FFFFFF" x="122" y="68" width="64" height="64" rx="4"></rect>
         <text id="W" font-family="AvenirNext-Regular, Avenir Next" font-size="20" font-weight="normal" fill="#FFFFFF">
-            <tspan x="143.78" y="118">W</tspan>
+            <tspan x="143.78" y="106">W</tspan>
         </text>
         <text id="A" font-family="AvenirNext-Regular, Avenir Next" font-size="20" font-weight="normal" fill="#FFFFFF">
-            <tspan x="70.5" y="193">A</tspan>
+            <tspan x="70.5" y="181">A</tspan>
         </text>
         <text id="S" font-family="AvenirNext-Regular, Avenir Next" font-size="20" font-weight="normal" fill="#FFFFFF">
-            <tspan x="148.36" y="193">S</tspan>
+            <tspan x="148.36" y="181">S</tspan>
         </text>
         <text id="D" font-family="AvenirNext-Regular, Avenir Next" font-size="20" font-weight="normal" fill="#FFFFFF">
-            <tspan x="221.43" y="193">D</tspan>
+            <tspan x="221.43" y="181">D</tspan>
         </text>
         <text id="O" font-family="AvenirNext-Regular, Avenir Next" font-size="20" font-weight="normal" fill="#FFFFFF">
-            <tspan x="459.5" y="118">O</tspan>
+            <tspan x="459.5" y="106">O</tspan>
         </text>
         <text id="P" font-family="AvenirNext-Regular, Avenir Next" font-size="20" font-weight="normal" fill="#FFFFFF">
-            <tspan x="537.2" y="118">P</tspan>
+            <tspan x="537.2" y="106">P</tspan>
         </text>
         <text id="L" font-family="AvenirNext-Regular, Avenir Next" font-size="20" font-weight="normal" fill="#FFFFFF">
-            <tspan x="500.4" y="193">L</tspan>
+            <tspan x="500.4" y="181">L</tspan>
         </text>
-        <text id="Move" font-family="AvenirNext-Regular, Avenir Next" font-size="12" font-weight="normal" fill="#FFFFFF">
-            <tspan x="160" y="255">Move</tspan>
+        <text id="Move" font-family="AvenirNext-Regular, Avenir Next" font-size="16" font-weight="normal" fill="#FFFFFF">
+            <tspan x="160" y="248">Move</tspan>
         </text>
-        <path d="M154,228 L154,264 C183.333333,264 198,264 198,264" id="Line-5" stroke="#979797" stroke-linecap="square"></path>
-        <rect id="Rectangle" stroke="#FFFFFF" x="474" y="155" width="64" height="64" rx="4"></rect>
-        <rect id="Rectangle" stroke="#FFFFFF" x="436" y="80" width="64" height="64" rx="4"></rect>
-        <rect id="Rectangle" stroke="#FFFFFF" x="511" y="80" width="64" height="64" rx="4"></rect>
-        <text id="Restart" font-family="AvenirNext-Regular, Avenir Next" font-size="12" font-weight="normal" fill="#FFFFFF">
-            <tspan x="511" y="255">Restart</tspan>
+        <path d="M154,216 L154,252 C188,252 205,252 205,252" id="Line-5" stroke="#979797" stroke-linecap="square"></path>
+        <rect id="Rectangle" stroke="#FFFFFF" x="474" y="143" width="64" height="64" rx="4"></rect>
+        <rect id="Rectangle" stroke="#FFFFFF" x="436" y="68" width="64" height="64" rx="4"></rect>
+        <rect id="Rectangle" stroke="#FFFFFF" x="511" y="68" width="64" height="64" rx="4"></rect>
+        <text id="Restart" font-family="AvenirNext-Regular, Avenir Next" font-size="16" font-weight="normal" fill="#FFFFFF">
+            <tspan x="511" y="248">Restart</tspan>
         </text>
-        <path d="M506,228 L506,264 C540,264 557,264 557,264" id="Line-5" stroke="#979797" stroke-linecap="square"></path>
-        <text id="Dash" font-family="AvenirNext-Regular, Avenir Next" font-size="12" font-weight="normal" fill="#FFFFFF">
-            <tspan x="435.184" y="50">Dash</tspan>
+        <path d="M506,216 L506,252 C546,252 566,252 566,252" id="Line-5" stroke="#979797" stroke-linecap="square"></path>
+        <text id="Dash" font-family="AvenirNext-Regular, Avenir Next" font-size="16" font-weight="normal" fill="#FFFFFF">
+            <tspan x="425.912" y="41">Dash</tspan>
         </text>
-        <text id="Punch" font-family="AvenirNext-Regular, Avenir Next" font-size="12" font-weight="normal" fill="#FFFFFF">
-            <tspan x="548" y="50">Punch</tspan>
+        <text id="Punch" font-family="AvenirNext-Regular, Avenir Next" font-size="16" font-weight="normal" fill="#FFFFFF">
+            <tspan x="548" y="41">Punch</tspan>
         </text>
-        <polyline id="Line-6" stroke="#979797" stroke-linecap="square" points="468 72 468 36 428 36"></polyline>
-        <polyline id="Line-6" stroke="#979797" stroke-linecap="square" transform="translate(566.000000, 54.000000) scale(-1, 1) translate(-566.000000, -54.000000) " points="589 72 589 36 543 36"></polyline>
+        <polyline id="Line-6" stroke="#979797" stroke-linecap="square" points="468 60 468 24 423 24"></polyline>
+        <polyline id="Line-6" stroke="#979797" stroke-linecap="square" transform="translate(570.000000, 42.000000) scale(-1, 1) translate(-570.000000, -42.000000) " points="597 60 597 24 543 24"></polyline>
+        <text id="Scroll-down-for-a-cl" font-family="AvenirNextforINTUIT-Regular, AvenirNext forINTUIT" font-size="24" font-weight="normal" letter-spacing="-0.0527778" fill="#FFFFFF">
+            <tspan x="152.108445" y="331">Scroll down for a classic layout</tspan>
+        </text>
     </g>
 </svg>
