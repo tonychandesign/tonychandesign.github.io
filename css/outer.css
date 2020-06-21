@@ -93,6 +93,7 @@ p {
 }
 #navbar {
   position: fixed;
+  will-change: transform;
   padding-top: 20px;
   padding-bottom: 20px;
   box-shadow: rgba(0, 0, 0, 0.2) 0 0 10px;
@@ -355,8 +356,6 @@ a:hover {
   color: inherit !important;
 }
 .modal-dialogtwo {
-  width: auto;
-  height: auto;
   border-radius: 4px;
 }
 .row-centerer {
