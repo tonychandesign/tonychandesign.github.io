@@ -1,3 +1,4 @@
+// special side nav for asgs because of all the long images
 $(window).scroll(function () {
   if (detectmob()) {
     return;
@@ -18,17 +19,13 @@ $(window).scroll(function () {
     var element_height = $(element).outerHeight();
     var element_top_position = $(element).offset().top + 500;
     var element_bottom_position = element_top_position + element_height - 600;
-    //edge case for long images outside of current viewport
-    if (Math.abs(element_top_position - window_top_position) > 1500) {
+    if (
+      element_bottom_position >= window_top_position &&
+      element_top_position <= window_bottom_position
+    ) {
+      $("#bar-fixed").addClass("in-view");
     } else {
-      if (
-        element_bottom_position >= window_top_position &&
-        element_top_position <= window_bottom_position
-      ) {
-        $("#bar-fixed").addClass("in-view");
-      } else {
-        $("#bar-fixed").removeClass("in-view");
-      }
+      $("#bar-fixed").removeClass("in-view");
     }
   });
   // side nav becomes fixed at start
