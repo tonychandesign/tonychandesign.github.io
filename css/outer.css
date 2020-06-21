@@ -37,6 +37,7 @@ body {
   padding-top: 130px;
   opacity: 1;
   transition: 0.2s opacity;
+  background-color: #202124;
 }
 
 h1,
@@ -560,6 +561,12 @@ a.btn-social {
 }
 .img-fluid {
   border-radius: 4px;
+}
+.embed-responsive-4by3::before {
+  padding-top: 71%;
+}
+.embed-responsive-item {
+  outline: none;
 }
 .text_small {
   max-width: 40%;
