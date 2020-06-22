@@ -85,15 +85,27 @@
       </nav>
       <div class="white_bg fadeIn animatedDelay"></div>
       <div style="height: 100vh;">
-        <img
-          class="img-fluid wire-proj-hero fadeIn animated"
-          src="img/wire_covers/workday.svg"
-        />
-        <img
-          id="darkWire"
-          class="img-fluid wire-proj-hero fadeOut animated"
-          src="img/wire_covers/wire_workday.svg"
-        />
+        <picture id="darkWire">
+          <source
+            srcset="img/wire_covers/wire_workday.svg"
+            media="(min-width: 500px)"
+          />
+          <img
+            class="img-fluid wire-proj-hero fadeOut animated"
+            style="z-index: 1;"
+            src="img/wire_covers/wire_workday_mobile.svg"
+          />
+        </picture>
+        <picture>
+          <source
+            srcset="img/wire_covers/workday.svg"
+            media="(min-width: 500px)"
+          />
+          <img
+            class="img-fluid wire-proj-hero fadeIn animated"
+            src="img/wire_covers/workday_mobile.svg"
+          />
+        </picture>
       </div>
 
       <div class="row theprocessWrap">

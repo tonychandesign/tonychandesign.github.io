@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="2000px" height="1000px" viewBox="0 0 2000 1000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>wire_nanome</title>
-    <g id="wire_nanome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <rect id="Rectangle" class="animated fadeInUp delay1" stroke="#FFFFFF" stroke-width="3" fill="#202124" x="1102.13833" y="166" width="702" height="411" rx="7"></rect>
-        <rect id="Rectangle" class="animated fadeInUp delay1" stroke="#FFFFFF" stroke-width="3" fill="#202124" x="751.138333" y="288" width="702" height="411" rx="7"></rect>
-        <rect id="Rectangle" class="animated fadeInUp delay1" stroke="#FFFFFF" stroke-width="3" fill="#202124" x="1007.13833" y="423" width="702" height="411" rx="7"></rect>
+    <g id="wire_nanome" class="animated fadeInUp" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" stroke="#FFFFFF" stroke-width="3" fill="#202124" x="1102.13833" y="166" width="702" height="411" rx="7"></rect>
+        <rect id="Rectangle" stroke="#FFFFFF" stroke-width="3" fill="#202124" x="751.138333" y="288" width="702" height="411" rx="7"></rect>
+        <rect id="Rectangle" stroke="#FFFFFF" stroke-width="3" fill="#202124" x="1007.13833" y="423" width="702" height="411" rx="7"></rect>
         <g id="Group" transform="translate(195.000000, 263.000000)" fill="#FFFFFF" fill-rule="nonzero">
-                <g class="animated fadeInUp">
             <polygon id="Path" points="162.093502 11 162.093502 51.0759313 135.006974 11 126 11 126 64 133.980569 64 133.980569 23.2680139 161.581357 64 170 64 170 11"></polygon>
             <path d="M177,55.1329114 C177,48.4092827 181.58148,45.0464135 190.100879,43 C195.683911,41.6139241 201.198655,40.7362869 201.198655,37.521097 C201.198655,34.964135 199.263839,33.2109705 194.111226,33.2109705 C188.027419,33.2109705 185.5194,35.9852321 185.5194,39.7848101 L185.5194,40.0063291 L178.361614,40.0063291 L178.361614,39.8607595 C178.361614,31.6751055 184.017072,27 193.82359,27 C203.489395,27 209,31.3839662 209,38.9852321 L209,64.2700422 L201.627005,64.2700422 L201.627005,59.521097 C198.692706,62.6624473 194.539576,65 189.026901,65 C181.082773,65 177.002069,60.7616034 177.002069,55.1371308 L177,55.1329114 Z M201.699431,50.164557 L201.699431,45.6329114 C200.768236,46.7299578 196.687532,47.9704641 192.464046,48.9219409 C186.951371,50.164557 184.375065,51.5527426 184.375065,54.5485232 C184.375065,57.0316456 186.380238,58.4936709 189.45939,58.4936709 C195.040352,58.4936709 199.696327,54.4746835 201.699431,50.164557 L201.699431,50.164557 Z" id="Shape"></path>
             <path d="M218,27.7246689 L225.782468,27.7246689 L225.782468,32.4392053 C228.281094,29.1027963 232.244505,27 237.093157,27 C246.344655,27 252,32.948149 252,42.8149553 L252,64 L244.068931,64 L244.068931,43.4684139 C244.068931,37.5202649 241.056568,33.7482169 235.182567,33.7482169 C229.894481,33.7482169 225.856768,37.6647798 225.856768,44.0464735 L225.856768,63.9979056 L218,63.9979056 L218,27.7246689 L218,27.7246689 Z" id="Path"></path>
@@ -16,35 +15,26 @@
             <path d="M42.0010401,15 C18.8037346,15 0,33.8042824 0,57.0005936 C0,59.3856689 0.210109215,61.7229595 0.59080215,64 L33.2638253,64 C31.7264915,62.0803053 30.7986825,59.649523 30.7986825,57.0005936 C30.7986825,50.8156031 35.8142599,45.8002968 41.9989599,45.8002968 C48.1836598,45.8002968 53.1992372,50.8156031 53.1992372,57.0005936 C53.1992372,59.649523 52.2735085,62.0803053 50.7340945,64 L83.4091979,64 C83.7919711,61.7229595 84,59.3856689 84,57.0005936 C84,33.8042824 65.1941851,15 41.9989599,15 L42.0010401,15 Z" id="Path"></path>
             <path d="M94.7775727,18.7785095 C90.481003,23.0738302 83.5161879,23.0738302 79.2216612,18.7785095 C74.9271345,14.4831888 74.9250915,7.5168112 79.2216612,3.22149052 C83.5182309,-1.07383017 90.483046,-1.07383017 94.7775727,3.22149052 C99.0741424,7.51885174 99.0741424,14.4831888 94.7775727,18.7785095 Z" id="Path"></path>
         </g>
-        </g>
     </g>
-        <style>
-      .animated {
+    <style>        .animated {
       animation-duration: .35s;
       animation-fill-mode: both;
       -webkit-animation-duration: .35s;
       animation-timing-function: ease-in-out;
       -webkit-animation-fill-mode: both;
     }
-    .delay1 {
-      animation-delay: .2s;
-    }
-
     @keyframes fadeInUp {
         from {
             transform: translateY(20px);
         }
-
         to {
             transform: translateY(0px);
             opacity: 1;
         }
     }
-
     @-webkit-keyframes fadeInUp {
         from {
         }
-
         to {
             opacity: 1;
         }
@@ -53,7 +43,5 @@
         opacity: 0;
         animation-name: fadeInUp;
         -webkit-animation-name: fadeInUp;
-    }
-    
-    </style>
+    }</style>
 </svg>

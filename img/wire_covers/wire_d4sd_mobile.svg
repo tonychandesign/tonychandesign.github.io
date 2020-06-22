@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1409px" height="1625px" viewBox="0 0 1409 1625" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>wire_d4sd_mobile</title>
+    <g id="wire_d4sd_mobile" class="animated fadeInUp" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <text id="M.E.A" font-family="AvenirNext-Bold, Avenir Next" font-size="200" font-weight="bold" letter-spacing="10.527778" fill="#FFFFFF">
+            <tspan x="389.080555" y="316">M.E.A</tspan>
+        </text>
+        <text id="Mine-Earn-Automate" font-family="AvenirNext-Medium, Avenir Next" font-size="79" font-weight="400" letter-spacing="-0.521180839" fill="#FFFFFF">
+            <tspan x="332" y="409">Mine Earn Automate</tspan>
+        </text>
+        <rect id="Rectangle" stroke="#FFFFFF" stroke-width="3" fill="#202124" x="441" y="706" width="857" height="502" rx="7"></rect>
+        <rect id="Rectangle" stroke="#FFFFFF" stroke-width="3" fill="#202124" x="113" y="914" width="857" height="501" rx="7"></rect>
+        <rect id="Rectangle" stroke="#FFFFFF" stroke-width="3" fill="#202124" x="751" y="1025" width="255" height="516" rx="22"></rect>
+        <rect id="Rectangle" stroke="#FFFFFF" stroke-width="3" fill="#202124" x="1043" y="1025" width="255" height="516" rx="22"></rect>
+        <ellipse id="Home" stroke="#FFFFFF" stroke-width="3" cx="879" cy="1505.5" rx="18.5" ry="17"></ellipse>
+        <ellipse id="Home" stroke="#FFFFFF" stroke-width="3" cx="1170.5" cy="1505.5" rx="19" ry="17"></ellipse>
+    </g>
+    <style>        .animated {
+      animation-duration: .35s;
+      animation-fill-mode: both;
+      -webkit-animation-duration: .35s;
+      animation-timing-function: ease-in-out;
+      -webkit-animation-fill-mode: both;
+    }
+    @keyframes fadeInUp {
+        from {
+            transform: translateY(20px);
+        }
+        to {
+            transform: translateY(0px);
+            opacity: 1;
+        }
+    }
+    @-webkit-keyframes fadeInUp {
+        from {
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    .fadeInUp {
+        opacity: 0;
+        animation-name: fadeInUp;
+        -webkit-animation-name: fadeInUp;
+    }</style>
+</svg>

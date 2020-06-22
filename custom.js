@@ -53,13 +53,7 @@ $(function () {
   window.onscroll = function () {
     var currentScrollPos = window.pageYOffset;
     // hide nav in index landing page for the game
-    if (
-      (window.location.href === "https://tonychandesign.github.io/" ||
-        window.location.href.includes("index.html")) &&
-      $(".navbar-nav .active ").attr("class").includes("navPortfolio") &&
-      window.pageYOffset == 0 &&
-      $(".introWrap").css("display") === "none"
-    ) {
+    if ($(".introWrap").css("display") === "none") {
       setTimeout(function () {
         // edge case starting at Portfolio -> click resume/aboutme, it scrolls up and still dissappears
         if (
@@ -86,9 +80,10 @@ $(function () {
   };
 
   // remove slide nav animation so that the scroll auto hide nav works
+  // for darkmode to light shifts
   setTimeout(() => {
     $("#navbar").removeClass("slideNavIn animated");
-  }, 1450);
+  }, 1000);
 
   // Carousel JS scrolling implemented onto click action move-slide
   $(".move-slide").on("click touchend", function (e) {
