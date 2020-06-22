@@ -53,7 +53,11 @@ $(function () {
   window.onscroll = function () {
     var currentScrollPos = window.pageYOffset;
     // hide nav in index landing page for the game
-    if ($(".introWrap").css("display") === "none") {
+    if (
+      $(".introWrap") &&
+      window.pageYOffset == 0 &&
+      $(".introWrap").css("display") === "none"
+    ) {
       setTimeout(function () {
         // edge case starting at Portfolio -> click resume/aboutme, it scrolls up and still dissappears
         if (
