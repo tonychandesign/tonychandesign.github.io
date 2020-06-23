@@ -744,7 +744,14 @@
 
     <!-- JavaScript -->
     <script>
-      localStorage.setItem("darkMode", true);
+      // localStorage.setItem("darkMode", true);
+      window.onpageshow = function (event) {
+        if (event.persisted) {
+          localStorage.setItem("darkMode", true);
+        } else {
+          localStorage.setItem("darkMode", true);
+        }
+      };
     </script>
     <script type="text/javascript" src="js/lazyload.js"></script>
     <script type="text/javascript" src="vendor/jquery/jquery.min.js "></script>
