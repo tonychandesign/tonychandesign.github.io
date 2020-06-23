@@ -1,4 +1,4 @@
-// target different element on hover
+// target different element on hover, not used
 $(function () {
   $("#hoverOn1, .box3").hover(
     function () {
