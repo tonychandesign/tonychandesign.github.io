@@ -230,6 +230,11 @@ h1 {
   -webkit-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
   -moz-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
 }
 .box2:hover {
   -webkit-transform: scale(1.02, 1.02);
