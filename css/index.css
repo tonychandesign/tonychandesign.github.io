@@ -491,6 +491,7 @@ a.btn-social {
 .sandBoxItems {
   margin: 0px 20px;
   cursor: pointer;
+  padding-bottom: 10px;
 }
 
 #sandbox_comingSoon {
@@ -562,6 +563,10 @@ a.btn-social {
   #sandbox_comingSoon {
     margin-top: 55%;
     font-size: 3em;
+  }
+  #menu {
+    margin-top: 10px;
+    margin-bottom: -5px;
   }
 }
 
