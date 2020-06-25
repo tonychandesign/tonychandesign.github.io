@@ -1594,7 +1594,7 @@ function playerTouchCaseStudy(onBody) {
 
       if (playerInstance.onBody === 68) {
         // ucsd
-        modalImg.src = "./img/darkMod/ucsd.svg";
+        modalImg.src = "./physicsEngine/ucsd.png";
         modalTitle.innerHTML = "UCSD";
         modalText.innerHTML =
           "I graduated cum laude in 2018, with a focus in human computer interaction and computer science.  I spent my final quarter studying cinematography & film directing in the Czech Republic.";
@@ -1986,7 +1986,7 @@ let d4sd = new Image();
 let eqr = new Image();
 let intuit = new Image();
 let ucsd = new Image();
-ucsd.src = "./physicsEngine/ucsd.svg"; // loading here because it's first image when game starts
+ucsd.src = "./physicsEngine/ucsd.png"; // loading here because it's first image when game starts
 let workday = new Image();
 let controlsImg = new Image();
 let volleyball = new Image();
@@ -2003,7 +2003,7 @@ function drawSVGs() {
   ctx.save();
   ctx.drawImage(asgs, -350, -1845);
   ctx.drawImage(birch, 350, -70);
-  ctx.drawImage(ucsd, -1900, -820);
+  ctx.drawImage(ucsd, -1875, -690, 350, 255);
   ctx.drawImage(intuit, -1800, -1395);
   // workday moving playform
   var px =
