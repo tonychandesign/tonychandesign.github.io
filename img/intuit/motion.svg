@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300px" height="300px" viewBox="0 0 300 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>motion</title>
+    <defs>
+        <linearGradient x1="50%" y1="69.9621094%" x2="29.741782%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#D6007D" offset="0%"></stop>
+            <stop stop-color="#F34A00" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="motion" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M175.42612,133.052283 C186.277135,123.192425 200.951225,109.857451 202.288663,78 L97,78 C98.3374373,109.857451 113.011528,123.192425 123.862543,133.052283 C131.141411,139.666407 135.259848,143.714655 135.259848,150 C135.259848,156.285345 131.141411,160.333593 123.862543,166.947717 C113.011528,176.807575 98.3374373,190.142549 97,222 L202.288663,222 C200.951225,190.142549 186.277135,176.807575 175.42612,166.947717 C168.147252,160.333593 164.028814,156.285345 164.028814,150 C164.028814,143.714655 168.147252,139.666407 175.42612,133.052283 Z" id="Path" fill="url(#linearGradient-1)" fill-rule="nonzero"></path>
+    </g>
+</svg>

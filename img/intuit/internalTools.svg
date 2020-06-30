@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300px" height="300px" viewBox="0 0 300 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>internalTools</title>
+    <defs>
+        <linearGradient x1="80.9584319%" y1="93.5962256%" x2="7.53036686%" y2="39.0526926%" id="linearGradient-1">
+            <stop stop-color="#10CCFF" offset="0%"></stop>
+            <stop stop-color="#365EBF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="internalTools" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(68.000000, 78.000000)" fill="url(#linearGradient-1)" fill-rule="nonzero">
+            <path d="M123.61013,0 L41.3168326,0 L0.170183679,72 L41.3168326,144 L123.61013,144 L164.756779,72 L123.61013,0 Z M82.6229961,113 C60.1467806,113 42,94.8369196 42,72.4541336 C42,50.0713477 60.2388962,32 82.7151117,32 C105.191327,32 123.338108,50.1630804 123.338108,72.4541336 C123.338108,72.5458664 123.338108,72.5458664 123.338108,72.5458664 C123.338108,94.9286523 105.099212,113 82.6229961,113 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>
