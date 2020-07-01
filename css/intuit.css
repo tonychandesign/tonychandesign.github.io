@@ -1,0 +1,43 @@
+.indexHeader {
+  max-width: 30%;
+  padding: 20px;
+}
+@media screen and (max-width: 991px) {
+  .indexHeader {
+    padding-top: 60px;
+    max-width: 50%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .indexHeader {
+    max-width: 100%;
+  }
+}
+.projectTypeWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 80%;
+  margin: auto;
+  padding-top: 1em;
+}
+.projectType {
+  max-width: 380px;
+  max-height: 500px;
+  padding-top: 3em;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
+}
+.projectTypeTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+.titlehoriz:hover + .sliding-middle-out:after {
+  width: 100%;
+  background: #000;
+}

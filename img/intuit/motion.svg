@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="300px" height="300px" viewBox="0 0 300 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="301px" height="199px" viewBox="0 0 301 199" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>motion</title>
-    <defs>
-        <linearGradient x1="50%" y1="69.9621094%" x2="29.741782%" y2="50%" id="linearGradient-1">
-            <stop stop-color="#D6007D" offset="0%"></stop>
-            <stop stop-color="#F34A00" offset="100%"></stop>
-        </linearGradient>
-    </defs>
-    <g id="motion" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <path d="M175.42612,133.052283 C186.277135,123.192425 200.951225,109.857451 202.288663,78 L97,78 C98.3374373,109.857451 113.011528,123.192425 123.862543,133.052283 C131.141411,139.666407 135.259848,143.714655 135.259848,150 C135.259848,156.285345 131.141411,160.333593 123.862543,166.947717 C113.011528,176.807575 98.3374373,190.142549 97,222 L202.288663,222 C200.951225,190.142549 186.277135,176.807575 175.42612,166.947717 C168.147252,160.333593 164.028814,156.285345 164.028814,150 C164.028814,143.714655 168.147252,139.666407 175.42612,133.052283 Z" id="Path" fill="url(#linearGradient-1)" fill-rule="nonzero"></path>
+    <g id="motion" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(0.000000, 0.000000)">
+        <rect fill="#F8F8F8" x="0" y="0" width="300" height="199"></rect>
+        <g id="Group" transform="translate(49.000000, 20.000000)" stroke="#393A3D" stroke-width="2">
+            <rect id="Rectangle" x="0" y="0" width="202" height="142" rx="4"></rect>
+            <path d="M144,114 C141.333333,98 135,90 125,90 C115,90 109.27133,97.9128682 107.813991,113.738604 C101.27133,77.9128682 91,60 77,60 C63,60 53.6666667,78 49,114 C38.3333333,53.3333333 22.1666667,22.8333333 0.5,22.5" id="Line" stroke-linecap="square" stroke-dasharray="3"></path>
+            <circle id="Oval" fill="#FFFFFF" cx="143" cy="109" r="6"></circle>
+        </g>
     </g>
 </svg>

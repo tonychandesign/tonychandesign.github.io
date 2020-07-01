@@ -158,7 +158,6 @@ p {
 .sliding-middle-out.active:after,
 .sliding-middle-out:hover:after {
   width: 100%;
-  padding-left: 10px;
   background: #fff;
 }
 .tony-middle-out {

@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="300px" height="300px" viewBox="0 0 300 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="301px" height="199px" viewBox="0 0 301 199" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>futureProto</title>
-    <defs>
-        <radialGradient cx="0%" cy="50%" fx="0%" fy="50%" r="154.861111%" gradientTransform="translate(0.000000,0.500000),scale(0.645740,1.000000),translate(-0.000000,-0.500000)" id="radialGradient-1">
-            <stop stop-color="#FE1D7E" offset="0%"></stop>
-            <stop stop-color="#002FCC" offset="100%"></stop>
-        </radialGradient>
-    </defs>
-    <g id="futureProto" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <path d="M149.600151,78 C210.224534,78 257.691878,142.844546 259.684075,145.605588 C261.573483,148.222334 261.573483,151.777666 259.684075,154.396618 C257.691878,157.155012 210.224534,222 149.600151,222 C88.9757684,222 41.5062465,157.155454 39.516227,154.394412 C37.6294324,151.775018 37.6294324,148.222334 39.516227,145.602941 C41.5062465,142.844546 88.9757684,78 149.600151,78 Z M149.601131,105 C125.064286,105 105.101131,125.18746 105.101131,150 C105.101131,174.81254 125.064286,195 149.601131,195 C174.137976,195 194.101131,174.81254 194.101131,150 C194.101131,125.18746 174.137976,105 149.601131,105 Z" id="Combined-Shape" fill="url(#radialGradient-1)" fill-rule="nonzero"></path>
+    <g id="futureProto" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(0.000000, 0.000000)">
+        <rect fill="#F8F8F8" x="0" y="0" width="300" height="199"></rect>
+        <g id="Group" transform="translate(40.000000, 20.000000)" fill="#F7F7F7" stroke="#393A3D" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+            <polygon id="Path" points="109.842012 142 7.10542736e-14 103.279468 109.842012 64 219.12069 103.279468"></polygon>
+            <polygon id="Path" points="109.842012 111 7.10542736e-14 71.2866341 109.842012 31 219.12069 71.2866341"></polygon>
+            <polygon id="Path" points="109.842012 78 7.10542736e-14 39.2794683 109.842012 0 219.12069 39.2794683"></polygon>
+        </g>
     </g>
 </svg>

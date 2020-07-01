@@ -228,7 +228,6 @@ p {
 .sliding-middle-out.active:after,
 .sliding-middle-out:hover:after {
   width: 100%;
-  padding-left: 10px;
   background: #000;
 }
 .active {
