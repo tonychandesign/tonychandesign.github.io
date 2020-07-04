@@ -102,8 +102,10 @@
   font-size: 1.1em !important;
 }
 .projectVideo {
-  margin: 10px 0px;
+  margin: 10px 0;
   position: relative;
+  width: 100%;
+  text-align: center;
 }
 
 .embed-responsive-item {
