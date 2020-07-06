@@ -27,7 +27,7 @@
   justify-content: space-around;
   max-width: 65%;
   margin: auto;
-  padding-top: 1em;
+  margin-top: -1em;
 }
 .projectType {
   max-width: 380px;
@@ -82,7 +82,7 @@
   border-width: 2px;
   color: #6b6c72;
   padding: 5px 20px;
-  margin: 10px 10px 10px 0px;
+  margin: 10px 10px 0px 0px;
   text-align: center;
   display: inline-block;
   text-decoration: none;
@@ -102,16 +102,25 @@
   font-size: 1.1em !important;
 }
 .projectVideo {
-  margin: 10px 0;
   position: relative;
   width: 100%;
   text-align: center;
+  border-radius: 6px 6px 0px 0px;
+  background: white;
+}
+.tagsAndVideoWrapper {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 6px;
+  background: #f7f7f7;
+  box-shadow: 0 6px 11px rgba(0, 0, 0, 0.17);
+  width: 100%;
 }
 
 .embed-responsive-item {
   /* overflow: hidden; */
   margin-bottom: -6px;
-  border-radius: 7px;
+  border-radius: 6px 6px 0px 0px;
   clip-path: inset(1px 1px);
 }
 .smallVideo {
@@ -127,4 +136,10 @@
   width: 100%;
   display: flex;
   padding-top: 10px;
+}
+
+@media screen and (max-width: 500px) {
+  .projectTag {
+    font-size: 11px;
+  }
 }
