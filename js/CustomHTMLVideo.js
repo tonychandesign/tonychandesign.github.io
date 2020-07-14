@@ -10,6 +10,7 @@ $(".player").each(function () {
   var textCurrent = player.querySelector(".time-current");
   var fullscreenBtn = player.querySelector(".fullscreen");
   var controls = player.querySelector(".controls");
+  var videoWrapper = player.querySelector(".videoWrapper");
 
   //GLOBAL VARS
   let lastVolume = 1;
@@ -21,7 +22,9 @@ $(".player").each(function () {
   function togglePlay() {
     controls.style.bottom = "-80px";
     if (video.paused) {
-      video.play();
+      try {
+        video.play();
+      } catch (e) {}
     } else {
       video.pause();
     }
@@ -43,6 +46,7 @@ $(".player").each(function () {
     }
   }
   function changeVolume(e) {
+    if (!volumeSlider) return;
     if (e.type === "mousemove" && !isMouseDown) return;
 
     if (e.which === 1) {
@@ -171,19 +175,20 @@ $(".player").each(function () {
   //EVENT LISTENERS
   video.addEventListener("loadeddata", setVideoData, false);
   playBtn.addEventListener("click", togglePlay);
-  video.addEventListener("click", togglePlay);
+  // video.addEventListener("click", togglePlay);
+  videoWrapper.addEventListener("click", togglePlay);
   video.addEventListener("play", togglePlayBtn);
   video.addEventListener("pause", togglePlayBtn);
   video.addEventListener("ended", togglePlayBtn);
   video.addEventListener("timeupdate", updateProgress);
   video.addEventListener("canplay", updateProgress);
-  volumeBtn.addEventListener("click", toggleMute);
+  volumeBtn && volumeBtn.addEventListener("click", toggleMute);
   window.addEventListener("mousedown", () => (isMouseDown = true));
   window.addEventListener("mouseup", () => (isMouseDown = false));
   // volumeSlider.addEventListener('mouseover', changeVolume);
 
-  volumeSlider.addEventListener("mousemove", changeVolume);
-  volumeSlider.addEventListener("change", changeVolume);
+  volumeSlider && volumeSlider.addEventListener("mousemove", changeVolume);
+  volumeSlider && volumeSlider.addEventListener("change", changeVolume);
 
   progressSlider.addEventListener("click", setProgress);
   progressSlider.addEventListener("change", setProgress);

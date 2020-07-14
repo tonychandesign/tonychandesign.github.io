@@ -47,6 +47,9 @@ html {
   width: 100%;
   height: auto;
 }
+.videoWrapper {
+  cursor: pointer;
+}
 .controls {
   padding: 0;
   position: absolute;
@@ -106,6 +109,11 @@ html {
   display: flex;
   align-items: center;
   /* background: #252527; */
+}
+.null-volume-btn {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: -5px;
 }
 .volume-btn {
   padding-left: 10px;
