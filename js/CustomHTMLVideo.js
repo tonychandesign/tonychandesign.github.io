@@ -136,14 +136,9 @@ $(".player").each(function () {
   function toggleFullscreen() {
     if (fullscreen) {
       exitFullscreen();
-      video.classList.add("smallVideo");
-      video.classList.remove("fullScreenVideo");
     } else {
       launchIntoFullscreen(player);
-      video.classList.remove("smallVideo");
-      video.classList.add("fullScreenVideo");
     }
-    fullscreen = !fullscreen;
   }
   function setSpeed(e) {
     console.log(parseFloat(this.dataset.speed));
@@ -195,5 +190,27 @@ $(".player").each(function () {
   progressSlider.addEventListener("mousemove", setProgress);
 
   fullscreenBtn.addEventListener("click", toggleFullscreen);
+  document.addEventListener(
+    "fullscreenchange",
+    function (event) {
+      if (!document.fullscreenElement) {
+        if (video.classList.contains("smallVideoTrigger")) {
+          video.classList.add("smallVideo");
+          video.classList.remove("fullScreenVideo");
+        } else {
+          player.classList.remove("fullScreenBlack");
+        }
+      } else {
+        if (video.classList.contains("smallVideoTrigger")) {
+          video.classList.remove("smallVideo");
+          video.classList.add("fullScreenVideo");
+        } else {
+          player.classList.add("fullScreenBlack");
+        }
+      }
+      fullscreen = !fullscreen;
+    },
+    false
+  );
   window.addEventListener("keydown", handleKeypress);
 });

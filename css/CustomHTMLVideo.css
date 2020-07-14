@@ -47,6 +47,13 @@ html {
   width: 100%;
   height: auto;
 }
+.fullScreenBlack {
+  padding-bottom: 0 !important;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .videoWrapper {
   cursor: pointer;
 }
