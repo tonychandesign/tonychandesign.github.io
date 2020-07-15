@@ -1,6 +1,5 @@
 $(document).ready(function () {
   // if darkmode is false remove wire images, remove animations and nav transition
-
   if (localStorage.getItem("darkMode") === "false") {
     // local storage converts bool to strings
     $("#darkWire").remove();
