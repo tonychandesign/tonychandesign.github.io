@@ -116,6 +116,7 @@ p {
     top: 0px;
   }
 }
+
 .navbar-expand {
   transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
   -webkit-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
@@ -175,14 +176,21 @@ p {
   animation-duration: 400ms;
   -webkit-animation-duration: 400ms;
   animation-fill-mode: both;
-  animation-delay: 400ms;
   -webkit-animation-fill-mode: both;
+  animation-delay: 400ms;
+  -webkit-animation-delay: 400ms;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
 }
 .animatedDelay {
   animation-duration: 400ms;
   -webkit-animation-duration: 400ms;
   animation-fill-mode: both;
   animation-delay: 600ms;
+  -webkit-animation-delay: 600ms;
   -webkit-animation-fill-mode: both;
 }
 .fadeIn {
@@ -190,6 +198,10 @@ p {
   animation-name: fadeIn;
   -webkit-animation-name: fadeIn;
   -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
 }
 .fadeOut {
   opacity: 1;
