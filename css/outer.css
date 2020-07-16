@@ -189,9 +189,14 @@ p {
   animation-duration: 400ms;
   -webkit-animation-duration: 400ms;
   animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
   animation-delay: 600ms;
   -webkit-animation-delay: 600ms;
-  -webkit-animation-fill-mode: both;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
 }
 .fadeIn {
   opacity: 0;
