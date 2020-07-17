@@ -118,6 +118,7 @@ p {
   position: relative;
   padding-top: 20px;
   padding-bottom: 20px;
+  opacity: 0;
 }
 .darkNav {
   background: #202124;
@@ -126,6 +127,7 @@ p {
   transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
   -webkit-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
   -moz-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
+  transition-delay: 0.2s;
 }
 
 .sliding-middle-out {

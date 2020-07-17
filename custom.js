@@ -35,6 +35,8 @@ $(function () {
   } else {
     $("#caroThree").toggleClass("active");
   }
+  // fade in navbar to stop flicker on load
+  $("#navbar").css("opacity", "1");
 
   // Carousel JS scrolling implemented onto click action move-slide
   $(".move-slide").on("click touchend", function (e) {
