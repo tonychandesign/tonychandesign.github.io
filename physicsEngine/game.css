@@ -23,12 +23,6 @@
 .intro {
   z-index: 2;
 }
-
-.helper {
-  display: inline-block;
-  height: 100vh;
-  vertical-align: middle;
-}
 .startSVGSize {
   width: 80%;
   max-width: 1200px;

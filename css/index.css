@@ -29,8 +29,8 @@ body {
   font-weight: 400;
   color: #000;
   position: relative;
+  width: 100%;
   background-color: #f7f7f7;
-  padding-top: 130px;
 }
 h1,
 h2,
@@ -115,15 +115,9 @@ p {
 }
 
 #navbar {
-  position: fixed;
-  will-change: transform;
-  opacity: 0;
+  position: relative;
   padding-top: 20px;
   padding-bottom: 20px;
-  box-shadow: rgba(0, 0, 0, 0.4) 0 0 10px;
-  transition: top 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
-  -webkit-transition: top 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
-  -moz-transition: top 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .darkNav {
   background: #202124;

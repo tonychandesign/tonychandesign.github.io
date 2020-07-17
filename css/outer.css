@@ -34,7 +34,7 @@ html {
 body {
   font-family: "Lato";
   position: relative;
-  padding-top: 130px;
+  padding-top: 0px;
   opacity: 1;
   transition: 0.2s opacity;
   /* background-color: #202124; */
@@ -92,15 +92,10 @@ p {
   padding-top: 6vw;
 }
 #navbar {
-  position: fixed;
-  will-change: transform;
+  position: relative;
   padding-top: 20px;
   padding-bottom: 20px;
-  box-shadow: rgba(0, 0, 0, 0.2) 0 0 10px;
-  transition: top 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
-  -webkit-transition: top 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
-  -moz-transition: top 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
-  background: white;
+  z-index: 100;
 }
 .slideNavIn {
   animation-name: slideNavIn;
@@ -179,11 +174,11 @@ p {
   -webkit-animation-fill-mode: both;
   animation-delay: 400ms;
   -webkit-animation-delay: 400ms;
-  -webkit-transform: translateZ(0);
-  -moz-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  -o-transform: translateZ(0);
-  transform: translateZ(0);
+  -webkit-transform: translateZ(100);
+  -moz-transform: translateZ(100);
+  -ms-transform: translateZ(100);
+  -o-transform: translateZ(100);
+  transform: translateZ(100);
 }
 .animatedDelay {
   animation-duration: 400ms;

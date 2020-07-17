@@ -38,8 +38,9 @@ document.body.addEventListener("keyup", function (e) {
 const modal = document.querySelector("[data-modal=form]");
 const modalBody = modal.querySelector(".modal-body");
 const closeBtn = modal.querySelector(".close");
-closeBtn.addEventListener("click", () => {
+const resetModal = function () {
   modal.classList.remove("is-open");
+  document.getElementById("modal-img").src = "";
   let tp1 = prev1;
   let tp2 = prev2;
   setTimeout(() => {
@@ -48,8 +49,9 @@ closeBtn.addEventListener("click", () => {
       prev2 = 0;
     }
   }, 5000);
-});
-modal.addEventListener("click", () => modal.classList.remove("is-open")); // close modal when clicking outside
+};
+closeBtn.addEventListener("click", () => resetModal());
+modal.addEventListener("click", () => resetModal()); // close modal when clicking outside
 modalBody.addEventListener("click", (e) => e.stopPropagation());
 document.body.addEventListener("keydown", function (e) {
   // if (e.keyCode) {
@@ -65,7 +67,7 @@ document.body.addEventListener("keydown", function (e) {
   // }
 
   if (keys[27]) {
-    modal.classList.remove("is-open");
+    resetModal();
   }
 });
 
@@ -2131,7 +2133,7 @@ function cycle() {
 }
 
 function runPlatformer(el) {
-  $("#navbar").css("top", "-140px");
+  $("html, body").animate({ scrollTop: 85 });
   el.onclick = null;
   el.style.display = "none";
 
