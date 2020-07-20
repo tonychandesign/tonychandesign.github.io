@@ -760,8 +760,12 @@
     @import url("physicsEngine/game.css");
   </style>
   <script>
-    window.onload = function (e) {
+    // document.onload = function (e) {
+    //   $(".animateDelayTarget").addClass("animated fadeInUp");
+    // };
+
+    document.addEventListener("DOMContentLoaded", function (event) {
       $(".animateDelayTarget").addClass("animated fadeInUp");
-    };
+    });
   </script>
 </html>
