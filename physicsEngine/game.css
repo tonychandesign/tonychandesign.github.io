@@ -47,9 +47,13 @@
   -webkit-animation-duration: 400ms;
   -webkit-animation-fill-mode: both;
 }
+.animateDelayTarget {
+  opacity: 0;
+}
 @keyframes fadeInUp {
   from {
     padding-top: 30px;
+    opacity: 0;
   }
 
   to {

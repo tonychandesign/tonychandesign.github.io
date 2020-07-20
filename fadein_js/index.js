@@ -1,6 +1,6 @@
 $(document).ready(function () {
   // FADE IN HERO TEXT
-  $(".animateDelayTarget").addClass("animated animatedFadeInUp");
+  $(".animateDelayTarget").addClass("animated animated fadeInUp");
   // FADE IN CASE STUDY TEXT
   //window and animation items
   var animation_elements = $.find(".animation-element");
