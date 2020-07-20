@@ -35,8 +35,8 @@
 }
 .fadeInUp {
   opacity: 0;
-  animation: 400ms ease-out 150ms 1 fadeInUp;
-  -webkit-animation: 400ms ease-out 150ms 1 fadeInUp;
+  animation: 400ms ease-out 0s 1 fadeInUp;
+  -webkit-animation: 400ms ease-out 0s 1 fadeInUp;
 }
 .animatedFadeInUp {
   opacity: 0;
