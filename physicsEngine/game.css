@@ -13,7 +13,7 @@
 
 .introWrap {
   position: absolute;
-  top: 0;
+  top: 30px;
   width: 100vw;
   text-align: center;
   height: 100vh;
@@ -52,12 +52,12 @@
 }
 @keyframes fadeInUp {
   from {
-    padding-top: 30px;
+    top: 30px;
     opacity: 0;
   }
 
   to {
-    padding-top: 0px;
+    top: 0px;
     opacity: 1;
   }
 }
