@@ -724,8 +724,6 @@
 
       <!-- container fluid wrapper end div -->
     </div>
-    <!-- CSS MUST BE HERE SO THAT IT ANIMATES AFTER PAGE LOAD -->
-    <link href="physicsEngine/game.css" rel="stylesheet" />
     <!-- JavaScript -->
     <script>
       // localStorage.setItem("darkMode", true);
@@ -751,11 +749,18 @@
     <script type="text/javascript" src="physicsEngine/matter.min.js"></script>
     <script type="text/javascript" src="physicsEngine/app.js"></script>
 
-    <!-- preload case study css to stop white flicker -->
-    <link href="css/overideDark.css" rel="stylesheet" />
-    <link href="css/overideLight.css" rel="stylesheet" />
-
     <script type="text/javascript" src="js/sandboxTab.js"></script>
     <script type="text/javascript" src="js/ImagePreloader.js"></script>
   </body>
+  <!-- preload dark to light css to stop white flicker -->
+  <style type="text/css">
+    @import url("css/overideLight.css");
+  </style>
+  <style type="text/css">
+    @import url("css/overideDark.css");
+  </style>
+  <!-- THIS MUST BE HERE SO THAT IT ANIMATES AFTER PAGE LOAD -->
+  <style type="text/css">
+    @import url("physicsEngine/game.css");
+  </style>
 </html>
