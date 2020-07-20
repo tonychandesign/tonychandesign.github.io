@@ -101,14 +101,14 @@
           <!--  ///////////////////  PORTFOLIO CONTENT  ///////////////////  -->
           <div class="carousel-item" id="caroOne">
             <div class="heroWrapper">
-              <div class="heroText showMobile animated fadeInUp">
+              <div class="heroText showMobile animateDelayTarget">
                 Tony Chan, product designer
               </div>
             </div>
             <div class="hideGameMobile">
               <canvas id="canvas" oncontextmenu="return false"></canvas>
               <div
-                class="introWrap animated fadeInUp"
+                class="introWrap animateDelayTarget"
                 onclick="runPlatformer(this)"
               >
                 <div class="heroText">
@@ -759,4 +759,9 @@
   <style type="text/css">
     @import url("physicsEngine/game.css");
   </style>
+  <script>
+    window.onload = function (e) {
+      $(".animateDelayTarget").addClass("animated fadeInUp");
+    };
+  </script>
 </html>
