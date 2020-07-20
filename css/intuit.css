@@ -46,22 +46,60 @@
   padding-bottom: 20px;
   color: #6b6c72;
 }
-.doubleHover:hover > div > svg > g > .svgHoverStroke {
+/* motion is yellow */
+.doubleHoverMotion:hover > div > svg > g > .svgHoverStroke {
   transition: stroke 1s cubic-bezier(0.165, 0.84, 0.44, 1);
-  stroke: black;
-  background: black;
+  stroke: #fbbc05;
+  background: #fbbc05;
 }
-.doubleHover:hover > div > svg > g > .svgHoverFill {
+.doubleHoverMotion:hover > div > svg > g > .svgHoverFill {
   transition: fill 1s cubic-bezier(0.165, 0.84, 0.44, 1);
-  fill: black;
-  background: black;
+  fill: #fbbc05;
+  background: #fbbc05;
 }
-.doubleHover:hover .sliding-middle-out:after {
+.doubleHoverMotion:hover .sliding-middle-out:after {
   width: 100%;
-  background: #000;
+  background: #fbbc05;
 }
-.doubleHover:hover .sliding-middle-out {
-  color: #000;
+.doubleHoverMotion:hover .sliding-middle-out {
+  color: #fbbc05;
+}
+
+/* prototypes is green */
+.doubleHoverProto:hover > div > svg > g > .svgHoverStroke {
+  transition: stroke 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  stroke: #34a853;
+  background: #34a853;
+}
+.doubleHoverProto:hover > div > svg > g > .svgHoverFill {
+  transition: fill 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  fill: #34a853;
+  background: #34a853;
+}
+.doubleHoverProto:hover .sliding-middle-out:after {
+  width: 100%;
+  background: #34a853;
+}
+.doubleHoverProto:hover .sliding-middle-out {
+  color: #34a853;
+}
+/* tools is red */
+.doubleHoverTools:hover > div > svg > g > .svgHoverStroke {
+  transition: stroke 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  stroke: #ea4335;
+  background: #ea4335;
+}
+.doubleHoverTools:hover > div > svg > g > .svgHoverFill {
+  transition: fill 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  fill: #ea4335;
+  background: #ea4335;
+}
+.doubleHoverTools:hover .sliding-middle-out:after {
+  width: 100%;
+  background: #ea4335;
+}
+.doubleHoverTools:hover .sliding-middle-out {
+  color: #ea4335;
 }
 
 .projectWrapper {

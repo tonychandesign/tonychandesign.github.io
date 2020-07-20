@@ -1,5 +1,7 @@
-/*Interactivity to determine when an animated element in in view. In view elements trigger our animation*/
 $(document).ready(function () {
+  // FADE IN HERO TEXT
+  $(".animateDelayTarget").addClass("animated animatedFadeInUp");
+  // FADE IN CASE STUDY TEXT
   //window and animation items
   var animation_elements = $.find(".animation-element");
   var navBG = $.find(".navbar-expand");
