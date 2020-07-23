@@ -1,4 +1,5 @@
 .dark-to-light {
+  background-color: #202124;
   animation-name: darkToLight;
   -webkit-animation-name: darkToLight;
 }

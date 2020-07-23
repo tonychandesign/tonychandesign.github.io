@@ -13,6 +13,10 @@ $(document).ready(function () {
     $(".fadeIn").removeClass("fadeIn");
     $("body").css("background", "#f7f7f7");
   } else {
+    setTimeout(() => {
+      // $("body").css("background", "#f7f7f7");
+      $(".container-fluid").css("background", "#f7f7f7");
+    }, [450]);
   }
   // set darkmode to false since this js file is only called in light mode pages
   localStorage.setItem("darkMode", "false");

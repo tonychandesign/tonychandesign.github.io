@@ -1,6 +1,3 @@
-//   // FADE IN HERO TEXT
-//   $(".animateDelayTarget").addClass("animated fadeInUp");
-
 $(document).ready(function () {
   // FADE IN CASE STUDY TEXT
   //window and animation items

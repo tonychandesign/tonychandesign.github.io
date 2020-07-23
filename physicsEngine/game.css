@@ -12,11 +12,11 @@
 }
 
 .introWrap {
-  position: absolute;
-  top: 30px;
   width: 100vw;
-  text-align: center;
-  height: 100vh;
+  position: absolute;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   cursor: pointer;
 }
 
@@ -27,7 +27,10 @@
   width: 80%;
   max-width: 1200px;
 }
-.hideGameMobile {
+.stationaryHeroWrapper {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
   display: block;
 }
 .showMobile {
@@ -52,12 +55,12 @@
 }
 @keyframes fadeInUp {
   from {
-    top: 30px;
+    top: 53%;
     opacity: 0;
   }
 
   to {
-    top: 0px;
+    top: 50%;
     opacity: 1;
   }
 }
@@ -173,7 +176,7 @@ header {
   color: white !important;
 }
 @media screen and (max-width: 414px) {
-  .hideGameMobile {
+  .stationaryHeroWrapper {
     display: none;
   }
   .showMobile {

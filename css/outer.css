@@ -36,8 +36,6 @@ body {
   position: relative;
   padding-top: 0px;
   opacity: 1;
-  transition: 0.2s opacity;
-  /* background-color: #202124; */
 }
 
 h1,
@@ -121,6 +119,9 @@ p {
   padding-left: 0;
   padding-right: 0;
   overflow-x: hidden;
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
+  -webkit-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
+  -moz-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
 }
 .wire-proj-hero {
   margin: auto;
@@ -208,15 +209,7 @@ p {
   animation-name: fadeOut;
   -webkit-animation-name: fadeOut;
 }
-@-webkit-keyframes darkToLight {
-  from {
-    background-color: #202124;
-  }
 
-  to {
-    background-color: #f7f7f7;
-  }
-}
 .sliding-middle-out {
   display: inline-block;
   position: relative;
@@ -713,6 +706,9 @@ a.btn-social {
   }
 }
 @media screen and (max-width: 414px) {
+  .protoPadding {
+    padding: 30px;
+  }
   .section-heading {
     margin-top: 15px;
   }
