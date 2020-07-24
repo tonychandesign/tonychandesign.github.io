@@ -612,7 +612,7 @@ a.btn-social {
   max-width: 55%;
   min-width: 300px;
   width: 100%;
-  margin: 0;
+  margin: 0 auto;
   text-align: center;
 }
 .img1RowLong {
@@ -706,6 +706,18 @@ a.btn-social {
   }
 }
 @media screen and (max-width: 414px) {
+  .vid1RowLong {
+    min-width: 380px;
+  }
+  .img1Row {
+    min-width: 380px;
+  }
+  .img2Row {
+    min-width: 380px;
+  }
+  .img3Row {
+    min-width: 380px;
+  }
   .protoPadding {
     padding: 30px;
   }
@@ -744,11 +756,23 @@ a.btn-social {
     margin-bottom: 0.5em;
     padding-top: 5px;
   }
-  .img3Row {
-    min-width: 300px;
-  }
   .wire-proj-hero {
     width: 100%;
     padding-top: 30px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .img1Row {
+    min-width: 340px;
+  }
+  .img2Row {
+    min-width: 340px;
+  }
+  .img3Row {
+    min-width: 340px;
+  }
+  .vid1RowLong {
+    min-width: 340px;
   }
 }
