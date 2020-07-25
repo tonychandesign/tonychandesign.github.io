@@ -646,10 +646,9 @@ a.btn-social {
   text-align: center;
 }
 .vid1Row {
-  max-width: 550px;
   min-width: 350px;
-  width: 100%;
-  padding: 20px;
+  width: 30%;
+  padding: 0px 30px;
   margin: auto;
 }
 .vid1RowLong {
@@ -750,6 +749,11 @@ a.btn-social {
   .img3Row {
     min-width: 380px;
     text-align: center;
+  }
+  .vid1Row {
+    min-width: 380px;
+    text-align: center;
+    padding: 0px 20px;
   }
   .protoPadding {
     padding: 30px;
