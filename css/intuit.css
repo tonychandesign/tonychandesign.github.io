@@ -43,16 +43,21 @@
 .projectTypeTitle {
   font-size: 1.5rem;
   font-weight: 600;
-  padding-bottom: 20px;
+  padding: 20px 0px;
   color: #6b6c72;
 }
 /* motion is yellow */
-.doubleHoverMotion:hover > div > svg > g > .svgHoverStroke {
+.doubleHoverMotion {
+  height: fit-content;
+  width: fit-content;
+  margin: auto;
+}
+.doubleHoverMotion:hover > a > svg > g > .svgHoverStroke {
   transition: stroke 1s cubic-bezier(0.165, 0.84, 0.44, 1);
   stroke: #fbbc05;
   background: #fbbc05;
 }
-.doubleHoverMotion:hover > div > svg > g > .svgHoverFill {
+.doubleHoverMotion:hover > a > svg > g > .svgHoverFill {
   transition: fill 1s cubic-bezier(0.165, 0.84, 0.44, 1);
   fill: #fbbc05;
   background: #fbbc05;
@@ -66,12 +71,17 @@
 }
 
 /* prototypes is green */
-.doubleHoverProto:hover > div > svg > g > .svgHoverStroke {
+.doubleHoverProto {
+  height: fit-content;
+  width: fit-content;
+  margin: auto;
+}
+.doubleHoverProto:hover > a > svg > g > .svgHoverStroke {
   transition: stroke 1s cubic-bezier(0.165, 0.84, 0.44, 1);
   stroke: #34a853;
   background: #34a853;
 }
-.doubleHoverProto:hover > div > svg > g > .svgHoverFill {
+.doubleHoverProto:hover > a > svg > g > .svgHoverFill {
   transition: fill 1s cubic-bezier(0.165, 0.84, 0.44, 1);
   fill: #34a853;
   background: #34a853;
@@ -84,12 +94,17 @@
   color: #34a853;
 }
 /* tools is red */
-.doubleHoverTools:hover > div > svg > g > .svgHoverStroke {
+.doubleHoverTools {
+  height: fit-content;
+  width: fit-content;
+  margin: auto;
+}
+.doubleHoverTools:hover > a > svg > g > .svgHoverStroke {
   transition: stroke 1s cubic-bezier(0.165, 0.84, 0.44, 1);
   stroke: #ea4335;
   background: #ea4335;
 }
-.doubleHoverTools:hover > div > svg > g > .svgHoverFill {
+.doubleHoverTools:hover > a > svg > g > .svgHoverFill {
   transition: fill 1s cubic-bezier(0.165, 0.84, 0.44, 1);
   fill: #ea4335;
   background: #ea4335;
