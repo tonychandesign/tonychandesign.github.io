@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="731px" height="283px" viewBox="0 0 731 283" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>task_levels</title>
+    <g id="task_levels" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FFFFFF" x="0" y="0" width="731" height="283"></rect>
+        <g id="Group-9" transform="translate(24.000000, 19.000000)">
+            <rect id="Rectangle" stroke="#1CAF47" stroke-width="2" x="0" y="-2.84217094e-14" width="208" height="237" rx="4"></rect>
+            <g id="Group-4" transform="translate(20.000000, 19.000000)">
+                <g id="emoji-(1)" transform="translate(25.000000, 0.000000)" fill-rule="nonzero">
+                    <circle id="Oval" fill="#FFEAA3" cx="59" cy="59" r="59"></circle>
+                    <path d="M58.999887,88 C50.9701674,88 43.3504779,84.9603111 38.6165961,79.8699443 C37.7434172,78.9323511 37.8053512,77.4720843 38.7533481,76.6093822 C39.7013451,75.7466802 41.1796236,75.8070403 42.0509942,76.7455277 C45.917122,80.9032195 52.2533764,83.3846894 58.999887,83.3846894 C65.7463976,83.3846894 72.0826519,80.9029959 75.9490058,76.7455277 C76.8203764,75.8070403 78.2986549,75.7466802 79.2466519,76.6093822 C80.1946488,77.4720843 80.2565828,78.9323511 79.3834039,79.8699443 C74.6492961,84.9605346 67.0296066,88 58.999887,88 Z" id="Path" fill="#7D5046"></path>
+                    <path d="M38,60 L38,60 C35.2385566,60 33,57.9213403 33,55.3571429 L33,51.6428571 C33,49.0786597 35.2385566,47 38,47 L38,47 C40.7614434,47 43,49.0786597 43,51.6428571 L43,55.3571429 C43,57.9213403 40.7614434,60 38,60 Z" id="Path" fill="#7D5046"></path>
+                    <path d="M80,60 L80,60 C77.2385566,60 75,57.9213403 75,55.3571429 L75,51.6428571 C75,49.0786597 77.2385566,47 80,47 L80,47 C82.7614434,47 85,49.0786597 85,51.6428571 L85,55.3571429 C85,57.9213403 82.7614434,60 80,60 Z" id="Path" fill="#7D5046"></path>
+                </g>
+                <g id="Group-3" transform="translate(0.000000, 134.000000)" fill="#616161">
+                    <text id="Submit-Expense-Repor" font-family="GillSans-Bold, Gill Sans" font-size="14" font-weight="bold" letter-spacing="-0.0430769348">
+                        <tspan x="0" y="13">Submit Expense Report</tspan>
+                    </text>
+                    <text id="Involves-one-or-two" font-family="GillSans, Gill Sans" font-size="12" font-weight="normal" letter-spacing="-0.036923087">
+                        <tspan x="0" y="34">Involves one or two users and</tspan>
+                        <tspan x="0" y="48">errors can be easily fixed</tspan>
+                    </text>
+                </g>
+            </g>
+            <g id="Group-2" transform="translate(82.000000, 230.000000)">
+                <rect id="Rectangle" fill="#1CAF47" x="0" y="0" width="44" height="15" rx="4"></rect>
+                <text id="EASY" font-family="GillSans-Bold, Gill Sans" font-size="8" font-weight="bold" letter-spacing="-0.0246153913" fill="#FFFFFF">
+                    <tspan x="11" y="10">EASY</tspan>
+                </text>
+            </g>
+        </g>
+        <g id="Group-7" transform="translate(262.000000, 19.000000)">
+            <rect id="Rectangle" stroke="#FF7D00" stroke-width="2" x="0" y="-5.68434189e-14" width="207" height="237" rx="4"></rect>
+            <g id="Group-5" transform="translate(20.000000, 19.000000)">
+                <g id="Group-3" transform="translate(0.000000, 134.000000)" fill="#616161">
+                    <text id="Change-Job" font-family="GillSans-Bold, Gill Sans" font-size="14" font-weight="bold" letter-spacing="-0.0430769348">
+                        <tspan x="0" y="13">Change Job</tspan>
+                    </text>
+                    <text id="Involves-many-users" font-family="GillSans, Gill Sans" font-size="12" font-weight="normal" letter-spacing="-0.036923087">
+                        <tspan x="0" y="34">Involves many users in approval </tspan>
+                        <tspan x="0" y="48">process and errors will waste</tspan>
+                        <tspan x="0" y="62">a lot of time</tspan>
+                    </text>
+                </g>
+                <g id="Group-2" transform="translate(25.000000, 0.000000)" fill-rule="nonzero">
+                    <g id="emoji">
+                        <circle id="Oval" fill="#FFEAA3" cx="59" cy="59" r="59"></circle>
+                        <path d="M39.0160547,55.1935781 L39.0160547,55.1935781 C36.38825,55.1935781 34.2580273,53.0633555 34.2580273,50.4355508 L34.2580273,46.6291289 C34.2580273,44.0013242 36.38825,41.8711016 39.0160547,41.8711016 L39.0160547,41.8711016 C41.6438594,41.8711016 43.774082,44.0013242 43.774082,46.6291289 L43.774082,50.4355508 C43.774082,53.0633555 41.6438594,55.1935781 39.0160547,55.1935781 Z" id="Path" fill="#7D5046"></path>
+                        <path d="M78.9839453,55.1935781 L78.9839453,55.1935781 C76.3561406,55.1935781 74.225918,53.0633555 74.225918,50.4355508 L74.225918,46.6291289 C74.225918,44.0013242 76.3561406,41.8711016 78.9839453,41.8711016 L78.9839453,41.8711016 C81.61175,41.8711016 83.7419727,44.0013242 83.7419727,46.6291289 L83.7419727,50.4355508 C83.7419727,53.0633555 81.61175,55.1935781 78.9839453,55.1935781 Z" id="Path" fill="#7D5046"></path>
+                        <path d="M58.9933164,93.2580273 L58.9933164,93.2580273 C53.737707,93.2580273 49.4772617,88.997582 49.4772617,83.7419727 L49.4772617,78.0323398 C49.4772617,72.7767305 53.737707,68.5162852 58.9933164,68.5162852 L58.9933164,68.5162852 C64.2489258,68.5162852 68.5093711,72.7767305 68.5093711,78.0323398 L68.5093711,83.7419727 C68.5093711,88.997582 64.2489258,93.2580273 58.9933164,93.2580273 Z" id="Path" fill="#7D5046"></path>
+                    </g>
+                </g>
+            </g>
+            <g id="Group-2" transform="translate(76.000000, 230.000000)">
+                <rect id="Rectangle" fill="#FF7D00" x="0" y="0" width="56" height="15" rx="4"></rect>
+                <text id="MEDIUM" font-family="GillSans-Bold, Gill Sans" font-size="8" font-weight="bold" letter-spacing="-0.0246153913" fill="#FFFFFF">
+                    <tspan x="10.0699399" y="10">MEDIUM</tspan>
+                </text>
+            </g>
+        </g>
+        <g id="Group-8" transform="translate(499.000000, 19.000000)">
+            <rect id="Rectangle" stroke="#CE0000" stroke-width="2" x="0" y="-2.84217094e-14" width="208" height="237" rx="4"></rect>
+            <g id="Group-6" transform="translate(20.000000, 19.000000)">
+                <g id="Group-3" transform="translate(0.000000, 134.000000)" fill="#616161">
+                    <text id="Create-Supplier-Invo" font-family="GillSans-Bold, Gill Sans" font-size="14" font-weight="bold" letter-spacing="-0.0430769348">
+                        <tspan x="0" y="13">Create Supplier Invoice</tspan>
+                    </text>
+                    <text id="Involves-multiple-bu" font-family="GillSans, Gill Sans" font-size="12" font-weight="normal" letter-spacing="-0.036923087">
+                        <tspan x="0" y="34">Involves multiple businesses</tspan>
+                        <tspan x="0" y="48">and errors will cost thousands </tspan>
+                        <tspan x="0" y="62">to millions of dollars</tspan>
+                    </text>
+                </g>
+                <g id="thinking" transform="translate(25.000000, 0.000000)" fill-rule="nonzero">
+                    <circle id="Oval" fill="#FFEAA3" cx="59" cy="59" r="59"></circle>
+                    <g id="Group-2" transform="translate(33.000000, 42.000000)" fill="#7D5046">
+                        <g id="Group" transform="translate(6.116279, 31.263158)">
+                            <path d="M31.2476495,12.6025444 C30.8918584,12.6025444 30.5303509,12.5224172 30.1891939,12.3531343 C30.0600024,12.2894839 17.1131855,5.93686262 2.80196914,5.61274238 C1.49816401,5.58362573 0.465546693,4.51691803 0.495043512,3.23014261 C0.524540331,1.94404432 1.60700499,0.878465169 2.9087522,0.954755309 C18.3172959,1.30325228 31.7509247,7.91182928 32.3152515,8.19306453 C33.4788895,8.7720119 33.9453509,10.1725454 33.359073,11.321186 C32.9442883,12.1339694 32.1124322,12.6025444 31.2476495,12.6025444 Z" id="Path"></path>
+                        </g>
+                        <path d="M4.14730924,13.9303991 L4.14730924,13.9303991 C1.55982084,13.615533 -0.279271524,11.2895865 0.0397057043,8.7354468 L0.501822535,5.0356007 C0.820799763,2.48146096 3.17711542,0.666071612 5.76460382,0.980937724 L5.76460382,0.980937724 C8.35209222,1.29580384 10.1911846,3.62175028 9.87220735,6.17589002 L9.41009052,9.87573612 C9.09111329,12.4298759 6.73479764,14.2452652 4.14730924,13.9303991 Z" id="Path"></path>
+                        <path d="M43.6828789,18.0076331 L43.6828789,18.0076331 C41.0953905,17.692767 39.2562982,15.3668206 39.5752754,12.8126808 L40.0373922,9.11283472 C40.3563695,6.55869498 42.7126851,4.74330563 45.3001735,5.05817175 L45.3001735,5.05817175 C47.8876619,5.37303786 49.7267543,7.6989843 49.407777,10.253124 L48.9456602,13.9529701 C48.626683,16.5073356 46.2703673,18.3227249 43.6828789,18.0076331 Z" id="Path"></path>
+                    </g>
+                </g>
+            </g>
+            <g id="Group-2" transform="translate(82.000000, 230.000000)">
+                <rect id="Rectangle" fill="#CE0000" x="0" y="0" width="44" height="15" rx="4"></rect>
+                <text id="HARD" font-family="GillSans-Bold, Gill Sans" font-size="8" font-weight="bold" letter-spacing="-0.0246153913" fill="#FFFFFF">
+                    <tspan x="9.39884016" y="10">HARD</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

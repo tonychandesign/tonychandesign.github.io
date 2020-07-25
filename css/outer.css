@@ -380,6 +380,9 @@ a:hover {
   display: flex;
   align-items: center;
 }
+.row {
+  justify-content: center;
+}
 .content-section-a {
   padding: 100px 0;
   background-color: #fff;
@@ -490,7 +493,7 @@ a.btn-social {
   justify-content: center;
 }
 .barGroupMargin {
-  margin-bottom: -1.5em;
+  margin-bottom: -1em;
 }
 .viewCaseStudy {
   font-size: 1.3rem;
@@ -575,6 +578,7 @@ a.btn-social {
 }
 .img-fluid {
   border-radius: 4px;
+  width: 100%;
 }
 .embed-responsive-4by3::before {
   padding-top: 71%;
@@ -638,7 +642,7 @@ a.btn-social {
   max-width: 85%;
   min-width: 350px;
   width: 100%;
-  margin: 0;
+  padding: 0 20px;
   text-align: center;
 }
 .vid1Row {
@@ -701,15 +705,19 @@ a.btn-social {
   .img4Row {
     max-width: 15%;
     min-width: 150px;
+    text-align: center;
   }
   .img1Row {
     max-width: 65%;
+    text-align: center;
   }
   .img2Row {
     max-width: 65%;
+    text-align: center;
   }
   .img3Row {
     max-width: 65%;
+    text-align: center;
   }
 }
 @media screen and (max-width: 600px) {
@@ -718,6 +726,7 @@ a.btn-social {
   }
   .viewCaseStudyText {
     padding-left: 0px;
+    padding-top: 1em;
   }
 }
 @media screen and (max-width: 414px) {
@@ -732,12 +741,15 @@ a.btn-social {
   }
   .img1Row {
     min-width: 380px;
+    text-align: center;
   }
   .img2Row {
     min-width: 380px;
+    text-align: center;
   }
   .img3Row {
     min-width: 380px;
+    text-align: center;
   }
   .protoPadding {
     padding: 30px;
@@ -785,14 +797,18 @@ a.btn-social {
 @media screen and (max-width: 375px) {
   .img1Row {
     min-width: 340px;
+    text-align: center;
   }
   .img2Row {
     min-width: 340px;
+    text-align: center;
   }
   .img3Row {
     min-width: 340px;
+    text-align: center;
   }
   .vid1RowLong {
     min-width: 340px;
+    text-align: center;
   }
 }
