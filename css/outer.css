@@ -58,6 +58,9 @@ p {
   line-height: 35px;
   margin-bottom: 0em;
 }
+.quoteWrapper {
+  max-width: 35% !important;
+}
 .quote {
   font-style: italic;
   color: #000 !important;
@@ -276,6 +279,9 @@ h1 {
   display: flex;
   justify-content: center;
 }
+.fa-ul {
+  margin-bottom: 0;
+}
 .box {
   position: relative;
   display: inline-block;
@@ -492,6 +498,9 @@ a.btn-social {
   padding-top: 2em;
   justify-content: center;
 }
+.imgPadding {
+  padding-top: 2em !important;
+}
 .barGroupMargin {
   margin-bottom: -1em;
 }
@@ -607,8 +616,23 @@ a.btn-social {
   color: #616161;
   font-size: 1.1em !important;
 }
+.doubleDescription {
+  margin-bottom: 0.2em;
+}
+.tripleImgWDes {
+  width: 69%;
+}
+.imgNoDescription {
+  padding-top: 0px !important;
+}
+.imgDescription2byX {
+  text-align: center !important;
+  margin-bottom: -1.5em;
+  color: #616161;
+  font-size: 1.1em !important;
+}
 .figmaLabel {
-  margin-bottom: -7.5em !important;
+  margin-bottom: -7.7em !important;
 }
 .img4Row {
   max-width: 10%;
@@ -616,6 +640,8 @@ a.btn-social {
   margin: 0;
   margin-left: 20px;
   margin-right: 20px;
+  padding-top: 0.7em;
+  justify-content: center;
 }
 .img3Row {
   max-width: 25%;
@@ -623,6 +649,8 @@ a.btn-social {
   margin: 0;
   margin-left: 20px;
   margin-right: 20px;
+  padding-top: 0.7em;
+  justify-content: center;
 }
 .img2Row {
   max-width: 40%;
@@ -630,6 +658,8 @@ a.btn-social {
   margin: 0;
   margin-left: 20px;
   margin-right: 20px;
+  padding-top: 0.7em;
+  justify-content: center;
 }
 .img1Row {
   max-width: 55%;
@@ -637,6 +667,8 @@ a.btn-social {
   width: 100%;
   margin: 0 auto;
   text-align: center;
+  padding-top: 0.7em;
+  justify-content: center;
 }
 .img1RowLong {
   max-width: 85%;
@@ -644,12 +676,16 @@ a.btn-social {
   width: 100%;
   padding: 0 20px;
   text-align: center;
+  padding-top: 0.7em;
+  justify-content: center;
 }
 .vid1Row {
   min-width: 350px;
   width: 30%;
   padding: 0px 30px;
   margin: auto;
+  padding-top: 0.7em;
+  justify-content: center;
 }
 .vid1RowLong {
   max-width: 750px;
@@ -657,6 +693,11 @@ a.btn-social {
   width: 100%;
   padding: 0px 30px;
   margin: auto;
+  padding-top: 0.7em;
+  justify-content: center;
+}
+.col-10 {
+  max-width: 96.333333%;
 }
 .tonychan {
   margin-left: 35px;
@@ -729,8 +770,12 @@ a.btn-social {
   }
 }
 @media screen and (max-width: 414px) {
+  .col-10 {
+    flex: none;
+    max-width: 96.333333%;
+  }
   .figmaLabel {
-    margin-bottom: -8.5em !important;
+    margin-bottom: -9em !important;
   }
   .row-centerer {
     width: 100%;
@@ -753,13 +798,16 @@ a.btn-social {
   .vid1Row {
     min-width: 380px;
     text-align: center;
-    padding: 0px 20px;
+    padding: 0.7em 20px;
+  }
+  .doubleDescription {
+    margin-bottom: 0em !important;
   }
   .protoPadding {
     padding: 30px;
   }
   .section-heading {
-    margin-top: 15px;
+    margin-top: 0px;
   }
   .white_bg {
     top: -13vh;
@@ -787,6 +835,13 @@ a.btn-social {
   .imgDescription {
     text-align: center !important;
     margin-bottom: -0.7em;
+  }
+  .imgDescription2byX {
+    text-align: center !important;
+    margin-bottom: -1.7em;
+  }
+  .tripleImgWDes {
+    width: 100%;
   }
   .theprocess {
     font-size: 200%;
