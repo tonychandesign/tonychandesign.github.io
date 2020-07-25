@@ -67,6 +67,9 @@ p {
   font-size: 1.2em;
   font-weight: 600;
 }
+.right-to-center {
+  float: right;
+}
 .whiteText {
   transition: color 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
   -webkit-transition: color 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -471,8 +474,14 @@ a.btn-social {
   text-align: center;
 }
 .tonychan {
+  margin-left: 35px;
+  text-align: left;
   font-size: 1.4em;
+  color: #a9a9a9;
   font-weight: 600;
+  transition: color 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -webkit-transition: color 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -moz-transition: color 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .subCarousel {
@@ -506,13 +515,16 @@ a.btn-social {
   }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (max-width: 991px) {
   .tonychan {
-    margin-left: 35px;
-    text-align: left;
+    margin-left: 0px;
+    text-align: center;
   }
   .right-to-center {
-    float: right;
+    float: none;
+  }
+  #menu {
+    padding-top: 1em;
   }
 }
 @media (max-width: 990px) {

@@ -56,12 +56,12 @@ p {
   color: #616161;
   font-size: 1.2em !important;
   line-height: 35px;
+  margin-bottom: 0em;
 }
 .quote {
   font-style: italic;
   color: #000 !important;
   font-size: 1.5em !important;
-  margin-bottom: 2em;
   margin-top: 2em;
   word-spacing: 3px;
   text-align: justify;
@@ -72,10 +72,16 @@ p {
   font-weight: 400;
   letter-spacing: 2px;
 }
+#menu {
+  padding-top: 0em;
+}
 .navbar-brand {
   margin-right: 0;
   font-size: 1.2em;
   font-weight: 600;
+}
+.right-to-center {
+  float: right;
 }
 .nav-item {
   color: #a9a9a9 !important;
@@ -275,7 +281,6 @@ h1 {
   display: inline-block;
   background-color: #fff;
   width: 100%;
-  height: 100%;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   -webkit-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -370,11 +375,6 @@ a:hover {
 .row-centerer {
   width: 86%;
   margin: auto;
-}
-@media screen and (max-width: 414px) {
-  .row-centerer {
-    width: 100%;
-  }
 }
 .vertical-align {
   display: flex;
@@ -478,10 +478,19 @@ a.btn-social {
   width: 100%;
   display: block;
   font-size: 2.4em;
-}
-.theprocessWrap {
-  margin-top: -4em;
   justify-content: left;
+}
+.myOtherWork {
+  text-align: center;
+  padding-bottom: 1em;
+  padding-top: 2em;
+}
+.contentPadding {
+  padding-top: 2em;
+  justify-content: center;
+}
+.barGroupMargin {
+  margin-bottom: -1.5em;
 }
 .viewCaseStudy {
   font-size: 1.3rem;
@@ -522,9 +531,6 @@ a.btn-social {
   margin-top: auto;
   margin-bottom: auto;
   padding-left: 50px;
-}
-.respCoverPadding {
-  padding-top: 20px;
 }
 .navpadding {
   margin-left: 40px;
@@ -593,9 +599,22 @@ a.btn-social {
 }
 .imgDescription {
   text-align: center !important;
+  margin-bottom: -0.5em;
+  color: #616161;
+  font-size: 1.1em !important;
+}
+.figmaLabel {
+  margin-bottom: -7.5em !important;
+}
+.img4Row {
+  max-width: 10%;
+  min-width: 120px;
+  margin: 0;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 .img3Row {
-  max-width: 20%;
+  max-width: 25%;
   min-width: 200px;
   margin: 0;
   margin-left: 20px;
@@ -633,10 +652,12 @@ a.btn-social {
   max-width: 750px;
   min-width: 350px;
   width: 100%;
-  padding: 30px;
+  padding: 0px 30px;
   margin: auto;
 }
 .tonychan {
+  margin-left: 35px;
+  text-align: left;
   font-size: 1.4em;
   color: #a9a9a9;
   font-weight: 600;
@@ -648,21 +669,20 @@ a.btn-social {
   .row-centerer {
     width: 90%;
   }
+  .vid1RowLong {
+    max-width: 700px;
+  }
 }
-@media screen and (min-width: 992px) {
+@media screen and (max-width: 991px) {
   .tonychan {
-    margin-left: 35px;
-    text-align: left;
+    margin-left: 0px;
+    text-align: center;
   }
   .right-to-center {
-    float: right;
+    float: none;
   }
-}
-@media (max-width: 767px) {
-  .banner h2 {
-    margin: 0;
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
-    font-size: 3em;
+  #menu {
+    padding-top: 1em;
   }
 }
 @media screen and (max-width: 900px) {
@@ -678,26 +698,21 @@ a.btn-social {
   .text_small {
     max-width: 65%;
   }
-}
-@media screen and (max-width: 1100px) {
-  .respCoverPadding {
-    padding-top: 40px;
+  .img4Row {
+    max-width: 15%;
+    min-width: 150px;
   }
-}
-@media screen and (max-width: 994px) {
-  .respCoverPadding {
-    padding-top: 100px;
+  .img1Row {
+    max-width: 65%;
   }
-}
-@media screen and (max-width: 800px) {
-  .respCoverPadding {
-    padding-top: 150px;
+  .img2Row {
+    max-width: 65%;
+  }
+  .img3Row {
+    max-width: 65%;
   }
 }
 @media screen and (max-width: 600px) {
-  .respCoverPadding {
-    padding-top: 180px;
-  }
   .viewCaseStudyContainer {
     flex-direction: column;
   }
@@ -706,6 +721,12 @@ a.btn-social {
   }
 }
 @media screen and (max-width: 414px) {
+  .figmaLabel {
+    margin-bottom: -8.5em !important;
+  }
+  .row-centerer {
+    width: 100%;
+  }
   .vid1RowLong {
     min-width: 380px;
   }
@@ -749,12 +770,11 @@ a.btn-social {
   }
   .imgDescription {
     text-align: center !important;
-    padding-top: 20px;
+    margin-bottom: -0.7em;
   }
   .theprocess {
     font-size: 200%;
     margin-bottom: 0.5em;
-    padding-top: 5px;
   }
   .wire-proj-hero {
     width: 100%;
