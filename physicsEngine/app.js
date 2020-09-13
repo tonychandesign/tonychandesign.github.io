@@ -40,6 +40,7 @@ const modalBody = modal.querySelector(".modal-body");
 const closeBtn = modal.querySelector(".close");
 const resetModal = function () {
   modal.classList.remove("is-open");
+  $("html, body").animate({ scrollTop: 85 });
   document.getElementById("modal-img").src = "";
   let tp1 = prev1;
   let tp2 = prev2;
@@ -65,6 +66,7 @@ document.body.addEventListener("keydown", function (e) {
   //     game.testing = true;
   //   }
   // }
+  $("html, body").animate({ scrollTop: 85 });
 
   if (keys[27]) {
     resetModal();
