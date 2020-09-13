@@ -150,7 +150,7 @@ const character = function () {
   this.Fx = 0.004 * this.mass; //run Force on ground
   this.FxAir = 0.0006 * this.mass; //run Force in Air
   // this.Fy = -0.05 * this.mass; //jump Force
-  this.Fy = 0.48; //jump Force
+  this.Fy = 0.58; //jump Force
   this.angle = 0;
   this.walk_cycle = 0;
   this.punch_cycle = 0;
@@ -354,18 +354,18 @@ const character = function () {
     } else {
       // in air **********************************
       //check for short jumps
-      if (
-        this.buttonCD_jump + 60 > game.cycle && //just pressed jump
-        !keys[87] && //but not pressing jump key
-        this.Vy < 0
-      ) {
-        // and velocity is up
-        Matter.Body.setVelocity(player, {
-          //reduce player velocity every cycle until not true
-          x: player.velocity.x,
-          y: player.velocity.y * 0.94,
-        });
-      }
+      // if (
+      //   this.buttonCD_jump + 60 > game.cycle && //just pressed jump
+      //   !keys[87] && //but not pressing jump key
+      //   this.Vy < 0
+      // ) {
+      //   // and velocity is up
+      //   Matter.Body.setVelocity(player, {
+      //     //reduce player velocity every cycle until not true
+      //     x: player.velocity.x,
+      //     y: player.velocity.y * 0.94,
+      //   });
+      // }
       if (keys[65]) {
         // move left a
         if (player.velocity.x > -this.VxMax + 2) {
@@ -1448,16 +1448,16 @@ function spawnBodies() {
   };
   (function newtonsCradle() {
     //build a newton's cradle
-    const x = -625;
+    const x = -900;
     const r = 20;
     for (let i = 0; i < 5; i++) {
       body[body.length] = Bodies.circle(
         x + i * r * 2,
-        720,
+        -700,
         r,
         Object.assign({}, propsHeavy, propsOverBouncy, propsNoRotation)
       );
-      constraintPB(x + i * r * 2, 550, body.length - 1, 0.9);
+      constraintPB(x + i * r * 2, -850, body.length - 1, 0.9);
     }
     body[body.length - 1].force.x = 0.02 * body[body.length - 1].mass; //give the last one a kick
   })();
