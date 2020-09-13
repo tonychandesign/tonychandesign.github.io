@@ -41,6 +41,7 @@ const closeBtn = modal.querySelector(".close");
 const resetModal = function () {
   modal.classList.remove("is-open");
   $("html, body").animate({ scrollTop: 85 });
+  document.activeElement.blur();
   document.getElementById("modal-img").src = "";
   let tp1 = prev1;
   let tp2 = prev2;
@@ -66,7 +67,22 @@ document.body.addEventListener("keydown", function (e) {
   //     game.testing = true;
   //   }
   // }
-  $("html, body").animate({ scrollTop: 85 });
+  console.log(e.keyCode);
+  if (
+    keys[27] ||
+    keys[83] ||
+    keys[87] ||
+    keys[65] ||
+    keys[79] ||
+    keys[68] ||
+    keys[80] ||
+    keys[76]
+  ) {
+    console.log("reseting position");
+
+    if ($("html, body").scrollTop() !== 85)
+      $("html, body").animate({ scrollTop: 85 });
+  }
 
   if (keys[27]) {
     resetModal();
