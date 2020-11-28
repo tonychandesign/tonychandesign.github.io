@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1571px" height="941px" viewBox="0 0 1571 941" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>pages_flow</title>
+    <g id="pages_flow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FFFFFF" x="0" y="0" width="1571" height="941"></rect>
+        <line x1="511.5" y1="544.5" x2="643" y2="705" id="Line-6" stroke="#3EA4B8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5,11"></line>
+        <path d="M783.5,704.5 L1059,546 L1334.5,705" id="Line-5" stroke="#C86F52" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5,11" transform="translate(1059.000000, 625.500000) scale(1, -1) translate(-1059.000000, -625.500000) "></path>
+        <path d="M233.5,544 L646,705 L1058.5,544" id="Line-4" stroke="#3EA4B8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5,11"></path>
+        <g id="Group" transform="translate(134.500000, 344.000000)">
+            <rect id="Rectangle" stroke="#000000" stroke-width="2" fill="#D4F8FF" x="0" y="0" width="200" height="200"></rect>
+            <text id="Standard-page" font-family="AvenirNextforINTUIT-Medium, AvenirNext forINTUIT" font-size="30" font-weight="400" letter-spacing="-0.0923077174" fill="#000000">
+                <tspan x="37.7892309" y="92">Standard </tspan>
+                <tspan x="64.4696154" y="129">page</tspan>
+            </text>
+        </g>
+        <g id="Group-2" transform="translate(409.500000, 344.000000)">
+            <rect id="Rectangle" stroke="#000000" stroke-width="2" fill="#D4F8FF" x="0" y="0" width="200" height="200"></rect>
+            <text id="Standard-page" font-family="AvenirNextforINTUIT-Medium, AvenirNext forINTUIT" font-size="30" font-weight="400" letter-spacing="-0.0923077174" fill="#000000">
+                <tspan x="37.7892309" y="92">Standard </tspan>
+                <tspan x="64.4696154" y="129">page</tspan>
+            </text>
+        </g>
+        <g id="Group-3" transform="translate(959.500000, 344.000000)">
+            <rect id="Rectangle" stroke="#000000" stroke-width="2" fill="#D4F8FF" x="0" y="0" width="200" height="200"></rect>
+            <text id="Standard-page" font-family="AvenirNextforINTUIT-Medium, AvenirNext forINTUIT" font-size="30" font-weight="400" letter-spacing="-0.0923077174" fill="#000000">
+                <tspan x="37.7892309" y="92">Standard </tspan>
+                <tspan x="64.4696154" y="129">page</tspan>
+            </text>
+        </g>
+        <g id="Group-4" transform="translate(684.500000, 344.000000)">
+            <rect id="Rectangle" stroke="#000000" stroke-width="2" fill="#FFD9CD" x="0" y="0" width="200" height="200"></rect>
+            <text id="Complex-coded-page" font-family="CourierNewPSMT, Courier New" font-size="30" font-weight="normal" letter-spacing="-0.0923077174" fill="#000000">
+                <tspan x="37.3128231" y="70">Complex </tspan>
+                <tspan x="55.2234451" y="104">coded </tspan>
+                <tspan x="64.1787561" y="138">page</tspan>
+            </text>
+        </g>
+        <g id="Group-5" transform="translate(1234.500000, 344.000000)">
+            <rect id="Rectangle" stroke="#000000" stroke-width="2" fill="#FFD9CD" x="0" y="0" width="200" height="200"></rect>
+            <text id="Complex-coded-page" font-family="CourierNewPSMT, Courier New" font-size="30" font-weight="normal" letter-spacing="-0.0923077174" fill="#000000">
+                <tspan x="37.3128231" y="71">Complex </tspan>
+                <tspan x="55.2234451" y="105">coded </tspan>
+                <tspan x="64.1787561" y="139">page</tspan>
+            </text>
+        </g>
+        <text id="Designers-can-build" font-family="AvenirNextforINTUIT-Medium, AvenirNext forINTUIT" font-size="40" font-weight="400" letter-spacing="-0.123076957" fill="#000000">
+            <tspan x="542.638462" y="79">Designers can build pages</tspan>
+            <tspan x="529.481539" y="127">(and keep them up to date!)</tspan>
+        </text>
+        <text id="Design-Technologists" font-family="AvenirNextforINTUIT-Medium, AvenirNext forINTUIT" font-size="40" font-weight="400" letter-spacing="-0.123076957" fill="#000000">
+            <tspan x="246.649232" y="891">Design Technologists focus on complex logic &amp; capabilities</tspan>
+        </text>
+        <text id="Designers" font-family="AvenirNextforINTUIT-Medium, AvenirNext forINTUIT" font-size="40" font-weight="400" letter-spacing="-0.123076957" fill="#3EA4B8">
+            <tspan x="553.453846" y="744">Designers</tspan>
+        </text>
+        <path id="Line-3" d="M395,437.5 L409,444.5 L395,451.5 L395,445.5 L335,445.5 L335,443.5 L395,443.5 L395,437.5 Z" fill="#000000" fill-rule="nonzero"></path>
+        <path id="Line-3" d="M643,235 C688.786689,235 734.421136,270.155593 779.961329,340.322456 L781.341306,342.459441 L781.881865,343.300747 L780.199253,344.381865 L779.658694,343.540559 C733.990305,272.463939 688.417486,237 643,237 C600.368743,237 557.601323,268.244179 514.741401,330.867044 L514.056,331.872 L519.051809,335.167474 L505.5,343 L507.365065,327.459037 L512.386,330.771 L513.095768,329.730404 C556.290124,266.621637 599.57698,235 643,235 Z" fill="#000000" fill-rule="nonzero"></path>
+        <path id="Line-3" d="M926.5,235 C972.286689,235 1017.92114,270.155593 1063.46133,340.322456 L1064.84131,342.459441 L1065.38187,343.300747 L1063.69925,344.381865 L1063.15869,343.540559 C1017.49031,272.463939 971.917486,237 926.5,237 C883.868743,237 841.101323,268.244179 798.241401,330.867044 L797.556,331.872 L802.551809,335.167474 L789,343 L790.865065,327.459037 L795.886,330.771 L796.595768,329.730404 C839.790124,266.621637 883.07698,235 926.5,235 Z" fill="#000000" fill-rule="nonzero"></path>
+        <path id="Line-3" d="M670,437.5 L684,444.5 L670,451.5 L670,445.5 L610,445.5 L610,443.5 L670,443.5 L670,437.5 Z" fill="#000000" fill-rule="nonzero"></path>
+        <path id="Line-3" d="M945,437.5 L959,444.5 L945,451.5 L945,445.5 L885,445.5 L885,443.5 L945,443.5 L945,437.5 Z" fill="#000000" fill-rule="nonzero"></path>
+        <path id="Line-3" d="M1221,437.5 L1235,444.5 L1221,451.5 L1221,445.5 L1161,445.5 L1161,443.5 L1221,443.5 L1221,437.5 Z" fill="#000000" fill-rule="nonzero"></path>
+        <path id="Line-3" d="M1495,437.5 L1509,444.5 L1495,451.5 L1495,445.5 L1435,445.5 L1435,443.5 L1495,443.5 L1495,437.5 Z" fill="#000000" fill-rule="nonzero"></path>
+        <path id="Line-3" d="M120.5,437.5 L134.5,444.5 L120.5,451.5 L120.5,445.5 L60.5,445.5 L60.5,443.5 L120.5,443.5 L120.5,437.5 Z" fill="#000000" fill-rule="nonzero"></path>
+        <text id="Design-Technologists" font-family="AvenirNextforINTUIT-Medium, AvenirNext forINTUIT" font-size="40" font-weight="400" letter-spacing="-0.123076957" fill="#C86F52">
+            <tspan x="864.81077" y="744">Design Technologists</tspan>
+        </text>
+    </g>
+</svg>

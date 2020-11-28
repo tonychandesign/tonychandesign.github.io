@@ -66,6 +66,7 @@ p {
   color: #000 !important;
   font-size: 1.5em !important;
   margin-top: 2em;
+  margin-bottom: 1em;
   word-spacing: 3px;
   text-align: justify;
 }
@@ -640,16 +641,18 @@ a.btn-social {
   margin: 0;
   margin-left: 20px;
   margin-right: 20px;
-  padding-top: 0.7em;
+  padding-top: 1em;
+  padding-bottom: 1.5em;
   justify-content: center;
 }
 .img3Row {
-  max-width: 25%;
+  max-width: 30%;
   min-width: 200px;
   margin: 0;
   margin-left: 20px;
   margin-right: 20px;
-  padding-top: 0.7em;
+  padding-top: 1em;
+  padding-bottom: 1.5em;
   justify-content: center;
 }
 .img2Row {
@@ -658,7 +661,8 @@ a.btn-social {
   margin: 0;
   margin-left: 20px;
   margin-right: 20px;
-  padding-top: 0.7em;
+  padding-top: 1em;
+  padding-bottom: 1.5em;
   justify-content: center;
 }
 .img1Row {
@@ -667,7 +671,8 @@ a.btn-social {
   width: 100%;
   margin: 0 auto;
   text-align: center;
-  padding-top: 0.7em;
+  padding-top: 1em;
+  padding-bottom: 1.5em;
   justify-content: center;
 }
 .img1RowLong {
@@ -676,7 +681,8 @@ a.btn-social {
   width: 100%;
   padding: 0 20px;
   text-align: center;
-  padding-top: 0.7em;
+  padding-top: 1em;
+  padding-bottom: 1.5em;
   justify-content: center;
 }
 .vid1Row {
@@ -684,7 +690,8 @@ a.btn-social {
   width: 30%;
   padding: 0px 30px;
   margin: auto;
-  padding-top: 0.7em;
+  padding-top: 1em;
+  padding-bottom: 1.5em;
   justify-content: center;
 }
 .vid1RowLong {
@@ -693,7 +700,8 @@ a.btn-social {
   width: 100%;
   padding: 0px 30px;
   margin: auto;
-  padding-top: 0.7em;
+  padding-top: 1em;
+  padding-bottom: 1.5em;
   justify-content: center;
 }
 .col-10 {

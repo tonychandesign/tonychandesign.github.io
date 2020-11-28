@@ -20,7 +20,7 @@ html {
   color: var(--main);
 }
 .player-container {
-  max-width: 700px;
+  /* max-width: 700px; */
   margin: auto;
 }
 .player {

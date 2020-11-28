@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1859px" height="654px" viewBox="0 0 1859 654" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>v0_timeline</title>
+    <defs>
+        <rect id="path-1" x="389" y="43" width="161" height="57"></rect>
+        <filter x="-4.3%" y="-8.8%" width="108.7%" height="124.6%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-3" x="48" y="141" width="267" height="206"></rect>
+        <filter x="-2.6%" y="-2.4%" width="105.2%" height="106.8%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-5" x="48" y="399" width="267" height="206"></rect>
+        <filter x="-2.6%" y="-2.4%" width="105.2%" height="106.8%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-7" x="704" y="43" width="161" height="57"></rect>
+        <filter x="-4.3%" y="-8.8%" width="108.7%" height="124.6%" filterUnits="objectBoundingBox" id="filter-8">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-9" x="1020" y="43" width="161" height="57"></rect>
+        <filter x="-4.3%" y="-8.8%" width="108.7%" height="124.6%" filterUnits="objectBoundingBox" id="filter-10">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-11" x="1336" y="43" width="161" height="57"></rect>
+        <filter x="-4.3%" y="-8.8%" width="108.7%" height="124.6%" filterUnits="objectBoundingBox" id="filter-12">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-13" x="1651" y="43" width="161" height="57"></rect>
+        <filter x="-4.3%" y="-8.8%" width="108.7%" height="124.6%" filterUnits="objectBoundingBox" id="filter-14">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="v0_timeline" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FFFFFF" x="0" y="0" width="1859" height="654"></rect>
+        <line x1="1731.5" y1="115.5" x2="1731.5" y2="639.5" id="Line-2" stroke="#D7D7D7" stroke-width="3" stroke-linecap="square" stroke-dasharray="10"></line>
+        <g id="Rectangle">
+            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+            <use fill="#383838" fill-rule="evenodd" xlink:href="#path-1"></use>
+        </g>
+        <text id="May" font-family="AvenirNextforINTUIT-Bold, AvenirNext forINTUIT" font-size="24" font-weight="bold" letter-spacing="-0.0738461739" fill="#FFFFFF">
+            <tspan x="444.054769" y="80">May</tspan>
+        </text>
+        <g id="Rectangle">
+            <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+            <use fill="#A01FA2" fill-rule="evenodd" xlink:href="#path-3"></use>
+        </g>
+        <rect id="Rectangle" fill-opacity="0.6" fill="#A01FA2" x="389" y="174" width="862" height="14" rx="7"></rect>
+        <rect id="Rectangle" fill-opacity="0.6" fill="#A01FA2" x="482" y="238" width="213" height="14" rx="7"></rect>
+        <rect id="Rectangle" fill-opacity="0.6" fill="#A01FA2" x="1251" y="302" width="267" height="14" rx="7"></rect>
+        <rect id="Rectangle" fill-opacity="0.6" fill="#00569A" x="389" y="440" width="550" height="14" rx="7"></rect>
+        <rect id="Rectangle" fill-opacity="0.6" fill="#00569A" x="865" y="504" width="188" height="14" rx="7"></rect>
+        <rect id="Rectangle" fill="#669AC2" transform="translate(1263.500000, 575.000000) scale(-1, 1) translate(-1263.500000, -575.000000) " x="805" y="568" width="917" height="14" rx="7"></rect>
+        <text id="Design" font-family="AvenirNextforINTUIT-Bold, AvenirNext forINTUIT" font-size="24" font-weight="bold" letter-spacing="-0.0738461739" fill="#FFFFFF">
+            <tspan x="140.777539" y="253">Design</tspan>
+        </text>
+        <g id="Rectangle">
+            <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+            <use fill="#00569A" fill-rule="evenodd" xlink:href="#path-5"></use>
+        </g>
+        <text id="Development" font-family="AvenirNextforINTUIT-Bold, AvenirNext forINTUIT" font-size="24" font-weight="bold" letter-spacing="-0.0738461739" fill="#FFFFFF">
+            <tspan x="102.370154" y="511">Development</tspan>
+        </text>
+        <g id="Rectangle">
+            <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-7"></use>
+            <use fill="#383838" fill-rule="evenodd" xlink:href="#path-7"></use>
+        </g>
+        <text id="Jun" font-family="AvenirNextforINTUIT-Bold, AvenirNext forINTUIT" font-size="24" font-weight="bold" letter-spacing="-0.0738461739" fill="#FFFFFF">
+            <tspan x="763.002769" y="80">Jun</tspan>
+        </text>
+        <g id="Rectangle">
+            <use fill="black" fill-opacity="1" filter="url(#filter-10)" xlink:href="#path-9"></use>
+            <use fill="#383838" fill-rule="evenodd" xlink:href="#path-9"></use>
+        </g>
+        <text id="Jul" font-family="AvenirNextforINTUIT-Bold, AvenirNext forINTUIT" font-size="24" font-weight="bold" letter-spacing="-0.0738461739" fill="#FFFFFF">
+            <tspan x="1083.31877" y="80">Jul</tspan>
+        </text>
+        <g id="Rectangle">
+            <use fill="black" fill-opacity="1" filter="url(#filter-12)" xlink:href="#path-11"></use>
+            <use fill="#383838" fill-rule="evenodd" xlink:href="#path-11"></use>
+        </g>
+        <text id="Aug" font-family="AvenirNextforINTUIT-Bold, AvenirNext forINTUIT" font-size="24" font-weight="bold" letter-spacing="-0.0738461739" fill="#FFFFFF">
+            <tspan x="1392.09877" y="80">Aug</tspan>
+        </text>
+        <g id="Rectangle">
+            <use fill="black" fill-opacity="1" filter="url(#filter-14)" xlink:href="#path-13"></use>
+            <use fill="#383838" fill-rule="evenodd" xlink:href="#path-13"></use>
+        </g>
+        <text id="Sep" font-family="AvenirNextforINTUIT-Bold, AvenirNext forINTUIT" font-size="24" font-weight="bold" letter-spacing="-0.0738461739" fill="#FFFFFF">
+            <tspan x="1709.48277" y="80">Sep</tspan>
+        </text>
+        <text id="build-POC-of-WYSIWYG" font-family="AvenirNextforINTUIT-Medium, AvenirNext forINTUIT" font-size="18" font-weight="400" letter-spacing="-0.0553846304" fill="#000000">
+            <tspan x="399.296154" y="425">build POC of WYSIWYG editor using design system components</tspan>
+        </text>
+        <text id="rough-e2e-designs" font-family="AvenirNextforINTUIT-Medium, AvenirNext forINTUIT" font-size="18" font-weight="400" letter-spacing="-0.0553846304" fill="#000000">
+            <tspan x="743.412769" y="159">rough e2e designs</tspan>
+        </text>
+        <rect id="Rectangle" fill-opacity="0.6" fill="#A01FA2" x="1497" y="174" width="154" height="14" rx="7"></rect>
+        <text id="iterate" font-family="AvenirNextforINTUIT-Medium, AvenirNext forINTUIT" font-size="18" font-weight="400" letter-spacing="-0.0553846304" fill="#000000">
+            <tspan x="1548.19785" y="159">iterate</tspan>
+        </text>
+        <text id="design-user-test" font-family="AvenirNextforINTUIT-Medium, AvenirNext forINTUIT" font-size="18" font-weight="400" letter-spacing="-0.0553846304" fill="#000000">
+            <tspan x="522.094077" y="223">design user test</tspan>
+        </text>
+        <text id="application-user-tes" font-family="AvenirNextforINTUIT-Medium, AvenirNext forINTUIT" font-size="18" font-weight="400" letter-spacing="-0.0553846304" fill="#000000">
+            <tspan x="1301.14254" y="287">application user test</tspan>
+        </text>
+        <text id="profile,-assets,-hom" font-family="AvenirNextforINTUIT-Medium, AvenirNext forINTUIT" font-size="18" font-weight="400" letter-spacing="-0.0553846304" fill="#000000">
+            <tspan x="875.088846" y="489">profile, assets, home</tspan>
+        </text>
+        <rect id="Rectangle" fill-opacity="0.6" fill="#00569A" x="1068" y="440" width="183" height="14" rx="7"></rect>
+        <text id="page-routing" font-family="AvenirNextforINTUIT-Medium, AvenirNext forINTUIT" font-size="18" font-weight="400" letter-spacing="-0.0553846304" fill="#000000">
+            <tspan x="1106.11131" y="425">page routing</tspan>
+        </text>
+        <rect id="Rectangle" fill-opacity="0.6" fill="#00569A" x="1068" y="504" width="183" height="14" rx="7"></rect>
+        <text id="image-hotspots" font-family="AvenirNextforINTUIT-Medium, AvenirNext forINTUIT" font-size="18" font-weight="400" letter-spacing="-0.0553846304" fill="#000000">
+            <tspan x="1095.74469" y="489">image hotspots</tspan>
+        </text>
+        <rect id="Rectangle" fill-opacity="0.6" fill="#00569A" x="389" y="504" width="114" height="14" rx="7"></rect>
+        <text id="firebase" font-family="AvenirNextforINTUIT-Medium, AvenirNext forINTUIT" font-size="18" font-weight="400" letter-spacing="-0.0553846304" fill="#000000">
+            <tspan x="412.519846" y="489">firebase</tspan>
+        </text>
+        <rect id="Rectangle" fill-opacity="0.6" fill="#00569A" x="509" y="568" width="97" height="14" rx="7"></rect>
+        <text id="SSO" font-family="AvenirNextforINTUIT-Medium, AvenirNext forINTUIT" font-size="18" font-weight="400" letter-spacing="-0.0553846304" fill="#000000">
+            <tspan x="539.200077" y="553">SSO</tspan>
+        </text>
+        <text id="integrate-p0,-p1,-p2" font-family="AvenirNextforINTUIT-Medium, AvenirNext forINTUIT" font-size="18" font-weight="400" letter-spacing="-0.0553846304" fill="#000000">
+            <tspan x="1128.90846" y="553">integrate p0, p1, p2 components</tspan>
+        </text>
+        <text id="e2e-testing-begins" transform="translate(1716.500000, 358.000000) rotate(-90.000000) translate(-1716.500000, -358.000000) " font-family="AvenirNextforINTUIT-Medium, AvenirNext forINTUIT" font-size="18" font-weight="400" letter-spacing="-0.0553846304" fill="#D7D7D7">
+            <tspan x="1640.36346" y="364">e2e testing begins</tspan>
+        </text>
+    </g>
+</svg>

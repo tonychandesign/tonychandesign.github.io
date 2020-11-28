@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200px" height="444px" viewBox="0 0 1200 444" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>framework_pitfalls</title>
+    <g id="framework_pitfalls" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FFFFFF" x="0" y="0" width="1200" height="444"></rect>
+        <rect id="Rectangle" fill="#063763" x="36" y="28" width="350" height="61"></rect>
+        <rect id="Rectangle" fill="#1F7500" x="425" y="28" width="350" height="61"></rect>
+        <text id="BUILDER" font-family="AvenirNextforINTUIT-Heavy, AvenirNext forINTUIT" font-size="30" font-weight="600" letter-spacing="-0.0923077174" fill="#FFFFFF">
+            <tspan x="532.413077" y="69">BUILDER</tspan>
+        </text>
+        <rect id="Rectangle" fill="#C39004" x="814" y="28" width="350" height="61"></rect>
+        <text id="TECHNOLOGY" font-family="AvenirNextforINTUIT-Heavy, AvenirNext forINTUIT" font-size="30" font-weight="600" letter-spacing="-0.0923077174" fill="#FFFFFF">
+            <tspan x="881.366539" y="69">TECHNOLOGY</tspan>
+        </text>
+        <text id="CUSTOMER" font-family="AvenirNextforINTUIT-Heavy, AvenirNext forINTUIT" font-size="30" font-weight="600" letter-spacing="-0.0923077174" fill="#FFFFFF">
+            <tspan x="123.479231" y="69">CUSTOMER</tspan>
+        </text>
+        <text id="Evaluates-experience" font-family="AvenirNextforINTUIT-Regular, AvenirNext forINTUIT" font-size="18" font-weight="normal" letter-spacing="-0.0553846304" fill="#000000">
+            <tspan x="70" y="133">Evaluates experience in a single </tspan>
+            <tspan x="70" y="155">sitting.  Data is lost when browser </tspan>
+            <tspan x="70" y="177">window is closed</tspan>
+        </text>
+        <text id="Has-to-come-onsite-f" font-family="AvenirNextforINTUIT-Regular, AvenirNext forINTUIT" font-size="18" font-weight="normal" letter-spacing="-0.0553846304" fill="#000000">
+            <tspan x="70" y="233">Has to come onsite for supervised </tspan>
+            <tspan x="70" y="255">testing because of technical </tspan>
+            <tspan x="70" y="277">limitations</tspan>
+        </text>
+        <text id="Unexpected-back-butt" font-family="AvenirNextforINTUIT-Regular, AvenirNext forINTUIT" font-size="18" font-weight="normal" letter-spacing="-0.0553846304" fill="#000000">
+            <tspan x="70" y="333">Unexpected back button behavior</tspan>
+        </text>
+        <text id="Design-technology-bo" font-family="AvenirNextforINTUIT-Regular, AvenirNext forINTUIT" font-size="18" font-weight="normal" letter-spacing="-0.0553846304" fill="#000000">
+            <tspan x="458" y="133">Design technology bottleneck- we </tspan>
+            <tspan x="458" y="155">were responsible for all </tspan>
+            <tspan x="458" y="177">prototypes and updates</tspan>
+        </text>
+        <text id="Requires-familiarity" font-family="AvenirNextforINTUIT-Regular, AvenirNext forINTUIT" font-size="18" font-weight="normal" letter-spacing="-0.0553846304" fill="#000000">
+            <tspan x="459" y="233">Requires familiarity in JS and </tspan>
+            <tspan x="459" y="255">command line tools</tspan>
+        </text>
+        <text id="Unorganized-and-diff" font-family="AvenirNextforINTUIT-Regular, AvenirNext forINTUIT" font-size="18" font-weight="normal" letter-spacing="-0.0553846304" fill="#000000">
+            <tspan x="458" y="311">Unorganized and difficult to find </tspan>
+            <tspan x="458" y="333">correct version of pages</tspan>
+        </text>
+        <text id="Design-technologists" font-family="AvenirNextforINTUIT-Regular, AvenirNext forINTUIT" font-size="18" font-weight="normal" letter-spacing="-0.0553846304" fill="#000000">
+            <tspan x="847" y="133">Design technologists had to </tspan>
+            <tspan x="847" y="155">recreate every component in </tspan>
+            <tspan x="847" y="177">AngularJS</tspan>
+        </text>
+        <text id="Developers-had-to-re" font-family="AvenirNextforINTUIT-Regular, AvenirNext forINTUIT" font-size="18" font-weight="normal" letter-spacing="-0.0553846304" fill="#000000">
+            <tspan x="848" y="233">Developers had to rewrite the </tspan>
+            <tspan x="848" y="255">prototype code in ReactJS to ship </tspan>
+            <tspan x="848" y="277">to production</tspan>
+        </text>
+        <text id="All-changes-require" font-family="AvenirNextforINTUIT-Regular, AvenirNext forINTUIT" font-size="18" font-weight="normal" letter-spacing="-0.0553846304" fill="#000000">
+            <tspan x="459" y="389">All changes require coding and </tspan>
+            <tspan x="459" y="411">redeployment </tspan>
+        </text>
+    </g>
+</svg>

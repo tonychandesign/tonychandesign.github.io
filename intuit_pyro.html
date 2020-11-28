@@ -1,0 +1,1753 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="keywords"
+      content="UX design product interaction visual mostion creative animations computer science engineering design systems"
+    />
+    <meta name="author" content="Tony Chan" />
+
+    <title>Tony Chan: Intuit Pyro</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Custom fonts for this template -->
+    <link
+      href="vendor/font-awesome/css/font-awesome.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Button Stylesheet -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <!-- Custom styles for this template -->
+    <link href="css/outer.css" rel="stylesheet" />
+    <link href="css/intuit.css" rel="stylesheet" />
+    <link href="css/bootstrapVideoOverride.css" rel="stylesheet" />
+    <link href="css/sideNav.css" rel="stylesheet" />
+    <!-- favicon  -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon-16x16.png"
+    />
+    <link rel="manifest" href="./site.webmanifest" />
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+
+  <body
+    data-spy="scroll"
+    data-target="#scrollspy"
+    data-offset="100"
+    style="background: #f7f7f7"
+  >
+    <!-- dynamic resizing  -->
+    <div class="container-fluid">
+      <!--  ///////////////////  NAVBAR  ///////////////////  -->
+      <nav id="navbar" class="navbar-expand">
+        <div class="row row-centerer">
+          <div class="col-lg-4" style="margin: auto">
+            <h1 class="tonychan">
+              <a href="index.html" class="nav-item">Tony Chan</a>
+            </h1>
+          </div>
+          <div class="col-lg-2"></div>
+          <div class="col-lg-6">
+            <div id="menu">
+              <ul
+                class="navbar-nav navbar-brand right-to-center nav-elem-centerer"
+              >
+                <li class="nav-item" style="margin-left: 30px">
+                  <a class="nav-link" href="index.html?page=0">Work</a>
+                </li>
+                <li class="nav-item navpadding">
+                  <a class="nav-link" href="index.html?page=1">Play</a>
+                </li>
+                <li
+                  class="nav-item"
+                  style="margin-right: 30px; margin-left: 0px"
+                >
+                  <a class="nav-link" href="index.html?page=2">About</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="white_bg"></div>
+
+      <div style="height: 100vh">
+        <picture>
+          <source
+            srcset="img/wire_covers/intuitPyro.png"
+            media="(min-width: 500px)"
+          />
+          <img
+            class="img-fluid wire-proj-hero"
+            src="img/wire_covers/intuitPyro_mobile.png"
+          />
+        </picture>
+      </div>
+
+      <nav id="scrollspy">
+        <ul id="bar-fixed">
+          <div class="sidebar">
+            <li>
+              <a
+                class="bar nav-link"
+                data-easing="easeInOutQuart"
+                href="#context"
+                style="padding-top: 0px"
+                >Context</a
+              >
+            </li>
+            <li>
+              <a
+                class="bar nav-link"
+                data-easing="easeInOutQuart"
+                href="#compAnal"
+                >Competitors</a
+              >
+            </li>
+            <li>
+              <a
+                class="bar nav-link"
+                data-easing="easeInOutQuart"
+                href="#research1"
+                >User Tests</a
+              >
+            </li>
+            <li>
+              <a class="bar nav-link" data-easing="easeInOutQuart" href="#beta"
+                >Pyro Beta</a
+              >
+            </li>
+            <li>
+              <a
+                class="bar nav-link"
+                data-easing="easeInOutQuart"
+                href="#research2"
+                >More Research</a
+              >
+            </li>
+            <li>
+              <a
+                class="bar nav-link"
+                data-easing="easeInOutQuart"
+                href="#researchfindings"
+                >Findings</a
+              >
+            </li>
+            <li>
+              <a
+                class="bar nav-link"
+                data-easing="easeInOutQuart"
+                href="#iterateTab"
+                >Next Steps</a
+              >
+            </li>
+            <li>
+              <a
+                class="bar nav-link"
+                data-easing="easeInOutQuart"
+                href="#pyro1_0"
+                style="padding-bottom: 0px"
+                >Pyro 1.0</a
+              >
+            </li>
+          </div>
+        </ul>
+      </nav>
+
+      <div class="row" style="justify-content: center">
+        <div class="text_small" style="width: fit-content">
+          <p>
+            <span class="intro">Timeline:</span>
+            <span class="lead myRoleText">Apr - Present</span>
+          </p>
+
+          <p>
+            <span class="intro">Employment Type:</span>
+            <span class="lead myRoleText">Full time</span>
+          </p>
+
+          <p>
+            <span class="intro">My Role:</span>
+            <span class="lead myRoleText"
+              >Product Designer, Front-end Engineer</span
+            >
+          </p>
+
+          <p>
+            <span class="intro">Tools:</span>
+            <span class="lead myRoleText">ReactJS, Firebase, Sketch</span>
+          </p>
+
+          <p>
+            <span class="intro">My Team:</span>
+            <span class="lead myRoleText">Design Technologist </span>
+          </p>
+        </div>
+      </div>
+
+      <div class="row theprocessWrap" id="context">
+        <div class="text_small theprocess START">Context</div>
+      </div>
+
+      <div class="row">
+        <div class="text_small">
+          <p class="lead" style="margin-bottom: 0; text-align: justify">
+            From 2014 to 2018, Intuit’s design technology team created the
+            Intuit Prototyping Framework, which stored end-to-end prototypes
+            used for qualitative user testing.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="text_small quoteWrapper">
+          <p class="lead quote">
+            Testing high fidelity, end-to-end prototypes allows us to gain
+            authentic qualitative insights from customers before we invest in
+            building new innovations for our products.
+          </p>
+        </div>
+      </div>
+
+      <div class="row contentPadding">
+        <div class="text_small">
+          <p class="lead" style="margin-bottom: 0; text-align: justify">
+            Users are more likely to behave realistically when testing
+            prototypes that look like “live” software. This belief is also
+            backed by many research organizations around the world, like the
+            <a
+              href="https://www.nngroup.com/articles/ux-prototype-hi-lo-fidelity/#:~:text=High%2Dfidelity%20prototypes%20often%20look,work%20and%20what%20isn't."
+              target="_blank"
+              style="margin-bottom: 0em; color: #005cb9"
+              >Nielsen Norman Group</a
+            >. Most prototyping tools do not use real components or real data
+            well, often resulting in research studies where participants must
+            imagine they are in a specific scenario, which leads to less
+            reliable insights than if they were able to use their real
+            information.
+          </p>
+        </div>
+      </div>
+
+      <p class="lead imgDescription contentPadding">
+        Intuit Prototyping Framework (2014-2019)
+      </p>
+      <div class="row longImage">
+        <div class="img2Row">
+          <img
+            class="img-fluid img_shadow lazyload"
+            data-src="img/intuit/pyro/intuitPF1.png"
+            alt=" "
+          />
+        </div>
+        <div class="img2Row">
+          <img
+            class="img-fluid img_shadow lazyload"
+            data-src="img/intuit/pyro/intuitPF2.png"
+            alt=" "
+          />
+        </div>
+      </div>
+
+      <div class="row contentPadding">
+        <div class="text_small">
+          <p class="lead" style="margin-bottom: 0; text-align: justify">
+            The Intuit Prototyping Framework gave the business a cheap way of
+            collecting realistic design feedback in a low-risk environment
+            before the handoff to software development.
+          </p>
+        </div>
+      </div>
+
+      <p class="lead imgDescription contentPadding">Platform pitfalls</p>
+      <div class="row">
+        <div class="img2Row">
+          <img
+            class="img-fluid img_shadow lazyload"
+            data-src="img/intuit/pyro/framework_pitfalls.svg"
+            alt=" "
+          />
+        </div>
+      </div>
+
+      <div class="row contentPadding">
+        <div class="text_small">
+          <p class="lead" style="margin-bottom: 0; text-align: justify">
+            There were a lot of issues with this outdated framework. After
+            interviewing several designers, we created a list of requirements
+            for a successful prototyping platform.
+          </p>
+        </div>
+      </div>
+
+      <p class="lead imgDescription contentPadding">Desired Characteristics</p>
+      <div class="row">
+        <div class="img2Row">
+          <img
+            class="img-fluid img_shadow lazyload"
+            data-src="img/intuit/pyro/desired_characteristics.svg"
+            alt=" "
+          />
+        </div>
+      </div>
+
+      <div class="row theprocessWrap" id="compAnal">
+        <div class="text_small theprocess">Competitors</div>
+      </div>
+
+      <div class="row">
+        <div class="text_small">
+          <p class="lead" style="margin-bottom: 0; text-align: justify">
+            Before spending the time to build an entire platform, there was
+            still the option of using an external prototyping tool. I reached
+            out to product specialists from a handful of companies to see if
+            they could fulfill our needs. I used this opportunity to learn about
+            limitations, essential features, and common design patterns used by
+            such tools.
+          </p>
+        </div>
+      </div>
+
+      <p class="lead imgDescription contentPadding">Competitors' features</p>
+      <div class="row">
+        <div class="img2Row">
+          <img
+            class="img-fluid img_shadow lazyload"
+            data-src="img/intuit/pyro/comp_analysis.svg"
+            alt=" "
+          />
+        </div>
+      </div>
+
+      <div class="row contentPadding">
+        <div class="text_small">
+          <p class="lead" style="margin-bottom: 0; text-align: justify">
+            Most of these tools couldn’t consume production design system
+            components. This meant that designers would have to maintain the
+            components alongside our existing design system. Updating multiple
+            platforms whenever there was a change is prone to version control
+            inconsistencies so this was a deal breaker.
+          </p>
+        </div>
+      </div>
+
+      <div class="row contentPadding">
+        <div class="text_small">
+          <p class="lead" style="margin-bottom: 0; text-align: justify">
+            FramerX checked most of our boxes so I worked with their engineering
+            team to set up a proof of concept. Unfortunately, they were unable
+            to load our design system onto their app and creating complex flows
+            actually required coding experience.
+          </p>
+        </div>
+      </div>
+
+      <p class="lead imgDescription contentPadding">Common design patterns</p>
+      <div class="row">
+        <div class="img2Row">
+          <img
+            class="img-fluid img_shadow lazyload"
+            data-src="img/intuit/pyro/comp_designPatterns.svg"
+            alt=" "
+          />
+        </div>
+      </div>
+
+      <div class="row theprocessWrap" id="research1">
+        <div class="text_small theprocess">User Tests</div>
+      </div>
+
+      <div class="row">
+        <div class="text_small">
+          <p class="lead" style="margin-bottom: 0; text-align: justify">
+            Aside from myself, there was one other design technologist working
+            on this project. We set an aggressive timeline to build a proof of
+            concept in 6 months so that designers could use the tool for user
+            testing before the tax season started. We prioritized development
+            over design initially. The intent was to get a functional
+            application working then observe how designers used the tool. Once
+            we got real usage data, we could start ironing out the user
+            experience.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="text_small quoteWrapper">
+          <p class="lead quote">
+            This is not a design tool replacement for Sketch of Figma. It’s a
+            prototyping tool specifically made for building and testing high
+            fidelity ideas without using costly development resources.
+          </p>
+        </div>
+      </div>
+
+      <div class="row barGroupMargin contentPadding">
+        <div class="text_small">
+          <p class="lead barText">Main priorities:</p>
+          <ul class="fa-ul barGroup">
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>Transition the tech
+              stack from AngularJS to ReactJS
+            </li>
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>Wysiwyg editor which
+              used production design system components
+            </li>
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>Routing functionality to
+              build flows
+            </li>
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>Persistent user data
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="lead imgDescription contentPadding">Timeline</p>
+      <div class="row">
+        <div class="img1Row">
+          <img
+            class="img-fluid img_shadow lazyload"
+            data-src="img/intuit/pyro/v0_timeline.svg"
+            alt=" "
+          />
+        </div>
+      </div>
+
+      <div class="row contentPadding">
+        <div class="text_small">
+          <p class="lead" style="margin-bottom: 0; text-align: justify">
+            I tested a paper prototype with our designers and had them try to
+            recreate a page with the editor. The feedback quality was a bit
+            mixed because the prototype required outside assistance to simulate
+            complex interactions like hover states and dragging and dropping. We
+            needed a much higher fidelity prototype to get proper feedback but
+            this was a good start to get the team aligned.
+          </p>
+        </div>
+      </div>
+
+      <p class="lead imgDescription contentPadding">Paper prototypes</p>
+      <div class="row longImage" style="justify-content: center">
+        <div class="img3Row">
+          <img
+            class="img-fluid img_shadow lazyload"
+            data-src="img/intuit/pyro/v0_wire1.png"
+            alt=" "
+          />
+        </div>
+        <div class="img3Row">
+          <img
+            class="img-fluid img_shadow lazyload"
+            data-src="img/intuit/pyro/v0_wire2.png"
+            alt=" "
+          />
+        </div>
+        <div class="img3Row">
+          <img
+            class="img-fluid img_shadow lazyload"
+            data-src="img/intuit/pyro/v0_wire3.png"
+            alt=" "
+          />
+        </div>
+      </div>
+
+      <div class="row barGroupMargin contentPadding">
+        <div class="text_small">
+          <p class="lead barText">Feedback:</p>
+          <ul class="fa-ul barGroup">
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>Creating a “prototype”
+              is confusing because it’s just one page. How do you add more pages
+              to the prototype? Where does it start?
+            </li>
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>Drag and drop images
+              doesn’t make sense.
+            </li>
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>Left panel component
+              preview on hover is confusing, seems like there’s interactivity.
+            </li>
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>"Prototype" nomenclature
+              is confusing because it’s just a single page.
+            </li>
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>Wants to customize the
+              size & position of the components.
+            </li>
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>Wants thumbnail previews
+              of the components.
+            </li>
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>Wants to see pages in
+              context of the flow.
+            </li>
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>Wants to drag and drop
+              components into the canvas.
+            </li>
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>Wants ability to copy
+              paste images directly into the canvas.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row theprocessWrap" id="beta">
+        <div class="text_small theprocess">Pyro Beta</div>
+      </div>
+
+      <div class="row">
+        <div class="text_small">
+          <p class="lead" style="margin-bottom: 0; text-align: justify">
+            We started to build a functional prototype without focusing too much
+            on the visuals. We wanted to implement the main features as quickly
+            as possible so that designers could actually use the tool and give
+            us an authentic evaluation.
+          </p>
+        </div>
+      </div>
+
+      <p class="lead imgDescription contentPadding">Pyro Beta</p>
+      <div class="row">
+        <div class="img1Row">
+          <img
+            class="img-fluid img_shadow lazyload"
+            data-src="img/intuit/pyro/pyroBeta_screens.png"
+            alt=" "
+          />
+        </div>
+      </div>
+
+      <div class="row barGroupMargin contentPadding">
+        <div class="text_small">
+          <p class="lead barText">Features I implemented:</p>
+          <ul class="fa-ul barGroup">
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>Imported 7 design system
+              components with real time editability
+            </li>
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>Copy & pasting an image
+              directly from Sketch to the editor
+            </li>
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>Text style manipulation
+            </li>
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>Page routing
+            </li>
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>Profile settings
+            </li>
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>Global content
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="lead imgDescription contentPadding">WYSIWYG Editor</p>
+      <div class="row">
+        <div class="img2Row">
+          <img
+            class="img-fluid img_shadow lazyload"
+            data-src="img/intuit/pyro/beta_page_editor.png"
+            alt=" "
+          />
+        </div>
+      </div>
+
+      <p class="lead imgDescription contentPadding">Beta Video Demo</p>
+      <div class="row">
+        <div class="img1Row">
+          <div class="embed-responsive embed-responsive-16by9 img_shadow">
+            <video class="embed-responsive-item" controls>
+              <source src="img/intuit/pyro/pyro_beta.mov" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </div>
+
+      <div class="row contentPadding">
+        <div class="text_small">
+          <p class="lead" style="margin-bottom: 0; text-align: justify">
+            Designers could link their editor built pages to more complex pages
+            that required development resources. This reduced the bottleneck
+            that our team had on the design process because we were no longer
+            responsible for updating every single page. The end users testing
+            the prototypes wouldn’t be able to tell the difference between a
+            coded page versus an editor built page.
+          </p>
+        </div>
+      </div>
+
+      <p class="lead imgDescription contentPadding">Prototype architecture</p>
+      <div class="row">
+        <div class="img2Row">
+          <img
+            class="img-fluid img_shadow lazyload"
+            data-src="img/intuit/pyro/pages_flow.svg"
+            alt=" "
+          />
+        </div>
+      </div>
+
+      <div class="row contentPadding">
+        <div class="text_small">
+          <p class="lead" style="margin-bottom: 0; text-align: justify">
+            We released the pilot to 8 designers who used the tool to create
+            prototypes for a month. They reported bugs and gave us feedback on
+            what to improve before we released the tool to the greater design
+            organization.
+          </p>
+        </div>
+      </div>
+
+      <div class="row barGroupMargin contentPadding">
+        <div class="text_small">
+          <p class="lead barText">Designer Feedback:</p>
+          <ul class="fa-ul barGroup">
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>Pages needed tags for
+              organization and searchability.
+            </li>
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>It was difficult to find
+              images, it’s too unorganized.
+            </li>
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>Needed image browser in
+              the editor.
+            </li>
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>Wanted to see the pages
+              in a flow.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row contentPadding">
+        <div class="text_small">
+          <p class="lead" style="margin-bottom: 0; text-align: justify">
+            I worked on redesigning the image manager because all of the
+            designers had issues with it. Initially, we built the image browser
+            to be a separate page outside of the editor. Designers wanted to be
+            able to access images within the editor instead of having a whole
+            separate tab open to copy the image URLs.
+          </p>
+        </div>
+      </div>
+
+      <p class="lead imgDescription contentPadding">Initial asset manager</p>
+      <div class="row">
+        <div class="img2Row">
+          <img
+            class="img-fluid img_shadow lazyload"
+            data-src="img/intuit/pyro/img_manager_before.png"
+            alt=" "
+          />
+        </div>
+      </div>
+
+      <p class="lead imgDescription contentPadding">
+        Outside research on asset management
+      </p>
+      <div class="row">
+        <div class="img1Row">
+          <img
+            class="img-fluid img_shadow lazyload"
+            data-src="img/intuit/pyro/img_manager_comp.png"
+            alt=" "
+          />
+        </div>
+      </div>
+
+      <div class="row barGroupMargin contentPadding">
+        <div class="text_small">
+          <p class="lead barText">Common patterns:</p>
+          <ul class="fa-ul barGroup">
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>Opens within a side
+              panel or modal
+            </li>
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>Copy and paste images
+              directly from clipboard
+            </li>
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>Includes subdirectories
+              for better organization
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="lead imgDescription contentPadding">Wireframes</p>
+      <div class="row">
+        <div class="img2Row">
+          <img
+            class="img-fluid img_shadow lazyload"
+            data-src="img/intuit/pyro/imgManager_lofi.png"
+            alt=" "
+          />
+        </div>
+      </div>
+
+      <div class="row contentPadding">
+        <div class="text_small">
+          <p class="lead" style="margin-bottom: 0; text-align: justify">
+            I moved forward with the modal design because the right panel was
+            already being used to edit component properties. Next, I did some
+            explorations on confirmation states for renaming and deleting
+            images.
+          </p>
+        </div>
+      </div>
+
+      <p class="lead imgDescription contentPadding">
+        Ideas on confirmation states
+      </p>
+      <div class="row">
+        <div class="img2Row">
+          <img
+            class="img-fluid img_shadow lazyload"
+            data-src="img/intuit/pyro/imgManager_states.svg"
+            alt=" "
+          />
+        </div>
+      </div>
+
+      <p class="lead imgDescription contentPadding">Final idea</p>
+      <div class="row">
+        <div class="img2Row">
+          <img
+            class="img-fluid img_shadow lazyload"
+            data-src="img/intuit/pyro/imgManager_finalStates.svg"
+            alt=" "
+          />
+        </div>
+      </div>
+
+      <p class="lead imgDescription contentPadding">
+        Assets manager implementation
+      </p>
+      <div class="row">
+        <div class="img1Row">
+          <div class="embed-responsive embed-responsive-4by3 img_shadow">
+            <video class="embed-responsive-item" controls>
+              <source src="img/intuit/pyro/assets.mov" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </div>
+
+      <div class="row contentPadding">
+        <div class="text_small">
+          <p class="lead" style="margin-bottom: 0; text-align: justify">
+            I also redesigned the create page flow and implemented tags so users
+            could better categorize and search for pages. I’m only going to show
+            the before and after because there are more interesting things to go
+            over. I followed a similar design process as the asset manager.
+          </p>
+        </div>
+      </div>
+
+      <p class="lead imgDescription contentPadding">
+        Create page flow (before)
+      </p>
+      <div class="row">
+        <div class="img2Row">
+          <img
+            class="img-fluid img_shadow lazyload"
+            data-src="img/intuit/pyro/create_page_flow_alpha.png"
+            alt=" "
+          />
+        </div>
+      </div>
+
+      <p class="lead imgDescription contentPadding">Create page flow (after)</p>
+      <div class="row">
+        <div class="img2Row">
+          <img
+            class="img-fluid img_shadow lazyload"
+            data-src="img/intuit/pyro/create_page_flow_beta1.png"
+            alt=" "
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="img2Row">
+          <img
+            class="img-fluid img_shadow lazyload"
+            data-src="img/intuit/pyro/create_page_flow_beta2.png"
+            alt=" "
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="img2Row">
+          <img
+            class="img-fluid img_shadow lazyload"
+            data-src="img/intuit/pyro/create_page_flow_beta3.png"
+            alt=" "
+          />
+        </div>
+      </div>
+
+      <div class="row contentPadding">
+        <div class="text_small">
+          <p class="lead" style="margin-bottom: 0; text-align: justify">
+            We released the tool just in time for pre-tax season user testing. I
+            taught designers how to use the tool and built coded pages whenever
+            there were technical limitations with the editor.
+          </p>
+        </div>
+      </div>
+
+      <div class="row theprocessWrap" id="research2">
+        <div class="text_small theprocess">More Research</div>
+      </div>
+
+      <div class="row">
+        <div class="text_small">
+          <p class="lead" style="margin-bottom: 0; text-align: justify">
+            The tax season came to an end and it was time for us to get feedback
+            for our next iteration. Here’s an overview of the usage data for the
+            preseason end to end user testing.
+          </p>
+        </div>
+      </div>
+
+      <p class="lead imgDescription contentPadding">
+        IPF vs Pyro (November of 2019)
+      </p>
+      <div class="row">
+        <div class="img2Row">
+          <img
+            class="img-fluid img_shadow lazyload"
+            data-src="img/intuit/pyro/ty19_e2e_stats.png"
+            alt=" "
+          />
+        </div>
+      </div>
+
+      <p class="lead imgDescription contentPadding">
+        TurboTax e2e prototype sitemap
+      </p>
+      <div class="row">
+        <div class="img2Row">
+          <img
+            class="img-fluid img_shadow lazyload"
+            data-src="img/intuit/pyro/ty19_flowchart.png"
+            alt=" "
+          />
+        </div>
+      </div>
+
+      <div class="row contentPadding">
+        <div class="text_small">
+          <p class="lead" style="margin-bottom: 0; text-align: justify">
+            I drove a large cross functional research initiative to make sure
+            that we were still headed towards the right direction.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="text_small quoteWrapper">
+          <p class="lead quote">
+            <b style="font-style: normal; color: #065fd4">Research Goal:</b>
+            Uncover pain points in cross-functional teams across the org and
+            align on how to organize the content, pages, and prototypes in Pyro
+          </p>
+        </div>
+      </div>
+
+      <p class="lead imgDescription contentPadding"></p>
+      <div class="row">
+        <div class="img2Row">
+          <img
+            class="img-fluid img_shadow lazyload"
+            data-src="img/intuit/pyro/pyro_research_sample.svg"
+            alt=" "
+          />
+        </div>
+      </div>
+
+      <div class="row barGroupMargin contentPadding">
+        <div class="text_small">
+          <p class="lead barText">Each interview included:</p>
+          <ul class="fa-ul barGroup">
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>Questions around how
+              each function collaborated with each other.
+            </li>
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>A usability test for the
+              current editor.
+            </li>
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>An A/B test for a
+              reimagined homescreen for the tool.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="lead imgDescription contentPadding">Research Data</p>
+      <div class="row">
+        <div class="img1Row">
+          <img
+            class="img-fluid img_shadow lazyload"
+            data-src="img/intuit/pyro/research_whiteboard.jpg"
+            alt=" "
+          />
+        </div>
+      </div>
+
+      <div class="row theprocessWrap" id="researchfindings">
+        <div class="text_small theprocess">Findings</div>
+      </div>
+
+      <div class="row">
+        <div class="text_small">
+          <p class="lead" style="margin-bottom: 0; text-align: justify">
+            Friction often occurs in the high fidelity phase. The team pivots
+            often and needs to collaborate closely in this stage; members lose
+            visibility over decisions made, resulting in a conflicting source of
+            truth.
+          </p>
+        </div>
+      </div>
+
+      <p class="lead imgDescription contentPadding">Intuit's design process</p>
+      <div class="row">
+        <div class="img1Row">
+          <img
+            class="img-fluid img_shadow lazyload"
+            data-src="img/intuit/pyro/intuit_triple_diamond.png"
+            alt=" "
+          />
+        </div>
+      </div>
+
+      <p class="lead imgDescription contentPadding">Journey map</p>
+      <div class="row">
+        <div class="img1Row">
+          <img
+            class="img-fluid img_shadow lazyload"
+            data-src="img/intuit/pyro/research_friction_1_map.png"
+            alt=" "
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="img1Row">
+          <img
+            class="img-fluid img_shadow lazyload"
+            data-src="img/intuit/pyro/research_friction_2_map.png"
+            alt=" "
+          />
+        </div>
+      </div>
+
+      <div class="row contentPadding">
+        <div class="text_small">
+          <p class="lead" style="margin-bottom: 0; text-align: justify">
+            Since the teams move so rapidly, research findings behind certain
+            iterations are lost or forgotten. Intuit teams needed a historical
+            research database which links to prototypes and shows the reasoning
+            behind pivots.
+          </p>
+        </div>
+      </div>
+
+      <p class="lead imgDescription contentPadding"></p>
+      <div class="row">
+        <div class="img2Row">
+          <img
+            class="img-fluid img_shadow lazyload"
+            data-src="img/intuit/pyro/shaira_quote.png"
+            alt=" "
+          />
+        </div>
+      </div>
+
+      <div class="row barGroupMargin contentPadding">
+        <div class="text_small">
+          <p class="lead barText">
+            These questions came up often in product meetings:
+          </p>
+          <ul class="fa-ul barGroup">
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>“Why was this pivot done
+              in Quarter 2?”
+            </li>
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>“Did we try this
+              before?”
+            </li>
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>“Which designs failed?
+              Why?”
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="text_small quoteWrapper">
+          <p class="lead quote">
+            <b style="font-style: normal; color: #065fd4">Opportunity: </b>Prior
+            iterations & rationale get buried because teams use multiple tools
+            to test ideas so it takes longer to make calculated decisions
+          </p>
+        </div>
+      </div>
+
+      <p class="lead imgDescription contentPadding"></p>
+      <div class="row">
+        <div class="img2Row">
+          <img
+            class="img-fluid img_shadow lazyload"
+            data-src="img/intuit/pyro/amy_quote.png"
+            alt=" "
+          />
+        </div>
+      </div>
+
+      <div class="row contentPadding">
+        <div class="text_small">
+          <p class="lead" style="margin-bottom: 0; text-align: justify">
+            For the usability test, I had the participants try to recreate a
+            simple flow using the editor. We needed more feedback to know how to
+            pivot for the next iteration.
+          </p>
+        </div>
+      </div>
+
+      <p class="lead imgDescription contentPadding">Usability task</p>
+      <div class="row">
+        <div class="img2Row">
+          <img
+            class="img-fluid img_shadow lazyload"
+            data-src="img/intuit/pyro/usability_test_task.png"
+            alt=" "
+          />
+        </div>
+      </div>
+
+      <div class="row barGroupMargin contentPadding">
+        <div class="text_small">
+          <p class="lead barText">Feedback:</p>
+          <ul class="fa-ul barGroup">
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>Users thought it was
+              difficult to use the JSON editor to update component content.
+            </li>
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>Users wanted to see
+              where the page sits in the flow.
+            </li>
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>Users wanted to edit
+              multiple pages at once, instead of one at a time.
+            </li>
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>Users were confused by
+              inconsistent inline editing vs right panel JSON editing.
+            </li>
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>Users felt that copying
+              and pasting urls to replace a component’s images was tedious. They
+              wanted a “choose image” button.
+            </li>
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>Users wanted the ability
+              to comment.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="lead imgDescription contentPadding">Component JSON editor</p>
+      <div class="row">
+        <div class="img1Row">
+          <img
+            class="img-fluid img_shadow lazyload"
+            data-src="img/intuit/pyro/JSON_editor.png"
+            alt=" "
+          />
+        </div>
+      </div>
+
+      <div class="row contentPadding">
+        <div class="text_small">
+          <p class="lead" style="margin-bottom: 0; text-align: justify">
+            I hosted a design sprint and had my teammates draw out how they
+            thought content should be organized for a prototyping tool. Most of
+            the sketches were bucketed into 2 categories. The first was a
+            subdirectory layout that used folders, similar to Box or Google
+            Drive. The second design pattern was to list all of the pages and
+            include a robust search/tagging system to navigate through the
+            content.
+          </p>
+        </div>
+      </div>
+
+      <p class="lead imgDescription contentPadding">Subdirectory approach</p>
+      <div class="row">
+        <div class="img2Row">
+          <img
+            class="img-fluid img_shadow lazyload"
+            data-src="img/intuit/pyro/sketch_design_folders.jpg"
+            alt=" "
+          />
+        </div>
+      </div>
+
+      <p class="lead imgDescription contentPadding">Robust search approach</p>
+      <div class="row">
+        <div class="img2Row">
+          <img
+            class="img-fluid img_shadow lazyload"
+            data-src="img/intuit/pyro/sketch_design_filter.png"
+            alt=" "
+          />
+        </div>
+      </div>
+
+      <div class="row contentPadding">
+        <div class="text_small">
+          <p class="lead" style="margin-bottom: 0; text-align: justify">
+            I converted the sketches into two low fidelity prototypes then
+            tested each version randomly amongst the research participants.
+          </p>
+        </div>
+      </div>
+
+      <p class="lead imgDescription contentPadding">Robust search approach</p>
+      <div class="row">
+        <div class="img2Row">
+          <img
+            class="img-fluid img_shadow lazyload"
+            data-src="img/intuit/pyro/lofi_wireframes_filter.svg"
+            alt=" "
+          />
+        </div>
+      </div>
+
+      <p class="lead imgDescription contentPadding">Subdirectory approach</p>
+      <div class="row">
+        <div class="img2Row">
+          <img
+            class="img-fluid img_shadow lazyload"
+            data-src="img/intuit/pyro/lofi_wireframes_folder.svg"
+            alt=" "
+          />
+        </div>
+      </div>
+
+      <div class="row barGroupMargin contentPadding">
+        <div class="text_small">
+          <p class="lead barText">Feedback:</p>
+          <ul class="fa-ul barGroup">
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>Users preferred the
+              filter approach.
+            </li>
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>Users had mixed opinions
+              about using subdirectories because only the organizer would know
+              how the subdirectories are organized. It also required a lot of
+              maintenance.
+            </li>
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>Users didn’t care about
+              the specifics of shared content but did want a private workspace
+              for WIP designs.
+            </li>
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>Users didn’t understand
+              the need for a pages section. They felt that a page should always
+              be within the prototype so it’s relative to the context.
+            </li>
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>Some users felt that the
+              filter didn’t need an entire sidebar. A good filter can be
+              achieved with just a search bar.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row theprocessWrap" id="iterateTab">
+        <div class="text_small theprocess">Next Steps</div>
+      </div>
+
+      <div class="row barGroupMargin">
+        <div class="text_small">
+          <p class="lead barText" style="font-weight: 400">
+            At this point we aligned on a few goals:
+          </p>
+          <ul class="fa-ul barGroup">
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>Users need to
+              collaborate on prototypes asynchronously.
+            </li>
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>Users need real time
+              saving- similar to Figma’s collaborative auto save.
+            </li>
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>Users need to duplicate
+              prototypes easily to ensure previous iterations aren’t lost.
+            </li>
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>Users need to edit
+              multiple pages in a prototype at once.
+            </li>
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>Users need consistent
+              inline editing within the editor.
+            </li>
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>Users need the content
+              to be organized by prototypes, instead of pages.
+            </li>
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>Users need a robust
+              search and tagging interface.
+            </li>
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>Users need logic based
+              navigation.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row contentPadding">
+        <div class="text_small">
+          <p class="lead" style="margin-bottom: 0; text-align: justify">
+            We began researching into different WYSIWYG editors that fit our
+            needs and came across CraftJS. It’s an open source website builder
+            which offers a comprehensive API around inline text editing and
+            nested containers.
+          </p>
+        </div>
+      </div>
+
+      <p class="lead imgDescription contentPadding">CraftJS Demo</p>
+      <div class="row">
+        <div class="img1Row">
+          <div class="row"></div>
+          <div style="width: 100%; margin: auto" class="img_shadow">
+            <video
+              class="embed-responsive-item lazyload"
+              muted
+              autoplay
+              loop
+              data-src="img/intuit/pyro/craftjs.mov"
+              width="100%"
+              style="margin-bottom: -6px"
+            ></video>
+          </div>
+          <div class="row"></div>
+        </div>
+      </div>
+
+      <div class="row theprocessWrap" id="pyro1_0">
+        <div class="text_small theprocess">Pyro 1.0</div>
+      </div>
+
+      <div class="row">
+        <div class="text_small">
+          <p class="lead" style="margin-bottom: 0; text-align: justify">
+            We rebuilt the entire platform from scratch for the next release
+            because there were so many changes to implement. Initially, we were
+            a 2 person team but halfway through rebuilding, we recruited 2
+            design technologists from our Quickbooks team. They helped bring in
+            their design system components. We also received help from a visual
+            designer who added more polish to my wireframes.
+          </p>
+        </div>
+      </div>
+
+      <div class="row barGroupMargin contentPadding">
+        <div class="text_small">
+          <p class="lead barText">Features I designed and implemented:</p>
+          <ul class="fa-ul barGroup">
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>Home
+            </li>
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>Tags
+            </li>
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>Search
+            </li>
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>Image & hotspots
+            </li>
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>Variables
+            </li>
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>Create, deleting, and
+              duplicating a prototype
+            </li>
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>Inline component
+              editibility
+            </li>
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>Imported TurboTax design
+              system components
+            </li>
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>Redo/undo functionality
+              in editor
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="lead imgDescription contentPadding">Pyro 1.0</p>
+      <div class="row">
+        <div class="img1Row">
+          <img
+            class="img-fluid img_shadow lazyload"
+            data-src="img/intuit/pyro/pyro_1_0_huge.png"
+            alt=" "
+          />
+        </div>
+      </div>
+
+      <p class="lead imgDescription contentPadding"></p>
+      <div class="row">
+        <div class="img1Row">
+          <div class="row"></div>
+          <div style="width: 100%; margin: auto" class="img_shadow">
+            <video
+              class="embed-responsive-item lazyload"
+              muted
+              controls
+              data-src="img/intuit/pyro/pyro_1_0_vid.mov"
+              width="100%"
+              style="margin-bottom: -6px"
+            ></video>
+          </div>
+          <div class="row"></div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="text_small quoteWrapper">
+          <p class="lead quote">
+            When asked “How likely are you to use Pyro for your future
+            prototyping needs?”, product designers who used pyro rated it 4.1/5
+          </p>
+        </div>
+      </div>
+
+      <div class="row barGroupMargin">
+        <div class="text_small">
+          <p class="lead barText" style="font-weight: 400">
+            This tool enabled Intuit to massively increase the velocity for
+            customer research (these numbers are from November of 2020):
+          </p>
+          <ul class="fa-ul barGroup">
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>In total, Pyro
+              prototypes were shown to 859 actual customers (research
+              participants)
+            </li>
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>24 customers in 2
+              moderated marketing studies
+            </li>
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>744 customers through
+              unmoderated, quantitative UserZoom studies
+            </li>
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>91 customers for
+              moderated end to end research
+            </li>
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>162 users- 121
+              designers, 31 PMs, and 10 developers
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="lead imgDescription contentPadding"></p>
+      <div class="row">
+        <div class="img2Row">
+          <img
+            class="img-fluid img_shadow lazyload"
+            data-src="img/intuit/pyro/impact_quote1.png"
+            alt=" "
+          />
+        </div>
+      </div>
+
+      <p class="lead imgDescription contentPadding"></p>
+      <div class="row">
+        <div class="img2Row">
+          <img
+            class="img-fluid img_shadow lazyload"
+            data-src="img/intuit/pyro/impact_quote2.png"
+            alt=" "
+          />
+        </div>
+      </div>
+
+      <p class="lead imgDescription contentPadding"></p>
+      <div class="row">
+        <div class="img2Row">
+          <img
+            class="img-fluid img_shadow lazyload"
+            data-src="img/intuit/pyro/impact_quote3.png"
+            alt=" "
+          />
+        </div>
+      </div>
+
+      <div class="row contentPadding">
+        <div class="text_small">
+          <p class="lead" style="margin-bottom: 0; text-align: justify">
+            This is still an ongoing project so I may add more stuff to this
+            later… although it’s already way too long haha. Thanks for reading.
+          </p>
+        </div>
+      </div>
+
+      <div class="row" style="justify-content: center; padding-top: 150px">
+        <div class="text_small">
+          <div
+            class="projectTitle"
+            style="text-align: center; font-size: 2.5em"
+          >
+            Other Intuit work
+          </div>
+        </div>
+      </div>
+      <div class="projectTypeWrapper2 contentPadding" style="padding-top: 0px">
+        <div class="row projectType">
+          <div class="text_small">
+            <div class="doubleHoverMotion">
+              <a class="titlehoriz" href="intuit_motionIndex.html">
+                <?xml version="1.0" encoding="UTF-8"?>
+                <svg
+                  width="279px"
+                  height="199px"
+                  viewBox="0 0 279 199"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <title>motion</title>
+                  <g
+                    id="motion"
+                    stroke="none"
+                    stroke-width="1"
+                    fill="none"
+                    fill-rule="evenodd"
+                  >
+                    <rect
+                      fill="#F8F8F8"
+                      x="0"
+                      y="0"
+                      width="279"
+                      height="199"
+                    ></rect>
+                    <rect
+                      id="Rectangle"
+                      stroke="#A0A0A0"
+                      stroke-width="2"
+                      x="6"
+                      y="6"
+                      width="267"
+                      height="188"
+                      class="svgHoverStroke"
+                      rx="4"
+                    ></rect>
+                    <path
+                      d="M196,157 C192.469222,135.84153 184.083624,125.262295 170.843206,125.262295 C157.602787,125.262295 150.017789,135.726307 148.088212,156.654329 C139.425455,109.278219 125.825784,85.5901639 107.289199,85.5901639 C88.7526132,85.5901639 76.3948897,109.393443 70.2160279,157 C56.0929152,76.7741348 34.6875726,36.4408015 6,36"
+                      id="Line"
+                      stroke="#A0A0A0"
+                      stroke-width="2"
+                      stroke-linecap="square"
+                      stroke-dasharray="12,6"
+                      class="svgHoverStroke"
+                    ></path>
+                    <circle
+                      id="Oval"
+                      stroke="#A0A0A0"
+                      stroke-width="2"
+                      fill="#FFFFFF"
+                      cx="195"
+                      cy="150"
+                      r="8"
+                      class="svgHoverStroke"
+                    ></circle>
+                  </g>
+                </svg>
+              </a>
+              <div
+                class="sliding-middle-out projectTypeTitle"
+                onclick="location.href='intuit_motionIndex.html';"
+              >
+                Motion Projects
+              </div>
+            </div>
+            <p class="lead">
+              I use code and After Effects to create delightful motion
+              experiences.
+            </p>
+          </div>
+        </div>
+
+        <div class="row projectType">
+          <div class="text_small">
+            <div class="doubleHoverProto">
+              <a class="titlehoriz" href="intuit_prototypeIndex.html">
+                <?xml version="1.0" encoding="UTF-8"?>
+                <svg
+                  width="279px"
+                  height="199px"
+                  viewBox="0 0 279 199"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <title>futureProto</title>
+                  <g
+                    id="futureProto"
+                    stroke="none"
+                    stroke-width="1"
+                    fill="none"
+                    fill-rule="evenodd"
+                  >
+                    <rect
+                      fill="#F8F8F8"
+                      x="0"
+                      y="0"
+                      width="279"
+                      height="199"
+                    ></rect>
+                    <polygon
+                      class="svgHoverStroke"
+                      id="Path"
+                      stroke="#A0A0A0"
+                      stroke-width="2"
+                      fill="#F7F7F7"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      points="139.843213 194 6 142.869041 139.843213 91 273 142.869041"
+                    ></polygon>
+                    <polygon
+                      class="svgHoverStroke"
+                      id="Path"
+                      stroke="#A0A0A0"
+                      stroke-width="2"
+                      fill="#F7F7F7"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      points="139.843213 153 6 100.37979 139.843213 47 273 100.37979"
+                    ></polygon>
+                    <polygon
+                      class="svgHoverStroke"
+                      id="Path"
+                      stroke="#A0A0A0"
+                      stroke-width="2"
+                      fill="#F7F7F7"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      points="139.843213 109 6 57.8690414 139.843213 6 273 57.8690414"
+                    ></polygon>
+                  </g>
+                </svg>
+              </a>
+              <div
+                class="sliding-middle-out projectTypeTitle"
+                onclick="location.href='intuit_prototypeIndex.html';"
+              >
+                Prototype Projects
+              </div>
+            </div>
+            <p class="lead">
+              I prototype emerging technologies to showcase potential business
+              benefits.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="text_medium theprocess myOtherWork">My Other Work</div>
+      </div>
+
+      <div class="row">
+        <!-- D4SD -->
+        <section class="col-md-2 order-md-1" style="padding: 0px 0"></section>
+        <section class="col-md-4 order-md-2 titlehoriz" style="padding: 0px 0">
+          <div
+            class="box btn-group modal-dialogtwo dynamicthumbnail"
+            style="margin-top: 0px"
+          >
+            <a href="project1.html">
+              <div class="titlehoriz">
+                <img class="img-fluid" src="img/idx_eqr.png" alt=" " />
+              </div>
+            </a>
+          </div>
+        </section>
+        <section
+          class="col-md-4 order-md-3 vertical-align"
+          style="padding: 0px 0"
+        >
+          <div class="fullWidthWork">
+            <div class="row-centerer">
+              <h3 class="section-heading" style="font-weight: 400">EventQR</h3>
+              <p class="lead">
+                A web app that lets users create & scan events encrypted into a
+                QR code, which can be synced onto their Google Calendar.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="col-md-2 order-md-4" style="padding: 0px 0"></section>
+      </div>
+
+      <div class="row" style="margin-top: 7vw">
+        <!-- Birch -->
+        <section class="col-md-2 order-md-1" style="padding: 0px 0"></section>
+        <section class="col-md-4 order-md-3 titlehoriz" style="padding: 0px 0">
+          <div
+            class="box btn-group modal-dialogtwo dynamicthumbnail"
+            style="margin-top: 0px"
+          >
+            <a href="birch.html">
+              <div class="titlehoriz">
+                <img class="img-fluid" src="img/idx_birch.png" alt=" " />
+              </div>
+            </a>
+          </div>
+        </section>
+        <section
+          class="col-md-4 order-md-2 vertical-align"
+          style="padding: 0px 0"
+        >
+          <div class="fullWidthWork">
+            <div class="row-centerer">
+              <h3 class="section-heading" style="font-weight: 400">
+                Birch Aquarium
+              </h3>
+              <p class="lead">
+                Designing an exhibit in the Birch Aquarium at the Scripps
+                Institution of Oceanography to teach people about bubbles.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="col-md-2 order-md-4" style="padding: 0px 0"></section>
+      </div>
+
+      <div class="row letstalkpad"></div>
+
+      <!-- CONTACT/EMAIL ME -->
+      <div class="vertical-align titlehoriz">
+        <h2 style="font-weight: 400">
+          <a href="mailto:design.tonychan@gmail.com" class="sliding-middle-out">
+            Lets talk
+          </a>
+        </h2>
+      </div>
+      <div class="row letstalkpad"></div>
+
+      <!--  ///////////////////  FOOTER/CONTACT  ///////////////////  -->
+      <aside class="banner">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <a
+              href="mailto:design.tonychan@gmail.com"
+              target="_blank "
+              class="btn-social btn-lg"
+              ><i class="fa fa-envelope"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/tonychan96/"
+              target="_blank "
+              class="btn-social btn-lg"
+              ><i class="fa fa-linkedin"></i
+            ></a>
+            <a
+              href="https://github.com/tonychandesign"
+              target="_blank "
+              class="btn-social btn-lg"
+              ><i class="fa fa-github"></i
+            ></a>
+          </div>
+        </div>
+      </aside>
+      <!-- container fluid wrapper end div -->
+    </div>
+
+    <!-- JavaScript -->
+    <script type="text/javascript" src="js/lazyload.js"></script>
+    <!-- different jquery for scrollspy  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/sideNav.js "></script>
+    <script src="js/smooth-scroll.min.js"></script>
+    <script>
+      // Instantiate Scrolls
+      var scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 200,
+      });
+
+      if (document.querySelector("[data-easing]")) {
+        var easeOutQuart = new SmoothScroll('[data-easing="easeOutQuart"]', {
+          easing: "easeOutQuart",
+        });
+      }
+    </script>
+    <script src="vendor/popper/popper.min.js "></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js "></script>
+    <script src="custom.js "></script>
+  </body>
+</html>

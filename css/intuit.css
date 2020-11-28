@@ -24,7 +24,7 @@
 .projectTypeWrapper2 {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
   max-width: 65%;
   margin: auto;
   margin-top: -1em;
@@ -45,6 +45,7 @@
   font-weight: 600;
   padding: 20px 0px;
   color: #6b6c72;
+  cursor: pointer;
 }
 /* motion is yellow */
 .doubleHoverMotion {

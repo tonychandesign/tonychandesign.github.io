@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1540px" height="642px" viewBox="0 0 1540 642" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>imgManager_finalStates</title>
+    <g id="imgManager_finalStates" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FFFFFF" x="0" y="0" width="1540" height="642"></rect>
+        <g id="Group-6" transform="translate(595.000000, 255.500000)">
+            <rect id="Rectangle" stroke="#979797" fill="#ECEEF0" x="1" y="0" width="159" height="159"></rect>
+            <rect id="Rectangle" fill="#99BAFB" x="33" y="99" width="92" height="25"></rect>
+            <g id="Group-5" transform="translate(150.000000, 20.500000) scale(-1, 1) translate(-150.000000, -20.500000) translate(147.000000, 8.000000)" fill="#000000">
+                <circle id="Oval" cx="3" cy="3" r="3"></circle>
+                <circle id="Oval" cx="3" cy="12" r="3"></circle>
+                <circle id="Oval" cx="3" cy="22" r="3"></circle>
+            </g>
+            <text id="asset-name" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="16" font-weight="400" fill="#000000">
+                <tspan x="36.416" y="117">asset name</tspan>
+            </text>
+            <line x1="0.5" y1="129.5" x2="159.5" y2="129.5" id="Line" stroke="#979797" stroke-linecap="square"></line>
+            <line x1="79.5" y1="129.5" x2="79.5" y2="159.5" id="Line" stroke="#979797" stroke-linecap="square"></line>
+            <line x1="34.5" y1="137.5" x2="50.5" y2="152.5" id="Line-2" stroke="#979797" stroke-linecap="square"></line>
+            <line x1="50.5" y1="137.5" x2="34.5" y2="152.5" id="Line-3" stroke="#979797" stroke-linecap="square"></line>
+            <line x1="108.5" y1="143.5" x2="115.5" y2="150.5" id="Line-5" stroke="#979797" stroke-linecap="square"></line>
+            <line x1="130.5" y1="135.5" x2="115.5" y2="150.5" id="Line-5" stroke="#979797" stroke-linecap="square"></line>
+        </g>
+        <g id="Group-7" transform="translate(297.000000, 256.500000)">
+            <rect id="Rectangle" stroke="#979797" fill="#ECEEF0" x="0.5" y="0" width="159" height="159"></rect>
+            <text id="Copy" font-family="AvenirNextforINTUIT-Medium, AvenirNext forINTUIT" font-size="15" font-weight="400" letter-spacing="1.07142857" fill="#000000">
+                <tspan x="19.5" y="148">Copy</tspan>
+            </text>
+            <text id="Insert" font-family="AvenirNextforINTUIT-Medium, AvenirNext forINTUIT" font-size="15" font-weight="400" letter-spacing="1.07142857" fill="#000000">
+                <tspan x="98.5" y="148">Insert</tspan>
+            </text>
+            <line x1="0.5" y1="126" x2="159.5" y2="126" id="Line" stroke="#979797" stroke-linecap="square"></line>
+            <line x1="80" y1="158.5" x2="80" y2="125.5" id="Line" stroke="#979797" stroke-linecap="square"></line>
+        </g>
+        <g id="Group-6" transform="translate(356.500000, 264.500000)">
+            <rect id="Rectangle" stroke="#979797" fill="#FFFFFF" x="1" y="0" width="89" height="72"></rect>
+            <text id="Delete" font-family="AvenirNextforINTUIT-Medium, AvenirNext forINTUIT" font-size="15" font-weight="400" letter-spacing="1.07142857" fill="#000000">
+                <tspan x="19" y="25">Delete</tspan>
+            </text>
+            <text id="Rename" font-family="AvenirNextforINTUIT-Medium, AvenirNext forINTUIT" font-size="15" font-weight="400" letter-spacing="1.07142857" fill="#000000">
+                <tspan x="14" y="60">Rename</tspan>
+            </text>
+            <line x1="0.5" y1="37.5" x2="89.5" y2="37.5" id="Line-2" stroke="#979797" stroke-linecap="square"></line>
+        </g>
+        <g id="Group-7" transform="translate(90.000000, 256.500000)">
+            <rect id="Rectangle" stroke="#979797" fill="#ECEEF0" x="0.5" y="0" width="159" height="159"></rect>
+            <text id="Copy" font-family="AvenirNextforINTUIT-Medium, AvenirNext forINTUIT" font-size="15" font-weight="400" letter-spacing="1.07142857" fill="#000000">
+                <tspan x="19.5" y="148">Copy</tspan>
+            </text>
+            <text id="Insert" font-family="AvenirNextforINTUIT-Medium, AvenirNext forINTUIT" font-size="15" font-weight="400" letter-spacing="1.07142857" fill="#000000">
+                <tspan x="98.5" y="148">Insert</tspan>
+            </text>
+            <line x1="0.5" y1="126" x2="159.5" y2="126" id="Line" stroke="#979797" stroke-linecap="square"></line>
+            <line x1="80" y1="158.5" x2="80" y2="125.5" id="Line" stroke="#979797" stroke-linecap="square"></line>
+        </g>
+        <g id="Group-5" transform="translate(236.000000, 276.000000) scale(-1, 1) translate(-236.000000, -276.000000) translate(233.000000, 263.500000)" fill="#000000">
+            <circle id="Oval" cx="3" cy="3" r="3"></circle>
+            <circle id="Oval" cx="3" cy="12" r="3"></circle>
+            <circle id="Oval" cx="3" cy="22" r="3"></circle>
+        </g>
+        <g id="Group-7" transform="translate(802.000000, 255.500000)" fill="#ECEEF0" stroke="#979797">
+            <rect id="Rectangle" x="0.5" y="0" width="159" height="159"></rect>
+        </g>
+        <text id="Confirm-Delete?" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="16" font-weight="400" fill="#000000">
+            <tspan x="821.216" y="374.5">Confirm Delete?</tspan>
+        </text>
+        <line x1="802.5" y1="385" x2="961.5" y2="385" id="Line" stroke="#979797" stroke-linecap="square"></line>
+        <line x1="881.5" y1="385" x2="881.5" y2="415" id="Line" stroke="#979797" stroke-linecap="square"></line>
+        <line x1="836.5" y1="393" x2="852.5" y2="408" id="Line-2" stroke="#979797" stroke-linecap="square"></line>
+        <line x1="852.5" y1="393" x2="836.5" y2="408" id="Line-3" stroke="#979797" stroke-linecap="square"></line>
+        <line x1="910.5" y1="399" x2="917.5" y2="406" id="Line-5" stroke="#979797" stroke-linecap="square"></line>
+        <line x1="932.5" y1="391" x2="917.5" y2="406" id="Line-5" stroke="#979797" stroke-linecap="square"></line>
+        <g id="Group-5" transform="translate(950.000000, 275.000000) scale(-1, 1) translate(-950.000000, -275.000000) translate(947.000000, 262.500000)" fill="#000000">
+            <circle id="Oval" cx="3" cy="3" r="3"></circle>
+            <circle id="Oval" cx="3" cy="12" r="3"></circle>
+            <circle id="Oval" cx="3" cy="22" r="3"></circle>
+        </g>
+        <g id="Group-7" transform="translate(1083.000000, 256.500000)" fill="#ECEEF0" stroke="#979797">
+            <rect id="Rectangle" x="0.5" y="0" width="159" height="159"></rect>
+        </g>
+        <g id="Group-5" transform="translate(1228.000000, 276.000000) scale(-1, 1) translate(-1228.000000, -276.000000) translate(1225.000000, 263.500000)" fill="#000000">
+            <circle id="Oval" cx="3" cy="3" r="3"></circle>
+            <circle id="Oval" cx="3" cy="12" r="3"></circle>
+            <circle id="Oval" cx="3" cy="22" r="3"></circle>
+        </g>
+        <circle id="Oval" stroke="#979797" stroke-width="2" fill="#D8D8D8" cx="1162.5" cy="336" r="43.5"></circle>
+        <g id="Group-8" transform="translate(1136.000000, 313.500000)" stroke="#979797" stroke-linecap="square" stroke-width="4">
+            <line x1="0.5" y1="31.5" x2="22.5" y2="45.5" id="Line-11"></line>
+            <line x1="53.5" y1="0.5" x2="22.5" y2="45.5" id="Line-11"></line>
+        </g>
+        <g id="Group-7" transform="translate(1290.000000, 256.500000)" fill="#ECEEF0" stroke="#979797">
+            <rect id="Rectangle" x="0.5" y="0" width="159" height="159"></rect>
+        </g>
+        <g id="Group-5" transform="translate(1438.000000, 276.000000) scale(-1, 1) translate(-1438.000000, -276.000000) translate(1435.000000, 263.500000)" fill="#000000">
+            <circle id="Oval" cx="3" cy="3" r="3"></circle>
+            <circle id="Oval" cx="3" cy="12" r="3"></circle>
+            <circle id="Oval" cx="3" cy="22" r="3"></circle>
+        </g>
+        <rect id="Rectangle" stroke="#979797" stroke-width="2" fill="#D8D8D8" x="1362" y="289.5" width="18" height="7"></rect>
+        <polygon id="Rectangle" stroke="#979797" stroke-width="2" fill="#D8D8D8" points="1339 314.5 1400 314.5 1386 382.5 1352 382.5"></polygon>
+        <rect id="Rectangle" stroke="#979797" stroke-width="2" fill="#D8D8D8" x="1339" y="302.5" width="61" height="6"></rect>
+        <line x1="1362" y1="348.5" x2="1369.5" y2="354" id="Line-12" stroke="#979797" stroke-width="2" stroke-linecap="square"></line>
+        <line x1="1382" y1="336.5" x2="1369.5" y2="354" id="Line-12" stroke="#979797" stroke-width="2" stroke-linecap="square"></line>
+        <line x1="1019.5" y1="89" x2="1019.5" y2="554" id="Line-13" stroke="#FF00AF" stroke-width="7" stroke-linecap="round"></line>
+        <line x1="530" y1="88.5" x2="530" y2="553.5" id="Line-13" stroke="#FF00AF" stroke-width="7" stroke-linecap="round"></line>
+        <text id="start" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="35" font-weight="400" fill="#FF00BE">
+            <tspan x="239.335" y="185">start</tspan>
+        </text>
+        <text id="confirmation-states" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="35" font-weight="400" fill="#FF00C5">
+            <tspan x="623.1675" y="185">confirmation states</tspan>
+        </text>
+        <text id="payout" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="35" font-weight="400" fill="#FF00BE">
+            <tspan x="1212.01" y="185">payout</tspan>
+        </text>
+        <text id="edit-name-inline" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="18" font-weight="400" fill="#FF00BE">
+            <tspan x="607.414" y="443">edit name inline</tspan>
+        </text>
+        <text id="or-use-existing-toas" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="18" font-weight="400" fill="#FF00BE">
+            <tspan x="1083.223" y="454">or use existing toast</tspan>
+        </text>
+    </g>
+</svg>

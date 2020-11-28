@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200px" height="467px" viewBox="0 0 1200 467" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>desired_characteristics</title>
+    <g id="desired_characteristics" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FFFFFF" x="0" y="0" width="1200" height="467"></rect>
+        <rect id="Rectangle" fill="#063763" x="36" y="29" width="350" height="61"></rect>
+        <rect id="Rectangle" fill="#1F7500" x="425" y="29" width="350" height="61"></rect>
+        <text id="BUILDER" font-family="AvenirNextforINTUIT-Heavy, AvenirNext forINTUIT" font-size="30" font-weight="600" letter-spacing="-0.0923077174" fill="#FFFFFF">
+            <tspan x="532.413077" y="70">BUILDER</tspan>
+        </text>
+        <rect id="Rectangle" fill="#C39004" x="814" y="29" width="350" height="61"></rect>
+        <text id="TECHNOLOGY" font-family="AvenirNextforINTUIT-Heavy, AvenirNext forINTUIT" font-size="30" font-weight="600" letter-spacing="-0.0923077174" fill="#FFFFFF">
+            <tspan x="881.366539" y="70">TECHNOLOGY</tspan>
+        </text>
+        <text id="CUSTOMER" font-family="AvenirNextforINTUIT-Heavy, AvenirNext forINTUIT" font-size="30" font-weight="600" letter-spacing="-0.0923077174" fill="#FFFFFF">
+            <tspan x="123.479231" y="70">CUSTOMER</tspan>
+        </text>
+        <text id="Evaluate-experience" font-family="AvenirNextforINTUIT-Medium, AvenirNext forINTUIT" font-size="18" font-weight="400" letter-spacing="-0.0553846304" fill="#0262A2">
+            <tspan x="70" y="134">Evaluate experience from my </tspan>
+            <tspan x="70" y="156">point of view, with my data, in my </tspan>
+            <tspan x="70" y="178">context</tspan>
+        </text>
+        <text id="Prototype-feels-like" font-family="AvenirNextforINTUIT-Medium, AvenirNext forINTUIT" font-size="18" font-weight="400" letter-spacing="-0.0553846304" fill="#0262A2">
+            <tspan x="70" y="234">Prototype feels like “the real </tspan>
+            <tspan x="70" y="256">thing”</tspan>
+        </text>
+        <text id="Allow-me-to-pick-up" font-family="AvenirNextforINTUIT-Medium, AvenirNext forINTUIT" font-size="18" font-weight="400" letter-spacing="-0.0553846304" fill="#0262A2">
+            <tspan x="70" y="312">Allow me to pick up from where I </tspan>
+            <tspan x="70" y="334">left off</tspan>
+        </text>
+        <text id="No-technical-knowled" font-family="AvenirNextforINTUIT-Medium, AvenirNext forINTUIT" font-size="18" font-weight="400" letter-spacing="-0.0553846304" fill="#0262A2">
+            <tspan x="458" y="134">No technical knowledge </tspan>
+            <tspan x="458" y="156">requirements to contribute</tspan>
+        </text>
+        <text id="Create-prototypes-us" font-family="AvenirNextforINTUIT-Medium, AvenirNext forINTUIT" font-size="18" font-weight="400" letter-spacing="-0.0553846304" fill="#0262A2">
+            <tspan x="458" y="212">Create prototypes using real data </tspan>
+            <tspan x="458" y="234">and production components</tspan>
+        </text>
+        <text id="Technologists-mainta" font-family="AvenirNextforINTUIT-Medium, AvenirNext forINTUIT" font-size="18" font-weight="400" letter-spacing="-0.0553846304" fill="#0262A2">
+            <tspan x="458" y="290">Technologists maintain </tspan>
+            <tspan x="458" y="312">components and complex logic, </tspan>
+            <tspan x="458" y="334">while designers focus on content, </tspan>
+            <tspan x="458" y="356">interactions, and visuals</tspan>
+        </text>
+        <text id="In-the-cloud-with-im" font-family="AvenirNextforINTUIT-Medium, AvenirNext forINTUIT" font-size="18" font-weight="400" letter-spacing="-0.0553846304" fill="#0262A2">
+            <tspan x="847" y="134">In the cloud with immediate </tspan>
+            <tspan x="847" y="156">access for employees and </tspan>
+            <tspan x="847" y="178">managed access for research </tspan>
+            <tspan x="847" y="200">participants</tspan>
+        </text>
+        <text id="Utilize-components-a" font-family="AvenirNextforINTUIT-Medium, AvenirNext forINTUIT" font-size="18" font-weight="400" letter-spacing="-0.0553846304" fill="#0262A2">
+            <tspan x="847" y="256">Utilize components and </tspan>
+            <tspan x="847" y="278">frameworks that speak the same </tspan>
+            <tspan x="847" y="300">language as production </tspan>
+            <tspan x="847" y="322">development</tspan>
+        </text>
+        <text id="Secure" font-family="AvenirNextforINTUIT-Medium, AvenirNext forINTUIT" font-size="18" font-weight="400" letter-spacing="-0.0553846304" fill="#0262A2">
+            <tspan x="847" y="378">Secure</tspan>
+        </text>
+        <text id="Changes-can-be-made" font-family="AvenirNextforINTUIT-Medium, AvenirNext forINTUIT" font-size="18" font-weight="400" letter-spacing="-0.0553846304" fill="#0262A2">
+            <tspan x="459" y="412">Changes can be made </tspan>
+            <tspan x="459" y="434">immediately without code</tspan>
+        </text>
+    </g>
+</svg>

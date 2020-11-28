@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="667px" height="1002px" viewBox="0 0 667 1002" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>pyro_research_sample</title>
+    <g id="pyro_research_sample" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FFFFFF" x="0" y="0" width="667" height="1002"></rect>
+        <circle id="Oval" fill-opacity="0.49" fill="#4E2B8F" cx="168.5" cy="291.5" r="112.5"></circle>
+        <g id="Group" transform="translate(226.000000, 349.000000)">
+            <circle id="Oval" stroke="#FFFFFF" stroke-width="5" fill="#87A2B5" cx="27.5" cy="27.5" r="27.5"></circle>
+            <text id="6" font-family="AvenirNextforINTUIT-Bold, AvenirNext forINTUIT" font-size="30" font-weight="bold" letter-spacing="-0.0923077174" fill="#FFFFFF">
+                <tspan x="18.3561539" y="38">6</tspan>
+            </text>
+        </g>
+        <rect id="Rectangle" fill="#2485CC" x="37" y="31" width="593" height="101"></rect>
+        <text id="Research-Sample" font-family="AvenirNextforINTUIT-Bold, AvenirNext forINTUIT" font-size="42" font-weight="bold" letter-spacing="-0.129230804" fill="#FFFFFF">
+            <tspan x="161.114231" y="96">Research Sample</tspan>
+        </text>
+        <text id="Interaction-designer" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="25" font-weight="400" letter-spacing="-0.0769230978" fill="#000000">
+            <tspan x="107.335577" y="286">Interaction </tspan>
+            <tspan x="112.896154" y="316">designers</tspan>
+        </text>
+        <circle id="Oval" fill-opacity="0.812254152" fill="#F25A52" cx="498.5" cy="291.5" r="112.5"></circle>
+        <g id="Group" transform="translate(556.000000, 349.000000)">
+            <circle id="Oval" stroke="#FFFFFF" stroke-width="5" fill="#87A2B5" cx="27.5" cy="27.5" r="27.5"></circle>
+            <text id="4" font-family="AvenirNextforINTUIT-Bold, AvenirNext forINTUIT" font-size="30" font-weight="bold" letter-spacing="-0.0923077174" fill="#FFFFFF">
+                <tspan x="18.3561539" y="38">4</tspan>
+            </text>
+        </g>
+        <text id="Product-managers" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="25" font-weight="400" letter-spacing="-0.0769230978" fill="#000000">
+            <tspan x="454.219231" y="286">Product</tspan>
+            <tspan x="441.482692" y="316">managers</tspan>
+        </text>
+        <circle id="Oval" fill="#FFDC00" cx="168.5" cy="563.5" r="112.5"></circle>
+        <g id="Group" transform="translate(226.000000, 621.000000)">
+            <circle id="Oval" stroke="#FFFFFF" stroke-width="5" fill="#87A2B5" cx="27.5" cy="27.5" r="27.5"></circle>
+            <text id="4" font-family="AvenirNextforINTUIT-Bold, AvenirNext forINTUIT" font-size="30" font-weight="bold" letter-spacing="-0.0923077174" fill="#FFFFFF">
+                <tspan x="18.3561539" y="38">4</tspan>
+            </text>
+        </g>
+        <circle id="Oval" fill-opacity="0.715881774" fill="#53B700" cx="498.5" cy="563.5" r="112.5"></circle>
+        <g id="Group" transform="translate(556.000000, 621.000000)">
+            <circle id="Oval" stroke="#FFFFFF" stroke-width="5" fill="#87A2B5" cx="27.5" cy="27.5" r="27.5"></circle>
+            <text id="6" font-family="AvenirNextforINTUIT-Bold, AvenirNext forINTUIT" font-size="30" font-weight="bold" letter-spacing="-0.0923077174" fill="#FFFFFF">
+                <tspan x="18.3561539" y="38">6</tspan>
+            </text>
+        </g>
+        <text id="Visual-designers" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="25" font-weight="400" letter-spacing="-0.0769230978" fill="#000000">
+            <tspan x="464.393269" y="558">Visual</tspan>
+            <tspan x="442.396154" y="588">designers</tspan>
+        </text>
+        <circle id="Oval" fill="#FF88EC" cx="177.5" cy="835.5" r="112.5"></circle>
+        <g id="Group" transform="translate(235.000000, 893.000000)">
+            <circle id="Oval" stroke="#FFFFFF" stroke-width="5" fill="#87A2B5" cx="27.5" cy="27.5" r="27.5"></circle>
+            <text id="6" font-family="AvenirNextforINTUIT-Bold, AvenirNext forINTUIT" font-size="30" font-weight="bold" letter-spacing="-0.0923077174" fill="#FFFFFF">
+                <tspan x="18.3561539" y="38">6</tspan>
+            </text>
+        </g>
+        <text id="Content-designers" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="25" font-weight="400" letter-spacing="-0.0769230978" fill="#000000">
+            <tspan x="131.369231" y="830">Content</tspan>
+            <tspan x="121.396154" y="860">designers</tspan>
+        </text>
+        <circle id="Oval" fill="#21ABF6" opacity="0.543829055" cx="507.5" cy="835.5" r="112.5"></circle>
+        <g id="Group" transform="translate(565.000000, 893.000000)">
+            <circle id="Oval" stroke="#FFFFFF" stroke-width="5" fill="#87A2B5" cx="27.5" cy="27.5" r="27.5"></circle>
+            <text id="6" font-family="AvenirNextforINTUIT-Bold, AvenirNext forINTUIT" font-size="30" font-weight="bold" letter-spacing="-0.0923077174" fill="#FFFFFF">
+                <tspan x="18.3561539" y="38">6</tspan>
+            </text>
+        </g>
+        <text id="Developers" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="25" font-weight="400" letter-spacing="-0.0769230978" fill="#000000">
+            <tspan x="102.409615" y="573">Developers</tspan>
+        </text>
+        <text id="Researchers" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="25" font-weight="400" letter-spacing="-0.0769230978" fill="#000000">
+            <tspan x="439.010577" y="845">Researchers</tspan>
+        </text>
+    </g>
+</svg>
