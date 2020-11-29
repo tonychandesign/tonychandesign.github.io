@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1698px" height="521px" viewBox="0 0 1698 521" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>proto_goals</title>
+    <g id="proto_goals" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FFFFFF" x="0" y="0" width="1698" height="521"></rect>
+        <g id="Group" transform="translate(115.000000, 101.000000)">
+            <text id="Training" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="45" font-weight="400" letter-spacing="-0.138461576" fill="#000000">
+                <tspan x="8" y="43">Training</tspan>
+            </text>
+            <text id="Daily-Commute" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="45" font-weight="400" letter-spacing="-0.138461576" fill="#000000">
+                <tspan x="518" y="43">Daily Commute</tspan>
+            </text>
+            <text id="Serving-Customers" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="45" font-weight="400" letter-spacing="-0.138461576" fill="#000000">
+                <tspan x="1028" y="43">Serving Customers</tspan>
+            </text>
+            <text id="AV-check-that-is-int" font-family="AvenirNextforINTUIT-Regular, AvenirNext forINTUIT" font-size="37" font-weight="normal" letter-spacing="-0.113846185" fill="#000000">
+                <tspan x="518" y="134">AV check that is </tspan>
+                <tspan x="518" y="178">integrated into </tspan>
+                <tspan x="518" y="222">workflow checks </tspan>
+                <tspan x="518" y="266">and trains experts </tspan>
+            </text>
+            <text id="Educate-experts-and" font-family="AvenirNextforINTUIT-Regular, AvenirNext forINTUIT" font-size="37" font-weight="normal" letter-spacing="-0.113846185" fill="#000000">
+                <tspan x="8" y="134">Educate experts </tspan>
+                <tspan x="8" y="178">and reinforce how </tspan>
+                <tspan x="8" y="222">to optimize video </tspan>
+                <tspan x="8" y="266">presentation</tspan>
+            </text>
+            <text id="Subtle-nudges-to-rem" font-family="AvenirNextforINTUIT-Regular, AvenirNext forINTUIT" font-size="37" font-weight="normal" letter-spacing="-0.113846185" fill="#000000">
+                <tspan x="1028" y="134">Subtle nudges to remind </tspan>
+                <tspan x="1028" y="178">expert to stay centered</tspan>
+                <tspan x="1028" y="222"></tspan>
+                <tspan x="1028" y="266">Pause video if anomaly is </tspan>
+                <tspan x="1028" y="310">detected</tspan>
+            </text>
+            <rect id="Rectangle" fill="#4A86E8" x="0" y="67" width="1468" height="5" rx="2.5"></rect>
+        </g>
+    </g>
+</svg>

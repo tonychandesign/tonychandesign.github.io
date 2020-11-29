@@ -12,7 +12,7 @@
     />
     <meta name="author" content="Tony Chan" />
 
-    <title>Tony Chan: Intuit Motion</title>
+    <title>Tony Chan: Intuit Rekognition</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
@@ -97,12 +97,12 @@
       <div style="height: 100vh">
         <picture>
           <source
-            srcset="img/wire_covers/intuit_connect_toExpert.png"
+            srcset="img/wire_covers/intuit_rekog.png"
             media="(min-width: 600px)"
           />
           <img
             class="img-fluid wire-proj-hero"
-            src="img/wire_covers/intuit_connect_toExpert_mobile.png"
+            src="img/wire_covers/intuit_rekog_mobile.png"
           />
         </picture>
       </div>
@@ -124,7 +124,7 @@
                 class="bar nav-link"
                 data-easing="easeInOutQuart"
                 href="#compAnal"
-                >Competitor Benchmark</a
+                >Process</a
               >
             </li>
             <li>
@@ -132,20 +132,7 @@
                 class="bar nav-link"
                 data-easing="easeInOutQuart"
                 href="#research1"
-                >Storyboards</a
-              >
-            </li>
-            <li>
-              <a class="bar nav-link" data-easing="easeInOutQuart" href="#beta"
-                >Explorations</a
-              >
-            </li>
-            <li>
-              <a
-                class="bar nav-link"
-                data-easing="easeInOutQuart"
-                href="#research2"
-                >Final Animation</a
+                >Outcome</a
               >
             </li>
           </div>
@@ -161,17 +148,17 @@
 
           <p>
             <span class="intro">My Role:</span>
-            <span class="lead myRoleText">Product & motion designer</span>
+            <span class="lead myRoleText">Prototyper</span>
           </p>
 
           <p>
             <span class="intro">Tools:</span>
-            <span class="lead myRoleText">After Effects, Lottie, Sketch</span>
+            <span class="lead myRoleText">ReactJS, AWS, Tensorflow</span>
           </p>
 
           <p>
             <span class="intro">My Team:</span>
-            <span class="lead myRoleText">Visual designer, developer </span>
+            <span class="lead myRoleText">Solo </span>
           </p>
         </div>
       </div>
@@ -183,21 +170,41 @@
       <div class="row">
         <div class="text_small">
           <p class="lead" style="margin-bottom: 0; text-align: justify">
-            After a customer selects a Callback or Chat in the help panel,
-            TurboTax displays minimal information until it connects the customer
-            to an expert. There is an opportunity for a small win that will
-            clarify and emphasize the process of connecting a customer to an
-            expert by using a delightful animation.
+            TurboTax Live lets customers connect to professional CPAs for tax
+            advice. The live help experience was subpar, often with our experts
+            barely in frame and not using the backdrop. There was an opportunity
+            to educate the experts on optimal video presentation, thus improving
+            the customer’s experience.
           </p>
         </div>
       </div>
 
-      <p class="lead imgDescription contentPadding">Old experience</p>
+      <p class="lead imgDescription contentPadding">Marketing experience</p>
       <div class="row">
         <div class="img2Row">
           <img
             class="img-fluid img_shadow lazyload"
-            data-src="img/intuit/anim/ttl_connectExpert/old.png"
+            data-src="img/intuit/future_facing/smartlook/marketing_smartlook.png"
+            alt=" "
+          />
+        </div>
+      </div>
+
+      <p class="lead imgDescription contentPadding">Actual experience</p>
+      <div class="row">
+        <div class="img2Row">
+          <img
+            class="img-fluid img_shadow lazyload"
+            data-src="img/intuit/future_facing/smartlook/actual_experience.png"
+            alt=" "
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="img2Row">
+          <img
+            class="img-fluid img_shadow lazyload"
+            data-src="img/intuit/future_facing/smartlook/actual_experience2.png"
             alt=" "
           />
         </div>
@@ -207,11 +214,9 @@
         <div class="text_small quoteWrapper">
           <p class="lead quote">
             <b style="font-style: normal; color: #065fd4">Customer Problem:</b>
-            "When I want to connect with an expert there is an allotted amount
-            of time before I am connected. I don’t understand why I need to wait
-            this long to get help, what is happening in the background, or even
-            how much time is left before I connect. This makes me feel impatient
-            and frustrated because I want help now."
+            "When I connect with an expert, the experience is completely
+            different from what was advertised. This makes me feel shocked and
+            bamboozled, resulting in less trust for TurboTax."
           </p>
         </div>
       </div>
@@ -219,98 +224,43 @@
       <div class="row contentPadding">
         <div class="text_small">
           <p class="lead" style="margin-bottom: 0; text-align: justify">
-            Our hypothesis was that by being more transparent with the search
-            process, we can increase the customer confidence and trust in the
-            brand. We wanted our customers to have a moment of delight that
-            makes them feel confident that they will be routed to an expert in
-            no time and that Intuit has their back.
+            The hypothesis was that by using Amazon’s Rekognition API, we can
+            subtly train experts to maintain proper appearance protocol to
+            ensure customers have a pleasant experience. Customers benefit by
+            connecting to an expert who is in frame and has proper lighting.
+            This gives them confidence that TurboTax experts are certified
+            professionals who will help solve their problems.
           </p>
         </div>
       </div>
 
       <div class="row theprocessWrap" id="compAnal">
-        <div class="text_small theprocess">Competitor Benchmark</div>
+        <div class="text_small theprocess">Process</div>
       </div>
 
       <div class="row">
         <div class="text_small">
           <p class="lead" style="margin-bottom: 0; text-align: justify">
-            Connecting a user to a real time service is common in rideshare apps
-            like Lyft and Uber. There was a trend in zooming out in the
-            interface, then back in once the service was connected.
+            This project started when I came across
+            <a
+              href="https://aws.amazon.com/rekognition/"
+              target="_blank"
+              style="margin-bottom: 0em; color: #005cb9"
+              >Amazon’s Rekognition API</a
+            >. It can identify objects, people, text, scenes, and activities in
+            images and videos, as well as detect any inappropriate content. I
+            built a scrappy prototype demonstrating the possibilities of this
+            tech.
           </p>
         </div>
       </div>
 
-      <p class="lead imgDescription contentPadding">Lyft</p>
-      <div class="row">
-        <div
-          class="vid1Row img_shadow"
-          style="padding: 0px; width: 20%; margin-top: 1em"
-        >
-          <video
-            class="embed-responsive-item img_shadow"
-            autoplay
-            muted
-            loop
-            src="img/intuit/anim/ttl_connectExpert/lyft.mp4"
-            width="100%"
-          ></video>
-        </div>
-      </div>
-
-      <p class="lead imgDescription contentPadding">Uber</p>
-      <div class="row">
-        <div
-          class="vid1Row img_shadow"
-          style="padding: 0px; width: 20%; margin-top: 1em"
-        >
-          <video
-            class="embed-responsive-item img_shadow"
-            autoplay
-            muted
-            loop
-            src="img/intuit/anim/ttl_connectExpert/uber.mp4"
-            width="100%"
-          ></video>
-        </div>
-      </div>
-
-      <div class="row contentPadding" style="margin-top: 2em">
-        <div class="text_small">
-          <p class="lead" style="margin-bottom: 0; text-align: justify">
-            It’s important to note that despite giving a concrete number for the
-            countdown, it’s still a fluctuating estimate. Both services
-            increased and decreased the countdown depending on driver
-            availability without informing the user. Both services also had
-            multiple states to slowly guide the user through the process.
-          </p>
-        </div>
-      </div>
-
-      <div class="row theprocessWrap" id="research1">
-        <div class="text_small theprocess">Storyboards</div>
-      </div>
-
-      <div class="row">
-        <div class="text_small">
-          <p class="lead" style="margin-bottom: 0; text-align: justify">
-            There are several steps involved for connecting a customer to an
-            expert. The customer first gets added to a queue after they submit
-            the request. When an expert becomes available, they are assigned
-            that customer. Analytics show that this step usually takes less than
-            5 minutes. The expert then has time to review the customer’s issue
-            before connecting.
-          </p>
-        </div>
-      </div>
-
-      <p class="lead imgDescription contentPadding">Storyboard</p>
+      <p class="lead imgDescription contentPadding">Goals</p>
       <div class="row">
         <div class="img2Row">
           <img
             class="img-fluid img_shadow lazyload"
-            data-src="img/intuit/anim/ttl_connectExpert/storyboard.png"
+            data-src="img/intuit/future_facing/smartlook/proto_goals.svg"
             alt=" "
           />
         </div>
@@ -318,133 +268,141 @@
 
       <div class="row barGroupMargin contentPadding">
         <div class="text_small">
-          <p class="lead barText">The approach:</p>
+          <p class="lead barText">
+            Existing problems that this technology could solve:
+          </p>
           <ul class="fa-ul barGroup">
             <li class="lead barItemWrap">
-              <i class="fa-li fa fa-circle barItem"></i>Set user expectations
-              with a countdown.
+              <i class="fa-li fa fa-circle barItem"></i>Security: Some experts
+              have been caught outsourcing their work.
             </li>
             <li class="lead barItemWrap">
-              <i class="fa-li fa fa-circle barItem"></i>Increase user confidence
-              by showing that Intuit has a large network of experts ready to
-              serve.
+              <i class="fa-li fa fa-circle barItem"></i>Inappropriate content:
+              Rekognition can detect unverified identities and inappropriate
+              objects.
             </li>
             <li class="lead barItemWrap">
-              <i class="fa-li fa fa-circle barItem"></i>Increase user clarity by
-              showing that we are searching for the correct expert for them.
+              <i class="fa-li fa fa-circle barItem"></i>Position: Make sure
+              experts are in frame.
             </li>
             <li class="lead barItemWrap">
-              <i class="fa-li fa fa-circle barItem"></i>Increase user confidence
-              by showing that the tax expert has prepared for their questions.
+              <i class="fa-li fa fa-circle barItem"></i>Depth: Make sure experts
+              aren’t too close or too far.
+            </li>
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>Lighting: Make sure
+              experts have proper lighting.
             </li>
           </ul>
-        </div>
-      </div>
-
-      <p class="lead imgDescription contentPadding">Wireframes</p>
-      <div class="row">
-        <div class="img2Row">
-          <img
-            class="img-fluid img_shadow lazyload"
-            data-src="img/intuit/anim/ttl_connectExpert/wireframes.png"
-            alt=" "
-          />
-        </div>
-      </div>
-
-      <div class="row theprocessWrap" id="beta">
-        <div class="text_small theprocess">Explorations</div>
-      </div>
-
-      <div class="row">
-        <div class="text_small">
-          <p class="lead" style="margin-bottom: 0; text-align: justify">
-            I lost track of the earlier iterations but here are the final 2 that
-            were shown to PM. These approaches centered around 3 animation
-            states. State 1: Searching for an expert. State 2: Expert is found
-            and is reviewing your questions. State 3: Connect to expert.
-          </p>
-        </div>
-      </div>
-
-      <p class="lead imgDescription contentPadding">
-        Mild: subtle pulses to show search
-      </p>
-      <div class="row">
-        <div
-          class="vid1Row img_shadow"
-          style="padding: 0px; width: 20%; margin-top: 1em"
-        >
-          <video
-            class="embed-responsive-item img_shadow"
-            autoplay
-            muted
-            loop
-            src="img/intuit/anim/ttl_connectExpert/mild.mp4"
-            width="100%"
-          ></video>
-        </div>
-      </div>
-
-      <p class="lead imgDescription" style="padding-top: 2em">
-        Wild: We're working hard to find the right expert for you
-      </p>
-      <div class="row">
-        <div
-          class="vid1Row img_shadow"
-          style="padding: 0px; width: 20%; margin-top: 1em"
-        >
-          <video
-            class="embed-responsive-item img_shadow"
-            autoplay
-            muted
-            loop
-            src="img/intuit/anim/ttl_connectExpert/lines.mp4"
-            width="100%"
-          ></video>
         </div>
       </div>
 
       <div class="row contentPadding">
         <div class="text_small">
           <p class="lead" style="margin-bottom: 0; text-align: justify">
-            The team aligned on going with the mild approach with more emphasis
-            on the pulsing red dots. They also wanted to remove magnifying glass
-            in the second part of the animation to simplify it. The team felt
-            that the wild design made it feel like our search technology was
-            slow because it went from only one location to another. There were
-            iterations of multiple lines firing at once but the animation became
-            chaotic.
+            I was encouraged to go wild so I also integrated TensorFlow’s
+            <a
+              href="https://blog.tensorflow.org/2019/11/updated-bodypix-2.html"
+              target="_blank"
+              style="margin-bottom: 0em; color: #005cb9"
+              >BodyPix API
+            </a>
+            to blur the webcam background. This feature was still buggy at the
+            time but we wanted to spark conversation around the benefits of
+            investing into such technologies.
           </p>
         </div>
       </div>
 
-      <div class="row theprocessWrap" id="research2">
-        <div class="text_small theprocess">Final Animation</div>
+      <div class="row theprocessWrap" id="research1">
+        <div class="text_small theprocess">Outcome</div>
       </div>
 
       <div class="row">
         <div class="text_small">
           <p class="lead" style="margin-bottom: 0; text-align: justify">
-            Note that this is the raw After Effects animation with a static
-            countdown. The actual countdown was implemented on the development
-            side after I gave them the Lottie file.
+            I showcased this to the product leadership team. There was full
+            alignment behind the benefits of using Rekognition and it was added
+            to the 2020 product road map. They were skeptical of the background
+            blurring technology and didn’t see many benefits of adding it so
+            that was put on hold.
           </p>
         </div>
       </div>
 
-      <p class="lead imgDescription" style="padding-top: 2em"></p>
+      <p class="lead imgDescription contentPadding">
+        Guiding expert to be in frame
+      </p>
       <div class="row">
-        <div class="vid1Row img_shadow" style="padding: 0px; margin-top: 1em">
-          <video
-            class="embed-responsive-item img_shadow"
-            style="clip-path: inset(10px 1px)"
-            autoplay
-            muted
-            loop
-            src="img/intuit/anim/ttl_connectExpert/finalOutput.mp4"
-            width="100%"
-          ></video>
+        <div class="img1Row">
+          <div class="embed-responsive embed-responsive-16by9 img_shadow">
+            <video class="embed-responsive-item" controls>
+              <source
+                src="img/intuit/future_facing/smartlook/rekog_bodypix.mp4"
+                type="video/mp4"
+              />
+            </video>
+          </div>
+        </div>
+      </div>
+
+      <p class="lead imgDescription contentPadding">
+        Unregistered user stepping into frame
+      </p>
+      <div class="row">
+        <div class="img1Row">
+          <div class="embed-responsive embed-responsive-16by9 img_shadow">
+            <video class="embed-responsive-item" controls>
+              <source
+                src="img/intuit/future_facing/smartlook/imposter.mp4"
+                type="video/mp4"
+              />
+            </video>
+          </div>
+        </div>
+      </div>
+
+      <div class="row barGroupMargin contentPadding">
+        <div class="text_small">
+          <p class="lead barText">
+            There were still many design considerations that needed to be
+            accounted for:
+          </p>
+          <ul class="fa-ul barGroup">
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>Would experts experience
+              any negative effects now that they realize they’re being watched?
+            </li>
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>How do we subtly tell
+              experts to reposition themselves without distracting them from
+              helping the customer?
+            </li>
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>Would experts feel
+              burned out from maintaining proper posture the entire time?
+            </li>
+            <li class="lead barItemWrap">
+              <i class="fa-li fa fa-circle barItem"></i>How rigorous should the
+              AI be?
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row contentPadding">
+        <div class="text_small">
+          <p class="lead" style="margin-bottom: 0; text-align: justify">
+            Ultimately, the goal of this side project was to convince product
+            management to allocate resources to this initiative and that was
+            achieved. I had to work on my main project,
+            <a
+              href="intuit_pyro.html"
+              style="margin-bottom: 0em; color: #005cb9"
+              >Pyro</a
+            >, so I passed all of these concerns to the product team that took
+            ownership of this after me.
+          </p>
         </div>
       </div>
 
