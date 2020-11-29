@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
     <!-- Custom styles for this template -->
     <link href="css/outer.css" rel="stylesheet" />
+    <link href="css/password.css" rel="stylesheet" />
 
     <!-- favicon  -->
     <link
@@ -159,28 +160,46 @@
         </div>
       </div>
 
-      <div class="row contentPadding">
+      <div class="row contentPadding" style="margin-top: 100px">
         <div class="text_small">
           <p class="lead" style="margin-bottom: 0; text-align: center">
             This work is available on request.
           </p>
         </div>
       </div>
-
-      <div id="loginbox">
-        <div class="horizontal">
-          <div class="vertical">
-            <input
-              style="margin: 16px; text-align: center"
-              id="password"
-              type="password"
-              placeholder="password"
-            />
-            <br />
-            <button id="loginbutton" type="button">Enter</button>
-            <p id="wrongPassword" style="display: none">wrong password</p>
-          </div>
-        </div>
+      <div id="passwordContainer">
+        <input
+          style="margin: 16px; text-align: left"
+          id="password"
+          type="password"
+          placeholder="Enter password"
+          autocomplete="off"
+          readonly
+          onfocus="this.removeAttribute('readonly');"
+        />
+        <br />
+        <button id="loginbutton" type="button" id="loginbutton">
+          <svg
+            version="1.1"
+            id="loginButtonArrow"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px"
+            y="0px"
+            viewBox="0 0 491.1 491.1"
+            style="enable-background: new 0 0 491.1 491.1"
+            xml:space="preserve"
+          >
+            <g>
+              <path
+                d="M379.25,282.85l-192.8,192.8c-20.6,20.6-54,20.6-74.6,0s-20.6-54,0-74.6l155.5-155.5l-155.5-155.5
+    c-20.6-20.6-20.6-54,0-74.6s54-20.6,74.6,0l192.8,192.8C399.85,228.85,399.85,262.25,379.25,282.85z"
+                fill="#ccc"
+              />
+            </g>
+          </svg>
+        </button>
+        <p id="wrongPassword" style="display: none">wrong password</p>
       </div>
 
       <div class="row">
@@ -323,9 +342,6 @@
         hash = Sha1.hash(pwd);
         var url = hash + "/test.html";
 
-        console.log("url");
-        console.log(url);
-
         $.ajax({
           url: url,
           dataType: "html",
@@ -337,7 +353,7 @@
             parent.location.hash = hash;
 
             //$("#wrongPassword").show();
-            $("#password").attr("placeholder", "wrong password");
+            $("#password").attr("placeholder", "Wrong password");
             $("#password").val("");
           },
         });
@@ -351,7 +367,6 @@
           loadPage($("#password").val());
         }
       });
-      $("#password").focus();
     </script>
   </body>
 </html>
