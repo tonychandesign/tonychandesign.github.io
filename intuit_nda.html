@@ -167,6 +167,22 @@
         </div>
       </div>
 
+      <div id="loginbox">
+        <div class="horizontal">
+          <div class="vertical">
+            <input
+              style="margin: 16px; text-align: center"
+              id="password"
+              type="password"
+              placeholder="password"
+            />
+            <br />
+            <button id="loginbutton" type="button">Enter</button>
+            <p id="wrongPassword" style="display: none">wrong password</p>
+          </div>
+        </div>
+      </div>
+
       <div class="row">
         <div class="text_medium theprocess myOtherWork">My Other Work</div>
       </div>
@@ -292,5 +308,50 @@
     <script src="vendor/bootstrap/js/bootstrap.min.js "></script>
     <script src="custom.js "></script>
     <script src="js/darkModeHander.js "></script>
+
+    <!-- password -->
+    <script
+      type="text/javascript"
+      src="https://rawcdn.githack.com/chrisveness/crypto/7067ee62f18c76dd4a9d372a00e647205460b62b/sha1.js"
+    ></script>
+
+    <script type="text/javascript">
+      "use strict";
+
+      function loadPage(pwd) {
+        var hash = pwd;
+        hash = Sha1.hash(pwd);
+        var url = hash + "/test.html";
+
+        console.log("url");
+        console.log(url);
+
+        $.ajax({
+          url: url,
+          dataType: "html",
+          success: function (data) {
+            console.log("succeeded");
+            window.location = url;
+          },
+          error: function (xhr, ajaxOptions, thrownError) {
+            parent.location.hash = hash;
+
+            //$("#wrongPassword").show();
+            $("#password").attr("placeholder", "wrong password");
+            $("#password").val("");
+          },
+        });
+      }
+
+      $("#loginbutton").on("click", function () {
+        loadPage($("#password").val());
+      });
+      $("#password").keypress(function (e) {
+        if (e.which == 13) {
+          loadPage($("#password").val());
+        }
+      });
+      $("#password").focus();
+    </script>
   </body>
 </html>
