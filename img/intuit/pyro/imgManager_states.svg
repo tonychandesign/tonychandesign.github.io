@@ -2,7 +2,7 @@
 <svg width="4297px" height="3816px" viewBox="0 0 4297 3816" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>imgManager_states</title>
     <defs>
-        <rect id="path-1" x="4" y="200" width="1440" height="1187"></rect>
+        <rect id="path-1" x="366" y="462" width="1440" height="1187"></rect>
         <filter x="-1.1%" y="-1.2%" width="102.3%" height="102.8%" filterUnits="objectBoundingBox" id="filter-2">
             <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
             <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
@@ -10,7 +10,7 @@
             <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
             <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
         </filter>
-        <rect id="path-3" x="2132" y="200" width="1440" height="1187"></rect>
+        <rect id="path-3" x="2494" y="462" width="1440" height="1187"></rect>
         <filter x="-1.1%" y="-1.2%" width="102.3%" height="102.8%" filterUnits="objectBoundingBox" id="filter-4">
             <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
             <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
@@ -18,7 +18,7 @@
             <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
             <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
         </filter>
-        <rect id="path-5" x="4" y="2106" width="1440" height="1187"></rect>
+        <rect id="path-5" x="366" y="2368" width="1440" height="1187"></rect>
         <filter x="-1.1%" y="-1.2%" width="102.3%" height="102.8%" filterUnits="objectBoundingBox" id="filter-6">
             <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
             <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
@@ -26,7 +26,7 @@
             <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
             <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
         </filter>
-        <rect id="path-7" x="2132" y="2106" width="1440" height="1187"></rect>
+        <rect id="path-7" x="2494" y="2368" width="1440" height="1187"></rect>
         <filter x="-1.1%" y="-1.2%" width="102.3%" height="102.8%" filterUnits="objectBoundingBox" id="filter-8">
             <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
             <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
@@ -34,7 +34,7 @@
             <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
             <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
         </filter>
-        <rect id="path-9" x="386" y="508" width="730" height="462" rx="6"></rect>
+        <rect id="path-9" x="748" y="770" width="730" height="462" rx="6"></rect>
         <filter x="-1.0%" y="-1.1%" width="101.9%" height="103.0%" filterUnits="objectBoundingBox" id="filter-10">
             <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
             <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
@@ -43,328 +43,318 @@
     </defs>
     <g id="imgManager_states" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <rect fill="#FFFFFF" x="0" y="0" width="4297" height="3816"></rect>
-        <g id="Group-6" transform="translate(362.000000, 262.000000)">
-            <text id="Double-modal" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="100" font-weight="400" fill="#FF00D8">
-                <tspan x="0" y="96">Double modal</tspan>
-            </text>
-            <text id="Confirm-on-left" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="100" font-weight="400" fill="#FF00E1">
-                <tspan x="0" y="1976">Confirm on left</tspan>
-            </text>
-            <text id="Flyout" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="100" font-weight="400" fill="#FF00E5">
-                <tspan x="2130" y="1976">Flyout</tspan>
-            </text>
-            <text id="Navigation-in-modal" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="100" font-weight="400" fill="#FF00E1">
-                <tspan x="2130" y="96">Navigation in modal</tspan>
-            </text>
-            <g id="Rectangle">
-                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
-                <use stroke="#979797" stroke-width="1" fill="#999999" fill-rule="evenodd" xlink:href="#path-1"></use>
-            </g>
-            <g id="Rectangle">
-                <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
-                <use stroke="#979797" stroke-width="1" fill="#999999" fill-rule="evenodd" xlink:href="#path-3"></use>
-            </g>
-            <g id="Rectangle">
-                <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
-                <use stroke="#979797" stroke-width="1" fill="#999999" fill-rule="evenodd" xlink:href="#path-5"></use>
-            </g>
-            <g id="Rectangle">
-                <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-7"></use>
-                <use stroke="#979797" stroke-width="1" fill="#999999" fill-rule="evenodd" xlink:href="#path-7"></use>
-            </g>
-            <rect id="Rectangle" fill="#FFFFFF" x="179" y="352" width="1091" height="750"></rect>
-            <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" x="4.5" y="200.5" width="1439" height="49"></rect>
-            <text id="Assets" font-family="AvenirNextforINTUIT-Bold, AvenirNext forINTUIT" font-size="29.799997" font-weight="bold" fill="#000000">
-                <tspan x="262.116305" y="570">Assets</tspan>
-            </text>
-            <text id="Search" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="25" font-weight="400" fill="#000000">
-                <tspan x="585.825" y="579">Search</tspan>
-            </text>
-            <rect id="Rectangle" stroke="#979797" x="572.5" y="547.5" width="408" height="45"></rect>
-            <rect id="Rectangle" fill-opacity="0.605960446" fill="#005DFF" x="997" y="547" width="146" height="46"></rect>
-            <text id="New" font-family="AvenirNextforINTUIT-Medium, AvenirNext forINTUIT" font-size="30" font-weight="400" fill="#000000">
-                <tspan x="1038" y="581">New</tspan>
-            </text>
-            <text id="CGDS-Icons" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="25" font-weight="400" fill="#000000">
-                <tspan x="263.2125" y="684">CGDS Icons</tspan>
-            </text>
-            <text id="My-Assets" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="25" font-weight="400" fill="#000000">
-                <tspan x="263.0625" y="844">My Assets</tspan>
-            </text>
-            <text id="Team-Assets" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="25" font-weight="400" fill="#000000">
-                <tspan x="262.2" y="894">Team Assets</tspan>
-            </text>
-            <text id="CGDS-Animations" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="25" font-weight="400" fill="#000000">
-                <tspan x="263.2875" y="739">CGDS Animations</tspan>
-            </text>
-            <text id="CGDS-Illustrations" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="25" font-weight="400" fill="#000000">
-                <tspan x="262.0125" y="794">CGDS Illustrations</tspan>
-            </text>
-            <line x1="1119.5" y1="657.5" x2="1135" y2="674" id="Line-4" stroke="#979797" stroke-linecap="square"></line>
-            <line x1="1120" y1="674" x2="1135" y2="658" id="Line-4" stroke="#979797" stroke-linecap="square"></line>
-            <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" x="594" y="648" width="159" height="159"></rect>
-            <text id="Copy" font-family="AvenirNextforINTUIT-Medium, AvenirNext forINTUIT" font-size="15" font-weight="400" letter-spacing="1.07142857" fill="#000000">
-                <tspan x="613" y="796">Copy</tspan>
-            </text>
-            <text id="Insert" font-family="AvenirNextforINTUIT-Medium, AvenirNext forINTUIT" font-size="15" font-weight="400" letter-spacing="1.07142857" fill="#000000">
-                <tspan x="692" y="796">Insert</tspan>
-            </text>
-            <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" x="791" y="645" width="159" height="159"></rect>
-            <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" x="981" y="648" width="159" height="159"></rect>
-            <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" x="982" y="844" width="159" height="159"></rect>
-            <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" x="592" y="844" width="159" height="159"></rect>
-            <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" x="787" y="844" width="159" height="159"></rect>
-            <text id="Folder-title" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="25" font-weight="400" fill="#000000">
-                <tspan x="799.2125" y="489">Folder title</tspan>
-            </text>
-            <line x1="1210.5" y1="367.5" x2="1245.5" y2="400.5" id="Line-8" stroke="#979797" stroke-linecap="square"></line>
-            <line x1="1243.5" y1="367.5" x2="1210.5" y2="400.5" id="Line-9" stroke="#979797" stroke-linecap="square"></line>
-            <circle id="Oval" fill="#000000" transform="translate(740.000000, 659.000000) scale(-1, 1) translate(-740.000000, -659.000000) " cx="740" cy="659" r="3"></circle>
-            <circle id="Oval" fill="#000000" transform="translate(740.000000, 668.000000) scale(-1, 1) translate(-740.000000, -668.000000) " cx="740" cy="668" r="3"></circle>
-            <circle id="Oval" fill="#000000" transform="translate(740.000000, 678.000000) scale(-1, 1) translate(-740.000000, -678.000000) " cx="740" cy="678" r="3"></circle>
-            <circle id="Oval" fill="#000000" transform="translate(740.000000, 858.000000) scale(-1, 1) translate(-740.000000, -858.000000) " cx="740" cy="858" r="3"></circle>
-            <circle id="Oval" fill="#000000" transform="translate(740.000000, 867.000000) scale(-1, 1) translate(-740.000000, -867.000000) " cx="740" cy="867" r="3"></circle>
-            <circle id="Oval" fill="#000000" transform="translate(740.000000, 877.000000) scale(-1, 1) translate(-740.000000, -877.000000) " cx="740" cy="877" r="3"></circle>
-            <circle id="Oval" fill="#000000" transform="translate(935.000000, 659.000000) scale(-1, 1) translate(-935.000000, -659.000000) " cx="935" cy="659" r="3"></circle>
-            <circle id="Oval" fill="#000000" transform="translate(935.000000, 668.000000) scale(-1, 1) translate(-935.000000, -668.000000) " cx="935" cy="668" r="3"></circle>
-            <circle id="Oval" fill="#000000" transform="translate(935.000000, 678.000000) scale(-1, 1) translate(-935.000000, -678.000000) " cx="935" cy="678" r="3"></circle>
-            <circle id="Oval" fill="#000000" transform="translate(935.000000, 858.000000) scale(-1, 1) translate(-935.000000, -858.000000) " cx="935" cy="858" r="3"></circle>
-            <circle id="Oval" fill="#000000" transform="translate(935.000000, 867.000000) scale(-1, 1) translate(-935.000000, -867.000000) " cx="935" cy="867" r="3"></circle>
-            <circle id="Oval" fill="#000000" transform="translate(935.000000, 877.000000) scale(-1, 1) translate(-935.000000, -877.000000) " cx="935" cy="877" r="3"></circle>
-            <circle id="Oval" fill="#000000" transform="translate(1130.000000, 858.000000) scale(-1, 1) translate(-1130.000000, -858.000000) " cx="1130" cy="858" r="3"></circle>
-            <circle id="Oval" fill="#000000" transform="translate(1130.000000, 867.000000) scale(-1, 1) translate(-1130.000000, -867.000000) " cx="1130" cy="867" r="3"></circle>
-            <circle id="Oval" fill="#000000" transform="translate(1130.000000, 877.000000) scale(-1, 1) translate(-1130.000000, -877.000000) " cx="1130" cy="877" r="3"></circle>
-            <circle id="Oval" fill="#000000" transform="translate(1130.000000, 659.000000) scale(-1, 1) translate(-1130.000000, -659.000000) " cx="1130" cy="659" r="3"></circle>
-            <circle id="Oval" fill="#000000" transform="translate(1130.000000, 668.000000) scale(-1, 1) translate(-1130.000000, -668.000000) " cx="1130" cy="668" r="3"></circle>
-            <circle id="Oval" fill="#000000" transform="translate(1130.000000, 678.000000) scale(-1, 1) translate(-1130.000000, -678.000000) " cx="1130" cy="678" r="3"></circle>
-            <text id="Delete" font-family="AvenirNextforINTUIT-Medium, AvenirNext forINTUIT" font-size="15" font-weight="400" letter-spacing="1.07142857" fill="#000000">
-                <tspan x="647" y="683">Delete</tspan>
-            </text>
-            <line x1="594" y1="774" x2="753" y2="774" id="Line" stroke="#979797" stroke-linecap="square"></line>
-            <line x1="673.5" y1="806.5" x2="673.5" y2="773.5" id="Line" stroke="#979797" stroke-linecap="square"></line>
-            <g id="Rectangle">
-                <use fill="black" fill-opacity="1" filter="url(#filter-10)" xlink:href="#path-9"></use>
-                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-9"></use>
-            </g>
-            <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" x="633" y="613" width="243" height="215"></rect>
-            <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" x="572" y="885" width="165" height="39"></rect>
-            <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" x="788" y="885" width="165" height="39"></rect>
-            <text id="Delete-Asset?" font-family="AvenirNextforINTUIT-Medium, AvenirNext forINTUIT" font-size="34" font-weight="400" letter-spacing="2.42857143" fill="#000000">
-                <tspan x="630" y="579">Delete Asset?</tspan>
-            </text>
-            <rect id="Rectangle" fill="#FFFFFF" x="2306" y="352" width="1091" height="750"></rect>
-            <text id="Assets" font-family="AvenirNextforINTUIT-Bold, AvenirNext forINTUIT" font-size="29.799997" font-weight="bold" fill="#000000">
-                <tspan x="2390.1163" y="570">Assets</tspan>
-            </text>
-            <text id="CGDS-Icons" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="25" font-weight="400" fill="#000000">
-                <tspan x="2391.2125" y="684">CGDS Icons</tspan>
-            </text>
-            <text id="My-Assets" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="25" font-weight="400" fill="#000000">
-                <tspan x="2391.0625" y="844">My Assets</tspan>
-            </text>
-            <text id="Team-Assets" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="25" font-weight="400" fill="#000000">
-                <tspan x="2390.2" y="894">Team Assets</tspan>
-            </text>
-            <text id="CGDS-Animations" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="25" font-weight="400" fill="#000000">
-                <tspan x="2391.2875" y="739">CGDS Animations</tspan>
-            </text>
-            <text id="CGDS-Illustrations" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="25" font-weight="400" fill="#000000">
-                <tspan x="2390.0125" y="794">CGDS Illustrations</tspan>
-            </text>
-            <g id="Group" transform="translate(2808.000000, 968.000000)">
-                <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" x="0" y="0" width="160" height="41"></rect>
-                <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" x="207" y="0" width="160" height="41"></rect>
-                <text id="Confirm" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="25" font-weight="400" fill="#000000">
-                    <tspan x="240.8125" y="29">Confirm</tspan>
-                </text>
-                <text id="Cancel" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="25" font-weight="400" fill="#000000">
-                    <tspan x="41.025" y="29">Cancel</tspan>
-                </text>
-            </g>
-            <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" x="2777" y="797" width="430" height="47"></rect>
-            <text id="New-Name" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="25" font-weight="400" fill="#000000">
-                <tspan x="2772.475" y="778">New Name</tspan>
-            </text>
-            <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" x="2132.5" y="200.5" width="1439" height="49"></rect>
-            <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" x="2910" y="541" width="159" height="159"></rect>
-            <text id="Rename-Asset?" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="25" font-weight="400" fill="#000000">
-                <tspan x="2901.05" y="501">Rename Asset?</tspan>
-            </text>
-            <line x1="3338.5" y1="367.5" x2="3373.5" y2="400.5" id="Line-8" stroke="#979797" stroke-linecap="square"></line>
-            <line x1="3371.5" y1="367.5" x2="3338.5" y2="400.5" id="Line-9" stroke="#979797" stroke-linecap="square"></line>
-            <g id="Group-2" transform="translate(2740.000000, 477.000000)" stroke="#979797" stroke-linecap="square" stroke-width="2">
-                <line x1="0.354166667" y1="14.5" x2="17" y2="0" id="Line"></line>
-                <line x1="0.354166667" y1="14.5" x2="17" y2="30" id="Line"></line>
-            </g>
-            <rect id="Rectangle" fill="#FFFFFF" x="2297" y="2259" width="1091" height="750"></rect>
-            <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" x="2132.5" y="2106.5" width="1439" height="49"></rect>
-            <text id="Assets" font-family="AvenirNextforINTUIT-Bold, AvenirNext forINTUIT" font-size="29.799997" font-weight="bold" fill="#000000">
-                <tspan x="2390.1163" y="2476">Assets</tspan>
-            </text>
-            <text id="Search" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="25" font-weight="400" fill="#000000">
-                <tspan x="2713.825" y="2485">Search</tspan>
-            </text>
-            <rect id="Rectangle" stroke="#979797" x="2700.5" y="2453.5" width="408" height="45"></rect>
-            <g id="Group-4" transform="translate(3125.000000, 2453.000000)" fill="#005DFF" fill-opacity="0.605960446">
-                <rect id="Rectangle" x="0" y="0" width="146" height="46"></rect>
-            </g>
-            <g id="Group-2" transform="translate(3166.000000, 2458.000000)" fill="#000000" font-family="AvenirNextforINTUIT-Medium, AvenirNext forINTUIT" font-size="30" font-weight="400">
-                <g id="Group">
-                    <text id="New">
-                        <tspan x="0" y="29">New</tspan>
-                    </text>
-                </g>
-            </g>
-            <text id="CGDS-Icons" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="25" font-weight="400" fill="#000000">
-                <tspan x="2391.2125" y="2590">CGDS Icons</tspan>
-            </text>
-            <text id="My-Assets" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="25" font-weight="400" fill="#000000">
-                <tspan x="2391.0625" y="2750">My Assets</tspan>
-            </text>
-            <text id="Team-Assets" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="25" font-weight="400" fill="#000000">
-                <tspan x="2390.2" y="2800">Team Assets</tspan>
-            </text>
-            <text id="CGDS-Animations" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="25" font-weight="400" fill="#000000">
-                <tspan x="2391.2875" y="2645">CGDS Animations</tspan>
-            </text>
-            <text id="CGDS-Illustrations" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="25" font-weight="400" fill="#000000">
-                <tspan x="2390.0125" y="2700">CGDS Illustrations</tspan>
-            </text>
-            <g id="Group-3" transform="translate(3247.000000, 2563.000000)" stroke="#979797" stroke-linecap="square">
-                <line x1="0.5" y1="0.5" x2="16" y2="17" id="Line-4"></line>
-                <line x1="1" y1="17" x2="16" y2="1" id="Line-4"></line>
-            </g>
-            <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" x="2722" y="2554" width="159" height="159"></rect>
-            <text id="Copy" font-family="AvenirNextforINTUIT-Medium, AvenirNext forINTUIT" font-size="15" font-weight="400" letter-spacing="1.07142857" fill="#000000">
-                <tspan x="2741" y="2702">Copy</tspan>
-            </text>
-            <text id="Insert" font-family="AvenirNextforINTUIT-Medium, AvenirNext forINTUIT" font-size="15" font-weight="400" letter-spacing="1.07142857" fill="#000000">
-                <tspan x="2820" y="2702">Insert</tspan>
-            </text>
-            <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" x="2920" y="2550" width="159" height="159"></rect>
-            <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" x="3109" y="2554" width="159" height="159"></rect>
-            <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" x="3110" y="2750" width="159" height="159"></rect>
-            <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" x="2720" y="2750" width="159" height="159"></rect>
-            <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" x="2915" y="2750" width="159" height="159"></rect>
-            <text id="Folder-title" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="25" font-weight="400" fill="#000000">
-                <tspan x="2927.2125" y="2395">Folder title</tspan>
-            </text>
-            <line x1="3338.5" y1="2273.5" x2="3373.5" y2="2306.5" id="Line-8" stroke="#979797" stroke-linecap="square"></line>
-            <line x1="3371.5" y1="2273.5" x2="3338.5" y2="2306.5" id="Line-9" stroke="#979797" stroke-linecap="square"></line>
-            <g id="Group-5" transform="translate(2868.000000, 2574.500000) scale(-1, 1) translate(-2868.000000, -2574.500000) translate(2865.000000, 2562.000000)" fill="#000000">
-                <circle id="Oval" cx="3" cy="3" r="3"></circle>
-                <circle id="Oval" cx="3" cy="12" r="3"></circle>
-                <circle id="Oval" cx="3" cy="22" r="3"></circle>
-            </g>
-            <g id="Group-5" transform="translate(2868.000000, 2773.500000) scale(-1, 1) translate(-2868.000000, -2773.500000) translate(2865.000000, 2761.000000)" fill="#000000">
-                <circle id="Oval" cx="3" cy="3" r="3"></circle>
-                <circle id="Oval" cx="3" cy="12" r="3"></circle>
-                <circle id="Oval" cx="3" cy="22" r="3"></circle>
-            </g>
-            <g id="Group-5" transform="translate(3063.000000, 2574.500000) scale(-1, 1) translate(-3063.000000, -2574.500000) translate(3060.000000, 2562.000000)" fill="#000000">
-                <circle id="Oval" cx="3" cy="3" r="3"></circle>
-                <circle id="Oval" cx="3" cy="12" r="3"></circle>
-                <circle id="Oval" cx="3" cy="22" r="3"></circle>
-            </g>
-            <g id="Group-5" transform="translate(3063.000000, 2773.500000) scale(-1, 1) translate(-3063.000000, -2773.500000) translate(3060.000000, 2761.000000)" fill="#000000">
-                <circle id="Oval" cx="3" cy="3" r="3"></circle>
-                <circle id="Oval" cx="3" cy="12" r="3"></circle>
-                <circle id="Oval" cx="3" cy="22" r="3"></circle>
-            </g>
-            <g id="Group-5" transform="translate(3258.000000, 2773.500000) scale(-1, 1) translate(-3258.000000, -2773.500000) translate(3255.000000, 2761.000000)" fill="#000000">
-                <circle id="Oval" cx="3" cy="3" r="3"></circle>
-                <circle id="Oval" cx="3" cy="12" r="3"></circle>
-                <circle id="Oval" cx="3" cy="22" r="3"></circle>
-            </g>
-            <g id="Group-5" transform="translate(3258.000000, 2574.500000) scale(-1, 1) translate(-3258.000000, -2574.500000) translate(3255.000000, 2562.000000)" fill="#000000">
-                <circle id="Oval" cx="3" cy="3" r="3"></circle>
-                <circle id="Oval" cx="3" cy="12" r="3"></circle>
-                <circle id="Oval" cx="3" cy="22" r="3"></circle>
-            </g>
-            <rect id="Rectangle" stroke="#979797" fill="#FFFFFF" x="2690" y="2562" width="181" height="83"></rect>
-            <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" x="2787" y="2614" width="65" height="22"></rect>
-            <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" x="2702" y="2614" width="65" height="22"></rect>
-            <text id="Confirm-Delete?" font-family="AvenirNextforINTUIT-Medium, AvenirNext forINTUIT" font-size="15" font-weight="400" letter-spacing="1.07142857" fill="#000000">
-                <tspan x="2716" y="2592">Confirm Delete?</tspan>
-            </text>
-            <line x1="2722" y1="2680" x2="2881" y2="2680" id="Line" stroke="#979797" stroke-linecap="square"></line>
-            <line x1="2801.5" y1="2712.5" x2="2801.5" y2="2679.5" id="Line" stroke="#979797" stroke-linecap="square"></line>
-            <rect id="Rectangle" fill="#FFFFFF" x="169" y="2259" width="1091" height="750"></rect>
-            <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" x="247" y="2386" width="285" height="532"></rect>
-            <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" x="4.5" y="2106.5" width="1439" height="49"></rect>
-            <text id="Search" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="25" font-weight="400" fill="#000000">
-                <tspan x="585.825" y="2485">Search</tspan>
-            </text>
-            <rect id="Rectangle" stroke="#979797" x="572.5" y="2453.5" width="408" height="45"></rect>
-            <g id="Group-4" transform="translate(997.000000, 2453.000000)" fill="#005DFF" fill-opacity="0.605960446">
-                <rect id="Rectangle" x="0" y="0" width="146" height="46"></rect>
-            </g>
-            <g id="Group-2" transform="translate(1038.000000, 2458.000000)" fill="#000000" font-family="AvenirNextforINTUIT-Medium, AvenirNext forINTUIT" font-size="30" font-weight="400">
-                <g id="Group">
-                    <text id="New">
-                        <tspan x="0" y="29">New</tspan>
-                    </text>
-                </g>
-            </g>
-            <g id="Group-3" transform="translate(1119.000000, 2563.000000)" stroke="#979797" stroke-linecap="square">
-                <line x1="0.5" y1="0.5" x2="16" y2="17" id="Line-4"></line>
-                <line x1="1" y1="17" x2="16" y2="1" id="Line-4"></line>
-            </g>
-            <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" x="594" y="2554" width="159" height="159"></rect>
-            <text id="Copy" font-family="AvenirNextforINTUIT-Medium, AvenirNext forINTUIT" font-size="15" font-weight="400" letter-spacing="1.07142857" fill="#000000">
-                <tspan x="613" y="2702">Copy</tspan>
-            </text>
-            <text id="Insert" font-family="AvenirNextforINTUIT-Medium, AvenirNext forINTUIT" font-size="15" font-weight="400" letter-spacing="1.07142857" fill="#000000">
-                <tspan x="692" y="2702">Insert</tspan>
-            </text>
-            <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" x="792" y="2550" width="159" height="159"></rect>
-            <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" x="981" y="2554" width="159" height="159"></rect>
-            <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" x="982" y="2750" width="159" height="159"></rect>
-            <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" x="592" y="2750" width="159" height="159"></rect>
-            <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" x="787" y="2750" width="159" height="159"></rect>
-            <text id="Folder-title" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="25" font-weight="400" fill="#000000">
-                <tspan x="799.2125" y="2395">Folder title</tspan>
-            </text>
-            <line x1="1210.5" y1="2273.5" x2="1245.5" y2="2306.5" id="Line-8" stroke="#979797" stroke-linecap="square"></line>
-            <line x1="1243.5" y1="2273.5" x2="1210.5" y2="2306.5" id="Line-9" stroke="#979797" stroke-linecap="square"></line>
-            <g id="Group-5" transform="translate(740.000000, 2574.500000) scale(-1, 1) translate(-740.000000, -2574.500000) translate(737.000000, 2562.000000)" fill="#000000">
-                <circle id="Oval" cx="3" cy="3" r="3"></circle>
-                <circle id="Oval" cx="3" cy="12" r="3"></circle>
-                <circle id="Oval" cx="3" cy="22" r="3"></circle>
-            </g>
-            <g id="Group-5" transform="translate(740.000000, 2773.500000) scale(-1, 1) translate(-740.000000, -2773.500000) translate(737.000000, 2761.000000)" fill="#000000">
-                <circle id="Oval" cx="3" cy="3" r="3"></circle>
-                <circle id="Oval" cx="3" cy="12" r="3"></circle>
-                <circle id="Oval" cx="3" cy="22" r="3"></circle>
-            </g>
-            <g id="Group-5" transform="translate(935.000000, 2574.500000) scale(-1, 1) translate(-935.000000, -2574.500000) translate(932.000000, 2562.000000)" fill="#000000">
-                <circle id="Oval" cx="3" cy="3" r="3"></circle>
-                <circle id="Oval" cx="3" cy="12" r="3"></circle>
-                <circle id="Oval" cx="3" cy="22" r="3"></circle>
-            </g>
-            <g id="Group-5" transform="translate(935.000000, 2773.500000) scale(-1, 1) translate(-935.000000, -2773.500000) translate(932.000000, 2761.000000)" fill="#000000">
-                <circle id="Oval" cx="3" cy="3" r="3"></circle>
-                <circle id="Oval" cx="3" cy="12" r="3"></circle>
-                <circle id="Oval" cx="3" cy="22" r="3"></circle>
-            </g>
-            <g id="Group-5" transform="translate(1130.000000, 2773.500000) scale(-1, 1) translate(-1130.000000, -2773.500000) translate(1127.000000, 2761.000000)" fill="#000000">
-                <circle id="Oval" cx="3" cy="3" r="3"></circle>
-                <circle id="Oval" cx="3" cy="12" r="3"></circle>
-                <circle id="Oval" cx="3" cy="22" r="3"></circle>
-            </g>
-            <g id="Group-5" transform="translate(1130.000000, 2574.500000) scale(-1, 1) translate(-1130.000000, -2574.500000) translate(1127.000000, 2562.000000)" fill="#000000">
-                <circle id="Oval" cx="3" cy="3" r="3"></circle>
-                <circle id="Oval" cx="3" cy="12" r="3"></circle>
-                <circle id="Oval" cx="3" cy="22" r="3"></circle>
-            </g>
-            <rect id="Rectangle" stroke="#979797" fill="#FFFFFF" x="299" y="2516" width="181" height="203"></rect>
-            <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" x="415" y="2870" width="65" height="22"></rect>
-            <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" x="306" y="2870" width="65" height="22"></rect>
-            <text id="Confirm-Delete?" font-family="AvenirNextforINTUIT-Medium, AvenirNext forINTUIT" font-size="15" font-weight="400" letter-spacing="1.07142857" fill="#000000">
-                <tspan x="325" y="2449">Confirm Delete?</tspan>
-            </text>
-            <line x1="594" y1="2680" x2="753" y2="2680" id="Line" stroke="#979797" stroke-linecap="square"></line>
-            <line x1="673.5" y1="2712.5" x2="673.5" y2="2679.5" id="Line" stroke="#979797" stroke-linecap="square"></line>
+        <path d="M394.9,358 C413.4,358 434,347.4 434,322.6 C434,296 413.4,287.2 394.9,287.2 L369.8,287.2 L369.8,358 L394.9,358 Z M392.9,347 L382.4,347 L382.4,298 L392.9,298 C405.9,298 420.5,302.3 420.5,322.6 C420.5,341.7 405.9,347 392.9,347 Z M468.9,359.4 C483.4,359.4 495,348.9 495,333.8 C495,318.7 483.4,308.6 468.9,308.6 C454.4,308.6 442.8,318.7 442.8,333.8 C442.8,348.9 454.4,359.4 468.9,359.4 Z M468.9,349.4 C459.4,349.4 455,341.3 455,333.8 C455,326.3 459.4,318.4 468.9,318.4 C478.4,318.4 482.8,326.3 482.8,333.8 C482.8,341.3 478.4,349.4 468.9,349.4 Z M523.9,359.4 C531,359.4 536.7,355.1 538.8,350.3 L539,350.3 L539,358 L550.4,358 L550.4,310 L538.4,310 L538.4,336.4 C538.4,342.8 534.8,349.4 527.2,349.4 C519.606944,349.4 518.237346,342.495853 518.200766,336.838287 L518.2,310 L506.2,310 L506.2,340 C506.2,349.8 511.4,359.4 523.9,359.4 Z M593.1,359.4 C607.7,359.4 616.7,347.8 616.7,333.8 C616.7,319.6 607.1,308.6 593.4,308.6 C584.6,308.6 579.8,313 577.3,316.1 L577,316.1 L577,282.4 L565,282.4 L565,358 L576.4,358 L576.4,350.8 L576.6,350.8 C579.9,356.3 586.4,359.4 593.1,359.4 Z M590.7,349.4 C581.9,349.4 576.6,341.5 576.6,334 C576.6,326.5 581.9,318.4 590.7,318.4 C600,318.4 604.5,326.3 604.5,333.8 C604.5,341.3 600,349.4 590.7,349.4 Z M640.5,358 L640.5,282.4 L628.5,282.4 L628.5,358 L640.5,358 Z M678.1,359.4 C687.2,359.4 694,356.2 698.7,349.8 L690.7,343.4 C688,347.2 684,349.6 678,349.6 C671,349.6 664.8,344.6 664.3,337.8 L700.8,337.8 C700.9,336.7 700.9,335.7 700.9,334.6 C700.9,317.3 691.1,308.6 677.7,308.6 C663.2,308.6 652.3,318.8 652.3,334.3 C652.3,349.9 663.3,359.4 678.1,359.4 Z M688.9,329.2 L664.3,329.2 C664.8,322.5 670.5,317.6 677.6,317.6 C685.4,317.6 688.9,323 688.9,329.2 Z M749.5,358 L749.5,331.6 C749.5,325.2 752.8,318.6 760,318.6 C766.1,318.6 768.9,323.1 768.9,329 L768.9,358 L780.9,358 L780.9,331.8 C780.9,325.6 784,318.6 791.5,318.6 C799.2,318.6 800.5,325.7 800.5,331.4 L800.5,358 L812.5,358 L812.5,328 C812.5,318.2 807.3,308.6 794.8,308.6 C787.6,308.6 782.2,311.9 779,317.7 C776.3,312.3 771.4,308.6 764,308.6 C756.3,308.6 751.2,313 749.1,317.7 L748.9,317.7 L748.9,310 L737.5,310 L737.5,358 L749.5,358 Z M849.8,359.4 C864.3,359.4 875.9,348.9 875.9,333.8 C875.9,318.7 864.3,308.6 849.8,308.6 C835.3,308.6 823.7,318.7 823.7,333.8 C823.7,348.9 835.3,359.4 849.8,359.4 Z M849.8,349.4 C840.3,349.4 835.9,341.3 835.9,333.8 C835.9,326.3 840.3,318.4 849.8,318.4 C859.3,318.4 863.7,326.3 863.7,333.8 C863.7,341.3 859.3,349.4 849.8,349.4 Z M908.2,359.4 C914.9,359.4 921.4,356.3 924.7,350.8 L924.9,350.8 L924.9,358 L936.3,358 L936.3,282.4 L924.3,282.4 L924.3,316.1 L924,316.1 C921.5,313 916.7,308.6 907.9,308.6 C894.2,308.6 884.6,319.6 884.6,333.8 C884.6,347.8 893.6,359.4 908.2,359.4 Z M910.6,349.4 C901.3,349.4 896.8,341.3 896.8,333.8 C896.8,326.3 901.3,318.4 910.6,318.4 C919.4,318.4 924.7,326.5 924.7,334 C924.7,341.5 919.4,349.4 910.6,349.4 Z M965.5,359.2 C972.3,359.2 978,356.1 980.4,351.9 L980.7,351.9 L980.7,358 L991.9,358 L991.9,328.8 C991.9,319.2 987.7,308.6 970.5,308.6 C963.2,308.6 955.6,311.2 950.2,316.2 L956.4,323.5 C959.5,320.4 964.4,318 969.5,318 C975.5,318 980.5,320.9 980.5,326.8 L980.5,328 C965.5,328 947.5,330 947.5,344.3 C947.5,355.5 957.8,359.2 965.5,359.2 Z M967.9,350.1 C963.8,350.1 959.5,348.7 959.5,344.1 C959.5,337 970.2,336.1 977.8,336.1 L980.5,336.1 L980.5,337.8 C980.5,345.4 976.1,350.1 967.9,350.1 Z M1018.1,358 L1018.1,282.4 L1006.1,282.4 L1006.1,358 L1018.1,358 Z" id="Doublemodal" fill="#FF00D8" fill-rule="nonzero"></path>
+        <path d="M404.2,2239.8 C416.2,2239.8 425.4,2235.2 431.6,2227.4 L421.5,2220.3 C417.9,2225.2 411.9,2228.5 404.3,2228.5 C389.7,2228.5 380.3,2217.8 380.3,2202.4 C380.3,2187.8 390.2,2176.5 404.8,2176.5 C410.5,2176.5 417.2,2178.7 420.9,2183.8 L430.5,2176.2 C424.9,2168.8 414,2165.4 404.8,2165.4 C383,2165.4 366.4,2179.7 366.4,2202.4 C366.4,2224.5 382.1,2239.8 404.2,2239.8 Z M462.1,2239.4 C476.6,2239.4 488.2,2228.9 488.2,2213.8 C488.2,2198.7 476.6,2188.6 462.1,2188.6 C447.6,2188.6 436,2198.7 436,2213.8 C436,2228.9 447.6,2239.4 462.1,2239.4 Z M462.1,2229.4 C452.6,2229.4 448.2,2221.3 448.2,2213.8 C448.2,2206.3 452.6,2198.4 462.1,2198.4 C471.6,2198.4 476,2206.3 476,2213.8 C476,2221.3 471.6,2229.4 462.1,2229.4 Z M511.8,2238 L511.8,2211.6 C511.8,2205.2 515.4,2198.6 523,2198.6 C530.7,2198.6 532,2205.7 532,2211.4 L532,2238 L544,2238 L544,2208 C544,2198.2 538.8,2188.6 526.3,2188.6 C519.2,2188.6 513.5,2192.9 511.4,2197.7 L511.2,2197.7 L511.2,2190 L499.8,2190 L499.8,2238 L511.8,2238 Z M571.9,2238 L571.9,2199.6 L583,2199.6 L583,2190 L571.9,2190 L571.9,2182.2 C571.9,2177.4 573.1,2171.4 580,2171.4 C581.7,2171.4 583.3,2171.7 584.6,2172.1 L585.4,2161.9 C583.6,2161.4 581.9,2161.2 579.3,2161.2 C564.4,2161.2 559.9,2171.4 559.9,2182.9 L559.9,2190 L550.8,2190 L550.8,2199.6 L559.9,2199.6 L559.9,2238 L571.9,2238 Z M597.7,2180.9 C602.1,2180.9 605.5,2177.8 605.5,2173.7 C605.5,2169.6 602.1,2166.5 597.7,2166.5 C593.3,2166.5 590.1,2169.9 590.1,2173.7 C590.1,2177.5 593.3,2180.9 597.7,2180.9 Z M603.8,2238 L603.8,2190 L591.8,2190 L591.8,2238 L603.8,2238 Z M629.3,2238 L629.3,2212.3 C629.3,2208.8 631.4,2199.4 642.2,2199.4 C643.3,2199.4 644.3,2199.5 645.9,2199.9 L645.9,2188.9 C645.1,2188.7 643.9,2188.6 643,2188.6 C636.7,2188.6 631.6,2192.5 629,2198 L628.8,2198 L628.8,2190 L617.3,2190 L617.3,2238 L629.3,2238 Z M665.7,2238 L665.7,2211.6 C665.7,2205.2 669,2198.6 676.2,2198.6 C682.3,2198.6 685.1,2203.1 685.1,2209 L685.1,2238 L697.1,2238 L697.1,2211.8 C697.1,2205.6 700.2,2198.6 707.7,2198.6 C715.4,2198.6 716.7,2205.7 716.7,2211.4 L716.7,2238 L728.7,2238 L728.7,2208 C728.7,2198.2 723.5,2188.6 711,2188.6 C703.8,2188.6 698.4,2191.9 695.2,2197.7 C692.5,2192.3 687.6,2188.6 680.2,2188.6 C672.5,2188.6 667.4,2193 665.3,2197.7 L665.1,2197.7 L665.1,2190 L653.7,2190 L653.7,2238 L665.7,2238 Z M791,2239.4 C805.5,2239.4 817.1,2228.9 817.1,2213.8 C817.1,2198.7 805.5,2188.6 791,2188.6 C776.5,2188.6 764.9,2198.7 764.9,2213.8 C764.9,2228.9 776.5,2239.4 791,2239.4 Z M791,2229.4 C781.5,2229.4 777.1,2221.3 777.1,2213.8 C777.1,2206.3 781.5,2198.4 791,2198.4 C800.5,2198.4 804.9,2206.3 804.9,2213.8 C804.9,2221.3 800.5,2229.4 791,2229.4 Z M840.7,2238 L840.7,2211.6 C840.7,2205.2 844.3,2198.6 851.9,2198.6 C859.6,2198.6 860.9,2205.7 860.9,2211.4 L860.9,2238 L872.9,2238 L872.9,2208 C872.9,2198.2 867.7,2188.6 855.2,2188.6 C848.1,2188.6 842.4,2192.9 840.3,2197.7 L840.1,2197.7 L840.1,2190 L828.7,2190 L828.7,2238 L840.7,2238 Z M924.1,2238 L924.1,2162.4 L912.1,2162.4 L912.1,2238 L924.1,2238 Z M961.7,2239.4 C970.8,2239.4 977.6,2236.2 982.3,2229.8 L974.3,2223.4 C971.6,2227.2 967.6,2229.6 961.6,2229.6 C954.6,2229.6 948.4,2224.6 947.9,2217.8 L984.4,2217.8 C984.5,2216.7 984.5,2215.7 984.5,2214.6 C984.5,2197.3 974.7,2188.6 961.3,2188.6 C946.8,2188.6 935.9,2198.8 935.9,2214.3 C935.9,2229.9 946.9,2239.4 961.7,2239.4 Z M972.5,2209.2 L947.9,2209.2 C948.4,2202.5 954.1,2197.6 961.2,2197.6 C969,2197.6 972.5,2203 972.5,2209.2 Z M1010,2238 L1010,2199.6 L1021.1,2199.6 L1021.1,2190 L1010,2190 L1010,2182.2 C1010,2177.4 1011.2,2171.4 1018.1,2171.4 C1019.8,2171.4 1021.4,2171.7 1022.7,2172.1 L1023.5,2161.9 C1021.7,2161.4 1020,2161.2 1017.4,2161.2 C1002.5,2161.2 998,2171.4 998,2182.9 L998,2190 L988.9,2190 L988.9,2199.6 L998,2199.6 L998,2238 L1010,2238 Z M1045.6,2239 C1048.3,2239 1051.5,2238.5 1053.6,2237.7 L1053.2,2228.3 C1051.8,2229 1049.7,2229.3 1048.1,2229.3 C1042.8,2229.3 1041.8,2226.2 1041.8,2221.9 L1041.8,2199.6 L1053.8,2199.6 L1053.8,2190 L1041.8,2190 L1041.8,2176.1 L1030,2176.1 L1030,2190 L1021.6,2190 L1021.6,2199.6 L1030,2199.6 L1030,2222 C1030,2231.2 1032.9,2239 1045.6,2239 Z" id="Confrmonleft" fill="#FF00E1" fill-rule="nonzero"></path>
+        <path d="M2512.4,2238 L2512.4,2208.2 L2543.6,2208.2 L2543.6,2197.6 L2512.4,2197.6 L2512.4,2178.2 L2545.5,2178.2 L2545.5,2167.2 L2499.8,2167.2 L2499.8,2238 L2512.4,2238 Z M2568.7,2238 L2568.7,2162.4 L2556.7,2162.4 L2556.7,2238 L2568.7,2238 Z M2586.5,2262 C2597.1,2262 2601.3,2257 2604.7,2248.3 L2627.4,2190 L2614.9,2190 L2603,2224.9 L2602.8,2224.9 L2589.4,2190 L2576.1,2190 L2596.7,2238 L2594.3,2244.1 C2592.3,2249.1 2590.9,2251.6 2585.8,2251.6 C2584.5,2251.6 2582.9,2251.4 2581.3,2250.9 L2580.3,2261.3 C2582.4,2261.8 2584.5,2262 2586.5,2262 Z M2657.9,2239.4 C2672.4,2239.4 2684,2228.9 2684,2213.8 C2684,2198.7 2672.4,2188.6 2657.9,2188.6 C2643.4,2188.6 2631.8,2198.7 2631.8,2213.8 C2631.8,2228.9 2643.4,2239.4 2657.9,2239.4 Z M2657.9,2229.4 C2648.4,2229.4 2644,2221.3 2644,2213.8 C2644,2206.3 2648.4,2198.4 2657.9,2198.4 C2667.4,2198.4 2671.8,2206.3 2671.8,2213.8 C2671.8,2221.3 2667.4,2229.4 2657.9,2229.4 Z M2712.9,2239.4 C2720,2239.4 2725.7,2235.1 2727.8,2230.3 L2728,2230.3 L2728,2238 L2739.4,2238 L2739.4,2190 L2727.4,2190 L2727.4,2216.4 C2727.4,2222.8 2723.8,2229.4 2716.2,2229.4 C2708.60694,2229.4 2707.23735,2222.49585 2707.20077,2216.83829 L2707.2,2190 L2695.2,2190 L2695.2,2220 C2695.2,2229.8 2700.4,2239.4 2712.9,2239.4 Z M2770.9,2239 C2773.6,2239 2776.8,2238.5 2778.9,2237.7 L2778.5,2228.3 C2777.1,2229 2775,2229.3 2773.4,2229.3 C2768.1,2229.3 2767.1,2226.2 2767.1,2221.9 L2767.1,2199.6 L2779.1,2199.6 L2779.1,2190 L2767.1,2190 L2767.1,2176.1 L2755.3,2176.1 L2755.3,2190 L2746.9,2190 L2746.9,2199.6 L2755.3,2199.6 L2755.3,2222 C2755.3,2231.2 2758.2,2239 2770.9,2239 Z" id="Flyout" fill="#FF00E5" fill-rule="nonzero"></path>
+        <path d="M2512.4,358 L2512.4,303.3 L2512.6,303.3 L2546.2,358 L2562.2,358 L2562.2,287.2 L2549.6,287.2 L2549.6,340.2 L2549.4,340.2 L2516.5,287.2 L2499.8,287.2 L2499.8,358 L2512.4,358 Z M2591.8,359.2 C2598.6,359.2 2604.3,356.1 2606.7,351.9 L2607,351.9 L2607,358 L2618.2,358 L2618.2,328.8 C2618.2,319.2 2614,308.6 2596.8,308.6 C2589.5,308.6 2581.9,311.2 2576.5,316.2 L2582.7,323.5 C2585.8,320.4 2590.7,318 2595.8,318 C2601.8,318 2606.8,320.9 2606.8,326.8 L2606.8,328 C2591.8,328 2573.8,330 2573.8,344.3 C2573.8,355.5 2584.1,359.2 2591.8,359.2 Z M2594.2,350.1 C2590.1,350.1 2585.8,348.7 2585.8,344.1 C2585.8,337 2596.5,336.1 2604.1,336.1 L2606.8,336.1 L2606.8,337.8 C2606.8,345.4 2602.4,350.1 2594.2,350.1 Z M2657.2,358 L2676.3,310 L2663.6,310 L2650.9,345 L2650.7,345 L2638.1,310 L2625,310 L2644.4,358 L2657.2,358 Z M2689.6,300.9 C2694,300.9 2697.4,297.8 2697.4,293.7 C2697.4,289.6 2694,286.5 2689.6,286.5 C2685.2,286.5 2682,289.9 2682,293.7 C2682,297.5 2685.2,300.9 2689.6,300.9 Z M2695.7,358 L2695.7,310 L2683.7,310 L2683.7,358 L2695.7,358 Z M2732,382 C2750.7,382 2759.1,371 2759.1,353.7 L2759.1,310 L2747.7,310 L2747.7,317.2 L2747.5,317.2 C2744,311.4 2737.7,308.6 2731,308.6 C2716.5,308.6 2707.5,319.9 2707.5,333.8 C2707.5,347.4 2716.8,358.8 2731.2,358.8 C2737.8,358.8 2743.4,356.3 2746.9,351.6 L2747.1,351.6 L2747.1,355.1 C2747.1,364.6 2743.5,371.6 2731.9,371.6 C2725.9,371.6 2719.7,369.2 2715.1,364.8 L2708.2,374.1 C2714.4,379.2 2724.2,382 2732,382 Z M2733.4,348.9 C2724.8,348.9 2719.7,341.3 2719.7,333.7 C2719.7,325.2 2724.8,318.4 2733.5,318.4 C2742.2,318.4 2747.7,325.4 2747.7,333.7 C2747.7,341.7 2742.3,348.9 2733.4,348.9 Z M2788.1,359.2 C2794.9,359.2 2800.6,356.1 2803,351.9 L2803.3,351.9 L2803.3,358 L2814.5,358 L2814.5,328.8 C2814.5,319.2 2810.3,308.6 2793.1,308.6 C2785.8,308.6 2778.2,311.2 2772.8,316.2 L2779,323.5 C2782.1,320.4 2787,318 2792.1,318 C2798.1,318 2803.1,320.9 2803.1,326.8 L2803.1,328 C2788.1,328 2770.1,330 2770.1,344.3 C2770.1,355.5 2780.4,359.2 2788.1,359.2 Z M2790.5,350.1 C2786.4,350.1 2782.1,348.7 2782.1,344.1 C2782.1,337 2792.8,336.1 2800.4,336.1 L2803.1,336.1 L2803.1,337.8 C2803.1,345.4 2798.7,350.1 2790.5,350.1 Z M2845.6,359 C2848.3,359 2851.5,358.5 2853.6,357.7 L2853.2,348.3 C2851.8,349 2849.7,349.3 2848.1,349.3 C2842.8,349.3 2841.8,346.2 2841.8,341.9 L2841.8,319.6 L2853.8,319.6 L2853.8,310 L2841.8,310 L2841.8,296.1 L2830,296.1 L2830,310 L2821.6,310 L2821.6,319.6 L2830,319.6 L2830,342 C2830,351.2 2832.9,359 2845.6,359 Z M2868.6,300.9 C2873,300.9 2876.4,297.8 2876.4,293.7 C2876.4,289.6 2873,286.5 2868.6,286.5 C2864.2,286.5 2861,289.9 2861,293.7 C2861,297.5 2864.2,300.9 2868.6,300.9 Z M2874.7,358 L2874.7,310 L2862.7,310 L2862.7,358 L2874.7,358 Z M2912.6,359.4 C2927.1,359.4 2938.7,348.9 2938.7,333.8 C2938.7,318.7 2927.1,308.6 2912.6,308.6 C2898.1,308.6 2886.5,318.7 2886.5,333.8 C2886.5,348.9 2898.1,359.4 2912.6,359.4 Z M2912.6,349.4 C2903.1,349.4 2898.7,341.3 2898.7,333.8 C2898.7,326.3 2903.1,318.4 2912.6,318.4 C2922.1,318.4 2926.5,326.3 2926.5,333.8 C2926.5,341.3 2922.1,349.4 2912.6,349.4 Z M2962.3,358 L2962.3,331.6 C2962.3,325.2 2965.9,318.6 2973.5,318.6 C2981.2,318.6 2982.5,325.7 2982.5,331.4 L2982.5,358 L2994.5,358 L2994.5,328 C2994.5,318.2 2989.3,308.6 2976.8,308.6 C2969.7,308.6 2964,312.9 2961.9,317.7 L2961.7,317.7 L2961.7,310 L2950.3,310 L2950.3,358 L2962.3,358 Z M3039.6,300.9 C3044,300.9 3047.4,297.8 3047.4,293.7 C3047.4,289.6 3044,286.5 3039.6,286.5 C3035.2,286.5 3032,289.9 3032,293.7 C3032,297.5 3035.2,300.9 3039.6,300.9 Z M3045.7,358 L3045.7,310 L3033.7,310 L3033.7,358 L3045.7,358 Z M3072.3,358 L3072.3,331.6 C3072.3,325.2 3075.9,318.6 3083.5,318.6 C3091.09306,318.6 3092.46265,325.504147 3092.49923,331.161713 L3092.5,358 L3104.5,358 L3104.5,328 C3104.5,318.2 3099.3,308.6 3086.8,308.6 C3079.7,308.6 3074,312.9 3071.9,317.7 L3071.7,317.7 L3071.7,310 L3060.3,310 L3060.3,358 L3072.3,358 Z M3155.5,358 L3155.5,331.6 C3155.5,325.2 3158.8,318.6 3166,318.6 C3172.1,318.6 3174.9,323.1 3174.9,329 L3174.9,358 L3186.9,358 L3186.9,331.8 C3186.9,325.6 3190,318.6 3197.5,318.6 C3205.2,318.6 3206.5,325.7 3206.5,331.4 L3206.5,358 L3218.5,358 L3218.5,328 C3218.5,318.2 3213.3,308.6 3200.8,308.6 C3193.6,308.6 3188.2,311.9 3185,317.7 C3182.3,312.3 3177.4,308.6 3170,308.6 C3162.3,308.6 3157.2,313 3155.1,317.7 L3154.9,317.7 L3154.9,310 L3143.5,310 L3143.5,358 L3155.5,358 Z M3255.8,359.4 C3270.3,359.4 3281.9,348.9 3281.9,333.8 C3281.9,318.7 3270.3,308.6 3255.8,308.6 C3241.3,308.6 3229.7,318.7 3229.7,333.8 C3229.7,348.9 3241.3,359.4 3255.8,359.4 Z M3255.8,349.4 C3246.3,349.4 3241.9,341.3 3241.9,333.8 C3241.9,326.3 3246.3,318.4 3255.8,318.4 C3265.3,318.4 3269.7,326.3 3269.7,333.8 C3269.7,341.3 3265.3,349.4 3255.8,349.4 Z M3314.2,359.4 C3320.9,359.4 3327.4,356.3 3330.7,350.8 L3330.9,350.8 L3330.9,358 L3342.3,358 L3342.3,282.4 L3330.3,282.4 L3330.3,316.1 L3330,316.1 C3327.5,313 3322.7,308.6 3313.9,308.6 C3300.2,308.6 3290.6,319.6 3290.6,333.8 C3290.6,347.8 3299.6,359.4 3314.2,359.4 Z M3316.6,349.4 C3307.3,349.4 3302.8,341.3 3302.8,333.8 C3302.8,326.3 3307.3,318.4 3316.6,318.4 C3325.4,318.4 3330.7,326.5 3330.7,334 C3330.7,341.5 3325.4,349.4 3316.6,349.4 Z M3371.5,359.2 C3378.3,359.2 3384,356.1 3386.4,351.9 L3386.7,351.9 L3386.7,358 L3397.9,358 L3397.9,328.8 C3397.9,319.2 3393.7,308.6 3376.5,308.6 C3369.2,308.6 3361.6,311.2 3356.2,316.2 L3362.4,323.5 C3365.5,320.4 3370.4,318 3375.5,318 C3381.5,318 3386.5,320.9 3386.5,326.8 L3386.5,328 C3371.5,328 3353.5,330 3353.5,344.3 C3353.5,355.5 3363.8,359.2 3371.5,359.2 Z M3373.9,350.1 C3369.8,350.1 3365.5,348.7 3365.5,344.1 C3365.5,337 3376.2,336.1 3383.8,336.1 L3386.5,336.1 L3386.5,337.8 C3386.5,345.4 3382.1,350.1 3373.9,350.1 Z M3424.1,358 L3424.1,282.4 L3412.1,282.4 L3412.1,358 L3424.1,358 Z" id="Navigationinmodal" fill="#FF00E1" fill-rule="nonzero"></path>
+        <g id="Rectangle">
+            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+            <use stroke="#979797" stroke-width="1" fill="#999999" fill-rule="evenodd" xlink:href="#path-1"></use>
         </g>
+        <g id="Rectangle">
+            <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+            <use stroke="#979797" stroke-width="1" fill="#999999" fill-rule="evenodd" xlink:href="#path-3"></use>
+        </g>
+        <g id="Rectangle">
+            <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+            <use stroke="#979797" stroke-width="1" fill="#999999" fill-rule="evenodd" xlink:href="#path-5"></use>
+        </g>
+        <g id="Rectangle">
+            <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-7"></use>
+            <use stroke="#979797" stroke-width="1" fill="#999999" fill-rule="evenodd" xlink:href="#path-7"></use>
+        </g>
+        <rect id="Rectangle" fill="#FFFFFF" x="541" y="614" width="1091" height="750"></rect>
+        <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" x="366.5" y="462.5" width="1439" height="49"></rect>
+        <text id="Assets" font-family="AvenirNextforINTUIT-Bold, AvenirNext forINTUIT" font-size="29.799997" font-weight="bold" fill="#000000">
+            <tspan x="624.116305" y="832">Assets</tspan>
+        </text>
+        <text id="Search" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="25" font-weight="400" fill="#000000">
+            <tspan x="947.825" y="841">Search</tspan>
+        </text>
+        <rect id="Rectangle" stroke="#979797" x="934.5" y="809.5" width="408" height="45"></rect>
+        <rect id="Rectangle" fill-opacity="0.605960446" fill="#005DFF" x="1359" y="809" width="146" height="46"></rect>
+        <text id="New" font-family="AvenirNextforINTUIT-Medium, AvenirNext forINTUIT" font-size="30" font-weight="400" fill="#000000">
+            <tspan x="1400" y="843">New</tspan>
+        </text>
+        <text id="CGDS-Icons" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="25" font-weight="400" fill="#000000">
+            <tspan x="625.2125" y="946">CGDS Icons</tspan>
+        </text>
+        <text id="My-Assets" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="25" font-weight="400" fill="#000000">
+            <tspan x="625.0625" y="1106">My Assets</tspan>
+        </text>
+        <text id="Team-Assets" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="25" font-weight="400" fill="#000000">
+            <tspan x="624.2" y="1156">Team Assets</tspan>
+        </text>
+        <text id="CGDS-Animations" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="25" font-weight="400" fill="#000000">
+            <tspan x="625.2875" y="1001">CGDS Animations</tspan>
+        </text>
+        <text id="CGDS-Illustrations" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="25" font-weight="400" fill="#000000">
+            <tspan x="624.0125" y="1056">CGDS Illustrations</tspan>
+        </text>
+        <line x1="1481.5" y1="919.5" x2="1497" y2="936" id="Line-4" stroke="#979797" stroke-linecap="square"></line>
+        <line x1="1482" y1="936" x2="1497" y2="920" id="Line-4" stroke="#979797" stroke-linecap="square"></line>
+        <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" x="956" y="910" width="159" height="159"></rect>
+        <text id="Copy" font-family="AvenirNextforINTUIT-Medium, AvenirNext forINTUIT" font-size="15" font-weight="400" letter-spacing="1.07142857" fill="#000000">
+            <tspan x="975" y="1058">Copy</tspan>
+        </text>
+        <text id="Insert" font-family="AvenirNextforINTUIT-Medium, AvenirNext forINTUIT" font-size="15" font-weight="400" letter-spacing="1.07142857" fill="#000000">
+            <tspan x="1054" y="1058">Insert</tspan>
+        </text>
+        <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" x="1153" y="907" width="159" height="159"></rect>
+        <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" x="1343" y="910" width="159" height="159"></rect>
+        <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" x="1344" y="1106" width="159" height="159"></rect>
+        <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" x="954" y="1106" width="159" height="159"></rect>
+        <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" x="1149" y="1106" width="159" height="159"></rect>
+        <text id="Folder-title" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="25" font-weight="400" fill="#000000">
+            <tspan x="1161.2125" y="751">Folder title</tspan>
+        </text>
+        <line x1="1572.5" y1="629.5" x2="1607.5" y2="662.5" id="Line-8" stroke="#979797" stroke-linecap="square"></line>
+        <line x1="1605.5" y1="629.5" x2="1572.5" y2="662.5" id="Line-9" stroke="#979797" stroke-linecap="square"></line>
+        <circle id="Oval" fill="#000000" transform="translate(1102.000000, 921.000000) scale(-1, 1) translate(-1102.000000, -921.000000) " cx="1102" cy="921" r="3"></circle>
+        <circle id="Oval" fill="#000000" transform="translate(1102.000000, 930.000000) scale(-1, 1) translate(-1102.000000, -930.000000) " cx="1102" cy="930" r="3"></circle>
+        <circle id="Oval" fill="#000000" transform="translate(1102.000000, 940.000000) scale(-1, 1) translate(-1102.000000, -940.000000) " cx="1102" cy="940" r="3"></circle>
+        <circle id="Oval" fill="#000000" transform="translate(1102.000000, 1120.000000) scale(-1, 1) translate(-1102.000000, -1120.000000) " cx="1102" cy="1120" r="3"></circle>
+        <circle id="Oval" fill="#000000" transform="translate(1102.000000, 1129.000000) scale(-1, 1) translate(-1102.000000, -1129.000000) " cx="1102" cy="1129" r="3"></circle>
+        <circle id="Oval" fill="#000000" transform="translate(1102.000000, 1139.000000) scale(-1, 1) translate(-1102.000000, -1139.000000) " cx="1102" cy="1139" r="3"></circle>
+        <circle id="Oval" fill="#000000" transform="translate(1297.000000, 921.000000) scale(-1, 1) translate(-1297.000000, -921.000000) " cx="1297" cy="921" r="3"></circle>
+        <circle id="Oval" fill="#000000" transform="translate(1297.000000, 930.000000) scale(-1, 1) translate(-1297.000000, -930.000000) " cx="1297" cy="930" r="3"></circle>
+        <circle id="Oval" fill="#000000" transform="translate(1297.000000, 940.000000) scale(-1, 1) translate(-1297.000000, -940.000000) " cx="1297" cy="940" r="3"></circle>
+        <circle id="Oval" fill="#000000" transform="translate(1297.000000, 1120.000000) scale(-1, 1) translate(-1297.000000, -1120.000000) " cx="1297" cy="1120" r="3"></circle>
+        <circle id="Oval" fill="#000000" transform="translate(1297.000000, 1129.000000) scale(-1, 1) translate(-1297.000000, -1129.000000) " cx="1297" cy="1129" r="3"></circle>
+        <circle id="Oval" fill="#000000" transform="translate(1297.000000, 1139.000000) scale(-1, 1) translate(-1297.000000, -1139.000000) " cx="1297" cy="1139" r="3"></circle>
+        <circle id="Oval" fill="#000000" transform="translate(1492.000000, 1120.000000) scale(-1, 1) translate(-1492.000000, -1120.000000) " cx="1492" cy="1120" r="3"></circle>
+        <circle id="Oval" fill="#000000" transform="translate(1492.000000, 1129.000000) scale(-1, 1) translate(-1492.000000, -1129.000000) " cx="1492" cy="1129" r="3"></circle>
+        <circle id="Oval" fill="#000000" transform="translate(1492.000000, 1139.000000) scale(-1, 1) translate(-1492.000000, -1139.000000) " cx="1492" cy="1139" r="3"></circle>
+        <circle id="Oval" fill="#000000" transform="translate(1492.000000, 921.000000) scale(-1, 1) translate(-1492.000000, -921.000000) " cx="1492" cy="921" r="3"></circle>
+        <circle id="Oval" fill="#000000" transform="translate(1492.000000, 930.000000) scale(-1, 1) translate(-1492.000000, -930.000000) " cx="1492" cy="930" r="3"></circle>
+        <circle id="Oval" fill="#000000" transform="translate(1492.000000, 940.000000) scale(-1, 1) translate(-1492.000000, -940.000000) " cx="1492" cy="940" r="3"></circle>
+        <text id="Delete" font-family="AvenirNextforINTUIT-Medium, AvenirNext forINTUIT" font-size="15" font-weight="400" letter-spacing="1.07142857" fill="#000000">
+            <tspan x="1009" y="945">Delete</tspan>
+        </text>
+        <line x1="956" y1="1036" x2="1115" y2="1036" id="Line" stroke="#979797" stroke-linecap="square"></line>
+        <line x1="1035.5" y1="1068.5" x2="1035.5" y2="1035.5" id="Line" stroke="#979797" stroke-linecap="square"></line>
+        <g id="Rectangle">
+            <use fill="black" fill-opacity="1" filter="url(#filter-10)" xlink:href="#path-9"></use>
+            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-9"></use>
+        </g>
+        <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" x="995" y="875" width="243" height="215"></rect>
+        <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" x="934" y="1147" width="165" height="39"></rect>
+        <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" x="1150" y="1147" width="165" height="39"></rect>
+        <text id="Delete-Asset?" font-family="AvenirNextforINTUIT-Medium, AvenirNext forINTUIT" font-size="34" font-weight="400" letter-spacing="2.42857143" fill="#000000">
+            <tspan x="992" y="841">Delete Asset?</tspan>
+        </text>
+        <rect id="Rectangle" fill="#FFFFFF" x="2668" y="614" width="1091" height="750"></rect>
+        <text id="Assets" font-family="AvenirNextforINTUIT-Bold, AvenirNext forINTUIT" font-size="29.799997" font-weight="bold" fill="#000000">
+            <tspan x="2752.1163" y="832">Assets</tspan>
+        </text>
+        <text id="CGDS-Icons" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="25" font-weight="400" fill="#000000">
+            <tspan x="2753.2125" y="946">CGDS Icons</tspan>
+        </text>
+        <text id="My-Assets" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="25" font-weight="400" fill="#000000">
+            <tspan x="2753.0625" y="1106">My Assets</tspan>
+        </text>
+        <text id="Team-Assets" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="25" font-weight="400" fill="#000000">
+            <tspan x="2752.2" y="1156">Team Assets</tspan>
+        </text>
+        <text id="CGDS-Animations" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="25" font-weight="400" fill="#000000">
+            <tspan x="2753.2875" y="1001">CGDS Animations</tspan>
+        </text>
+        <text id="CGDS-Illustrations" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="25" font-weight="400" fill="#000000">
+            <tspan x="2752.0125" y="1056">CGDS Illustrations</tspan>
+        </text>
+        <g id="Group" transform="translate(3170.000000, 1230.000000)">
+            <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" x="0" y="0" width="160" height="41"></rect>
+            <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" x="207" y="0" width="160" height="41"></rect>
+            <text id="Confirm" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="25" font-weight="400" fill="#000000">
+                <tspan x="240.8125" y="29">Confirm</tspan>
+            </text>
+            <text id="Cancel" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="25" font-weight="400" fill="#000000">
+                <tspan x="41.025" y="29">Cancel</tspan>
+            </text>
+        </g>
+        <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" x="3139" y="1059" width="430" height="47"></rect>
+        <text id="New-Name" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="25" font-weight="400" fill="#000000">
+            <tspan x="3134.475" y="1040">New Name</tspan>
+        </text>
+        <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" x="2494.5" y="462.5" width="1439" height="49"></rect>
+        <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" x="3272" y="803" width="159" height="159"></rect>
+        <text id="Rename-Asset?" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="25" font-weight="400" fill="#000000">
+            <tspan x="3263.05" y="763">Rename Asset?</tspan>
+        </text>
+        <line x1="3700.5" y1="629.5" x2="3735.5" y2="662.5" id="Line-8" stroke="#979797" stroke-linecap="square"></line>
+        <line x1="3733.5" y1="629.5" x2="3700.5" y2="662.5" id="Line-9" stroke="#979797" stroke-linecap="square"></line>
+        <g id="Group-2" transform="translate(3102.000000, 739.000000)" stroke="#979797" stroke-linecap="square" stroke-width="2">
+            <line x1="0.354166667" y1="14.5" x2="17" y2="0" id="Line"></line>
+            <line x1="0.354166667" y1="14.5" x2="17" y2="30" id="Line"></line>
+        </g>
+        <rect id="Rectangle" fill="#FFFFFF" x="2659" y="2521" width="1091" height="750"></rect>
+        <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" x="2494.5" y="2368.5" width="1439" height="49"></rect>
+        <text id="Assets" font-family="AvenirNextforINTUIT-Bold, AvenirNext forINTUIT" font-size="29.799997" font-weight="bold" fill="#000000">
+            <tspan x="2752.1163" y="2738">Assets</tspan>
+        </text>
+        <text id="Search" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="25" font-weight="400" fill="#000000">
+            <tspan x="3075.825" y="2747">Search</tspan>
+        </text>
+        <rect id="Rectangle" stroke="#979797" x="3062.5" y="2715.5" width="408" height="45"></rect>
+        <g id="Group-4" transform="translate(3487.000000, 2715.000000)" fill="#005DFF" fill-opacity="0.605960446">
+            <rect id="Rectangle" x="0" y="0" width="146" height="46"></rect>
+        </g>
+        <g id="Group-2" transform="translate(3528.000000, 2720.000000)" fill="#000000" font-family="AvenirNextforINTUIT-Medium, AvenirNext forINTUIT" font-size="30" font-weight="400">
+            <g id="Group">
+                <text id="New">
+                    <tspan x="0" y="29">New</tspan>
+                </text>
+            </g>
+        </g>
+        <text id="CGDS-Icons" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="25" font-weight="400" fill="#000000">
+            <tspan x="2753.2125" y="2852">CGDS Icons</tspan>
+        </text>
+        <text id="My-Assets" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="25" font-weight="400" fill="#000000">
+            <tspan x="2753.0625" y="3012">My Assets</tspan>
+        </text>
+        <text id="Team-Assets" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="25" font-weight="400" fill="#000000">
+            <tspan x="2752.2" y="3062">Team Assets</tspan>
+        </text>
+        <text id="CGDS-Animations" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="25" font-weight="400" fill="#000000">
+            <tspan x="2753.2875" y="2907">CGDS Animations</tspan>
+        </text>
+        <text id="CGDS-Illustrations" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="25" font-weight="400" fill="#000000">
+            <tspan x="2752.0125" y="2962">CGDS Illustrations</tspan>
+        </text>
+        <g id="Group-3" transform="translate(3609.000000, 2825.000000)" stroke="#979797" stroke-linecap="square">
+            <line x1="0.5" y1="0.5" x2="16" y2="17" id="Line-4"></line>
+            <line x1="1" y1="17" x2="16" y2="1" id="Line-4"></line>
+        </g>
+        <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" x="3084" y="2816" width="159" height="159"></rect>
+        <text id="Copy" font-family="AvenirNextforINTUIT-Medium, AvenirNext forINTUIT" font-size="15" font-weight="400" letter-spacing="1.07142857" fill="#000000">
+            <tspan x="3103" y="2964">Copy</tspan>
+        </text>
+        <text id="Insert" font-family="AvenirNextforINTUIT-Medium, AvenirNext forINTUIT" font-size="15" font-weight="400" letter-spacing="1.07142857" fill="#000000">
+            <tspan x="3182" y="2964">Insert</tspan>
+        </text>
+        <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" x="3282" y="2812" width="159" height="159"></rect>
+        <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" x="3471" y="2816" width="159" height="159"></rect>
+        <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" x="3472" y="3012" width="159" height="159"></rect>
+        <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" x="3082" y="3012" width="159" height="159"></rect>
+        <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" x="3277" y="3012" width="159" height="159"></rect>
+        <text id="Folder-title" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="25" font-weight="400" fill="#000000">
+            <tspan x="3289.2125" y="2657">Folder title</tspan>
+        </text>
+        <line x1="3700.5" y1="2535.5" x2="3735.5" y2="2568.5" id="Line-8" stroke="#979797" stroke-linecap="square"></line>
+        <line x1="3733.5" y1="2535.5" x2="3700.5" y2="2568.5" id="Line-9" stroke="#979797" stroke-linecap="square"></line>
+        <g id="Group-5" transform="translate(3230.000000, 2836.500000) scale(-1, 1) translate(-3230.000000, -2836.500000) translate(3227.000000, 2824.000000)" fill="#000000">
+            <circle id="Oval" cx="3" cy="3" r="3"></circle>
+            <circle id="Oval" cx="3" cy="12" r="3"></circle>
+            <circle id="Oval" cx="3" cy="22" r="3"></circle>
+        </g>
+        <g id="Group-5" transform="translate(3230.000000, 3035.500000) scale(-1, 1) translate(-3230.000000, -3035.500000) translate(3227.000000, 3023.000000)" fill="#000000">
+            <circle id="Oval" cx="3" cy="3" r="3"></circle>
+            <circle id="Oval" cx="3" cy="12" r="3"></circle>
+            <circle id="Oval" cx="3" cy="22" r="3"></circle>
+        </g>
+        <g id="Group-5" transform="translate(3425.000000, 2836.500000) scale(-1, 1) translate(-3425.000000, -2836.500000) translate(3422.000000, 2824.000000)" fill="#000000">
+            <circle id="Oval" cx="3" cy="3" r="3"></circle>
+            <circle id="Oval" cx="3" cy="12" r="3"></circle>
+            <circle id="Oval" cx="3" cy="22" r="3"></circle>
+        </g>
+        <g id="Group-5" transform="translate(3425.000000, 3035.500000) scale(-1, 1) translate(-3425.000000, -3035.500000) translate(3422.000000, 3023.000000)" fill="#000000">
+            <circle id="Oval" cx="3" cy="3" r="3"></circle>
+            <circle id="Oval" cx="3" cy="12" r="3"></circle>
+            <circle id="Oval" cx="3" cy="22" r="3"></circle>
+        </g>
+        <g id="Group-5" transform="translate(3620.000000, 3035.500000) scale(-1, 1) translate(-3620.000000, -3035.500000) translate(3617.000000, 3023.000000)" fill="#000000">
+            <circle id="Oval" cx="3" cy="3" r="3"></circle>
+            <circle id="Oval" cx="3" cy="12" r="3"></circle>
+            <circle id="Oval" cx="3" cy="22" r="3"></circle>
+        </g>
+        <g id="Group-5" transform="translate(3620.000000, 2836.500000) scale(-1, 1) translate(-3620.000000, -2836.500000) translate(3617.000000, 2824.000000)" fill="#000000">
+            <circle id="Oval" cx="3" cy="3" r="3"></circle>
+            <circle id="Oval" cx="3" cy="12" r="3"></circle>
+            <circle id="Oval" cx="3" cy="22" r="3"></circle>
+        </g>
+        <rect id="Rectangle" stroke="#979797" fill="#FFFFFF" x="3052" y="2824" width="181" height="83"></rect>
+        <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" x="3149" y="2876" width="65" height="22"></rect>
+        <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" x="3064" y="2876" width="65" height="22"></rect>
+        <text id="Confirm-Delete?" font-family="AvenirNextforINTUIT-Medium, AvenirNext forINTUIT" font-size="15" font-weight="400" letter-spacing="1.07142857" fill="#000000">
+            <tspan x="3078" y="2854">Confirm Delete?</tspan>
+        </text>
+        <line x1="3084" y1="2942" x2="3243" y2="2942" id="Line" stroke="#979797" stroke-linecap="square"></line>
+        <line x1="3163.5" y1="2974.5" x2="3163.5" y2="2941.5" id="Line" stroke="#979797" stroke-linecap="square"></line>
+        <rect id="Rectangle" fill="#FFFFFF" x="531" y="2521" width="1091" height="750"></rect>
+        <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" x="609" y="2648" width="285" height="532"></rect>
+        <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" x="366.5" y="2368.5" width="1439" height="49"></rect>
+        <text id="Search" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="25" font-weight="400" fill="#000000">
+            <tspan x="947.825" y="2747">Search</tspan>
+        </text>
+        <rect id="Rectangle" stroke="#979797" x="934.5" y="2715.5" width="408" height="45"></rect>
+        <g id="Group-4" transform="translate(1359.000000, 2715.000000)" fill="#005DFF" fill-opacity="0.605960446">
+            <rect id="Rectangle" x="0" y="0" width="146" height="46"></rect>
+        </g>
+        <g id="Group-2" transform="translate(1400.000000, 2720.000000)" fill="#000000" font-family="AvenirNextforINTUIT-Medium, AvenirNext forINTUIT" font-size="30" font-weight="400">
+            <g id="Group">
+                <text id="New">
+                    <tspan x="0" y="29">New</tspan>
+                </text>
+            </g>
+        </g>
+        <g id="Group-3" transform="translate(1481.000000, 2825.000000)" stroke="#979797" stroke-linecap="square">
+            <line x1="0.5" y1="0.5" x2="16" y2="17" id="Line-4"></line>
+            <line x1="1" y1="17" x2="16" y2="1" id="Line-4"></line>
+        </g>
+        <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" x="956" y="2816" width="159" height="159"></rect>
+        <text id="Copy" font-family="AvenirNextforINTUIT-Medium, AvenirNext forINTUIT" font-size="15" font-weight="400" letter-spacing="1.07142857" fill="#000000">
+            <tspan x="975" y="2964">Copy</tspan>
+        </text>
+        <text id="Insert" font-family="AvenirNextforINTUIT-Medium, AvenirNext forINTUIT" font-size="15" font-weight="400" letter-spacing="1.07142857" fill="#000000">
+            <tspan x="1054" y="2964">Insert</tspan>
+        </text>
+        <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" x="1154" y="2812" width="159" height="159"></rect>
+        <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" x="1343" y="2816" width="159" height="159"></rect>
+        <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" x="1344" y="3012" width="159" height="159"></rect>
+        <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" x="954" y="3012" width="159" height="159"></rect>
+        <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" x="1149" y="3012" width="159" height="159"></rect>
+        <text id="Folder-title" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="25" font-weight="400" fill="#000000">
+            <tspan x="1161.2125" y="2657">Folder title</tspan>
+        </text>
+        <line x1="1572.5" y1="2535.5" x2="1607.5" y2="2568.5" id="Line-8" stroke="#979797" stroke-linecap="square"></line>
+        <line x1="1605.5" y1="2535.5" x2="1572.5" y2="2568.5" id="Line-9" stroke="#979797" stroke-linecap="square"></line>
+        <g id="Group-5" transform="translate(1102.000000, 2836.500000) scale(-1, 1) translate(-1102.000000, -2836.500000) translate(1099.000000, 2824.000000)" fill="#000000">
+            <circle id="Oval" cx="3" cy="3" r="3"></circle>
+            <circle id="Oval" cx="3" cy="12" r="3"></circle>
+            <circle id="Oval" cx="3" cy="22" r="3"></circle>
+        </g>
+        <g id="Group-5" transform="translate(1102.000000, 3035.500000) scale(-1, 1) translate(-1102.000000, -3035.500000) translate(1099.000000, 3023.000000)" fill="#000000">
+            <circle id="Oval" cx="3" cy="3" r="3"></circle>
+            <circle id="Oval" cx="3" cy="12" r="3"></circle>
+            <circle id="Oval" cx="3" cy="22" r="3"></circle>
+        </g>
+        <g id="Group-5" transform="translate(1297.000000, 2836.500000) scale(-1, 1) translate(-1297.000000, -2836.500000) translate(1294.000000, 2824.000000)" fill="#000000">
+            <circle id="Oval" cx="3" cy="3" r="3"></circle>
+            <circle id="Oval" cx="3" cy="12" r="3"></circle>
+            <circle id="Oval" cx="3" cy="22" r="3"></circle>
+        </g>
+        <g id="Group-5" transform="translate(1297.000000, 3035.500000) scale(-1, 1) translate(-1297.000000, -3035.500000) translate(1294.000000, 3023.000000)" fill="#000000">
+            <circle id="Oval" cx="3" cy="3" r="3"></circle>
+            <circle id="Oval" cx="3" cy="12" r="3"></circle>
+            <circle id="Oval" cx="3" cy="22" r="3"></circle>
+        </g>
+        <g id="Group-5" transform="translate(1492.000000, 3035.500000) scale(-1, 1) translate(-1492.000000, -3035.500000) translate(1489.000000, 3023.000000)" fill="#000000">
+            <circle id="Oval" cx="3" cy="3" r="3"></circle>
+            <circle id="Oval" cx="3" cy="12" r="3"></circle>
+            <circle id="Oval" cx="3" cy="22" r="3"></circle>
+        </g>
+        <g id="Group-5" transform="translate(1492.000000, 2836.500000) scale(-1, 1) translate(-1492.000000, -2836.500000) translate(1489.000000, 2824.000000)" fill="#000000">
+            <circle id="Oval" cx="3" cy="3" r="3"></circle>
+            <circle id="Oval" cx="3" cy="12" r="3"></circle>
+            <circle id="Oval" cx="3" cy="22" r="3"></circle>
+        </g>
+        <rect id="Rectangle" stroke="#979797" fill="#FFFFFF" x="661" y="2778" width="181" height="203"></rect>
+        <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" x="777" y="3132" width="65" height="22"></rect>
+        <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" x="668" y="3132" width="65" height="22"></rect>
+        <text id="Confirm-Delete?" font-family="AvenirNextforINTUIT-Medium, AvenirNext forINTUIT" font-size="15" font-weight="400" letter-spacing="1.07142857" fill="#000000">
+            <tspan x="687" y="2711">Confirm Delete?</tspan>
+        </text>
+        <line x1="956" y1="2942" x2="1115" y2="2942" id="Line" stroke="#979797" stroke-linecap="square"></line>
+        <line x1="1035.5" y1="2974.5" x2="1035.5" y2="2941.5" id="Line" stroke="#979797" stroke-linecap="square"></line>
     </g>
 </svg>
