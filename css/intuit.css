@@ -33,6 +33,7 @@
   max-width: 380px;
   max-height: 500px;
   padding-top: 3em;
+  padding-bottom: 3em;
   height: 100%;
   width: 100%;
   display: flex;
@@ -198,6 +199,9 @@
 @media screen and (max-width: 500px) {
   .projectTag {
     font-size: 11px;
+  }
+  .projectTypeWrapper2 {
+    max-width: 100%;
   }
 }
 
