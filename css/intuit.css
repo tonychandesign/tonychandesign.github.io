@@ -19,7 +19,7 @@
   justify-content: space-around;
   max-width: 80%;
   margin: auto;
-  padding-top: 1em;
+  padding: 1em 0em;
 }
 .projectTypeWrapper2 {
   display: flex;
@@ -42,34 +42,21 @@
   text-align: center;
 }
 .projectTypeTitle {
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-size: 1.8rem;
+  font-weight: 400;
   padding: 20px 0px;
   color: #6b6c72;
-  cursor: pointer;
 }
+
+.intuitProjectsPadding {
+  padding-top: 10px;
+}
+
 /* motion is yellow */
 .doubleHoverMotion {
   height: fit-content;
   width: fit-content;
   margin: auto;
-}
-.doubleHoverMotion:hover > a > svg > g > .svgHoverStroke {
-  transition: stroke 1s cubic-bezier(0.165, 0.84, 0.44, 1);
-  stroke: #fbbc05;
-  background: #fbbc05;
-}
-.doubleHoverMotion:hover > a > svg > g > .svgHoverFill {
-  transition: fill 1s cubic-bezier(0.165, 0.84, 0.44, 1);
-  fill: #fbbc05;
-  background: #fbbc05;
-}
-.doubleHoverMotion:hover .sliding-middle-out:after {
-  width: 100%;
-  background: #fbbc05;
-}
-.doubleHoverMotion:hover .sliding-middle-out {
-  color: #fbbc05;
 }
 
 /* prototypes is green */
@@ -78,45 +65,12 @@
   width: fit-content;
   margin: auto;
 }
-.doubleHoverProto:hover > a > svg > g > .svgHoverStroke {
-  transition: stroke 1s cubic-bezier(0.165, 0.84, 0.44, 1);
-  stroke: #34a853;
-  background: #34a853;
-}
-.doubleHoverProto:hover > a > svg > g > .svgHoverFill {
-  transition: fill 1s cubic-bezier(0.165, 0.84, 0.44, 1);
-  fill: #34a853;
-  background: #34a853;
-}
-.doubleHoverProto:hover .sliding-middle-out:after {
-  width: 100%;
-  background: #34a853;
-}
-.doubleHoverProto:hover .sliding-middle-out {
-  color: #34a853;
-}
+
 /* tools is red */
 .doubleHoverTools {
   height: fit-content;
   width: fit-content;
   margin: auto;
-}
-.doubleHoverTools:hover > a > svg > g > .svgHoverStroke {
-  transition: stroke 1s cubic-bezier(0.165, 0.84, 0.44, 1);
-  stroke: #ea4335;
-  background: #ea4335;
-}
-.doubleHoverTools:hover > a > svg > g > .svgHoverFill {
-  transition: fill 1s cubic-bezier(0.165, 0.84, 0.44, 1);
-  fill: #ea4335;
-  background: #ea4335;
-}
-.doubleHoverTools:hover .sliding-middle-out:after {
-  width: 100%;
-  background: #ea4335;
-}
-.doubleHoverTools:hover .sliding-middle-out {
-  color: #ea4335;
 }
 
 .projectWrapper {
