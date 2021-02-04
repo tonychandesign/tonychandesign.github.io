@@ -4,6 +4,7 @@ $(function () {
   var photoTab = $("#sandboxPhoto");
   var photoEle = $(".sandbox_photography");
   var codeTab = $("#sandboxCoding");
+  var codeEle = $(".sandbox_code");
   var designTab = $("#sandboxDesign");
   var motionTab = $("#sandboxMotion");
 
@@ -17,6 +18,7 @@ $(function () {
 
     photoEle.css({ display: "block" });
     comingSoon.css({ display: "none" });
+    codeEle.css({ display: "none" });
   });
   codeTab.click(function () {
     codeTab.addClass("active");
@@ -25,7 +27,8 @@ $(function () {
     motionTab.removeClass("active");
 
     photoEle.css({ display: "none" });
-    comingSoon.css({ display: "block" });
+    codeEle.css({ display: "block" });
+    comingSoon.css({ display: "none" });
   });
   designTab.click(function () {
     designTab.addClass("active");
@@ -34,6 +37,7 @@ $(function () {
     motionTab.removeClass("active");
 
     photoEle.css({ display: "none" });
+    codeEle.css({ display: "none" });
     comingSoon.css({ display: "block" });
   });
   motionTab.click(function () {
@@ -43,6 +47,7 @@ $(function () {
     designTab.removeClass("active");
 
     photoEle.css({ display: "none" });
+    codeEle.css({ display: "none" });
     comingSoon.css({ display: "block" });
   });
 });

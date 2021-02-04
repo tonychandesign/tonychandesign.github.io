@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Tony Chan's UX Portfolio" />
+    <meta name="author" content="Tony Chan" />
+    <title>Tony Chan's Gamified Portfolio</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Custom fonts -->
+    <link
+      href="vendor/font-awesome/css/font-awesome.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Button Stylesheet -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <!-- Custom styles -->
+    <link href="css/index.css" rel="stylesheet" />
+    <link href="css/mobileHero.css" rel="stylesheet" />
+
+    <!-- scroll fade in from left/right animation -->
+    <link rel="stylesheet" href="fadein_css/style.css" />
+
+    <!-- ajax for warp  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
+
+    <!-- favicon  -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon-16x16.png"
+    />
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+
+  <body style="background: #202124; position: fixed">
+    <!-- dynamic resizing  -->
+    <div class="container-fluid">
+      <!--  ///////////////////  NAVBAR  ///////////////////  -->
+      <nav id="navbar" class="navbar-expand slideNavIn" style="z-index: 10">
+        <div class="row row-centerer">
+          <div class="col-lg-4" style="margin: auto">
+            <h1 class="tonychan">
+              <a href="index.html" class="nav-item">Tony Chan</a>
+            </h1>
+          </div>
+          <div class="col-lg-2"></div>
+          <div class="col-lg-6">
+            <div id="menu">
+              <ul
+                class="navbar-nav navbar-brand right-to-center nav-elem-centerer"
+              >
+                <li class="nav-item whiteText" style="margin-left: 30px">
+                  <a class="nav-link" href="index.html?page=0">Work</a>
+                </li>
+                <li
+                  class="nav-item navpadding whiteText tony-middle-out active"
+                >
+                  <a class="nav-link" href="index.html?page=1">Play</a>
+                </li>
+                <li
+                  class="nav-item whiteText"
+                  style="margin-right: 30px; margin-left: 0px"
+                >
+                  <a class="nav-link" href="index.html?page=2">About</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="mobileHeroWrapper">
+        <div class="heroText showMobile animateDelayTarget">
+          This game is not available on mobile.
+          <a
+            href="index.html?page=1"
+            style="
+              font-size: 20px;
+              display: block;
+              color: #94999d;
+              font-weight: 400;
+            "
+            >Go back</a
+          >
+        </div>
+      </div>
+      <div class="stationaryHeroWrapper">
+        <canvas id="canvas" oncontextmenu="return false"></canvas>
+        <div class="introWrap animateDelayTarget" onclick="runPlatformer(this)">
+          <span class="helper"></span
+          ><img class="startSVGSize" src="./physicsEngine/start.svg" />
+        </div>
+      </div>
+
+      <!-- Content of modal #1 -->
+      <section data-modal="form" class="modal-wrapper" style="display: none">
+        <article class="modal-body">
+          <header>
+            <button class="close">
+              <i class="fa fa-times"></i>
+            </button>
+          </header>
+          <div class="modal-main">
+            <div class="modal-contents">
+              <h2 id="modal-title"></h2>
+              <img id="modal-img" src="" alt="palceholder" />
+              <p id="modal-text"></p>
+            </div>
+            <a href="#" id="modal-cta" target="_blank">View</a>
+          </div>
+        </article>
+      </section>
+      <!-- container fluid wrapper end div -->
+
+      <!--  ///////////////////  FOOTER/CONTACT  ///////////////////  -->
+      <aside
+        class="banner"
+        style="
+          position: absolute;
+          margin-left: auto;
+          margin-right: auto;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          text-align: center;
+        "
+      >
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <a
+              href="mailto:design.tonychan@gmail.com"
+              target="_blank"
+              class="btn-social btn-lg"
+              ><i class="fa fa-envelope" style="color: #94999d"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/tonychan96/"
+              target="_blank"
+              class="btn-social btn-lg"
+              ><i class="fa fa-linkedin" style="color: #94999d"></i
+            ></a>
+            <a
+              href="https://github.com/tonychandesign"
+              target="_blank "
+              class="btn-social btn-lg"
+              ><i class="fa fa-github" style="color: #94999d"></i
+            ></a>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <!-- JavaScript -->
+
+    <script type="text/javascript" src="js/lazyload.js"></script>
+    <script type="text/javascript" src="vendor/jquery/jquery.min.js "></script>
+    <script src="vendor/popper/popper.min.js "></script>
+    <script
+      type="text/javascript"
+      src="vendor/bootstrap/js/bootstrap.min.js "
+    ></script>
+    <script type="text/javascript" src="custom.js"></script>
+    <!-- scroll fade left/right animation -->
+    <script type="text/javascript" src="fadein_js/index.js"></script>
+    <!-- game  -->
+    <script type="text/javascript" src="physicsEngine/matter.min.js"></script>
+    <script type="text/javascript" src="physicsEngine/app.js"></script>
+
+    <script type="text/javascript" src="js/sandboxTab.js"></script>
+    <script type="text/javascript" src="js/ImagePreloader.js"></script>
+  </body>
+  <!-- preload dark to light css to stop white flicker -->
+  <style type="text/css">
+    @import url("css/overideLight.css");
+  </style>
+  <style type="text/css">
+    @import url("css/overideDark.css");
+  </style>
+  <!-- THIS MUST BE HERE SO THAT IT ANIMATES AFTER PAGE LOAD -->
+  <style type="text/css">
+    @import url("physicsEngine/game.css");
+  </style>
+  <script>
+    window.onload = function (e) {
+      $(".animateDelayTarget").addClass("animated fadeInUp");
+    };
+  </script>
+</html>

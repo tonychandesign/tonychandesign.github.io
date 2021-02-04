@@ -40,7 +40,6 @@ const modalBody = modal.querySelector(".modal-body");
 const closeBtn = modal.querySelector(".close");
 const resetModal = function () {
   modal.classList.remove("is-open");
-  $("html, body").animate({ scrollTop: 85 });
   document.activeElement.blur();
   document.getElementById("modal-img").src = "";
   let tp1 = prev1;
@@ -67,22 +66,22 @@ document.body.addEventListener("keydown", function (e) {
   //     game.testing = true;
   //   }
   // }
-  console.log(e.keyCode);
-  if (
-    keys[27] ||
-    keys[83] ||
-    keys[87] ||
-    keys[65] ||
-    keys[79] ||
-    keys[68] ||
-    keys[80] ||
-    keys[76]
-  ) {
-    console.log("reseting position");
+  // console.log(e.keyCode);
+  // if (
+  //   keys[27] ||
+  //   keys[83] ||
+  //   keys[87] ||
+  //   keys[65] ||
+  //   keys[79] ||
+  //   keys[68] ||
+  //   keys[80] ||
+  //   keys[76]
+  // ) {
+  //   console.log("reseting position");
 
-    if ($("html, body").scrollTop() !== 85)
-      $("html, body").animate({ scrollTop: 85 });
-  }
+  //   if ($("html, body").scrollTop() !== 85)
+  //     $("html, body").animate({ scrollTop: 85 });
+  // }
 
   if (keys[27]) {
     resetModal();
@@ -312,7 +311,10 @@ const character = function () {
         //on ground && not crouched and pressing s or down
         this.doCrouch();
         player.frictionAir = 0.5;
-      } else if (keys[87] && this.buttonCD_jump + 50 < game.cycle) {
+      } else if (
+        (keys[32] || keys[87]) &&
+        this.buttonCD_jump + 50 < game.cycle
+      ) {
         //jump
         this.buttonCD_jump = game.cycle; //can't jump until 50 cycles pass
         Matter.Body.setVelocity(player, {
@@ -2033,7 +2035,7 @@ function drawSVGs() {
   ctx.drawImage(workday, px, 300);
   ctx.drawImage(eqr, 1400, -3395);
   ctx.drawImage(d4sd, -1850, -3980);
-  ctx.drawImage(controlsImg, -1940, -60, 850, 453);
+  ctx.drawImage(controlsImg, -1920, 0, 850, 384);
   ctx.drawImage(volleyball, -2080, -1010);
   ctx.drawImage(plane, -1000, 893);
   ctx.drawImage(js, 1883, 883);

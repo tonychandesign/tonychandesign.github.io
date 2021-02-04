@@ -26,12 +26,16 @@
 }
 .startSVGSize {
   width: 80%;
+  display: flex;
+  margin: auto;
+  margin-top: 100px;
   max-width: 1200px;
 }
 .stationaryHeroWrapper {
   width: 100vw;
   height: 100vh;
-  position: relative;
+  position: absolute;
+  top: 0px;
   display: block;
 }
 .showMobile {
@@ -79,7 +83,6 @@
 
 /* MODAL FOR WHEN PLAYER STEPS ON CASE STUDIES  */
 .modal-wrapper {
-  display: block;
   position: absolute;
   z-index: -1;
   top: 0;
@@ -88,13 +91,15 @@
   height: 100vh;
   transition: all 0.2s ease-in-out;
   background-color: transparent;
+  overflow: hidden;
 }
 .modal-wrapper.is-open {
   z-index: 1;
   opacity: 1;
   background-color: rgba(0, 0, 0, 0.5);
-  overflow-y: hidden;
+  overflow: hidden;
   animation: pop 0.2s ease;
+  display: block !important;
 }
 .close {
   position: absolute;

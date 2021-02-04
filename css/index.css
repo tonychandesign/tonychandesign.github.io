@@ -311,7 +311,7 @@ a:hover {
   align-items: center;
 }
 .sandboxPhotoPad {
-  margin-top: 40px;
+  margin-top: 70px;
 }
 .dynResume {
   max-width: 75%;
@@ -532,10 +532,10 @@ a.btn-social {
     margin-top: 70px;
   }
   .subCarousel {
-    margin-top: 90px;
+    margin-top: 20px;
   }
   .dynResume {
-    max-width: 100%;
+    max-width: 90%;
     display: block;
     margin: auto;
   }
@@ -560,6 +560,9 @@ a.btn-social {
   .dynamicthumbnail {
     max-width: 70%;
   }
+  .sandbox_photography {
+    max-width: 60%;
+  }
 }
 @media screen and (max-width: 414px) {
   .industrypadding {
@@ -575,6 +578,9 @@ a.btn-social {
   #menu {
     margin-top: 10px;
     margin-bottom: -5px;
+  }
+  .sandbox_photography {
+    max-width: 80%;
   }
 }
 
@@ -606,4 +612,19 @@ a.btn-social {
 }
 .canvas-container {
   text-align: center;
+}
+
+.sandbox_photography {
+  display: none;
+  max-width: 90%;
+}
+.sandbox_CTAs {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #94999d;
+  opacity: 100%;
+  transition: top 0.25s ease-in-out, opacity 0.5s ease-in-out;
+}
+.sandbox_code {
+  margin-bottom: 50px;
 }

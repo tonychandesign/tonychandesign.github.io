@@ -1,3 +1,28 @@
+.introWrap {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.intro {
+  z-index: 2;
+}
+
+.animateDelayTarget {
+  opacity: 0;
+}
+
+.stationaryHeroWrapper {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  top: 0px;
+  display: block;
+}
+
 .mobileHeroWrapper {
   width: 100vw;
   height: 100vh;
@@ -29,14 +54,53 @@
   transition: top 0.25s ease-in-out, opacity 0.5s ease-in-out;
 }
 
+.fadeInUp {
+  opacity: 0;
+  animation: 400ms ease-out 0s 1 fadeInUp;
+  -webkit-animation: 400ms ease-out 0s 1 fadeInUp;
+}
+.animatedFadeInUp {
+  opacity: 0;
+}
+.animated {
+  animation-duration: 400ms;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 400ms;
+  -webkit-animation-fill-mode: both;
+}
+.animateDelayTarget {
+  opacity: 0;
+}
+@keyframes fadeInUp {
+  from {
+    top: 53%;
+    opacity: 0;
+  }
+
+  to {
+    top: 50%;
+    opacity: 1;
+  }
+}
+
+.showMobile {
+  display: none;
+}
+
 @media screen and (max-width: 414px) {
   .heroText {
     min-width: 100%%;
     font-size: 35px;
     line-height: 3.5rem;
-    margin-top: -160px;
+    margin-top: -140px;
   }
   .mobileHeroWrapper {
+    display: block;
+  }
+  .stationaryHeroWrapper {
+    display: none;
+  }
+  .showMobile {
     display: block;
   }
 }

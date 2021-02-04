@@ -45,7 +45,6 @@
       sizes="16x16"
       href="./favicon-16x16.png"
     />
-    <link rel="manifest" href="./site.webmanifest" />
     <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5" />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
@@ -106,36 +105,10 @@
               </div>
             </div>
             <div class="stationaryHeroWrapper">
-              <canvas id="canvas" oncontextmenu="return false"></canvas>
-              <div
-                class="introWrap animateDelayTarget"
-                onclick="runPlatformer(this)"
-              >
-                <div class="heroText">
-                  Tony Chan, product designer <br />
-                  <div class="SubHeroText">Click to play</div>
-                </div>
+              <div class="introWrap animateDelayTarget">
+                <div class="heroText">Tony Chan, product designer</div>
               </div>
             </div>
-
-            <!-- Content of modal #1 -->
-            <section data-modal="form" class="modal-wrapper">
-              <article class="modal-body">
-                <header>
-                  <button class="close">
-                    <i class="fa fa-times"></i>
-                  </button>
-                </header>
-                <div class="modal-main">
-                  <div class="modal-contents">
-                    <h2 id="modal-title"></h2>
-                    <img id="modal-img" src="" alt="palceholder" />
-                    <p id="modal-text"></p>
-                  </div>
-                  <a href="#" id="modal-cta" target="_blank">View</a>
-                </div>
-              </article>
-            </section>
 
             <div class="row" style="margin-top: 4em">
               <!-- INTUIT -->
@@ -399,17 +372,17 @@
           <!-- RESUME  -->
           <div class="carousel-item" id="caroTwo">
             <section class="content-section-b">
-              <div class="modal-dialog">
+              <div class="">
                 <div class="row row-centerer">
                   <div class="subCarousel sandboxPhotoPad row-centerer">
                     <a
                       class="sandBoxItems active whiteText tony-middle-out"
-                      id="sandboxPhoto"
-                      >photography</a
-                    >/<a
-                      class="sandBoxItems whiteText tony-middle-out"
                       id="sandboxCoding"
                       >coding</a
+                    >/<a
+                      class="sandBoxItems whiteText tony-middle-out"
+                      id="sandboxPhoto"
+                      >photography</a
                     >/<a
                       class="sandBoxItems whiteText tony-middle-out"
                       id="sandboxDesign"
@@ -420,6 +393,104 @@
                       >motion</a
                     >
                   </div>
+                  <!--  ///////////////////  CODED PROJECTS  ///////////////////  -->
+                  <!-- proj 1  -->
+                  <div class="sandboxPhotoPad sandbox_code">
+                    <div class="row">
+                      <section
+                        class="col-md-1 order-md-1"
+                        style="padding: 0px 0"
+                      ></section>
+
+                      <section
+                        class="col-md-5 order-md-3 titlehoriz"
+                        style="padding: 0px 0"
+                      >
+                        <div class="box2 dynamicthumbnail">
+                          <a
+                            href="play_code_gamifiedPortfolio.html"
+                            style="width: 100%"
+                          >
+                            <img
+                              class="img-fluid lazyload"
+                              data-src="img/coded_sandbox/coded_1.png"
+                              src="img/lazyload_placeholders/coded_sandbox/coded_1_placeholder.png"
+                              alt=" "
+                            />
+                          </a>
+                        </div>
+                      </section>
+                      <section
+                        class="col-md-5 order-md-2 vertical-align"
+                        style="padding: 0px 0"
+                      >
+                        <div class="indextext">
+                          <div class="row-centerer dynamicdescription module2">
+                            <h2 class="section-heading indexProjectTitles">
+                              Gamified Portfolio
+                            </h2>
+                            <p class="lead" style="color: #a0a0a0">
+                              I was curious about how a portfolio experience
+                              could be like if it was gamified
+                            </p>
+                          </div>
+                        </div>
+                      </section>
+                      <section
+                        class="col-md-1 order-md-4"
+                        style="padding: 0px 0"
+                      ></section>
+                    </div>
+                  </div>
+
+                  <!-- proj2 -->
+                  <div class="sandboxPhotoPad sandbox_code">
+                    <div class="row">
+                      <section
+                        class="col-md-1 order-md-1"
+                        style="padding: 0px 0"
+                      ></section>
+                      <section
+                        class="col-md-5 order-md-3 vertical-align"
+                        style="padding: 0px 0"
+                      >
+                        <div class="indextext">
+                          <div class="row-centerer dynamicdescription module2">
+                            <h2 class="section-heading indexProjectTitles">
+                              Responsive mobile videos
+                            </h2>
+                            <p class="lead" style="color: #a0a0a0">
+                              Responsive vertical video component for those
+                              mobile interfaces that you'd like to show off
+                            </p>
+                          </div>
+                        </div>
+                      </section>
+                      <section
+                        class="col-md-5 order-md-2 titlehoriz"
+                        style="padding: 0px 0"
+                      >
+                        <div class="box2 dynamicthumbnail">
+                          <a
+                            href="play_code_vertical_video.html"
+                            style="width: 100%"
+                          >
+                            <img
+                              class="img-fluid lazyload"
+                              data-src="img/coded_sandbox/coded_2.png"
+                              src="img/lazyload_placeholders/coded_sandbox/coded_2_placeholder.png"
+                              alt=" "
+                            />
+                          </a>
+                        </div>
+                      </section>
+                      <section
+                        class="col-md-1 order-md-4"
+                        style="padding: 0px 0"
+                      ></section>
+                    </div>
+                  </div>
+                  <!--  ///////////////////  PHOTOGRAPHY PROJECTS  ///////////////////  -->
                   <div class="sandboxPhotoPad row-centerer sandbox_photography">
                     <img
                       class="img-fluid dynResume lazyload"
@@ -482,6 +553,7 @@
                       data-src="img/travel_photos/10.png"
                     />
                   </div>
+                  <!--  ///////////////////  COMING SOON  ///////////////////  -->
                   <div
                     class="sandboxPhotoPad row-centerer"
                     id="sandbox_comingSoon"
@@ -640,9 +712,6 @@
     <script type="text/javascript" src="custom.js"></script>
     <!-- scroll fade left/right animation -->
     <script type="text/javascript" src="fadein_js/index.js"></script>
-    <!-- game  -->
-    <script type="text/javascript" src="physicsEngine/matter.min.js"></script>
-    <script type="text/javascript" src="physicsEngine/app.js"></script>
 
     <script type="text/javascript" src="js/sandboxTab.js"></script>
     <script type="text/javascript" src="js/ImagePreloader.js"></script>
@@ -655,9 +724,6 @@
     @import url("css/overideDark.css");
   </style>
   <!-- THIS MUST BE HERE SO THAT IT ANIMATES AFTER PAGE LOAD -->
-  <style type="text/css">
-    @import url("physicsEngine/game.css");
-  </style>
   <script>
     window.onload = function (e) {
       $(".animateDelayTarget").addClass("animated fadeInUp");

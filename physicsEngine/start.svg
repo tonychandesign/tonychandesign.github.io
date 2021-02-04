@@ -1,8 +1,5 @@
 <!--?xml version="1.0" encoding="UTF-8"?-->
 <svg width="1000px" height="654px" viewBox="0 0 1000 654" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="">
-    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
-    <title>Artboard</title>
-    <desc>Created with Sketch.</desc>
     <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <path id="Rectangle" stroke="#FFFFFF" width="64" height="64" d="M 67,379 L 123,379 A 4,4,0,0,1,127,383 L 127,439 A 4,4,0,0,1,123,443 L 67,443 A 4,4,0,0,1,63,439 L 63,383 A 4,4,0,0,1,67,379" class="cCCgiVwX_0"></path>
         <path id="Rectangle" stroke="#FFFFFF" width="64" height="64" d="M 143,379 L 199,379 A 4,4,0,0,1,203,383 L 203,439 A 4,4,0,0,1,199,443 L 143,443 A 4,4,0,0,1,139,439 L 139,383 A 4,4,0,0,1,143,379" class="cCCgiVwX_1"></path>
@@ -43,9 +40,7 @@
             <tspan x="895" y="274">Punch</tspan>
         </text>
         </g>
-        <text id="scroll-down-for-a-mo" class="delayAnimated2 animatedFadeInUp fadeInUp" font-family="AvenirNext-Regular, Avenir Next" font-size="18" font-weight="normal" fill="#94999D">
-            <tspan x="352.157" y="617">scroll down for a more classic layout</tspan>
-        </text>
+
         <text id="Click-to-enter" class="delayAnimated animatedFadeInUp fadeInUp" font-family="AvenirNext-Regular, Avenir Next" font-size="24" font-weight="normal" fill="#94999D">
             <tspan x="427.256" y="163">Click to enter</tspan>
         </text>
@@ -59,10 +54,7 @@
         <path d="M853,452 L853,488 C887,488 904,488 904,488" id="Line-5" stroke="#979797" stroke-linecap="square" class="cCCgiVwX_8"></path>
         <path id="Line-6" stroke="#979797" stroke-linecap="square" d="M815,296L815,260L775,260" class="cCCgiVwX_9"></path>
         <path id="Line-6" stroke="#979797" stroke-linecap="square" transform="translate(913.000000, 278.000000) scale(-1, 1) translate(-913.000000, -278.000000) " d="M936,296L936,260L890,260" class="cCCgiVwX_10"></path>
-        <g id="Group" transform="translate(485.500000, 635.000000)" stroke="#979797" stroke-linecap="round">
-            <path id="Line-9" transform="translate(7.500000, 8.050000) scale(-1, 1) translate(-7.500000, -8.050000) " d="M0.5,15.6L14.5,0.5" class="cCCgiVwX_11"></path>
-            <path id="Line-9" d="M14.5,15.6L28.5,0.5" class="cCCgiVwX_12"></path>
-        </g>
+
     </g>
 <style data-made-with="vivus-instant">.cCCgiVwX_0{stroke-dasharray:250 252;stroke-dashoffset:251;animation:cCCgiVwX_draw 2000ms ease-in-out 0ms forwards;}.cCCgiVwX_1{stroke-dasharray:250 252;stroke-dashoffset:251;animation:cCCgiVwX_draw 2000ms ease-in-out 83ms forwards;}.cCCgiVwX_2{stroke-dasharray:250 252;stroke-dashoffset:251;animation:cCCgiVwX_draw 2000ms ease-in-out 166ms forwards;}.cCCgiVwX_3{stroke-dasharray:250 252;stroke-dashoffset:251;animation:cCCgiVwX_draw 2000ms ease-in-out 250ms forwards;}.cCCgiVwX_4{stroke-dasharray:80 82;stroke-dashoffset:81;animation:cCCgiVwX_draw 2000ms ease-in-out 333ms forwards;}.cCCgiVwX_5{stroke-dasharray:250 252;stroke-dashoffset:251;animation:cCCgiVwX_draw 2000ms ease-in-out 416ms forwards;}.cCCgiVwX_6{stroke-dasharray:250 252;stroke-dashoffset:251;animation:cCCgiVwX_draw 2000ms ease-in-out 500ms forwards;}.cCCgiVwX_7{stroke-dasharray:250 252;stroke-dashoffset:251;animation:cCCgiVwX_draw 2000ms ease-in-out 583ms forwards;}.cCCgiVwX_8{stroke-dasharray:87 89;stroke-dashoffset:88;animation:cCCgiVwX_draw 2000ms ease-in-out 666ms forwards;}.cCCgiVwX_9{stroke-dasharray:76 78;stroke-dashoffset:77;animation:cCCgiVwX_draw 2000ms ease-in-out 750ms forwards;}.cCCgiVwX_10{stroke-dasharray:82 84;stroke-dashoffset:83;animation:cCCgiVwX_draw 2000ms ease-in-out 833ms forwards;}.cCCgiVwX_11{stroke-dasharray:21 23;stroke-dashoffset:22;animation:cCCgiVwX_draw 1000ms ease-in-out 700ms forwards;animation-delay: 3s;}.cCCgiVwX_12{stroke-dasharray:21 23;stroke-dashoffset:22;animation:cCCgiVwX_draw 1000ms ease-in-out 700ms forwards;animation-delay: 3s;}@keyframes cCCgiVwX_draw{100%{stroke-dashoffset:0;}}@keyframes cCCgiVwX_fade{0%{stroke-opacity:1;}94.44444444444444%{stroke-opacity:1;}100%{stroke-opacity:0;}}
 @keyframes fadeInUp {
