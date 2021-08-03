@@ -245,6 +245,33 @@ p {
   width: 100%;
   background: #000;
 }
+
+.sliding-middle-out-link {
+  display: inline-block;
+  position: relative;
+}
+.sliding-middle-out-link:after {
+  width: 0;
+  background: #365ebf;
+  content: "";
+  display: block;
+  margin: auto;
+  height: 2px;
+  background: 0 0;
+
+  transition: width 0.2s cubic-bezier(0.165, 0.84, 0.44, 1),
+    background-color 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -webkit-transition: width 0.2s cubic-bezier(0.165, 0.84, 0.44, 1),
+    background-color 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -moz-transition: width 0.2s cubic-bezier(0.165, 0.84, 0.44, 1),
+    background-color 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.sliding-middle-out-link.active:after,
+.sliding-middle-out-link:hover:after {
+  width: 100%;
+  background: #365ebf;
+}
+
 .active {
   color: black !important;
 }
@@ -543,7 +570,7 @@ a.btn-social {
 .viewCaseStudyText {
   margin-top: auto;
   margin-bottom: auto;
-  padding-left: 50px;
+  padding-left: 20px;
 }
 .navpadding {
   margin-left: 40px;
