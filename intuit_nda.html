@@ -64,7 +64,11 @@
           <div class="col-lg-6">
             <div id="menu">
               <ul
-                class="navbar-nav navbar-brand right-to-center nav-elem-centerer"
+                class="
+                  navbar-nav navbar-brand
+                  right-to-center
+                  nav-elem-centerer
+                "
               >
                 <li
                   class="nav-item tony-middle-out active"
@@ -170,38 +174,18 @@
           </p>
         </div>
       </div>
-      <div id="passwordContainer">
-        <input
-          style="margin: 16px; text-align: left"
-          id="password"
-          type="password"
-          placeholder="Enter password"
-          autocomplete="off"
-        />
-        <br />
-        <button id="loginbutton" type="button" id="loginbutton">
-          <svg
-            version="1.1"
-            id="loginButtonArrow"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            x="0px"
-            y="0px"
-            viewBox="0 0 491.1 491.1"
-            style="enable-background: new 0 0 491.1 491.1"
-            xml:space="preserve"
-          >
-            <g>
-              <path
-                d="M379.25,282.85l-192.8,192.8c-20.6,20.6-54,20.6-74.6,0s-20.6-54,0-74.6l155.5-155.5l-155.5-155.5
-    c-20.6-20.6-20.6-54,0-74.6s54-20.6,74.6,0l192.8,192.8C399.85,228.85,399.85,262.25,379.25,282.85z"
-                fill="#ccc"
-              />
-            </g>
-          </svg>
-        </button>
-        <p id="wrongPassword" style="display: none">wrong password</p>
-      </div>
+      <section id="password-container">
+        <div class="input-container">
+          <input
+            id="password"
+            type="password"
+            placeholder="Enter password"
+            autocomplete="off"
+          />
+          <label id="wrong-password"></label>
+        </div>
+        <button id="login-button" type="button">Enter</button>
+      </section>
 
       <div class="row">
         <div class="text_medium theprocess myOtherWork">My Other Work</div>
@@ -353,17 +337,17 @@
           error: function (xhr, ajaxOptions, thrownError) {
             parent.location.hash = hash;
 
-            //$("#wrongPassword").show();
-            $("#password").attr("placeholder", "Wrong password");
+            $("#wrong-password").text("Incorrect Password");
             $("#password").val("");
           },
         });
       }
 
-      $("#loginbutton").on("click", function () {
+      $("#login-button").on("click", function () {
         loadPage($("#password").val());
       });
       $("#password").keypress(function (e) {
+        $("#wrong-password").text("");
         if (e.which == 13) {
           loadPage($("#password").val());
         }
