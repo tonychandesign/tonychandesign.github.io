@@ -182,7 +182,7 @@
             placeholder="Enter password"
             autocomplete="off"
           />
-          <label id="wrong-password"></label>
+          <label id="wrong-password">Incorrect Password</label>
         </div>
         <button id="login-button" type="button">Enter</button>
       </section>
@@ -337,7 +337,7 @@
           error: function (xhr, ajaxOptions, thrownError) {
             parent.location.hash = hash;
 
-            $("#wrong-password").text("Incorrect Password");
+            $("#wrong-password").css("opacity", "1");
             $("#password").val("");
           },
         });
@@ -347,7 +347,7 @@
         loadPage($("#password").val());
       });
       $("#password").keypress(function (e) {
-        $("#wrong-password").text("");
+        $("#wrong-password").css("opacity", "0");
         if (e.which == 13) {
           loadPage($("#password").val());
         }
